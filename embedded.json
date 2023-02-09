@@ -1,0 +1,94 @@
+{
+  "name": "embedded",
+  "version": 0,
+  "cards": [
+    {
+      "id": "foblayoxij",
+      "version": 0,
+      "active": true,
+      "question": "What defines a GPIO pin?",
+      "answer": "It is digital, can be used for input or output, and is controlled by software. There are a variety of ways that different GPIO pins will differ aside from these characteristics.",
+      "reviews": []
+    },
+    {
+      "id": "me26cgym9z",
+      "version": 0,
+      "active": true,
+      "question": "Describe I2C: how many wires, what is the bandwidth, how does it work in general?",
+      "answer": "\"I2C is a two-wire master-slave bus. It generally does 400 kbit/s. One wire is the clock signal (SCL), which tells the receiver when to sample the signal. The other wire is the data channel (SDA).   SDA is pulled up, so that either the master or the slave can close a switch and cause the other to read low (0 V).   All communication is initiated by the master. It starts with a \"\"start condition\"\", which tells slaves to listen. It then sends 8 bits - 7 of these are an address, and the last represents read/write. The slave then pulls SDA low, which is an ACK to the master.   Following this, whichever party is supposed to send, sends 8 bits, followed by another ACK by the receiving party, and then the \"\"end condition\"\", which is the opposite of the start condition.   Note that you can have many slaves (2^7 = 128 addresses) on one bus.\"",
+      "reviews": []
+    },
+    {
+      "id": "xdbl9mumen",
+      "version": 0,
+      "active": true,
+      "question": "What are pull-up and pull-down resistors? What is their purpose? Draw one.",
+      "answer": "A pull-up resistor is a resistor between Vpp and a logic gate. A pull-down resistor is a resistor between ground and a logic gate.   There will generally be a switch to ground on the other end of the pull-up resistor. So, when the switch is open, the logic gate will be at Vpp (no current is flowing), and when the switch is closed, the logic gate will be at ground (current is flowing, and the logic gate is shorted to ground by the switch, so the voltage drop over the pull-up resistor will be Vpp).   If we did not have the pull-up resistor, the logic gate would be floating at some unknown voltage.   The same principles are mirrored for pull-down resistors.",
+      "reviews": []
+    },
+    {
+      "id": "125iv0herf",
+      "version": 0,
+      "active": true,
+      "question": "What is baud rate?",
+      "answer": "The technically correct term to use is symbol rate. baud is a unit that is equivalent to symbols/second.",
+      "reviews": []
+    },
+    {
+      "id": "ojcmjo79sb",
+      "version": 0,
+      "active": true,
+      "question": "In the case of a serial port with 9600 baud, what is the bit rate equal to?",
+      "answer": "Since serial ports use two-level (binary) signalling, their bit rate is equal to their symbol rate. Therefore the port's bitrate is 9600 bits/s.",
+      "reviews": []
+    },
+    {
+      "id": "oxljl8u8cu",
+      "version": 0,
+      "active": true,
+      "question": "For a serial port using 8N1 character framing, what percentage of the transmitted symbols are carrying data?",
+      "answer": "1 start bit8 -\u003e 8 bits N -\u003e 0 bits 1 -\u003e 1 bit   So 10 bits total. 8/10 = 80%",
+      "reviews": []
+    },
+    {
+      "id": "y98heu2nbc",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between a synchronous and an asynchronous bus? Name one example of each.",
+      "answer": "A synchronous bus has a clock pin (SCL) and a data pin (SDA). An asynchronous bus has no clock pin, only data.   synchronous: I2C asynchronous: UART",
+      "reviews": []
+    },
+    {
+      "id": "i8m75xh6rf",
+      "version": 0,
+      "active": true,
+      "question": "In serial communication, what is the parity bit for?",
+      "answer": "The parity bit is a method for detecting errors in transmission. The parity bit is set to 1 or 0 depending on whether the number of 1s in the data is odd or even. So if we have 4 1s, but the parity bit says we should have an odd number, we know that data corruption has occurred.",
+      "reviews": []
+    },
+    {
+      "id": "onjtpktbuk",
+      "version": 0,
+      "active": true,
+      "question": "What does each part of 115200 8N1 mean?",
+      "answer": "115200: symbol rate 8: number of data bits per frame N: no parity bit 1: one stop bit",
+      "reviews": []
+    },
+    {
+      "id": "vuz1vvsr1c",
+      "version": 0,
+      "active": true,
+      "question": "What is a null modem cable?",
+      "answer": "Serial ports were originally designed to be either for terminals, or for modems. It was expected that they would be connected in pairs. However, it is useful to connect one terminal to another, or one modem to another. For this, you need a null modem cable, which crosses over some of the lines so everything works as it should.",
+      "reviews": []
+    },
+    {
+      "id": "e10mhikjgm",
+      "version": 0,
+      "active": true,
+      "question": "What is the flow control setting of serial lines for?",
+      "answer": "Flow control is used when a transmitter might be able to send data faster than the receiver is able to process it.   XON/XOFF: software handshaking RTS/CTS: hardware handshaking DSR/DTR: hardware handshaking",
+      "reviews": []
+    }
+  ]
+}

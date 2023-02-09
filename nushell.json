@@ -1,0 +1,86 @@
+{
+  "name": "nushell",
+  "version": 0,
+  "cards": [
+    {
+      "id": "xij7odmder",
+      "version": 0,
+      "active": true,
+      "question": "nushell: what are the available data types (18 total)?",
+      "answer": "integer decimal bytes string line column path glob pattern boolean date(time) duration range file path file size binary data row/record list table block",
+      "reviews": []
+    },
+    {
+      "id": "3v4z7nonp4",
+      "version": 0,
+      "active": true,
+      "question": "nushell: how do you construct a row/record?",
+      "answer": "\"{name: \"\"sam\"\", age: 10}\"",
+      "reviews": []
+    },
+    {
+      "id": "7i7u31sblo",
+      "version": 0,
+      "active": true,
+      "question": "nushell: how do you construct a list?",
+      "answer": "[sam fred george]",
+      "reviews": []
+    },
+    {
+      "id": "x9lo08dfzm",
+      "version": 0,
+      "active": true,
+      "question": "nushell: how do you filter a plain list?",
+      "answer": "Use the `find` command.",
+      "reviews": []
+    },
+    {
+      "id": "1h1ss149qr",
+      "version": 0,
+      "active": true,
+      "question": "nushell: how do you get a specific column, or specific columns, out of a table? How do you get only the values out of a column?",
+      "answer": "ls | select name type ls | get name",
+      "reviews": []
+    },
+    {
+      "id": "1yuqwyxy3l",
+      "version": 0,
+      "active": true,
+      "question": "nushell: how do you get the third row from a table? How do you get rows 3 through 5 inclusive?",
+      "answer": "whatever | select 2 whatever | range 2..4",
+      "reviews": []
+    },
+    {
+      "id": "q8f8yj6v9j",
+      "version": 0,
+      "active": true,
+      "question": "nushell: which two commands are used to get data out of a file and to write data to a file?",
+      "answer": "open save",
+      "reviews": []
+    },
+    {
+      "id": "9cqaewcszm",
+      "version": 0,
+      "active": true,
+      "question": "nushell: what are the two ways to construct a table?",
+      "answer": "[[column1Name column2Name]; [row1col1 row1col2] [row2col1 row2col2]]   [{name: sam, age: 20}, {name: bob, age: 50}]",
+      "reviews": []
+    },
+    {
+      "id": "3arfi2vib0",
+      "version": 0,
+      "active": true,
+      "question": "nushell: what is the equivalent for POSIX shell's `ls -lh $(which cmd)`?",
+      "answer": "ls -l (which cmd).path",
+      "reviews": []
+    },
+    {
+      "id": "9gce8j43x3",
+      "version": 0,
+      "active": true,
+      "question": "nushell: which command is used to convert one type into another?",
+      "answer": "into",
+      "reviews": []
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "name": "suse",
+  "version": 0,
+  "cards": [
+    {
+      "id": "x6ek5kanec",
+      "version": 0,
+      "active": true,
+      "question": "What are the four main products that Rancher has? Explain what they do.",
+      "answer": "RKE: a CLI tool that makes it easy to create, manage and upgrade k8s clusters   Rancher: an application for managing k8s clusters; uses RKE behind the scenes and provides more on top of it (dashboard, GUI etc)   k3s: a minimal version of k8s   longhorn: a distributed storage solution for k8s",
+      "reviews": []
+    },
+    {
+      "id": "14j1vmucng",
+      "version": 0,
+      "active": true,
+      "question": "How does networking work for lima VMs?",
+      "answer": "There is a host agent and a guest agent. The guest agent notices any ports that are open on the guest and notifies the host agent about them. The host agent then does SSH forwarding to make these ports available on the same port on the host machine.",
+      "reviews": []
+    },
+    {
+      "id": "6ybcxdce3n",
+      "version": 0,
+      "active": true,
+      "question": "For lima VMs, which directories are passed through to the VM?",
+      "answer": "1) the home directory 2) /tmp/lima or for RD /tmp/Rancher\\ Desktop",
+      "reviews": []
+    },
+    {
+      "id": "v4soxd3x1h",
+      "version": 0,
+      "active": true,
+      "question": "How do nerdctl, kim, docker etc talk to containerd, kubernetes, dockerd etc in a lima VM?",
+      "answer": "kim and docker are simple because they simply tell the server what to do, and the server does it.   nerdctl is more complex because it manages images on the local host. So on the host we need to make it a shell script that calls `lima shell \u003cname\u003e nerdctl \u003cargs\u003e` - this makes all of the stuff get stored in the VM.",
+      "reviews": []
+    },
+    {
+      "id": "8dwhp3c4bn",
+      "version": 0,
+      "active": true,
+      "question": "What is the interface between Rancher Desktop's frontend and the backend?",
+      "answer": "Rancher Desktop simply calls `limactl` commands to control the lima VM on MacOS and Linux. Likewise it calls `wsl.exe` on Windows.",
+      "reviews": []
+    },
+    {
+      "id": "eh7n6i5h6q",
+      "version": 0,
+      "active": true,
+      "question": "RD: what are the three steps that are performed by `npm run build`?",
+      "answer": "1) clean up old files 2) build frontend as nuxtjs project, then bundle the files with webpack 3) package it into something we can use using electron-builder",
+      "reviews": []
+    },
+    {
+      "id": "h2kf6hhzmq",
+      "version": 0,
+      "active": true,
+      "question": "obs: what are the 4 fundamental objects in OBS?",
+      "answer": "Projects, repositories, packages, and services.",
+      "reviews": []
+    },
+    {
+      "id": "1k8tvnjvd0",
+      "version": 0,
+      "active": true,
+      "question": "obs: where are services configured? How do you discover which services are available?",
+      "answer": "Services are configured in what is effectively a list in the _service file of a package.   You can look for services using `zypper search obs-service`.",
+      "reviews": []
+    },
+    {
+      "id": "kv5wdp1abb",
+      "version": 0,
+      "active": true,
+      "question": "obs: where are repositories configured?",
+      "answer": "Repositories are configured at the project level, in the project's meta file.",
+      "reviews": []
+    },
+    {
+      "id": "a1w51nz0j3",
+      "version": 0,
+      "active": true,
+      "question": "obs: how is build logic applied to the files in a package such that they become an actual .deb, .rpm etc?",
+      "answer": "There is a .spec file (for building .rpms) in the .zip file that GHA uploads to S3.   Under the configured repositories, there are entries which list other projects. Those projects define the logic to build the raw files plus the .spec file into an rpm, and to turn the rpm into a deb.",
+      "reviews": []
+    },
+    {
+      "id": "clekomljlt",
+      "version": 0,
+      "active": true,
+      "question": "obs: how do you specify dependencies of a package?",
+      "answer": "You list them in the package's .spec file. Not the OBS one, the rpm one.",
+      "reviews": []
+    },
+    {
+      "id": "eg88fvgk5y",
+      "version": 0,
+      "active": true,
+      "question": "At a high level, how do Linux builds of Rancher Desktop work?",
+      "answer": "1) GHA: lint, test etc 2) GHA: package runnable code into .zip and upload to S3 3) GHA: invoke OBS webhook 4) OBS: get metadata (version info etc) in github 5) OBS: download .zip file from S3 6) OBS: changes trigger builds of packages",
+      "reviews": []
+    },
+    {
+      "id": "ayb30p9mb4",
+      "version": 0,
+      "active": true,
+      "question": "RD: what is the difference between src/main/paths.ts and src/utils/paths.ts?",
+      "answer": "main/paths.ts: for migrating from old to new path layout   utils/paths.ts: defines paths used to store state and data",
+      "reviews": []
+    },
+    {
+      "id": "npje4s34lw",
+      "version": 0,
+      "active": true,
+      "question": "RD: what does window.send() do?",
+      "answer": "It emits an event to all renderer processes from the main process.",
+      "reviews": []
+    },
+    {
+      "id": "5mcg9976kv",
+      "version": 0,
+      "active": true,
+      "question": "RD: what are the six common components of `paths`, and what are they for?",
+      "answer": "paths.appHome: random app data paths.config: app config data paths.logs: app logs paths.cache: cached data paths.lima: lima state paths.integration: provided binary resources",
+      "reviews": []
+    },
+    {
+      "id": "qa6kajpqw9",
+      "version": 0,
+      "active": true,
+      "question": "At a high level, how do RD updates work?",
+      "answer": "LonghornPublisher: modifies the `publish:` config from electron-updater.yml   LonghornProvider: takes the modified publish config from electron-updater.yml and LonghornPublisher   AppimageUpdater: takes a config object, which LonghornProvider is a part of; has a number of callbacks registered on it that respond to things like new versions being available (is an implementation of EventEmitter); is an implementation of AppUpdater   Update Responder is server that LonghornProvider interfaces with. It monitors github for new releases.",
+      "reviews": []
+    },
+    {
+      "id": "3u9rnce917",
+      "version": 0,
+      "active": true,
+      "question": "RD: how does DNS resolution work on windows?",
+      "answer": "WSL uses Hyper-V, which provides DNS resolution through some kind of NAT. So it ends up using the configuration of the windows host somehow.",
+      "reviews": []
+    },
+    {
+      "id": "0kxpxz14ga",
+      "version": 0,
+      "active": true,
+      "question": "cirrus-ci: what is the main object type? What is it made up of?",
+      "answer": "The main object type is a task. Tasks are configured in .cirrus.yml. A task consists of an execution environment, and a sequence of instructions that the task executes.",
+      "reviews": []
+    },
+    {
+      "id": "6n54k1ljgw",
+      "version": 0,
+      "active": true,
+      "question": "cirrus-ci: what are the five main types of instructions?",
+      "answer": "*_script: defines a script to run   *_background_script: like *_script, but does not wait for it to complete before moving on to next instruction   *_cache: used to persist files between runs   *_artifacts: let you store and expose files created by task runs   *_file: lets you create a file from an environment variable",
+      "reviews": []
+    },
+    {
+      "id": "62y5rk90dl",
+      "version": 0,
+      "active": true,
+      "question": "How does RD get to the General page by default?",
+      "answer": "There is a middleware that redirects / to /General?",
+      "reviews": []
+    }
+  ]
+}

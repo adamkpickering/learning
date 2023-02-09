@@ -1,0 +1,286 @@
+{
+  "name": "c",
+  "version": 0,
+  "cards": [
+    {
+      "id": "a7nvciig6t",
+      "version": 0,
+      "active": true,
+      "question": "What are the 4 kinds of things in a makefile?",
+      "answer": "- rules (explicit and implicit) - variable definitions - directives - comments",
+      "reviews": []
+    },
+    {
+      "id": "lt8h6mtt4s",
+      "version": 0,
+      "active": true,
+      "question": "make: what does @ do to a line in a recipe?",
+      "answer": "The line is not printed, but any output the command produces is printed",
+      "reviews": []
+    },
+    {
+      "id": "svctpyeu4z",
+      "version": 0,
+      "active": true,
+      "question": "make: what does % do?",
+      "answer": "It is a wildcard. So the target %.o would apply to all files with the suffix .o .",
+      "reviews": []
+    },
+    {
+      "id": "iqb8nj8zok",
+      "version": 0,
+      "active": true,
+      "question": "How to reference a variable in a makefile?",
+      "answer": "Either $(var) or ${var}",
+      "reviews": []
+    },
+    {
+      "id": "n39cg1d8fq",
+      "version": 0,
+      "active": true,
+      "question": "What are the two types of variables?",
+      "answer": "1) Recursively expanded: more standard; the value of a variable is expanded when it is referenced, so if it references another variable, this dereferencing is done until there is just text   2) Simply expanded: more of a GNU extension; the value of a variable is expanded when it is defined.",
+      "reviews": []
+    },
+    {
+      "id": "b9s9nivq5g",
+      "version": 0,
+      "active": true,
+      "question": "How does make know which shell to use for shell calls?",
+      "answer": "It looks at the SHELL variable inside the makefile. Otherwise it uses /bin/sh. Should be defined in every makefile, because if it isn't, make may pull in the SHELL environment variable, which can lead to different behaviour between shells.",
+      "reviews": []
+    },
+    {
+      "id": "71t8mwmumm",
+      "version": 0,
+      "active": true,
+      "question": "Why is recursive make considered harmful?   How would you do it?",
+      "answer": "You partition your dependency tree into multiple trees, which:   1) Prevents dependencies between make instances from being expressed correctly   2) Performance suffers slightly since each make creates its own dependency tree   subsystem:      cd $(subdir) \u0026\u0026 $(MAKE)",
+      "reviews": []
+    },
+    {
+      "id": "sc7w71wbem",
+      "version": 0,
+      "active": true,
+      "question": "How are environment variables used in make?",
+      "answer": "Environment variables are used the same as regular make variables. They are overridden by variables defined in a makefile.",
+      "reviews": []
+    },
+    {
+      "id": "fq7litvhjv",
+      "version": 0,
+      "active": true,
+      "question": "How do you make variables defined in a makefile available to recursive make?",
+      "answer": "export VAR := ...",
+      "reviews": []
+    },
+    {
+      "id": "5tchbw2i8s",
+      "version": 0,
+      "active": true,
+      "question": "What does the shell function do in a makefile?",
+      "answer": "Command substitution into a variable; the exact same thing as $(...) in shell",
+      "reviews": []
+    },
+    {
+      "id": "agf1k0qqm2",
+      "version": 0,
+      "active": true,
+      "question": "How does the include directive work in make?",
+      "answer": "It effectively reads the included makefile into the parent makefile at the location of the include statement, much like . script.sh in shell.",
+      "reviews": []
+    },
+    {
+      "id": "kyvv0t9gjy",
+      "version": 0,
+      "active": true,
+      "question": "make: what do the error, info and warning functions do?",
+      "answer": "$(error text): prints makefile, line number and text, and exits $(warning text): same as `error`, but does not exit $(info text): prints text without makefile name or line number",
+      "reviews": []
+    },
+    {
+      "id": "i9pwywcfze",
+      "version": 0,
+      "active": true,
+      "question": "makefile: how do you pass a variable in from the command line? What takes priority between passed in variable and one defined in the makefile? How do I manipulate this?",
+      "answer": "\"make v=x   Command arguments override all in-file variable definitions, unless they are defined with the \"\"override\"\" directive.\"",
+      "reviews": []
+    },
+    {
+      "id": "pgx10o7wtd",
+      "version": 0,
+      "active": true,
+      "question": "make: what is the main construct that expresses dependencies, a goal and the steps to reach the goal? 4 terms.",
+      "answer": "rule: the name for the whole thing target: the product of the rule prerequisites: the things that make looks for changes on to determine whether to run the rule recipe: the actual steps to build the target (like shell script)",
+      "reviews": []
+    },
+    {
+      "id": "s9lehmkvnc",
+      "version": 0,
+      "active": true,
+      "question": "world: \u003cprereq\u003e...   FORCE:   What is the difference in use between these two canonical targets?",
+      "answer": "If a rule has neither prerequisites or a recipe, and the target is a non-existent file, then make always treats the target as if it has been updated.   world is meant to be the top-level, default goal, which lists actual targets as prereqs and thus causes them to be run   FORCE is not meant to be used as a goal, only as a prereq that causes targets, if they are a goal or sub-goal, to always run their recipe",
+      "reviews": []
+    },
+    {
+      "id": "0auyxa9cz5",
+      "version": 0,
+      "active": true,
+      "question": "make: what happens if a target appears in two rules?",
+      "answer": "- all of the prerequisites are merged - the recipe of the last rule is used, and an error is printed",
+      "reviews": []
+    },
+    {
+      "id": "xqqz8f0qgd",
+      "version": 0,
+      "active": true,
+      "question": "make: what does the call function do?",
+      "answer": "Called like: $(call variable,param1,param2,...)   Fills a variable that acts as a macro.",
+      "reviews": []
+    },
+    {
+      "id": "dt1op71qdf",
+      "version": 0,
+      "active": true,
+      "question": "make: what are the two ways of causing a target to run whether or not the file by its name exists? What are the tradeoffs between the two?",
+      "answer": ".PHONY: target1 target2   FORCE: target1: FORCE \u003cprereqs\u003e...     recipe... target2: FORCE \u003cprereqs\u003e...  .PHONY makes its prerequisites run whether a file by their name exists or not. Improves performance since implicit rule search is skipped for .PHONY targets. Specific to GNU make.   The FORCE (can be named differently but this is a convention) target, without a recipe or prerequisite, does the same thing, except that implicit search is *not* skipped. Less performant than .PHONY, but more portable.",
+      "reviews": []
+    },
+    {
+      "id": "fi40bt49ly",
+      "version": 0,
+      "active": true,
+      "question": "make: what is a goal?",
+      "answer": "The target at the top of the tree that we are eventually trying to build. Can be specified with `make \u003cgoal\u003e`. If not specified, it is the first target in the makefile.",
+      "reviews": []
+    },
+    {
+      "id": "yv2365pbr4",
+      "version": 0,
+      "active": true,
+      "question": "make: do a dry run of the makefile",
+      "answer": "make -n",
+      "reviews": []
+    },
+    {
+      "id": "q45i9cx3g0",
+      "version": 0,
+      "active": true,
+      "question": "make: silently show whether updates are needed. What does it return when they are needed, and what does it return when they are not?",
+      "answer": "make -q   0 if update is not needed nonzero if update is needed",
+      "reviews": []
+    },
+    {
+      "id": "9q8215mlaw",
+      "version": 0,
+      "active": true,
+      "question": "% codes to print the following in a format string:   1) single character 2) base 10 integer 3) base 8 integer 4) base 16 integer (lowercase letters) 5) base 16 integer (uppercase letters)  6) floating point (regular) 7) floating point (scientific notation) 8) string",
+      "answer": "1) %c 2) %d 3) %o 4) %x 5) %X 6) %f 7) %e 8) %s",
+      "reviews": []
+    },
+    {
+      "id": "5o1ypp39lj",
+      "version": 0,
+      "active": true,
+      "question": "What is the `static` keyword for?",
+      "answer": "If inside a function, it causes the variable to keep its value between invocations.   If a global variable or function, it is only accessible from inside the file it is declared in.",
+      "reviews": []
+    },
+    {
+      "id": "n08j1ehizf",
+      "version": 0,
+      "active": true,
+      "question": "\"What does the #pragma preprocessor directive do?\"",
+      "answer": "It is used to provide additional info to the compiler.",
+      "reviews": []
+    },
+    {
+      "id": "lohuazh2bk",
+      "version": 0,
+      "active": true,
+      "question": "\"What is the difference between `#include \u003ccstdio\u003e` and `#include \"\"myfile.h\"\"`?\"",
+      "answer": "\"The only real difference is that \u003c...\u003e searches for the header file in a sequence of implementation-defined places, whereas \"\"...\"\" searches for the header file in an implementation-defined fashion.   On Unix-like systems, \u003c...\u003e searches for the file in all system-specific locations, whereas \"\"...\"\" searches for the file in the local directory, and then in any system-specific locations.    In all cases, the entire contents of the file are included at the location of the #include directive.\"",
+      "reviews": []
+    },
+    {
+      "id": "fc8sc3bq22",
+      "version": 0,
+      "active": true,
+      "question": "What does the `volatile` modifier do?",
+      "answer": "Informs the compiler that the value of the variable may be changed by external entities other than the program itself. Prevents certain optimizations from being done. This is most useful in embedded systems, where a variable may be mapped to a part of memory.",
+      "reviews": []
+    },
+    {
+      "id": "d4vboi33ji",
+      "version": 0,
+      "active": true,
+      "question": "Declare an array of ints of fixed length 4.",
+      "answer": "int my_var[4];",
+      "reviews": []
+    },
+    {
+      "id": "m77s4m8973",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between the stack and the heap?",
+      "answer": "The stack is the place where you know how variables are going to be laid out - they are added onto the stack in LIFO order (think of it like stacking plates). As functions are entered, their variables are added onto the stack; as they return, their variables are removed. Unfortunately, the stack has a limited size.   The heap is for dynamically allocated memory. You access this with functions like malloc(). The heap is a good thing to use if you're allocating a large portion of memory. The only thing is that you have to remember to free() the memory once you're done with it.",
+      "reviews": []
+    },
+    {
+      "id": "wuhmh61if1",
+      "version": 0,
+      "active": true,
+      "question": "\"What is the difference between char* p = \"\"hello world\"\" and char p[] = \"\"hello world\"\"?\"",
+      "answer": "\"char* p = \"\"hello world\"\" allocates the string literal to a read-only location and puts this location's address into p. If you try to write to it, the behaviour is undefined.   char p[] = \"\"hello world\"\" is a shortcut for `char p[] = {'h', 'e', ..., '\\0'}`. It puts \"\"hello world\"\" directly onto the stack. However, p will still behave like a pointer if passed to a function as an argument of type char*.\"",
+      "reviews": []
+    },
+    {
+      "id": "v2aigrdsn7",
+      "version": 0,
+      "active": true,
+      "question": "How is a string represented in C?",
+      "answer": "A string is an array of characters, terminated by the null ('\\0') character.",
+      "reviews": []
+    },
+    {
+      "id": "x6oh6jldp6",
+      "version": 0,
+      "active": true,
+      "question": "What is the purpose of a function prototype?",
+      "answer": "When C was first created, it was considered important that when compiling code, the compiler only had to make one pass through the code. This was for performance reasons.   So, if it ran into a function invocation for a function that it was not aware of, it would do its best to infer the type of the arguments and return value from the way the function was called. This, of course, is error-prone and generally a bad way of doing things. Doing this, you can get mysterious failures at runtime.   A function prototype, which occurs at the top of the file, eliminates any ambiguity. The compiler can then use this function signature to verify that the function is being invoked correctly later in the file.",
+      "reviews": []
+    },
+    {
+      "id": "dbld6zf4m3",
+      "version": 0,
+      "active": true,
+      "question": "What is the purpose of header files?",
+      "answer": "Header files contain the prototypes of functions from other .c files. This way, you don't have to manually specify the function prototypes for every external function you're using in the current .c file.",
+      "reviews": []
+    },
+    {
+      "id": "8lmt8wkvhs",
+      "version": 0,
+      "active": true,
+      "question": "int x;   What is the value of x?",
+      "answer": "We do not know - this is implementation-specific. Technically, accessing the value produces undefined behaviour. In practice, sane implementations will allocate memory for the variable, but it will be full of garbage.",
+      "reviews": []
+    },
+    {
+      "id": "l6pxvby4us",
+      "version": 0,
+      "active": true,
+      "question": "When an external function is used in a .c file, what does it look like in the .o (object) file?",
+      "answer": "It is a stub. This stub must be filled in when the program is linked, otherwise linking (and compilation, since the compiler usually takes care of everything) will fail.",
+      "reviews": []
+    },
+    {
+      "id": "51zjfxbhf6",
+      "version": 0,
+      "active": true,
+      "question": "What does __name mean?",
+      "answer": "In C, symbols starting with an underscore followed by either another underscore or an uppercase letter are reserved for the implementation. By implementation, we mean the compiler + OS you're running on. You should not create any symbols that start this way.",
+      "reviews": []
+    }
+  ]
+}

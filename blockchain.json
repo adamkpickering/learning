@@ -1,0 +1,54 @@
+{
+  "name": "blockchain",
+  "version": 0,
+  "cards": [
+    {
+      "id": "phal1p7s0c",
+      "version": 0,
+      "active": true,
+      "question": "BTC: how do you tell how much bitcoin you have?",
+      "answer": "You have to go into the blockchain and find every transaction that has you as an output that has not been redeemed. It could be fast if somebody had gone through and indexed them based on your public key.",
+      "reviews": []
+    },
+    {
+      "id": "89cxqauhmu",
+      "version": 0,
+      "active": true,
+      "question": "BTC: how are miners rewarded for putting their compute time into the blockchain?",
+      "answer": "\"By convention, the first transaction in a block is a special transaction called a \"\"coinbase\"\" that assigns an amount of BTC to whoever the miner chooses. The amount of BTC assigned in a coinbase decreases over time.\"",
+      "reviews": []
+    },
+    {
+      "id": "yk61vm2e4j",
+      "version": 0,
+      "active": true,
+      "question": "BTC: what does an actual transaction look like?",
+      "answer": "A transaction can have multiple inputs and multiple outputs.    Each input consists of: 1) a hash of a previous transaction 2) the output index that it is redeeming 3) scriptSig, which is the first half of a script that specifies conditions that must be met to redeem this output; in the most common case it contains a public key and signature on a hash of a simplified version of the transaction, though it may specify all kinds of complicated scenarios (think: smart contracts).   Each output consists of: 1) the amount that is going to wherever the scriptPubKey field says 2) scriptPubKey, which is the other half of the script that specifies how the output can be redeemed   A common case is where one or more large outputs are used as inputs, and turned into two outputs. The first output is used to pay someone, and the second output is used to give oneself change.   See https://en.bitcoin.it/wiki/Transaction",
+      "reviews": []
+    },
+    {
+      "id": "8wdhrh1f8s",
+      "version": 0,
+      "active": true,
+      "question": "BTC: what are blocks? What is their purpose?",
+      "answer": "\"A block is a sequential group of transactions. As transactions are broadcasted to the network, computers that are \"\"mining\"\" record the transactions they receive. Then, once they win the proof of work lottery, they make the next block, adding it onto the end of the chain.   Blocks simultaneously: - group transactions - incentivize the building/maintenance of the blockchain - make it possible for an honest majority to keep the blockchain fair\"",
+      "reviews": []
+    },
+    {
+      "id": "lxa4iqs11o",
+      "version": 0,
+      "active": true,
+      "question": "BTC: in general terms, how does proof of work work?",
+      "answer": "\"The party that is doing the proof of work must come up with a string (the \"\"nonce\"\") that, when concatenated with the content of the previous block and fed through a one-way function, produces an output that matches very specific criteria.   The common example of these criteria is that the first n (30, 40, whatever) digits must equal zero. So the party that is doing the proof of work must come up with strings, and hash them together over and over with the challenge string until it finds one that matches the criteria.   Note that when one is found, it is easy to verify since you simply take the challenge plus the found proof, hash them, and check the output.\"",
+      "reviews": []
+    },
+    {
+      "id": "lxoj24fv04",
+      "version": 0,
+      "active": true,
+      "question": "BTC: why is the maximum number of bitcoins capped at 21 million?",
+      "answer": "Nobody but Satoshi Nakamoto knows.",
+      "reviews": []
+    }
+  ]
+}

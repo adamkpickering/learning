@@ -1,0 +1,742 @@
+{
+  "name": "networking",
+  "version": 0,
+  "cards": [
+    {
+      "id": "5qy7bc27hd",
+      "version": 0,
+      "active": true,
+      "question": "What type of protocol is BGP?",
+      "answer": "path vector",
+      "reviews": []
+    },
+    {
+      "id": "nmnnjdv7m1",
+      "version": 0,
+      "active": true,
+      "question": "What type of protocol is IS-IS?",
+      "answer": "link state",
+      "reviews": []
+    },
+    {
+      "id": "p0zu1bp5t5",
+      "version": 0,
+      "active": true,
+      "question": "What type of protocol is OSPF?",
+      "answer": "link state",
+      "reviews": []
+    },
+    {
+      "id": "wr8l6x6mgv",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between path vector and distance vector protocols?",
+      "answer": "generally nothing, path vector just more refers to BGP",
+      "reviews": []
+    },
+    {
+      "id": "p4ieslzgi1",
+      "version": 0,
+      "active": true,
+      "question": "advantages and disadvantages of link-state routing protocols",
+      "answer": "advantages: - better at finding the best path   disadvantages: - each node needs a total knowledge of network",
+      "reviews": []
+    },
+    {
+      "id": "iavgtzinvd",
+      "version": 0,
+      "active": true,
+      "question": "advantages and disadvantages of distance vector routing protocols",
+      "answer": "advantages: - lower requirements of routing nodes   disadvantages: - routing loops possible, so mechanisms must be included to prevent them - routes are going to be less efficient overall",
+      "reviews": []
+    },
+    {
+      "id": "hfh3bcf3tj",
+      "version": 0,
+      "active": true,
+      "question": "route poisoning is...?",
+      "answer": "prevents routing loops by advertising back a cost of infinity onto the interface from which it learned about the route",
+      "reviews": []
+    },
+    {
+      "id": "ici7nnnavy",
+      "version": 0,
+      "active": true,
+      "question": "holddown is...?",
+      "answer": "upon becoming aware of an unreachable network, a router gathers routes for a time and after a delay has elapsed, adopts the best one",
+      "reviews": []
+    },
+    {
+      "id": "x854w09a4b",
+      "version": 0,
+      "active": true,
+      "question": "Where are the ONT and OLT located?",
+      "answer": "ONT - in home OLT - in CO",
+      "reviews": []
+    },
+    {
+      "id": "ok7womvneu",
+      "version": 0,
+      "active": true,
+      "question": "version of PIM that we use",
+      "answer": "sparse mode (PIM-SM)",
+      "reviews": []
+    },
+    {
+      "id": "en0bf8zo19",
+      "version": 0,
+      "active": true,
+      "question": "prod A is the same as...",
+      "answer": "pre-prod",
+      "reviews": []
+    },
+    {
+      "id": "rzcm6bx1z1",
+      "version": 0,
+      "active": true,
+      "question": "is RPF effective at preventing loops in mesh networks?",
+      "answer": "yes - it depends on whatever routing protocol(s) is (are) making the routing table",
+      "reviews": []
+    },
+    {
+      "id": "xqegpx8h0f",
+      "version": 0,
+      "active": true,
+      "question": "main difference between VPRN and IES",
+      "answer": "VPRN has a separate routing table, whereas IES routes are added to the main routing table",
+      "reviews": []
+    },
+    {
+      "id": "6bgllwk7oh",
+      "version": 0,
+      "active": true,
+      "question": "how to get routes for specific vprn",
+      "answer": "show router 11 route-table",
+      "reviews": []
+    },
+    {
+      "id": "9dv987wulf",
+      "version": 0,
+      "active": true,
+      "question": "purpose of a terminal server",
+      "answer": "allows you to connect via serial connection, but remotely",
+      "reviews": []
+    },
+    {
+      "id": "denunv6mql",
+      "version": 0,
+      "active": true,
+      "question": "juniper switch",
+      "answer": "qfx ex",
+      "reviews": []
+    },
+    {
+      "id": "aesiz9pzlq",
+      "version": 0,
+      "active": true,
+      "question": "mx (erx) device type and manufacturer",
+      "answer": "juniper router",
+      "reviews": []
+    },
+    {
+      "id": "959xleqcvz",
+      "version": 0,
+      "active": true,
+      "question": "ex device type and manufacturer",
+      "answer": "juniper switch (less fancy)",
+      "reviews": []
+    },
+    {
+      "id": "lsitfm4khl",
+      "version": 0,
+      "active": true,
+      "question": "Why do we assign routers a single address? What is it called?",
+      "answer": "IS-IS can only track a limited number (10 000) of node addresses, loopback address",
+      "reviews": []
+    },
+    {
+      "id": "yjlj2ayt04",
+      "version": 0,
+      "active": true,
+      "question": "multihoming",
+      "answer": "where a network is connected to multiple other networks (ASes) for redundancy",
+      "reviews": []
+    },
+    {
+      "id": "7eacnromc2",
+      "version": 0,
+      "active": true,
+      "question": "MDA",
+      "answer": "media dependent adapter",
+      "reviews": []
+    },
+    {
+      "id": "gxpyaxez48",
+      "version": 0,
+      "active": true,
+      "question": "LAG",
+      "answer": "link aggregation group",
+      "reviews": []
+    },
+    {
+      "id": "8kokyam58g",
+      "version": 0,
+      "active": true,
+      "question": "LACP",
+      "answer": "link aggregation control protocol",
+      "reviews": []
+    },
+    {
+      "id": "c3xe4ni2hf",
+      "version": 0,
+      "active": true,
+      "question": "VSR",
+      "answer": "virtualized service router",
+      "reviews": []
+    },
+    {
+      "id": "aym33yaq0d",
+      "version": 0,
+      "active": true,
+      "question": "VPRN",
+      "answer": "virtual private routed network",
+      "reviews": []
+    },
+    {
+      "id": "e8z7tlgd6u",
+      "version": 0,
+      "active": true,
+      "question": "GRT",
+      "answer": "global routing table",
+      "reviews": []
+    },
+    {
+      "id": "9g01z9cso6",
+      "version": 0,
+      "active": true,
+      "question": "VPLS",
+      "answer": "virtual private LAN service",
+      "reviews": []
+    },
+    {
+      "id": "dc4a31hj5w",
+      "version": 0,
+      "active": true,
+      "question": "2/2/4:3425 what does this describe",
+      "answer": "slot 2, MDA 2, port 4, VLAN 3425",
+      "reviews": []
+    },
+    {
+      "id": "7ygyoyaxjs",
+      "version": 0,
+      "active": true,
+      "question": "get list of MDAs and what they look like",
+      "answer": "show mda",
+      "reviews": []
+    },
+    {
+      "id": "umwv4h8hiw",
+      "version": 0,
+      "active": true,
+      "question": "m2-10gb-xp-xfp means...?",
+      "answer": "is an MDA, 2 ports, each is 10 Gbit/s, xp is hardware generation, XFP physical interface",
+      "reviews": []
+    },
+    {
+      "id": "2hwrxnuvdk",
+      "version": 0,
+      "active": true,
+      "question": "shit hook",
+      "answer": "a physical connection between two ports on same router",
+      "reviews": []
+    },
+    {
+      "id": "12y6zl4f2b",
+      "version": 0,
+      "active": true,
+      "question": "TF refers to...?",
+      "answer": "a firewall",
+      "reviews": []
+    },
+    {
+      "id": "4dlmnh6e7s",
+      "version": 0,
+      "active": true,
+      "question": "SDP",
+      "answer": "service distribution point service destination point",
+      "reviews": []
+    },
+    {
+      "id": "c9qiqkt71g",
+      "version": 0,
+      "active": true,
+      "question": "what is a DR",
+      "answer": "stands for designated router; is a router that is elected (through PIM-SM Hello messages) on a single network segment to be the liason for multicast communications (both from source and to listeners)",
+      "reviews": []
+    },
+    {
+      "id": "lyhdfe67wo",
+      "version": 0,
+      "active": true,
+      "question": "how does PIM-SM work? Explain 3 phases.",
+      "answer": "1) Everything goes through RP 2) RP gets rid of unicast encapsulation by issuing (S, G) joins towards source 3) Receiver DRs issue (S, G) joins along better paths than the one already established",
+      "reviews": []
+    },
+    {
+      "id": "gciu4zkcaa",
+      "version": 0,
+      "active": true,
+      "question": "how does anycast work, and what are its disadvantages?",
+      "answer": "you assign the same IP address to multiple hosts, usually in different geographic areas. Disadvantages are that connection-based protocols don't work the greatest given that a PoP switch can happen mid-connection due to changing network conditions",
+      "reviews": []
+    },
+    {
+      "id": "ji34mc1qd9",
+      "version": 0,
+      "active": true,
+      "question": "port for DNS",
+      "answer": "53",
+      "reviews": []
+    },
+    {
+      "id": "b522irtsy7",
+      "version": 0,
+      "active": true,
+      "question": "four different zones in TTV network; what is in each?",
+      "answer": "head end - receivers \u0026 encoders LBE - mostly A servers branch - miscellaneous metadata, management  VSO - D server, V server, T server",
+      "reviews": []
+    },
+    {
+      "id": "irx2gj73zu",
+      "version": 0,
+      "active": true,
+      "question": "VRRP",
+      "answer": "virtual router redundancy protocol",
+      "reviews": []
+    },
+    {
+      "id": "g1frirrc57",
+      "version": 0,
+      "active": true,
+      "question": "order the five stages of TV middleware",
+      "answer": "Alcatel iMagicTV Media Manager (2005) Minerva iTVManager Middleware (2007) Microsoft Mediaroom (2010) Ericsson Mediaroom (2013) MediaKind Mediaroom (2018)",
+      "reviews": []
+    },
+    {
+      "id": "f3sog2hndb",
+      "version": 0,
+      "active": true,
+      "question": "how does instant channel change work?",
+      "answer": "~10s of channel is sent to STB as unicast while multicast gets its shit together",
+      "reviews": []
+    },
+    {
+      "id": "p9d5pvakch",
+      "version": 0,
+      "active": true,
+      "question": "IGMP snooping - why and how?",
+      "answer": "\"on many layer 2 networks, IP multicast packets must be broadcast. Since only one host wants the multicast this is inefficient. So, layer 2 devices (esp. DSLAMs, but can be switches etc) are made able to read IGMP joins etc, and adjust the layer 2 traffic forwarding so that they do \"\"unicast\"\", rather than \"\"broadcast\"\", on layer 2 for multicast packets\"",
+      "reviews": []
+    },
+    {
+      "id": "ksdhc60k1a",
+      "version": 0,
+      "active": true,
+      "question": "SSM vs ASM vs SFM",
+      "answer": "SSM means receivers subscribe to a specific (single) source ASM means receivers subscribe to group, and multicast can come from any source SFM means receivers subscribe to group, and multicast can come from a sanctioned group of sources",
+      "reviews": []
+    },
+    {
+      "id": "31sek4nlfz",
+      "version": 0,
+      "active": true,
+      "question": "SSM prefix",
+      "answer": "232.0.0.0/8",
+      "reviews": []
+    },
+    {
+      "id": "1y0b8gj4hn",
+      "version": 0,
+      "active": true,
+      "question": "5 kinds of PIM messages",
+      "answer": "Hello, Register, Join, Prune, Assert",
+      "reviews": []
+    },
+    {
+      "id": "qbsg027ozm",
+      "version": 0,
+      "active": true,
+      "question": "how do routers know where to forward (*, G) joins?",
+      "answer": "two (apparent) options: configure static routes, or use the bootstrap router (BSR) mechanism",
+      "reviews": []
+    },
+    {
+      "id": "e4tysn9ojf",
+      "version": 0,
+      "active": true,
+      "question": "SE",
+      "answer": "SDN edge",
+      "reviews": []
+    },
+    {
+      "id": "w7ju9e1qxo",
+      "version": 0,
+      "active": true,
+      "question": "difference between CS and CJ",
+      "answer": "vendor is only difference (CS: cisco; CJ: juniper)",
+      "reviews": []
+    },
+    {
+      "id": "3h0jt3et0i",
+      "version": 0,
+      "active": true,
+      "question": "HE",
+      "answer": "\"\"\"head end router\"\" but is actually a cisco switch\"",
+      "reviews": []
+    },
+    {
+      "id": "2yro2m5zx2",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between T servers and TS servers?",
+      "answer": "Nothing",
+      "reviews": []
+    },
+    {
+      "id": "cnwxys7nvn",
+      "version": 0,
+      "active": true,
+      "question": "What is a T server for? What does it stand for?",
+      "answer": "Stands for time shift server. Is responsible for restart TV, which is where you can start a show from the beginning even if you missed part of it (within a limited time frame).",
+      "reviews": []
+    },
+    {
+      "id": "amjc2geh40",
+      "version": 0,
+      "active": true,
+      "question": "Where did MediaFirst originate? What is its story?",
+      "answer": "Originated at Ericsson. Once Ericsson bought Mediaroom it forced MediaFirst on Mediaroom customers",
+      "reviews": []
+    },
+    {
+      "id": "6kg8yx6kfr",
+      "version": 0,
+      "active": true,
+      "question": "VSPP: what does it stand for, what is it, and how does it fit in?",
+      "answer": "video storage and processing platform Current one is by an Israeli company. Used in a lot of places, the primary one being new OTT services (PikTV etc). Being used for new smart cities camera stuff, with something (?) in front of it.",
+      "reviews": []
+    },
+    {
+      "id": "sfzp4ebovo",
+      "version": 0,
+      "active": true,
+      "question": "How is a VOD asset created and served?",
+      "answer": "Creation happens (not sure how) in branch network; from there it is uploaded to V servers, which serve it to STBs. Note that VSO (and V servers) are part of mediaroom architecture.",
+      "reviews": []
+    },
+    {
+      "id": "5o0bqzh42e",
+      "version": 0,
+      "active": true,
+      "question": "Other than the VSPP, what does the transcoder (XNC) send multicast to?",
+      "answer": "Probes, which are used by teams like Francis' team to debug the A/V pipeline",
+      "reviews": []
+    },
+    {
+      "id": "vhhvm6iop7",
+      "version": 0,
+      "active": true,
+      "question": "What does the allow-ip-int-bind flag do in a VPLS?",
+      "answer": "causes system to look for VPRN or IES that has same service-name and bind to it",
+      "reviews": []
+    },
+    {
+      "id": "8p0sg5njwl",
+      "version": 0,
+      "active": true,
+      "question": "What is the purpose of binding an IES or VPRN interface to a VPLS?",
+      "answer": "Think of the VPLS as a LAN (since it is an L2 VPN). The LAN needs a way to encapsulate traffic in layer 3 (IP), so the IES or VPRN interface acts as a gateway (like an RG) to the internet.",
+      "reviews": []
+    },
+    {
+      "id": "zzlruigonk",
+      "version": 0,
+      "active": true,
+      "question": "what is a BGP community?",
+      "answer": "A way of grouping prefixes so that they can be treated a particular way. Some examples are L3 VPNs, groups based on geography, DoS avoidance",
+      "reviews": []
+    },
+    {
+      "id": "w3mkxsp5o8",
+      "version": 0,
+      "active": true,
+      "question": "how to configure routing protocol policy on 7750?",
+      "answer": "configure router policy-options \u003cpolicy-statement|prefix-list|community\u003e",
+      "reviews": []
+    },
+    {
+      "id": "zdgfatdrpy",
+      "version": 0,
+      "active": true,
+      "question": "how are entries within policy statements run?",
+      "answer": "Can be first one, or first one can take action of sending the route to the next entry or policy",
+      "reviews": []
+    },
+    {
+      "id": "9fjs4ll2yj",
+      "version": 0,
+      "active": true,
+      "question": "ipv6 wildcard address",
+      "answer": "::/128",
+      "reviews": []
+    },
+    {
+      "id": "8okl2q898t",
+      "version": 0,
+      "active": true,
+      "question": "ipv6 loopback address",
+      "answer": "::1/128",
+      "reviews": []
+    },
+    {
+      "id": "8bqxg435uh",
+      "version": 0,
+      "active": true,
+      "question": "ipv6 default route",
+      "answer": "::/0",
+      "reviews": []
+    },
+    {
+      "id": "f8d3f82o8l",
+      "version": 0,
+      "active": true,
+      "question": "ipv6 link-local address subnet",
+      "answer": "fe80::/10",
+      "reviews": []
+    },
+    {
+      "id": "mpwiu3ortc",
+      "version": 0,
+      "active": true,
+      "question": "ipv6 multicast address subnet",
+      "answer": "ff00::/8",
+      "reviews": []
+    },
+    {
+      "id": "ma5fru9ot4",
+      "version": 0,
+      "active": true,
+      "question": "ipv4 unique local address subnets",
+      "answer": "192.168.0.0/16 10.0.0.0/8 172.16.0.0/12",
+      "reviews": []
+    },
+    {
+      "id": "8x6qj93je5",
+      "version": 0,
+      "active": true,
+      "question": "Name the 10 most common types of DNS records. What are they for?",
+      "answer": "A - maps IPv4 address to FQDN AAAA - maps IPv6 address to FQDN CNAME - maps a single FQDN to another DNAME - maps a domain and its subdomains to another domain, keeping the subdomains MX - identifies mail servers to which mail should be delivered for a domain NS - identifies the authoritative name server for a specific zone SOA - start of authority; stores zone metadata TXT - provides a way to store arbitrary data in DNS record SRV - defines the hostname and port number of a service PTR - used for reverse DNS; stores a domain name",
+      "reviews": []
+    },
+    {
+      "id": "ztm1bh9gvg",
+      "version": 0,
+      "active": true,
+      "question": "What exactly is a DNS zone?",
+      "answer": "A grouping of one or more domains and subdomains under common administration",
+      "reviews": []
+    },
+    {
+      "id": "ny433103cv",
+      "version": 0,
+      "active": true,
+      "question": "Why are the first and last address of every IPv4 subnet reserved, and what are they for?",
+      "answer": "\"first (all zeros) - is the \"\"subnet name\"\", which refers to the subnet itself; hosts cannot be given this IP address, unless the subnet is a /31 last (all ones) - is the \"\"broadcast address\"\"; used by some procols (DHCP, RIPv1) to send messages to all connected devices in the subnet\"",
+      "reviews": []
+    },
+    {
+      "id": "gsefpp5tn1",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between NETCONF and YANG?",
+      "answer": "NETCONF is the encapsulating protocol, with a variety of request types, capability negotiation etc. It is the equivalent of HTTP in a REST API.   YANG is a standardized (?) way to encode your network device configurations. It is the equivalent of JSON in a REST API. It is the payload.",
+      "reviews": []
+    },
+    {
+      "id": "8fczglh175",
+      "version": 0,
+      "active": true,
+      "question": "What are the nine request types in NETCONF? What do they do?",
+      "answer": "get: get running configuration and device state info get-config: retrieve all or part of a specific config datastore edit-config: loads all or part of specific config to config datastore copy-config: overwrites a config datastore with another delete-config: deletes a config datastore lock: locks a config datastore so only this client can change it unlock: unlocks a config datastore close-session: gracefully terminates the session kill-session: force quits the session",
+      "reviews": []
+    },
+    {
+      "id": "7pccs0cgr9",
+      "version": 0,
+      "active": true,
+      "question": "What are the basic units of information for: Ethernet IP TCP UDP",
+      "answer": "Ethernet: frame IP: packet TCP: segment UDP: datagram",
+      "reviews": []
+    },
+    {
+      "id": "0w1t1yj46w",
+      "version": 0,
+      "active": true,
+      "question": "4 types of YANG nodes",
+      "answer": "leaf: a single value with a single type leaf-list: a list of leafs, all with the same type container: a way of grouping other nodes list: a sequence of any nodes, where at least one is a leaf node that is designated as a key",
+      "reviews": []
+    },
+    {
+      "id": "wcb0ete1bc",
+      "version": 0,
+      "active": true,
+      "question": "Two other names for QinQ?",
+      "answer": "Stacked VLANs, provider bridging",
+      "reviews": []
+    },
+    {
+      "id": "c6ez2hfg3g",
+      "version": 0,
+      "active": true,
+      "question": "What are the 8 parts of TINAA?",
+      "answer": "monitor executor pub-sub plan/control data cluster analytics platform control portal",
+      "reviews": []
+    },
+    {
+      "id": "6pyrrlko1e",
+      "version": 0,
+      "active": true,
+      "question": "What is VXLAN?",
+      "answer": "Virtual Extensible LAN  Can be thought of as an evolution of VLANs, in the same vein as QinQ. There are a limited number of VLANs (~4096). VXLAN encapsulates layer 2 Ethernet frames in UDP datagrams, using port 4789 by default.",
+      "reviews": []
+    },
+    {
+      "id": "xrz4u51l6e",
+      "version": 0,
+      "active": true,
+      "question": "What is DNAT? SNAT? Where might they be used?",
+      "answer": "DNAT: destination network address translation SNAT: source network address translation   DNAT might be used in k8s when iptables translates a service IP to a pod IP for traffic that is coming in SNAT would be used when a pod is sending traffic out to the internet; the pod IP (which is not routable on the internet) would be translated to the node IP, which is a routable address",
+      "reviews": []
+    },
+    {
+      "id": "l9m13q2j4p",
+      "version": 0,
+      "active": true,
+      "question": "IPv6 unique local address subnets (which is probabilistically unique and which is globally unique?)",
+      "answer": "fc00::/7 fc00::/8 is globally allocated fd00::/8 is probabilistically unique",
+      "reviews": []
+    },
+    {
+      "id": "5z7db0lsrv",
+      "version": 0,
+      "active": true,
+      "question": "In DHCP, which port is associated with the client, and which is associated with the server?",
+      "answer": "server -\u003e 67 client -\u003e 68",
+      "reviews": []
+    },
+    {
+      "id": "6eagiiuauz",
+      "version": 0,
+      "active": true,
+      "question": "Name the 4 types of DHCP messages, and explain what they are for.",
+      "answer": "discover: initial message from client, to broadcast address   offer: from server, offering an IP address   request: used by client to accept an offer from a server (the client may have received offers from multiple servers)   acknowledge: server sends this to finalize details of network configuration on client",
+      "reviews": []
+    },
+    {
+      "id": "61jzj8n6d3",
+      "version": 0,
+      "active": true,
+      "question": "In Linux networking, what is the difference between tun, tap, and tunnel?",
+      "answer": "tun/tap: allow userspace programs to emulate a network device; the emulating program gets an fd, so that reads from the fd get whatever is written to the network interface, and writes to the fd send traffic out on the network interface.   tap -\u003e sends and receives raw Ethernet frames tun -\u003e sends and receives raw IP packets   tunnel: a networking device that sends traffic put on it through some kind of tunnel",
+      "reviews": []
+    },
+    {
+      "id": "6p8y6cr2q3",
+      "version": 0,
+      "active": true,
+      "question": "What are the 5 relevant flags in TCP, and what do they mean?",
+      "answer": "SYN: used to request a connection ACK: indicates that the ack field is significant PSH: asks to push the buffered data to the receiving application (not reliably implemented), or says that the sender's buffer has been emptied with this message FIN: used to indicate the sender has no more data to send RST: used to indicate connection close from receiver end",
+      "reviews": []
+    },
+    {
+      "id": "71qh117ngb",
+      "version": 0,
+      "active": true,
+      "question": "What layer 4 protocol does CoAP use?",
+      "answer": "UDP",
+      "reviews": []
+    },
+    {
+      "id": "97e614q1lv",
+      "version": 0,
+      "active": true,
+      "question": "- How does ARP work? - What is the ethernet broadcast address?",
+      "answer": "Computer 1 wants to send an IP packet to computer 2, whose IP address it knows. However, it needs its MAC address in order to construct the ethernet frame that encapsulates the IP packet.   In order to find the MAC address, it first checks its ARP table, which contains a cache of IP address -\u003e MAC address mappings. If it does not find a match there, it issues an ARP request to the ethernet broadcast address, FF:FF:FF:FF:FF:FF, which is sent to all computers on the network. Computer 2 receives this request, and responds with an ARP message containing its MAC address and IP address. Computer 1 can then assemble its ethernet frame.",
+      "reviews": []
+    },
+    {
+      "id": "kkch1s7yph",
+      "version": 0,
+      "active": true,
+      "question": "What layer 4 protocol does GRE use?",
+      "answer": "None - it has its own header format and runs on top of IPv4 or IPv6",
+      "reviews": []
+    },
+    {
+      "id": "ry5eqn4qr6",
+      "version": 0,
+      "active": true,
+      "question": "TCP: what are the sequence number and acknowledgement number fields for?",
+      "answer": "seq number: the byte number that the connection is supposed to be at; if SYN is set, then this is the initial byte number; if SYN is not set, then this is the byte number of the first data byte of this segment for the current connection   ack number: only included when ACK is set; is the sequence number of the first subsequently expected byte; acknowledges receipt of all prior bytes",
+      "reviews": []
+    },
+    {
+      "id": "5vdgi0l9me",
+      "version": 0,
+      "active": true,
+      "question": "What is SCTP?",
+      "answer": "\"Stands for tream control transmission protocol. It is a layer 4 protocol. It was originally intended for \"\"signaling system 7\"\", which was a protocol for set up and tear down of telephone calls in the PSTN. So it's basically a protocol for set up of pipes across a network. You can think of it as TCP++.\"",
+      "reviews": []
+    },
+    {
+      "id": "z5go34ypkx",
+      "version": 0,
+      "active": true,
+      "question": "What does the TCP PSH flag indicate?",
+      "answer": "By convention, the PSH flag is set when the sending side's TCP send buffer is emptied with the sending of this segment.   Also, there is buffering on the receiving side. If the receiving side receives a segment with the PSH flag set, it should do its best to immediately push the data in that segment to the listening application. However, this is not reliably implemented.",
+      "reviews": []
+    },
+    {
+      "id": "k03mxqxjkg",
+      "version": 0,
+      "active": true,
+      "question": "What is a reverse DNS lookup used for? For the IPv4 address 1.2.3.4, what DNS record do I look at to find out its domain? What is the type of the DNS record?",
+      "answer": "It is used to figure out what domain name an IP address is associated with.   You look for a PTR record at 4.3.2.1.in-addr.arpa .",
+      "reviews": []
+    },
+    {
+      "id": "62wo7rn24c",
+      "version": 0,
+      "active": true,
+      "question": "What is the root domain for reverse DNS entries for IPv6? What was it previously?",
+      "answer": ".ip6.arpa   previously: .ip6.int",
+      "reviews": []
+    },
+    {
+      "id": "cn5zgarj6t",
+      "version": 0,
+      "active": true,
+      "question": "What is PPP?",
+      "answer": "\"Stands for Point to Point Protocol. Is a layer 2 protocol for use between two hosts. The two hosts form a \"\"network\"\" all by themselves.\"",
+      "reviews": []
+    },
+    {
+      "id": "xfgh1zav7n",
+      "version": 0,
+      "active": true,
+      "question": "What is SLiRP?",
+      "answer": "It is a program that emulates a PPP, SLIP, or CSLIP connection to the internet using a text-based shell account. Used for firewall piercing/port forwarding.   One can create a general purpose network connection over an SSH session on which port forwarding is restricted. Another use case is to create external network connectivity for unprivileged containers (see slirp4netns).",
+      "reviews": []
+    }
+  ]
+}

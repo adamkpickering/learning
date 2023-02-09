@@ -1,0 +1,1758 @@
+{
+  "name": "golang",
+  "version": 0,
+  "cards": [
+    {
+      "id": "or5yiju008",
+      "version": 0,
+      "active": true,
+      "question": "declare an array of four strings",
+      "answer": "var x [4]string",
+      "reviews": []
+    },
+    {
+      "id": "c7u12naek6",
+      "version": 0,
+      "active": true,
+      "question": "define implicitly typed int",
+      "answer": "x := 4",
+      "reviews": []
+    },
+    {
+      "id": "vkbgfkofla",
+      "version": 0,
+      "active": true,
+      "question": "for loop",
+      "answer": "for i := 0; i \u003c 10; i++ { fmt.Println(i) }",
+      "reviews": []
+    },
+    {
+      "id": "0g47mnuzxc",
+      "version": 0,
+      "active": true,
+      "question": "if statement",
+      "answer": "if number := 4; number \u003e 5 { statements here }",
+      "reviews": []
+    },
+    {
+      "id": "al2hycj8re",
+      "version": 0,
+      "active": true,
+      "question": "create an infinite loop",
+      "answer": "for { statements here }",
+      "reviews": []
+    },
+    {
+      "id": "c4b1ikf9zp",
+      "version": 0,
+      "active": true,
+      "question": "create a while loop",
+      "answer": "for i \u003c 3 { statements }",
+      "reviews": []
+    },
+    {
+      "id": "pvsjmkyrxy",
+      "version": 0,
+      "active": true,
+      "question": "three rules of defer",
+      "answer": "1) a deferred functions arguments are evaluated when the defer statement is evaluated 2) deferred function calls are executed in last in first out order after the surrounding function returns 3) deferred functions may read and assign to the returning function's named return values",
+      "reviews": []
+    },
+    {
+      "id": "75ugyu0iyp",
+      "version": 0,
+      "active": true,
+      "question": "define the fmt.Stringer interface",
+      "answer": "type Stringer interface { String() string }",
+      "reviews": []
+    },
+    {
+      "id": "1nefkc3bzo",
+      "version": 0,
+      "active": true,
+      "question": "Define the error interface.",
+      "answer": "type error interface {     Error() string }",
+      "reviews": []
+    },
+    {
+      "id": "mg4okn60t4",
+      "version": 0,
+      "active": true,
+      "question": "closure syntax",
+      "answer": "func(i int, f float) int {statements}",
+      "reviews": []
+    },
+    {
+      "id": "a7txpxz2df",
+      "version": 0,
+      "active": true,
+      "question": "define io.Reader",
+      "answer": "type io.Reader interface {     Read(b []byte) (int, error) }",
+      "reviews": []
+    },
+    {
+      "id": "ivze8dnu8s",
+      "version": 0,
+      "active": true,
+      "question": "what is an interface, under the hood?",
+      "answer": "a tuple: (value, type)",
+      "reviews": []
+    },
+    {
+      "id": "arc6hd8luo",
+      "version": 0,
+      "active": true,
+      "question": "what is the empty interface?",
+      "answer": "an interface that has no methods; you can assign any type to an empty interface",
+      "reviews": []
+    },
+    {
+      "id": "bij6jj2rfk",
+      "version": 0,
+      "active": true,
+      "question": "what happens if you call a method on a nil interface?",
+      "answer": "you get a runtime error",
+      "reviews": []
+    },
+    {
+      "id": "te6f1zz2s1",
+      "version": 0,
+      "active": true,
+      "question": "{-, F, S}print{-, f, ln}",
+      "answer": "beginning: - - to io.Stdout F - to io.Writer interface passed as argument S - to string passed as argument end: - - simply print arguments without spaces (unless two consecutive are not strings) or newline f - print according to format string ln - print with newline and spaces between args",
+      "reviews": []
+    },
+    {
+      "id": "6b9knatx4c",
+      "version": 0,
+      "active": true,
+      "question": "What group of functions are pretty much useless? Why?",
+      "answer": "The fmt.*scan* functions. They break input up based on spaces which is highly opinionated and not very useful.",
+      "reviews": []
+    },
+    {
+      "id": "b5604ol5gl",
+      "version": 0,
+      "active": true,
+      "question": "Function signature of the function that is used to copy elements from one slice to another?",
+      "answer": "func copy(dst, src []Type) int",
+      "reviews": []
+    },
+    {
+      "id": "1cdlwrkcih",
+      "version": 0,
+      "active": true,
+      "question": "What is weird about this function? func hello() (n int) {     n = 4     return n }",
+      "answer": "the return value also acts as a variable declaration",
+      "reviews": []
+    },
+    {
+      "id": "fmdb00fvqx",
+      "version": 0,
+      "active": true,
+      "question": "four types in the bufio package; how do you make them?",
+      "answer": "func NewReader(rd io.Reader) *Reader  func NewWriter(wr io.Writer) *Writer func NewReadWriter(rw io.ReadWriter) *ReadWriter func NewScanner(rd io.Reader) *Scanner",
+      "reviews": []
+    },
+    {
+      "id": "vhwd8vef06",
+      "version": 0,
+      "active": true,
+      "question": "How do you get command line args? What is the type of this variable?",
+      "answer": "os.Args []string",
+      "reviews": []
+    },
+    {
+      "id": "bh2xvx5hgq",
+      "version": 0,
+      "active": true,
+      "question": "function signature to convert string to float",
+      "answer": "func strconv.ParseFloat(str string, bits int) (float64, error)",
+      "reviews": []
+    },
+    {
+      "id": "yjuqpzp01w",
+      "version": 0,
+      "active": true,
+      "question": "function signature to convert string to int",
+      "answer": "func strconv.ParseInt(str string, base int, bits int) (int64, error)",
+      "reviews": []
+    },
+    {
+      "id": "ukz94zsw4q",
+      "version": 0,
+      "active": true,
+      "question": "function signature to convert string to uint",
+      "answer": "func strconv.ParseUint(s string, base, bits int) (uint64, error)",
+      "reviews": []
+    },
+    {
+      "id": "0m3p4hstjd",
+      "version": 0,
+      "active": true,
+      "question": "What are the two ways to create the multi-line string:   hello bye",
+      "answer": "\"s := \"\"hello\\n\"\" +      \"\"bye\"\"   s := `hello bye`\"",
+      "reviews": []
+    },
+    {
+      "id": "y0n53klwxs",
+      "version": 0,
+      "active": true,
+      "question": "differences between os.Exit and panic",
+      "answer": "os.Exit *only* exits with an exit code; panic is involved with unwinding the stack, calling deferred functions, potentially being caught by recover etc",
+      "reviews": []
+    },
+    {
+      "id": "r3v7wk6n4j",
+      "version": 0,
+      "active": true,
+      "question": "When should panic be used, and when should an error be returned?",
+      "answer": "Panic is used *only* when the program has reached an unrecoverable state; returning an error is done everywhere else.",
+      "reviews": []
+    },
+    {
+      "id": "32mip3u9k2",
+      "version": 0,
+      "active": true,
+      "question": "Declare a structure, MyStruct with two elements: - an int that is externally accessible - and a float32 that is not externally accessible.",
+      "answer": "type MyStruct struct {   X int   y float32 }",
+      "reviews": []
+    },
+    {
+      "id": "2ovxfkh5a7",
+      "version": 0,
+      "active": true,
+      "question": "type Vertex struct {   X int   Y int } three ways to define? How are multiple lines done?",
+      "answer": "Vertex{1, 2} Vertex{X: 1, Y: 2} Vertex{} Vertex{     X: 1,     Y: 2, }",
+      "reviews": []
+    },
+    {
+      "id": "ipx7dt47nq",
+      "version": 0,
+      "active": true,
+      "question": "are semicolons necessary in Go?",
+      "answer": "In most cases no; the lexer inserts semicolons in places that need them. However, you can use semicolons to separate multiple statements on the same line",
+      "reviews": []
+    },
+    {
+      "id": "d0y9r4ywjj",
+      "version": 0,
+      "active": true,
+      "question": "How do type switches work? What is the syntax?",
+      "answer": "Type switches are a special construct. Don't try to understand them by comparing them to other types of switch-case. The syntax is as follows:    switch v := i.(type) { case bool:   // v is of type bool case int:   // v is of type int case *int:   // v is of type *int default:   // v has the same type as i }",
+      "reviews": []
+    },
+    {
+      "id": "05sw99ypya",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function that is used to open a file",
+      "answer": "func os.Open(path string) (*os.File, error)",
+      "reviews": []
+    },
+    {
+      "id": "aa12kvyf4u",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to add elements to the end of a slice? How would you use it?",
+      "answer": "func append(slice []Type, elems ...Type) []Type   slice = append(slice, elem1, elem2)   It is important to assign the result of append to the variable that you are appending to. This is because the slice will be reallocated if it does not have the capacity for the new elements.",
+      "reviews": []
+    },
+    {
+      "id": "d5tm1x134u",
+      "version": 0,
+      "active": true,
+      "question": "What does ... mean? What is it called?",
+      "answer": "\"It is a \"\"variadic parameter\"\"; provides a slice of the noted type under the parameter name.\"",
+      "reviews": []
+    },
+    {
+      "id": "yisk5ab08a",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to encode data into JSON?",
+      "answer": "func json.Marshal(v interface{}) ([]byte, error)",
+      "reviews": []
+    },
+    {
+      "id": "tjygy81e5l",
+      "version": 0,
+      "active": true,
+      "question": "de-encode json data function signature",
+      "answer": "func json.Unmarshal(data []byte, v interface{}) error",
+      "reviews": []
+    },
+    {
+      "id": "0rbgnp6wnt",
+      "version": 0,
+      "active": true,
+      "question": "For arbitrary JSON, what type is a JSON number translated to?",
+      "answer": "float64",
+      "reviews": []
+    },
+    {
+      "id": "tmug7gm7sk",
+      "version": 0,
+      "active": true,
+      "question": "Can the type of a variable change?",
+      "answer": "no",
+      "reviews": []
+    },
+    {
+      "id": "8wobm89do2",
+      "version": 0,
+      "active": true,
+      "question": "\"var i interface{} = \"\"hello\"\" integer := i.(int) what happens?\"",
+      "answer": "we get a panic",
+      "reviews": []
+    },
+    {
+      "id": "210ep38qvx",
+      "version": 0,
+      "active": true,
+      "question": "type assertion syntax",
+      "answer": "var i interface{} = int(4) x := i.(int)              // panics if i is not of type int y, ok := i.(float)     // lets you check ok before using y",
+      "reviews": []
+    },
+    {
+      "id": "i05tr7reeu",
+      "version": 0,
+      "active": true,
+      "question": "how to exit a program with exit code 1?",
+      "answer": "os.Exit(1)",
+      "reviews": []
+    },
+    {
+      "id": "f8dc0ujm4q",
+      "version": 0,
+      "active": true,
+      "question": "difference between declaration and definition",
+      "answer": "declaration is merely stating that the variable exists; definition is defining its value",
+      "reviews": []
+    },
+    {
+      "id": "88g0rd5b2y",
+      "version": 0,
+      "active": true,
+      "question": "four ways to define a zeroed struct",
+      "answer": "var a MyStruct var a = MyStruct{} a := MyStruct{} a := *new(MyStruct)",
+      "reviews": []
+    },
+    {
+      "id": "nh4e4j12ua",
+      "version": 0,
+      "active": true,
+      "question": "why does new() exist?",
+      "answer": "It was there before \u0026S{}; it is, indeed, superfluous",
+      "reviews": []
+    },
+    {
+      "id": "euduicull6",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between defining variables with var and defining variables with := ?",
+      "answer": "- only var can be used when not in a block - only := can be used to do multiple return",
+      "reviews": []
+    },
+    {
+      "id": "2a9rzntyqa",
+      "version": 0,
+      "active": true,
+      "question": "Define the io.Reader interface for the type MyObject",
+      "answer": "func (o MyObject) Read(b []byte) (int, error) {     statements }",
+      "reviews": []
+    },
+    {
+      "id": "h2qb15f9up",
+      "version": 0,
+      "active": true,
+      "question": "create a channel that sends/receives type MyStruct with a buffer size of 20",
+      "answer": "my_chan := make(chan MyStruct, 20)",
+      "reviews": []
+    },
+    {
+      "id": "m7yr4rt780",
+      "version": 0,
+      "active": true,
+      "question": "close a channel; where must this always be done from?",
+      "answer": "close(my_channel) This must always be done from the sender",
+      "reviews": []
+    },
+    {
+      "id": "ut1srvdlok",
+      "version": 0,
+      "active": true,
+      "question": "val, ok := \u003c-my_chan What are the two possible values of ok, and what do they signify?",
+      "answer": "ok is true if we got a valid value in val ok is false if the channel is closed and there are no more values to receive",
+      "reviews": []
+    },
+    {
+      "id": "7wnv3qfx2s",
+      "version": 0,
+      "active": true,
+      "question": "sleep for 4 seconds",
+      "answer": "time.Sleep(4 * time.Second)",
+      "reviews": []
+    },
+    {
+      "id": "e2rtk1zu43",
+      "version": 0,
+      "active": true,
+      "question": "select from channels ch1 and ch2",
+      "answer": "select { case a, ok := \u003c-ch1:   fmt.Println(a) case a, ok := \u003c-ch2:   fmt.Println(a) }",
+      "reviews": []
+    },
+    {
+      "id": "elok53244e",
+      "version": 0,
+      "active": true,
+      "question": "define a map with string keys and integer values",
+      "answer": "\"a := map[string]int{   \"\"hello\"\": 4,   \"\"world\"\": 5, }\"",
+      "reviews": []
+    },
+    {
+      "id": "wwzwl0g5p3",
+      "version": 0,
+      "active": true,
+      "question": "retrieve a value from a map, checking if the key exists",
+      "answer": "a, ok := my_map[key] if ok {...}",
+      "reviews": []
+    },
+    {
+      "id": "88ig9u8dvw",
+      "version": 0,
+      "active": true,
+      "question": "insert or update value in a map",
+      "answer": "my_map[key] = my_var",
+      "reviews": []
+    },
+    {
+      "id": "5q4c155o92",
+      "version": 0,
+      "active": true,
+      "question": "How do you remove a key-value pair from a map?",
+      "answer": "delete(my_map, key)",
+      "reviews": []
+    },
+    {
+      "id": "mqijjskkvd",
+      "version": 0,
+      "active": true,
+      "question": "Define the time.Duration type. What does this number represent?",
+      "answer": "type time.Duration int64 nanoseconds",
+      "reviews": []
+    },
+    {
+      "id": "1cqcarq5w6",
+      "version": 0,
+      "active": true,
+      "question": "What is io.EOF?",
+      "answer": "\"var io.EOF = errors.New(\"\"EOF\"\")\"",
+      "reviews": []
+    },
+    {
+      "id": "ebljhnyvwi",
+      "version": 0,
+      "active": true,
+      "question": "\"Function to wrap an error \"\"err\"\" in another error\"",
+      "answer": "\"wrapped_err := fmt.Errorf(\"\"another layer: %w\"\", err)\"",
+      "reviews": []
+    },
+    {
+      "id": "112y96yd18",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function used to create a new error?",
+      "answer": "func errors.New(msg string) error",
+      "reviews": []
+    },
+    {
+      "id": "potjyp0k24",
+      "version": 0,
+      "active": true,
+      "question": "Function signature of function that lets you get at a wrapped error? How does this work?",
+      "answer": "func errors.Unwrap(err error) error   Returns the result of calling the Unwrap method on err, if its type contains an Unwrap method. Otherwise, returns nil.",
+      "reviews": []
+    },
+    {
+      "id": "irqsewsceq",
+      "version": 0,
+      "active": true,
+      "question": "What are the 8 keywords for actions in golang templates, and what does each do?",
+      "answer": "\"if, else, end, range, with, block, define, template   {{ if pipeline }}   T1 {{ else if pipeline }}   T2 {{ else }}   T3 {{ end }}   {{ range pipeline }}   T1 {{ end }}   {{ with pipeline }}   T1 {{ end }}   {{ block \"\"name\"\" pipeline }}   T1 {{ end}}   {{ define \"\"name\"\" }}   T1 {{ end }} {{ template \"\"name\"\" pipeline }}\"",
+      "reviews": []
+    },
+    {
+      "id": "syxemusjfw",
+      "version": 0,
+      "active": true,
+      "question": "What are the differences between the three types of quotes?",
+      "answer": "\"` `: raw string literal ' ': single rune/character \"\" \"\": string literal with backslash escaping\"",
+      "reviews": []
+    },
+    {
+      "id": "q8i2bwt0px",
+      "version": 0,
+      "active": true,
+      "question": "What are the two steps to using a template?",
+      "answer": "1) Assemble parse tree for template 2) Execute template, passing in structure/map to be used in vars",
+      "reviews": []
+    },
+    {
+      "id": "yh8m894wga",
+      "version": 0,
+      "active": true,
+      "question": "For the method   func (t *Template) Parse(text string) (*Template, error) {...}   why do we pass *Template rather than Template?",
+      "answer": "Parse is a method that modifies the passed structure. If we pass the struct itself then the function receives a copy of the struct. If that copy is modified, all changes to it are discarded once the function exits.   If we pass a pointer to the struct, then any modifications done to the struct inside the function persist once the function exits.",
+      "reviews": []
+    },
+    {
+      "id": "n6e8v0ymr2",
+      "version": 0,
+      "active": true,
+      "question": "For the following types, state whether the bare type is a pointer or a value. What is the rule of thumb?   number (int, float etc) array slice struct map channel interface",
+      "answer": "number (int, float etc)     value  array                       value slice                       pointer struct                      value map                         pointer channel                     pointer interface                   pointer   If it is allocated with make(), it is a pointer.",
+      "reviews": []
+    },
+    {
+      "id": "ocxrrx1xx0",
+      "version": 0,
+      "active": true,
+      "question": "Send variable val on a ch1",
+      "answer": "ch1 \u003c- val",
+      "reviews": []
+    },
+    {
+      "id": "f8e8n9m2u8",
+      "version": 0,
+      "active": true,
+      "question": "How to get a blocking select statement, versus a nonblocking select statement?",
+      "answer": "\"select statements are blocking by default; to make them nonblocking, include the \"\"default\"\" case, whose code runs when no other case is ready to run\"",
+      "reviews": []
+    },
+    {
+      "id": "48s976jed4",
+      "version": 0,
+      "active": true,
+      "question": "What is the purpose of the GOPATH env var, both in pre and post module go? What is its default value?",
+      "answer": "pre-modules: the GOPATH env var specifies the location of your Golang workspace   post-module: still specifies location of workspace, but workspace isn't used as an active place to develop code   default: ~/go",
+      "reviews": []
+    },
+    {
+      "id": "n7971kcxtd",
+      "version": 0,
+      "active": true,
+      "question": "What is a workspace? What are the common dirs it contains, and what does each contain?",
+      "answer": "Note: legacy (GOPATH, pre-modules) concept. A workspace is a standard hierarchy that is used to develop and run go applications.   src: contains source code, *including* packages containing source code   pkg: contains binary packages   bin: contains compiled commands (packages with name main)",
+      "reviews": []
+    },
+    {
+      "id": "ghph7sagjf",
+      "version": 0,
+      "active": true,
+      "question": "What is a go package?In which two places does the name of a package appear?",
+      "answer": "A package is just a directory that contains .go files.  1) The directory containing the package must bear the name of the package   2) In the package statement at the top of each .go file",
+      "reviews": []
+    },
+    {
+      "id": "cs22lxzp9m",
+      "version": 0,
+      "active": true,
+      "question": "What are the two kinds of packages?",
+      "answer": "source packages and compiled packages (not unlike libraries)",
+      "reviews": []
+    },
+    {
+      "id": "bqrtznow5z",
+      "version": 0,
+      "active": true,
+      "question": "When is module-aware mode active?",
+      "answer": "Whenever a go.mod file is found in the current directory or any parent directory.",
+      "reviews": []
+    },
+    {
+      "id": "hslpsjplc2",
+      "version": 0,
+      "active": true,
+      "question": "What is a go module?",
+      "answer": "A collection of source packages with a go.mod at its root. go.mod tracks the external dependencies, and their versions, that the packages in the module depend on.",
+      "reviews": []
+    },
+    {
+      "id": "xlnzz5qm3r",
+      "version": 0,
+      "active": true,
+      "question": "What are the three important keywords in a go.mod file, and what do they mean?",
+      "answer": "module: defines the module path (ex. github.com/squat/kilo) go: sets the expected golang version (ex. 1.13)  require: requires a module for this at a particular version or later",
+      "reviews": []
+    },
+    {
+      "id": "5cbrk13di9",
+      "version": 0,
+      "active": true,
+      "question": "pre-module: how is the following tree built? Which packages and bins result, and where are they stored?    src/   foo/     bar/        myfile.go (package bar)     asdf/        main.go (package main)",
+      "answer": "src/... pkg/ARCH/foo/bar.a (installed package object) bin/asdf (command asdf)",
+      "reviews": []
+    },
+    {
+      "id": "r6f7tduo0z",
+      "version": 0,
+      "active": true,
+      "question": "What determines whether code in a file is turned into an installed package object or an executable command?",
+      "answer": "package main -\u003e executable command   package anything_else -\u003e package object",
+      "reviews": []
+    },
+    {
+      "id": "6psjgiqsa3",
+      "version": 0,
+      "active": true,
+      "question": "What are the four types of import paths, explain what they are?",
+      "answer": "standard (built-in) workspace(local) relative remote",
+      "reviews": []
+    },
+    {
+      "id": "gpltssqhi8",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between `go get` pre-modules vs post-modules?",
+      "answer": "Pre-modules: `go get` simply downloads the package to GOPATH/src/\u003cpackage_path\u003e, then builds and installs it like any other package.   Post-modules: `go get` first updates the package record in go.mod, and then downloads the package (and its dependencies) to GOPATH/pkg/mod/\u003cpackage_path\u003e and installs the package and its dependencies to the cache.",
+      "reviews": []
+    },
+    {
+      "id": "r03ro2tf92",
+      "version": 0,
+      "active": true,
+      "question": "\"For the struct:   type MyStruct struct {   Field1 int   Field2 string   Field3 float }   Annotate Field1 so that it is serialized to JSON as the key \"\"hello_world\"\", and not included if its value evaluates to false. Annotate Field2 so that it is never included when the struct is serialized. Annotate Field3 so that its value is converted to a string when serialized.\"",
+      "answer": "\"JSON struct tags are used only when using json.Marshal() to serialize a struct into a JSON object. They are not used in json.Unmarshal().  type MyStruct struct {   Field1 int     `json:\"\"hello_world,omitempty\"\"`   Field2 string  `json:\"\"-\"\"`   Field3 float   `json:\"\",string\"\"` }\"",
+      "reviews": []
+    },
+    {
+      "id": "nh4grtkerd",
+      "version": 0,
+      "active": true,
+      "question": "What is the first and only parameter to each test function?",
+      "answer": "t *testing.T",
+      "reviews": []
+    },
+    {
+      "id": "eamieuvjgv",
+      "version": 0,
+      "active": true,
+      "question": "How are tests named?",
+      "answer": "Test\u003cfunction_name\u003e(...) {...}",
+      "reviews": []
+    },
+    {
+      "id": "y5mh8sqkte",
+      "version": 0,
+      "active": true,
+      "question": "How are test files named?",
+      "answer": "\u003cfilename\u003e_test.go",
+      "reviews": []
+    },
+    {
+      "id": "d3fm7xejen",
+      "version": 0,
+      "active": true,
+      "question": "What are the primitive methods of testing.T? What are their variations? What do they do?",
+      "answer": "T.Fail{-,Now}  T.Skip{-,Now} T.Log{-,f}  T.Error{-,f}: like Fail plus Log T.Fatal{-,f}: like FailNow plus Log T.Helper: marks the calling function as a test helper function (setup etc)  T.Cleanup(func()): registers a function to be called when the test and its subtests complete",
+      "reviews": []
+    },
+    {
+      "id": "onfx28xcua",
+      "version": 0,
+      "active": true,
+      "question": "What three important interfaces does the os.File type implement?",
+      "answer": "io.Reader io.Writer io.Closer",
+      "reviews": []
+    },
+    {
+      "id": "7wn8djlp4d",
+      "version": 0,
+      "active": true,
+      "question": "File creation function signature",
+      "answer": "func os.Create(path string) (*os.File, error)",
+      "reviews": []
+    },
+    {
+      "id": "8e8h1ovbix",
+      "version": 0,
+      "active": true,
+      "question": "Define io.Writer",
+      "answer": "type io.Writer interface {   Write(b []byte) (int, error) }",
+      "reviews": []
+    },
+    {
+      "id": "wmrnyeosh8",
+      "version": 0,
+      "active": true,
+      "question": "How is a function documented?",
+      "answer": "// Comments and // some more comments func MyFunc(...) ... {...}",
+      "reviews": []
+    },
+    {
+      "id": "ffualbgel3",
+      "version": 0,
+      "active": true,
+      "question": "What are the two ways a package can be documented?",
+      "answer": "1) Comments immediately above package statement 2) Include a doc.go file in the package, with a package statement and one big comment",
+      "reviews": []
+    },
+    {
+      "id": "lmbyp4r2uf",
+      "version": 0,
+      "active": true,
+      "question": "Function signature of function to start HTTP server",
+      "answer": "func http.ListenAndServe(addr string, handler http.Handler) error",
+      "reviews": []
+    },
+    {
+      "id": "f0bgmdn3kf",
+      "version": 0,
+      "active": true,
+      "question": "Define http.Handler",
+      "answer": "type http.Handler interface {   ServeHTTP(rw ResponseWriter, r *Request) }",
+      "reviews": []
+    },
+    {
+      "id": "63q7gtq2s3",
+      "version": 0,
+      "active": true,
+      "question": "Define http.ResponseWriter",
+      "answer": "type http.ResponseWriter interface {   Header() http.Header   Write(b []byte) (int, error)   WriteHeader(statusCode int) }",
+      "reviews": []
+    },
+    {
+      "id": "n6zbvp4xfb",
+      "version": 0,
+      "active": true,
+      "question": "Function signatures for four high-level functions for making HTTP requests?",
+      "answer": "func http.Get(url string) (*Response, error) func http.Head(url string) (*Response, error) func http.Post(url string, cont_type string, body io.Reader) (*Response, error) func http.PostForm(url string, form url.Values) (*Response, error)",
+      "reviews": []
+    },
+    {
+      "id": "ya4gk26qkm",
+      "version": 0,
+      "active": true,
+      "question": "What two types can we use to have fine-grained control over an HTTP request?",
+      "answer": "http.Client and http.Transport",
+      "reviews": []
+    },
+    {
+      "id": "97qm2iviut",
+      "version": 0,
+      "active": true,
+      "question": "What is the function signature of the generic method that is used to send HTTP requests?",
+      "answer": "func http.Do(r *Request) (*Response, error)",
+      "reviews": []
+    },
+    {
+      "id": "khvpn5qrya",
+      "version": 0,
+      "active": true,
+      "question": "How do I make a PUT HTTP request?",
+      "answer": "Create a \u0026http.Client, build an http.Request struct (can use http.NewRequest), and then pass it to client.Do.",
+      "reviews": []
+    },
+    {
+      "id": "n7dii3k6lf",
+      "version": 0,
+      "active": true,
+      "question": "Function to create an http.Request, and its function signature",
+      "answer": "func http.NewRequest(method, url string, body io.Reader) (*Request, error)",
+      "reviews": []
+    },
+    {
+      "id": "cd0tgz5iej",
+      "version": 0,
+      "active": true,
+      "question": "What are the five most commonly used fields of http.Request, and what are their types?",
+      "answer": "Method string URL *url.URL Header http.Header  Body io.ReadCloser PostForm url.Values",
+      "reviews": []
+    },
+    {
+      "id": "76jhc5xgpd",
+      "version": 0,
+      "active": true,
+      "question": "Define http.Response, with only its three most used fields.",
+      "answer": "type http.Response struct {    StatusCode int     Header http.Header     Body io.ReadCloser }",
+      "reviews": []
+    },
+    {
+      "id": "2o11jz6j5s",
+      "version": 0,
+      "active": true,
+      "question": "What are the function signatures of the four methods in context.Context? When would they be used?",
+      "answer": "func (c context.Context) Done() \u003c-chan struct{} Returns a channel that is closed when work associated with this context should be canceled.    func (c context.Context) Deadline() (dl time.Time, ok bool)  Returns the time when work associated with this context should be canceled; ok is false if there is no deadline.   func (c context.Context) Err() error If context is not yet closed, returns nil; if context is closed, returns error explaining why.   func (c context.Context) Value(key interface{}) interface{}  Returns a value associated with the context with a specific key. useful for request-scoped data.",
+      "reviews": []
+    },
+    {
+      "id": "clguzhyw1j",
+      "version": 0,
+      "active": true,
+      "question": "- What are the three types of channels? - What do they look like in function signatures?",
+      "answer": "chan T : bidirectional; can be used to send and receive T \u003c-chan T : can only be used to receive T chan\u003c- T : can only be used to send T",
+      "reviews": []
+    },
+    {
+      "id": "wr23546cbz",
+      "version": 0,
+      "active": true,
+      "question": "What is the problem with os.Exit()?",
+      "answer": "It does not call deferred functions.",
+      "reviews": []
+    },
+    {
+      "id": "lkoc6665tb",
+      "version": 0,
+      "active": true,
+      "question": "What are the two things that characterize a rune?",
+      "answer": "1) a rune is an alias for int32 2) a rune represents a unicode code point",
+      "reviews": []
+    },
+    {
+      "id": "v4e56eiur0",
+      "version": 0,
+      "active": true,
+      "question": "What type is a string, behind the scenes?",
+      "answer": "[]byte",
+      "reviews": []
+    },
+    {
+      "id": "1l7xpbe1z3",
+      "version": 0,
+      "active": true,
+      "question": "How does one loop over the utf-8 encoded runes in a string?",
+      "answer": "for index, runeValue := range my_string {...}",
+      "reviews": []
+    },
+    {
+      "id": "rc1fyqvc7z",
+      "version": 0,
+      "active": true,
+      "question": "What is iota? How do you use it?",
+      "answer": "A way of declaring constants in a group. you can basically make enums if you define a special type. For example:   type KeyType int   const (   KeyEnter KeyType = iota    // 0   KeyEsc KeyType             // 1   KeyCtrl KeyType            // 2   KeyAlt KeyType             // 3 )   You can also use iota as a value on each line, for example to create a bitmask:   type Mask int   const (   One Mask = 1 \u003c\u003c iota  // 1 \u003c\u003c 0, or 00000001   Two                   // 1 \u003c\u003c 1, or 00000010   Four                  // 1 \u003c\u003c 2, or 00000100   Eight                 // 1 \u003c\u003c 3, or 00001000   Sixteen               // 1 \u003c\u003c 4, or 00010000 )",
+      "reviews": []
+    },
+    {
+      "id": "i3e2lvhs1i",
+      "version": 0,
+      "active": true,
+      "question": "\"Which statements does a \"\"break\"\" statement break out of?\"",
+      "answer": "for, switch and select",
+      "reviews": []
+    },
+    {
+      "id": "99dz0o9eb3",
+      "version": 0,
+      "active": true,
+      "question": "Define the http.Header type",
+      "answer": "type http.Header map[string][]string",
+      "reviews": []
+    },
+    {
+      "id": "86z6lbg99o",
+      "version": 0,
+      "active": true,
+      "question": "How do you get the number of characters in a string?",
+      "answer": "len([]rune(my_string))",
+      "reviews": []
+    },
+    {
+      "id": "1u610wt4vy",
+      "version": 0,
+      "active": true,
+      "question": "Define a constant of type int",
+      "answer": "const my_int int = 4",
+      "reviews": []
+    },
+    {
+      "id": "02ujikjcyy",
+      "version": 0,
+      "active": true,
+      "question": "What are the two forms of switch statements in go?",
+      "answer": "Like testing an enumeration:switch my_var { case 'a':  ... case 'b': ... }   Like an if-else chain: switch { case expr: ... case expr2: ... }",
+      "reviews": []
+    },
+    {
+      "id": "csc31sgqt2",
+      "version": 0,
+      "active": true,
+      "question": "What are the three basic (possibly overlapping) uses for a context.Context?",
+      "answer": "1) Used to get goroutines to gracefully exit at the command of another goroutine   2) Used to define and enforce a deadline   3) Used to define higher-scoped variables that should be shared across functions, goroutines etc",
+      "reviews": []
+    },
+    {
+      "id": "ds3itmc0ol",
+      "version": 0,
+      "active": true,
+      "question": "What happens in go when you attempt to use more memory but there is no more (out of memory)? How do you handle this?",
+      "answer": "The program crashes - there is nothing you can do about this. The way you handle this depends on your application; for most server-side applications you would monitor the process with a watchdog that restarts it upon crash/exit.",
+      "reviews": []
+    },
+    {
+      "id": "m9fq4am683",
+      "version": 0,
+      "active": true,
+      "question": "From a high level, how is an HTTP request responded to using the standard library? How would I write a server with multiple endpoints?",
+      "answer": "\"Everything revolves around the http.Handler type. When a request is received, the ServeHTTP method of the Handler is called. This method reads the *Request, and uses its logic to decide how to write the ResponseWriter. Note that http.Handler is an interface, so it probably has some kind of state (request handling threads/processes) in the background.   Once the ResponseWriter is filled, the calling function can turn it into an HTTP response that it sends to the client.   So if you wanted to write a server with multiple endpoints, you'd put a \"\"router\"\" in the ServeHTTP method of your Handler that dispatches the request to one of several functions that handle endpoints.\"",
+      "reviews": []
+    },
+    {
+      "id": "cga946xb3g",
+      "version": 0,
+      "active": true,
+      "question": "What are the two characteristics of a slice, and what functions are used to get them?",
+      "answer": "Length, which is the number of elements in the slice, and capacity, which is the number of elements the slice can accomodate before it is reallocated.   len() and cap()",
+      "reviews": []
+    },
+    {
+      "id": "gd9c0lajvs",
+      "version": 0,
+      "active": true,
+      "question": "Create a slice of bytes that has 4 bytes initialized and can accommodate a maximum of 32 bytes.",
+      "answer": "my_slice := make([]byte, 4, 32)",
+      "reviews": []
+    },
+    {
+      "id": "7ib9f7eub4",
+      "version": 0,
+      "active": true,
+      "question": "Define the error type.",
+      "answer": "type error interface {     Error() string }",
+      "reviews": []
+    },
+    {
+      "id": "oxzjd2rvoh",
+      "version": 0,
+      "active": true,
+      "question": "\"You have a base template that was defined with:   base, _ := template.New(\"\"base\"\")   What are two ways to add a new template, with name \"\"new_template\"\", to the namespace of base?\"",
+      "answer": "\"Way 1:base.Parse(\"\"{{ define `new_template` }}content here{{ end }}\"\")   Way 2: new_template := base.New(\"\"new_template\"\") template.Must(new_template.Parse(\"\"content here\"\"))\"",
+      "reviews": []
+    },
+    {
+      "id": "l40gouuq1t",
+      "version": 0,
+      "active": true,
+      "question": "What are the two ways to execute a template? What are their function signatures?",
+      "answer": "func (t *Template) Execute(wr io.Writer, data interface{}) error   func (t *Template) ExecuteTemplate(wr io.Writer, name string, data interface{}) error",
+      "reviews": []
+    },
+    {
+      "id": "xiv39ys2cw",
+      "version": 0,
+      "active": true,
+      "question": "\"base_tmpl := `\u003chtml\u003e{{ template \"\"content\"\" . }}\u003c/html\u003e`  base, _ := template.New(\"\"base\"\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.\"",
+      "answer": "\"tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.Parse(\"\"{{define `content`}}tmpl1{{end}}\"\"))   or   tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.New(\"\"content\"\").Parse(\"\"tmpl1\"\"))\"",
+      "reviews": []
+    },
+    {
+      "id": "o973wcimze",
+      "version": 0,
+      "active": true,
+      "question": "Define the time.Ticker type. What is it used for?",
+      "answer": "type time.Ticker struct {     C \u003c-chan time.Time }   The channel delivers time.Time objects at intervals you specify.",
+      "reviews": []
+    },
+    {
+      "id": "tkacy1prwj",
+      "version": 0,
+      "active": true,
+      "question": "What is the function signature that is used to create a time.Ticker?",
+      "answer": "func time.NewTicker(d time.Duration) *time.Ticker",
+      "reviews": []
+    },
+    {
+      "id": "q0h1wc40st",
+      "version": 0,
+      "active": true,
+      "question": "How does *Template.Parse() work?",
+      "answer": "It parses a template. If there are any template definitions (i.e. {{define ...}} or {{block ...}} statements) in the parsed text, they are removed and added to the template namespace. If the parsed text contains only whitespace and comments, it is considered empty. Otherwise, it replaces any existing body of the template.",
+      "reviews": []
+    },
+    {
+      "id": "jrqj8w618r",
+      "version": 0,
+      "active": true,
+      "question": "Function signature for *Template.New()",
+      "answer": "func (t *Template) New(name string) *Template",
+      "reviews": []
+    },
+    {
+      "id": "2bro9p5bbv",
+      "version": 0,
+      "active": true,
+      "question": "Function signature for *Template.Parse",
+      "answer": "func (t *Template) Parse(value string) (*Template, error)",
+      "reviews": []
+    },
+    {
+      "id": "1omecav94f",
+      "version": 0,
+      "active": true,
+      "question": "What is init()?",
+      "answer": "Each package may contain multiple init() functions. These functions are all run when the package is imported. They run after const and top-level var statements are initialized. They are useful for initializing any top-level data etc.",
+      "reviews": []
+    },
+    {
+      "id": "44abkiany3",
+      "version": 0,
+      "active": true,
+      "question": "In the `flag` package, what are the two ways of declaring a flag of type int? What are their function signatures?",
+      "answer": "func flag.Int(name string, default int, usage string) *int func flag.IntVar(p *int, name string, default int, usage string)",
+      "reviews": []
+    },
+    {
+      "id": "rqzb87y18t",
+      "version": 0,
+      "active": true,
+      "question": "The flag package works for command-line flag parsing, so long as you can deal with what two annoying things?",
+      "answer": "1) Usage is always reported with flags having a single dash, even if they are multiple letters.   2) Having 2+ flags for a single variable is effectively not supported - the usage message reports them as 2+ separate flags.",
+      "reviews": []
+    },
+    {
+      "id": "zstqqmljyy",
+      "version": 0,
+      "active": true,
+      "question": "Parse two command line flags: -a (bool) and -f (string), and get a positional argument, and print them, using the stdlib flag parsing package.",
+      "answer": "\"import (     \"\"flag\"\"     \"\"fmt\"\" )  main() {     a := flag.Bool(\"\"a\"\", false, \"\"usage here\"\")     f := flag.String(\"\"f\"\", \"\"\"\", \"\"usage here\"\")     flag.Parse()     pos1 := flag.Args()[1]     fmt.Println(*a, *f, pos1)  }\"",
+      "reviews": []
+    },
+    {
+      "id": "7qstfhce3c",
+      "version": 0,
+      "active": true,
+      "question": "How does the Read() method work (2 points)? (use signature Read(p []byte) (n int, err error) to discuss)",
+      "answer": "- reads up to len(p) bytes into p - n is number of bytes of p that are valid",
+      "reviews": []
+    },
+    {
+      "id": "7bw6ko6pzw",
+      "version": 0,
+      "active": true,
+      "question": "How does the Write() method work (2 points)? (use Write(p []byte) (n int, err error) as signature)",
+      "answer": "- Writes len(p) bytes from p and returns n to say how many bytes were written - If it writes less than len(p), err is non-nil and explains what happened",
+      "reviews": []
+    },
+    {
+      "id": "oketwc2ey8",
+      "version": 0,
+      "active": true,
+      "question": "How do you convert a []byte, myByte, to a string?",
+      "answer": "my_string := string(myByte)",
+      "reviews": []
+    },
+    {
+      "id": "t7k8xhz3ag",
+      "version": 0,
+      "active": true,
+      "question": "When is it appropriate to use the bufio package?",
+      "answer": "I/O operations like Read() and Write() generally have a fair amount of overhead (like any system call). Buffering your I/O can boost performance greatly by saving your input/output in a buffer and then writing it all at once.",
+      "reviews": []
+    },
+    {
+      "id": "b9cqobt2h4",
+      "version": 0,
+      "active": true,
+      "question": "Signature for the function used to read everything from a file?",
+      "answer": "func os.ReadFile(filename string) ([]byte, error)",
+      "reviews": []
+    },
+    {
+      "id": "lf07ywwsuk",
+      "version": 0,
+      "active": true,
+      "question": "Signature for the function used to write a []byte, to a file?",
+      "answer": "func os.WriteFile(path string, data []byte, perm os.FileMode) error",
+      "reviews": []
+    },
+    {
+      "id": "qzfo7uigid",
+      "version": 0,
+      "active": true,
+      "question": "Signature for the function used to read everything from an io.Reader?",
+      "answer": "func io.ReadAll(r io.Reader) ([]byte, error)",
+      "reviews": []
+    },
+    {
+      "id": "j58w2ilfl9",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function that splits a string on a character?",
+      "answer": "func strings.Split(input string, sep string) []string",
+      "reviews": []
+    },
+    {
+      "id": "8r1ikjs6lj",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function for stripping whitespace from both ends of a string?",
+      "answer": "func strings.TrimSpace(s string) string",
+      "reviews": []
+    },
+    {
+      "id": "0epv77shgs",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function that joins a slice of strings on a separator string into a single string?",
+      "answer": "func strings.Join(strings []string, sep string) string",
+      "reviews": []
+    },
+    {
+      "id": "2lmr2hz73v",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function that is used to replace all substrings inside a string with other strings?",
+      "answer": "func strings.ReplaceAll(s, to_replace, replacement string) string",
+      "reviews": []
+    },
+    {
+      "id": "iub70sgzjx",
+      "version": 0,
+      "active": true,
+      "question": "What is the package that should be used for working with (cross-platform) paths?",
+      "answer": "path/filepath",
+      "reviews": []
+    },
+    {
+      "id": "bbmw004spz",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function used to get the filename from a full path?",
+      "answer": "func filepath.Base(path string) string",
+      "reviews": []
+    },
+    {
+      "id": "hnu691satt",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function used to get the directory, without the filename, from a path?",
+      "answer": "func filepath.Dir(path string) string",
+      "reviews": []
+    },
+    {
+      "id": "4bbbgxk6vy",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function used to get entire path from a partial path?",
+      "answer": "func filepath.Abs(path string) (string, error)",
+      "reviews": []
+    },
+    {
+      "id": "jyur45v0ye",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function that takes a bunch of separate path elements and joins them in cross-platform fashion?",
+      "answer": "func filepath.Join(elems ...string) string",
+      "reviews": []
+    },
+    {
+      "id": "txl8szycx2",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function used to separate a path into the file name and the directory name",
+      "answer": "func filepath.Split(path string) (dirname, filename string)",
+      "reviews": []
+    },
+    {
+      "id": "pm4dt19nao",
+      "version": 0,
+      "active": true,
+      "question": "What is the reference time when parsing times using the time package?",
+      "answer": "01/02 15:04:05 -0700 MST 2006",
+      "reviews": []
+    },
+    {
+      "id": "6qnevxtm8r",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function used to parse string into time.Time",
+      "answer": "func time.Parse(layout, value string) (time.Time, error)",
+      "reviews": []
+    },
+    {
+      "id": "fx4im8732a",
+      "version": 0,
+      "active": true,
+      "question": "Define the interface that a type can define in order to populate it from a []byte containing JSON.",
+      "answer": "type json.Unmarshaler interface {     UnmarshalJSON([]byte) error }",
+      "reviews": []
+    },
+    {
+      "id": "77uq8t14ay",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function used to read the value of an env var?",
+      "answer": "func os.LookupEnv(key string) (string, bool)",
+      "reviews": []
+    },
+    {
+      "id": "87wjnhgksd",
+      "version": 0,
+      "active": true,
+      "question": "Signature of function that checks if a substring is in a string?",
+      "answer": "func strings.Contains(str, substr string) bool",
+      "reviews": []
+    },
+    {
+      "id": "obe4v1m1nc",
+      "version": 0,
+      "active": true,
+      "question": "Function signature for using regex to see if a string matches?",
+      "answer": "func regexp.MatchString(pattern, to_search string) (bool, error)",
+      "reviews": []
+    },
+    {
+      "id": "c0ntq20tg2",
+      "version": 0,
+      "active": true,
+      "question": "What is go.sum for?",
+      "answer": "go.sum contains checksums for the contents of specific versions of the dependencies listed in go.mod.   If someone building your code gets a checksum that differs from the checksum in go.sum for a dependency, they will get an error.",
+      "reviews": []
+    },
+    {
+      "id": "dj0dqypgha",
+      "version": 0,
+      "active": true,
+      "question": "Under what conditions are go binaries not statically linked?",
+      "answer": "When a package is included that uses cgo to call C code, most notably `net` package. You can disable the use of cgo for the `net` package though.",
+      "reviews": []
+    },
+    {
+      "id": "je7itvgced",
+      "version": 0,
+      "active": true,
+      "question": "How does the io.Reader.Read() call deal with EOF conditions?",
+      "answer": "If an EOF condition is encountered, it may return either:   - err = io.EOF in the call in which the last bytes are read   - err = nil in the call in which the last bytes are read and then err = io.EOF in a subsequent call",
+      "reviews": []
+    },
+    {
+      "id": "uqkj70q7e1",
+      "version": 0,
+      "active": true,
+      "question": "How do you loop over an array without using the index? How do you loop over an array while using the index?",
+      "answer": "for _, value := range array {      ... }   for i, value := range array {     ... }",
+      "reviews": []
+    },
+    {
+      "id": "buc3holo3e",
+      "version": 0,
+      "active": true,
+      "question": "\"What does an \"\"// indirect\"\" comment next to a dependency mean in go.mod?\"",
+      "answer": "It means that the dependency is not used in this module, but rather in one of the module's dependencies. Thus it is a dependency of a dependency.",
+      "reviews": []
+    },
+    {
+      "id": "fknjn5u3x2",
+      "version": 0,
+      "active": true,
+      "question": "How are go modules versioned? How do you reference a package in a module with major version greater than 1?",
+      "answer": "\"Specific versions can be specified by tagging certain refs in the version control repository with the form \"\"vX.Y.Z\"\".   Major version increments are appended to the usual path, so if you have \"\"github.com/adamkpickering/mymod\"\" to start, you call it \"\"github.com/adamkpickering/mymod/v2\"\" once you go to v2. Note that the original path represents both v0 and v1: v0 is where breaking changes are expected, and v1 is the first stable major version.   package: github.com/adamkpickering/mymod/v1/package/path   See https://research.swtch.com/vgo-import for more info.\"",
+      "reviews": []
+    },
+    {
+      "id": "7ouh88dti1",
+      "version": 0,
+      "active": true,
+      "question": "What is referenced in an import statement?",
+      "answer": "Packages are referenced, not modules.",
+      "reviews": []
+    },
+    {
+      "id": "t0mdn7h9bu",
+      "version": 0,
+      "active": true,
+      "question": "How does vendoring work with modules?",
+      "answer": "You can use `go mod vendor` to create vendor/ if it does not already exist, and then build with `go build -mod=vendor`.",
+      "reviews": []
+    },
+    {
+      "id": "idtgpedzjq",
+      "version": 0,
+      "active": true,
+      "question": "How do you retrieve the following versions of a module using `go get`? 1) latest 2) v1.6.2 3) commit c856192 4) the current state of branch `master`",
+      "answer": "1) go get github.com/gorilla/mux@latest 1) go get github.com/gorilla/mux@v1.6.2  1) go get github.com/gorilla/mux@c856192  1) go get github.com/gorilla/mux@master",
+      "reviews": []
+    },
+    {
+      "id": "u90mbshwti",
+      "version": 0,
+      "active": true,
+      "question": "How do you import a package when you don't actually need to use it in the code? Why might you do this?",
+      "answer": "\"import (     _ \"\"github.com/asdf/mypackage\"\" )   This is done when importing the module does some thing that your code needs. Practically, an example is with the sql package - we do this with drivers so that they can register themselves with the main sql package, and then we use the driver through the main package's interface.\"",
+      "reviews": []
+    },
+    {
+      "id": "jkqnzp0azf",
+      "version": 0,
+      "active": true,
+      "question": "What are the three ways to embed a static file into a go program?",
+      "answer": "//go:embed hello.txt var txt string // now txt contains the contents of hello.txt   //go:embed hello.txt var b []byte // now b contains the contents of hello.txt   //go:embed image template/* var content embed.FS // now b contains the contents of files in image/ and template/",
+      "reviews": []
+    },
+    {
+      "id": "7wmuragz10",
+      "version": 0,
+      "active": true,
+      "question": "What is the simplest way to check that a file/dir exists? What about to check that a file/dir does not exist?",
+      "answer": "\"if _, err := os.Stat(\"\"/path/to/whatever\"\"); errors.Is(err, os.ErrNotExist) {     // /path/to/whatever does not exist }   if _, err := os.Stat(\"\"/path/to/whatever\"\"); err == nil {     // /path/to/whatever exists }\"",
+      "reviews": []
+    },
+    {
+      "id": "4mzydwthz2",
+      "version": 0,
+      "active": true,
+      "question": "How do you execute a template and get the output in a string?",
+      "answer": "buffer := \u0026bytes.Buffer{} err := tmpl.Execute(buffer, data) if err != nil { ... } str := buffer.String()",
+      "reviews": []
+    },
+    {
+      "id": "htfkc0g5fv",
+      "version": 0,
+      "active": true,
+      "question": "Given a time, mytime, turn it into a string in RFC3339 format without nanoseconds.",
+      "answer": "mystr := mytime.Format(time.RFC3339)",
+      "reviews": []
+    },
+    {
+      "id": "hfjqabk6d0",
+      "version": 0,
+      "active": true,
+      "question": "How do you get the current time in UTC?",
+      "answer": "currentTime := time.Now().UTC()",
+      "reviews": []
+    },
+    {
+      "id": "78zszn8m1c",
+      "version": 0,
+      "active": true,
+      "question": "What is the function signature used to round a time to the nearest value of a specific interval?",
+      "answer": "func (t time.Time) Round(d time.Duration) time.Time",
+      "reviews": []
+    },
+    {
+      "id": "4cvf38t0w7",
+      "version": 0,
+      "active": true,
+      "question": "Define fs.FileMode. In practice, how can you set it?",
+      "answer": "type fs.FileMode uint32   For regular files, can simply be set to 0755 or whatever. This is because only the first 9 (12?) bits are used for the permission bits, and the other bits are set starting from the big end of the uint32. If the other bits are all zero, that means it is a regular file.",
+      "reviews": []
+    },
+    {
+      "id": "pzz38s37cu",
+      "version": 0,
+      "active": true,
+      "question": "Define fs.FileInfo (6 methods). What is the equivalent in the os package?",
+      "answer": "type FileInfo interface {     Name() string     Size() int64     Mode() fs.FileMode     ModTime() time.Time     IsDir() bool     Sys() interface{}  }   Equivalent to os.FileInfo.",
+      "reviews": []
+    },
+    {
+      "id": "tkndv1z6vy",
+      "version": 0,
+      "active": true,
+      "question": "What is the function signature for the function used to get an os.FileInfo for a path?",
+      "answer": "func os.Stat(path string) (os.FileInfo, error)",
+      "reviews": []
+    },
+    {
+      "id": "h0bc16blwo",
+      "version": 0,
+      "active": true,
+      "question": "Define fs.DirEntry (4 methods). What is its equivalent in the `os` package?",
+      "answer": "type fs.DirEntry interface {     Name() string     IsDir() bool     Type() fs.FileMode     Info() (fs.FileInfo, error) }   Equivalent to os.DirEntry.",
+      "reviews": []
+    },
+    {
+      "id": "69x6n53xyj",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function that returns all of the os.DirEntry's for a directory?",
+      "answer": "func os.ReadDir(path string) ([]os.DirEntry, error)",
+      "reviews": []
+    },
+    {
+      "id": "78isqr2eis",
+      "version": 0,
+      "active": true,
+      "question": "What does the `fs` package define? What is its major limitation at the moment?",
+      "answer": "Package `fs` defines interfaces that define methods that should be used to interface with a filesystem.   Its major limitation is the absence of any kind of write functionality.",
+      "reviews": []
+    },
+    {
+      "id": "xq6pi3n7jw",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between os.Create and os.Open?",
+      "answer": "os.Create -\u003e creates or truncates the file at the named path   os.Open -\u003e only opens the file at the named path",
+      "reviews": []
+    },
+    {
+      "id": "qa0l5x68r7",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between a wall clock and a monotonic clock? In which cases does the `time` package use each?",
+      "answer": "A wall clock is subject to changes in clock synchronization (i.e. when NTP causes OS to update clock), whereas a monotonic clock is not.   The general rule is that the wall clock is for telling time and the monotonic clock is for measuring time. Any operations that involve comparisons of time.Time structs use the monotonic clocks, and are thus robust against wall clock resets. Otherwise, the wall clock is used.",
+      "reviews": []
+    },
+    {
+      "id": "b2ysbkjhvl",
+      "version": 0,
+      "active": true,
+      "question": "In the future, `go get` will be used for what? And what will `go install` be used for?",
+      "answer": "Currently, `go get` is used for both installation of commands, and to update dependencies in go.mod. This can cause frustration when a user wants to do only one or the other.   In the future, `go get` will be used only for downloading code and updating go.mod, and `go install` will be used only for installing commands.",
+      "reviews": []
+    },
+    {
+      "id": "3ate1cjbuw",
+      "version": 0,
+      "active": true,
+      "question": "How do you detect the zero value of a time? What is the function signature?",
+      "answer": "func (t time.Time) IsZero() bool",
+      "reviews": []
+    },
+    {
+      "id": "au0vvaysmg",
+      "version": 0,
+      "active": true,
+      "question": "What is the function signature of the function you'd use to set the time fields of a time.Time to zero, while keeping the date?",
+      "answer": "func (t time.Time) Truncate(d time.Duration) time.Time",
+      "reviews": []
+    },
+    {
+      "id": "w7jyc8um5r",
+      "version": 0,
+      "active": true,
+      "question": "Get the date that is exactly two days from now.",
+      "answer": "mydate := time.Now().AddDate(0, 0, 2)",
+      "reviews": []
+    },
+    {
+      "id": "1aeiuqrf8l",
+      "version": 0,
+      "active": true,
+      "question": "In the time package, why is there no time.Day Duration constant?",
+      "answer": "To avoid confusion across daylight savings time zone transitions.",
+      "reviews": []
+    },
+    {
+      "id": "x9n7aem8e6",
+      "version": 0,
+      "active": true,
+      "question": "\"In fmt strings, what verbs do you use to get the following: 1) the value in the default format for that type 2) the value in a valid go syntax representation 3) the type of a value 4) a decimal number 5) the string \"\"true\"\" or \"\"false\"\" for a bool 6) a string, as if it were being printed 7) a quoted string 8) the character represented by the corresponding unicode code point 9) an error, wrapped in a fmt.Errorf call\"",
+      "answer": "\"1) %v 2) %#v 3) %T 4) %d 5) %t 6) %s 7) %q 8) %c 9) %w\"",
+      "reviews": []
+    },
+    {
+      "id": "rh47t1yly7",
+      "version": 0,
+      "active": true,
+      "question": "\"How do errors.Is and errors.As differ from \"\"sentinel\"\" errors and type assertions on errors?\"",
+      "answer": "They concern the error, as well as all errors it wraps, rather than just the top-level error.",
+      "reviews": []
+    },
+    {
+      "id": "gdn4m8l5tz",
+      "version": 0,
+      "active": true,
+      "question": "When should errors be wrapped? When should they not be wrapped?",
+      "answer": "The thing to be aware of here is abstraction layers. If wrapping an error violates an abstraction somehow then you shouldn't wrap it.   For example, if I were to write a filesystem implementation of the DeckSource interface, it would break the DeckSource abstraction if the implementation were to wrap errors that pertain to reading and writing files. This is because other implementations may not even have files.",
+      "reviews": []
+    },
+    {
+      "id": "shmxxakw0v",
+      "version": 0,
+      "active": true,
+      "question": "How do you write an octal literal? How do you write a hexadecimal literal?",
+      "answer": "0755 0xabc109 or 0Xabc109",
+      "reviews": []
+    },
+    {
+      "id": "f9i6ueuq8a",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between the || and | operators? What about the \u0026\u0026 and \u0026 operators?",
+      "answer": "The single character operators are bitwise operators corresponding to OR and AND operations.   The double character operators are logical operators for combining true/false values.",
+      "reviews": []
+    },
+    {
+      "id": "s8savjthyy",
+      "version": 0,
+      "active": true,
+      "question": "Which two operators are used to do bit shifting?",
+      "answer": "myVar \u003c\u003c 1   The counterpart is \u003e\u003e.",
+      "reviews": []
+    },
+    {
+      "id": "o0q6gx3g4w",
+      "version": 0,
+      "active": true,
+      "question": "If I have two ints, how do I XOR them?",
+      "answer": "Use the XOR operator: ^",
+      "reviews": []
+    },
+    {
+      "id": "s5zgb86569",
+      "version": 0,
+      "active": true,
+      "question": "When you pass a value of type `interface{}` to json.Unmarshal, what do the following JSON types get unmarshalled as (in the interface)? - boolean - number - string - array - object - null",
+      "answer": "boolean: bool number: float64 string: string array: []interface{} object: map[string]interface{} null: nil",
+      "reviews": []
+    },
+    {
+      "id": "61bi3lp86c",
+      "version": 0,
+      "active": true,
+      "question": "Define the interface that a type can implement in order to specify how to marshal it into JSON in []byte form.",
+      "answer": "type json.Marshaler interface {     MarshalJSON() ([]byte, error) }",
+      "reviews": []
+    },
+    {
+      "id": "9qqi8iaxtw",
+      "version": 0,
+      "active": true,
+      "question": "Define the type used to read JSON data from an io.Reader and marshal it into a valid type. What is the function signature used to create one? What is the most important method on one?",
+      "answer": "type json.Decoder struct { ... } func json.NewDecoder(r io.Reader) *json.Decoder func (d *json.Decoder) json.Decode(v interface{}) error",
+      "reviews": []
+    },
+    {
+      "id": "ezx76exygr",
+      "version": 0,
+      "active": true,
+      "question": "Define the type used to convert a type to JSON and write it to an io.Writer. What is the signature of the function used to create one? What is the signature of its most important method?",
+      "answer": "type json.Encoder struct { ... } func json.NewEncoder(w io.Writer) *json.Encoder func (e *json.Encoder) Encode(v interface{}) error",
+      "reviews": []
+    },
+    {
+      "id": "s96yl1apg4",
+      "version": 0,
+      "active": true,
+      "question": "If I have a []byte and I need it to be an io.Reader, how do I do this? What is the function signature?",
+      "answer": "func bytes.NewReader(b []byte) *bytes.Reader   Note that *bytes.Reader implements the io.Reader interface.",
+      "reviews": []
+    },
+    {
+      "id": "h05u44hi3d",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to get a random integer in the range [0, max)?",
+      "answer": "func rand.Intn(max int) int",
+      "reviews": []
+    },
+    {
+      "id": "upqdnu90zi",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to get a random float32 value in the range [0, 1.0)? How about for a float64?",
+      "answer": "func rand.Float32() float32 func rand.Float64() float64",
+      "reviews": []
+    },
+    {
+      "id": "hiag8n4lud",
+      "version": 0,
+      "active": true,
+      "question": "What must you always do before using functions from the math/rand package? What is the function signature?  How do you do this in practice?",
+      "answer": "You must initialize the rng with a seed.   func rand.Seed(seed int64)   rand.Seed(time.Now().UnixNano())",
+      "reviews": []
+    },
+    {
+      "id": "g0rg5zl3tk",
+      "version": 0,
+      "active": true,
+      "question": "Why don't Context objects have a `Cancel` method, and why doesn't their Done() method return a two-way channel?",
+      "answer": "You want cancellation signals to flow only one way: down the hierarchy. If one goroutine could cancel a Context that its peers were monitoring, it would be a source of bugs and confusion. Restricting Contexts in the above ways prevents this.",
+      "reviews": []
+    },
+    {
+      "id": "hghgdicqki",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to get a root context.Context? What are the constraints on this context?  Why is there such a thing as a root context.Context?",
+      "answer": "func context.Background() context.Context   This context is never cancelled and does not have a timeout.   You must use this so that we can have a simple set of functions that all take a parent Context, that can be used to construct Context hierarchies.",
+      "reviews": []
+    },
+    {
+      "id": "b3g0ao2lor",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to get a new, cancellable context from a parent context?",
+      "answer": "func context.WithCancel(parent context.Context) (ctx context.Context, cancel context.CancelFunc)",
+      "reviews": []
+    },
+    {
+      "id": "8ihhdfxw66",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to get a new Context that has a deadline?",
+      "answer": "func context.WithTimeout(parent context.Context, timeout time.Duration) (context.Context, context.CancelFunc)",
+      "reviews": []
+    },
+    {
+      "id": "a35tzd224x",
+      "version": 0,
+      "active": true,
+      "question": "Define context.CancelFunc",
+      "answer": "type context.CancelFunc func()",
+      "reviews": []
+    },
+    {
+      "id": "qy0n4vnt5p",
+      "version": 0,
+      "active": true,
+      "question": "What are the two errors associated with the context package?",
+      "answer": "context.Canceled context.DeadlineExceeded",
+      "reviews": []
+    },
+    {
+      "id": "25ssb24zfu",
+      "version": 0,
+      "active": true,
+      "question": "What package is used to access your OS's system calls?",
+      "answer": "syscall",
+      "reviews": []
+    },
+    {
+      "id": "3d63cgp3dl",
+      "version": 0,
+      "active": true,
+      "question": "What is an int/uint? How big is each?  How do you find out what it is at runtime?",
+      "answer": "For a 32 bit machine, int and uint are aliases for int32 and uint32. For a 64 bit machine, int and uint are aliases for int64 and uint 64.   You can find the size of an int or uint by using `bits.UintSize`.",
+      "reviews": []
+    },
+    {
+      "id": "wk8bt5o2l9",
+      "version": 0,
+      "active": true,
+      "question": "cobra: define cobra.Command, including the most commonly used fields but leaving out anything to do with what function the command runs (there should be 5).",
+      "answer": "type cobra.Command struct {     // The usage string.     Use string     // The short help string.     Short string     // The long help string.     Long string     // Validates positional arguments.     Args cobra.PositionalArgs     // The version of the CLI program.     Version string }",
+      "reviews": []
+    },
+    {
+      "id": "24xbe27ij3",
+      "version": 0,
+      "active": true,
+      "question": "cobra: what are all of the forms of the field that takes the function in cobra.Command (10 total)? What does each do? What is the type of each?",
+      "answer": "PersistentPreRun PersistentPreRunE PreRun PreRunE Run RunE PostRun PostRunE PersistentPostRun PersistentPostRunE    PreRun functions are executed before Run functions, which are executed before PostRun functions. Persistent functions are inherited by children if they do not declare their own.   *Run: func(cmd *cobra.Command, args []string) *RunE: func(cmd *cobra.Command, args []string) error",
+      "reviews": []
+    },
+    {
+      "id": "44wzv3td3v",
+      "version": 0,
+      "active": true,
+      "question": "cobra: what is the idiomatic basic layout of a cobra application?",
+      "answer": "projectDir/   cmd/     root.go     other.go     commands.go     here.go   main.go   main.go calls the command defined in root.go, and the other files in cmd.go define child commands of the one defined in root.go.",
+      "reviews": []
+    },
+    {
+      "id": "93fgtphi7e",
+      "version": 0,
+      "active": true,
+      "question": "cobra: how do you define flags that carry over to child commands? How about ones that don't?",
+      "answer": "myCmd.PersistentFlags().String(...) myCmd.Flags().String(...)   Of course, we don't have to call .String() - it can be any function from the stdlib `flag` package, or from the `pflag` package, or others.",
+      "reviews": []
+    },
+    {
+      "id": "66aynnihry",
+      "version": 0,
+      "active": true,
+      "question": "cobra: how do you run your application if you have already defined your root command?",
+      "answer": "rootCmd.Execute()",
+      "reviews": []
+    },
+    {
+      "id": "7tpg9he8md",
+      "version": 0,
+      "active": true,
+      "question": "cobra: define the method used to register a child Command on a Command?",
+      "answer": "func (c *cobra.Command) AddCommand(cmds ...*cobra.Command)",
+      "reviews": []
+    },
+    {
+      "id": "791saov6dj",
+      "version": 0,
+      "active": true,
+      "question": "How do you declare a type constraint that will be satisfied with either an int64 or a float64?",
+      "answer": "type MyConstraint interface {     int64 | float64 }",
+      "reviews": []
+    },
+    {
+      "id": "swh4fz1hvr",
+      "version": 0,
+      "active": true,
+      "question": "What its the signature of the function used to get a connection to an SQL database?",
+      "answer": "func sql.Open(driverName, dataSourceName string) (*sql.DB, error)",
+      "reviews": []
+    },
+    {
+      "id": "c6ln9vmf1k",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to get a single row from an SQL database?",
+      "answer": "func (db *sql.DB) QueryRow(query string, args ...any) *sql.Row",
+      "reviews": []
+    },
+    {
+      "id": "95mrxrhxn7",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to retrieve rows from an SQL database?",
+      "answer": "func (db *sql.DB) Query(query string, args ...any) (*sql.Rows, error)",
+      "reviews": []
+    },
+    {
+      "id": "uhgsxfsvcb",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function used to execute an SQL statement on an SQL database?",
+      "answer": "func (db *sql.DB) Exec(query string, args ...any) (sql.Result, error)",
+      "reviews": []
+    },
+    {
+      "id": "5rt4tay1nw",
+      "version": 0,
+      "active": true,
+      "question": "Define sql.Row, and all of its methods (2 total).",
+      "answer": "type sql.Row struct {} func (r *sql.Row) Err() error  func (r *sql.Row) Scan(dest ...any) error",
+      "reviews": []
+    },
+    {
+      "id": "pcik8ad9de",
+      "version": 0,
+      "active": true,
+      "question": "Define sql.Rows, and its important methods (4 total).",
+      "answer": "type sql.Rows struct {} func (rs *sql.Rows) Err() error func (rs *sql.Rows) Next() bool  func (rs *sql.Rows) NextResultSet() bool  func (rs *sql.Rows) Scan(dest ...any) error",
+      "reviews": []
+    },
+    {
+      "id": "k7wirh270u",
+      "version": 0,
+      "active": true,
+      "question": "Define sql.Scanner.",
+      "answer": "type sql.Scanner interface {     Scan(src any) error  }",
+      "reviews": []
+    },
+    {
+      "id": "r5s3elzbi9",
+      "version": 0,
+      "active": true,
+      "question": "What type is used to customize the behaviour of getting a TCP connection?",
+      "answer": "type Dialer struct {...}",
+      "reviews": []
+    },
+    {
+      "id": "74flqualdd",
+      "version": 0,
+      "active": true,
+      "question": "What is the signature of the function you'd use to open a TCP connection?",
+      "answer": "func net.Dial(network, address string) (net.Conn, error)",
+      "reviews": []
+    },
+    {
+      "id": "cvqotmsy90",
+      "version": 0,
+      "active": true,
+      "question": "What is http.RoundTripper?",
+      "answer": "Is an interface that represents the ability to execute a single HTTP transaction. Takes a request and returns a response and an error.",
+      "reviews": []
+    }
+  ]
+}

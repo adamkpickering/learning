@@ -1,0 +1,766 @@
+{
+  "name": "finance",
+  "version": 0,
+  "cards": [
+    {
+      "id": "rtigoevjw2",
+      "version": 0,
+      "active": true,
+      "question": "What are the 3 parts of property tax, and how are they determined?",
+      "answer": "1) Provincial education tax, which the province assigns to municipalities according to the total assessed value of all properties in their jurisdiction ($~2.55/$1000 assessed value)   2) Municipal tax, which the city determines from what it needs to meet its financial needs in a year (~$6.47/$1000 assessed value)   2) Local improvement charges",
+      "reviews": []
+    },
+    {
+      "id": "l58qgiip88",
+      "version": 0,
+      "active": true,
+      "question": "What are local improvement charges?",
+      "answer": "When the city is doing work in an area that directly benefits you, you may be required to pay charges that help support this work. Examples: - installation of lighting in alley - localized alley reconstruction - sidewalk reconstruction - installation of decorative lighting",
+      "reviews": []
+    },
+    {
+      "id": "vmg7xxbz5b",
+      "version": 0,
+      "active": true,
+      "question": "How and on what schedule is property tax paid?",
+      "answer": "A few ways: - monthly, included in mortgage payment - monthly, through pre-authorized bank withdrawals - annually, as a lump sum payment",
+      "reviews": []
+    },
+    {
+      "id": "g2iy33mt39",
+      "version": 0,
+      "active": true,
+      "question": "What do the following terms mean?   premium   deductible   copayment",
+      "answer": "premium: the payment made by a policyholder to keep the policy in force   deductible: the amount that the policyholder must pay for covered services each year before the insurer will pay their part   copayment: the amount of every service claimed that the policyholder must pay; the insurer pays whatever is covered beyond that",
+      "reviews": []
+    },
+    {
+      "id": "qeyz37yg8p",
+      "version": 0,
+      "active": true,
+      "question": "When is mortgage insurance required?",
+      "answer": "When you put down less than 20%.",
+      "reviews": []
+    },
+    {
+      "id": "rba42j5ggu",
+      "version": 0,
+      "active": true,
+      "question": "What is the minimum down payment (with mortgage insurance) on properties up to $2M?",
+      "answer": "Up to 500k: 5% 500k - 1M: 5% on 1st 500k, 10% on the rest 1M+: you must put 20% down for the entire cost",
+      "reviews": []
+    },
+    {
+      "id": "ugg5wciexp",
+      "version": 0,
+      "active": true,
+      "question": "What are the relevant rates for mortgage insurance?",
+      "answer": "5% - 10%: 4.00% 10% - 15%: 3.10% 15% - 20%: 2.80%",
+      "reviews": []
+    },
+    {
+      "id": "p75ixtc4ry",
+      "version": 0,
+      "active": true,
+      "question": "How is mortgage insurance paid?",
+      "answer": "Either up front, or as a part of mortgage payments.",
+      "reviews": []
+    },
+    {
+      "id": "9xg6kr459q",
+      "version": 0,
+      "active": true,
+      "question": "What is the purpose of mortgage insurance?",
+      "answer": "To prevent a housing crash like what happened in 2008. Borrowers can overextend themselves, so mortgage insurance protects the lender in the event of a default.",
+      "reviews": []
+    },
+    {
+      "id": "hc29jswfub",
+      "version": 0,
+      "active": true,
+      "question": "What are the 5 recurring expenses associated with owning a condo?",
+      "answer": "- utilities (power, water, internet) - condo fees - mortgage payment (includes mortgage insurance) - property tax - property insurance",
+      "reviews": []
+    },
+    {
+      "id": "zhp0z7mr7c",
+      "version": 0,
+      "active": true,
+      "question": "What are the 4 one-time expenses associated with buying a property, and what are their approximate amounts?",
+      "answer": "- lawyer to transfer title (~1500) - property/condo docs inspection (400-500) - title registration (~150) - appraisal for mortgage (~150, might be negotiable)",
+      "reviews": []
+    },
+    {
+      "id": "7b7h95l6ox",
+      "version": 0,
+      "active": true,
+      "question": "What are the federal income tax rates and their brackets?",
+      "answer": "Below $48 535: 15% $48 535 - $97 069: 20.5%  $97 069 - $150 473: 26%",
+      "reviews": []
+    },
+    {
+      "id": "gqca9ej6gp",
+      "version": 0,
+      "active": true,
+      "question": "What is the provincial tax rate, and what does it go up to?",
+      "answer": "10% under ~131k",
+      "reviews": []
+    },
+    {
+      "id": "phdhoe33st",
+      "version": 0,
+      "active": true,
+      "question": "How does the CPP work? How much is paid for it? How does it work for self-employed people?",
+      "answer": "\"With CPP all employees make contributions, at 5.25% on the first $58 700 of their income (minus the first $3 500, the \"\"basic exemption\"\"), for a maximum of $2 898. Employers match this.   Self-employed people must pay both employer and employee part.\"",
+      "reviews": []
+    },
+    {
+      "id": "o0hkg0km45",
+      "version": 0,
+      "active": true,
+      "question": "How does EI contribution work for employees? Employers?",
+      "answer": "Employees contribute 1.58% (in 2020) on max $54 200 of their income per year.   Employers contribute what employees contribute x 1.4.",
+      "reviews": []
+    },
+    {
+      "id": "14wzkyncy2",
+      "version": 0,
+      "active": true,
+      "question": "Since the TFSA was introduced, what has been the contribution room in each year?",
+      "answer": "2009: $5 000 2010: $5 000 2011: $5 000 2012: $5 000 2013: $5 500 2014: $5 500 2015: $10 000 2016: $5 500 2017: $5 500 2018: $5 500 2019: $6 000",
+      "reviews": []
+    },
+    {
+      "id": "yi15u7bj19",
+      "version": 0,
+      "active": true,
+      "question": "What are the two types of mortgage rates, and what are the advantages/disadvantages of each?",
+      "answer": "fixed rate: protected against increases in interest rate, but often harsher penalty fees associated with them   variable rate: interest rates can increase, but lower pentalty fees for ending mortgage early",
+      "reviews": []
+    },
+    {
+      "id": "9ximgxeucw",
+      "version": 0,
+      "active": true,
+      "question": "What are the two types of interest?",
+      "answer": "simple: always calculated from the initial amount of the principal   compound: interest is calculated from current balance, which includes any interest that has accumulated from previous periods",
+      "reviews": []
+    },
+    {
+      "id": "odda859bry",
+      "version": 0,
+      "active": true,
+      "question": "Formula for effective interest rate",
+      "answer": "reff = (1 + r)^n - 1   where r is interest rate per period       n is number of periods",
+      "reviews": []
+    },
+    {
+      "id": "hjkmkmo0hc",
+      "version": 0,
+      "active": true,
+      "question": "Formula for calculating effective interest rate, continuously compounded",
+      "answer": "reff = e^r - 1",
+      "reviews": []
+    },
+    {
+      "id": "g850tllezl",
+      "version": 0,
+      "active": true,
+      "question": "- What are the five common types of accounts? - What are three examples for each?",
+      "answer": "Income: paychecks, dividends, interest, gifts received  Expenses: taxes, rent, donations, gifts given Equity: opening balances, goodwill, untrackable errors  Assets: securities, cash, loans credited, bank accounts  Liabilities: credit card balance, mortgage, student loans",
+      "reviews": []
+    },
+    {
+      "id": "h43axrqxxl",
+      "version": 0,
+      "active": true,
+      "question": "What are the 4 one-time expenses associated with selling a property, and what are their approximate amounts?",
+      "answer": "- laywer (~1500) - realtors' commission (~7% on 1st 100k; 3% thereafter, then split) - providing condo docs (~400) - penalty for getting out of mortgage earlier (depends)",
+      "reviews": []
+    },
+    {
+      "id": "9k0879xkmh",
+      "version": 0,
+      "active": true,
+      "question": "What is an REIT?",
+      "answer": "Real estate investment trust. Is a trust that owns, and in most cases operates, income-producing real estate. Compared to an ETF, REITs have some special characteristics:   - REITs must return the majority of their income to shareholders - REITs must derive a majority of their profits from things like rent, selling mortgages and selling property - REITs often are restricted as to what type of property they can own - the tax situation on paid out distributions is more complex than with dividends, since REITs do not pay corporate tax on their income",
+      "reviews": []
+    },
+    {
+      "id": "89lma0970y",
+      "version": 0,
+      "active": true,
+      "question": "How is TFSA contribution room calculated?",
+      "answer": "+ previous year's unused contribution room + current year's dollar limit + previous year's withdrawals - current year's contributions = current year's contribution limit",
+      "reviews": []
+    },
+    {
+      "id": "6w4qqli27j",
+      "version": 0,
+      "active": true,
+      "question": "In what year do you start accumulating contribution room in your TFSA?",
+      "answer": "The year you turn 18. It is not prorated.",
+      "reviews": []
+    },
+    {
+      "id": "n0q9pagjln",
+      "version": 0,
+      "active": true,
+      "question": "What is dividend yield?",
+      "answer": "The percentage of its stock price that it pays out in dividends each year.",
+      "reviews": []
+    },
+    {
+      "id": "o4ti5f0n21",
+      "version": 0,
+      "active": true,
+      "question": "What is a bond, and how does it work?",
+      "answer": "A bond is a way to loan money to a government, corporation or other body. You pay the principal out at the beginning and (typically) get paid interest each year. Once the term of the bond is up, you get your principal back.",
+      "reviews": []
+    },
+    {
+      "id": "mg9qzdu9n7",
+      "version": 0,
+      "active": true,
+      "question": "What is the interest rate of a bond called? What three forces affect it?",
+      "answer": "The coupon rate.   Affected by: - how risky it is - prime rate - term of the bond",
+      "reviews": []
+    },
+    {
+      "id": "ad70yet4r1",
+      "version": 0,
+      "active": true,
+      "question": "What is a treasury security?",
+      "answer": "It is a type of bond, specifically one sold by the federal US treasury.",
+      "reviews": []
+    },
+    {
+      "id": "85tlpmlorn",
+      "version": 0,
+      "active": true,
+      "question": "What is a hedge fund?",
+      "answer": "A large pool of money, largely unregulated by the government, invested aggressively for primarily wealthy clients.",
+      "reviews": []
+    },
+    {
+      "id": "c17owle6q6",
+      "version": 0,
+      "active": true,
+      "question": "What is dollar-cost averaging?",
+      "answer": "Refers to the policy of periodically (no matter what) making investments. The effect is to balance out any fluctuations in that period so that your shares were, on average, bought for the average share price in that period.",
+      "reviews": []
+    },
+    {
+      "id": "j2m4dxah3j",
+      "version": 0,
+      "active": true,
+      "question": "When a company makes a profit, what are its options, and what does each do?",
+      "answer": "1) Pay a dividend. This is akin to taking money from your right pocket and putting it in your left pocket. If the company didn't pay a dividend, they would do other things with that money that would also theoretically increase the value (but not necessarily price) of your stock.   2) Do a stock buyback. Since the remaining shares represent partial ownership of the company, and there are now fewer of them, this causes the value of the remaining shares to increase.   3) Reinvest the profits in continued growth. This can take the form of investment in capital, acquisitions, and R\u0026D.",
+      "reviews": []
+    },
+    {
+      "id": "5gz9l0pbw8",
+      "version": 0,
+      "active": true,
+      "question": "What is MER?",
+      "answer": "Management expense ratio. Is the percentage of the total value of the fund that is taken per year to pay for the management of the fund.",
+      "reviews": []
+    },
+    {
+      "id": "osn9md98b3",
+      "version": 0,
+      "active": true,
+      "question": "What is a morningstar rating?",
+      "answer": "It is: - based on history - relative to other funds in the same category - based on 3 year, 5 year, 10 year and total periods   So funds with better morningstar ratings have done better than comparable funds in the past.",
+      "reviews": []
+    },
+    {
+      "id": "d07va60mk0",
+      "version": 0,
+      "active": true,
+      "question": "What is a futures contract?",
+      "answer": "A futures contract is a legal agreement to buy or sell a commodity or security at a predetermined price at a specified time in the future.",
+      "reviews": []
+    },
+    {
+      "id": "w8do7vjflq",
+      "version": 0,
+      "active": true,
+      "question": "What is an option? What are the two types of options?",
+      "answer": "Options are contracts that give the buyer the opportunity to buy or sell the underlying asset within a specific timeframe. The buyer is not obligated to buy or sell the asset if they choose not to.   1) Call options, which allow the holder to buy the asset at a stated price within a specific timeframe   2) Put options, which allow the holder to sell the asset at a stated price within a specific timeframe",
+      "reviews": []
+    },
+    {
+      "id": "9y1n53zv1j",
+      "version": 0,
+      "active": true,
+      "question": "What two qualities define a derivative?",
+      "answer": "- it is a security with a value that is derived from an underlying asset or group of assets - it is a contract between two or more parties",
+      "reviews": []
+    },
+    {
+      "id": "4024iwz85m",
+      "version": 0,
+      "active": true,
+      "question": "When the value of the stock market grows, what are the three parts that make up this growth?",
+      "answer": "1) Real growth (the rise of companies' earnings and dividends) 2) Inflationary growth (the general rise of prices throughout the economy) 3) Speculative growth or decline (any increase or decrease in the investing public's appetite for stocks)",
+      "reviews": []
+    },
+    {
+      "id": "h465r3iwyr",
+      "version": 0,
+      "active": true,
+      "question": "What is leverage?",
+      "answer": "Generally speaking, leverage refers to using debt to make investments.  An investment is leveraged if it was not bought with money you already owned. The defining characteristic is that if it loses value it puts you in the hole, and if it gains value it gives you a much larger return. Some examples are:   - buying stocks with borrowed money - buying a home via a mortgage - buying futures",
+      "reviews": []
+    },
+    {
+      "id": "1o4xafaodc",
+      "version": 0,
+      "active": true,
+      "question": "How does contribution room work with RRSPs (3 points)?",
+      "answer": "- contribution room is 18% of your yearly income, to a maximum of ~26k (depends on year)   - unused contribution room from previous years stacks    - withdrawals are not added back to contribution room in the same fashion as the TFSA",
+      "reviews": []
+    },
+    {
+      "id": "6jeea2kbwx",
+      "version": 0,
+      "active": true,
+      "question": "What are the two interesting things about how RRSP contributions can be claimed against income tax?",
+      "answer": "- claims do not have to be made in the year the contribution was made - they can be made in any subsequent year   - to claim contributions for a particular year, you must make the contribution before 60 days into the next year (for performance bonus, presumably)",
+      "reviews": []
+    },
+    {
+      "id": "emvait2l5q",
+      "version": 0,
+      "active": true,
+      "question": "How are withdrawals from your RRSP taxed?",
+      "answer": "When you withdraw money from your RRSP, your financial institution witholds up to 30% of it for income tax, depending on how much you are withdrawing. Any difference between the actual tax due and what was withheld is returned to you when you file your tax return.",
+      "reviews": []
+    },
+    {
+      "id": "m00p71yqsj",
+      "version": 0,
+      "active": true,
+      "question": "What is a factor? What are four examples of factors?",
+      "answer": "A factor is a characteristic of a stock or bond that consistently explains higher average returns through exposure to certain types of risk.   momentum, leverage, value, size, quality",
+      "reviews": []
+    },
+    {
+      "id": "tlh107jsdq",
+      "version": 0,
+      "active": true,
+      "question": "What causes a flat or inverted yield curve? Why does it cause concern?",
+      "answer": "A flat or inverted yield curve occurs when either the fed raises interest rates greatly (from which short-term bonds recover more quickly than long-term bonds), or investors start considering long-term bonds more attractive (more demand -\u003e prices increase -\u003e yield decreases).   The latter condition signals that investors are bearish, which is a sign that any growth of the stock market due to speculation is tenuous.",
+      "reviews": []
+    },
+    {
+      "id": "lmix4ptxxc",
+      "version": 0,
+      "active": true,
+      "question": "What are three ways to achieve a short position?",
+      "answer": "\"1) Short selling, where you borrow a stock from your broker, with the promise to give it back in the future. You then sell it at the current price. Once it is time to return the stock, you buy it at current prices and return it (called \"\"covering your short\"\"). You have to pay interest and any dividends that the stock pays while you're \"\"holding\"\" it.   2) Use a put option. Buy only after the price goes down, and sell for the previously-agreed-upon sell price.   3) Same thing as with the option, but with futures; buy at the time you have to sell the stock.\"",
+      "reviews": []
+    },
+    {
+      "id": "z9lkjs28qj",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between a trust and a fund?",
+      "answer": "A fund is just a pool of money that is professionally invested.   A trust, though poorly defined and differing depending on what country you're in, is typically a legal entity. It can refer to a trust fund, where money is set aside by a trustor and managed by a trustee or trustees for a beneficiary (rich people inheritance stuff). It can also refer to a REIT, which is a special legal entity that must adhere to certain rules regarding how it manages its assets.",
+      "reviews": []
+    },
+    {
+      "id": "f0d7qq53of",
+      "version": 0,
+      "active": true,
+      "question": "What is a market maker?",
+      "answer": "An entity that buys when people want to sell, and sells when people want to buy. They make money by charging a small premium on the stocks they sell (bid-ask spread). In doing this, they provide liquidity to the market.",
+      "reviews": []
+    },
+    {
+      "id": "nc8hqboixt",
+      "version": 0,
+      "active": true,
+      "question": "What is a ponzi scheme?",
+      "answer": "You convince some people to give you money, promising to invest it and produce great returns. You then use that money to pay back people you previously convinced to give you money (plus a nice return). The cycle continues until it catches up to you.",
+      "reviews": []
+    },
+    {
+      "id": "7a5yyu8gky",
+      "version": 0,
+      "active": true,
+      "question": "What is book value (3 definitions)?",
+      "answer": "It is another one of those terms whose definition depends on the context. A few are:   - the carrying value of an asset on the balance sheet (initial cost minus accumulated depreciation)   - the net asset value of a company minus the value of its intangible assets and its liabilities; in this case it represents the total value of the company if it were to be liquidated   - the initial cost to purchase an investment",
+      "reviews": []
+    },
+    {
+      "id": "hu2mg4374f",
+      "version": 0,
+      "active": true,
+      "question": "What is bid-ask spread? What affects it?",
+      "answer": "Bid-ask spread is introduced by market makers so that they can stay afloat. The ask price is what they ask when they are selling (or when you are buying). The bid price is what they offer when they are buying (or when you are selling). The ask price is higher than the bid price.   Bid-ask spread is lower on high-volume securities.",
+      "reviews": []
+    },
+    {
+      "id": "7s93fsjbkj",
+      "version": 0,
+      "active": true,
+      "question": "What does the term year-over-year mean?",
+      "answer": "It means that whatever it is referring to is a comparison between the present moment and an entire year ago. So if you are looking at year-over-year revenue growth for Q1 2020, you're comparing revenue between Q1 2019 and Q1 2020. This contrasts with year-to-date.",
+      "reviews": []
+    },
+    {
+      "id": "1k69pb2hib",
+      "version": 0,
+      "active": true,
+      "question": "What is a discount bond? How does it occur?",
+      "answer": "A discount bond is a bond whose value is below its par value. This occurs when interest rates increase greatly or the bond is very risky.",
+      "reviews": []
+    },
+    {
+      "id": "9oflgb9sdc",
+      "version": 0,
+      "active": true,
+      "question": "What is the yield to maturity of a bond?",
+      "answer": "It is the interest rate effectively earned on the money spent to buy the bond today. It is calculated by finding the interest rate required to result in the net present value of the bond, since you know the par value and the amount of the coupon payments.",
+      "reviews": []
+    },
+    {
+      "id": "3baie5ih8m",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between a security, an equity, a share and a stock?",
+      "answer": "security - any tradeable financial asset   equity - a financial stake in a company; partial or complete ownership; this is a more general term than share or stock   stock - when used properly, refers to multiple shares   share - a single unit of stock",
+      "reviews": []
+    },
+    {
+      "id": "hatulmtb4m",
+      "version": 0,
+      "active": true,
+      "question": "What is the float of a company?",
+      "answer": "The number of its shares whose trade is not restricted.",
+      "reviews": []
+    },
+    {
+      "id": "tvtdqcw8du",
+      "version": 0,
+      "active": true,
+      "question": "What is the S\u0026P500 and how are its constituents chosen?",
+      "answer": "An large cap weighted index. Constituents are chosen by a committee, and must: - have large market cap - be listed on NASDAQ or NYSE - be traded above a certain volume leading up to evaluation date",
+      "reviews": []
+    },
+    {
+      "id": "8ixfybw0rk",
+      "version": 0,
+      "active": true,
+      "question": "What is the DJIA?",
+      "answer": "\"An index of 30 companies that have large market cap. The \"\"industrial\"\" part of it is a misnomer since many of the companies have nothing to do with heavy industry.\"",
+      "reviews": []
+    },
+    {
+      "id": "gstzzp8sey",
+      "version": 0,
+      "active": true,
+      "question": "What is the TSX Composite?",
+      "answer": "An index of about 250 companies that are incorporated under Canadian law, listed on the TSX, and represent at least 0.05% of the index.",
+      "reviews": []
+    },
+    {
+      "id": "83a51vak8r",
+      "version": 0,
+      "active": true,
+      "question": "What is the NASDAQ Composite?",
+      "answer": "A market-cap-weighted index of all of the companies listed on NASDAQ; heavily weighted towards IT companies.",
+      "reviews": []
+    },
+    {
+      "id": "4mgzkjb942",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between the NYSE and NASDAQ?",
+      "answer": "NYSE is more old-fashioned: it has a physical trading floor, trades are facilitated by people, charges higher fees to companies for membership, and tends to have older, more stable companies.   NASDAQ is newer-fashioned: it has no trading floor (trades are executed in its data center in New Jersey), trades are facilitated by market makers, it charges lower fees, and tends to have newer growth companies and IT companies.",
+      "reviews": []
+    },
+    {
+      "id": "jjg8abko2p",
+      "version": 0,
+      "active": true,
+      "question": "What are alpha and beta?",
+      "answer": "market beta is a measure of how sensitive an asset or portfolio is to the market. So a beta of 0.5 means that an increase of 10% of the market causes the asset/portfolio to appreciate by 5%.   alpha is the difference between returns for portfolios with the same beta; it is the holy grail of investing. It is attributed to a manager's ability to time the market or pick stocks.",
+      "reviews": []
+    },
+    {
+      "id": "xjks7la7m1",
+      "version": 0,
+      "active": true,
+      "question": "What is the tradeoff between long-term bonds and short-term bonds?",
+      "answer": "Long-term bonds tend to have higher return, but their prices are also more volatile with regard to interest rates. Short-term bonds have lower return and are much less volatile, so they are a better option if you are looking to hedge the risk of equities.",
+      "reviews": []
+    },
+    {
+      "id": "d5gqcybsh3",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between eligible and ineligible dividends in Canadian tax? Why is there this distinction?",
+      "answer": "Eligible dividends are paid by corporations who have not benefitted from the reduced small business tax rate.   Ineligible dividends are paid by corporations who have benefitted from the reduced small business tax rate.   The reason for this is that larger corporations have already paid more taxes on the money they are paying out in dividends - it makes sense to tax these dividends at a lower rate, because there will be less of them.",
+      "reviews": []
+    },
+    {
+      "id": "z47apcv320",
+      "version": 0,
+      "active": true,
+      "question": "How is tax paid on dividends?",
+      "answer": "\"1) The amount of dividends received is \"\"grossed up\"\" by 38% for eligible dividends and by 15% for ineligible dividends. So $10000 becomes an income tax amount of $13800 and $11500, respectively.   2) If the dividend was paid by a Canadian corporation, the marginal tax rate paid on the grossed-up amount is reduced by 15.0198% for eligible dividends and by 9.0301% for ineligible dividends.   Note that these rates omit provincial tax and will change from year to year.\"",
+      "reviews": []
+    },
+    {
+      "id": "sd3izz3ioy",
+      "version": 0,
+      "active": true,
+      "question": "How does capital gains tax work?",
+      "answer": "You pay your marginal tax rate (since it counts as income) on 50% of the realized gain (sell price - brokerage fees - book value).",
+      "reviews": []
+    },
+    {
+      "id": "0g4pkpgsvz",
+      "version": 0,
+      "active": true,
+      "question": "How can capital losses be used in taxes?",
+      "answer": "You can deduct them from any capital gains you made in that year; thus the amount of taxable capital gains is lower. If you have any losses left over, they can be carried forward to following years.",
+      "reviews": []
+    },
+    {
+      "id": "7sqcz8ewe6",
+      "version": 0,
+      "active": true,
+      "question": "What is foreign withholding tax?",
+      "answer": "Any time an entity holds stocks in a company that is not in the same country, dividends paid are subject to a tax that is in addition to any tax already paid on the dividends. This can occur multiple times, for example if you hold a US-listed ETF that holds stocks in companies not in the US. This can eat into dividends significantly.",
+      "reviews": []
+    },
+    {
+      "id": "j3aeohfxjl",
+      "version": 0,
+      "active": true,
+      "question": "What 3 points should be remembered about foreign withholding tax?",
+      "answer": "- foreign withholding tax can be written off (is reported on T3 or T5) - foreign withholding tax does not apply if the asset is held directly in an RRSP and the asset is a US security (there is some treaty) - the fewer jumps, the better - every jump is a place where you potentially lose money to taxes",
+      "reviews": []
+    },
+    {
+      "id": "53l5uvkvlf",
+      "version": 0,
+      "active": true,
+      "question": "How does a margin account work?",
+      "answer": "You put some money into the account, and use that money as collateral for a loan that is used to buy more securities. You must also pay interest on the borrowed amount.",
+      "reviews": []
+    },
+    {
+      "id": "s8x4bzfme3",
+      "version": 0,
+      "active": true,
+      "question": "What is a RRIF?",
+      "answer": "Stands for registered retirement income fund.   Upon retirement, a RRSP is converted to a RRIF. This must occur by the end of the year in which you turn 71, but can happen earlier. RRIFs have a minimum yearly withdrawal amount, and cannot be contributed to. Investments held within the RRIF grow in the same manner as an RRSP.",
+      "reviews": []
+    },
+    {
+      "id": "vplq1vpg8d",
+      "version": 0,
+      "active": true,
+      "question": "What is a LIRA?",
+      "answer": "Stands for locked-in retirement account. Is a place where you hold funds from a pension fund until retirement, when you convert the LIRA into a LIF or RLIF or use it to buy a life annuity. Cannot be withdrawn, except under special circumstances, or contributed to.",
+      "reviews": []
+    },
+    {
+      "id": "cwbbgg3mqo",
+      "version": 0,
+      "active": true,
+      "question": "What are margin requirement and loan value, and how are they related?",
+      "answer": "Margin requirement is the percentage of an investment's value that you must keep in real assets in the margin account.   Loan value is the amount of money that is lent by the stock broker so that you can buy the securities. It remains constant over the life of the investment.",
+      "reviews": []
+    },
+    {
+      "id": "k9y3a307x0",
+      "version": 0,
+      "active": true,
+      "question": "In a margin account, how do you get the current value of the money you invested?",
+      "answer": "The loaned amount is fixed for the life of the investment - you always need to pay this back. So, when the value of your investment fluctuates, this comes out of the cash you used to make the investment. You subtract the initial (read: at the time you made the investment) loan value from the current market value of the investment to get the current value of your investment.",
+      "reviews": []
+    },
+    {
+      "id": "5ytsni9fub",
+      "version": 0,
+      "active": true,
+      "question": "In a margin account, what is margin, and how do you calculate it?",
+      "answer": "Margin is the amount of real money you can lose before you must add funds to the account.  margin = (value of investment) - (book value x margin requirement)",
+      "reviews": []
+    },
+    {
+      "id": "bu2k86wsbc",
+      "version": 0,
+      "active": true,
+      "question": "What is reserve requirement/reserve ratio? How is it set? How does it affect the economy? In practice, what is it equal to?",
+      "answer": "\"Reserve requirement is the portion of money deposited by customers that a bank is required to keep in its \"\"vault\"\" or in the central bank's \"\"vaults\"\".   The central bank sets it.   A lower reserve requirement means that more money is created by banks when they loan it out, it gets deposited, they loan that out, etc. Then, all of the things that come with increased money supply apply.   In most countries there is no reserve requirement. It has been dismantled in recent years.\"",
+      "reviews": []
+    },
+    {
+      "id": "q8x114kgaf",
+      "version": 0,
+      "active": true,
+      "question": "How is increased money supply thought to affect the economy? What might get in the way of this?",
+      "answer": "Increasing the money supply (and thus inflation) means there is more money just sitting around, especially in banks. This is effectively increasing the supply of loans.   The competition associated with increased supply will cause a lower selling price, i.e. loans will be available at lower interest rates. Lower interest rates mean that individuals and business owners are more likely to take out a loan and start a business etc. Thus, the economy gets a boost.   This assumes that people have an appetite for the risk that comes with taking out a loan and trying to grow your business, which is not always the case. If money is just sitting there and being printed then we have a problem.",
+      "reviews": []
+    },
+    {
+      "id": "rne69z0v5h",
+      "version": 0,
+      "active": true,
+      "question": "What are the three main tools that a central bank has at its disposal to affect the economy?",
+      "answer": "1) reserve requirement 2) open market operations 3) discount rate",
+      "reviews": []
+    },
+    {
+      "id": "yi9bxnhilp",
+      "version": 0,
+      "active": true,
+      "question": "What are open market operations?",
+      "answer": "A tool at the disposal of central banks when trying to manage the economy. The basic idea is that when the central bank wants to accelerate the economy, they buy (back) securities (generally bonds or mortgage-backed securities) from banks using made-up money. This has two effects:   1) It increases the money supply, which has the tendency to decrease interest rates and make it easier to get a loan.   2) If the central bank is buying many of the same kind of securities (which is usually the case), it creates an artificial demand for those securities, which causes their price to increase. This in turn causes the yield of those securities (since they are generally treasuries) to decrease. Since the yield of bonds is tied to interest rates in general, interest rates will decrease.",
+      "reviews": []
+    },
+    {
+      "id": "7yort3saui",
+      "version": 0,
+      "active": true,
+      "question": "What is the federal reserve?",
+      "answer": "The central bank in the US.",
+      "reviews": []
+    },
+    {
+      "id": "417qmogods",
+      "version": 0,
+      "active": true,
+      "question": "What is the federal funds rate? What is discount rate? How do they differ?",
+      "answer": "The federal funds rate is the interest rate that the federal reserve wants banks to borrow from each other at.   Discount rate is the interest rate at which banks can borrow from the federal reserve.   The fed doesn't have any direct control over federal funds rate; it can only indirectly influence it by setting discount rate. It is a general rule that the interest rate at which banks borrow money from each other (what is supposed to be the federal funds rate) is larger than the discount rate.",
+      "reviews": []
+    },
+    {
+      "id": "8rgy9zvw8k",
+      "version": 0,
+      "active": true,
+      "question": "In what three situations might a bank borrow money from another bank, or from a central bank?",
+      "answer": "1) People are panicing and withdrawing their money all at once, so in order to make up the shortfall the bank borrows money.   2) The bank can lend out money at a higher rate than discount rate, so it borrows money from the central bank and lends it out at that higher rate.   3) More money has left the bank than came in in a day, and the bank needs to cover the difference with the clearing house.",
+      "reviews": []
+    },
+    {
+      "id": "h56s2pwvhn",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between monetary and fiscal policy?",
+      "answer": "Monetary policy refers to the policies of a nation's central bank. This basically means managing the economy.   Fiscal policy refers to the financial policies of a government, which covers things like tax rates, whether to run a deficit, austerity etc.",
+      "reviews": []
+    },
+    {
+      "id": "6ko9muglen",
+      "version": 0,
+      "active": true,
+      "question": "How does the government borrow money?",
+      "answer": "The same way any large organization borrows money: by issuing bonds and other low-risk securities. Anyone can buy these securities, including the central bank, banks, individuals, businesses, and foreign governments.",
+      "reviews": []
+    },
+    {
+      "id": "mrl1bxtaof",
+      "version": 0,
+      "active": true,
+      "question": "What is quantitative easing?What distinguishes it from open market operations? Why might a central bank turn to it?",
+      "answer": "Quantitative easing is essentially the same thing as open market operations, except it is larger in scale and involves assets beyond the usual treasuries.   Quantitative easing is a strategy employed by central banks to boost the economy when interest rates are already at rock bottom. It is thought that if federal funds rate is already set to 0%, but the banks are still above that, QE will help get the banks' offered rates closer to it. The business with injecting money into the economy also applies.",
+      "reviews": []
+    },
+    {
+      "id": "ipd2e9hqs7",
+      "version": 0,
+      "active": true,
+      "question": "\"What does the quote, \"\"stability is destabilizing\"\" refer to?\"",
+      "answer": "When the economy is growing, things seem good and more and more people invest their money in riskier and riskier investments. Additionally, regulators become more lax because things are good.   However, this can result in the creation of speculative bubbles. Obviously, when these bubbles burst, it is destabilizing.",
+      "reviews": []
+    },
+    {
+      "id": "8y81hfbhtp",
+      "version": 0,
+      "active": true,
+      "question": "When a private bank issues a loan, which accounts are affected and how?",
+      "answer": "\"Banks do not only lend out the money that they have in their \"\"vaults\"\"; that is a common misconception. When they loan money, they are literally adding some money to the account of the loanee. In their own books, the loan appears as a liability representing the money loaned out to the loanee, and as an asset representing the promise by the loanee to pay the loan back.   So in this manner, the bank literally creates money, at least, until the loanee has paid that money back. And hopefully by that time the loanee has used the money to achieve economic growth by that time, meaning that everyone is better off.\"",
+      "reviews": []
+    },
+    {
+      "id": "jzgomuc11k",
+      "version": 0,
+      "active": true,
+      "question": "The growth of the economy depends on the availability of credit. However, assuming credit is available, which other two things are required for the economy to grow?",
+      "answer": "1) Borrowers (both companies and consumers) must have an appetite for risk, i.e. a belief that they can make a profit with extra credit.   2) Profit-maximizing private banks must have the willingness and ability to lend.",
+      "reviews": []
+    },
+    {
+      "id": "2rfago1n95",
+      "version": 0,
+      "active": true,
+      "question": "What happens when more money leaves a bank than comes in in a day?",
+      "answer": "The bank must balance its books at the end of the day. This is done using interbank lending, which, like all transactions between private banks, uses an inter-bank clearing house.",
+      "reviews": []
+    },
+    {
+      "id": "3qywjh0xiu",
+      "version": 0,
+      "active": true,
+      "question": "What is securitization? What is an example of this?",
+      "answer": "Securitization is the process of making things that were previously not tradeable or sellable, tradeable or sellable.   CDOs and CDSs are both examples of this.",
+      "reviews": []
+    },
+    {
+      "id": "2wil9eelr0",
+      "version": 0,
+      "active": true,
+      "question": "What is a CDO?",
+      "answer": "CDO: collateralized debt obligation   A CDO is a loan that has been converted into a tradeable security. This allows creators of CDOs to loan money without being sure that the borrower is able to repay the loan, and then cleanse their hands of any responsibility.",
+      "reviews": []
+    },
+    {
+      "id": "j1xj2v09h0",
+      "version": 0,
+      "active": true,
+      "question": "What is a CDS?",
+      "answer": "CDS: credit default swap   A CDS is essentially insurance that can be purchased against the risk that a loan mght not be paid back. This insurance is a tradeable security. Also, you do not have to be the owner of a loan to take out a CDS on it, which effectively incentivizes making others default on their loans. Finally, the insurance actually tends to be unreliable since the sellers don't have deep enough pockets to pay it out in the event of pervasive defaults.",
+      "reviews": []
+    },
+    {
+      "id": "pek6nqrq8n",
+      "version": 0,
+      "active": true,
+      "question": "What is real interest rate?",
+      "answer": "Real interest rate is the interest rate minus inflation. It is the rate that is actually paid on loans.",
+      "reviews": []
+    },
+    {
+      "id": "tuwqz84ypo",
+      "version": 0,
+      "active": true,
+      "question": "What causes inflation (5 points)?",
+      "answer": "Inflation has many causes, including:   - Excess spending, probably caused by a rapid expansion of credit   - Higher labour costs; companies will try to pass on these costs to consumers in the form of higher prices   - Companies feel as though they can charge higher prices without losing business   - Increase in the price of raw materials/inputs that are required for the production of everything, for example oil in the 1970s   - Existing inflation, because there are always ongoing efforts to improve one's position in the face of existing inflation i.e. workers negotiating higher pay",
+      "reviews": []
+    },
+    {
+      "id": "c9mw1v4ilm",
+      "version": 0,
+      "active": true,
+      "question": "Who benefits, and who loses, from inflation?",
+      "answer": "Benefits: - borrowers, since the principal is worth less over time   Loses: - people on fixed incomes - lenders - anyone who lags behind prices (workers potentially) - owners of financial wealth",
+      "reviews": []
+    },
+    {
+      "id": "s879honmbk",
+      "version": 0,
+      "active": true,
+      "question": "With RRSPs, what is the difference between contribution limit and deduction limit? How is each one calculated?",
+      "answer": "Contribution limit is the maximum amount you can contribute to your RRSP.  2020 contribution limit =     18% of 2019 income (with a cap)     + unused contribution room from previous years  Deduction limit is the maximum amount you can deduct from your income taxes.  2019 deduction limit =     2019 contributions (including up to 60 days into 2020)     + unused deduction room from previous years",
+      "reviews": []
+    }
+  ]
+}

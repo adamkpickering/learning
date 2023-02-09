@@ -1,0 +1,1766 @@
+{
+  "name": "python",
+  "version": 0,
+  "cards": [
+    {
+      "id": "41xjsvlmri",
+      "version": 0,
+      "active": true,
+      "question": "What are the arguments to open()?",
+      "answer": "path mode: one of rwa and tb",
+      "reviews": []
+    },
+    {
+      "id": "5x1xs9flf9",
+      "version": 0,
+      "active": true,
+      "question": "print() kwargs",
+      "answer": "sep=' ' end='\\n' file=sys.stdout flush=False",
+      "reviews": []
+    },
+    {
+      "id": "il91qr7tu9",
+      "version": 0,
+      "active": true,
+      "question": "convert dictionary to JSON string",
+      "answer": "json.dumps(my_dict)",
+      "reviews": []
+    },
+    {
+      "id": "1rn85n6fmf",
+      "version": 0,
+      "active": true,
+      "question": "convert JSON string to dict",
+      "answer": "json.loads(my_string)",
+      "reviews": []
+    },
+    {
+      "id": "p2wzzo4un5",
+      "version": 0,
+      "active": true,
+      "question": "write dict to file as json object",
+      "answer": "json.dump(dict, fd)",
+      "reviews": []
+    },
+    {
+      "id": "qx7a8ngfng",
+      "version": 0,
+      "active": true,
+      "question": "read JSON file into dict",
+      "answer": "my_dict = json.load(fd)",
+      "reviews": []
+    },
+    {
+      "id": "z81ya99xa9",
+      "version": 0,
+      "active": true,
+      "question": "module for regex",
+      "answer": "re",
+      "reviews": []
+    },
+    {
+      "id": "j2wll1sz8k",
+      "version": 0,
+      "active": true,
+      "question": "return entire matched string from a match object",
+      "answer": "match.group(0)",
+      "reviews": []
+    },
+    {
+      "id": "fsvrgyndgb",
+      "version": 0,
+      "active": true,
+      "question": "match against compiled regex",
+      "answer": "compiled_string.search(string)",
+      "reviews": []
+    },
+    {
+      "id": "qlfi9876d1",
+      "version": 0,
+      "active": true,
+      "question": "return list of all matches to compiled regex in string",
+      "answer": "list = compiled_regex.findall(my_string)",
+      "reviews": []
+    },
+    {
+      "id": "bxtwnqhfg0",
+      "version": 0,
+      "active": true,
+      "question": "return match without compiling regex",
+      "answer": "re.search(pattern, string)",
+      "reviews": []
+    },
+    {
+      "id": "15a9s7kqtv",
+      "version": 0,
+      "active": true,
+      "question": "return list of all matches in a string without compiled regex",
+      "answer": "matches = re.findall(pattern, string)",
+      "reviews": []
+    },
+    {
+      "id": "nnz9aljn7r",
+      "version": 0,
+      "active": true,
+      "question": "number each element in an iterable",
+      "answer": "iterator = ['cat', 'dog', 'snake']enumerate(iterator) =\u003e [(0, 'cat'), (1, 'dog'), (2, 'snake')]",
+      "reviews": []
+    },
+    {
+      "id": "4bl9xopkgn",
+      "version": 0,
+      "active": true,
+      "question": "read entire file",
+      "answer": "fd.read()",
+      "reviews": []
+    },
+    {
+      "id": "phdy4odx18",
+      "version": 0,
+      "active": true,
+      "question": "read a line from a file",
+      "answer": "fd.readline()",
+      "reviews": []
+    },
+    {
+      "id": "1adfurln7q",
+      "version": 0,
+      "active": true,
+      "question": "How do you iterate over the lines in a file?",
+      "answer": "\"with open(path, 'r') as fd:    for line in fd:         # do something with line\"",
+      "reviews": []
+    },
+    {
+      "id": "gzazcak45p",
+      "version": 0,
+      "active": true,
+      "question": "read file into a list of lines",
+      "answer": "fd.readlines()",
+      "reviews": []
+    },
+    {
+      "id": "ua2lio5voi",
+      "version": 0,
+      "active": true,
+      "question": "separate a string on commas",
+      "answer": "string.split(',')",
+      "reviews": []
+    },
+    {
+      "id": "lr0vb3ygzq",
+      "version": 0,
+      "active": true,
+      "question": "remove leading and trailing whitespace from string",
+      "answer": "string.strip()",
+      "reviews": []
+    },
+    {
+      "id": "5xqkjilk20",
+      "version": 0,
+      "active": true,
+      "question": "What is printed?foo = range(0, 20) print(*foo[slice(1, 10, 3)])",
+      "answer": "1 4 7",
+      "reviews": []
+    },
+    {
+      "id": "hm2kgq9s74",
+      "version": 0,
+      "active": true,
+      "question": "map() function signature?",
+      "answer": "map(function, iterable)",
+      "reviews": []
+    },
+    {
+      "id": "76o89056gh",
+      "version": 0,
+      "active": true,
+      "question": "filter() function signature?",
+      "answer": "filter(function, iterable)",
+      "reviews": []
+    },
+    {
+      "id": "wgixfh36fe",
+      "version": 0,
+      "active": true,
+      "question": "three ways to join strings",
+      "answer": "\"a = \"\"hello \"\" b = \"\"world\"\" foo = '{}{}'.format(a, b) bar = a + b baz = ''.join([a, b])\"",
+      "reviews": []
+    },
+    {
+      "id": "w73us7ully",
+      "version": 0,
+      "active": true,
+      "question": "what does os.walk() yield on each iteration?",
+      "answer": "(dirpath, dirnames, filenames)",
+      "reviews": []
+    },
+    {
+      "id": "kmzqligtur",
+      "version": 0,
+      "active": true,
+      "question": "how to get the current datetime in local tz?",
+      "answer": "datetime.now()",
+      "reviews": []
+    },
+    {
+      "id": "bi9sqm65xh",
+      "version": 0,
+      "active": true,
+      "question": "What are the two ways to get current datetime in UTC? Which is the best, and why?",
+      "answer": "\"datetime.datetime.utcnow() datetime.datetime.now(tz=datetime.timezone.utc)   The latter is preferred. datetime.utcnow() returns a \"\"naive\"\" datetime object (tz=None), which is treated by many datetime methods as being in local time, which can obviously cause problems.\"",
+      "reviews": []
+    },
+    {
+      "id": "2rpfjmm2fc",
+      "version": 0,
+      "active": true,
+      "question": "how to convert datetime object to iso 8601 format?",
+      "answer": "my_datetime.isoformat()",
+      "reviews": []
+    },
+    {
+      "id": "1atm4yl3ax",
+      "version": 0,
+      "active": true,
+      "question": "url endpoint in flask (that takes an int parameter)",
+      "answer": "@app.route('/hello/world/\u003cint:my_parameter\u003e') def hello_world(my_parameter):",
+      "reviews": []
+    },
+    {
+      "id": "4bcpsbfn63",
+      "version": 0,
+      "active": true,
+      "question": "read a CSV file into a list of lists (each line is a list)",
+      "answer": "from csv import Reader with open('file.csv', 'r') as fd:     my_file = list(Reader(fd))",
+      "reviews": []
+    },
+    {
+      "id": "ge65mb4opf",
+      "version": 0,
+      "active": true,
+      "question": "import CSV file into a list of dicts",
+      "answer": "from csv import DictReader with open('file.csv', 'r') as fd:     data = list(DictReader(fd))",
+      "reviews": []
+    },
+    {
+      "id": "5r84jh3yu3",
+      "version": 0,
+      "active": true,
+      "question": "What is a __init__.py file for?",
+      "answer": "Provides a layer of indirection that: a) lets you import a directory as a module b) lets you write code that decides how the files in the directory exist in the namespace of the imported module",
+      "reviews": []
+    },
+    {
+      "id": "rsau7a4seu",
+      "version": 0,
+      "active": true,
+      "question": "When I do `import asdf` in python, where does it search, and in what order?",
+      "answer": "1) built-in modules 2) `sys.path` variable:     a) working directory     b) any dirs in PYTHONPATH environment variable     c) installation-dependent default (see `site` module)",
+      "reviews": []
+    },
+    {
+      "id": "teb44gj9mb",
+      "version": 0,
+      "active": true,
+      "question": "where are relative import statements relative to?",
+      "answer": "the location of the import statement",
+      "reviews": []
+    },
+    {
+      "id": "inhlzu43id",
+      "version": 0,
+      "active": true,
+      "question": "can relative imports be used outside of packages?",
+      "answer": "no.",
+      "reviews": []
+    },
+    {
+      "id": "44nyayj5tm",
+      "version": 0,
+      "active": true,
+      "question": "What are the possible values of __name__?",
+      "answer": "\"If you run a file as a script, __name__ is \"\"__main__\"\". If a file is a part of a package, __name__ is something like \"\"my_module.models\"\"; it is the path, with dots, to the file from the base package\"",
+      "reviews": []
+    },
+    {
+      "id": "6w1bdjz3wk",
+      "version": 0,
+      "active": true,
+      "question": "Get python version, and what format does it come in?",
+      "answer": "sys.version_info (major, minor, patch, releaselevel, serial) Also accessible with sys.version_info.major etc",
+      "reviews": []
+    },
+    {
+      "id": "ic733zyp63",
+      "version": 0,
+      "active": true,
+      "question": "copy a directory",
+      "answer": "shutil.copytree(src, dst)",
+      "reviews": []
+    },
+    {
+      "id": "bohxvcpx39",
+      "version": 0,
+      "active": true,
+      "question": "copy a file - 2 functions and difference between?",
+      "answer": "shutil.copy(src, dst) or shutil.copy2(src, dst) copy2 attempts to preserve file metadata; copy does not",
+      "reviews": []
+    },
+    {
+      "id": "16kdvpwcyl",
+      "version": 0,
+      "active": true,
+      "question": "move a file or directory",
+      "answer": "shutil.move(src, dst)",
+      "reviews": []
+    },
+    {
+      "id": "sz20lighot",
+      "version": 0,
+      "active": true,
+      "question": "remove a directory and all of its children, ignoring directories that cannot be removed",
+      "answer": "shutil.rmtree(path, ignore_errors=True)",
+      "reviews": []
+    },
+    {
+      "id": "ij9kbkw7u1",
+      "version": 0,
+      "active": true,
+      "question": "check if a path represents an existing file or directory",
+      "answer": "os.path.exists(path)",
+      "reviews": []
+    },
+    {
+      "id": "7ob0xeui4d",
+      "version": 0,
+      "active": true,
+      "question": "Create all directories needed for path, where it is ok if the named directory already exists, with permissions 644",
+      "answer": "os.makedirs(path, mode=0o644, exist_ok=True)",
+      "reviews": []
+    },
+    {
+      "id": "ksthp292aj",
+      "version": 0,
+      "active": true,
+      "question": "Two ways to get an environment variable",
+      "answer": "os.getenv(key, default=None) os.environ.get(key, default=None)",
+      "reviews": []
+    },
+    {
+      "id": "xrps4rrzqt",
+      "version": 0,
+      "active": true,
+      "question": "get just the directory part of a file path",
+      "answer": "os.path.dirname(path)",
+      "reviews": []
+    },
+    {
+      "id": "lm7j4wak5x",
+      "version": 0,
+      "active": true,
+      "question": "os.path: function to get just the file name from a full path?",
+      "answer": "os.path.basename(path)",
+      "reviews": []
+    },
+    {
+      "id": "m51wbmyqb1",
+      "version": 0,
+      "active": true,
+      "question": "How do you get the full path from a partial or relative path?",
+      "answer": "os.path.realpath(path)",
+      "reviews": []
+    },
+    {
+      "id": "4tqvxcepbw",
+      "version": 0,
+      "active": true,
+      "question": "get the working directory",
+      "answer": "os.getcwd()",
+      "reviews": []
+    },
+    {
+      "id": "r0xw1mm5u4",
+      "version": 0,
+      "active": true,
+      "question": "remove a file",
+      "answer": "os.remove(path)",
+      "reviews": []
+    },
+    {
+      "id": "6fbk6gej9s",
+      "version": 0,
+      "active": true,
+      "question": "Ask the user for a password on the command line",
+      "answer": "password = getpass.getpass(prompt='Password: ')",
+      "reviews": []
+    },
+    {
+      "id": "hssxkru8cj",
+      "version": 0,
+      "active": true,
+      "question": "Call a shell command, checking the return code for non-zero, and printing stdout and the return code.",
+      "answer": "result = subprocess.run(['my', 'command'], capture_output=True, check=True) print(result.stdout) print(result.returncode)",
+      "reviews": []
+    },
+    {
+      "id": "ntonguurhy",
+      "version": 0,
+      "active": true,
+      "question": "Historically, which four libraries have been used to install packages? Which two are still used?",
+      "answer": "distribute, distutils, distutils2, setuptools   distutils and setuptools are still used.",
+      "reviews": []
+    },
+    {
+      "id": "u1yjguc5uz",
+      "version": 0,
+      "active": true,
+      "question": "Check that variable my_var is of type str",
+      "answer": "isinstance(my_var, str)",
+      "reviews": []
+    },
+    {
+      "id": "biyeybrjwz",
+      "version": 0,
+      "active": true,
+      "question": "How do you: - Get an in-memory file descriptor for a file containing the contents of a str variable? - Get an in-memory file descriptor for a file containing the contents of a bytes variable?",
+      "answer": "\"fd = io.StringIO(\"\"this string goes in the file\"\")   fd = io.BytesIO('here are some bytes'.encode())\"",
+      "reviews": []
+    },
+    {
+      "id": "rrduaor9vn",
+      "version": 0,
+      "active": true,
+      "question": "\"- What are the three levels of \"\"things\"\" in python? - Give some examples of each.\"",
+      "answer": "\"1) metaclasses: type, and any metaclasses that you define 2) classes: are instances of type or programmer-defined metaclasses 3) \"\"instances\"\": are instances of classes\"",
+      "reviews": []
+    },
+    {
+      "id": "spa8p8znou",
+      "version": 0,
+      "active": true,
+      "question": "What is the purpose of using an abstract base class (ABC) in python?",
+      "answer": "ABCs allow you to control how a class (read: what an instance is created from) is instantiated.  The main use I know of is the implementation of interfaces. Methods that have been prefixed with the @abc.abstractmethod decorator must be defined in any classes which inherit from the ABC. If not, an attempt to instantiate such classes will fail immediately with a TypeError, rather than an AttributeError when the nonexistent method is called.",
+      "reviews": []
+    },
+    {
+      "id": "7c4ce71ga9",
+      "version": 0,
+      "active": true,
+      "question": "What is @classmethod used for?",
+      "answer": "Makes the method receive the class (not the instance) in the first argument. A common use is as an alternative constructor, i.e.:   class A     @classmethod     def from_json(cls, json_data):         ...         return cls()",
+      "reviews": []
+    },
+    {
+      "id": "092yu6opi2",
+      "version": 0,
+      "active": true,
+      "question": "What is the @staticmethod decorator for?",
+      "answer": "Makes a method not take self as the first argument. Useful for including functions that are semantically related to a class into the class.",
+      "reviews": []
+    },
+    {
+      "id": "qkl0nw61f0",
+      "version": 0,
+      "active": true,
+      "question": "What does this mean?   a = u'hello world'",
+      "answer": "a is a unicode string, which in python 3 is identical to a regular string.",
+      "reviews": []
+    },
+    {
+      "id": "7vi1wr2whi",
+      "version": 0,
+      "active": true,
+      "question": "What does the @dataclass decorator do?",
+      "answer": "Causes a bunch of special methods, such as __init__() and __repr__() to be generated for the class.",
+      "reviews": []
+    },
+    {
+      "id": "06ttkbqpnq",
+      "version": 0,
+      "active": true,
+      "question": "In a try-except-else-finally statement, what are the three possibilities? What happens in each case for both an `else` clause and a `finally` clause?",
+      "answer": "exception not raised - else runs - finally runs   exception raised and handled - else doesn't run - finally runs after handler   exception raised but not handled  - else doesn't run - finally runs - exception is re-raised",
+      "reviews": []
+    },
+    {
+      "id": "lelziorl1n",
+      "version": 0,
+      "active": true,
+      "question": "pytest: replace an object with another object",
+      "answer": "mocker.patch('path.to.object', new_object)",
+      "reviews": []
+    },
+    {
+      "id": "jah1lsuemz",
+      "version": 0,
+      "active": true,
+      "question": "pytest-mock: specify return value of object when called",
+      "answer": "mocker.patch('path.to.object', return_value=new_value)",
+      "reviews": []
+    },
+    {
+      "id": "glwv9pu2jg",
+      "version": 0,
+      "active": true,
+      "question": "Create a python virtual environment with name 'asdf'",
+      "answer": "python3 -m venv asdf",
+      "reviews": []
+    },
+    {
+      "id": "xs5jyizabi",
+      "version": 0,
+      "active": true,
+      "question": "unittest: test whether function or method was called",
+      "answer": "mock the method with unittest.mock.Mock, then    encapsulating_function() my_mock.assert_called()",
+      "reviews": []
+    },
+    {
+      "id": "q5ud2fgwx6",
+      "version": 0,
+      "active": true,
+      "question": "unittest.mock: how to return a different value from a mocked function depending on what its args are?",
+      "answer": "def mock_function(*args, **kwargs):     ...   unittest.mock.patch('path.to.object', mock_function)   or under pytest: mocker.patch('path.to.object', mock_function)    mock_function should return whatever you want it to return given *args, **kwargs.",
+      "reviews": []
+    },
+    {
+      "id": "b9bzrqnymi",
+      "version": 0,
+      "active": true,
+      "question": "pytest: what is a fixture?",
+      "answer": "Fixtures initialize test functions. They do things, then pass some kind of result to test functions when used as a decorator. Can also do cleanup by returning the thing with a yield, and then doing cleanup with code after the yield. As far as I can tell they are a replacement to unittest.TestCase.setUp/tearDown.",
+      "reviews": []
+    },
+    {
+      "id": "1r7ifirs90",
+      "version": 0,
+      "active": true,
+      "question": "On alpine, what four packages must be installed (in addition to python3) to expect python to work? What is each for?",
+      "answer": "python(3)-dev: contains header files (that are referenced in C code) that you need to build python extensions   openssl-dev: libs for openssl (libssl-dev on ubuntu)   libffi-dev: provides a portable, high-level programming interface to a variety of calling conventions used in high-level programming languages; FFI -\u003e foreign function interface; is the interface that allows code written in one language to call code written in another   build-base (build-essential on debian): a metapackage that contains all of the things you need to build code, typically gcc, g++, basic libs, make etc",
+      "reviews": []
+    },
+    {
+      "id": "ttc6vdjt45",
+      "version": 0,
+      "active": true,
+      "question": "What are the three basic python package distribution formats, and what are the differences between them?",
+      "answer": "sdist: - a source distribution - contains all of the files, but unbuilt, which is more relevant in the case of code containing c extensions   bdist_egg: - a built distribution format (doesn't require building or compilation) - eggs are not just distributions, but also importable - deprecated in favour of wheels   bdist_wheel:  - a built distribution format (doesn't require building or compilation) - wheels are distributions only, so you cannot import them like you can eggs - guaranteed to be versioned - follows standards such as PEP 376 and PEP 427 - possible for a wheel to be universal (i.e. no platform-specific bins/libs) like an sdist",
+      "reviews": []
+    },
+    {
+      "id": "8t7lsrh2yb",
+      "version": 0,
+      "active": true,
+      "question": "What are the four objects in the logging module, and what does each do?",
+      "answer": "loggers - expose the interface that the application code uses handlers - deal with sending logs to a variety of possible dests filters - filter logs formatters - assemble log message with various other metadata (datetime, level, source module) in specific format",
+      "reviews": []
+    },
+    {
+      "id": "3gyaxqn46x",
+      "version": 0,
+      "active": true,
+      "question": "What two keywords are used to allow a function to modify variables in enclosing scopes? What is the difference between them?  When are they not needed? How are they used?",
+      "answer": "global and nonlocal   global: allows you to modify variables at the module scope nonlocal: allows you to modify variables at the closest parent, grandparent etc scope, but never the module scope    These keywords are not needed when you're simply reading a value from a parent or module-level scope.   global myvar nonlocal myvar Now you can modify the value of myvar inside the function.",
+      "reviews": []
+    },
+    {
+      "id": "zytd1n2umm",
+      "version": 0,
+      "active": true,
+      "question": "What is setup.py?  What packages use it?",
+      "answer": "setup.py is a file that is used by multiple packaging tools to manage installation/removal of the package. It also is used to create distributions of the package in several different formats. All of this functionality is accessed through commands it provides.   distutils uses it setuptools uses it",
+      "reviews": []
+    },
+    {
+      "id": "3shb02nqhd",
+      "version": 0,
+      "active": true,
+      "question": "What is a .egg?",
+      "answer": "At its most basic, it is a .zip file that contains the project's code and resources, as well as an EGG_INFO directory, renamed with the .egg file extension. EGG_INFO/ contains project metadata.   Another format is to have a .egg-info directory adjacent to the package to which it refers. This directory contains all of the things that EGG_INFO/ would in the aforementioned scheme.",
+      "reviews": []
+    },
+    {
+      "id": "8qgybuvv4v",
+      "version": 0,
+      "active": true,
+      "question": "What is easy_install? What project introduced it? What are its limitations?",
+      "answer": "easy_install is a command line program that was introduced by the setuptools project in 2004. It is used to install python packages. It cannot install packages from wheels.",
+      "reviews": []
+    },
+    {
+      "id": "u835g848zs",
+      "version": 0,
+      "active": true,
+      "question": "What is setup.cfg?",
+      "answer": "It is an INI file that provides defaults for setup.py commands. It does not supply defaults to the *options* to `setup()` in setup.py. It supplies defaults to the **commands** that `setup()` makes available.",
+      "reviews": []
+    },
+    {
+      "id": "mla59649xb",
+      "version": 0,
+      "active": true,
+      "question": "How do you see the list of options for a single setup.py command?",
+      "answer": "python3 setup.py --help \u003ccommand\u003e",
+      "reviews": []
+    },
+    {
+      "id": "u9e8cm6ck5",
+      "version": 0,
+      "active": true,
+      "question": "How do you see the list of commands for setup.py?",
+      "answer": "python3 setup.py --help-commands",
+      "reviews": []
+    },
+    {
+      "id": "0z6dvuezzw",
+      "version": 0,
+      "active": true,
+      "question": "What is the origin of requirements.txt?",
+      "answer": "pip",
+      "reviews": []
+    },
+    {
+      "id": "qqfawkq0qb",
+      "version": 0,
+      "active": true,
+      "question": "What is MANIFEST.in for?",
+      "answer": "MANIFEST.in is for building sdists only. It contains a number of directives specifying which files to include/exclude in/from an sdist.",
+      "reviews": []
+    },
+    {
+      "id": "0ucmikazkf",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between distutils and setuptools?",
+      "answer": "distutils is part of the standard library, but has limited functionality and its use is discouraged.    setuptools is an external package, but provides crucial features such as: - dependency declarations - entry point declarations   Use setuptools unless you must avoid external packages.",
+      "reviews": []
+    },
+    {
+      "id": "7eers3owtm",
+      "version": 0,
+      "active": true,
+      "question": "How are dependencies and their versions tracked in a python package?",
+      "answer": "Typically in a requirements.txt file. We then read this file in as lines and pass it as a list to the `install_requires` kwarg of the setup() function. However there is nothing saying you can't store them in a different file, or simply pass them directly to the `install_requires` argument.   Also, in the final package, the way that dependencies and their versions are tracked depends on the type of package it is.",
+      "reviews": []
+    },
+    {
+      "id": "z8d4ihj1an",
+      "version": 0,
+      "active": true,
+      "question": "How do you install an application in develop mode? What benefit does this confer?",
+      "answer": "pip3 install -e .   This installs the package as a symlink to your development dir. This lets you make changes without having to run pip3 install again.",
+      "reviews": []
+    },
+    {
+      "id": "pzz5daue5v",
+      "version": 0,
+      "active": true,
+      "question": "Should you instantiate classes as a subclass of `object` or not? What does this do?",
+      "answer": "In python 2, instantiating it without `object` makes it an old-style class. Instantiating it with `object` makes it a new-style class. New-style classes have a bunch of benefits, like being able to use `classmethod`, `staticmethod`, properties with `property`, the `__new__` static method, `super` calls etc.   In python 3, omitting `object` still instantiates a new-style class. So it is not necessary.",
+      "reviews": []
+    },
+    {
+      "id": "l2n81g8h90",
+      "version": 0,
+      "active": true,
+      "question": "What are the two main types of exceptions, and what characterizes them?",
+      "answer": "1) System-exiting exceptions (SystemExit, KeyboardInterrupt) 2) Regular exceptions (inherit from Exception)",
+      "reviews": []
+    },
+    {
+      "id": "cnmla9068b",
+      "version": 0,
+      "active": true,
+      "question": "How do you pass error info to an exception?",
+      "answer": "The standard way of doing it is by passing a single value (can be a variety of types) in the exception's constructor.   Exceptions (pun intended) exist that take multiple values in the constructor.",
+      "reviews": []
+    },
+    {
+      "id": "aatwk2wj6c",
+      "version": 0,
+      "active": true,
+      "question": "What does __new__ do? How does it differ from __init__?",
+      "answer": "__new__ allows you to control how instances of your class are instantiated. It returns a new instance of your class. It is run before __init__.   __init__ is only responsible for initializing an already-created class.",
+      "reviews": []
+    },
+    {
+      "id": "e37er5a9j2",
+      "version": 0,
+      "active": true,
+      "question": "What form does a dictionary comprehension take?",
+      "answer": "{key: value for item in items}",
+      "reviews": []
+    },
+    {
+      "id": "9u8zrhju8c",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between b'asdf' and 'asdf'.encode()?",
+      "answer": "Not much. But in the case of b'asdf', the contents may only be ASCII and the whole thing is created as bytes, so it should be more efficient. In the case of 'asdf'.encode(), it is first created as type str and then converted to type bytes through the .encode() method.",
+      "reviews": []
+    },
+    {
+      "id": "tbuz36wfjr",
+      "version": 0,
+      "active": true,
+      "question": "Define a variable inside an if statement.",
+      "answer": "if (x := 4) \u003e 3:     doSomething()",
+      "reviews": []
+    },
+    {
+      "id": "aq8ixkei6u",
+      "version": 0,
+      "active": true,
+      "question": "What does the function re.findall() do, and why is it more useful than the other regex expressions?",
+      "answer": "If your regex has no groups, re.findall() returns a list of all the matches for your regex.   If you have a single group in your regex, it returns a list of the contents of that group for all matches in the file.   If you have multiple groups in your regex, it returns a list of tuples that contain each group in sequence, for all matches in the file.   Obviously, for most use cases this is more brief and expressive.",
+      "reviews": []
+    },
+    {
+      "id": "knalek7whx",
+      "version": 0,
+      "active": true,
+      "question": "How do you iterate over the keys and values of a dict?",
+      "answer": "for key, value in my_dict.items():     ...",
+      "reviews": []
+    },
+    {
+      "id": "6z4hn57y6f",
+      "version": 0,
+      "active": true,
+      "question": "What does the `super` function do?",
+      "answer": "super()   Returns a proxy object that delegates method calls to a parent or sibling class. Can take arguments, but that is for use in multiple inheritance which should really never be done. Unless you need it, assume that it returns a proxy to the parent class of the current object.",
+      "reviews": []
+    },
+    {
+      "id": "kgb8vspn8u",
+      "version": 0,
+      "active": true,
+      "question": "flask: what is an application context? How do you access it during a request?",
+      "answer": "An application context is a proxy for the `app` object. It can be accessed through `flask.current_app`. An application context has a lifetime that is tied to that of a request.",
+      "reviews": []
+    },
+    {
+      "id": "un4iahmok2",
+      "version": 0,
+      "active": true,
+      "question": "flask: what are the four global objects, and what are they used for?",
+      "answer": "request: all of the info about the request; not written to   g: request-scoped data; data is not persisted between requests   current_app: a proxy for the app object   session: a proxy for the session data",
+      "reviews": []
+    },
+    {
+      "id": "vz0p01vo7v",
+      "version": 0,
+      "active": true,
+      "question": "flask: when are changes to the session proxy pushed to the main session object?",
+      "answer": "At the end of the request.",
+      "reviews": []
+    },
+    {
+      "id": "vav84iaqc1",
+      "version": 0,
+      "active": true,
+      "question": "In what two ways can you use `getattr()`? What type of exception might it raise?",
+      "answer": "\"getattr(my_object, \"\"x\"\") If my_object does not have .x attribute, AttributeError is raised.    getattr(my_object, \"\"x\"\", default) Here, default is returned if the attribute does not exist.\"",
+      "reviews": []
+    },
+    {
+      "id": "2mpp5a8dzt",
+      "version": 0,
+      "active": true,
+      "question": "requests: pass headers to a get request",
+      "answer": "headers = {     'header1': 'value1',     'header2': 'value2', } response = requests.get(url, headers=headers)",
+      "reviews": []
+    },
+    {
+      "id": "l0tgi0a73e",
+      "version": 0,
+      "active": true,
+      "question": "click: how do you add an argument to a command?",
+      "answer": "@click.argument('name') def my_function(name):     ...",
+      "reviews": []
+    },
+    {
+      "id": "19om1bcbnr",
+      "version": 0,
+      "active": true,
+      "question": "click: how do you add an option that takes an int to a command? How about one that has value True if passed, False otherwise?",
+      "answer": "@click.option('-n', type=int) def my_func(n):     ...   @click.option('-s', is_flag=True) def my_func(s):     ...",
+      "reviews": []
+    },
+    {
+      "id": "un9iftzu4y",
+      "version": 0,
+      "active": true,
+      "question": "click: create a group with two commands: get and create",
+      "answer": "import click   @click.group() def cli():     pass   @cli.command() def get():     ...   @cli.command() def create():     ...",
+      "reviews": []
+    },
+    {
+      "id": "pif6f3n300",
+      "version": 0,
+      "active": true,
+      "question": "requests: make a POST request with form-encoded data in body: first_name=adam\u0026last_name=pickering",
+      "answer": "data = {     'first_name': 'adam',     'last_name': 'pickering', }response = requests.post(url, data=data)",
+      "reviews": []
+    },
+    {
+      "id": "e76jllxalz",
+      "version": 0,
+      "active": true,
+      "question": "\"requests: make a POST request with json in body: {\"\"first_name\"\":\"\"adam\"\",\"\"last_name\"\":\"\"pickering\"\"}\"",
+      "answer": "data = {     'first_name': 'adam',     'last_name': 'pickering', } response = requests.post(url, json=data)",
+      "reviews": []
+    },
+    {
+      "id": "mqrfylifch",
+      "version": 0,
+      "active": true,
+      "question": "What package is needed to be able to build wheels?",
+      "answer": "wheel",
+      "reviews": []
+    },
+    {
+      "id": "1fhofiyikp",
+      "version": 0,
+      "active": true,
+      "question": "In requirements.txt, specify that the package `asdf` is required with major version greater than or equal to 1 and major version less than 2.",
+      "answer": "asdf\u003e=1,\u003c2",
+      "reviews": []
+    },
+    {
+      "id": "nyr68w6szy",
+      "version": 0,
+      "active": true,
+      "question": "logging: what function is used to get a reference to a specific logger? How do you get the root logger?",
+      "answer": "logging.getLogger(name) logging.getLogger()",
+      "reviews": []
+    },
+    {
+      "id": "b9hvp2isyi",
+      "version": 0,
+      "active": true,
+      "question": "logging: how do prevent records from being sent further up the tree than a specific logger?",
+      "answer": "Set logger.propagate to False (it is True by default).",
+      "reviews": []
+    },
+    {
+      "id": "mdp25dnh1f",
+      "version": 0,
+      "active": true,
+      "question": "logging: what is the default action when a record hits the root logger and no special configuration has been done on it?",
+      "answer": "It will log anything at or above log level WARNING using a StreamHandler to sys.stderr using the standard format.",
+      "reviews": []
+    },
+    {
+      "id": "zg1s8cpmgz",
+      "version": 0,
+      "active": true,
+      "question": "logging: how do you add a handler onto a logger?",
+      "answer": "logger.addHandler(handler)",
+      "reviews": []
+    },
+    {
+      "id": "y4msp9vq05",
+      "version": 0,
+      "active": true,
+      "question": "logging: what are the two places you can set the log level and add filters? What method is used to do each of these? Why are there two places?",
+      "answer": "1) on a logger 2) on a handler   x.setLevel(level) x.addFilter(filter)   There are two places because each one is used for different things. Loggers allow you to filter logs before they propagate up the tree, giving you granular control. Handlers affect the ultimate output, and so they are useful for broad filtering.",
+      "reviews": []
+    },
+    {
+      "id": "qbrzifvzan",
+      "version": 0,
+      "active": true,
+      "question": "logging: what method is used to specify the formatter for a handler?",
+      "answer": "handler.setFormatter(formatter)",
+      "reviews": []
+    },
+    {
+      "id": "sjada7ju1f",
+      "version": 0,
+      "active": true,
+      "question": "logging: what is the best way to name your loggers?",
+      "answer": "In each file, have a line:   LOGGER = logging.getLogger(__name__)   __name__ will be set to something like 'pkg_name.file_name' - this will allow you to see where logs are coming from, and to filter logs out by package/file.",
+      "reviews": []
+    },
+    {
+      "id": "9cvv8cww9n",
+      "version": 0,
+      "active": true,
+      "question": "logging: what happens when a handler handles a log record?",
+      "answer": "The record does not propagate up the tree. However, you must be careful not to add the handler to multiple loggers, or the record may be emitted multiple times.",
+      "reviews": []
+    },
+    {
+      "id": "g72j8v5tnn",
+      "version": 0,
+      "active": true,
+      "question": "logging: create a handler that prints logs to stdout",
+      "answer": "handler = logging.StreamHandler(stream=sys.stdout)",
+      "reviews": []
+    },
+    {
+      "id": "ref6ca7zrm",
+      "version": 0,
+      "active": true,
+      "question": "Get a random integer value between 0 and 10 inclusive.",
+      "answer": "random.randint(0, 10)",
+      "reviews": []
+    },
+    {
+      "id": "np49nn0mde",
+      "version": 0,
+      "active": true,
+      "question": "What is the basic function used to get random numbers? What type does it return? What range is its return value in?",
+      "answer": "random.random() float [0.0, 1.0)",
+      "reviews": []
+    },
+    {
+      "id": "q0e3fqi7i6",
+      "version": 0,
+      "active": true,
+      "question": "\"Register a function that prints \"\"hello world\"\" when SIGINT is received by the process. What are the two arguments to signal handlers? Explain what the arguments are for.\"",
+      "answer": "\"import signal   def print_hw(signal_number, stack_frame):     print(\"\"hello world\"\")   signal.signal(signal.SIGINT, print_hw)   signal_number contains the signal number of the signal that was received.   stack_frame contains the stack frame, which tells you where the code was when the signal hit the process; this isn't particularly useful outside of a debugger.\"",
+      "reviews": []
+    },
+    {
+      "id": "319b5hafe5",
+      "version": 0,
+      "active": true,
+      "question": "What does the __del__ method do on a python object?",
+      "answer": "The __del__ method is called when the object is garbage collected. It is not for use as a destructor method.",
+      "reviews": []
+    },
+    {
+      "id": "smwrye50ri",
+      "version": 0,
+      "active": true,
+      "question": "When is an object garbage collected?",
+      "answer": "An object is garbage collected any time after there are no longer any references to it. It may also never be garbage collected. This all depends on the implementation of the interpreter.",
+      "reviews": []
+    },
+    {
+      "id": "ybgfdgbh7o",
+      "version": 0,
+      "active": true,
+      "question": "What does `del my_obj` do?",
+      "answer": "It removes the in-scope reference to my_obj. It is also a way of communicating to whoever is reading your code that you do not intend to use the object any more.",
+      "reviews": []
+    },
+    {
+      "id": "fxfn1thjeg",
+      "version": 0,
+      "active": true,
+      "question": "How would you remove all spaces in the string `my_string`?",
+      "answer": "my_string.replace(' ', '')",
+      "reviews": []
+    },
+    {
+      "id": "1kcnl8p7j7",
+      "version": 0,
+      "active": true,
+      "question": "What does the __call__ method of an object do?",
+      "answer": "It lets you create an instance of an object, which then behaves as a function. When you invoke that instance, it carries out the behaviour specified in __call__().",
+      "reviews": []
+    },
+    {
+      "id": "2py59kz9ow",
+      "version": 0,
+      "active": true,
+      "question": "Get the last 5 elements of a my_list. How to think about this?",
+      "answer": "\"my_list[-5:]   Negative means counting backwards, and blank is the extreme value, so if the second value is blank it means \"\"end\"\". So we are counting backwards from the end.\"",
+      "reviews": []
+    },
+    {
+      "id": "ifecgq31hz",
+      "version": 0,
+      "active": true,
+      "question": "What are the 4 main ways to store collections of data? For each: - is it ordered?  - is it changeable? - does it allow duplicate values? - is it indexed?",
+      "answer": "List: ordered, changeable, allows duplicates, indexed Tuple: ordered, unchangeable, allows duplicates, indexed Set: unordered, changeable, no duplicates, unindexed Dictionary: unordered, changeable, no duplicates, indexed",
+      "reviews": []
+    },
+    {
+      "id": "r3zwnge7it",
+      "version": 0,
+      "active": true,
+      "question": "Create a basic custom exception, 'NewError', that can have a message passed into it when instantiated.",
+      "answer": "\"class NewError(Exception):     \"\"\"\"\"\"No pass statement is needed if docstring is there.\"\"\"\"\"\"\"",
+      "reviews": []
+    },
+    {
+      "id": "uosji005zj",
+      "version": 0,
+      "active": true,
+      "question": "In a try-except statement, how are multiple except blocks run if more than one matches?",
+      "answer": "Only the first except that matches has its block run.",
+      "reviews": []
+    },
+    {
+      "id": "hgv4ufjxta",
+      "version": 0,
+      "active": true,
+      "question": "How do you sort an iterable? Sort the following list in reverse order: [4, 2, 1, 3]",
+      "answer": "Use the sorted function. The first argument is the iterable to sort. There is a keyword argument, key, which takes an element of the iterable as an argument and returns a key that is used to figure out the place of that element.   sorted([4, 2, 1, 3], key=lambda x: 1/x)",
+      "reviews": []
+    },
+    {
+      "id": "6ctrlrjapg",
+      "version": 0,
+      "active": true,
+      "question": "Get the last element of the list my_list?",
+      "answer": "my_list[-1]",
+      "reviews": []
+    },
+    {
+      "id": "jc2axconcl",
+      "version": 0,
+      "active": true,
+      "question": "Turn the following two lists:   a = [1, 2, 3] b = [4, 5, 6]   into the following single list of tuples:   c = [ (1, 4), (2, 5), (3, 6) ]   What happens if the two lists are of different lengths?",
+      "answer": "zip(a, b)   If the two lists are of different lengths, then the length of the resultant list is equal to that of the shorter input.",
+      "reviews": []
+    },
+    {
+      "id": "fdoiifwcmf",
+      "version": 0,
+      "active": true,
+      "question": "How do I get a datetime that is one hour before the current time?",
+      "answer": "import datetime   now = datetime.datetime.now() one_hour = datetime.timedelta(hours=1) one_hour_ago = now - one_hour",
+      "reviews": []
+    },
+    {
+      "id": "o0y6zh7pb1",
+      "version": 0,
+      "active": true,
+      "question": "In the datetime module, how are timezones managed? How do you get the UTC timezone?",
+      "answer": "Through the datetime.timezone class.   If UTC, you can just use datetime.timezone.utc, which is a class attribute.",
+      "reviews": []
+    },
+    {
+      "id": "ow7mqa6iop",
+      "version": 0,
+      "active": true,
+      "question": "\"How do you assert that a function mocked by MagicMock has been called twice, with \"\"a\"\" as an argument the first time, and no arguments the second time?\"",
+      "answer": "\"from unittest.mock import MagicMock, call   mm = MagicMock() ... mm.assert_has_calls([call(\"\"a\"\"), call()])   ** note that mm.assert_has_calls takes a list **\"",
+      "reviews": []
+    },
+    {
+      "id": "ac2wy0uw9g",
+      "version": 0,
+      "active": true,
+      "question": "How does the __getitem__ method work?",
+      "answer": "When you access an index of the object using [0] etc, this method is called with the index passed as the only argument. This method is expected to return the item at that index.",
+      "reviews": []
+    },
+    {
+      "id": "6uvc96hosj",
+      "version": 0,
+      "active": true,
+      "question": "How do you remove a specific key from a dict?",
+      "answer": "my_dict.pop(key)",
+      "reviews": []
+    },
+    {
+      "id": "pz32739gio",
+      "version": 0,
+      "active": true,
+      "question": "When using argparse, what is always the first step? How is this done? What are the important kwargs?",
+      "answer": "Create an ArgumentParser instance.   parser = argparse.ArgumentParser()   description: the value of the help text",
+      "reviews": []
+    },
+    {
+      "id": "h620kua7uc",
+      "version": 0,
+      "active": true,
+      "question": "With argparse, how do you add an option with two keys, -i and --index?",
+      "answer": "\"parser.add_argument(\"\"-i\"\", \"\"--index\"\")\"",
+      "reviews": []
+    },
+    {
+      "id": "0s9k2f1924",
+      "version": 0,
+      "active": true,
+      "question": "With argparse, how do you add a positional argument with the name my_arg?",
+      "answer": "\"parser.add_argument(\"\"my_arg\"\")\"",
+      "reviews": []
+    },
+    {
+      "id": "b53zucunr6",
+      "version": 0,
+      "active": true,
+      "question": "\"What is \"\"integer division\"\"? What operator do I use to do it?\"",
+      "answer": "\"Integer division is where you do not convert anything into floats. It goes hand in hand with the % operator.  42 / 10 # 4.2 42 // 10 # 4\"",
+      "reviews": []
+    },
+    {
+      "id": "hkvgxk6mig",
+      "version": 0,
+      "active": true,
+      "question": "What operator is used to do an XOR?",
+      "answer": "^",
+      "reviews": []
+    },
+    {
+      "id": "8z5uvh44ds",
+      "version": 0,
+      "active": true,
+      "question": "argparse: how do you add a flag option?",
+      "answer": "\"parser.add_argument(\"\"-f\"\", action=\"\"store_true\"\")\"",
+      "reviews": []
+    },
+    {
+      "id": "062zw73uu9",
+      "version": 0,
+      "active": true,
+      "question": "Where is functools.wraps usually used? What is its purpose?",
+      "answer": "functools.wraps is generally used as a decorator on the function that you return in a decorator.   In general the decorator pattern messes with things. You're basically replacing the function passed to the decorator with the function that is returned from the decorator, so:   - if the passed function has a docstring it will be obliterated - the function's __name__ attribute will now be equal to that of the returned function, which could confuse people   And probably other things. functools.wraps is a decorator itself that deals with copying all of the important metadata from the passed function.",
+      "reviews": []
+    },
+    {
+      "id": "m743m82vgz",
+      "version": 0,
+      "active": true,
+      "question": "What is the python DBAPI?",
+      "answer": "It is a standard that defines common usage patterns for database connection packages used in python.",
+      "reviews": []
+    },
+    {
+      "id": "yryj6dffgu",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what is an Engine object for? How do you create one?",
+      "answer": "\"The Engine object is the low-level object that deals with the connection to the database. It isn't typically used; rather, it is passed to the ORM and used behind the scenes by it.   from sqlalchemy import create_engine engine = create_engine(\"\"sqlite:///:memory:\"\")\"",
+      "reviews": []
+    },
+    {
+      "id": "do9xlthgdh",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what do all model classes inherit from? What does it do?  How do you create it?",
+      "answer": "You must create a Base class from which all models inherit from. This class handles the mapping between classes and tables behind the scenes. There is usually just one instance of it.   from sqlalchemy.orm import declarative_base Base = declarative_base()",
+      "reviews": []
+    },
+    {
+      "id": "l5efc5wqw7",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: define a class, Human, with minimum requirements, and first name and last name fields.",
+      "answer": "\"from sqlalchemy import Column, Integer, String ...   class Human(Base):     __tablename__ = \"\"humans\"\"     id = Column(Integer, primary_key=True)     first_name = Column(String)     last_name = Column(String)\"",
+      "reviews": []
+    },
+    {
+      "id": "118u7oixme",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: how do you add a model to the session store? How do you persist these changes to the database?",
+      "answer": "\"mm_instance = MyModel(kwarg1=\"\"hi\"\", kwarg2=\"\"bye\"\")session.add(mm_instance) session.commit()\"",
+      "reviews": []
+    },
+    {
+      "id": "9gxxgom0h6",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what are the two ways to do a basic query?",
+      "answer": "session.query(Human) This returns a list of Human objects.    session.query(Human.first_name, Human.last_name) This returns a list of tuples of format (first_name, last_name), rather than Human objects.",
+      "reviews": []
+    },
+    {
+      "id": "vjp94k6pao",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: how do you get every record in a table?",
+      "answer": "session.query(Human).all()",
+      "reviews": []
+    },
+    {
+      "id": "4qq1gy26ha",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what are the two ways to filter a query? How do they differ?",
+      "answer": "\"query.filter_by(first_name=\"\"value\"\") This is standard; you get all the queries with an exact value.    query.filter(Human.first_name == \"\"value\"\") This is interesting because you can do all types of comparisons, including greater than, less than, ors, string filtering etc.\"",
+      "reviews": []
+    },
+    {
+      "id": "cpusek820p",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: how do you do inner joins in a query? How do you do outer joins?",
+      "answer": "session.query(Human).join(Address)   session.query(Human).outerjoin(Address) This is a left outer join by default.",
+      "reviews": []
+    },
+    {
+      "id": "e62pmnie7e",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: how do you order the results of a query?",
+      "answer": "query.order_by(Human.id)",
+      "reviews": []
+    },
+    {
+      "id": "a1klefurzr",
+      "version": 0,
+      "active": true,
+      "question": "What are __getstate__and __setstate__ for?",
+      "answer": "__getstate__ is called when an instance of a class is pickled. Its return value is pickled, rather than the contents of the instance's dict.   __setstate__ is called upon unpickling, if defined. The value returned from __getstate__ is unpickled, and then passed to it. __setstate__ takes the value and set the state of the object it concerns accordingly.",
+      "reviews": []
+    },
+    {
+      "id": "pemqweyrwz",
+      "version": 0,
+      "active": true,
+      "question": "How do context managers work? What methods are involved? What are the methods' signatures?",
+      "answer": "When the context is entered, __enter__ is called with no arguments. It returns the object that is assigned in the `as` part of the statement.   When the context is exited, __exit__ is called with 3 arguments:   def __exit__(exc_type, exc_value, exc_traceback)   If an exception is raised in the `with` block, the arguments contain the exception type, value and traceback; otherwise all three contain None. __exit__ returns a bool that says whether an exception was suppressed.   If an exception is raised that you do not want to suppress, you should return False from __exit__, which allows context management code to easily detect whether an __exit__ method has actually failed.",
+      "reviews": []
+    },
+    {
+      "id": "ryzi7r84cy",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: at a high level, how do you create a relationship between two tables?",
+      "answer": "On the referring table, you create a Column with a ForeignKey directive, as well as a relationship attribute.   On the referred-to table, you create a relationship attribute.",
+      "reviews": []
+    },
+    {
+      "id": "2vul3qj4pt",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: how do you constrain a Column so that it can only have the values in the id field of another table? How do you import ForeignKey?",
+      "answer": "\"Define the column as:   from sqlalchemy import Column, Integer, ForeignKey   Column(Integer, ForeignKey(\"\"\u003ctable_name\u003e.\u003ccolumn_name\u003e\"\"))\"",
+      "reviews": []
+    },
+    {
+      "id": "h2263e9xbt",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: how do you create the relationship attribute? How do you import it?",
+      "answer": "\"from sqlalchemy.orm import relationship   class Parent(Base):     ...     children = relationship(Child, back_populates=\"\"parent\"\")   class Child(Base):     ...     parent = relationship(Parent, back_populates=\"\"children\"\")\"",
+      "reviews": []
+    },
+    {
+      "id": "3kn56g5l2o",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: how do you use the sessionmaker function? What is its purpose?",
+      "answer": "from sqlalchemy.orm import sessionmaker Session = sessionmaker(**kwargs)   The purpose of sessionmaker is to put all of the global config you want to do for session objects in one place, rather than having to pass it to every single call to Session().",
+      "reviews": []
+    },
+    {
+      "id": "ze3kamnas8",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what does Session.rollback() do?",
+      "answer": "As you .add(), .delete() and change tables, the Session instance tracks these changes. Calling .rollback() will wipe these changes if present; if no changes are present, it is a no-op.",
+      "reviews": []
+    },
+    {
+      "id": "gwdmrzcfqb",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: in what two cases does a Session instance persist changes to the database?",
+      "answer": "1) when Session.commit() is called 2) when the database is about to be queried",
+      "reviews": []
+    },
+    {
+      "id": "nuhrd5449k",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: how do you use a Session instance as a context manager?",
+      "answer": "with session.begin():     session.add(mymodel)     session.add(mymodel2)   If there are any issues then session.rollback() will be called; otherwise, session.commit() is called at the end of the block.",
+      "reviews": []
+    },
+    {
+      "id": "35jur3fbbw",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what does scoped_session do? What is it for?",
+      "answer": "scoped_session gives you a regular Session instance, but behind the scenes it caches the Session, so multiple accesses of the result of scoped_session go to the same Session. It also makes sure you have a different Session for each thread, since Session instances are not thread-safe.   Mainly, it is for providing thread-safe Session instances.",
+      "reviews": []
+    },
+    {
+      "id": "tgd8bx8vtm",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: in a query, how are relationships loaded by default? How do you eagerly load them?",
+      "answer": "By default, the SQL query for a relationship is not emitted until the relationship is accessed. This can be incredibly inefficient, leading to one SQL query for the main object, and then another for each row of the table that was joined.   from sqlalchemy.orm import joinedload   obj = (     session.query(Child)     .join(Parent)     .options(joinedload(Child.parent))     .all() )",
+      "reviews": []
+    },
+    {
+      "id": "hsx6gmwbda",
+      "version": 0,
+      "active": true,
+      "question": "In broad strokes, how do warnings work in Python? How would I emit one?",
+      "answer": "\"- warnings are all subclasses of Warning, which is a subclass of Exception - The `warnings` module is the gateway to manipulating how your program does warnings   import warnings warnings.warn(\"\"this feature is deprecated\"\", DeprecationWarning)\"",
+      "reviews": []
+    },
+    {
+      "id": "3luifdq4rl",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between `is` and `==`?",
+      "answer": "\"`is` compares two objects based on \"\"identity\"\", whose definition can vary but under CPython means memory location. So if the two objects reside at the same memory location `is` will resolve to True.   `==` compares two objects based on value by calling the __eq__() method on the left object.\"",
+      "reviews": []
+    },
+    {
+      "id": "60lgzuxe0g",
+      "version": 0,
+      "active": true,
+      "question": "How do you get a temporary directory? How do you get the path to it? How do you ensure the directory is deleted?",
+      "answer": "\"from tempfile import TemporaryDirectory()   tempdir = TemporaryDirectory() path = tempdir.name   tempdir.cleanup() or with tempfile.TemporaryDirectory() as tempdir:     print(tempdir) # is what is usually accessed as tempdir.name\"",
+      "reviews": []
+    },
+    {
+      "id": "9hf3cseyv1",
+      "version": 0,
+      "active": true,
+      "question": "How would you parse a datetime.datetime object from a string?",
+      "answer": "dt = datetime.strptime(date_string, format)",
+      "reviews": []
+    },
+    {
+      "id": "ypfulallo5",
+      "version": 0,
+      "active": true,
+      "question": "\"argparse: how do you add a subparser called through the command \"\"mysub\"\", with a flag, \"\"-a\"\"? How do you get the name of the function to run?\"",
+      "answer": "\"parser = argparse.ArgumentParser() subparsers = parser.add_subparsers(dest=\"\"func\"\")   mysub_parser = subparsers.add_parser(\"\"mysub\"\") mysub_parser.add_argument(\"\"-a\"\", action=\"\"store_true\"\")   args = parser.parse_args() # args.func contains name of function to run\"",
+      "reviews": []
+    },
+    {
+      "id": "7jpvub5c7c",
+      "version": 0,
+      "active": true,
+      "question": "At a high level, how does alembic work?",
+      "answer": "\"- It tracks database migrations as \"\"revisions\"\", which can be thought of in the same way as git commits, but instead of diffs, they are python scripts.   - Revisions have a unique ID, and upgrade() and downgrade() functions. These functions describe the steps to perform when going from a previous revision to this revision, or vice versa.   - Alembic knows which revision you are on by storing it in the database under the table \"\"alembic_version\"\". Thus, when you run alembic upgrade, it can figure out which upgrade() functions from which revisions to run in order to get to the desired state.\"",
+      "reviews": []
+    },
+    {
+      "id": "lvjbj92bea",
+      "version": 0,
+      "active": true,
+      "question": "Create an enumeration with three fruits. Create a variable with one of these values.",
+      "answer": "\"from enum import Enum class Fruit(Enum):     APPLE = \"\"apple\"\"     ORANGE = \"\"orange\"\"     BANANA = \"\"banana\"\"   The values for each enum could also be integers, or any other object.   my_fruit = Fruit.APPLE\"",
+      "reviews": []
+    },
+    {
+      "id": "w6dfgsyz7a",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what does session.flush() do?",
+      "answer": "Flushes all pending model changes to the database. Database operations are issued in the current transactional context and do not affect the state of the transaction, unless an error occurs or .rollback() is called, in which case the entire transaction is rolled back.",
+      "reviews": []
+    },
+    {
+      "id": "whzgjctn0x",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what three session attributes can be used to discover the state of changes made to the session?",
+      "answer": "session.new: any new rows that have been added to the session   session.dirty: any rows that already exist and have been modified   session.deleted: any rows that have been deleted",
+      "reviews": []
+    },
+    {
+      "id": "i5ovoz0tae",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what two exceptions may Query.one() raise? How do you import them?",
+      "answer": "NoResultFound MultipleResultsFound   from sqlalchemy.orm.exc import NoResultFound, MultipleResultsFound",
+      "reviews": []
+    },
+    {
+      "id": "d6t3xewvwh",
+      "version": 0,
+      "active": true,
+      "question": "alembic: in psql, how do you get the current version that alembic is on?",
+      "answer": "select * from alembic_version;",
+      "reviews": []
+    },
+    {
+      "id": "s4hj2jwx1u",
+      "version": 0,
+      "active": true,
+      "question": "alembic: how do you put the table that tracks the revision of alembic into the database?",
+      "answer": "alembic stamp",
+      "reviews": []
+    },
+    {
+      "id": "ljhlwm3s8i",
+      "version": 0,
+      "active": true,
+      "question": "sqlalchemy: what is a hybrid property/method used for?",
+      "answer": "A hybrid property is used to provide different behaviour between calling a method on a class, and calling a method on an instance of that class.   Typically, calling the hybrid method on an instance of a class will produce a python expression (4 + 3 etc), whereas calling it on the class will produce an SQL expression.",
+      "reviews": []
+    },
+    {
+      "id": "xhkgej4d21",
+      "version": 0,
+      "active": true,
+      "question": "Write a function (with type hints) that prints a variable that can be of any type.",
+      "answer": "from typing import Any   def my_print(x: Any):     print(x)",
+      "reviews": []
+    },
+    {
+      "id": "osse9b1vdn",
+      "version": 0,
+      "active": true,
+      "question": "Write a function that can take either an int or a float as input, and which prints that variable.",
+      "answer": "from typing import Union   def my_print(x: Union[int, float]):     print(x)",
+      "reviews": []
+    },
+    {
+      "id": "oyy7pgaabz",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between my_list.append() and my_list.extend()?",
+      "answer": "Appending adds one element to the end of the list.   Extending adds a list of elements to the end of the list.",
+      "reviews": []
+    },
+    {
+      "id": "qylq2tjkpx",
+      "version": 0,
+      "active": true,
+      "question": "How do you create a context manager with just a function and decorator? How are exceptions handled?",
+      "answer": "\"from contextlib import contextmanager   @contextmanager def my_context_manager(*args, **kwargs):     # code to acquire resource     resource = my_resource()     try:         yield resource     finally:         release_resource(resource)   If an exception is raised in the `with` block, it is re-raised inside the block that the yield statement is in. It can be handled here as seen above with a try-except-else-finally statement. If it is not completely suppressed, the context manager generator should re-raise the exception.\"",
+      "reviews": []
+    },
+    {
+      "id": "ticgee9lwa",
+      "version": 0,
+      "active": true,
+      "question": "What does a variable with a trailing underscore mean?",
+      "answer": "This is used when you want to use a variable name that would conflict with a built-in, for example:   dict -\u003e dict_ file -\u003e file_",
+      "reviews": []
+    },
+    {
+      "id": "tkpkand7mt",
+      "version": 0,
+      "active": true,
+      "question": "What is a namespace package? How do you make two packages into a namespace package?",
+      "answer": "It is a way to put two packages under the same package while both of them have separate setup.py's.   To make one, you simply omit the __init__.py from the top-level directory, and ensure both packages have the top-level directory named the same.",
+      "reviews": []
+    },
+    {
+      "id": "kfsj0m7khh",
+      "version": 0,
+      "active": true,
+      "question": "flask: what is a blueprint?",
+      "answer": "- similar to an application object   - can be thought of as a script that adds things to an application object when registered   - must be registered on an application object   - they don't have to contain view functions; can just be template files or static files",
+      "reviews": []
+    },
+    {
+      "id": "fahtnbheto",
+      "version": 0,
+      "active": true,
+      "question": "pdb: which two commands can you use to find out where you are in the code?",
+      "answer": "list: prints the current line along with some surrounding lines where: prints a stack trace with most recent frame at the bottom",
+      "reviews": []
+    },
+    {
+      "id": "95sgwokxlw",
+      "version": 0,
+      "active": true,
+      "question": "pdb: how do you create a break point?",
+      "answer": "import pdb; pdb.set_trace()",
+      "reviews": []
+    },
+    {
+      "id": "fzgh4ozcfg",
+      "version": 0,
+      "active": true,
+      "question": "pdb: what two commands are used to run the next line of code? How are they different?",
+      "answer": "step: execute the current line, stopping at the next line where it is possible to do so; will step down into a called function   next: execute current line, only stopping once the next line in the current function is reached",
+      "reviews": []
+    },
+    {
+      "id": "vduvew8n1p",
+      "version": 0,
+      "active": true,
+      "question": "pdb: what command do you use to run code until the next break point?",
+      "answer": "continue",
+      "reviews": []
+    },
+    {
+      "id": "aa1eplem1r",
+      "version": 0,
+      "active": true,
+      "question": "pdb: what command do you use to run code until the current function returns?",
+      "answer": "return",
+      "reviews": []
+    },
+    {
+      "id": "wjt79bi61m",
+      "version": 0,
+      "active": true,
+      "question": "What is a path-like object?",
+      "answer": "Either an object of type str or bytes, or an object implementing the os.PathLike interface.",
+      "reviews": []
+    },
+    {
+      "id": "rq01e16g8q",
+      "version": 0,
+      "active": true,
+      "question": "Define the os.PathLike interface.",
+      "answer": "Has one method:   def __fspath__() -\u003e Union[str, bytes]:     pass   Returns the filesystem path as a str or bytes, with the preference being for str.",
+      "reviews": []
+    },
+    {
+      "id": "4ztn964646",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: concatenate two Path objects",
+      "answer": "\"x = Path(\"\"mydir\"\") y = Path(\"\"myfile.txt\"\") z = x / y\"",
+      "reviews": []
+    },
+    {
+      "id": "h7bbhw850w",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: determine whether a path exists.",
+      "answer": "x = Path(mydir)x.exists()",
+      "reviews": []
+    },
+    {
+      "id": "m6yifdi9sp",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: determine whether a path is a directory.",
+      "answer": "x = Path(mydir)x.is_dir()",
+      "reviews": []
+    },
+    {
+      "id": "uazl6zlqxw",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: determine whether a path is a file.",
+      "answer": "x = Path(mydir)x.is_file()",
+      "reviews": []
+    },
+    {
+      "id": "4loc5ecbjb",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: split a path into its constituents.",
+      "answer": "\"x = Path(\"\"mydir/otherdir/myfile.txt\"\")x.parts # (\"\"mydir\"\", \"\"otherdir\"\", \"\"myfile.txt\"\")\"",
+      "reviews": []
+    },
+    {
+      "id": "edaah3ek57",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: get basename",
+      "answer": "\"x = Path(\"\"mydir/myfile.txt\"\")x.name\"",
+      "reviews": []
+    },
+    {
+      "id": "6k7qypvnvo",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: get dirname",
+      "answer": "\"x = Path(\"\"mydir/myfile.txt\"\")x.parent\"",
+      "reviews": []
+    },
+    {
+      "id": "swjgn498pe",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: get the absolute path for a given Path instance.",
+      "answer": "\"x = Path(\"\"mydir/myfile.txt\"\")x.resolve()\"",
+      "reviews": []
+    },
+    {
+      "id": "ozjpm4cvff",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: check whether each thing in a directory is a file.",
+      "answer": "\"x = Path(\"\"mydir\"\") for path in x.iterdir():     print(path, path.is_file())\"",
+      "reviews": []
+    },
+    {
+      "id": "zln3z7gdny",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: get Path instance pointing to home directory.",
+      "answer": "Path.home()",
+      "reviews": []
+    },
+    {
+      "id": "h693kykcyx",
+      "version": 0,
+      "active": true,
+      "question": "pathlib: get Path instance for current directory.",
+      "answer": "Path.cwd()",
+      "reviews": []
+    },
+    {
+      "id": "7xrdfp6c54",
+      "version": 0,
+      "active": true,
+      "question": "When you return multiple values from a function, what is actually going on?",
+      "answer": "You are returning a tuple. If you are then assigning the result of the function to 2+ variables, you're breaking up the returned tuple into those variables in that step.",
+      "reviews": []
+    },
+    {
+      "id": "8u0qc98ni7",
+      "version": 0,
+      "active": true,
+      "question": "\"pandas: get a DataFrame from sheet named \"\"Sheet1\"\" in an excel file.\"",
+      "answer": "\"import pandas as pddf = pd.read_excel(path, \"\"Sheet1\"\")\"",
+      "reviews": []
+    },
+    {
+      "id": "ufwx5aeuf2",
+      "version": 0,
+      "active": true,
+      "question": "pandas: get a DataFrame from a CSV file",
+      "answer": "import pandas as pd df = pd.read_csv(path)",
+      "reviews": []
+    },
+    {
+      "id": "0g4s4g9mep",
+      "version": 0,
+      "active": true,
+      "question": "pandas: get the value at the 3rd row and the 4th column",
+      "answer": "x.iat[2, 3]",
+      "reviews": []
+    },
+    {
+      "id": "ebuhy5oy6r",
+      "version": 0,
+      "active": true,
+      "question": "\"pandas: get the value at the row index \"\"myrow\"\" and the column index \"\"mycolumn\"\"\"",
+      "answer": "\"df.at[\"\"myrow\"\", \"\"mycolumn\"\"]\"",
+      "reviews": []
+    },
+    {
+      "id": "bam43tq41c",
+      "version": 0,
+      "active": true,
+      "question": "\"pandas: get all rows for the columns \"\"id\"\" and \"\"name\"\"\"",
+      "answer": "\"df.loc[:, [\"\"id\"\", \"\"name\"\"]]\"",
+      "reviews": []
+    },
+    {
+      "id": "ksx95npmsd",
+      "version": 0,
+      "active": true,
+      "question": "pandas: get all rows between 0 and 5, and all columns between 4 and 6",
+      "answer": "df.iloc[0:5, 4:6]",
+      "reviews": []
+    },
+    {
+      "id": "ucgcp8i290",
+      "version": 0,
+      "active": true,
+      "question": "pandas: get all rows where id is equal to 1234",
+      "answer": "\"df[df.loc[:, \"\"id\"\"] == 1234]\"",
+      "reviews": []
+    },
+    {
+      "id": "6c4b9w7r9r",
+      "version": 0,
+      "active": true,
+      "question": "pandas: see the type of data in each column",
+      "answer": "df.dtypes",
+      "reviews": []
+    },
+    {
+      "id": "r1w4zf9m98",
+      "version": 0,
+      "active": true,
+      "question": "pandas: get the names of each column",
+      "answer": "df.columns",
+      "reviews": []
+    },
+    {
+      "id": "s3j5zg1j83",
+      "version": 0,
+      "active": true,
+      "question": "What is the main difference between a pandas DataFrame and a numpy array?",
+      "answer": "A numpy array has one dtype for the entire array, whereas pandas DataFrames have one dtype per column.",
+      "reviews": []
+    },
+    {
+      "id": "9p0tmtg697",
+      "version": 0,
+      "active": true,
+      "question": "pandas: get a quick statistical summary of your dataframe",
+      "answer": "df.describe()",
+      "reviews": []
+    },
+    {
+      "id": "mdshvcybbv",
+      "version": 0,
+      "active": true,
+      "question": "pandas: concatenate df1 and df2",
+      "answer": "pd.concat([df1, df2])",
+      "reviews": []
+    },
+    {
+      "id": "f8z1gh06fz",
+      "version": 0,
+      "active": true,
+      "question": "pandas: what does the .apply method do?",
+      "answer": "Applies a function to either entire columns or entire rows if called on a DataFrame. Applies a function to the entire Series if called on a Series.",
+      "reviews": []
+    },
+    {
+      "id": "jgx3k5udzh",
+      "version": 0,
+      "active": true,
+      "question": "\"pandas: get the unique values in the column \"\"mycol\"\"\"",
+      "answer": "\"df.loc[:, \"\"mycol\"\"].unique()\"",
+      "reviews": []
+    },
+    {
+      "id": "opzefbgc60",
+      "version": 0,
+      "active": true,
+      "question": "pandas: count all non-NaN cells in a DataFrame",
+      "answer": "df.count()",
+      "reviews": []
+    },
+    {
+      "id": "er0n0uc4d1",
+      "version": 0,
+      "active": true,
+      "question": "\"pandas: get a count of the number of times each value appears (a histogram) in the \"\"claim_no_pri\"\" column\"",
+      "answer": "\"df.loc[:, \"\"claim_no_pri\"\"].value_counts()\"",
+      "reviews": []
+    },
+    {
+      "id": "2x0omftwtf",
+      "version": 0,
+      "active": true,
+      "question": "\"pandas: get all rows where column \"\"my_col\"\" is false\"",
+      "answer": "\"df[~df.loc[:, \"\"my_col\"\"]]\"",
+      "reviews": []
+    },
+    {
+      "id": "u0m8sw828f",
+      "version": 0,
+      "active": true,
+      "question": "What are the four operations that can be done between two sets? What are their operators?",
+      "answer": "union: | intersection: \u0026 difference: - symmetric difference: ^   For two sets a and b, symmetric difference is equal to (a - b) | (b - a).",
+      "reviews": []
+    },
+    {
+      "id": "syslwi7dyy",
+      "version": 0,
+      "active": true,
+      "question": "How does `~` differ from `not`? What method does `~` call?",
+      "answer": "`not` is just negating the boolean conversion value.   `~` is a unary operator that inverts or takes the complement of the input variable. Traditionally applies to bits, but can apply to other things like pandas columns.   def __invert__(self):     pass",
+      "reviews": []
+    },
+    {
+      "id": "vfzjoz4ivd",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between str(obj) and repr(obj)?",
+      "answer": "str(obj) calls obj.__str__(). This method is supposed to produce a string version of the object that is suitable for the consumption of whoever is using the code you're writing. Could be your average joe, could be a developer using your library, whatever.   repr(obj) calls obj.__repr__(). This method ideally produces valid python code so it could be passed to eval(), but this isn't required. The idea is to give a full representation of the object, with readability coming second.",
+      "reviews": []
+    },
+    {
+      "id": "tk1uenjgyz",
+      "version": 0,
+      "active": true,
+      "question": "\"a = {\"\"asdf\"\": 1}   def func1(x):     x[\"\"asdf\"\"] = 2     def func2(x):     x = {\"\"asdf\"\": 5}   print(a) func1(a) print(a) func2(a) print(a)   What is printed? Why?\"",
+      "answer": "{'asdf': 1} {'asdf': 2} {'asdf': 2}   If you modify an object passed to a function, those changes occur on the object outside of the function. However, if you reassign the object inside the function, it is a new object within the function scope. Thus, any changes made to it are not made on the object outside the function.",
+      "reviews": []
+    }
+  ]
+}

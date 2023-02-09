@@ -1,0 +1,310 @@
+{
+  "name": "git",
+  "version": 0,
+  "cards": [
+    {
+      "id": "0bp4vrtm2t",
+      "version": 0,
+      "active": true,
+      "question": "what is the only thing you need to know when doing a git rebase?",
+      "answer": "use interactive mode, -i",
+      "reviews": []
+    },
+    {
+      "id": "qqbspwpcae",
+      "version": 0,
+      "active": true,
+      "question": "Command to clone a github repo using SSH",
+      "answer": "git clone git@github.com:\u003cusername\u003e/\u003crepo_name\u003e.git",
+      "reviews": []
+    },
+    {
+      "id": "fl7zae5d5q",
+      "version": 0,
+      "active": true,
+      "question": "Create a new git branch",
+      "answer": "git branch \u003cbranchname\u003e [\u003cstart-point\u003e]",
+      "reviews": []
+    },
+    {
+      "id": "achz4trzmv",
+      "version": 0,
+      "active": true,
+      "question": "Pull the latest commits from upstream to your fork",
+      "answer": "git remote add upstream git@github.com:telus/... git fetch upstream master git checkout master git merge upstream/master git push origin master",
+      "reviews": []
+    },
+    {
+      "id": "wzhvr6q0lf",
+      "version": 0,
+      "active": true,
+      "question": "git: get a new branch from a remote into local tracking, so you can check it out",
+      "answer": "git fetch \u003cremote\u003e \u003cremote_branch\u003e:\u003clocal_branch\u003e or git fetch \u003cremote\u003e \u003cbranch\u003e",
+      "reviews": []
+    },
+    {
+      "id": "yaao0xeaim",
+      "version": 0,
+      "active": true,
+      "question": "What are the two types of permissions masks that git stores?",
+      "answer": "755 (rwx r-x r-x) (executable) 644 (rw- r-- r--) (non-executable)",
+      "reviews": []
+    },
+    {
+      "id": "rlh3r04oge",
+      "version": 0,
+      "active": true,
+      "question": "\"Set the local \"\"asdf\"\" branch to track the \"\"asdf\"\" branch in the \"\"upstream\"\" remote\"",
+      "answer": "git branch -u upstream/asdf asdf   Or, very verbose:   git branch -u refs/remotes/upstream/asdf refs/heads/asdf",
+      "reviews": []
+    },
+    {
+      "id": "if96d8k7jj",
+      "version": 0,
+      "active": true,
+      "question": "What are the four locations git looks in for config?",
+      "answer": "/etc/gitconfig ~/.gitconfig ~/.config/git/config \u003crepo\u003e/.git/config",
+      "reviews": []
+    },
+    {
+      "id": "pundwgyerc",
+      "version": 0,
+      "active": true,
+      "question": "Is local config propagated to and from remotes?",
+      "answer": "No, only the repo content is propagated. .git/config can contain sensitive and/or developer-specific information.",
+      "reviews": []
+    },
+    {
+      "id": "dj0sio89zq",
+      "version": 0,
+      "active": true,
+      "question": "git: delete develop branch from origin (2 ways)",
+      "answer": "git push -d origin develop git push origin :refs/heads/develop",
+      "reviews": []
+    },
+    {
+      "id": "pqds80b91z",
+      "version": 0,
+      "active": true,
+      "question": "Tag a commit with a message-less tag",
+      "answer": "git tag \u003ctag_name\u003e \u003cref\u003e",
+      "reviews": []
+    },
+    {
+      "id": "i4sjlnfxtf",
+      "version": 0,
+      "active": true,
+      "question": "What is the index, and what are 3 other words for it?",
+      "answer": "The staging area.   cache, staging area, directory cache",
+      "reviews": []
+    },
+    {
+      "id": "mnehxkxn4g",
+      "version": 0,
+      "active": true,
+      "question": "What are the four different forms of git diff?",
+      "answer": "git diff [\u003cref\u003e] [\u003cpath\u003e...] diff between working tree and either index, if index is present (this is priority), or ref (HEAD default)   git diff --cached [\u003cref\u003e] [\u003cpath\u003e...] diff between ref (or if not defined, HEAD) and index   git diff \u003cref\u003e \u003cref\u003e [\u003cpath\u003e...] diff between two refs   git diff \u003cref1\u003e...\u003cref2\u003e [\u003cpath\u003e...] diff between ref2 and the nearest common ancestor of ref1 and ref2",
+      "reviews": []
+    },
+    {
+      "id": "yebql5ern2",
+      "version": 0,
+      "active": true,
+      "question": "What is the purpose of --?",
+      "answer": "-- separates the paths from other arguments, such as refs. Without it, some commands would be ambiguous.",
+      "reviews": []
+    },
+    {
+      "id": "f2ceh3tzji",
+      "version": 0,
+      "active": true,
+      "question": "List all the commits that changed a file",
+      "answer": "git log --follow -- \u003cpath\u003e",
+      "reviews": []
+    },
+    {
+      "id": "vg6l5xfn4o",
+      "version": 0,
+      "active": true,
+      "question": "git: how are the ^ and ~ symbols used when referencing commits, and what do they mean?",
+      "answer": "HEAD^ or HEAD^1 -\u003e the first parent of HEAD HEAD^2 -\u003e the second parent of HEAD HEAD^^ or HEAD^1^1 -\u003e the first parent of the first parent of HEAD   HEAD~1 -\u003e the first parent of HEAD HEAD~2 -\u003e the first parent of the first parent of head  The general rule is to use ~ when referring to previous commits.",
+      "reviews": []
+    },
+    {
+      "id": "lx2kfv7qbh",
+      "version": 0,
+      "active": true,
+      "question": "git: how are tags propagated across repos (fetch/push)?",
+      "answer": "git fetch -\u003e only fetches tags that are on ancestors of ref you're fetching git fetch --tags -\u003e fetches all tags git fetch --no-tags -\u003e fetches no tags git fetch refs/tags/*:refs/tags/* -\u003e fetches all tags   git push -\u003e doesn't push any tags git push --tags -\u003e pushes all tags, but only tags git push refs/tags/*:refs/tags/* -\u003e pushes all tags",
+      "reviews": []
+    },
+    {
+      "id": "yxymwugv46",
+      "version": 0,
+      "active": true,
+      "question": "What are the two kinds of tags?",
+      "answer": "simple: just a name that points to a commit   annotated: a full git object (think: like a commit) that is checksummed, has name of creator, is dated, has a message, and is optionally signed",
+      "reviews": []
+    },
+    {
+      "id": "qj3dzaqfx9",
+      "version": 0,
+      "active": true,
+      "question": "What are the paths to heads, tags and remote heads?",
+      "answer": "heads: refs/heads/\u003chead\u003e tags: refs/tags/\u003ctag\u003e heads at remotes: refs/remotes/\u003cremote\u003e/\u003chead\u003e",
+      "reviews": []
+    },
+    {
+      "id": "47luavlfrd",
+      "version": 0,
+      "active": true,
+      "question": "How do you create a git submodule?",
+      "answer": "Go to dir you want submodule in and do:git submodule add \u003curl\u003e",
+      "reviews": []
+    },
+    {
+      "id": "f9fp8vaou1",
+      "version": 0,
+      "active": true,
+      "question": "Which file and which directory contain the metadata on submodules?",
+      "answer": ".gitmodules: contains the path to the submodule directory, and the url of the submodule remote   .git/modules/\u003cpath_to_submodule_dir\u003e: contains all of the things that .git/ would normally contain for the submodule",
+      "reviews": []
+    },
+    {
+      "id": "tc72xm884e",
+      "version": 0,
+      "active": true,
+      "question": "In what two ways is a submodule tracked in the parent's index?",
+      "answer": "\"- in .gitmodules - as a \"\"directory commit\"\"\"",
+      "reviews": []
+    },
+    {
+      "id": "2d8wdezmhd",
+      "version": 0,
+      "active": true,
+      "question": "How do you get the code from a repository's submodules when you first clone it?",
+      "answer": "git submodule init git submodule update   or   git submodule update --init",
+      "reviews": []
+    },
+    {
+      "id": "5mgnnlctd0",
+      "version": 0,
+      "active": true,
+      "question": "What is the simplest way to ensure that a submodule is in the state pointed to by the commit recorded in the superproject? What is the limitation of this?",
+      "answer": "git submodule update   This checks out that commit, which leaves HEAD in a detached state - any commits made on top of it are likely to be lost.",
+      "reviews": []
+    },
+    {
+      "id": "1tt3aphrn8",
+      "version": 0,
+      "active": true,
+      "question": "How do I develop the repo in a git submodule?",
+      "answer": "1) Check out a branch in the submodule 2) Make your changes and commit them to the branch 3) Push your changes 4) To make the superproject refer to the current checked out commit in the submodule, simply add the submodule dir and commit it",
+      "reviews": []
+    },
+    {
+      "id": "tlour6kqzv",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between git revert, git restore and git reset?",
+      "answer": "git revert: lets you make a commit that reverts the changes made in other commits   git restore: restores files in working tree from either the index or another commit   git reset: allows you to move your current branch tip to a specific commit, potentially deleting commits",
+      "reviews": []
+    },
+    {
+      "id": "t7pkfi5aop",
+      "version": 0,
+      "active": true,
+      "question": "\"What are the three \"\"trees\"\" that are useful to have in your mind when working with `git reset`?\"",
+      "answer": "HEAD index working tree",
+      "reviews": []
+    },
+    {
+      "id": "slow9t3grl",
+      "version": 0,
+      "active": true,
+      "question": "What are the three useful forms of `git reset`? Which is default?",
+      "answer": "git reset --soft \u003ccommit\u003e: - resets HEAD to commit - puts changes from nuked commits into index - keeps working tree as is   git reset --mixed \u003ccommit\u003e (default): - resets HEAD to commit - puts changes from nuked commits and index into working tree   git reset --hard \u003ccommit\u003e: - resets HEAD to commit - nukes index and working tree - commits nuked",
+      "reviews": []
+    },
+    {
+      "id": "yiubp95k6p",
+      "version": 0,
+      "active": true,
+      "question": "Move a change from the index to the working tree",
+      "answer": "git restore --staged \u003cpath\u003e",
+      "reviews": []
+    },
+    {
+      "id": "7qy6763zgt",
+      "version": 0,
+      "active": true,
+      "question": "git: Get status in scriptable format",
+      "answer": "git status --porcelain",
+      "reviews": []
+    },
+    {
+      "id": "axfad6gkn4",
+      "version": 0,
+      "active": true,
+      "question": "What are the three subcommands you need to know to use `git stash`?",
+      "answer": "git stash push: put current working tree and index into stash git stash pop: retrieve working tree and index from stash git stash list: get a list of stashes",
+      "reviews": []
+    },
+    {
+      "id": "o9fi5beg3p",
+      "version": 0,
+      "active": true,
+      "question": "What is the one important thing to remember about the difference between commands that do things to remotes and commands that do things locally?",
+      "answer": "Commands that do things to remotes must have the remote specified, and then the branch arguments. Commands that do things locally have the remote and the branch lumped together in the form \u003cremote\u003e/\u003cbranch\u003e.",
+      "reviews": []
+    },
+    {
+      "id": "vbsu4u30gn",
+      "version": 0,
+      "active": true,
+      "question": "How do you export a git repo as a .tgz file?",
+      "answer": "git archive \u003cbranch\u003e -o output.tgz",
+      "reviews": []
+    },
+    {
+      "id": "k0e0549r9j",
+      "version": 0,
+      "active": true,
+      "question": "Print the changes made by a single commit? Also, print the changes made by a single commit to a specific file?",
+      "answer": "git show \u003cref\u003e   git show \u003cref\u003e -- \u003cpath\u003e",
+      "reviews": []
+    },
+    {
+      "id": "qouv5g9jbj",
+      "version": 0,
+      "active": true,
+      "question": "You make a branch off of main, called branchA. You make some commits on this branch. Then, you make another branch at the location of branchA called branchB. You make some commits on branchB. The graph looks like this:   0 - 0 - 0 - 0 - 0 - 0 - 0 (main)    \\     0 - 0 - 0 (branchA)                 \\                  0 - 0 - 0 - 0 (branchB)   How do you rebase only branchB onto main, leaving branchA where it is?",
+      "answer": "git rebase --onto main branchA branchB",
+      "reviews": []
+    },
+    {
+      "id": "9gg2ly6ovr",
+      "version": 0,
+      "active": true,
+      "question": "How do Github releases work?",
+      "answer": "Exactly as you would expect: you create a release from a tag somewhere in the code, and then upload any assets (i.e. binaries) and release notes.",
+      "reviews": []
+    },
+    {
+      "id": "n48p62d1wl",
+      "version": 0,
+      "active": true,
+      "question": "What is the cleanest way to do global search and replace on a git repo?",
+      "answer": "git grep -l \u003cterm\u003e | xargs sed -i 's/term/replacement/g'",
+      "reviews": []
+    },
+    {
+      "id": "7hs1x0a1np",
+      "version": 0,
+      "active": true,
+      "question": "How do you check out a branch that you don't have locally, but is on a remote?",
+      "answer": "git checkout --guess \u003cremote_branch\u003e",
+      "reviews": []
+    }
+  ]
+}

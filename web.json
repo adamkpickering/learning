@@ -1,0 +1,702 @@
+{
+  "name": "web",
+  "version": 0,
+  "cards": [
+    {
+      "id": "8gr6l3m2sv",
+      "version": 0,
+      "active": true,
+      "question": "What is the standard that defines TLS certificates?",
+      "answer": "X.509",
+      "reviews": []
+    },
+    {
+      "id": "jh18o4ef9r",
+      "version": 0,
+      "active": true,
+      "question": "process to get a x.509 certificate",
+      "answer": "1) applicant creates a key pair 2) applicant creates a CSR, which contains details such as their DN and public key, and signs it 3) applicant sends CSR to CA 4) CA creates certificate, signs it with CA's private key 5) CA sends the created certificate back",
+      "reviews": []
+    },
+    {
+      "id": "ncdeiz5l16",
+      "version": 0,
+      "active": true,
+      "question": "What info does an x.509 cert contain?",
+      "answer": "- subject DN - subject public key - CA DN - validity period - hash signed by CA Optional: - SAN fields that state which domains cert is valid for",
+      "reviews": []
+    },
+    {
+      "id": "12rbrfhvrr",
+      "version": 0,
+      "active": true,
+      "question": "What purpose does the HTTP Host header serve?",
+      "answer": "\"It is possible to run multiple \"\"websites\"\" on one webserver. The Host header is sent in requests, and specifies the domain name (and optionally port) of the website the client is trying to reach.\"",
+      "reviews": []
+    },
+    {
+      "id": "qxmzp7t9mc",
+      "version": 0,
+      "active": true,
+      "question": "What is SNI and why is it necessary?",
+      "answer": "In HTTPS, the setup of the TLS tunnel occurs before any HTTP is sent. This is a problem: in order for the server to send the certificate for the specific domain name the client has requested, it needs to know what that domain name is, which previously was sent in the HTTP request in the Host header.   Server name indication, which is an extension to TLS, solves this by having the client send the name the domain as part of the TLS negotiation.",
+      "reviews": []
+    },
+    {
+      "id": "wyzwzj2nr2",
+      "version": 0,
+      "active": true,
+      "question": "MIME: what does it stand for and what is it?",
+      "answer": "Multipurpose Internet Mail Extensions Originally extended email (SMTP) to support text in encodings other than ASCII, non-text attachments (audio, video, images, applications etc), message bodies with multiple parts etc. Now used in HTTP in the same capacity.",
+      "reviews": []
+    },
+    {
+      "id": "tci92x3mo8",
+      "version": 0,
+      "active": true,
+      "question": "What is the same origin policy?",
+      "answer": "When content from a website is granted permission to access resources (think session cookie) on a web browser, then these resources can only be accessed by content from a URL with the same 1) URI scheme (http:// etc), 2) host name, and 3) port number.",
+      "reviews": []
+    },
+    {
+      "id": "9rf6c867p4",
+      "version": 0,
+      "active": true,
+      "question": "tag for ordered list, unordered list and list element",
+      "answer": "ordered list: \u003col\u003e unordered list: \u003cul\u003e list element: \u003cli\u003e",
+      "reviews": []
+    },
+    {
+      "id": "ltbcm777qi",
+      "version": 0,
+      "active": true,
+      "question": "\"create an unordered list with elements \"\"cat\"\" and \"\"dog\"\"\"",
+      "answer": "\u003cul\u003e   \u003cli\u003ecat\u003c/li\u003e   \u003cli\u003edog\u003c/li\u003e \u003c/ul\u003e",
+      "reviews": []
+    },
+    {
+      "id": "oy5t0xoxer",
+      "version": 0,
+      "active": true,
+      "question": "ten HTML elements pertaining to tables - what is each for?",
+      "answer": "\u003ccaption\u003e \u003ccol\u003e \u003ccolgroup\u003e \u003ctable\u003e \u003ctbody\u003e \u003ctd\u003e \u003ctfoot\u003e \u003cth\u003e \u003cthead\u003e \u003ctr\u003e",
+      "reviews": []
+    },
+    {
+      "id": "6p21y1xfkn",
+      "version": 0,
+      "active": true,
+      "question": "Two most important attributes of \u003cform\u003e element",
+      "answer": "action: the URI of the server that processes the form information method: the HTTP method to use on that URI",
+      "reviews": []
+    },
+    {
+      "id": "g7ciygup8l",
+      "version": 0,
+      "active": true,
+      "question": "List the 14 elements pertaining to forms",
+      "answer": "button datalist fieldset form input label legend meter optgroup option output progress select textarea",
+      "reviews": []
+    },
+    {
+      "id": "a9ojfscc30",
+      "version": 0,
+      "active": true,
+      "question": "What is the word that the a in the \u003ca\u003e element refers to?",
+      "answer": "anchor",
+      "reviews": []
+    },
+    {
+      "id": "t3ng3nj23y",
+      "version": 0,
+      "active": true,
+      "question": "\"Create a select form element with options \"\"cat\"\" and \"\"dog\"\"\"",
+      "answer": "\"\u003cselect name=\"\"animal\"\"\u003e   \u003coption\u003ecat\u003c/option\u003e   \u003coption\u003edog\u003c/option\u003e \u003c/select\u003e\"",
+      "reviews": []
+    },
+    {
+      "id": "468k2662og",
+      "version": 0,
+      "active": true,
+      "question": "Make a HTML5 radio button list",
+      "answer": "\"\u003cfieldset\u003e   \u003clegend\u003eChoose a Decade:\u003c/legend\u003e   \u003cinput type=\"\"radio\"\" name=\"\"decade\"\" value=\"\"60s\"\"\u003e    \u003clabel\u003e60s\u003c/label\u003e\u003cbr\u003e   \u003cinput type=\"\"radio\"\" name=\"\"decade\"\" value=\"\"70s\"\"\u003e    \u003clabel\u003e70s\u003c/label\u003e\u003cbr\u003e \u003c/fieldset\u003e\"",
+      "reviews": []
+    },
+    {
+      "id": "8os3i3ew2u",
+      "version": 0,
+      "active": true,
+      "question": "Relevant attributes for HTML5 input element; what are they for?",
+      "answer": "type: the type of the input element name: what eventually becomes the key of this input in submitted form value: the value the element has by default, or its value when checked",
+      "reviews": []
+    },
+    {
+      "id": "adpx8nibqf",
+      "version": 0,
+      "active": true,
+      "question": "What is the HTML id attribute for?",
+      "answer": "Used for selecting an element by its id, either for javascript or CSS",
+      "reviews": []
+    },
+    {
+      "id": "riusulh18q",
+      "version": 0,
+      "active": true,
+      "question": "\"What is the difference between a form with method \"\"get\"\" and a form with method \"\"post\"\"?\"",
+      "answer": "\"With \"\"get\"\", the user input is url-encoded (?var=value\u0026var2=value2) and then appended to the URL. With \"\"post\"\" the user input is url-encoded and then sent in the body of the request.\"",
+      "reviews": []
+    },
+    {
+      "id": "dt4hia95yq",
+      "version": 0,
+      "active": true,
+      "question": "What is the format of the first line of an HTTP request? An HTTP response?",
+      "answer": "Request: \u003cmethod\u003e \u003curl_string\u003e \u003chttp_version\u003e\\r\\n   Response: \u003chttp_version\u003e \u003cstatus_code\u003e \u003creason_phrase\u003e\\r\\n",
+      "reviews": []
+    },
+    {
+      "id": "fdzqdj89yt",
+      "version": 0,
+      "active": true,
+      "question": "How to do a submit button for an HTML form?",
+      "answer": "\"\u003cinput type=\"\"submit\"\" value=\"\"Your Text Here\"\"\u003e or \u003cbutton type=\"\"submit\"\"\u003eYour Text Here\u003c/button\u003e\"",
+      "reviews": []
+    },
+    {
+      "id": "e1qicve4j8",
+      "version": 0,
+      "active": true,
+      "question": "What is CSRF? How do you protect against it?",
+      "answer": "Cross-site request forgery. Where a malicious third party tricks a logged-in user into clicking a link that has some effect on the state of the website they are logged into. Can delete their profile, change something, lots of nasty stuff.   There are a few ways. Most involve including a hidden form element that includes a secret number in each form, so that the number can be validated along with the form when it is submitted. This way, a third party cannot come up with a valid form since they can't generate a cookie that the server recognizes as valid.",
+      "reviews": []
+    },
+    {
+      "id": "9exgo16iqu",
+      "version": 0,
+      "active": true,
+      "question": "What are the five types of CSS selectors and how do they work?",
+      "answer": "simple: based on element type, element id, element class combinator: based on relationships between elements pseudo-class: based on state of element (mouseover, focus etc) pseudo-element: for selecting parts of elements attribute: for selecting elements with specific attributes",
+      "reviews": []
+    },
+    {
+      "id": "zaystv8f7y",
+      "version": 0,
+      "active": true,
+      "question": "select all \u003cp\u003e elements with CSS",
+      "answer": "p { ... }",
+      "reviews": []
+    },
+    {
+      "id": "e6xtj0hjqn",
+      "version": 0,
+      "active": true,
+      "question": "\"select all elements with the id \"\"myid\"\"\"",
+      "answer": "\"#myid { ... }\"",
+      "reviews": []
+    },
+    {
+      "id": "jbad92g583",
+      "version": 0,
+      "active": true,
+      "question": "\"select all \u003cp\u003e with class \"\"myclass\"\"\"",
+      "answer": "p.myclass { ... }",
+      "reviews": []
+    },
+    {
+      "id": "65kr61e0ey",
+      "version": 0,
+      "active": true,
+      "question": "\"select all elements with class \"\"myclass\"\"\"",
+      "answer": ".myclass { ... }",
+      "reviews": []
+    },
+    {
+      "id": "uj2pxwjy3o",
+      "version": 0,
+      "active": true,
+      "question": "CSS: select all elements",
+      "answer": "* { ... }",
+      "reviews": []
+    },
+    {
+      "id": "stg5kxe6sm",
+      "version": 0,
+      "active": true,
+      "question": "select elements p, h1 and h2",
+      "answer": "p, h1, h2 { ... }",
+      "reviews": []
+    },
+    {
+      "id": "w6dpqtpbnc",
+      "version": 0,
+      "active": true,
+      "question": "\"CSS: select all \u003cinput\u003e with type=\"\"email\"\"\"",
+      "answer": "\"input[type=\"\"email\"\"] { ... }\"",
+      "reviews": []
+    },
+    {
+      "id": "nk6dvnz9u9",
+      "version": 0,
+      "active": true,
+      "question": "How do I get a CSS stylesheet working with my HTML?",
+      "answer": "\"\u003clink href=\"\"/static/style.css\"\" rel=\"\"stylesheet\"\"\u003e\"",
+      "reviews": []
+    },
+    {
+      "id": "zijc8avwkc",
+      "version": 0,
+      "active": true,
+      "question": "hugo: what are the 8 directories in a website folder, and what is in them?",
+      "answer": "archetypes: templates for new content files assets: stores all files that need to be processed by hugo pipes  config: site configuration (can also be a single file) content: files that contain content of the website data: configuration files that are used by hugo when generating the website layouts: templates that specify the format of final HTML (i.e. home page, blog post, list page etc) static: the static content that is incorporated by hugo but not modified by it themes: files for themes",
+      "reviews": []
+    },
+    {
+      "id": "sdn8231ovw",
+      "version": 0,
+      "active": true,
+      "question": "\"CSS: align the text in an element with id \"\"myid\"\" to the left\"",
+      "answer": "\"#myid {   text-align: left; }\"",
+      "reviews": []
+    },
+    {
+      "id": "wl7rg5ow12",
+      "version": 0,
+      "active": true,
+      "question": "\"CSS: change the font type inside all paragraph elements with class \"\"a\"\" to sans-serif\"",
+      "answer": "p.a {   font-family: sans-serif; }",
+      "reviews": []
+    },
+    {
+      "id": "7m1s4pgkuj",
+      "version": 0,
+      "active": true,
+      "question": "\"hugo: what is \"\"front matter\"\"?\"",
+      "answer": "A way to include metadata in a content file; can be toml, yaml, json, org",
+      "reviews": []
+    },
+    {
+      "id": "ao6j8q17bx",
+      "version": 0,
+      "active": true,
+      "question": "Order border, margin and padding from outside to inside; what is each one?",
+      "answer": "margin border padding   Margin is the space between the parent element and the edge of the element itself. Border is a (optionally filled) line that surrounds the element. Padding is the space between the element and child elements.",
+      "reviews": []
+    },
+    {
+      "id": "oye8szptdq",
+      "version": 0,
+      "active": true,
+      "question": "CSS: what are the five values for the position property, and what do they mean?",
+      "answer": "static: default; element is not affected by top, bottom, left, right properties   relative: element is positioned relative to its normal position via the top, bottom, left, right properties   fixed: position is relative to the viewport, so it stays in the same place even if the page is scrolled   absolute: element is positioned relative to the nearest positioned ancestor   sticky: element toggles between relative and fixed, depending on the scroll position",
+      "reviews": []
+    },
+    {
+      "id": "9xbd2lpszo",
+      "version": 0,
+      "active": true,
+      "question": "What are 5 basic length units I use for CSS?",
+      "answer": "\"px: absolute length in \"\"pixels\"\" (1px is actually multiple pixels for high-res screens)  rem: relative to font size of root element  vh: relative to 1% of viewport height vw: relative to 1% of viewport width %: relative to parent element\"",
+      "reviews": []
+    },
+    {
+      "id": "ouje79pjls",
+      "version": 0,
+      "active": true,
+      "question": "CSS: what do the following do for margins?  1) margin: 10px 20px 30px 40px 2) margin: 10px 20px 30px 3) margin: 10px 30px",
+      "answer": "1) top: 10px; right: 20px; bottom: 30px; left: 40px 2) top: 10px; right \u0026 left: 20px; bottom: 30px 3) top \u0026 bottom: 10px; right \u0026 left: 30px",
+      "reviews": []
+    },
+    {
+      "id": "8na7vn43p4",
+      "version": 0,
+      "active": true,
+      "question": "What is the CSS property that is used for determining how the height and width properties are treated? What are the two options? What is the default?",
+      "answer": "box-sizing    content-box: width and height include only the content; default   border-box: width and height include border, padding and content",
+      "reviews": []
+    },
+    {
+      "id": "s71ayzo0ub",
+      "version": 0,
+      "active": true,
+      "question": "CSS: for the display property, what are the 6 commonly used values, and what do they mean?",
+      "answer": "inline: think a \u003cstrong\u003e element; width and height don't mean anything; margin and padding only push other elements away horizontally   inline-block: like inline in that it sets the element into the line, but behaves more like a block (respects margin and padding vertically, and width and height are respected)   block: like a div; sequential elements are ordered vertically   flex: uses flexbox   grid: uses grid   none: element is not rendered   https://css-tricks.com/almanac/properties/d/display/",
+      "reviews": []
+    },
+    {
+      "id": "oyscyqebbl",
+      "version": 0,
+      "active": true,
+      "question": "CSS: why use the fieldset element?",
+      "answer": "It is used to group elements that are from the same part of the form, such as checkbox or radio, so that they can be disabled as a group.   You can also use the form attribute to refer to the id of a form that the fieldset is not a child of - this causes the fieldset to be a part of that form.",
+      "reviews": []
+    },
+    {
+      "id": "hzo2j4hcfc",
+      "version": 0,
+      "active": true,
+      "question": "CSS: what are the three cases where margins will collapse?",
+      "answer": "1) Vertical margins of two adjacent block elements   2) If there is no border, padding content between the top or bottom margin of a child element from its parent element, the margins collapse   3) If there is no border, padding, content, height, or min-height to separate a block's top margin from its bottom, then top and bottom will collapse (assuming display: block)",
+      "reviews": []
+    },
+    {
+      "id": "l24v6hrjrc",
+      "version": 0,
+      "active": true,
+      "question": "What is an HTTP PATCH request for?",
+      "answer": "Performs a partial update, which may or may not be idempotent. A PATCH request is considered to be a set of instructions on how to modify a resource.",
+      "reviews": []
+    },
+    {
+      "id": "5ldtb7q8zt",
+      "version": 0,
+      "active": true,
+      "question": "What is \u003cth\u003e for?",
+      "answer": "\u003cth\u003e represents a cell that is the header of a group of table cells",
+      "reviews": []
+    },
+    {
+      "id": "zroc3f0yaj",
+      "version": 0,
+      "active": true,
+      "question": "What is \u003cspan\u003e for?",
+      "answer": "\u003cspan\u003e is essentially a \u003cdiv\u003e, but with `display: inline` rather than `display: block`. It groups elements or text so that they can be targeted as a group.",
+      "reviews": []
+    },
+    {
+      "id": "msq0jcphgr",
+      "version": 0,
+      "active": true,
+      "question": "How to horizontally center a div without flex?",
+      "answer": ".centered {     width: 50%;     margin: 0 auto;  }   Setting the left and right parts of margin to auto causes the element to be centered. Note that if you don't set width to something less than 100%, there is no point in centering the element.",
+      "reviews": []
+    },
+    {
+      "id": "zwhrfknsjt",
+      "version": 0,
+      "active": true,
+      "question": "\"CSS: select all input elements that are children, whether direct or indirect, of a div with class \"\"parent\"\"\"",
+      "answer": "div.parent input { ... }",
+      "reviews": []
+    },
+    {
+      "id": "yd8hagmhd9",
+      "version": 0,
+      "active": true,
+      "question": "\"CSS: select all input elements that are direct children of a div with the class \"\"parent\"\"\"",
+      "answer": "div.parent \u003e input { ... }",
+      "reviews": []
+    },
+    {
+      "id": "rylzxni7mc",
+      "version": 0,
+      "active": true,
+      "question": "What is CORS and how does it work?",
+      "answer": "When content from a website (read: javascript or a \u003clink\u003e tag or something similar) wants to access a website from a different domain than the origin of the content, the browser appends the Origin header to the request:   GET / Host: service.example.com Origin: http://www.example.com   The server at this different domain then checks this against its CORS rules, and if it's allowed, it responds with the content and another header in the request:   Access-Control-Allow-Origin: http://www.example.com   or   Access-Control-Allow-Origin: *",
+      "reviews": []
+    },
+    {
+      "id": "h9ym0prbrl",
+      "version": 0,
+      "active": true,
+      "question": "In HTTP, which header is used to specify which content types the client is able to understand?",
+      "answer": "Accept: \u003cvalue\u003e",
+      "reviews": []
+    },
+    {
+      "id": "dfa0o3n843",
+      "version": 0,
+      "active": true,
+      "question": "What tag is necessary at the top of every HTML page? Why is it a good thing to include?",
+      "answer": "\"\u003c!doctype html\u003e   This tells the browser what type of document it is looking at. If it is omitted, the browser renders the page in \"\"quirks mode\"\", which exists to allow the browser to maintain backwards compatibility with older-style (read: shittier and less standardized) web pages. Basically, without the doctype tag there is the risk that things will behave in strange and unexpected ways.\"",
+      "reviews": []
+    },
+    {
+      "id": "p20y2qh3tn",
+      "version": 0,
+      "active": true,
+      "question": "How do you specify the language an HTML document is in?",
+      "answer": "\"\u003chtml lang=\"\"en\"\"\u003e   ... \u003c/html\u003e   en -\u003e english\"",
+      "reviews": []
+    },
+    {
+      "id": "lx87odwxqg",
+      "version": 0,
+      "active": true,
+      "question": "What document is put at the root of your site to improve SEO? What does it tell web crawlers?",
+      "answer": "sitemap.xml   Tells web crawlers if pages have changed, so that if they have, they can re-crawl them.",
+      "reviews": []
+    },
+    {
+      "id": "omaifz15s6",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: Define the following: - Resource Owner - Resource Server - Client - Authorization Server",
+      "answer": "\"Resource Owner: the human being (or bot?) who knows the credentials and has \"\"ownership\"\" over the information the client is being authorized to access. Is most relevant when we are using OAuth 2.0 for authorization, and not just authentication.   Resource Server: the server that has access to the resource the client is trying to access. Is most relevant when we are using OAuth 2.0 for authorization, though one could think of it as the server that sends the client to the authorization server to authenticate.   Client: the browser or mobile app that the RO is interfacing with, which talks to the RS and the AS.   Authorization Server: the server that the Client visits in order to allow the RO to authenticate and authorize the 3rd party application.\"",
+      "reviews": []
+    },
+    {
+      "id": "bebsfpgbiu",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: what are the client ID and client secret for? In what situations is a client secret feasible to use?",
+      "answer": "The client ID is a unique (to the authorization server) piece of data that identifies a web or mobile app. The client secret is used by a server (along with the client ID) to identify itself as a certain application.   The client secret is only feasible in cases where everything is going through the servers of the application. With single-page web apps and mobile apps it would be bad to have a client secret because they are talking directly to the resource server. In fact, it would be a security hole if you had one since it would be exposed in the source code.",
+      "reviews": []
+    },
+    {
+      "id": "8qw6ae0rtn",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: what is the state parameter for? How is it passed back and forth?",
+      "answer": "The state parameter has two purposes:   1) It is equivalent to the hidden field you put in HTML forms to prevent CSRF attacks. This prevents the flow from being hijacked because the attacker would have to guess the value of the state parameter.   2) It maps an OAuth 2.0 flow to a session. So, upon receiving a request on the redirect URL, you can match the state parameter to a session and take action that is specific to that session. For example, you could redirect the user to the page the user first landed on, only with them now logged in.   The state parameter is sent via URI query parameters on the link to the login page on the AS, and is also included in the URI query parameters of the redirect from the AS to the redirect URI once the user has logged in.",
+      "reviews": []
+    },
+    {
+      "id": "q3fbmxp9kv",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: what is the authorization code? How is it used? How is it passed back and forth?",
+      "answer": "The authorization code is a code that is generated by the AS once the user has consented to give the application access to their data.   It is exchanged by the application for an access token, which is the token that is actually used to authenticate the application with the RS.   Once the user consents to give the application access, the AS redirects the user's browser to the redirect URI, while including the authorization code in the query string.",
+      "reviews": []
+    },
+    {
+      "id": "elh1rqaekd",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: what is the scope parameter for?",
+      "answer": "The scope parameter specifies the classes of resources that the application is requesting access to. The value depends on the particular service.",
+      "reviews": []
+    },
+    {
+      "id": "fy5edbd1hd",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: why is it important to authenticate the client when redeeming an authorization code for an access token?",
+      "answer": "For one, it is possible that the authorization code is leaked when it is sent to the client via the redirect URL (HTTP may be used for this). If it is leaked, then anybody can redeem it for an access token.   Another possibility is that a user gets tricked into downloading an app or using a website that looks like the one they want, but is actually a malicious application that is designed to look the same. In this case, the client secret prevents a malicious third party from gaining access to users' accounts.",
+      "reviews": []
+    },
+    {
+      "id": "hoa79khay3",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: is TLS required for the redirect URL? Why or why not?",
+      "answer": "It is not required. Yes this is is bad from a security standpoint, but at the time the spec was written it was much more difficult to deploy a TLS-secured website. Some APIs do require HTTPS now that it has become easier.",
+      "reviews": []
+    },
+    {
+      "id": "vn01nw70z5",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: is it possible to decode access tokens (in the event they are JWTs) and use their fields?",
+      "answer": "It is possible, but it is not recommended. The reason is that there is no standard format for access tokens, so their format may change at any time. If you make your code depend on access tokens being in a particular format, it will be unreliable.   If you want data about the user, you should use the access token to make a request against an API endpoint that has the desired info. Of course, it may be possible to just parse the access token, since this is more efficient - it depends on the provider you're working with.",
+      "reviews": []
+    },
+    {
+      "id": "l9vw6lne7l",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: what is a refresh token? How is it used?",
+      "answer": "If the provider wishes to make the authorization code and the access token expire after a given amount of time, it will provide a refresh token along with the access token. The refresh token can be sent to the token endpoint in the same manner as the authorization code to get a new, valid access token.",
+      "reviews": []
+    },
+    {
+      "id": "ixjjf191gd",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: how does PKCE work? What does PKCE stand for?",
+      "answer": "\"Proof Key for Code Exchange  PKCE is an extension on top of the regular authorization code flow. It can be thought of a level of security above just sending the regular state parameter.   The client creates a \"\"code verifier\"\", which is just a random string. Ideally, the client then creates a SHA256 hash of this, called the \"\"code challenge\"\". It then sends the code challenge along with the URL parameters in the link to the AS. The AC is sent back as usual, though the server will store the code challenge.   Then, when the client redeems the AC, it sends the code verifier along with the POST request. The server can then do a SHA256 hash of it and compare it to the saved code challenge. If it matches, it knows that the AC is being redeemed by the same client as the one it was originally sent to.\"",
+      "reviews": []
+    },
+    {
+      "id": "3jps4cfbjc",
+      "version": 0,
+      "active": true,
+      "question": "What is OpenID Connect?",
+      "answer": "\"OAuth 2.0 only provides authorization. If you wanted to create an authentication/identity protocol, you'd need to add:   1) a way of getting info about logged-in user 2) one or more scopes concerned with 1 3) a set of error messages/codes pertaining to authentication and identity   OpenID Connect accomplishes this by making it possible to get a \"\"ID token\"\" from the AS's token endpoint. An ID token is a JWT with standardized fields which contain basic info about the user.   The ID token can be retrieved at the same time as the access token, so you can use OIDC for identity/authentication at the same time as you use OAuth 2.0 to authorize requests to a resource server.\"",
+      "reviews": []
+    },
+    {
+      "id": "kenxs1k9pn",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: why does the authorization code exist?",
+      "answer": "Because of how OAuth 2.0 works, anything that is returned from the AS is sent in the URI query string. This means that the user (and potentially other parties) have access to it, meaning it is easy for it to be leaked.   Having an authorization code enables the use of other mechanisms, such as the state parameter and PKCE, that facilitate verification that the AC redeemer is the same party as the AC requestor.",
+      "reviews": []
+    },
+    {
+      "id": "bst6hmgxmc",
+      "version": 0,
+      "active": true,
+      "question": "OAuth 2.0: what are the two basic flows, and how do they work?",
+      "answer": "Authorization Code Flow: once user authorizes application, client gets authorization code, which it uses to get an access token and maybe refresh token.   Implicit Flow: once user authorizes application, client gets access token directly. Less secure but can still be secure if redirect URL is specified when signing your application up.",
+      "reviews": []
+    },
+    {
+      "id": "36p1tbml19",
+      "version": 0,
+      "active": true,
+      "question": "How do HTTP redirects work?",
+      "answer": "1) Status code is in 300's 2) URL to go to is specified by Location, which can be an absolute, relative or whatever kind of URL.",
+      "reviews": []
+    },
+    {
+      "id": "ipk6zxz4r5",
+      "version": 0,
+      "active": true,
+      "question": "\"What does it mean when an HTTP header starts with \"\"X-\"\"?\"",
+      "answer": "It means that the header is experimental, and not a standard header.",
+      "reviews": []
+    },
+    {
+      "id": "gmh112gq1f",
+      "version": 0,
+      "active": true,
+      "question": "What are the 2 HTTP headers that are associated with HTTP proxies? What info does each convey?",
+      "answer": "Forwarded: contains info on the client that made the initial request to the proxy   Via: contains info about the proxy that did the forwarding",
+      "reviews": []
+    },
+    {
+      "id": "hz0yzz48gf",
+      "version": 0,
+      "active": true,
+      "question": "How does an HTTP proxy know where to send the HTTP request?",
+      "answer": "It is possible to include a full URL in the HTTP request. For example:   GET http://myserver.com/path1/path2 HTTP/1.1 \u003cheaders\u003e",
+      "reviews": []
+    },
+    {
+      "id": "n2eejwyjst",
+      "version": 0,
+      "active": true,
+      "question": "\"What is a \"\"canonical link element\"\" or a \"\"canonical meta tag\"\" for? How do you write one?\"",
+      "answer": "\"These are for communicating to search engines what the canonical URL of the page is. This is because query parameters and fragments make it look like we're at a different page, as do the presence/absence of a trailing slash.   \u003clink rel=\"\"canonical\"\" href=\"\"http://example.com/\"\"\u003e   Note that the value of href should be absolute, rather than relative - this prevents confusion.\"",
+      "reviews": []
+    },
+    {
+      "id": "6d99ua6fxs",
+      "version": 0,
+      "active": true,
+      "question": "What are the 5 HTTP status codes in the 300s? What are they used for? Which ones are the most explicit and up-to-date?",
+      "answer": "303, 307 and 308 are the most explicit and up-to-date.   301 Moved Permanently: This and all future requests should be directed to the given URL. Allows HTTP method to change.     302 Found: Tells the client to browse to another URL. Superseded by 303 and 307, but remains commonly used for general-purpose redirects. Allows HTTP method to change.   303 See Other: Tells the client to find the response to the request at another URL. When received in response to a POST (context: form submission) the client should presume that the server has received the data and should issue a new GET request to the given URL.   307 Temporary Redirect: Says that the request should be repeated on another URL. The HTTP method is not allowed to change.   308 Permanent Redirect: Says that all future requests should be repeated using another URL. The HTTP method is not allowed to change.",
+      "reviews": []
+    },
+    {
+      "id": "ufpilbmutq",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between HTTP 401 and 403?",
+      "answer": "\"401 Unauthorized should actually be \"\"Unauthenticated\"\"; this is returned when authentication is required but the requestor is not authenticated.   403 Forbidden should actually be called \"\"Unauthorized\"\"; this is for when the requestor is authenticated, but does not have permission to access the requested resource.\"",
+      "reviews": []
+    },
+    {
+      "id": "q0xgssgdu0",
+      "version": 0,
+      "active": true,
+      "question": "What is HSTS? What problem does it solve? How does it work?",
+      "answer": "HTTP Strict Transport Security   It is a security mechanism that prevents MITMs from reading sensitive things like session cookies out of the first HTTP request of a client, before the client is redirected to the secure HTTPS version of the website.   We assume that the first HTTP request is a GET and does not contain any sensitive information. In the response the server includes the Strict-Transport-Security header with a value that says how many seconds the site will use HTTPS for. The client is then assumed to be smart enough in the future to remember this, and redirect (without first sending any network traffic) HTTP requests to their HTTPS equivalent.",
+      "reviews": []
+    },
+    {
+      "id": "g00aciux6r",
+      "version": 0,
+      "active": true,
+      "question": "Should an HTTP server listen on both port 80 (HTTP) and port 443 (HTTPS), or only port 443?",
+      "answer": "There is no consensus. Some argue that it should redirect port 80 to port 443 and use HSTS, which provides some protection in the event that a MITM proxies traffic after the client has already contacted the website. Ultimately, nothing can make things ultra-secure until HTTP is not used at all.",
+      "reviews": []
+    },
+    {
+      "id": "rprb9pfxc2",
+      "version": 0,
+      "active": true,
+      "question": "CSS: What are the top, bottom, left and right properties for? What property do you need to change to use them?",
+      "answer": "They are for moving the element in each direction relative to various things.   The thing this is relative to is defined by the position property.",
+      "reviews": []
+    },
+    {
+      "id": "jjgcprfex9",
+      "version": 0,
+      "active": true,
+      "question": "What are web components?",
+      "answer": "Web Components are an HTML-related technology that makes it possible to create custom HTML elements, or redefine existing ones, and use them as if they were part of the HTML standard.",
+      "reviews": []
+    },
+    {
+      "id": "566uszywun",
+      "version": 0,
+      "active": true,
+      "question": "What is \u003ctemplate\u003e for?",
+      "answer": "It holds HTML that is not rendered automatically. Instead, it makes up a fragment of HTML that can be put to use by JS at runtime.",
+      "reviews": []
+    },
+    {
+      "id": "qjnfp176oh",
+      "version": 0,
+      "active": true,
+      "question": "What is \u003cslot\u003e for? What are its important attributes?",
+      "answer": "\u003cslot\u003e is used to declare a place inside a web component that you can fill with your own HTML.   The `name` attribute is used to specify which slot you want your markup to fit into when using the web component.",
+      "reviews": []
+    },
+    {
+      "id": "684gbxpi4n",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between em and rem? When might you use either?",
+      "answer": "em: equal to number of em's times font size of element   rem: equal to number of rem's times font size of root html element   The important thing to remember here is that every element automatically inherits the font size of its parent. So, em is useful when you want the size of something to scale at the same rate as its parent. Otherwise, rem is probably more reliable.",
+      "reviews": []
+    },
+    {
+      "id": "r0tyhehhob",
+      "version": 0,
+      "active": true,
+      "question": "Is checking an asset's integrity using a checksum necessary when that asset was downloaded over HTTPS?",
+      "answer": "Yes. TLS only guarantees that the bytes written to the sending socket are the same bytes written to the receiving socket. The data could be corrupted before writing to the sending socket, or after reading from the receiving socket.",
+      "reviews": []
+    },
+    {
+      "id": "0p0ko4nmop",
+      "version": 0,
+      "active": true,
+      "question": "HTTP: what header is used by a client when it sends a previously saved cookie to a server along with a request? What is the header's format?",
+      "answer": "Cookie  \u003ccookie_name\u003e=\u003ccookie_value\u003e; \u003ccookie_name\u003e=\u003ccookie_value\u003e...",
+      "reviews": []
+    },
+    {
+      "id": "1z4jsstphs",
+      "version": 0,
+      "active": true,
+      "question": "HTTP: what header is used by a server when it wants to give the client a cookie for later use? What is the header's format?",
+      "answer": "Set-Cookie  \u003ccookie_name\u003e=\u003ccookie_value\u003e; \u003cname\u003e=\u003cvalue\u003e...   where \u003cname\u003e=\u003cvalue\u003e is cookie metadata.",
+      "reviews": []
+    },
+    {
+      "id": "iebyl12kej",
+      "version": 0,
+      "active": true,
+      "question": "HTTP: what are the most important keys for cookie metadata (4 total)? What do they contain?",
+      "answer": "Expires: contains a datetime upon which the cookie expires.   Max-Age: the number of seconds until the cookie expires. Takes precedence over Expires.   Domain: specifies the domain that the cookie applies to. If not specified, defaults to the host of the current document URL.   Path: indicates a path that must exist in the requested URL for the browser to send the cookie along with the request.",
+      "reviews": []
+    },
+    {
+      "id": "0gy2380lr7",
+      "version": 0,
+      "active": true,
+      "question": "What is a session cookie? What is its counterpart?",
+      "answer": "A session cookie is one that does not have the Expires or Max-Age attribute set. It is automatically removed when the client shuts down.   Its counterpart is a permanent cookie, which has the Expires or Max-Age attribute set.",
+      "reviews": []
+    },
+    {
+      "id": "gisqipwo2h",
+      "version": 0,
+      "active": true,
+      "question": "What is the HTTP Upgrade header for? What are its contents? What versions of HTTP does it apply to?",
+      "answer": "Used by clients to invite a server to switch to a different protocol.  Contains a comma-separated list (in descending order of preference) that the client wants to upgrade to.  It is valid for HTTP/1.1 only.",
+      "reviews": []
+    },
+    {
+      "id": "7tc3dxuhsj",
+      "version": 0,
+      "active": true,
+      "question": "What is the Connection HTTP header for?",
+      "answer": "\"Either \"\"close\"\", or a comma-separated list of headers that only apply to the first hop (if using a proxy). If the comma-separated list, indicates that the connection should be kept open after this transaction, so that it can be reused by subsequent requests.\"",
+      "reviews": []
+    }
+  ]
+}

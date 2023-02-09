@@ -1,0 +1,502 @@
+{
+  "name": "kubernetes",
+  "version": 0,
+  "cards": [
+    {
+      "id": "lqt4ghquaj",
+      "version": 0,
+      "active": true,
+      "question": "What is a service?",
+      "answer": "A way of grouping pods such that they can be routed to as one. There are multiple types.",
+      "reviews": []
+    },
+    {
+      "id": "6lwlv9wb0s",
+      "version": 0,
+      "active": true,
+      "question": "What is a namespace?",
+      "answer": "a non-overlapping set of resources, intended to be given to different teams etc in shared environments",
+      "reviews": []
+    },
+    {
+      "id": "kvdcaiptf4",
+      "version": 0,
+      "active": true,
+      "question": "What does CRI stand for? Where did it originate? What is it?",
+      "answer": "Container Runtime Interface   It originated in kubernetes.   It is a gRPC interface that enables us to use many different container engines with the same API. Naturally, libraries are available to ease its use.",
+      "reviews": []
+    },
+    {
+      "id": "8uassbl30s",
+      "version": 0,
+      "active": true,
+      "question": "There are three daemons that run on each k8s node. What do they do?",
+      "answer": "kubelet: starts, stops and runs containers; maintains state of pods; reports to the master kube-proxy: a node-level proxy/load balancer container runtime: self explanatory",
+      "reviews": []
+    },
+    {
+      "id": "v1cf1umdvf",
+      "version": 0,
+      "active": true,
+      "question": "What are the 4 parts to the control plane? What do they do?",
+      "answer": "etcd: a key-value store that represents the state of the cluster   API server: acts as a broker between REST API requests and the state of etcd   scheduler: monitors resource usage of nodes (among many other things) and selects which node will run an unscheduled pod   controller manager: a process that manages a set of core k8s controllers, such as replication controller, DaemonSet controller, job controller",
+      "reviews": []
+    },
+    {
+      "id": "8ls87e2lgm",
+      "version": 0,
+      "active": true,
+      "question": "What are the five types of controllers? How do they work?",
+      "answer": "ReplicaSet: ensures that a specific number of pod replicas are running at any given time   Deployment: a declarative way of updating pods and ReplicaSets   StatefulSet: like a Deployment controller, but tracks each pod with a special identity   DaemonSet: ensures that all, or a subset of, nodes run a copy of a pod   Job: creates one or more pods and ensures that a specified number of them successfully terminate",
+      "reviews": []
+    },
+    {
+      "id": "l396f4wjof",
+      "version": 0,
+      "active": true,
+      "question": "What are the 4 types of services?",
+      "answer": "ClusterIP: default, service is only available internally through a cluster-internal IP  NodePort: a static port (called NodePort) is opened on each node, so that traffic can reach the service via \u003cnode_ip\u003e:\u003cnode_port\u003e; a ClusterIP service, which NodePort service routes to, is automatically created  LoadBalancer: traffic comes into cluster via an external load balancer (for the cloud)  ExternalName: literally a CNAME record pointing to an external service; can cause problems with protocols that use the domain name (HTTP, HTTPS)",
+      "reviews": []
+    },
+    {
+      "id": "spn5pqfr6n",
+      "version": 0,
+      "active": true,
+      "question": "What are the three kube-proxy modes, and how do they work?",
+      "answer": "Userspace: kube-proxy configures service IP to redirect (in iptables) to a random port that it opens; it then manually passes traffic to and from pods that are in that service   IPTables: kube-proxy configures iptables with per-service and per-endpoint rules that pass traffic without it ever touching it   IPVS: similar to IPTables, but uses IP virtual server kernel feature to improve performance over iptables",
+      "reviews": []
+    },
+    {
+      "id": "m2h9nqzu6z",
+      "version": 0,
+      "active": true,
+      "question": "What are the Endpoints and EndpointSlice resources, and how do they differ?",
+      "answer": "Every Service has a corresponding Endpoints resource, which is created by the Endpoints controller as it polls pods and finds the set that match the Service's selector criteria. It then creates the Endpoints resource by assembling the pod IPs and ports that are open for each pod.   However this does not scale. EndpointSlices are a way of addressing this. EndpointSlices list all of the pod IPs for each unique combination of port and service, up to a maximum of 100 (by default) IPs per EndpointSlice. For very large services, this is easier to manage.",
+      "reviews": []
+    },
+    {
+      "id": "fdq9w2cbp6",
+      "version": 0,
+      "active": true,
+      "question": "\"How do I access a pod from a service \"\"foo\"\" inside a namespace \"\"bar\"\" from a pod in another namespace?\"",
+      "answer": "Use name foo.bar",
+      "reviews": []
+    },
+    {
+      "id": "7o97anqksh",
+      "version": 0,
+      "active": true,
+      "question": "How are Labels and Annotations similar, and how are they different?",
+      "answer": "Similar: - both key/value pairs  - same rules for key (prefix/name)   Different: - Labels are for selecting certain objects - Labels' values are limited in length and character set - Annotations are for metadata - Annotations' values can contain anything, including structured data",
+      "reviews": []
+    },
+    {
+      "id": "kifvfd33xw",
+      "version": 0,
+      "active": true,
+      "question": "What object would I use to limit compute consumption in a namespace?",
+      "answer": "ResourceQuota",
+      "reviews": []
+    },
+    {
+      "id": "dyvat3p152",
+      "version": 0,
+      "active": true,
+      "question": "What are the following: Volume PersistentVolume PersistentVolumeClaim StorageClass",
+      "answer": "\"Volume: a place to store files that is tied to the lifetime of a pod   PersistentVolume: a volume that has a lifetime independent of a pod; is manually provisioned by an administrator, or dynamically provisioned using StorageClasses   PersistentVolumeClaim: an object that is created by a user when they want to request a PersistentVolume   StorageClass: used by administrators to describe the \"\"classes\"\" of storage they offer; different classes might map to QoS levels, backup policies etc\"",
+      "reviews": []
+    },
+    {
+      "id": "re4uxv0wl1",
+      "version": 0,
+      "active": true,
+      "question": "For the externalIPs field to work, what is required?",
+      "answer": "clusterIP cannot be None, since the externalIPs are NAT'd to the clusterIP.",
+      "reviews": []
+    },
+    {
+      "id": "axsgbloax5",
+      "version": 0,
+      "active": true,
+      "question": "Name the five fields of the ServicePort object, and if applicable, their options",
+      "answer": "name: the name of the port; optional if only one port is defined on service protocol: the protocol used (TCP, UDP, HTTP, PROXY, SCTP)  nodePort: the port that is opened on each node for a NodePort service port: the port that the service exposes externally (with externalIPs) or internally to the cluster, to other services/pods targetPort: the port on the pod that the service connects to (defaults to `port` if not defined)",
+      "reviews": []
+    },
+    {
+      "id": "flcxa9gotx",
+      "version": 0,
+      "active": true,
+      "question": "What is the purpose of the Open Service Broker API standard?",
+      "answer": "It is a way for platforms (think k8s master) to talk to cloud providers in order to find out what services (think AWS EC2 instance) they offer, and to get them.",
+      "reviews": []
+    },
+    {
+      "id": "tdw21mwdsh",
+      "version": 0,
+      "active": true,
+      "question": "What Service field is used to specify how traffic coming from an external source is routed through iptables to a pod? What are its possible values, and what do they mean?",
+      "answer": "externalTrafficPolicy   Local: preserves client source IP and routes traffic to a pod on the node that received the traffic; might result in uneven load spreading in the cluster   Cluster: obscures the client source IP and may route traffic to a pod on another node; better load spreading",
+      "reviews": []
+    },
+    {
+      "id": "w0z3khvb4j",
+      "version": 0,
+      "active": true,
+      "question": "What is sessionAffinity option for a Service?  What are the options and what do they mean?",
+      "answer": "It concerns how IP traffic is passed to pods, which is relevant for connection-based protocols.   None (default): no session affinity ClientIP: ensures that connections from a particular client are passed to the same pod within a specified time period",
+      "reviews": []
+    },
+    {
+      "id": "o16uh8xgil",
+      "version": 0,
+      "active": true,
+      "question": "What is a headless service? Why might you use one? What are the two kinds?",
+      "answer": "A service with clusterIP: None. Used to interface with service discovery mechanisms other than Kubernetes'. Also used for exposing statefulsets.   With selector statement: an Endpoints resource is created, but nothing is configured by kube-proxy. The service DNS name is configured to do round-robin load balancing across pods.   Without selector statement: you can create your own Endpoints resource (which must have the same name as the service). Or, a CNAME record will be created for an ExternalName service.",
+      "reviews": []
+    },
+    {
+      "id": "z5njdycu1k",
+      "version": 0,
+      "active": true,
+      "question": "What are the four ways of authenticating API requests?",
+      "answer": "client certificates bearer tokens authenticating proxy HTTP basic auth",
+      "reviews": []
+    },
+    {
+      "id": "du7kr5ealn",
+      "version": 0,
+      "active": true,
+      "question": "What are the five possible states a Pod object can be in?",
+      "answer": "Pending: pod has been created as a resource, but is either not yet scheduled or containers are being created   Running: pod has been bound to a node, and all containers have been created, and are running   Succeeded: all containers in the pod have terminated in success, and will not be restarted   Failed: all containers in pod have terminated, and at least one terminated in failure   Unknown: the state of the pod could not be obtained, typically due to an error in communicating with the host of the pod",
+      "reviews": []
+    },
+    {
+      "id": "67zcz16au1",
+      "version": 0,
+      "active": true,
+      "question": "What are the 4 ways API requests are authorized? Explain them.",
+      "answer": "webhook: an external HTTP(S) service is consulted ABAC: enforces policies defined in a static file RBAC: authorization info is stored in API objects Node: specifically for programs that run on nodes (i.e. kubelet), which limits access to resources that pertain to that node",
+      "reviews": []
+    },
+    {
+      "id": "5u0o94o4re",
+      "version": 0,
+      "active": true,
+      "question": "How does logging work at the node level?",
+      "answer": "There are two types of components: components that run inside a container (anything in a pod), and components that do not run inside a container (kubelet, containerd, kube-proxy).   Logs from components that do run inside a container are written using the container runtime's configured logging driver to /var/log.   Logs from components that do not run inside a container are logged to journald, as they are systemd services.",
+      "reviews": []
+    },
+    {
+      "id": "21nm7j8wo7",
+      "version": 0,
+      "active": true,
+      "question": "\"What is a Role/ClusterRole? How do they differ? Write a Role with name \"\"example\"\" and namespace \"\"default\"\", that allows the assumer to get or list pods.\"",
+      "answer": "\"Role defines rules that whitelist parts of the k8s API for a specific namespace. ClusterRole is the same thing but for all namespaces.   --- apiVersion: rbac.authorization.k8s.io/v1 kind: Role metadata:   namespace: default   name: example rules:   - apiGroups: [\"\"\"\"] # denotes core API group     resources: [\"\"pods\"\"]     verbs: [\"\"get\"\", \"\"list\"\"]\"",
+      "reviews": []
+    },
+    {
+      "id": "16mjgwi6ln",
+      "version": 0,
+      "active": true,
+      "question": "What is a RoleBinding/ClusterRoleBinding? How do they differ? What are their 5 top-level keys?",
+      "answer": "RoleBindings apply a Role or ClusterRole to one or more users in a namespace. ClusterRoleBindings are the same, but in all namespaces. You can use a ClusterRole in a RoleBinding, in which case users get the permissions defined in the ClusterRole, but only in the namespace listed in the RoleBinding.   apiVersion, kind, metadata, subjects, roleRef",
+      "reviews": []
+    },
+    {
+      "id": "9k5av1u20b",
+      "version": 0,
+      "active": true,
+      "question": "How does Traefik get access to the token that is created in its ServiceAccount?",
+      "answer": "When the pod is created the token from the serviceaccount is mounted at /var/run/secrets/kubernetes.io/serviceaccount. Traefik then knows to pick the token up from here and use it in requests to the API server.",
+      "reviews": []
+    },
+    {
+      "id": "taufgwf4j6",
+      "version": 0,
+      "active": true,
+      "question": "What are the 3 keys to every rule in a Role/ClusterRole? What is surprising about this?",
+      "answer": "apiGroups: list of v1, extensions/v1beta1 etc   resources: list of resources in those api groups   verbs: list of verbs that are permitted on those resources   It is surprising that we have only apiGroups, and no information about what versions of the resources in those groups each rule applies to. But really, this isn't needed - versions are only used to differentiate different schema for resources.",
+      "reviews": []
+    },
+    {
+      "id": "t5zhe8nczk",
+      "version": 0,
+      "active": true,
+      "question": "List the 13 verbs that can be used in role/clusterrole rules.",
+      "answer": "- get - list - watch - create - update - patch - delete - deletecollection - use - bind  - escalate - impersonate - userextras",
+      "reviews": []
+    },
+    {
+      "id": "esmjbn0uv6",
+      "version": 0,
+      "active": true,
+      "question": "Define the following terms: node affinity/antiaffinity inter-pod affinity/antiaffinity taint toleration",
+      "answer": "node affinity/antiaffinity: a property of pods that causes them to run (either for sure or just preference) on a subset of nodes   inter-pod affinity/antiaffinity: a property of pods that causes them to be attracted to or repelled by pods already running on a node   taint: a property of a node that allows it to repel a set of pods   toleration: a property of a pod that lets it tolerate a taint on a node (it can run on that node)",
+      "reviews": []
+    },
+    {
+      "id": "7edtszry5u",
+      "version": 0,
+      "active": true,
+      "question": "Which component (of several possible ones) creates the Pod object, what is its state at that time, and how does it make it onto a node?",
+      "answer": "ReplicaSet controller creates Pod object in API server. Pod's state is Pending at this point. Scheduler notices Pod is not assigned to a node, so it does so. kubelet picks up this definition and carries out actions to create Pod on its node.",
+      "reviews": []
+    },
+    {
+      "id": "5k7zyfskog",
+      "version": 0,
+      "active": true,
+      "question": "What is a CNI plugin? What is it called by? How are input and output done?",
+      "answer": "An executable that takes inputs through env vars and may give output via a JSON object on stdout. Inserts a network interface into the network namespace of a container, and then configures it, and any networking outside of the container, so that things work.   Called as a subprocess of container engine when it wants to do something with a container's networking (ADD, DEL, CHECK, VERSION).",
+      "reviews": []
+    },
+    {
+      "id": "ibigfut0yk",
+      "version": 0,
+      "active": true,
+      "question": "What is kube-proxy responsible for, compared to the CNI plugin?",
+      "answer": "kube-proxy: responsible for services, and load-balancing traffic to pods that belong to a service, exclusively   CNI plugin: responsible for pod and inter-pod networking",
+      "reviews": []
+    },
+    {
+      "id": "i98nm8co0m",
+      "version": 0,
+      "active": true,
+      "question": "What are the two ways you can expose each unique pod in a StatefulSet? What are the names you use to get to the pod in each case?",
+      "answer": "\"1) Use a headless service, which usually would give you a single DNS name that round-robin load balances to different pods. In the case of a StatefulSet we get multiple DNS records, of the form ${statefulset_name}-${ordinal}.${service_name}.${namespace}.cluster.local   2) Use one service to refer to each pod; each service selects for the label \"\"statefulset.kubernetes.io/pod-name\"\"\"",
+      "reviews": []
+    },
+    {
+      "id": "g8eypgk3se",
+      "version": 0,
+      "active": true,
+      "question": "What is the format of the name of a Pod that is in a StatefulSet?",
+      "answer": "${statefulset_name}-${ordinal}",
+      "reviews": []
+    },
+    {
+      "id": "3k5yubblh0",
+      "version": 0,
+      "active": true,
+      "question": "In the case of updating the container version in the Pods, how does a Deployment update the Pods?",
+      "answer": "It creates a whole new ReplicaSet and gradually decreases the number of replicas in the old ReplicaSet as it gradually increases the number of replicas in the new ReplicaSet.",
+      "reviews": []
+    },
+    {
+      "id": "b2dryh9lib",
+      "version": 0,
+      "active": true,
+      "question": "What are the three top-level keys that every k8s resource has?",
+      "answer": "apiVersion kind metadata",
+      "reviews": []
+    },
+    {
+      "id": "2q3dshejlp",
+      "version": 0,
+      "active": true,
+      "question": "What are the two typical types of API groups? What is their apiVersion key?  What is their REST path?",
+      "answer": "core (legacy) apiVersion: \u003cversion\u003e  /api/\u003cversion\u003e   named groups/CRD groups apiVersion: \u003cgroup_name\u003e/\u003cversion\u003e /apis/\u003cgroup_name\u003e/\u003cversion\u003e",
+      "reviews": []
+    },
+    {
+      "id": "mlk8gjbr30",
+      "version": 0,
+      "active": true,
+      "question": "What are API groups, and what is their purpose? Name 3 examples of API groups.",
+      "answer": "API groups group resources that do similar things, or are at similar stages of development.   extensions core batch kilo.squat.ai",
+      "reviews": []
+    },
+    {
+      "id": "3k9jan4imy",
+      "version": 0,
+      "active": true,
+      "question": "What are the three stages an API version goes through on its way to acceptance? What do they mean for their component resources? What do they look like in an apiVersion?",
+      "answer": "alpha - bugs are likely - API may change - v1alpha1   beta - considered safe regarding bugs - API may change - v1beta1   stable - considered safe regarding bugs - API is stable - v1",
+      "reviews": []
+    },
+    {
+      "id": "kqmfx2y5uk",
+      "version": 0,
+      "active": true,
+      "question": "What are API versions versions of?",
+      "answer": "They are versions of the resources in their API group. Each API group + API version combo has a list of resources with a specific structure.",
+      "reviews": []
+    },
+    {
+      "id": "mkynvkpqpp",
+      "version": 0,
+      "active": true,
+      "question": "What does v1alpha2 mean?",
+      "answer": "It is the second alpha version of the eventual v1 version of the group.",
+      "reviews": []
+    },
+    {
+      "id": "pwtqmyj02a",
+      "version": 0,
+      "active": true,
+      "question": "What are the two ways of getting traffic into the cluster without using a LoadBalancer service?",
+      "answer": "1) Use a NodePort service. This configures each node of the cluster to listen on a specific port. When traffic hits that port coming from outside of the cluster, it is NAT'd to one of the containers in the Endpoints field of the NodePort service.   2) Use any service type with an ExternalIP field. This will cause traffic hitting any node (independent of what their actual IP addr is) with the destination address specified in the ExternalIP field to be routed to one of the containers in the Endpoints field of the service.",
+      "reviews": []
+    },
+    {
+      "id": "b6yf3rx8md",
+      "version": 0,
+      "active": true,
+      "question": "What service types does the externalIP field apply to?",
+      "answer": "Any that have a clusterIP.",
+      "reviews": []
+    },
+    {
+      "id": "5pgg7qkpe7",
+      "version": 0,
+      "active": true,
+      "question": "What rules are there for case of keys and values in k8s resource files?",
+      "answer": "keys are camelCase values are PascalCase",
+      "reviews": []
+    },
+    {
+      "id": "uyd0iesiir",
+      "version": 0,
+      "active": true,
+      "question": "What are the two service fields I always get mixed up? What does each specify?",
+      "answer": "externalTrafficPolicy: specifies how traffic coming in gets routed to a pod   sessionAffinity: specifies policies that let you send traffic coming in to the same pod based on source IP",
+      "reviews": []
+    },
+    {
+      "id": "wx9qw00ecq",
+      "version": 0,
+      "active": true,
+      "question": "\"Configure a Pod with the following attributes: - name \"\"example\"\" - namespace \"\"default\"\" - serves the contents of the \"\"index.html\"\" file, read-only, from the \"\"myconfig\"\" configMap volume on TCP port 80 with port name \"\"http\"\" - uses the default python http server (can be started with command `python -m http.server --bind 0.0.0.0 --directory \u003cdir\u003e 80`) - has the environment variable MYVAR=helloworld configured on it - never restarts if it crashes - give it the \"\"testSA\"\" service account credentials\"",
+      "answer": "\"apiVersion: v1 kind: Pod  metadata:   name: example   namespace: default spec:   serviceAccountName: testSA    restartPolicy: Never   containers:   - name: server     image: python:3.10     command: [\"\"python\"\", \"\"-m\"\", \"\"http.server\"\"]     args: [\"\"--bind\"\", \"\"0.0.0.0\"\", \"\"--directory\"\", \"\"/srv\"\", \"\"80\"\"]     env:     - name: MYVAR       value: helloworld     ports:     - containerPort: 80       name: http       protocol: TCP     volumeMounts:     - name: myvolume       mountPath: /srv       readOnly: true   volumes:   - name: myvolume     configMap:       name: myconfig       items:       - key: index.html         path: index.html\"",
+      "reviews": []
+    },
+    {
+      "id": "auhiqe6grw",
+      "version": 0,
+      "active": true,
+      "question": "\"Define a cluster IP Service that exposes TCP port 80 to port 5500 with the label \"\"app: myapp\"\".\"",
+      "answer": "apiVersion: v1 kind: Service metadata:   name: example   namespace: default spec:   type: ClusterIP   selector:     app: myapp   ports:     - targetPort: 80       port: 5500       protocol: TCP",
+      "reviews": []
+    },
+    {
+      "id": "6xz9z9dvbc",
+      "version": 0,
+      "active": true,
+      "question": "\"Define a ConfigMap with one file, index.html, with content \"\"hello world\"\"\"",
+      "answer": "\"apiVersion: v1 kind: ConfigMap metadata:   name: example   namespace: default data:   index.html: \"\"hello world\"\"\"",
+      "reviews": []
+    },
+    {
+      "id": "21btai70q1",
+      "version": 0,
+      "active": true,
+      "question": "In minikube, how are services exposed?",
+      "answer": "NodePort services are exposed by a separate IP address that represents the minikube Node. So you access them via \u003cnode_ip\u003e:\u003cport\u003e. You can get this info via `minikube service \u003cservice_name\u003e --url`.   LoadBalancer services get NodePorts by default, so you can access them the same way. However, you can also start a local load balancer. To do this, run `minikube tunnel` in a separate terminal. Then, another IP address will be created that represents the load balancer, and you will be able to access the service via that IP and the service port(s).",
+      "reviews": []
+    },
+    {
+      "id": "li3r8dambh",
+      "version": 0,
+      "active": true,
+      "question": "What is Knative?",
+      "answer": "Serverless, but on k8s instead of a cloud platform.",
+      "reviews": []
+    },
+    {
+      "id": "xuwbcqk5rl",
+      "version": 0,
+      "active": true,
+      "question": "What two methods are used to get a service mesh access to communication? What advantages does a service mesh provide? What are some examples of these advantages?",
+      "answer": "1) Most commonly, applications that integrate with a service mesh use a sidecar container that proxies all communication 2) Netflix uses application libraries to proxy communication, which is presumably more performant   security: can automatically encrypt all traffic that goes between APIs   observability: can see which services are talking to which services, how frequently, what content is etc   reliability: can prevent accidental DoSing if an API is overloaded by rate limiting requests; can send communication to less-utilized places",
+      "reviews": []
+    },
+    {
+      "id": "l8y0r23a3w",
+      "version": 0,
+      "active": true,
+      "question": "What is fleet?",
+      "answer": "Fleet is a set of controllers and resources that make gitops easy and scalable to a million clusters. It watches repositories that have kubernetes manifests, helm charts or kustomize configs, and when changes are noticed, makes those changes a reality. Turns everything into helm charts before deployment.",
+      "reviews": []
+    },
+    {
+      "id": "mjje3xhw1s",
+      "version": 0,
+      "active": true,
+      "question": "What is linkerd?",
+      "answer": "A service mesh. Has an emphasis on performance and minimalism.",
+      "reviews": []
+    },
+    {
+      "id": "hbyh9nskhh",
+      "version": 0,
+      "active": true,
+      "question": "Describe the structure of a Helm chart, and what each file is for.",
+      "answer": "Chart.yaml: chart metadata values.yaml: defaults for chart variables templates/   NOTES.txt: a tmpl that is printed out to user upon chart install   _helpers.tpl: define blocks of tmpl text that are used frequently   pod.yaml: a k8s manifest that is also a go template   service.yaml: a k8s manifest that is also a go template",
+      "reviews": []
+    },
+    {
+      "id": "454tzdla4l",
+      "version": 0,
+      "active": true,
+      "question": "Where does Helm store information about installed releases?",
+      "answer": "Currently (v3) stores this info in Secret resources in the same namespace as the release.   Previously (v2) stored this info in ConfigMap resources in same namespace as Tiller deployment.   SQL (postgres only currently) is also supported.",
+      "reviews": []
+    },
+    {
+      "id": "yl0qm55fgc",
+      "version": 0,
+      "active": true,
+      "question": "What is the basic layout of a kustomize config?",
+      "answer": "myapp/   kustomization.yaml   deployment.yaml   service.yaml",
+      "reviews": []
+    },
+    {
+      "id": "h3c5j8u8i4",
+      "version": 0,
+      "active": true,
+      "question": "What are the four classes of things you find in a kustomization.yaml file?",
+      "answer": "Resources, generators, transformers and validators.",
+      "reviews": []
+    },
+    {
+      "id": "8dl3h4e1v3",
+      "version": 0,
+      "active": true,
+      "question": "What is the idea behind Kustomize?",
+      "answer": "You can define base resources, and then overlay various transformations onto them to make, for example, versions of those resources for different stages with the corresponding different config.",
+      "reviews": []
+    },
+    {
+      "id": "l52dpwcufi",
+      "version": 0,
+      "active": true,
+      "question": "How is kubewarden deployed to a cluster? How does it work?",
+      "answer": "In kubernetes, you can make any incoming objects be validated/mutated by an external webhook service by defining ValidatingWebhookConfiguration or MutatingWebhookConfiguration resources. These resources specify: 1) the URL of a webhook to talk to 2) which resources to check against the webhook   Kubewarden is deployed as kubewarden-controller to the cluster. Then, the user creates PolicyServer and ClusterAdmissionPolicy resources (which are kubewarden CRDs). Each PolicyServer resource becomes a deployment; this is the server that k8s interfaces with via webhook. Each PolicyServer may have multiple ClusterAdmissionPolicy's attached to it.   When the set of CAPs assigned to a PS changes, kubewarden-controller changes the PS config (which is stored in a ConfigMap) to match, and initiates a rollout of the PS deployment. In this way, all pods for that PS are restarted with the new config.   When kubewarden-controller first notices a PS, several things are done: 1) a TLS cert is created for the PS and stored in a Secret 2) a Deployment is created for the PS 3) a ClusterIP Service is created that points to the PS 4) a ValidatingWebhookConfiguration or MutatingWebhookConfiguration resource is created to make resources in the cluster have to go through the PS",
+      "reviews": []
+    },
+    {
+      "id": "ao8zoelkzn",
+      "version": 0,
+      "active": true,
+      "question": "What is the idea behind epinio?",
+      "answer": "The idea is to make it easy to go from code in a repository to a running application on a k8s cluster in one step.   In order to make this possible, there are things that must be taken care of:   1) detecting the project type and building it into an OCI image   2) defining k8s resources to turn that OCI image into a running service   3) having things installed on the cluster that make things more secure, reliable and observable: linkerd, metrics, kubewarden etc",
+      "reviews": []
+    },
+    {
+      "id": "2vcdt9xfup",
+      "version": 0,
+      "active": true,
+      "question": "What is skaffold?",
+      "answer": "Skaffold is like epinio, but lesser in scope. Also uses buildpacks behind the scenes. Monitors your app for changes and restarts/deploys it locally. One can plug in tools to use for all of these things. Can deploy to production too apparently.",
+      "reviews": []
+    },
+    {
+      "id": "e80oftjvhd",
+      "version": 0,
+      "active": true,
+      "question": "What is kim? How does it work?",
+      "answer": "Stands for Kubernetes Image Manager. It consists of:   1) a CLI tool that is used to interface with the whole thing 2) a BuildKit daemon bound to the Kubelet's underlying containerd socket 3) a server-side agent that the CLI uses to manage images (push, pull etc)   Basically, it enables building images locally on your k3s cluster.",
+      "reviews": []
+    }
+  ]
+}

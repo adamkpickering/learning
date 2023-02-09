@@ -1,0 +1,238 @@
+{
+  "name": "soft-ware",
+  "version": 0,
+  "cards": [
+    {
+      "id": "ctvn9gu9l9",
+      "version": 0,
+      "active": true,
+      "question": "Why do we need bumpversion?",
+      "answer": "bumpversion looks at a config file and changes the version in multiple files at the same time, preventing us from forgetting to update one or two.",
+      "reviews": []
+    },
+    {
+      "id": "6tkcld995f",
+      "version": 0,
+      "active": true,
+      "question": "Why don't we commit (and especially put in pull requests) commented-out code?",
+      "answer": "In a solo environment, this is not a problem, at least for short-duration projects. But:   - The reason that the code is there is unclear. People might think that the code was supposed to be included at some point, but someone never got around to it. Or, they might think that it was kept for some reason.   - It takes up space on the screen, which makes the code harder to read.   Basically it makes it harder to work on the code confidently.",
+      "reviews": []
+    },
+    {
+      "id": "r1khbnf29f",
+      "version": 0,
+      "active": true,
+      "question": "In a work pipeline, why is it pointless to improve anything other than at the bottleneck?",
+      "answer": "In front of the bottleneck, work still just piles up. After the bottleneck, stations are starved of work.",
+      "reviews": []
+    },
+    {
+      "id": "p9gbxtqiwn",
+      "version": 0,
+      "active": true,
+      "question": "What are the four categories of work?",
+      "answer": "1) business projects 2) internal projects 3) changes 4) unplanned work",
+      "reviews": []
+    },
+    {
+      "id": "21zyt5wkqk",
+      "version": 0,
+      "active": true,
+      "question": "Why is work-in-progress a problem?",
+      "answer": "Work-in-progress is a problem because it piles up. As it waits in piles to be consumed at a work station, several things happen:   1) The work degrades. In the case of software engineering, the code is no longer immediately in the brain of the person who was working on it.   2) It needs to be managed/tracked. It occupies space in someone's brain, which costs time and energy.   3) It hides other issues in our system. They are only discovered once the WIP is worked on, which can incur costs (because problems are more expensive to solve the further down the pipeline they are discovered).   4) If there is an issue with the WIP, its originator does not get the immediate feedback that they require in order to learn how not to make that mistake.",
+      "reviews": []
+    },
+    {
+      "id": "ruq5dxumka",
+      "version": 0,
+      "active": true,
+      "question": "Why is it bad to have a large batch size?",
+      "answer": "Large batch sizes and work-in-progress go hand in hand. The larger a task is, the longer it takes. And the longer it takes, the more likely it is that you will have to work on something else before completing the batch, which means WIP, and having to come back to it, and so on.",
+      "reviews": []
+    },
+    {
+      "id": "pauivj06hs",
+      "version": 0,
+      "active": true,
+      "question": "What relationship does technical debt have to the fourth type of work?",
+      "answer": "Technical debt causes unplanned work. When you have overwhelming technical debt, unplanned work ends up taking up the majority of your development time. This makes it very hard to develop new features.",
+      "reviews": []
+    },
+    {
+      "id": "iciq0mxlfj",
+      "version": 0,
+      "active": true,
+      "question": "How do you eliminate work-in-progress?",
+      "answer": "You scale back the rate at which work is released to the work pipeline. This may seem wasteful, because some of your work stations are idle some of the time, but it is even more wasteful to have WIP clogging up the system.",
+      "reviews": []
+    },
+    {
+      "id": "4npm8uorh4",
+      "version": 0,
+      "active": true,
+      "question": "What four things make up a work center? Explain what they are.",
+      "answer": "1) man - the human being doing the work 2) machine - the tools being used to do the work 3) method - the techniques used to do the work 4) measures - the metrics by which we measure the quality of the work",
+      "reviews": []
+    },
+    {
+      "id": "p9aq48bryg",
+      "version": 0,
+      "active": true,
+      "question": "In the context of agile, what are the three ways, and what is each about?",
+      "answer": "First way: about increasing the flow of work through the system   Second way: about the creation, and tightening, of feedback loops in order to detect problems sooner; also about the instrumentation of work   Third way: about creating a culture where learning, experimentation, mistakes and speaking up are encouraged",
+      "reviews": []
+    },
+    {
+      "id": "ku2fra12wh",
+      "version": 0,
+      "active": true,
+      "question": "What is the theory of constraints?",
+      "answer": "It is a management paradigm that views a system as being limited in achieving more of its goals by a small number of constraints. Focusing on these constraints and figuring out how to exploit them maximally is viewed as the path to achieving greater success.",
+      "reviews": []
+    },
+    {
+      "id": "dokhcj2h1u",
+      "version": 0,
+      "active": true,
+      "question": "What is memoization?",
+      "answer": "Memoization is basically caching on a function level. A program can remember what inputs mapped to what outputs and return that stored value, rather than computing it again.",
+      "reviews": []
+    },
+    {
+      "id": "zzmeugd8g4",
+      "version": 0,
+      "active": true,
+      "question": "What is dependency injection?",
+      "answer": "Dependency injection is the pattern where an object takes other already-instantiated objects in its constructor (or in its methods?). It can then use those objects for whatever they were designed for. It can also specify an interface rather than an object type for those objects, which provides looser coupling.",
+      "reviews": []
+    },
+    {
+      "id": "f3w96ds2tu",
+      "version": 0,
+      "active": true,
+      "question": "What is inversion of control?",
+      "answer": "It is a programming principle. Traditionally, programs procedurally call into a framework or library. Inversion of control inverts that: instead, the framework calls into blocks of code (objects?) that the programmer registers with it.",
+      "reviews": []
+    },
+    {
+      "id": "yyfhfyq88c",
+      "version": 0,
+      "active": true,
+      "question": "What is the single responsibility principle?",
+      "answer": "It is the principle that each piece of a computer program (a class, a module etc) should have sole responsibility for a single part of that program's functionality.",
+      "reviews": []
+    },
+    {
+      "id": "6ivspu355r",
+      "version": 0,
+      "active": true,
+      "question": "What is the inventor's paradox?",
+      "answer": "It is a phenomenon that occurs when solving problems. Rather than directly solving a specific problem, it can be easier to solve a more general problem. This can inform you of the best way to solve the problem.   For example, if a problem has 25 cases, it may be simpler to solve it for n cases, and then use the n=25 case.",
+      "reviews": []
+    },
+    {
+      "id": "k460zhrdb1",
+      "version": 0,
+      "active": true,
+      "question": "What does the SOLID acronym stand for?",
+      "answer": "Single responsibility principle Open-closed principle Liskov substitution principle Interface segregation principle Dependency inversion principle",
+      "reviews": []
+    },
+    {
+      "id": "as81z5e84d",
+      "version": 0,
+      "active": true,
+      "question": "What is the open-closed principle?",
+      "answer": "It states that software entities should be open for extension (open), but closed for modification (closed).   Of course, with the realization that inheritance is an antipattern, this principle doesn't carry as much weight.",
+      "reviews": []
+    },
+    {
+      "id": "a61mpdvxql",
+      "version": 0,
+      "active": true,
+      "question": "What is the interface segregation principle?",
+      "answer": "It states that no code should be forced to depend on methods it does not use. It advocates for splitting interfaces that are large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.",
+      "reviews": []
+    },
+    {
+      "id": "is8eajtgjt",
+      "version": 0,
+      "active": true,
+      "question": "What are the three most important shapes for flowcharts? What do they mean?",
+      "answer": "Oval/Rounded Rectangle: is a terminal. Represents the start or the end of the flowchart.   Rectangle: is a process, a step in the flowchart where something is done.   Diamond: is a decision point. Has two or more arrows coming out of it that are each annotated with a specific case.",
+      "reviews": []
+    },
+    {
+      "id": "mmwc1xvd9r",
+      "version": 0,
+      "active": true,
+      "question": "What are the three kinds of complexity? Describe them.",
+      "answer": "Essential Complexity: complexity that must exist in the program due to the complexity of the problem it is solving.   Accidental Complexity: complexity that exists because the programmer did not find the simplest way to solve the problem.   Optional Complexity: complexity that is introduced by writing code to add a certain feature that is not necessary to the main function of the program.",
+      "reviews": []
+    },
+    {
+      "id": "ib7cmdmgdb",
+      "version": 0,
+      "active": true,
+      "question": "What are the three sources of complexity? Describe each one.",
+      "answer": "Interface Complexity: the apparent complexity at the interface used by users of the software.   Implementation Complexity: the complexity of the implementation; how easy it is to understand how the software works.   Codebase Size: the number of lines of code in the entire piece of software; has obvious costs.",
+      "reviews": []
+    },
+    {
+      "id": "s4wys81vqf",
+      "version": 0,
+      "active": true,
+      "question": "What is dynamic dispatch?",
+      "answer": "It is the process of selecting which implementation of a polymorphic operation to call at runtime.   For example, I might have an object that could be one of any number of types that implement a certain interface. Dynamic dispatch would be used to determine which object's method to call when it is called on a variable that implements that interface.",
+      "reviews": []
+    },
+    {
+      "id": "rrwln52j9p",
+      "version": 0,
+      "active": true,
+      "question": "What is type erasure?",
+      "answer": "It is the load-time process of removing type information from code. For example, python's type hints would have to be removed in order to treat the code as regular, dynamically-typed python.",
+      "reviews": []
+    },
+    {
+      "id": "0y9e8owslu",
+      "version": 0,
+      "active": true,
+      "question": "What are the four stages of team development? What does each entail?",
+      "answer": "Forming: individuals are unsure of the purpose, unsure of how they fit in, and unsure of whether they'll work well with one another. They look to the team leader for direction.   Storming: people push against established boundaries. Conflict can aries between team members as their true characters surface. People may challenge your authority, or the team's mission.   Norming: people get used to each others' differences. They start to appreciate one another's strengths and respect the leader's authority. They share a commitment to the team's goals.   Performing: the team is performing to its full potential.",
+      "reviews": []
+    },
+    {
+      "id": "02fi6ta0tx",
+      "version": 0,
+      "active": true,
+      "question": "What are the 7 steps to accepting things that you can't change?",
+      "answer": "1) Be sure that it is actually is outside of your control.   2) Notice how you feel about it - angry, hopeless, sad etc.   3) Decide whether it is worth it to spend energy feeling this way about the thing.   4) Acknowledge that accepting it doesn't define you. You can be a competent engineer and still work on stuff that has big problems.   5) Picture yourself running into the thing, and how you would ideally respond: letting go.   6) Do an anxiety audit. Are you:     - Exercising?     - Taking on too much work?     - In need of an attitude shift?     - Eating healthy food?     - Experiencing anything stressful outside of work?     If you find a problem here, change it.   7) Instead of spending energy on the things that you can't change, decide to spend it on the things you can change.",
+      "reviews": []
+    },
+    {
+      "id": "yfo0t9gaqk",
+      "version": 0,
+      "active": true,
+      "question": "Why is it difficult to provide time estimates in software projects?",
+      "answer": "We work with libraries, languages, platforms and existing projects that are seldom fully understood by one person. So, it is likely that at some point in your work:   - something will work differently than you think, requiring re-thinking your design and reimplementation.   - you will run into something really shitty that needs debugging, a workaround or redesign and reimplementation.   - the requirements of the project change due to the client changing their mind.   - your understanding of the problem will improve, leading to knowledge of a better solution.",
+      "reviews": []
+    },
+    {
+      "id": "al7qyy0qwe",
+      "version": 0,
+      "active": true,
+      "question": "What one thing is critical for a mature engineer to understand?",
+      "answer": "It is impossible to understand everything you want to. Most things in computing are complex enough that virtually nobody fully understands them.",
+      "reviews": []
+    },
+    {
+      "id": "cetdgv5rpt",
+      "version": 0,
+      "active": true,
+      "question": "\"What is the \"\"primitive obsession\"\" code smell?\"",
+      "answer": "\"Where you have primitive types that represent more specific ideas. Making them specially defined types makes them \"\"attract\"\" methods from other places in the program, making the code more organized.  For example, a primitive number type vs a Money type - a lot of functionality can coalesce around the Money type.\"",
+      "reviews": []
+    }
+  ]
+}
