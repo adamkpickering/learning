@@ -11,6 +11,22 @@
       "reviews": []
     },
     {
+      "id": "36kw7yhgdz",
+      "version": 0,
+      "active": true,
+      "question": "What three ways can you specify kubeconfig?",
+      "answer": "1) pass path to kubeconfig in --kubeconfig argument 2) put path to kubeconfig in KUBECONFIG env variable 3) put kubeconfig at ~/.kube/config",
+      "reviews": []
+    },
+    {
+      "id": "2tx2iud6ts",
+      "version": 0,
+      "active": true,
+      "question": "What is the history of the use of docker by kubernetes?",
+      "answer": "1) K8s originally used only dockerd as the container engine.   2) It was recognized that it would be beneficial for it to be possible to use other container engines to make containers a reality in k8s. rkt was the first one.   3) CRI was defined to solve the problem of docker and rkt having different, and poorly-defined, interfaces to kubelet. For docker, CRI was satisfied by the creation of dockershim, an adaptor for CRI to dockerd inside the k8s project.   4) dockershim became a burden on the k8s maintainers. Mirantis and Docker agree to maintain a separate adaptor, cri-dockerd, that does the same thing but is in a different tree. Many CRI implementations now exist.",
+      "reviews": []
+    },
+    {
       "id": "6lwlv9wb0s",
       "version": 0,
       "active": true,

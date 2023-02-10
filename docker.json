@@ -1,0 +1,110 @@
+{
+  "name": "docker",
+  "version": 0,
+  "cards": [
+    {
+      "id": "odk23irbt0",
+      "version": 0,
+      "active": true,
+      "question": "docker: what does dockerfile VOLUME keyword do?",
+      "answer": "Indicates that a directory must exist at the given path(s). This directory will be created as an anonymous volume at runtime if the --mount keyword is not used to link it to a bind mount, tmpfs mount or volume.",
+      "reviews": []
+    },
+    {
+      "id": "88b2wfdhgj",
+      "version": 0,
+      "active": true,
+      "question": "What are the six types of docker network drivers?\nWhich is the default?",
+      "answer": "bridge, host, overlay, macvlan, none, networkplugins\ndefault is bridge",
+      "reviews": []
+    },
+    {
+      "id": "21cv7g4my5",
+      "version": 0,
+      "active": true,
+      "question": "What do the options -it mean in `docker exec -it ...`?",
+      "answer": "-i: keep stdin open even if not attached\n-t: allocate a pseudo-tty",
+      "reviews": []
+    },
+    {
+      "id": "wqxlycus5o",
+      "version": 0,
+      "active": true,
+      "question": "Run a docker container while forwarding port 389 inside\nthe container to port 3890 outside the container,\nwhile listening only on localhost.",
+      "answer": "docker run -p 127.0.0.1:3890:389 image",
+      "reviews": []
+    },
+    {
+      "id": "cu1g7xn1ka",
+      "version": 0,
+      "active": true,
+      "question": "In docker, what is the difference between a user-defined\nbridge network and the default bridge network?",
+      "answer": "- better isolation with user-defined, since all containers can see all ports from other containers on default\n- automatic DNS resolution with user-defined, only IPs for default\n- containers can be attached to and removed from user-defined networks on the fly, not the case with default\n- some stupid stuff about sharing environment variables between containers with user-defined",
+      "reviews": []
+    },
+    {
+      "id": "475ugc2f10",
+      "version": 0,
+      "active": true,
+      "question": "What is a host network in docker?",
+      "answer": "Where the container has no isolation; it has\nthe same network namespace as the host it is on.",
+      "reviews": []
+    },
+    {
+      "id": "z4545oekt0",
+      "version": 0,
+      "active": true,
+      "question": "difference between dockerfile COPY and ADD",
+      "answer": "ADD will resolve URLs",
+      "reviews": []
+    },
+    {
+      "id": "9e18pjqun2",
+      "version": 0,
+      "active": true,
+      "question": "In `docker build`, how do you tell docker what directory is the \"build context\"?\nHow do you specify a dockerfile other than ./Dockerfile to use?",
+      "answer": "docker build -f /path/to/dockerfile .\n\n. is the build context, so you can use anything in it.\n-f <path> gives the path to the actual dockerfile",
+      "reviews": []
+    },
+    {
+      "id": "yw3n3qh2jz",
+      "version": 0,
+      "active": true,
+      "question": "docker syntax for running a container from image 'my-image' with a bind mount, name 'hello-world', and in daemon mode",
+      "answer": "docker run -d --name hello-world --mount 'type=bind,src=/path,dst=/other_path' my-image",
+      "reviews": []
+    },
+    {
+      "id": "89pauycfyo",
+      "version": 0,
+      "active": true,
+      "question": "docker: what is the difference between dockerfile ENTRYPOINT and CMD?",
+      "answer": "Essentially nothing; they are just concatenated at runtime, and can both be overridden at runtime.\nSee https://stackoverflow.com/questions/21553353/what-is-the-difference-between-cmd-and-entrypoint-in-a-dockerfile?rq=1",
+      "reviews": []
+    },
+    {
+      "id": "j19ahewue7",
+      "version": 0,
+      "active": true,
+      "question": "How to remove files or directories from build context when building a docker image?",
+      "answer": "Add them to your .dockerignore",
+      "reviews": []
+    },
+    {
+      "id": "9aj144tu1j",
+      "version": 0,
+      "active": true,
+      "question": "What is the ARG directive for in a dockerfile? How do you use it?",
+      "answer": "It allows you to define a variable (with an optional default) that you can pass when calling `docker build` that can change the behaviour of the dockerfile.   ARG mydir=/default RUN ./my_script.sh ${mydir}",
+      "reviews": []
+    },
+    {
+      "id": "ht64lh65nc",
+      "version": 0,
+      "active": true,
+      "question": "What does the dockerfile EXPOSE keyword do? How would I specify a UDP port?",
+      "answer": "Informs docker (and future developers) which ports the container listens on at runtime.   80/udp",
+      "reviews": []
+    }
+  ]
+}

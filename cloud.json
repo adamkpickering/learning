@@ -11,6 +11,14 @@
       "reviews": []
     },
     {
+      "id": "7ruoshqd4l",
+      "version": 0,
+      "active": true,
+      "question": "What is an AWS elastic IP?",
+      "answer": "- a static IPv4 address - IPv6 not supported - basically a layer of indirection; you can connect it to internet gateways, individual EC2 instances, swap it out quickly in the event of an instance failure...",
+      "reviews": []
+    },
+    {
       "id": "4dpt4s4wbq",
       "version": 0,
       "active": true,

@@ -3,179 +3,35 @@
   "version": 0,
   "cards": [
     {
-      "id": "y3vb9sjbbg",
-      "version": 0,
-      "active": true,
-      "question": "modern ethtool equivalent",
-      "answer": "ip link",
-      "reviews": []
-    },
-    {
-      "id": "8cgr0zh04j",
-      "version": 0,
-      "active": true,
-      "question": "netstat equivalent",
-      "answer": "ss",
-      "reviews": []
-    },
-    {
       "id": "538owebsnr",
       "version": 0,
       "active": true,
-      "question": "find package that provides binary (apt and yum)",
-      "answer": "dpkg --search $(which ${binary}) yum whatprovides $(which ${binary})",
+      "question": "What is the command you'd use on debian-based systems to find the package that provides a binary?",
+      "answer": "dpkg --search $(which ${binary})",
+      "reviews": []
+    },
+    {
+      "id": "638owebsnr",
+      "version": 0,
+      "active": true,
+      "question": "What is the command you'd use on RHEL-based systems to find the package that provides a binary?",
+      "answer": "yum whatprovides $(which ${binary})",
       "reviews": []
     },
     {
       "id": "azn974h48f",
       "version": 0,
       "active": true,
-      "question": "ACID stands for... what does each mean?",
-      "answer": "atomicity, consistency, isolation, durability",
+      "question": "What does ACID stand for?\nWhat does each mean?",
+      "answer": "atomicity\nconsistency\nisolation\ndurability",
       "reviews": []
     },
     {
       "id": "waj55tka75",
       "version": 0,
       "active": true,
-      "question": "Explain the CAP theorem, as well as its extension, the PACELC theorem",
-      "answer": "CAP: consistency, availability, partition tolerance PACELC: partition tolerance, availability, consistency, else latency, consistency   CAP: In the presence of a network partition, you must choose between availablilty or consistency (across database nodes)   PACELC: CAP, but when not in the presence of a network partition, you must choose between latency and consistency (across database nodes)",
-      "reviews": []
-    },
-    {
-      "id": "8tr7acx89v",
-      "version": 0,
-      "active": true,
-      "question": "get absolute path",
-      "answer": "realpath $path",
-      "reviews": []
-    },
-    {
-      "id": "pqlj5mt1ho",
-      "version": 0,
-      "active": true,
-      "question": "get directory part of a file path",
-      "answer": "dirname",
-      "reviews": []
-    },
-    {
-      "id": "c9t8ywgkv5",
-      "version": 0,
-      "active": true,
-      "question": "What command is used to get the name of a file from a path?",
-      "answer": "basename \u003cpath\u003e",
-      "reviews": []
-    },
-    {
-      "id": "ynkofmesbg",
-      "version": 0,
-      "active": true,
-      "question": "date format: hour (24 hour clock)",
-      "answer": "%H",
-      "reviews": []
-    },
-    {
-      "id": "cszuxts76c",
-      "version": 0,
-      "active": true,
-      "question": "date format: hour (12 hour clock)",
-      "answer": "%I",
-      "reviews": []
-    },
-    {
-      "id": "w6a8oiicc9",
-      "version": 0,
-      "active": true,
-      "question": "date format: month (number)",
-      "answer": "%m",
-      "reviews": []
-    },
-    {
-      "id": "3k9ed7eobd",
-      "version": 0,
-      "active": true,
-      "question": "date format: minute",
-      "answer": "%M",
-      "reviews": []
-    },
-    {
-      "id": "2qtezwjunp",
-      "version": 0,
-      "active": true,
-      "question": "date format: second (zero decimal places)",
-      "answer": "%S",
-      "reviews": []
-    },
-    {
-      "id": "la07to04bj",
-      "version": 0,
-      "active": true,
-      "question": "date format: what is the number always assigned to Monday?",
-      "answer": "1",
-      "reviews": []
-    },
-    {
-      "id": "z4kxylh9bd",
-      "version": 0,
-      "active": true,
-      "question": "date format: day of week (number where Sunday is 0)",
-      "answer": "%w",
-      "reviews": []
-    },
-    {
-      "id": "5cu7ukrza1",
-      "version": 0,
-      "active": true,
-      "question": "date format: day of week (number, where Sunday is 7)",
-      "answer": "%u",
-      "reviews": []
-    },
-    {
-      "id": "7s9u2d2uyt",
-      "version": 0,
-      "active": true,
-      "question": "date format: day (number in month)",
-      "answer": "%d",
-      "reviews": []
-    },
-    {
-      "id": "b1u6ldogqh",
-      "version": 0,
-      "active": true,
-      "question": "date format: all four digits of year",
-      "answer": "%Y",
-      "reviews": []
-    },
-    {
-      "id": "39vkrwhkp4",
-      "version": 0,
-      "active": true,
-      "question": "date format: last two digits of year",
-      "answer": "%y",
-      "reviews": []
-    },
-    {
-      "id": "woqf5cznrv",
-      "version": 0,
-      "active": true,
-      "question": "What shell command is used to generate a range of numbers? What is weird about this command?",
-      "answer": "seq 0 3  0 1 2 3   seq 0 2 6 0 2 4 6",
-      "reviews": []
-    },
-    {
-      "id": "0jkq66mrky",
-      "version": 0,
-      "active": true,
-      "question": "docopt mutually exclusive",
-      "answer": "(set|remove)",
-      "reviews": []
-    },
-    {
-      "id": "tjb4eynpgx",
-      "version": 0,
-      "active": true,
-      "question": "docopt repeating element",
-      "answer": "\u003cname\u003e...",
+      "question": "Explain the CAP theorem, as well as its extension, the PACELC theorem.",
+      "answer": "CAP: consistency, availability, partition tolerance\nPACELC: partition tolerance, availability, consistency, else latency, consistency\n\nCAP: In the presence of a network partition, you must choose\nbetween availablilty or consistency (across database nodes)\n\nPACELC: CAP, but when not in the presence of a network partition,\nyou must choose between latency and consistency (across database nodes)",
       "reviews": []
     },
     {
@@ -183,39 +39,15 @@
       "version": 0,
       "active": true,
       "question": "What is cgroups?",
-      "answer": "Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, network etc) of a collection of processes",
-      "reviews": []
-    },
-    {
-      "id": "nop2i5bljr",
-      "version": 0,
-      "active": true,
-      "question": "LDAP DN means what? What is it?",
-      "answer": "distinguished name; similar to a full file path to entry",
-      "reviews": []
-    },
-    {
-      "id": "x0bp0rpiw7",
-      "version": 0,
-      "active": true,
-      "question": "LDAP: what does a DN consist of?",
-      "answer": "a RDN (relative distinguished name) + the parent entry's DN",
+      "answer": "Linux kernel feature that limits, accounts for, and isolates\nthe resource usage (CPU, memory, disk I/O, network etc)\nof a collection of processes",
       "reviews": []
     },
     {
       "id": "gr28qxfq0z",
       "version": 0,
       "active": true,
-      "question": "how to get size of directories in working directory",
+      "question": "How do you get the size of the directories in the current working directory?",
       "answer": "du -d 1 .",
-      "reviews": []
-    },
-    {
-      "id": "xm30q1pa58",
-      "version": 0,
-      "active": true,
-      "question": "how to create a shell function?",
-      "answer": "my_func() { echo $1; echo $2} my_func hello world",
       "reviews": []
     },
     {
@@ -223,102 +55,38 @@
       "version": 0,
       "active": true,
       "question": "Name the eight different types of linux namespaces. What is each for?",
-      "answer": "mount: filesystem mounts   PID: process IDs   net: each net namespace has independent IPv4 and IPv6 stacks   IPC: POSIX message queues, System V message queues, semaphore sets, shared memory segments   UTS (Unix Time Sharing): isolated hostname and NIS domain name   user: users, groups and capabilities   cgroup: each namespace has isolated view of cgroups   time: each namespace has an isolated view of CLOCK_MONOTONIC and/or CLOCK_BOOTTIME",
+      "answer": "mount: filesystem mounts\nPID: process IDs\nnet: each net namespace has independent IPv4 and IPv6 stacks\nIPC: POSIX message queues, System V message queues, semaphore sets, shared memory segments\nUTS (Unix Time Sharing): isolated hostname and NIS domain name\nuser: users, groups and capabilities\ncgroup: each namespace has isolated view of cgroups\ntime: each namespace has an isolated view of CLOCK_MONOTONIC and/or CLOCK_BOOTTIME",
       "reviews": []
     },
     {
       "id": "w74t4ztwep",
       "version": 0,
       "active": true,
-      "question": "difference between sysfs and procfs",
+      "question": "What is the difference between sysfs and procfs?",
       "answer": "procfs was created to provide secure, convenient access to information on kernel state (specifically regarding processes); this was convenient for other things as well, and became a dumping ground for other functionality; since this became a mess, sysfs was created to provide structure. Use procfs for process info; use sysfs for everything else",
-      "reviews": []
-    },
-    {
-      "id": "zft56db9mq",
-      "version": 0,
-      "active": true,
-      "question": "four different ways to separate commands, all on one line, and what they do",
-      "answer": "; - execute commands sequentially whether they return 0 or nonzero \u0026 - execute commands simultaneously \u0026\u0026 - execute commands sequentially, but execute next command only if previous command returned 0 || - execute commands sequentially until one returns 0",
-      "reviews": []
-    },
-    {
-      "id": "3ip7uju21s",
-      "version": 0,
-      "active": true,
-      "question": "write a heredoc with multiple lines, assign it to a variable, and print that variable to stdout (preserving newlines)",
-      "answer": "\"asdf=$(cat \u003c\u003c EOF hello $PWD goodbye EOF ) echo \"\"$asdf\"\"\"",
-      "reviews": []
-    },
-    {
-      "id": "fqfby8t854",
-      "version": 0,
-      "active": true,
-      "question": "name the five types of matrix identifiers and what they are for",
-      "answer": "\"@ - user id ! - room id $ - event id + - group id # - room alias\"",
-      "reviews": []
-    },
-    {
-      "id": "k4fhr4tns2",
-      "version": 0,
-      "active": true,
-      "question": "What does a user name look like in matrix?",
-      "answer": "@adampickering:matrix.org",
-      "reviews": []
-    },
-    {
-      "id": "2p4dlxhxm5",
-      "version": 0,
-      "active": true,
-      "question": "LDAP OU",
-      "answer": "organizational unit",
-      "reviews": []
-    },
-    {
-      "id": "ndby84sz7r",
-      "version": 0,
-      "active": true,
-      "question": "LDAP DC",
-      "answer": "domain component (for parts of domain names)",
-      "reviews": []
-    },
-    {
-      "id": "ovojhj8ohp",
-      "version": 0,
-      "active": true,
-      "question": "LDAP CN",
-      "answer": "common name (for everything that isn't OU or DC)",
-      "reviews": []
-    },
-    {
-      "id": "kglwh7nvk4",
-      "version": 0,
-      "active": true,
-      "question": "what is special about the objectClass attribute in LDAP?",
-      "answer": "it determines the schema rules the entry must obey",
       "reviews": []
     },
     {
       "id": "bayv016o1q",
       "version": 0,
       "active": true,
-      "question": "four ways of storing data in a Docker container",
-      "answer": "- writable layer - volume - bind mount - tmpfs mount",
+      "question": "What are the four ways of storing data in a Docker container?",
+      "answer": "- writable layer\n- volume\n- bind mount\n- tmpfs mount",
       "reviews": []
     },
     {
       "id": "h05cxzabyw",
       "version": 0,
       "active": true,
-      "question": "/etc/resolv.conf",
-      "answer": "What is the file that holds information on DNS servers?",
+      "question": "What is the file that holds information on DNS servers?",
+      "answer": "/etc/resolv.conf",
       "reviews": []
     },
     {
       "id": "tc4ju216q2",
       "version": 0,
       "active": true,
-      "question": "file that determines how names are looked up",
+      "question": "What file determines how names are looked up?",
       "answer": "/etc/nsswitch.conf",
       "reviews": []
     },
@@ -326,7 +94,7 @@
       "id": "8j5cnlg7tw",
       "version": 0,
       "active": true,
-      "question": "file that holds database of local DNS entries",
+      "question": "What is the file that holds the database of local DNS entries?",
       "answer": "/etc/hosts",
       "reviews": []
     },
@@ -342,22 +110,22 @@
       "id": "f2ym47u6kd",
       "version": 0,
       "active": true,
-      "question": "file that contains attributes of each user account",
+      "question": "What is the file that contains basic info about user accounts?",
       "answer": "/etc/passwd",
       "reviews": []
     },
     {
       "id": "bhmzth0pqu",
       "version": 0,
-      "active": true,
-      "question": "/etc/passwd oracle:x:1021:1020:hello:/data/network/oracle:/bin/bash",
-      "answer": "/etc/passwd login shell: /bin/bash user info: hello uid: 1021 home directory: /data/network/oracle username: oracle gid: 1020 password: stored in /etc/shadow",
+      "active": false,
+      "question": "/etc/passwd\n\noracle:x:1021:1020:hello:/data/network/oracle:/bin/bash",
+      "answer": "/etc/passwd\n\nlogin shell: /bin/bash\nuser info: hello\nuid: 1021\nhome directory: /data/network/oracle\nusername: oracle\ngid: 1020\npassword: stored in /etc/shadow",
       "reviews": []
     },
     {
       "id": "wtmrb8afw8",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "\"/etc/shadow vivek:$1$fnfdf$efkdk##efdl:13064:0:99999:7:::\"",
       "answer": "\"/etc/shadow username: vivek password: $1$fnfdf$efkdk##efdl (what is each part?) days until acct disabled after unch pass: blank maximum days pass valid: 99999 acct expires: blank days before pass exp that user warned: 7 last changed: 13064 minimum days password valid: 0\"",
       "reviews": []
@@ -366,14 +134,14 @@
       "id": "3rw9axc9sb",
       "version": 0,
       "active": true,
-      "question": "/etc/group",
-      "answer": "file that holds data on groups",
+      "question": "What is the file that holds info about groups?",
+      "answer": "/etc/group",
       "reviews": []
     },
     {
       "id": "qkh78xmmtu",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "/etc/group cdrom:x:24:vivek,student13,raj",
       "answer": "/etc/group password: x members of group: vivek, student13, raj group ID: 24 group name: cdrom",
       "reviews": []
@@ -381,8 +149,8 @@
     {
       "id": "4iczaofkgj",
       "version": 0,
-      "active": true,
-      "question": "what does it mean when in /etc/shadow password is !! or ! or *, or empty?",
+      "active": false,
+      "question": "What does it mean when in /etc/shadow password is !! or ! or *, or empty?",
       "answer": "! means account is locked (password hash can be kept) * means account was never meant to be logged into empty means no password is required to authenticate, but some applications may not allow access in this case Refer to https://linux.die.net/man/5/shadow",
       "reviews": []
     },
@@ -390,39 +158,15 @@
       "id": "wqx3du06k7",
       "version": 0,
       "active": true,
-      "question": "Why do we give daemons their own group and user account?",
-      "answer": "Daemons act like users, taking input and doing things around the system. We give them a group and a user account so that in the event they are compromised they can do limited damage.",
-      "reviews": []
-    },
-    {
-      "id": "88b2wfdhgj",
-      "version": 0,
-      "active": true,
-      "question": "six types of docker network drivers; which is default?",
-      "answer": "bridge, host, overlay, macvlan, none, network plugins default is bridge",
-      "reviews": []
-    },
-    {
-      "id": "21cv7g4my5",
-      "version": 0,
-      "active": true,
-      "question": "What do the options -it mean in `docker exec -it ...`?",
-      "answer": "i - keep stdin open even if not attached t - allocate a pseudo-tty",
-      "reviews": []
-    },
-    {
-      "id": "wqxlycus5o",
-      "version": 0,
-      "active": true,
-      "question": "Run a docker container while forwarding port 389 inside the container to port 3890 outside the container, while listening only on localhost.",
-      "answer": "docker run -p 127.0.0.1:3890:389 image",
+      "question": "Why would an admin give a daemon its own group and user account?",
+      "answer": "Daemons act like users, taking input and doing things around the system.\nWe give them a group and a user account so that in the event\nthey are compromised they can do limited damage.",
       "reviews": []
     },
     {
       "id": "omotqxkc3p",
       "version": 0,
       "active": true,
-      "question": "/etc/init.d init system",
+      "question": "What init system uses /etc/init.d?",
       "answer": "sysvinit",
       "reviews": []
     },
@@ -430,7 +174,7 @@
       "id": "1e0mgozeaa",
       "version": 0,
       "active": true,
-      "question": "/etc/init init system",
+      "question": "What init system uses /etc/init?",
       "answer": "upstart",
       "reviews": []
     },
@@ -438,14 +182,14 @@
       "id": "2y0idqqdlf",
       "version": 0,
       "active": true,
-      "question": "what init system is /etc/inittab from?",
+      "question": "What init system is /etc/inittab from?",
       "answer": "sysvinit",
       "reviews": []
     },
     {
       "id": "ceij2zraxv",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "/etc/inittab line format ab:234:respawn:/bin/httpd",
       "answer": "/etc/inittab line format binary: /bin/httpd runlevels: 2, 3 and 4 id: ab action: respawn",
       "reviews": []
@@ -453,113 +197,25 @@
     {
       "id": "3b928acxwy",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "three directives in /etc/resolv.conf",
       "answer": "nameserver - lists a DNS server's IP address  domain - name that is tacked onto end of simple domain names (no dots) before resolving search - similar function to domain, but allows list of names rather than just one",
       "reviews": []
     },
     {
-      "id": "rab43vnuy9",
-      "version": 0,
-      "active": true,
-      "question": "command to resolve domain name to IP address",
-      "answer": "nslookup",
-      "reviews": []
-    },
-    {
-      "id": "t97oljsj6b",
-      "version": 0,
-      "active": true,
-      "question": "three types of LDAP object classes",
-      "answer": "abstract, structural, auxiliary",
-      "reviews": []
-    },
-    {
       "id": "kwvyv779tg",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the five basic objects in tmux? Explain how they work.",
       "answer": "server - persists sessions client - acts as user interface to sessions; talks to server through socket in /tmp session - a collection of ptys; may contain multiple windows window - an entire screen; may contain multiple panes pane - a part of a window",
       "reviews": []
     },
     {
-      "id": "cu1g7xn1ka",
-      "version": 0,
-      "active": true,
-      "question": "docker: what is the difference between a user-defined bridge network and the default bridge network?",
-      "answer": "Basically, user-defined is separate, so it gives you a higher degree of control.  - better isolation with user-defined, since all containers can see all ports from other containers on default - automatic DNS resolution with user-defined, only IPs for default - containers can be attached to and removed from user-defined networks on the fly, not the case with default - some stupid stuff about sharing environment variables between containers with user-defined",
-      "reviews": []
-    },
-    {
-      "id": "475ugc2f10",
-      "version": 0,
-      "active": true,
-      "question": "What is a host network in docker?",
-      "answer": "Where the container has no isolation; it has the same network namespace as the host it is on.",
-      "reviews": []
-    },
-    {
-      "id": "izk0d01j6h",
-      "version": 0,
-      "active": true,
-      "question": "four types of diff output and their flags",
-      "answer": "normal (nothing) unified (-u) context (-c) edit (-e)",
-      "reviews": []
-    },
-    {
-      "id": "zf0i3okqvi",
-      "version": 0,
-      "active": true,
-      "question": "What format is this? What does this mean? What are the possible letters? diff file1.txt file2.txt2c2 \u003c I need to run the laundry. --- \u003e I need to do the laundry.",
-      "answer": "normal format. a: add; c: change; d: delete 2c2 means line 2 in file 1 was changed as shown below to line 2 in file 2. Can be a range, example: 2,4c2,4",
-      "reviews": []
-    },
-    {
-      "id": "7x9jw2c7c6",
-      "version": 0,
-      "active": true,
-      "question": "What format is this? What does it mean? What does the line @@ -1,2 +1,2 @@ mean? diff -u file1.txt file2.txt--- file1.txt   2019-06-28 11:27:43.981281692 -0600 +++ file2.txt   2019-06-28 11:04:54.443282817 -0600 @@ -1,2 +1,2 @@  I need to buy apples. -I need to run the laundry. +I need to do the laundry.",
-      "answer": "\"unified for file 1 scope starts at line 1 and continues for 2 lines same for file 2 delete line with \"\"run\"\" and add line with \"\"do\"\"\"",
-      "reviews": []
-    },
-    {
       "id": "ryczcs3mb9",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "During DNS lookup, how do I know whether the computer looks in /etc/hosts or at the nameservers in /etc/resolv.conf first?",
       "answer": "Look at /etc/nsswitch.conf",
-      "reviews": []
-    },
-    {
-      "id": "cbegzko4cp",
-      "version": 0,
-      "active": true,
-      "question": "get a record from one of a variety of databases",
-      "answer": "getent",
-      "reviews": []
-    },
-    {
-      "id": "z4545oekt0",
-      "version": 0,
-      "active": true,
-      "question": "difference between dockerfile COPY and ADD",
-      "answer": "ADD will resolve URLs",
-      "reviews": []
-    },
-    {
-      "id": "9e18pjqun2",
-      "version": 0,
-      "active": true,
-      "question": "\"In `docker build`, how do you tell docker what directory is the \"\"build context\"\"? How do you specify a dockerfile other than ./Dockerfile to use?\"",
-      "answer": "docker build -f /path/to/dockerfile . . is build context, so you can use anything in it; -f \u003cpath\u003e gives the path to the actual dockerfile",
-      "reviews": []
-    },
-    {
-      "id": "yw3n3qh2jz",
-      "version": 0,
-      "active": true,
-      "question": "docker syntax for running a container from image 'my-image' with a bind mount, name 'hello-world', and in daemon mode",
-      "answer": "docker run -d --name hello-world --mount 'type=bind,src=/path,dst=/other_path' my-image",
       "reviews": []
     },
     {
@@ -606,24 +262,16 @@
       "id": "qw3noi6v7n",
       "version": 0,
       "active": true,
-      "question": "FHS: if I bought a pre-built piece of software and installed it, what directory would it go in? Where would its config files go? Where would its logs go?",
-      "answer": "/opt /etc/opt /var/opt",
-      "reviews": []
-    },
-    {
-      "id": "sffcn8ya0z",
-      "version": 0,
-      "active": true,
-      "question": "shell programming test command flags 1) -f 2) -d 3) -r 4) -w 5) -x 6) -e 7) -o 8) -a",
-      "answer": "shell programming test command flags  1) true if path is a file 2) true if path is a directory 3) true if path is a readable file that exists 4) true if path is a writable file that exists 5) true if path is an executable file that exists 6) true if path is either a file or directory 7) or condition 8) and condition",
+      "question": "FHS: if I bought a pre-built piece of software and installed it, what directory would it go in?\nWhere would its config files go?\nWhere would its logs go?",
+      "answer": "/opt\n/etc/opt\n/var/opt",
       "reviews": []
     },
     {
       "id": "pabo3ma70e",
       "version": 0,
       "active": true,
-      "question": "How does unix know what permissions to create a file with when not specified? What shell command is used to change it?",
-      "answer": "\"It looks at the \"\"file creation mask\"\", which can be manipulated with the `umask` command\"",
+      "question": "How does unix know what permissions to create a file with when not specified?\nWhat shell command is used to change it?",
+      "answer": "It looks at the \"file creation mask\", which can be manipulated with the `umask` command",
       "reviews": []
     },
     {
@@ -639,101 +287,37 @@
       "version": 0,
       "active": true,
       "question": "What does OCI stand for, and what are its two specifications?",
-      "answer": "Open Container Initiative image and runtime",
-      "reviews": []
-    },
-    {
-      "id": "8dqet8xubv",
-      "version": 0,
-      "active": true,
-      "question": "What are the three categories of container tools, and what does each do?",
-      "answer": "image builder - builds OCI-compliant images container engine - transforms OCI-compliant images into OCI-compliant containers, may take user input as to how this is done, may pull images from registries, calls container runtime container runtime - runs an OCI-compliant container",
+      "answer": "Open Container Initiative\n\nOCI image and OCI runtime",
       "reviews": []
     },
     {
       "id": "cjg0i0edj1",
       "version": 0,
       "active": true,
-      "question": "containers: what are four types of image standards?",
-      "answer": "OCI, AppC, Docker v2, LXD",
+      "question": "containers: what are three types of image standards?",
+      "answer": "OCI, Docker v2, LXD",
       "reviews": []
     },
     {
       "id": "t3yksy76ff",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What does an OCI-compliant container consist of?",
       "answer": "A bundle, which is a config.json file plus a rootfs, all in one directory",
-      "reviews": []
-    },
-    {
-      "id": "22bzvbnbz3",
-      "version": 0,
-      "active": true,
-      "question": "Command to take user input from command line in shell script, and two crucial options",
-      "answer": "read VAR_NAME -p 'my prompt' -s -\u003e suppresses echoing of input",
       "reviews": []
     },
     {
       "id": "pwpyut8riz",
       "version": 0,
       "active": true,
-      "question": "What is seccomp short for? What is it?",
-      "answer": "secure computing mode Limits a process to four system calls: exit(), sigreturn(), read(), write()",
-      "reviews": []
-    },
-    {
-      "id": "opkjpxia3d",
-      "version": 0,
-      "active": true,
-      "question": "containerd",
-      "answer": "The container engine for Docker; now a part of CNCF",
-      "reviews": []
-    },
-    {
-      "id": "m5t96tv4q7",
-      "version": 0,
-      "active": true,
-      "question": "skopeo",
-      "answer": "a tool for working with container images and image repositories; can work with OCI images as well as docker v2 images",
-      "reviews": []
-    },
-    {
-      "id": "qphs41e8hg",
-      "version": 0,
-      "active": true,
-      "question": "list 4 container engines",
-      "answer": "CRI-O, containerd, rkt, podman",
-      "reviews": []
-    },
-    {
-      "id": "heiztr5rfc",
-      "version": 0,
-      "active": true,
-      "question": "kaniko",
-      "answer": "a tool to build container images from a Dockerfile inside a container or k8s cluster",
-      "reviews": []
-    },
-    {
-      "id": "7najsk0tr6",
-      "version": 0,
-      "active": true,
-      "question": "name 4 OCI-compliant runtimes",
-      "answer": "runc, runV, railcar, crun",
-      "reviews": []
-    },
-    {
-      "id": "ij0nk5groq",
-      "version": 0,
-      "active": true,
-      "question": "What is kata containers?",
-      "answer": "A container runtime with lightweight VMs that use both typical container isolation techniques as well as traditional VM isolation techniques.",
+      "question": "What is seccomp short for?\nWhat is it?",
+      "answer": "secure computing mode\n\nLimits a process to four system calls: exit(), sigreturn(), read(), write()",
       "reviews": []
     },
     {
       "id": "jrqswopfww",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is copy-on-write?",
       "answer": "A copy of some memory does not actually need to be copied. As long as the memory is identical, two references can be used by two processes (or whatever) to refer to it. This saves memory. COW is the technique of deferring the actual copying and modification of memory until one of the references is written, which means that the shared memory region is no longer identical.",
       "reviews": []
@@ -742,31 +326,23 @@
       "id": "p9uvpnyrge",
       "version": 0,
       "active": true,
-      "question": "FUSE",
-      "answer": "Filesystem in UserSpacE Allows non-privileged users to create their own filesystems without editing kernel code",
-      "reviews": []
-    },
-    {
-      "id": "372psdl3wq",
-      "version": 0,
-      "active": true,
-      "question": "output a string without newline",
-      "answer": "printf 'string'",
+      "question": "What is FUSE?",
+      "answer": "Stands for Filesystem in UserSpacE.\n\nAllows non-privileged users to create their own filesystems without editing kernel code.",
       "reviews": []
     },
     {
       "id": "0erdqrfx6b",
       "version": 0,
       "active": true,
-      "question": "which file descriptor numbers correspond to the standard streams?",
-      "answer": "0 - stdin 1 - stdout 2 - stderr",
+      "question": "Which file descriptor numbers correspond to the standard streams?",
+      "answer": "0 - stdin\n1- stdout\n2 - stderr",
       "reviews": []
     },
     {
       "id": "6ltlhggwr6",
       "version": 0,
       "active": true,
-      "question": "get the routing table on Linux device",
+      "question": "What command is used to get the routing table on Linux?",
       "answer": "ip route",
       "reviews": []
     },
@@ -775,23 +351,23 @@
       "version": 0,
       "active": true,
       "question": "How do you get the next hop for a specific subnet in Linux routing table?",
-      "answer": "ip route get \u003cprefix\u003e",
+      "answer": "ip route get <prefix>",
       "reviews": []
     },
     {
       "id": "0bynxf53jw",
       "version": 0,
       "active": true,
-      "question": "What are the three main object types in Linux firewall What do they do? How do they fit together?",
-      "answer": "tables: bound to multiple chains; are groups of lists of rules to check traffic against  chains: define where in the network layer traffic is acted upon rules: make up tables; consist of a matching rule and a target to execute if traffic matches",
+      "question": "What are the three main object types in Linux firewall?\nWhat do they do?\nHow do they fit together?",
+      "answer": "tables: bound to multiple chains;\nare groups of lists of rules to check traffic against\n\nchains: define where in the network layer traffic is acted upon\n\nrules: make up tables;\nconsist of a matching rule and a target to execute if traffic matches",
       "reviews": []
     },
     {
       "id": "c6ne17ek2c",
       "version": 0,
       "active": true,
-      "question": "What are the four standard tables in iptables, and what is each for?",
-      "answer": "filter: for rules that filter packets    nat: only used to translate the packet's source or destination field   mangle: for changing fields in packets other than source or destination   raw: generally only used for marking packets so that they are not handled by the connection tracking system",
+      "question": "What are the four standard tables in iptables?\nWhat is each for?",
+      "answer": "filter: for rules that filter packets\nnat: only used to translate the packet's source or destination field\nmangle: for changing fields in packets other than source or destination\nraw: generally only used for marking packets so that they are not handled by the connection tracking system",
       "reviews": []
     },
     {
@@ -808,30 +384,6 @@
       "active": true,
       "question": "Under iproute tooling, what are the 4 scope types for routes and addresses?",
       "answer": "host: inside this host; in 127.0.0.0/8 subnet link: address/subnet accessible directly from this interface on layer 2 site: IPv6 only; valid within site global: elsewhere on internet, via a gateway",
-      "reviews": []
-    },
-    {
-      "id": "5a12748qo2",
-      "version": 0,
-      "active": true,
-      "question": "get the return value of the last command in shell script",
-      "answer": "$?",
-      "reviews": []
-    },
-    {
-      "id": "1o2p9mjxzo",
-      "version": 0,
-      "active": true,
-      "question": "What are the three ways to set shell variables, and how do they vary?",
-      "answer": "NAME=value : this is only for use by the current shell, and is not inherited by any subprocesses   export NAME=value : this variable will be inherited by all subsequent subprocesses   env NAME=value [command [args...] ] : passes environment variable to command only, without keeping it in current shell",
-      "reviews": []
-    },
-    {
-      "id": "g4fpnignq0",
-      "version": 0,
-      "active": true,
-      "question": "What command is used to create a TLS certificate?",
-      "answer": "openssl req",
       "reviews": []
     },
     {
@@ -863,7 +415,7 @@
       "version": 0,
       "active": true,
       "question": "If TELUS were to set up its own CA for internal applications, what would the two options be?",
-      "answer": "1) Get the certificate from a CA that is trusted by all major browsers  2) Create our own root certificate and configure all browsers on company laptops to trust that root certificate",
+      "answer": "1) Get the certificate from a CA that is trusted by all major browsers\n2) Create its own root certificate and configure all browsers on company laptops to trust that root certificate",
       "reviews": []
     },
     {
@@ -871,15 +423,7 @@
       "version": 0,
       "active": true,
       "question": "How does a browser verify that a TLS certificate can be trusted?",
-      "answer": "Each certificate (except root) refers to a parent certificate. The browser looks at these certificates until a root certificate is reached. If the root certificate is in the list of trusted root certificates, the public key inside of it can be used to verify the signature of the certificate on level 2. Once level 2 cert is verified, the level 2 public key can be used to verify the signature of the level 3 cert. And so on, until we get to the certificate we are trying to verify.",
-      "reviews": []
-    },
-    {
-      "id": "89pauycfyo",
-      "version": 0,
-      "active": true,
-      "question": "difference between dockerfile ENTRYPOINT and CMD",
-      "answer": "Essentially nothing; they are just concatenated at runtime, and can both be overridden at runtime. See https://stackoverflow.com/questions/21553353/what-is-the-difference-between-cmd-and-entrypoint-in-a-dockerfile?rq=1",
+      "answer": "Each certificate (except root) refers to a parent certificate.\nThe browser looks at these certificates until a root certificate is reached.\nIf the root certificate is in the list of trusted root certificates,\nthe public key inside of it can be used to verify the signature of the certificate on level 2.\nOnce level 2 cert is verified, the level 2 public key can be used to verify the signature of the level 3 cert.\nAnd so on, until we get to the certificate we are trying to verify.",
       "reviews": []
     },
     {
@@ -887,111 +431,47 @@
       "version": 0,
       "active": true,
       "question": "What is dnsmasq?",
-      "answer": "daemon that provides DNS and DHCP servers, as well as router advertising and network booting",
+      "answer": "A daemon that provides DNS and DHCP servers, as well as router advertising and network booting.",
       "reviews": []
     },
     {
       "id": "c84871wjc1",
       "version": 0,
       "active": true,
-      "question": "/etc/dnsmasq.conf",
-      "answer": "config file for dnsmasq",
+      "question": "What is /etc/dnsmasq.conf?",
+      "answer": "The config file for dnsmasq.",
       "reviews": []
     },
     {
       "id": "dmavd4yob2",
       "version": 0,
       "active": true,
-      "question": "SMTP - what does it stand for, and what is it?",
-      "answer": "Simple Mail Transfer Protocol Generally used only for sending mail from client to server, as well as server to server",
-      "reviews": []
-    },
-    {
-      "id": "e9lxyprdk2",
-      "version": 0,
-      "active": true,
-      "question": "MUA vs MSA vs MTA vs MDA vs MRA",
-      "answer": "MUA: mail user agent; the mail client MSA: mail submission agent; receives mail from the MUA MTA: mail transfer agent; transfers mail from one computer to another MDA: mail delivery agent; delivers mail to a local recipient's mailbox MRA: mail retrieval agent; works with MDA to pull mail to local or remote mailbox   Old: MUA -\u003e MTA -\u003e MTA -\u003e MUA Newer: MUA -\u003e MSA -\u003e MTA -\u003e MTA -\u003e MDA -\u003e MRA -\u003e MUA",
+      "question": "What does SMTP stand for?\nWhat is it?",
+      "answer": "Simple Mail Transfer Protocol\n\nGenerally used only for sending mail from client to server,\nas well as server to server",
       "reviews": []
     },
     {
       "id": "77r68nr4hq",
       "version": 0,
       "active": true,
-      "question": "IMAP: what does it stand for, and what is it?",
-      "answer": "Internet Message Access Protocol  IMAP allows clients to manage their mail while leaving it on the server",
+      "question": "What does IMAP stand for?\nWhat is it?",
+      "answer": "Internet Message Access Protocol\n\nIMAP allows clients to manage their mail while leaving it on the server?",
       "reviews": []
     },
     {
       "id": "4expob0t9d",
       "version": 0,
       "active": true,
-      "question": "POP3: what does it stand for and what is it?",
-      "answer": "Post Office Protocol Allows MUAs to download and delete mail. Typically used when only one client is used to view mail; in this case, mail is downloaded and then deleted from the server. However, mail does not have to be deleted from the server.",
-      "reviews": []
-    },
-    {
-      "id": "odk23irbt0",
-      "version": 0,
-      "active": true,
-      "question": "What does dockerfile VOLUME keyword do?",
-      "answer": "Indicates that a directory must exist at the given path(s). This directory will be created as an anonymous volume at runtime if the --mount keyword is not used to link it to a bind mount, tmpfs mount or volume.",
-      "reviews": []
-    },
-    {
-      "id": "ht64lh65nc",
-      "version": 0,
-      "active": true,
-      "question": "What does the dockerfile EXPOSE keyword do? How would I specify a UDP port?",
-      "answer": "Informs docker (and future developers) which ports the container listens on at runtime.   80/udp",
-      "reviews": []
-    },
-    {
-      "id": "opuyujbkop",
-      "version": 0,
-      "active": true,
-      "question": "shell: test two strings for equality",
-      "answer": "= -\u003e true if equal != -\u003e true if not equal",
-      "reviews": []
-    },
-    {
-      "id": "7vjv8xiz72",
-      "version": 0,
-      "active": true,
-      "question": "stty",
-      "answer": "allows you to change the settings of your tty",
-      "reviews": []
-    },
-    {
-      "id": "olxan03gru",
-      "version": 0,
-      "active": true,
-      "question": "trap",
-      "answer": "used to execute commands upon certain signals or program EXIT",
-      "reviews": []
-    },
-    {
-      "id": "z2wngxushl",
-      "version": 0,
-      "active": true,
-      "question": "execute an external script in current environment",
-      "answer": ". command",
-      "reviews": []
-    },
-    {
-      "id": "fbuny3yy02",
-      "version": 0,
-      "active": true,
-      "question": "sh: how to test whether the length of a variable is zero or non-zero",
-      "answer": "test -n string (true if nonzero) test -z string (true if zero)",
+      "question": "What does POP3 stand for?\nWhat is it?",
+      "answer": "Post Office Protocol\n\nAllows MUAs to download and delete mail. Typically used when only one client is used to view mail; in this case, mail is downloaded and then deleted from the server. However, mail does not have to be deleted from the server.",
       "reviews": []
     },
     {
       "id": "udfz083tst",
       "version": 0,
       "active": true,
-      "question": "five states that a process may be in, and their abbreviations",
-      "answer": "R running or runnable (on run queue) D uninterruptable sleep (in a system call) S interruptable sleep (waiting for some event or signal) T stopped, either by job control signal or because it's being traced by debugger Z zombie process, terminated but not yet reaped by its parent",
+      "question": "What are the five states that a process may be in? What are their abbreviations?",
+      "answer": "R running or runnable (on run queue)\nD uninterruptable sleep (in a system call)\nS interruptable sleep (waiting for some event or signal)\nT stopped, either by job control signal or because it's being traced by debugger\nZ zombie process, terminated but not yet reaped by its parent",
       "reviews": []
     },
     {
@@ -1007,23 +487,23 @@
       "version": 0,
       "active": true,
       "question": "What do tty, pty, pts stand for?",
-      "answer": "tty: teletypewriter pty: pseudo-tty (master) pts: pseudo-tty slave",
+      "answer": "tty: teletypewriter\npty: pseudo-tty (master)\npts: pseudo-tty slave",
       "reviews": []
     },
     {
       "id": "i6jnfoci16",
       "version": 0,
       "active": true,
-      "question": "What is the purpose of the line discipline? What are its modes?",
-      "answer": "It provides some character processing facilities for programs that want to shift them to the kernel. These facilities are provided in cooked/canonical mode; interactive applications (editors, MUAs, shells, curses or readline-based programs) run in raw mode, where they handle this process themselves.",
+      "question": "What is the purpose of the line discipline?\nWhat are its modes?",
+      "answer": "It provides some character processing facilities for programs that want to shift them to the kernel.\nThese facilities are provided in cooked/canonical mode;\ninteractive applications (editors, MUAs, shells, curses or readline-based programs)\nrun in raw mode, where they handle this process themselves.",
       "reviews": []
     },
     {
       "id": "a8brkrr93u",
       "version": 0,
       "active": true,
-      "question": "What is a tty device? What is it used for? What kind of program usually interfaces with it?",
-      "answer": "It is the combination of a UART driver (could also be VGA driver plus keyboard driver, or RS-232 etc), a line discipline instance, and a tty driver. External hardware talks to the UART, and userspace processes talk to the tty driver.   So basically, it's used to interface with a keyboard input/output device. Generally speaking, shells open a tty upon startup and then interpret the output and write output to it.",
+      "question": "What is a tty device?\nWhat is it used for?\nWhat kind of program usually interfaces with it?",
+      "answer": "It is the combination of a UART driver (could also be VGA driver plus keyboard driver, or RS-232 etc),\na line discipline instance, and a tty driver.\nExternal hardware talks to the UART, and userspace processes talk to the tty driver.\n\nSo basically, it's used to interface with a keyboard input/output device.\nGenerally speaking, shells open a tty upon startup and then interpret the output and write output to it.",
       "reviews": []
     },
     {
@@ -1031,15 +511,15 @@
       "version": 0,
       "active": true,
       "question": "What is a pty? Draw it.",
-      "answer": "It exists because we have a bunch of programs that expect a tty interface; these programs interface with pts's. The pts's talk to a single pty through a line discipline. A userspace process then talks to the pty, and probably some other drivers (think xterm, or sshd)   ls -\u003e bash -\u003e pts -\u003e line discipline -\u003e pty -\u003e xterm -\u003e X server...",
+      "answer": "It exists because we have a bunch of programs that expect a tty interface;\nthese programs interface with pts's. The pts's talk to a single pty through a line discipline.\nA userspace process then talks to the pty, and probably some other drivers(think xterm, or sshd).\n\nls -> bash -> pts -> line discipline -> pty -> xterm -> X server...",
       "reviews": []
     },
     {
       "id": "wen0yyu5z0",
       "version": 0,
       "active": true,
-      "question": "1) How do userspace programs manipulate ttys? 2) How do ttys manipulate userspace programs?",
-      "answer": "1) Through read(), write() and ioctl() 2) Through signals",
+      "question": "1) How do userspace programs manipulate ttys?\n2) How do ttys manipulate userspace programs?",
+      "answer": "1) Through read(), write() and ioctl()\n2) Through signals",
       "reviews": []
     },
     {
@@ -1047,23 +527,7 @@
       "version": 0,
       "active": true,
       "question": "What does $TERM represent?",
-      "answer": "The terminal that the current session is using. Is a throwback to when anything could be on the end of a tty. Nowadays it's usually xterm or the like",
-      "reviews": []
-    },
-    {
-      "id": "8csy520lcz",
-      "version": 0,
-      "active": true,
-      "question": "What are the three modes of running bash, and what files/env vars are run when bash is started in each mode?",
-      "answer": "interactive login: 1) /etc/profile 2) first of ~/.bash_profile, ~/.bash_login, ~/.profile 3) upon exit ~/.bash_logout, /etc/bash.bash_logout   interactive non-login: ~/.bashrc   non-interactive: BASH_ENV points to a file that is executed",
-      "reviews": []
-    },
-    {
-      "id": "p936cjd9ah",
-      "version": 0,
-      "active": true,
-      "question": "negate the exit status of a command",
-      "answer": "! command",
+      "answer": "The terminal that the current session is using.\nIs a throwback to when anything could be on the end of a tty.\nNowadays it's usually xterm or the like.",
       "reviews": []
     },
     {
@@ -1071,15 +535,15 @@
       "version": 0,
       "active": true,
       "question": "How are all new processes created in Unix?",
-      "answer": "Through a fork() call",
+      "answer": "Through a fork() call.",
       "reviews": []
     },
     {
       "id": "6xtrb345ek",
       "version": 0,
       "active": true,
-      "question": "What are zombie processes, why do they exist, and how are they reaped?",
-      "answer": "A zombie process is a process that has exited but has not yet been reaped by its parent process. They exist because a parent process must be able to get info, such as exit status and PID, from the process. Zombie processes are reaped by the parent process calling wait(), which returns the aforementioned information and cleans up the process.",
+      "question": "What are zombie processes\nWhy do they exist?\nHow are they reaped?",
+      "answer": "A zombie process is a process that has exited but has not yet been reaped by its parent process.\n\nThey exist because a parent process must be able to get info,\nsuch as exit status and PID, from the process.\n\nZombie processes are reaped by the parent process calling wait(),\nwhich returns the aforementioned information and cleans up the process.",
       "reviews": []
     },
     {
@@ -1087,15 +551,15 @@
       "version": 0,
       "active": true,
       "question": "What creates device files, such as /dev/tty?",
-      "answer": "I am aware of two ways this is done: 1) Via devtmpfs. In this case, the kernel populates /dev with the things that should be there. Lower-touch than 2. 2) udev takes care of it. This is more typical, because udev can put events pertaining to devices on dbus, which can then be picked up by userspace programs. Basically it can do more, which is necessary for modern operating systems.",
+      "answer": "I am aware of two ways this is done:\n\n1) Via devtmpfs. In this case, the kernel populates /dev with the things that should be there. Lower-touch than 2.\n\n2) udev takes care of it. This is more typical, because udev can put events pertaining to devices on dbus, which can then be picked up by userspace programs. Basically it can do more, which is necessary for modern operating systems.",
       "reviews": []
     },
     {
       "id": "uzumwt2433",
       "version": 0,
       "active": true,
-      "question": "Draw the block diagram of the traditional TTY setup with UART",
-      "answer": "teletype -\u003e wire -\u003e UART -\u003e UART driver -\u003e line disc -\u003e tty driver -\u003e userspace process",
+      "question": "Draw the block diagram of the traditional TTY setup with UART.",
+      "answer": "teletype -> wire -> UART -> UART driver -> line disc -> tty driver -> userspace process",
       "reviews": []
     },
     {
@@ -1136,22 +600,6 @@
       "active": true,
       "question": "Why are there so many ttys on Ubuntu?",
       "answer": "They are virtual consoles, which fulfill the same role as screen or tmux",
-      "reviews": []
-    },
-    {
-      "id": "z0ce1pjiis",
-      "version": 0,
-      "active": true,
-      "question": "Should shell scripts end in .sh? If they do, where might this cause problems?",
-      "answer": "Google says no; my intuition says yes. This causes problems with run-parts",
-      "reviews": []
-    },
-    {
-      "id": "bvc0swki1o",
-      "version": 0,
-      "active": true,
-      "question": "What is XSS? How do you protect against it?",
-      "answer": "Cross site scripting.   XSS is a broad class of attacks that involve tricking the target into running malicious code, which is acceptable under the same origin policy since it is the person who owns the information that is running the code.   XSS can be prevented by HTML escaping all user input.",
       "reviews": []
     },
     {
@@ -1215,7 +663,7 @@
       "version": 0,
       "active": true,
       "question": "command to make a named pipe",
-      "answer": "mkfifo \u003cpath\u003e",
+      "answer": "mkfifo <path>",
       "reviews": []
     },
     {
@@ -1223,7 +671,7 @@
       "version": 0,
       "active": true,
       "question": "command to create a soft link command to create a hard link",
-      "answer": "soft: ln -s \u003ctarget\u003e \u003cdst\u003e hard: ln \u003ctarget\u003e \u003cdst\u003e",
+      "answer": "soft: ln -s <target> <dst> hard: ln <target> <dst>",
       "reviews": []
     },
     {
@@ -1275,14 +723,6 @@
       "reviews": []
     },
     {
-      "id": "7ruoshqd4l",
-      "version": 0,
-      "active": true,
-      "question": "What is an AWS elastic IP?",
-      "answer": "- a static IPv4 address - IPv6 not supported - basically a layer of indirection; you can connect it to internet gateways, individual EC2 instances, swap it out quickly in the event of an instance failure...",
-      "reviews": []
-    },
-    {
       "id": "8gaw3wn6zg",
       "version": 0,
       "active": true,
@@ -1295,7 +735,7 @@
       "version": 0,
       "active": true,
       "question": "Load a kernel module",
-      "answer": "modprobe \u003cmodulename\u003e insmod \u003cmodulename\u003e",
+      "answer": "modprobe <modulename> insmod <modulename>",
       "reviews": []
     },
     {
@@ -1303,7 +743,7 @@
       "version": 0,
       "active": true,
       "question": "Unload a kernel module",
-      "answer": "modprobe -r \u003cmodulename\u003ermmod \u003cmodulename\u003e",
+      "answer": "modprobe -r <modulename>rmmod <modulename>",
       "reviews": []
     },
     {
@@ -1319,7 +759,7 @@
       "version": 0,
       "active": true,
       "question": "In YAML, what the three ways of doing multi-line strings and how do they work?",
-      "answer": "my_key: |  -\u003e creates a string of all lines below, keeping newlines    my_key: \u003e -\u003e creates a string of all lines below, changing newlines to spaces   And using quotes",
+      "answer": "my_key: |  -> creates a string of all lines below, keeping newlines    my_key: > -> creates a string of all lines below, changing newlines to spaces   And using quotes",
       "reviews": []
     },
     {
@@ -1343,7 +783,7 @@
       "version": 0,
       "active": true,
       "question": "How do you check if a binary is statically linked?",
-      "answer": "ldd \u003cname\u003e If it prints .so's and returns 0 it's dynamically linked. If it returns 1 it's statically linked.",
+      "answer": "ldd <name> If it prints .so's and returns 0 it's dynamically linked. If it returns 1 it's statically linked.",
       "reviews": []
     },
     {
@@ -1367,7 +807,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of a .pub public key?",
-      "answer": "\u003ckeytype\u003e \u003ckeybody\u003e \u003ckeyname\u003e",
+      "answer": "<keytype> <keybody> <keyname>",
       "reviews": []
     },
     {
@@ -1375,7 +815,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of the known_hosts file?",
-      "answer": "\u003chostname-list\u003e \u003ckey-type\u003e \u003cpublic-key\u003e   Note that hostname-list may be hashed for security.",
+      "answer": "<hostname-list> <key-type> <public-key>   Note that hostname-list may be hashed for security.",
       "reviews": []
     },
     {
@@ -1398,8 +838,16 @@
       "id": "rb087e7msp",
       "version": 0,
       "active": true,
-      "question": "bold vs italics in markdown",
-      "answer": "**bold** *italics*",
+      "question": "markdown: how do you make text bold?",
+      "answer": "**bold**",
+      "reviews": []
+    },
+    {
+      "id": "wb087e7msp",
+      "version": 0,
+      "active": true,
+      "question": "markdown: how do you make text italic?",
+      "answer": "*italics*",
       "reviews": []
     },
     {
@@ -1407,7 +855,7 @@
       "version": 0,
       "active": true,
       "question": "markdown: block quote, and nested block quote",
-      "answer": "\u003e what he said \u003e another line of what he said \u003e \u003e what she said \u003e \u003e another line of what she said",
+      "answer": "> what he said > another line of what he said > > what she said > > another line of what she said",
       "reviews": []
     },
     {
@@ -1439,23 +887,7 @@
       "version": 0,
       "active": true,
       "question": "Redirect stderr to stdout",
-      "answer": "my-command 2\u003e\u00261   Has to be the last clause in a command.",
-      "reviews": []
-    },
-    {
-      "id": "7ru9v7qrma",
-      "version": 0,
-      "active": true,
-      "question": "concourse: what are the three types of job steps?",
-      "answer": "get, put, task",
-      "reviews": []
-    },
-    {
-      "id": "5gz3alr33o",
-      "version": 0,
-      "active": true,
-      "question": "concourse: what is each of the following objects for? pipeline resource resource type job",
-      "answer": "pipeline: the overall file that is made up of resources and jobs   resource: represent external state, can be source code, dependencies, deployments or even more abstract like the time resource   resource type: for declaring resource types that are not packaged with concourse   job: a grouping of steps; there can be multiple jobs per pipeline, all with their own set of steps and exit conditions",
+      "answer": "my-command 2>\u00261   Has to be the last clause in a command.",
       "reviews": []
     },
     {
@@ -1491,35 +923,11 @@
       "reviews": []
     },
     {
-      "id": "28k9h35s6n",
+      "id": "kpusgkjoad",
       "version": 0,
       "active": true,
-      "question": "What does $$ represent?",
-      "answer": "The PID of the current process",
-      "reviews": []
-    },
-    {
-      "id": "ryrarwhr1a",
-      "version": 0,
-      "active": true,
-      "question": "What does the following do? 1) ${VAR:-help} 2) ${VAR:=help}  3) ${VAR:?help}  4) ${VAR:+help}",
-      "answer": "1) If VAR is unset or null, substitute 'help'. Else value of VAR. 2) If VAR is unset or null assign 'help' to it. Else value of VAR. Diff between this and 1 is that VAR gets 'help' assigned to it before substituting VAR. 3) If VAR is unset or null, print 'help' to stderr and exit with non-zero; otherwise substitute VAR 4) If VAR is unset or null, substitute null; otherwise substitute 'help'",
-      "reviews": []
-    },
-    {
-      "id": "c9vb494mlz",
-      "version": 0,
-      "active": true,
-      "question": "What parts is a JWT made up of?",
-      "answer": "1) header    a) token type    b) signing algorithm 2) payload 3) signature",
-      "reviews": []
-    },
-    {
-      "id": "539cgz60ri",
-      "version": 0,
-      "active": true,
-      "question": "Why is a JWT signed but not encrypted?",
-      "answer": "Many pieces of data we transmit have no need to be encrypted, since they are public or unsensitive data. In these cases, encryption would do nothing more than add overhead. Of course, we can still encrypt a JWT if the data is sensitive.",
+      "question": "What are the three main locations I'd expect to find crontabs in?",
+      "answer": "/etc/crontabs /etc/cron.d  /var/spool/cron/crontabs",
       "reviews": []
     },
     {
@@ -1531,51 +939,11 @@
       "reviews": []
     },
     {
-      "id": "kpusgkjoad",
-      "version": 0,
-      "active": true,
-      "question": "What are the three main locations I'd expect to find crontabs in?",
-      "answer": "/etc/crontabs /etc/cron.d  /var/spool/cron/crontabs",
-      "reviews": []
-    },
-    {
       "id": "57suxpmxih",
       "version": 0,
       "active": true,
       "question": "In grep, option for only printing what matches the pattern",
       "answer": "-o",
-      "reviews": []
-    },
-    {
-      "id": "etm92xd8by",
-      "version": 0,
-      "active": true,
-      "question": "Command to eliminate multiple identical characters",
-      "answer": "tr -s \u003ccharacter\u003e",
-      "reviews": []
-    },
-    {
-      "id": "y69b3ummjt",
-      "version": 0,
-      "active": true,
-      "question": "Command to print first and third fields of /etc/passwd",
-      "answer": "cut -d : -f 1,3 /etc/passwd",
-      "reviews": []
-    },
-    {
-      "id": "aw13t9fjxf",
-      "version": 0,
-      "active": true,
-      "question": "xargs: set the number of arguments that are passed to each iteration of command",
-      "answer": "xargs -n \u003cnargs\u003e \u003ccommand\u003e",
-      "reviews": []
-    },
-    {
-      "id": "1bgqodaws8",
-      "version": 0,
-      "active": true,
-      "question": "docopt: three types of brackets used and what they mean",
-      "answer": "\u003cmy_arg\u003e: my_arg is a positional argument   (--arg2 \u003cvalue\u003e): --arg2 is a required argument (though is more often used to group arguments that are required together, or mutually exclusive)   [--flag1]: --flag1 is an optional flag",
       "reviews": []
     },
     {
@@ -1663,7 +1031,7 @@
       "version": 0,
       "active": true,
       "question": "tar: 6 crucial options and what they do",
-      "answer": "-c: compress -x: extract  -z: gzip compression -v: verbose (list files that go into tar) -f \u003cfilename\u003e: tarball to decompress, or tarball to create -C \u003cpath\u003e: change working dir to path before doing the thing",
+      "answer": "-c: compress -x: extract  -z: gzip compression -v: verbose (list files that go into tar) -f <filename>: tarball to decompress, or tarball to create -C <path>: change working dir to path before doing the thing",
       "reviews": []
     },
     {
@@ -1677,7 +1045,7 @@
     {
       "id": "5e3q0bwq8m",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "wg: what are the two types of sections in the .ini file? Which keys go under each of them (8 keys total)? Which keys are optional and which are required?",
       "answer": "[Interface] PrivateKey: self-evident ListenPort: the port that the interface listens on for UDP datagrams FwMark: a 32-bit fwmark (networking stuff)   [Peer] Endpoint: the IP address or hostname, and port of the peer PublicKey: self-evident AllowedIPs: IP address ranges that are allowed to come from, and that are routed to, this interface PresharedKey: key to bolster post-quantum encryption PersistentKeepalive: interval (in seconds) to send keepalives to maintain validity of record in NAT or stateful firewall   Required: PrivateKey, PublicKey, AllowedIPs   Optional: ListenPort, FwMark, PresharedKey, Endpoint, PersistentKeepalive",
       "reviews": []
@@ -1735,7 +1103,7 @@
       "version": 0,
       "active": true,
       "question": "iptables: command to see a specific chain",
-      "answer": "iptables -L \u003cchain_name\u003e -t \u003ctable_name\u003e",
+      "answer": "iptables -L <chain_name> -t <table_name>",
       "reviews": []
     },
     {
@@ -1743,7 +1111,7 @@
       "version": 0,
       "active": true,
       "question": "tcpdump: listen on a specific interface",
-      "answer": "tcpdump -i \u003cinterface\u003e",
+      "answer": "tcpdump -i <interface>",
       "reviews": []
     },
     {
@@ -1752,14 +1120,6 @@
       "active": true,
       "question": "tcpdump: filter packets to the ones that are UDP, and from the source 192.168.1.3",
       "answer": "tcpdump udp and src host 192.168.1.3",
-      "reviews": []
-    },
-    {
-      "id": "zt9aq5tmop",
-      "version": 0,
-      "active": true,
-      "question": "What are the four main request methods in CoAP?",
-      "answer": "GET, POST, PUT, DELETE",
       "reviews": []
     },
     {
@@ -1791,7 +1151,7 @@
       "version": 0,
       "active": true,
       "question": "What are the three typical sections in a systemd unit file?",
-      "answer": "[Unit] [\u003cunit-type\u003e] [Install]",
+      "answer": "[Unit] [<unit-type>] [Install]",
       "reviews": []
     },
     {
@@ -1871,7 +1231,7 @@
       "version": 0,
       "active": true,
       "question": "\"What are /etc/subuid and /etc/subgid for? Give an example of a line. What does \"\"sub\"\" stand for?\"",
-      "answer": "subuid: each line contains a user name, and a range of uids that user is allowed to use   subgid: each line contains a user name, and a range of gids that user is allowed to use   adam:200:100   sub -\u003e subordinate",
+      "answer": "subuid: each line contains a user name, and a range of uids that user is allowed to use   subgid: each line contains a user name, and a range of gids that user is allowed to use   adam:200:100   sub -> subordinate",
       "reviews": []
     },
     {
@@ -1887,7 +1247,7 @@
       "version": 0,
       "active": true,
       "question": "How to add/delete a user to/from a group?",
-      "answer": "addgroup \u003cuser\u003e \u003cgroup\u003e   delgroup \u003cuser\u003e \u003cgroup\u003e",
+      "answer": "addgroup <user> <group>   delgroup <user> <group>",
       "reviews": []
     },
     {
@@ -1895,7 +1255,7 @@
       "version": 0,
       "active": true,
       "question": "How to add/delete a group?",
-      "answer": "addgroup \u003cgroup\u003e delgroup \u003cgroup\u003e",
+      "answer": "addgroup <group> delgroup <group>",
       "reviews": []
     },
     {
@@ -1903,7 +1263,7 @@
       "version": 0,
       "active": true,
       "question": "Create a user",
-      "answer": "adduser \u003cuser\u003e",
+      "answer": "adduser <user>",
       "reviews": []
     },
     {
@@ -1920,30 +1280,6 @@
       "active": true,
       "question": "What is rsync?",
       "answer": "It is cp + scp, with some optimizations to avoid copying files that already exist at the destination. Plus a bunch more...",
-      "reviews": []
-    },
-    {
-      "id": "j19ahewue7",
-      "version": 0,
-      "active": true,
-      "question": "How to remove files or directories from build context when building a docker image?",
-      "answer": "Add them to your .dockerignore",
-      "reviews": []
-    },
-    {
-      "id": "0piozsckex",
-      "version": 0,
-      "active": true,
-      "question": "shell: what is the difference between ( ... ) and { ... } when grouping commands (such as in a function)?",
-      "answer": "In both cases, the command group inherits a nearly-identical environment to the calling process. However, changes made to the environment inside ( ... ) are NOT persisted to the parent environment, whereas changes made with { ... } ARE persisted to the parent environment.",
-      "reviews": []
-    },
-    {
-      "id": "8qqcwc0wdk",
-      "version": 0,
-      "active": true,
-      "question": "shell: what is the return code of a compound command?",
-      "answer": "It is the return code of the last command in the compound command.",
       "reviews": []
     },
     {
@@ -1975,7 +1311,7 @@
       "version": 0,
       "active": true,
       "question": "What is a linux bridge? How do you make one? How do you add interfaces to it? How do you remove an interface from it?",
-      "answer": "A linux bridge can be thought of as an ethernet switch, with a port on the switch that can be assigned a L3 address. It connects interfaces together via a layer 2 network.  ip link add \u003cname\u003e type bridge ip link set eth0 master \u003cname\u003e ip link set eth0 nomaster",
+      "answer": "A linux bridge can be thought of as an ethernet switch, with a port on the switch that can be assigned a L3 address. It connects interfaces together via a layer 2 network.  ip link add <name> type bridge ip link set eth0 master <name> ip link set eth0 nomaster",
       "reviews": []
     },
     {
@@ -1983,7 +1319,7 @@
       "version": 0,
       "active": true,
       "question": "What is a veth interface? How do you create one?",
-      "answer": "Think of it as two interfaces connected by a single ethernet cable. All traffic that goes to one goes to the other, and vice versa. Useful for containers, since one interface can be moved into a different network namespace.   ip link add \u003cname\u003e type veth peer name \u003cpeer_name\u003e",
+      "answer": "Think of it as two interfaces connected by a single ethernet cable. All traffic that goes to one goes to the other, and vice versa. Useful for containers, since one interface can be moved into a different network namespace.   ip link add <name> type veth peer name <peer_name>",
       "reviews": []
     },
     {
@@ -1999,7 +1335,7 @@
       "version": 0,
       "active": true,
       "question": "Command to reload a systemd unit's config when changed? What are its limitations?",
-      "answer": "systemctl daemon-reload   Doesn't restart the daemons themselves; you must run systemctl restart \u003cunit\u003e to do that.",
+      "answer": "systemctl daemon-reload   Doesn't restart the daemons themselves; you must run systemctl restart <unit> to do that.",
       "reviews": []
     },
     {
@@ -2031,7 +1367,7 @@
       "version": 0,
       "active": true,
       "question": "In regex, what does each of the 4 kinds of brackets do?",
-      "answer": "() -\u003e used for grouping and capturing [] -\u003e used for character classes {} -\u003e used for repetition operators \u003c\u003e -\u003e used for naming groups",
+      "answer": "() -> used for grouping and capturing [] -> used for character classes {} -> used for repetition operators <> -> used for naming groups",
       "reviews": []
     },
     {
@@ -2087,47 +1423,7 @@
       "version": 0,
       "active": true,
       "question": "How is a VLAN configured in debian?",
-      "answer": "iface \u003cifname\u003e.\u003cvlan_id\u003e inet (static|manual|dhcp)     other config here   If \u003cvlan_id\u003e is present, NetworkManager is intelligent enough to know that means to configure it as a VLAN.",
-      "reviews": []
-    },
-    {
-      "id": "n4n4sikeux",
-      "version": 0,
-      "active": true,
-      "question": "mutt: filter the messages displayed on the screen   How do you get the following: - all messages - unread messages - read messages - tagged messages - deleted messages",
-      "answer": "Use `l`.   ~A ~U ~R ~T ~D",
-      "reviews": []
-    },
-    {
-      "id": "fd7y3wooh5",
-      "version": 0,
-      "active": true,
-      "question": "mutt: tag all messages matching a pattern",
-      "answer": "T",
-      "reviews": []
-    },
-    {
-      "id": "jozqtkgoba",
-      "version": 0,
-      "active": true,
-      "question": "mutt: tag a single message",
-      "answer": "t",
-      "reviews": []
-    },
-    {
-      "id": "4qyk4dci0p",
-      "version": 0,
-      "active": true,
-      "question": "mutt: perform an action on all tagged messages",
-      "answer": ";\u003caction_key\u003e",
-      "reviews": []
-    },
-    {
-      "id": "bacpd7z56j",
-      "version": 0,
-      "active": true,
-      "question": "How do you copy text in putty?",
-      "answer": "Just select the text - it is copied automatically.",
+      "answer": "iface <ifname>.<vlan_id> inet (static|manual|dhcp)     other config here   If <vlan_id> is present, NetworkManager is intelligent enough to know that means to configure it as a VLAN.",
       "reviews": []
     },
     {
@@ -2175,7 +1471,7 @@
       "version": 0,
       "active": true,
       "question": "What is the basic format of the `find` command?",
-      "answer": "find [\u003cpath_to_search\u003e...] [\u003cexpression\u003e]   where path_to_search is ended by the first expression that starts with -, ! or (",
+      "answer": "find [<path_to_search>...] [<expression>]   where path_to_search is ended by the first expression that starts with -, ! or (",
       "reviews": []
     },
     {
@@ -2191,23 +1487,7 @@
       "version": 0,
       "active": true,
       "question": "How do you do NOT, AND and OR in the `find` command?",
-      "answer": "NOT -\u003e ! \u003cexpression\u003e AND -\u003e \u003cexpression\u003e -a \u003cexpression\u003e OR -\u003e \u003cexpression\u003e -o \u003cexpression\u003e",
-      "reviews": []
-    },
-    {
-      "id": "78ihh9wgbi",
-      "version": 0,
-      "active": true,
-      "question": "What are the three main security problems with websites? What is the one I always think is a security problem?",
-      "answer": "XSS CSRF SQL injection   CORS",
-      "reviews": []
-    },
-    {
-      "id": "v50t7wp30y",
-      "version": 0,
-      "active": true,
-      "question": "What is Hyper-V?",
-      "answer": "It is a hypervisor that runs on x86-64 windows.",
+      "answer": "NOT -> ! <expression> AND -> <expression> -a <expression> OR -> <expression> -o <expression>",
       "reviews": []
     },
     {
@@ -2271,191 +1551,7 @@
       "version": 0,
       "active": true,
       "question": "What is vmlinux? What is vmlinuz?",
-      "answer": "vmlinux is a statically linked executable file that contains the linux kernel. If compressed (gzip), is named vmlinuz (z -\u003e gzip).",
-      "reviews": []
-    },
-    {
-      "id": "qlju9qcs6k",
-      "version": 0,
-      "active": true,
-      "question": "\"shell: substitute variable VAR, but raise an error, exit and print \"\"there is an error\"\" if the variable is null or undefined.\"",
-      "answer": "\"\"\"${VAR:?there is an error}\"\"\"",
-      "reviews": []
-    },
-    {
-      "id": "ney7sv8469",
-      "version": 0,
-      "active": true,
-      "question": "docker swarm: what are the four basic objects pertaining to running containers? Order them from largest to smallest.",
-      "answer": "stack service task container",
-      "reviews": []
-    },
-    {
-      "id": "7qhjksy2pb",
-      "version": 0,
-      "active": true,
-      "question": "shell: Write an if - else if - else statement.",
-      "answer": "if \u003ccondition\u003e; then     something1 elif \u003ccondition\u003e; then     something2 else     something3 fi",
-      "reviews": []
-    },
-    {
-      "id": "o61ev2zjf6",
-      "version": 0,
-      "active": true,
-      "question": "\"ansible: create a basic playbook with a task that prints \"\"hello world\"\"\"",
-      "answer": "\"--- - name: print hello world   hosts: all   tasks:   - name: print \"\"hello world\"\"     debug:       msg: \"\"hello world\"\"\"",
-      "reviews": []
-    },
-    {
-      "id": "crmjpihw2u",
-      "version": 0,
-      "active": true,
-      "question": "\"ansible: what is valid in the \"\"hosts\"\" field of a play?\"",
-      "answer": "\"The input to the \"\"hosts\"\" field is a \"\"pattern\"\"; this can specify an IP address or hostname, a group name, a name of a host in the inventory, or any of the above via regex or wildcards.\"",
-      "reviews": []
-    },
-    {
-      "id": "tvd1fwgvzm",
-      "version": 0,
-      "active": true,
-      "question": "ansible: how do you specify the location of your inventory file in ansible.cfg?",
-      "answer": "[defaults] inventory = inventory/all.yml",
-      "reviews": []
-    },
-    {
-      "id": "k2fzgolcyz",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what are the four locations that ansible looks in for its configuration (order them from highest precedence to lowest precedence)?",
-      "answer": "value of ANSIBLE_CONFIG ./ansible.cfg ~/.ansible.cfg /etc/ansible/ansible.cfg",
-      "reviews": []
-    },
-    {
-      "id": "qftaigq45z",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what keyword is added to run a single task in a play on localhost?",
-      "answer": "delegate_to: 127.0.0.1",
-      "reviews": []
-    },
-    {
-      "id": "z30zkradsj",
-      "version": 0,
-      "active": true,
-      "question": "ansible: how to skip gathering facts?",
-      "answer": "Add `gather_facts: false` to play header.",
-      "reviews": []
-    },
-    {
-      "id": "vx3iahvtbm",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what keyword is added to a task to continue executing a playbook in the event that it fails?",
-      "answer": "ignore_errors: true",
-      "reviews": []
-    },
-    {
-      "id": "lths6hnq0m",
-      "version": 0,
-      "active": true,
-      "question": "ansible: keyword that is added to play or task that is equivalent to sudo? Also, how would you become a user other than sudo?",
-      "answer": "become: true become_user: t917981",
-      "reviews": []
-    },
-    {
-      "id": "lft1ovwso2",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what is the difference between double and single quotes?",
-      "answer": "You can use escape sequences (\\n, \\t etc) with double quotes. Single quotes are literal.",
-      "reviews": []
-    },
-    {
-      "id": "tdbr5xcq0e",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what do the files in group_vars/ and host_vars/ do?",
-      "answer": "They set variables for the groups (for group_vars/) and the hosts (for host_vars/) in your inventory file. Variables can be set directly in the inventory file, but it can be beneficial to put them in separate files.",
-      "reviews": []
-    },
-    {
-      "id": "51y8qrphus",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what are the four directories I'd commonly find at the root of an ansible project?",
-      "answer": "host_vars/ group_vars/ files/ templates/",
-      "reviews": []
-    },
-    {
-      "id": "4jfmw8er3t",
-      "version": 0,
-      "active": true,
-      "question": "ansible: how do you tag a play or task?",
-      "answer": "Use the `tags` key. Can be a single value or a list.",
-      "reviews": []
-    },
-    {
-      "id": "tjyi89k158",
-      "version": 0,
-      "active": true,
-      "question": "ansible: from command line, how do you: 1) list tags 2) only run plays and tasks with `prod` tag 3) only run plays and tasks with `prod` and `dev` tags 4) skip plays and tasks with `prod` tag 5) skip plays and tasks with `prod` and `dev` tags",
-      "answer": "1) ansible-playbook playbook.yml --list-tags 2) ansible-playbook playbook.yml --tags prod 3) ansible-playbook playbook.yml --tags [prod, dev] 4) ansible-playbook playbook.yml --skip-tags prod 5) ansible-playbook playbook.yml --skip-tags [prod, dev]",
-      "reviews": []
-    },
-    {
-      "id": "r5ajbx7npk",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what are the two special tags, and how do they affect the behaviour of a play?",
-      "answer": "always: always runs, including when other tags are specified on the command line, unless it is explicitly skipped   never: never runs unless explicitly specified (or another tag on that task is explicitly specified) on the command line",
-      "reviews": []
-    },
-    {
-      "id": "ale42axw3r",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what are the variable names for each of the following: 1) specifying the hostname of the host you're connecting to 2) specifying the SSH port to connect to 3) specifying the connection type to use 4) specifying the user to log in as 5) specifying the password to use to log in",
-      "answer": "1) ansible_host 2) ansible_port 3) ansible_connection 4) ansible_user 5) ansible_password",
-      "reviews": []
-    },
-    {
-      "id": "jqyo03tffu",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what are the two groups that always exist by default?",
-      "answer": "`all` and `ungrouped`",
-      "reviews": []
-    },
-    {
-      "id": "zrk9r33k9q",
-      "version": 0,
-      "active": true,
-      "question": "ansible: in a yaml inventory file, what are the three keys that a group may have? What is each for?",
-      "answer": "children: groups that are inside of this group hosts: hosts that are inside this group vars: group vars that apply to this group",
-      "reviews": []
-    },
-    {
-      "id": "lxc6t36mss",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what is the difference between include_* and import_*?",
-      "answer": "\"include_* is dynamic, so whatever you're including is included at runtime. For example, if you have an include_* in a loop, it will include all of those things once for each iteration of the loop.   import_* statements are done once, when the playbook is \"\"compiled\"\". When you use import_* it is as if you have written whatever you are importing directly in that file.\"",
-      "reviews": []
-    },
-    {
-      "id": "punx9arx6x",
-      "version": 0,
-      "active": true,
-      "question": "ansible: what can be included and what can be imported?",
-      "answer": "include_vars include_role include_tasks   import_playbook import_role import_tasks",
-      "reviews": []
-    },
-    {
-      "id": "xerpyhdnnc",
-      "version": 0,
-      "active": true,
-      "question": "ansible: set the value of my_var to my_var from credstash",
-      "answer": "\"my_var: \"\"{{ lookup('credstash', 'my_var', region='ca-central-1') }}\"\"\"",
+      "answer": "vmlinux is a statically linked executable file that contains the linux kernel. If compressed (gzip), is named vmlinuz (z -> gzip).",
       "reviews": []
     },
     {
@@ -2483,19 +1579,11 @@
       "reviews": []
     },
     {
-      "id": "tzdpi26639",
-      "version": 0,
-      "active": true,
-      "question": "What is the header key that is used to specify the type of the data in the body of the request? What are the values for the following types: 1) JSON 2) form values in body 3) multipart form 4) html 5) css 6) xml",
-      "answer": "Content-Type   1) application/json 2) application/x-www-form-urlencoded 3) multipart/form-data 4) text/html 5) text/css 6) text/xml",
-      "reviews": []
-    },
-    {
       "id": "hzkvxrii6n",
       "version": 0,
       "active": true,
       "question": "What are the five basic parts of glob patterns?",
-      "answer": "* -\u003e zero or more of any character ** -\u003e matches zero or more directories ? -\u003e matches any single character [abc] -\u003e matches a single character that is a, b or c [a-z] -\u003e matches a single character in the range a-z",
+      "answer": "* -> zero or more of any character ** -> matches zero or more directories ? -> matches any single character [abc] -> matches a single character that is a, b or c [a-z] -> matches a single character in the range a-z",
       "reviews": []
     },
     {
@@ -2531,22 +1619,6 @@
       "reviews": []
     },
     {
-      "id": "x1mb4veqmk",
-      "version": 0,
-      "active": true,
-      "question": "In broad strokes, how is grafana configured?",
-      "answer": "It has default config that is generally a part of the package (if using package manager), and a config meant to be edited by the user at /etc/grafana/grafana.ini.   The config has a path to a directory where provisioning files are kept. Inside this directory we have:   datasources/: holds yaml files that define data sources plugins/: holds yaml files that define plugins to run at startup dashboards/: holds yaml files that define locations to load dashboards from",
-      "reviews": []
-    },
-    {
-      "id": "rom662as5a",
-      "version": 0,
-      "active": true,
-      "question": "In broad strokes, how is prometheus configured?",
-      "answer": "Prometheus is configured in one big yaml config file. The exception is rule files, which contain either recording rules or alerting rules. Pointers to these files are given in the main config file.",
-      "reviews": []
-    },
-    {
       "id": "c2vcoeqtrs",
       "version": 0,
       "active": true,
@@ -2571,14 +1643,6 @@
       "reviews": []
     },
     {
-      "id": "li69f83x3n",
-      "version": 0,
-      "active": true,
-      "question": "In bash, how do you write an if statement that checks if VAR matches regex?",
-      "answer": "\"if [[ \"\"$VAR\"\" =~ 'regex_here' ]]; then     ... fi\"",
-      "reviews": []
-    },
-    {
       "id": "8d6xig2lca",
       "version": 0,
       "active": true,
@@ -2599,31 +1663,7 @@
       "version": 0,
       "active": true,
       "question": "grafana: how do you manipulate the name a time series has in the legend?",
-      "answer": "\"{{=\u003c% %\u003e=}} In the Legend field of the query, enter the name. You can do basic templating using golang template language and labels from the metric, i.e. \"\"{{ instance }}\"\".\"",
-      "reviews": []
-    },
-    {
-      "id": "ai384yy9mi",
-      "version": 0,
-      "active": true,
-      "question": "How are double square brackets in bash different from single square brackets?",
-      "answer": "[] -\u003e will work with any POSIX compliant shell [[]] -\u003e bash specific, but gives you more operators like =~ and || in place of -o",
-      "reviews": []
-    },
-    {
-      "id": "j5230e68az",
-      "version": 0,
-      "active": true,
-      "question": "What is cadvisor?",
-      "answer": "Stands for Container Advisor. It is daemon that collects, aggregates, processes, and exports information about running containers. It exposes prometheus metrics out of the box.",
-      "reviews": []
-    },
-    {
-      "id": "s35dj7r8dc",
-      "version": 0,
-      "active": true,
-      "question": "ansible: module to exit out of a play?",
-      "answer": "- name: stop the play   meta: end_play",
+      "answer": "\"{{=<% %>=}} In the Legend field of the query, enter the name. You can do basic templating using golang template language and labels from the metric, i.e. \"\"{{ instance }}\"\".\"",
       "reviews": []
     },
     {
@@ -2635,19 +1675,11 @@
       "reviews": []
     },
     {
-      "id": "gdp320snj6",
-      "version": 0,
-      "active": true,
-      "question": "shell: what special variable holds all arguments past $0?",
-      "answer": "$@",
-      "reviews": []
-    },
-    {
       "id": "nc17wcpn9i",
       "version": 0,
       "active": true,
       "question": "What command should always be used to look at iptables rules? Why?",
-      "answer": "iptables -v -n --line-numbers -L \u003cchain\u003e -t \u003ctable\u003e   -v: actually shows you the entire rule -n: doesn't resolve port numbers to useless names --line-numbers: shows line numbers (needed for editing rules)",
+      "answer": "iptables -v -n --line-numbers -L <chain> -t <table>   -v: actually shows you the entire rule -n: doesn't resolve port numbers to useless names --line-numbers: shows line numbers (needed for editing rules)",
       "reviews": []
     },
     {
@@ -2655,7 +1687,7 @@
       "version": 0,
       "active": true,
       "question": "What is the naming format for source rpm packages? What is the naming format for binary rpm packages?",
-      "answer": "\"Both are in the format:  \u003cname\u003e-\u003cversion\u003e-\u003crelease\u003e.\u003carch\u003e.rpm   In the case of source packages, \u003carch\u003e is \"\"src\"\".\"",
+      "answer": "\"Both are in the format:  <name>-<version>-<release>.<arch>.rpm   In the case of source packages, <arch> is \"\"src\"\".\"",
       "reviews": []
     },
     {
@@ -2667,26 +1699,18 @@
       "reviews": []
     },
     {
-      "id": "kiimoc16xi",
-      "version": 0,
-      "active": true,
-      "question": "What does rpm stand for?",
-      "answer": "Originally Red Hat Package Manager, but now it is apparently a recursive acronym.",
-      "reviews": []
-    },
-    {
       "id": "l4z9ahql9t",
       "version": 0,
       "active": true,
       "question": "What is dnf? What versions of relevant operating systems is it the default in?",
-      "answer": "It is a replacement for yum. yum has poor performance, high memory usage and slow dependency resolution, and these problems have not been resolved.   dnf is the default package manager in Fedora 22+, and in RHEL/CentOS 8+.",
+      "answer": "It is a faster, lower-memory-usage replacement for yum.\ndnf is the default package manager in Fedora 22+, and in RHEL/CentOS 8+.",
       "reviews": []
     },
     {
       "id": "d1hjexjmci",
       "version": 0,
       "active": true,
-      "question": "What is the difference between rpm and yum/dnf?",
+      "question": "What is the difference between rpm, yum and dnf?",
       "answer": "\"rpm requires manual management. It cannot get .rpm files from the internet - to use it, you must always have a .rpm file on your filesystem that you reference. It also does not do any dependency resolution beyond checking that a package's dependencies are installed prior to installing that package. This can lead to \"\"dependency hell\"\".    yum and dnf call rpm for the functions that rpm takes care of. However, they also take care of dependency resolution, and of tracking remote repositories and downloading rpms from them. These are the tools you should generally be using if you can.\"",
       "reviews": []
     },
@@ -2723,51 +1747,11 @@
       "reviews": []
     },
     {
-      "id": "i8s4wy8jwh",
-      "version": 0,
-      "active": true,
-      "question": "shell: how is a for loop done? What is important to note?",
-      "answer": "for element in $elements; do     \u003cstatements\u003e... done   Note that there are no quotes around $elements; this is necessary because the shell separates parts of $elements by spaces, and using double quotes would make it all one string.",
-      "reviews": []
-    },
-    {
-      "id": "36kw7yhgdz",
-      "version": 0,
-      "active": true,
-      "question": "What three ways can you specify kubeconfig?",
-      "answer": "1) pass path to kubeconfig in --kubeconfig argument 2) put path to kubeconfig in KUBECONFIG env variable 3) put kubeconfig at ~/.kube/config",
-      "reviews": []
-    },
-    {
-      "id": "6vjq5uq1vh",
-      "version": 0,
-      "active": true,
-      "question": "What is a URI fragment?",
-      "answer": "\"It is the bit after the #. Comes after the optional query string. Generally takes you to a heading on a page.\"",
-      "reviews": []
-    },
-    {
       "id": "t7a65x30dt",
       "version": 0,
       "active": true,
       "question": "What environment variables are standards for specifying hosts that HTTP and HTTPS connections should be proxied through? What environment variable is used to exempt hosts from this? Which are lowercase, and which are uppercase?",
       "answer": "http_proxy https_proxy   no_proxy   The way they are defined on abewlnpcc02, they are all lowercase. However, there are some implementations that look for uppercase. To be safe, define both. There is no standard here. The way they are interpreted depends on the application.",
-      "reviews": []
-    },
-    {
-      "id": "18jrm880hf",
-      "version": 0,
-      "active": true,
-      "question": "What is the difference between URIs, URLs and URNs? What does each stand for?",
-      "answer": "\"URI: universal resource identifier URL: universal resource locator URN: universal resource name    All URNs and URLs are URIs; URIs are the general name for everything of this format.   URLs have a scheme, and tell you what the location of the resource is.   URNs are just a name for an abstract, unresolvable name for a resource. They are required to use a special notation with \"\"urn:\"\" in the beginning.\"",
-      "reviews": []
-    },
-    {
-      "id": "rgeyjk0xjb",
-      "version": 0,
-      "active": true,
-      "question": "Should you include a trailing slash at the end of a URL? What are the two main considerations here?",
-      "answer": "\"There is one case where there is a clear choice: when serving a file (not anything dynamically generated) it makes no sense to put a slash at the end since that's not how Unix filesystems do it. For everything else, it doesn't matter, so long as you take the following into account:   1) Search engines regard slash-terminated and non-slash-terminated as different endpoints, so it is best to have one redirect to the other; you can also use a canonical meta tag.   2) \"\"adam\"\" relative to \"\"/person/\"\" is \"\"/person/adam\"\", whereas \"\"adam\"\" relative to \"\"/person\"\" is \"\"/adam\"\", so it is best to put a slash at the end if you are using relative URLs\"",
       "reviews": []
     },
     {
@@ -2831,7 +1815,7 @@
       "version": 0,
       "active": true,
       "question": "How do you totally delete your bash history?",
-      "answer": "Log out of all bash sessions but one, then:   cat /dev/null \u003e ~/.bash_history history -c exit",
+      "answer": "Log out of all bash sessions but one, then:   cat /dev/null > ~/.bash_history history -c exit",
       "reviews": []
     },
     {
@@ -2839,15 +1823,7 @@
       "version": 0,
       "active": true,
       "question": "YAML: if I have a key, myKey, with arbitrary data under it, what is the easiest way to include it under multiple other keys?",
-      "answer": "myKey: \u0026my_key   arbitrary: data   other_key_1:   \u003c\u003c: *my_key   other_key_2:   \u003c\u003c: *my_key",
-      "reviews": []
-    },
-    {
-      "id": "9aj144tu1j",
-      "version": 0,
-      "active": true,
-      "question": "What is the ARG directive for in a dockerfile? How do you use it?",
-      "answer": "It allows you to define a variable (with an optional default) that you can pass when calling `docker build` that can change the behaviour of the dockerfile.   ARG mydir=/default RUN ./my_script.sh ${mydir}",
+      "answer": "myKey: \u0026my_key   arbitrary: data   other_key_1:   <: *my_key   other_key_2:   <: *my_key",
       "reviews": []
     },
     {
@@ -2869,7 +1845,7 @@
     {
       "id": "kdumamxwqg",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are cloud native buildpacks? What is the central concept, and how does it work?",
       "answer": "Buildpacks have a somewhat long (2011) history, but presently they are a way to build your application code into a runnable OCI image. They can do some nice things, like autodetecting what type of project your code represents, and running the right build accordingly.   When a buildpack runs on code, there are two phases: 1) detect phase: detects whether it can build this code 2) build phase: set up build time and runtime environments, download deps, compile, set up startup scripts    The central concept is the builder. Builders consist of: 1) a build image, which is the base image used to build buildpacks 2) a runtime image, which is the base image used in the output image 3) an ordered list of buildpacks 4) a lifecycle, which runs the detect phase of each buildpack, and then runs the build phase of each buildpack that passed the detect phase",
       "reviews": []
@@ -2899,42 +1875,10 @@
       "reviews": []
     },
     {
-      "id": "9g6dgy16w2",
-      "version": 0,
-      "active": true,
-      "question": "What is nerdctl?",
-      "answer": "An alternative to the docker CLI tool. Talks to containerd instead of dockerd. Doesn't aim to compete with docker, only to be a way to test new features of containerd.",
-      "reviews": []
-    },
-    {
-      "id": "ezzvrn9475",
-      "version": 0,
-      "active": true,
-      "question": "What is Moby?",
-      "answer": "Moby is a framework for assembling new container systems without having to reinvent the wheel for the reuseable parts. A Docker thing.",
-      "reviews": []
-    },
-    {
-      "id": "j8rewqdzur",
-      "version": 0,
-      "active": true,
-      "question": "What is KubeVirt?",
-      "answer": "KubeVirt allows you to run existing VM-based workloads on kubernetes.",
-      "reviews": []
-    },
-    {
-      "id": "qywihnw7vq",
-      "version": 0,
-      "active": true,
-      "question": "What is RancherOS?",
-      "answer": "RancherOS is an operating system that is designed purely to run docker containers. This allows it to forgo a package manager and a lot of other stuff. It is currently in maintenance mode, and SUSE is working on a replacement.",
-      "reviews": []
-    },
-    {
       "id": "0dalz1sez1",
       "version": 0,
       "active": true,
-      "question": "What is gRPC? Who owns the standard?",
+      "question": "What is gRPC?\nWho owns the standard?",
       "answer": "First, let's define RPC. An RPC is just a way of calling a function on a remote device. Just like calling a function on the local machine it has input variables and output variables.   gRPC is a standardized (by CNCF) way to do RPCs. It uses Protocol Buffers, and allows any language to talk to any language.",
       "reviews": []
     },
@@ -3078,7 +2022,7 @@
       "id": "3tyrzbd2s8",
       "version": 0,
       "active": true,
-      "question": "What is LVM?What are the conceptual layers of LVM?",
+      "question": "What is LVM?\nWhat are the conceptual layers of LVM?",
       "answer": "Logical Volume Management. The idea is to provide an abstraction over drives so that you can combine them into one big logical drive, and then partition that.   logical volumes/filesystems logical partitions (configured out of volume group) volume groups physical volumes (mapped 1:1 with physical partitions) physical partitions hard drive",
       "reviews": []
     },
@@ -3141,9 +2085,9 @@
     {
       "id": "gtqhsbl79r",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the convention for naming .deb packages?",
-      "answer": "\u003cname\u003e_\u003cversion\u003e-\u003crevision\u003e_\u003carch\u003e.deb",
+      "answer": "<name>_<version>-<revision>_<arch>.deb",
       "reviews": []
     },
     {
@@ -3191,7 +2135,7 @@
       "version": 0,
       "active": true,
       "question": "curl: what option is used to download result to a file?",
-      "answer": "-o \u003cpath\u003e",
+      "answer": "-o <path>",
       "reviews": []
     },
     {
@@ -3199,7 +2143,7 @@
       "version": 0,
       "active": true,
       "question": "GHA: how do you make an env var from a script step accessible to subsequent steps? How do you access it?",
-      "answer": "\"Put the following in your script:   echo \"\"var_name=$var_name_in_script\"\" \u003e\u003e $GITHUB_ENV   It can then be accessed via `env.var_name`.\"",
+      "answer": "\"Put the following in your script:   echo \"\"var_name=$var_name_in_script\"\" > $GITHUB_ENV   It can then be accessed via `env.var_name`.\"",
       "reviews": []
     },
     {
@@ -3223,7 +2167,7 @@
       "version": 0,
       "active": true,
       "question": "For each of the three types of names for .so files: - What is the naming format? - What does the file contain? - If applicable, how is the file created?",
-      "answer": "real name: lib\u003cname\u003e.so.\u003cmajor\u003e.\u003cminor\u003e[.\u003cpatch\u003e] The real name is the file that contains the actual library code.   soname: lib\u003cname\u003e.so.\u003cmajor\u003e The soname is a symlink to (generally the latest version of) the real name version of the .so. It is created by `ldconfig`. It should be what is referenced in a compiled program.   linker name: lib\u003cname\u003e.so The linker name is the name that is used by the compiler at compile time to figure out what soname to require in executables. On a system it should be a symlink to the latest soname. Linker name is not created by `ldconfig`. This is because we want to maintain control over what soname the linker name is symlinked to, so that we can for example link against a different version of a library when in development.",
+      "answer": "real name: lib<name>.so.<major>.<minor>[.<patch>] The real name is the file that contains the actual library code.   soname: lib<name>.so.<major> The soname is a symlink to (generally the latest version of) the real name version of the .so. It is created by `ldconfig`. It should be what is referenced in a compiled program.   linker name: lib<name>.so The linker name is the name that is used by the compiler at compile time to figure out what soname to require in executables. On a system it should be a symlink to the latest soname. Linker name is not created by `ldconfig`. This is because we want to maintain control over what soname the linker name is symlinked to, so that we can for example link against a different version of a library when in development.",
       "reviews": []
     },
     {
@@ -3263,7 +2207,7 @@
       "version": 0,
       "active": true,
       "question": "What command can be used to format a partition as a specific filesystem?",
-      "answer": "mkfs.\u003cfsname\u003e   For example, mkfs.ext4 .",
+      "answer": "mkfs.<fsname>   For example, mkfs.ext4 .",
       "reviews": []
     },
     {
@@ -3319,7 +2263,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of a semver version? What does each part mean? Give regex that should match each part.",
-      "answer": "\u003cversion\u003e[-\u003cprerelease-version\u003e][+\u003cbuild-metadata\u003e]   version: the version [0-9]+\\.[0-9]+\\.[0-9]+   prerelease-version: for betas etc; always has lower precedence than versions without prerelease version [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*   build-metadata: for build info; ignored when determining version precedence [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*",
+      "answer": "<version>[-<prerelease-version>][+<build-metadata>]   version: the version [0-9]+\\.[0-9]+\\.[0-9]+   prerelease-version: for betas etc; always has lower precedence than versions without prerelease version [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*   build-metadata: for build info; ignored when determining version precedence [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*",
       "reviews": []
     },
     {
@@ -3333,7 +2277,7 @@
     {
       "id": "a0e8ta9ciw",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What command can be used to view namespaces?",
       "answer": "lsns",
       "reviews": []
@@ -3341,7 +2285,7 @@
     {
       "id": "u2zyx5hsjq",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What command can be used to run another command inside a set of namespaces?",
       "answer": "unshare",
       "reviews": []
@@ -3407,23 +2351,7 @@
       "version": 0,
       "active": true,
       "question": "How does sudo caching work?",
-      "answer": "It is configurable, but by default sudo caches calls in /run/sudo/ts/\u003cusername\u003e with a 15 minute timestamp.",
-      "reviews": []
-    },
-    {
-      "id": "d64g08y63y",
-      "version": 0,
-      "active": true,
-      "question": "bpftrace: how do you set a trace that prints every execution of a non-builtin shell command? Explain each part of this.",
-      "answer": "tracepoint:syscalls:sys_enter_execve { join(args-\u003eargv); }   tracepoint:syscalls:sys_enter_execve This means that the following script is executed when the execve syscall is entered.   join(args-\u003eargv) Prints a string array by accessing the argv element of the args struct.",
-      "reviews": []
-    },
-    {
-      "id": "a1erds7akp",
-      "version": 0,
-      "active": true,
-      "question": "bpftrace: where do you find info on events in /sys?",
-      "answer": "/sys/kernel/debug/tracing/events/*",
+      "answer": "It is configurable, but by default sudo caches calls in /run/sudo/ts/<username> with a 15 minute timestamp.",
       "reviews": []
     },
     {
@@ -3558,7 +2486,7 @@
       "id": "r8mqlgpi1n",
       "version": 0,
       "active": true,
-      "question": "What is a digest?",
+      "question": "Generally speaking, what is a digest?",
       "answer": "A digest is a small value, generated by a hash function, from a whole message. It is the same thing as a hash as far as I can tell.",
       "reviews": []
     },
@@ -3607,7 +2535,7 @@
       "version": 0,
       "active": true,
       "question": "systemd: how do you list the dependencies of a unit? How do you list the units that depend on a unit?",
-      "answer": "systemctl list-dependencies \u003cunit\u003e   systemctl list-dependencies --reverse \u003cunit\u003e",
+      "answer": "systemctl list-dependencies <unit>   systemctl list-dependencies --reverse <unit>",
       "reviews": []
     },
     {
@@ -3667,14 +2595,6 @@
       "reviews": []
     },
     {
-      "id": "2tx2iud6ts",
-      "version": 0,
-      "active": true,
-      "question": "What is the history of the use of docker by kubernetes?",
-      "answer": "1) K8s originally used only dockerd as the container engine.   2) It was recognized that it would be beneficial for it to be possible to use other container engines to make containers a reality in k8s. rkt was the first one.   3) CRI was defined to solve the problem of docker and rkt having different, and poorly-defined, interfaces to kubelet. For docker, CRI was satisfied by the creation of dockershim, an adaptor for CRI to dockerd inside the k8s project.   4) dockershim became a burden on the k8s maintainers. Mirantis and Docker agree to maintain a separate adaptor, cri-dockerd, that does the same thing but is in a different tree. Many CRI implementations now exist.",
-      "reviews": []
-    },
-    {
       "id": "ydtznzys1t",
       "version": 0,
       "active": true,
@@ -3709,7 +2629,7 @@
     {
       "id": "cephy6uted",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "flatpak: what are the two ways an application can get access to the containing OS? What are some examples?",
       "answer": "\"These things can be passed into the container, or the application can use \"\"portals\"\". Portals are a mechanism through which applications can interact with the host environment. They are D-Bus services that the enclosing system then deals with. Some examples of portals include the file picker, and printing.\"",
       "reviews": []
@@ -3717,7 +2637,7 @@
     {
       "id": "jqpniufsbd",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "flatpak: how do files from an application, for example executables, become accessible in the host system?",
       "answer": "They are hard linked out to the system at install time.",
       "reviews": []

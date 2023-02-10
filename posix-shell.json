@@ -1,0 +1,342 @@
+{
+  "name": "posix-shell",
+  "version": 0,
+  "cards": [
+    {
+      "id": "8tr7acx89v",
+      "version": 0,
+      "active": true,
+      "question": "get absolute path",
+      "answer": "realpath $path",
+      "reviews": []
+    },
+    {
+      "id": "pqlj5mt1ho",
+      "version": 0,
+      "active": true,
+      "question": "get directory part of a file path",
+      "answer": "dirname",
+      "reviews": []
+    },
+    {
+      "id": "c9t8ywgkv5",
+      "version": 0,
+      "active": true,
+      "question": "What command is used to get the name of a file from a path?",
+      "answer": "basename <path>",
+      "reviews": []
+    },
+    {
+      "id": "ynkofmesbg",
+      "version": 0,
+      "active": false,
+      "question": "date format: hour (24 hour clock)",
+      "answer": "%H",
+      "reviews": []
+    },
+    {
+      "id": "cszuxts76c",
+      "version": 0,
+      "active": false,
+      "question": "date format: hour (12 hour clock)",
+      "answer": "%I",
+      "reviews": []
+    },
+    {
+      "id": "w6a8oiicc9",
+      "version": 0,
+      "active": false,
+      "question": "date format: month (number)",
+      "answer": "%m",
+      "reviews": []
+    },
+    {
+      "id": "3k9ed7eobd",
+      "version": 0,
+      "active": false,
+      "question": "date format: minute",
+      "answer": "%M",
+      "reviews": []
+    },
+    {
+      "id": "2qtezwjunp",
+      "version": 0,
+      "active": false,
+      "question": "date format: second (zero decimal places)",
+      "answer": "%S",
+      "reviews": []
+    },
+    {
+      "id": "la07to04bj",
+      "version": 0,
+      "active": false,
+      "question": "date format: what is the number always assigned to Monday?",
+      "answer": "1",
+      "reviews": []
+    },
+    {
+      "id": "z4kxylh9bd",
+      "version": 0,
+      "active": false,
+      "question": "date format: day of week (number where Sunday is 0)",
+      "answer": "%w",
+      "reviews": []
+    },
+    {
+      "id": "5cu7ukrza1",
+      "version": 0,
+      "active": false,
+      "question": "date format: day of week (number, where Sunday is 7)",
+      "answer": "%u",
+      "reviews": []
+    },
+    {
+      "id": "7s9u2d2uyt",
+      "version": 0,
+      "active": false,
+      "question": "date format: day (number in month)",
+      "answer": "%d",
+      "reviews": []
+    },
+    {
+      "id": "b1u6ldogqh",
+      "version": 0,
+      "active": false,
+      "question": "date format: all four digits of year",
+      "answer": "%Y",
+      "reviews": []
+    },
+    {
+      "id": "39vkrwhkp4",
+      "version": 0,
+      "active": false,
+      "question": "date format: last two digits of year",
+      "answer": "%y",
+      "reviews": []
+    },
+    {
+      "id": "zft56db9mq",
+      "version": 0,
+      "active": true,
+      "question": "four different ways to separate commands, all on one line, and what they do",
+      "answer": "; - execute commands sequentially whether they return 0 or nonzero \u0026 - execute commands simultaneously \u0026\u0026 - execute commands sequentially, but execute next command only if previous command returned 0 || - execute commands sequentially until one returns 0",
+      "reviews": []
+    },
+    {
+      "id": "3ip7uju21s",
+      "version": 0,
+      "active": true,
+      "question": "write a heredoc with multiple lines, assign it to a variable, and print that variable to stdout (preserving newlines)",
+      "answer": "\"asdf=$(cat < EOF hello $PWD goodbye EOF ) echo \"\"$asdf\"\"\"",
+      "reviews": []
+    },
+    {
+      "id": "sffcn8ya0z",
+      "version": 0,
+      "active": true,
+      "question": "shell programming test command flags 1) -f 2) -d 3) -r 4) -w 5) -x 6) -e 7) -o 8) -a",
+      "answer": "shell programming test command flags  1) true if path is a file 2) true if path is a directory 3) true if path is a readable file that exists 4) true if path is a writable file that exists 5) true if path is an executable file that exists 6) true if path is either a file or directory 7) or condition 8) and condition",
+      "reviews": []
+    },
+    {
+      "id": "22bzvbnbz3",
+      "version": 0,
+      "active": true,
+      "question": "Command to take user input from command line in shell script, and two crucial options",
+      "answer": "read VAR_NAME -p 'my prompt' -s -> suppresses echoing of input",
+      "reviews": []
+    },
+    {
+      "id": "372psdl3wq",
+      "version": 0,
+      "active": true,
+      "question": "output a string without newline",
+      "answer": "printf 'string'",
+      "reviews": []
+    },
+    {
+      "id": "5a12748qo2",
+      "version": 0,
+      "active": true,
+      "question": "get the return value of the last command in shell script",
+      "answer": "$?",
+      "reviews": []
+    },
+    {
+      "id": "1o2p9mjxzo",
+      "version": 0,
+      "active": true,
+      "question": "What are the three ways to set shell variables, and how do they vary?",
+      "answer": "NAME=value : this is only for use by the current shell, and is not inherited by any subprocesses   export NAME=value : this variable will be inherited by all subsequent subprocesses   env NAME=value [command [args...] ] : passes environment variable to command only, without keeping it in current shell",
+      "reviews": []
+    },
+    {
+      "id": "opuyujbkop",
+      "version": 0,
+      "active": true,
+      "question": "shell: test two strings for equality",
+      "answer": "= -> true if equal != -> true if not equal",
+      "reviews": []
+    },
+    {
+      "id": "7vjv8xiz72",
+      "version": 0,
+      "active": true,
+      "question": "What is stty for?",
+      "answer": "allows you to change the settings of your tty",
+      "reviews": []
+    },
+    {
+      "id": "olxan03gru",
+      "version": 0,
+      "active": true,
+      "question": "trap",
+      "answer": "used to execute commands upon certain signals or program EXIT",
+      "reviews": []
+    },
+    {
+      "id": "z2wngxushl",
+      "version": 0,
+      "active": true,
+      "question": "execute an external script in current environment",
+      "answer": ". command",
+      "reviews": []
+    },
+    {
+      "id": "fbuny3yy02",
+      "version": 0,
+      "active": true,
+      "question": "sh: how to test whether the length of a variable is zero or non-zero",
+      "answer": "test -n string (true if nonzero) test -z string (true if zero)",
+      "reviews": []
+    },
+    {
+      "id": "p936cjd9ah",
+      "version": 0,
+      "active": true,
+      "question": "negate the exit status of a command",
+      "answer": "! command",
+      "reviews": []
+    },
+    {
+      "id": "0piozsckex",
+      "version": 0,
+      "active": true,
+      "question": "shell: what is the difference between ( ... ) and { ... } when grouping commands (such as in a function)?",
+      "answer": "In both cases, the command group inherits a nearly-identical environment to the calling process. However, changes made to the environment inside ( ... ) are NOT persisted to the parent environment, whereas changes made with { ... } ARE persisted to the parent environment.",
+      "reviews": []
+    },
+    {
+      "id": "8qqcwc0wdk",
+      "version": 0,
+      "active": true,
+      "question": "shell: what is the return code of a compound command?",
+      "answer": "It is the return code of the last command in the compound command.",
+      "reviews": []
+    },
+    {
+      "id": "qlju9qcs6k",
+      "version": 0,
+      "active": true,
+      "question": "\"shell: substitute variable VAR, but raise an error, exit and print \"\"there is an error\"\" if the variable is null or undefined.\"",
+      "answer": "\"\"\"${VAR:?there is an error}\"\"\"",
+      "reviews": []
+    },
+    {
+      "id": "7qhjksy2pb",
+      "version": 0,
+      "active": true,
+      "question": "shell: Write an if - else if - else statement.",
+      "answer": "if <condition>; then     something1 elif <condition>; then     something2 else     something3 fi",
+      "reviews": []
+    },
+    {
+      "id": "gdp320snj6",
+      "version": 0,
+      "active": true,
+      "question": "shell: what special variable holds all arguments past $0?",
+      "answer": "$@",
+      "reviews": []
+    },
+    {
+      "id": "i8s4wy8jwh",
+      "version": 0,
+      "active": true,
+      "question": "shell: how is a for loop done? What is important to note?",
+      "answer": "for element in $elements; do     <statements>... done   Note that there are no quotes around $elements; this is necessary because the shell separates parts of $elements by spaces, and using double quotes would make it all one string.",
+      "reviews": []
+    },
+    {
+      "id": "ai384yy9mi",
+      "version": 0,
+      "active": true,
+      "question": "How are double square brackets in bash different from single square brackets?",
+      "answer": "[] -> will work with any POSIX compliant shell [[]] -> bash specific, but gives you more operators like =~ and || in place of -o",
+      "reviews": []
+    },
+    {
+      "id": "z0ce1pjiis",
+      "version": 0,
+      "active": true,
+      "question": "Should shell scripts end in .sh? If they do, where might this cause problems?",
+      "answer": "Google says no; my intuition says yes. This causes problems with run-parts",
+      "reviews": []
+    },
+    {
+      "id": "28k9h35s6n",
+      "version": 0,
+      "active": true,
+      "question": "What does $$ represent?",
+      "answer": "The PID of the current process",
+      "reviews": []
+    },
+    {
+      "id": "ryrarwhr1a",
+      "version": 0,
+      "active": true,
+      "question": "What does the following do? 1) ${VAR:-help} 2) ${VAR:=help}  3) ${VAR:?help}  4) ${VAR:+help}",
+      "answer": "1) If VAR is unset or null, substitute 'help'. Else value of VAR. 2) If VAR is unset or null assign 'help' to it. Else value of VAR. Diff between this and 1 is that VAR gets 'help' assigned to it before substituting VAR. 3) If VAR is unset or null, print 'help' to stderr and exit with non-zero; otherwise substitute VAR 4) If VAR is unset or null, substitute null; otherwise substitute 'help'",
+      "reviews": []
+    },
+    {
+      "id": "etm92xd8by",
+      "version": 0,
+      "active": true,
+      "question": "Command to eliminate multiple identical characters",
+      "answer": "tr -s <character>",
+      "reviews": []
+    },
+    {
+      "id": "y69b3ummjt",
+      "version": 0,
+      "active": true,
+      "question": "Command to print first and third fields of /etc/passwd",
+      "answer": "cut -d : -f 1,3 /etc/passwd",
+      "reviews": []
+    },
+    {
+      "id": "aw13t9fjxf",
+      "version": 0,
+      "active": true,
+      "question": "xargs: set the number of arguments that are passed to each iteration of command",
+      "answer": "xargs -n <nargs> <command>",
+      "reviews": []
+    },
+    {
+      "id": "li69f83x3n",
+      "version": 0,
+      "active": true,
+      "question": "In bash, how do you write an if statement that checks if VAR matches regex?",
+      "answer": "\"if [[ \"\"$VAR\"\" =~ 'regex_here' ]]; then     ... fi\"",
+      "reviews": []
+    },
+    {
+      "id": "xm30q1pa58",
+      "version": 0,
+      "active": true,
+      "question": "how to create a shell function?",
+      "answer": "my_func() { echo $1; echo $2} my_func hello world",
+      "reviews": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "ldap",
+  "version": 0,
+  "cards": [
+    {
+      "id": "t97oljsj6b",
+      "version": 0,
+      "active": true,
+      "question": "three types of LDAP object classes",
+      "answer": "abstract, structural, auxiliary",
+      "reviews": []
+    },
+    {
+      "id": "nop2i5bljr",
+      "version": 0,
+      "active": false,
+      "question": "LDAP DN means what? What is it?",
+      "answer": "distinguished name; similar to a full file path to entry",
+      "reviews": []
+    },
+    {
+      "id": "x0bp0rpiw7",
+      "version": 0,
+      "active": false,
+      "question": "LDAP: what does a DN consist of?",
+      "answer": "a RDN (relative distinguished name) + the parent entry's DN",
+      "reviews": []
+    },
+    {
+      "id": "2p4dlxhxm5",
+      "version": 0,
+      "active": true,
+      "question": "LDAP OU",
+      "answer": "organizational unit",
+      "reviews": []
+    },
+    {
+      "id": "ndby84sz7r",
+      "version": 0,
+      "active": true,
+      "question": "LDAP DC",
+      "answer": "domain component (for parts of domain names)",
+      "reviews": []
+    },
+    {
+      "id": "ovojhj8ohp",
+      "version": 0,
+      "active": true,
+      "question": "LDAP CN",
+      "answer": "common name (for everything that isn't OU or DC)",
+      "reviews": []
+    },
+    {
+      "id": "kglwh7nvk4",
+      "version": 0,
+      "active": true,
+      "question": "what is special about the objectClass attribute in LDAP?",
+      "answer": "it determines the schema rules the entry must obey",
+      "reviews": []
+    }
+  ]
+}

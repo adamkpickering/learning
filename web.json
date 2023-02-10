@@ -11,6 +11,70 @@
       "reviews": []
     },
     {
+      "id": "6vjq5uq1vh",
+      "version": 0,
+      "active": true,
+      "question": "What is a URI fragment?",
+      "answer": "\"It is the bit after the #. Comes after the optional query string. Generally takes you to a heading on a page.\"",
+      "reviews": []
+    },
+    {
+      "id": "bvc0swki1o",
+      "version": 0,
+      "active": true,
+      "question": "What is XSS? How do you protect against it?",
+      "answer": "Cross site scripting.   XSS is a broad class of attacks that involve tricking the target into running malicious code, which is acceptable under the same origin policy since it is the person who owns the information that is running the code.   XSS can be prevented by HTML escaping all user input.",
+      "reviews": []
+    },
+    {
+      "id": "c9vb494mlz",
+      "version": 0,
+      "active": true,
+      "question": "What parts is a JWT made up of?",
+      "answer": "1) header    a) token type    b) signing algorithm 2) payload 3) signature",
+      "reviews": []
+    },
+    {
+      "id": "539cgz60ri",
+      "version": 0,
+      "active": true,
+      "question": "Why is a JWT signed but not encrypted?",
+      "answer": "Many pieces of data we transmit have no need to be encrypted, since they are public or unsensitive data. In these cases, encryption would do nothing more than add overhead. Of course, we can still encrypt a JWT if the data is sensitive.",
+      "reviews": []
+    },
+    {
+      "id": "78ihh9wgbi",
+      "version": 0,
+      "active": true,
+      "question": "What are the three main security problems with websites? What is the one I always think is a security problem?",
+      "answer": "XSS CSRF SQL injection   CORS",
+      "reviews": []
+    },
+    {
+      "id": "tzdpi26639",
+      "version": 0,
+      "active": true,
+      "question": "What is the header key that is used to specify the type of the data in the body of the request? What are the values for the following types: 1) JSON 2) form values in body 3) multipart form 4) html 5) css 6) xml",
+      "answer": "Content-Type   1) application/json 2) application/x-www-form-urlencoded 3) multipart/form-data 4) text/html 5) text/css 6) text/xml",
+      "reviews": []
+    },
+    {
+      "id": "18jrm880hf",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between URIs, URLs and URNs? What does each stand for?",
+      "answer": "\"URI: universal resource identifier URL: universal resource locator URN: universal resource name    All URNs and URLs are URIs; URIs are the general name for everything of this format.   URLs have a scheme, and tell you what the location of the resource is.   URNs are just a name for an abstract, unresolvable name for a resource. They are required to use a special notation with \"\"urn:\"\" in the beginning.\"",
+      "reviews": []
+    },
+    {
+      "id": "rgeyjk0xjb",
+      "version": 0,
+      "active": true,
+      "question": "Should you include a trailing slash at the end of a URL? What are the two main considerations here?",
+      "answer": "\"There is one case where there is a clear choice: when serving a file (not anything dynamically generated) it makes no sense to put a slash at the end since that's not how Unix filesystems do it. For everything else, it doesn't matter, so long as you take the following into account:   1) Search engines regard slash-terminated and non-slash-terminated as different endpoints, so it is best to have one redirect to the other; you can also use a canonical meta tag.   2) \"\"adam\"\" relative to \"\"/person/\"\" is \"\"/person/adam\"\", whereas \"\"adam\"\" relative to \"\"/person\"\" is \"\"/adam\"\", so it is best to put a slash at the end if you are using relative URLs\"",
+      "reviews": []
+    },
+    {
       "id": "jh18o4ef9r",
       "version": 0,
       "active": true,

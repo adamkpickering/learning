@@ -1,0 +1,174 @@
+{
+  "name": "ansible",
+  "version": 0,
+  "cards": [
+    {
+      "id": "o61ev2zjf6",
+      "version": 0,
+      "active": true,
+      "question": "\"ansible: create a basic playbook with a task that prints \"\"hello world\"\"\"",
+      "answer": "\"--- - name: print hello world   hosts: all   tasks:   - name: print \"\"hello world\"\"     debug:       msg: \"\"hello world\"\"\"",
+      "reviews": []
+    },
+    {
+      "id": "crmjpihw2u",
+      "version": 0,
+      "active": true,
+      "question": "\"ansible: what is valid in the \"\"hosts\"\" field of a play?\"",
+      "answer": "\"The input to the \"\"hosts\"\" field is a \"\"pattern\"\"; this can specify an IP address or hostname, a group name, a name of a host in the inventory, or any of the above via regex or wildcards.\"",
+      "reviews": []
+    },
+    {
+      "id": "tvd1fwgvzm",
+      "version": 0,
+      "active": true,
+      "question": "ansible: how do you specify the location of your inventory file in ansible.cfg?",
+      "answer": "[defaults] inventory = inventory/all.yml",
+      "reviews": []
+    },
+    {
+      "id": "k2fzgolcyz",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what are the four locations that ansible looks in for its configuration (order them from highest precedence to lowest precedence)?",
+      "answer": "value of ANSIBLE_CONFIG ./ansible.cfg ~/.ansible.cfg /etc/ansible/ansible.cfg",
+      "reviews": []
+    },
+    {
+      "id": "qftaigq45z",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what keyword is added to run a single task in a play on localhost?",
+      "answer": "delegate_to: 127.0.0.1",
+      "reviews": []
+    },
+    {
+      "id": "z30zkradsj",
+      "version": 0,
+      "active": true,
+      "question": "ansible: how to skip gathering facts?",
+      "answer": "Add `gather_facts: false` to play header.",
+      "reviews": []
+    },
+    {
+      "id": "vx3iahvtbm",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what keyword is added to a task to continue executing a playbook in the event that it fails?",
+      "answer": "ignore_errors: true",
+      "reviews": []
+    },
+    {
+      "id": "lths6hnq0m",
+      "version": 0,
+      "active": true,
+      "question": "ansible: keyword that is added to play or task that is equivalent to sudo? Also, how would you become a user other than sudo?",
+      "answer": "become: true become_user: t917981",
+      "reviews": []
+    },
+    {
+      "id": "lft1ovwso2",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what is the difference between double and single quotes?",
+      "answer": "You can use escape sequences (\\n, \\t etc) with double quotes. Single quotes are literal.",
+      "reviews": []
+    },
+    {
+      "id": "tdbr5xcq0e",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what do the files in group_vars/ and host_vars/ do?",
+      "answer": "They set variables for the groups (for group_vars/) and the hosts (for host_vars/) in your inventory file. Variables can be set directly in the inventory file, but it can be beneficial to put them in separate files.",
+      "reviews": []
+    },
+    {
+      "id": "51y8qrphus",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what are the four directories I'd commonly find at the root of an ansible project?",
+      "answer": "host_vars/ group_vars/ files/ templates/",
+      "reviews": []
+    },
+    {
+      "id": "4jfmw8er3t",
+      "version": 0,
+      "active": true,
+      "question": "ansible: how do you tag a play or task?",
+      "answer": "Use the `tags` key. Can be a single value or a list.",
+      "reviews": []
+    },
+    {
+      "id": "tjyi89k158",
+      "version": 0,
+      "active": true,
+      "question": "ansible: from command line, how do you: 1) list tags 2) only run plays and tasks with `prod` tag 3) only run plays and tasks with `prod` and `dev` tags 4) skip plays and tasks with `prod` tag 5) skip plays and tasks with `prod` and `dev` tags",
+      "answer": "1) ansible-playbook playbook.yml --list-tags 2) ansible-playbook playbook.yml --tags prod 3) ansible-playbook playbook.yml --tags [prod, dev] 4) ansible-playbook playbook.yml --skip-tags prod 5) ansible-playbook playbook.yml --skip-tags [prod, dev]",
+      "reviews": []
+    },
+    {
+      "id": "r5ajbx7npk",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what are the two special tags, and how do they affect the behaviour of a play?",
+      "answer": "always: always runs, including when other tags are specified on the command line, unless it is explicitly skipped   never: never runs unless explicitly specified (or another tag on that task is explicitly specified) on the command line",
+      "reviews": []
+    },
+    {
+      "id": "ale42axw3r",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what are the variable names for each of the following: 1) specifying the hostname of the host you're connecting to 2) specifying the SSH port to connect to 3) specifying the connection type to use 4) specifying the user to log in as 5) specifying the password to use to log in",
+      "answer": "1) ansible_host 2) ansible_port 3) ansible_connection 4) ansible_user 5) ansible_password",
+      "reviews": []
+    },
+    {
+      "id": "jqyo03tffu",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what are the two groups that always exist by default?",
+      "answer": "`all` and `ungrouped`",
+      "reviews": []
+    },
+    {
+      "id": "zrk9r33k9q",
+      "version": 0,
+      "active": true,
+      "question": "ansible: in a yaml inventory file, what are the three keys that a group may have? What is each for?",
+      "answer": "children: groups that are inside of this group hosts: hosts that are inside this group vars: group vars that apply to this group",
+      "reviews": []
+    },
+    {
+      "id": "lxc6t36mss",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what is the difference between include_* and import_*?",
+      "answer": "\"include_* is dynamic, so whatever you're including is included at runtime. For example, if you have an include_* in a loop, it will include all of those things once for each iteration of the loop.   import_* statements are done once, when the playbook is \"\"compiled\"\". When you use import_* it is as if you have written whatever you are importing directly in that file.\"",
+      "reviews": []
+    },
+    {
+      "id": "punx9arx6x",
+      "version": 0,
+      "active": true,
+      "question": "ansible: what can be included and what can be imported?",
+      "answer": "include_vars include_role include_tasks   import_playbook import_role import_tasks",
+      "reviews": []
+    },
+    {
+      "id": "s35dj7r8dc",
+      "version": 0,
+      "active": true,
+      "question": "ansible: module to exit out of a play?",
+      "answer": "- name: stop the play   meta: end_play",
+      "reviews": []
+    },
+    {
+      "id": "xerpyhdnnc",
+      "version": 0,
+      "active": true,
+      "question": "ansible: set the value of my_var to my_var from credstash",
+      "answer": "\"my_var: \"\"{{ lookup('credstash', 'my_var', region='ca-central-1') }}\"\"\"",
+      "reviews": []
+    }
+  ]
+}
