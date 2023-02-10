@@ -763,22 +763,6 @@
       "reviews": []
     },
     {
-      "id": "6hbhm8olla",
-      "version": 0,
-      "active": true,
-      "question": "prometheus: what are the 4 metric types?",
-      "answer": "counter: monotonically increasing counter gauge: a single numerical value that can go up or down histogram: samples observations and counts them in configurable buckets summary: like histogram, but also calculates configurable quantiles over a sliding time window",
-      "reviews": []
-    },
-    {
-      "id": "z2wwj20pbt",
-      "version": 0,
-      "active": true,
-      "question": "prometheus: what are the processes that might make up a running deployment of prometheus?",
-      "answer": "prometheus server: pulls logs from jobs, push gateway periodicallly and processes them push gateway: accepts logs from short-lived processes alertmanager: accepts pushed alerts from prometheus server and sends them to various comm services (email etc) node exporter: makes node logs available to prometheus",
-      "reviews": []
-    },
-    {
       "id": "duo8usr8av",
       "version": 0,
       "active": true,
@@ -1587,25 +1571,9 @@
       "reviews": []
     },
     {
-      "id": "3eck6prbgg",
-      "version": 0,
-      "active": true,
-      "question": "\"prometheus: get the \"\"test_metric\"\" metric where job is \"\"test_job\"\" and instance is \"\"test.example.com\"\" every 5 minutes for the last hour\"",
-      "answer": "\"test_metric{job=\"\"test_job\"\",instance=\"\"test.example.com\"\"}[1h:5m]\"",
-      "reviews": []
-    },
-    {
-      "id": "q8jhdrd8ao",
-      "version": 0,
-      "active": true,
-      "question": "\"prometheus: get the value for the metric \"\"test_metric\"\" two days ago\"",
-      "answer": "test_metric offset 2d",
-      "reviews": []
-    },
-    {
       "id": "2h2p2c6pun",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What does ODBC stand for?What is it?",
       "answer": "ODBC: open database connectivity   It is a standard API for accessing DBMS's. This is done by using an ODBC driver, which is essentially a layer of abstraction, between the application and the DBMS. So your application talks to every DB, no matter what kind it is, through the same API.",
       "reviews": []
@@ -1613,7 +1581,7 @@
     {
       "id": "n7z90z0etb",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What does DSN stand for? What is it?",
       "answer": "DSN: data source name   It is a string that has an associated data structure that is used to describe a connection to a data source. It is most commonly used with ODBC. Some of the attributes a DSN may include are: - data source name - location of data source - the name of a database driver that can access the data source - a user ID for access - a user password for data access",
       "reviews": []
@@ -1640,30 +1608,6 @@
       "active": true,
       "question": "ps: option used to print out all information for each process",
       "answer": "-f",
-      "reviews": []
-    },
-    {
-      "id": "8d6xig2lca",
-      "version": 0,
-      "active": true,
-      "question": "\"grafana: for a dashboard variable, how do you get a list of values of all instances in the job \"\"test-job\"\"?\"",
-      "answer": "\"label_values(any_metric{job=\"\"test_job\"\"}, instance)\"",
-      "reviews": []
-    },
-    {
-      "id": "2cgwatfmqj",
-      "version": 0,
-      "active": true,
-      "question": "\"prometheus: if the cpu utilization of a single core is given by the metric \"\"cpu_utilization\"\", and that metric has the 3 labels \"\"instance\"\", \"\"job\"\", and \"\"core\"\", give an expression to get the average cpu utilization across all cores for each instance, while not losing any labels unnecessarily.\"",
-      "answer": "avg by (instance, job) cpu_utilization",
-      "reviews": []
-    },
-    {
-      "id": "z6ea7azz43",
-      "version": 0,
-      "active": true,
-      "question": "grafana: how do you manipulate the name a time series has in the legend?",
-      "answer": "\"{{=<% %>=}} In the Legend field of the query, enter the name. You can do basic templating using golang template language and labels from the metric, i.e. \"\"{{ instance }}\"\".\"",
       "reviews": []
     },
     {
