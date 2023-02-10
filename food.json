@@ -5,7 +5,7 @@
     {
       "id": "yonlvrcgpf",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Baby dutch",
       "answer": "Warm 2 pie plates in oven with butter at 450 f. Mix 3 eggs and 3/4 cup milk until frothy. Add 3/4 cup flour. Add to plates and bake until risen. ",
       "reviews": []
@@ -13,7 +13,7 @@
     {
       "id": "4wy1f5hc3e",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is tallow?",
       "answer": "Rendered beef or mutton fat",
       "reviews": []
@@ -21,7 +21,7 @@
     {
       "id": "2ot0fx2ezh",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is suet?",
       "answer": "Raw, hard fat of beef, lamb or mutton that is found around the loins and kidneys.",
       "reviews": []
@@ -29,7 +29,7 @@
     {
       "id": "j0wrgtiqpe",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Hogget vs lamb vs mutton ",
       "answer": "Lamb is less than one year old Hogget is older than one year Mutton is adult Lamb increasingly refers to meat of all ages",
       "reviews": []
@@ -37,7 +37,7 @@
     {
       "id": "okh5jk0ifb",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Three stages of salami production ",
       "answer": "Preparation of filling and forming sausages Fermentation Ripening and drying",
       "reviews": []
@@ -45,7 +45,7 @@
     {
       "id": "6q8a88c521",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is a grain? What are the main types?",
       "answer": "A grain is a small, hard, dry seed, with or without a hull or fruit layer, that is harvested for human consumption. They are mechanically harvestable and durable after harvesting, so are conducive to industrial agriculture.   The main types of grains are cereals and legumes.",
       "reviews": []
@@ -53,7 +53,7 @@
     {
       "id": "3fcnjzgjrb",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is a cereal? What are some examples?",
       "answer": "A cereal is a grain that is harvested from anything that is a grass. All cereal crops are members of the grass family, Poaceae. Some examples are wheat, barley, oats, millet, spelt, sorghum.",
       "reviews": []
@@ -61,7 +61,7 @@
     {
       "id": "jebfaem63z",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is a legume? What is another name for a legume when referring to its use as a dry grain? What are some examples?",
       "answer": "It is a plant in the family Fabaceae/Leguminosae, or the fruit or seed of such a plant.   When used as a dry grain, the seed is also called a pulse.   Some examples are soybeans, beans, peas, chickpeas, peanuts, and lentils. Green beans and green peas are not considered legumes; they are vegetable crops.",
       "reviews": []
@@ -69,7 +69,7 @@
     {
       "id": "8doqauj4kw",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the first step in making most kinds of cheese? What are the two parts at the end of this step?",
       "answer": "You cause the milk to coagulate. This is done by acidifying the milk. The milk is acidified through the addition of rennet (enzymes from stomachs of ruminants), lemon juice or vinegar, or it is simply left to sour. This then causes the curds (the solid part) to form out of the casein. Whey (the liquid part) is left. Whey contains only whey proteins.",
       "reviews": []
@@ -77,7 +77,7 @@
     {
       "id": "4ovmabfcmm",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you make cottage cheese? What is another name for cottage cheese?",
       "answer": "You start cheese making as usual, but rather than pressing out the whey, you simply drain it off.   Another name for cottage cheese is curds and whey.",
       "reviews": []
@@ -85,7 +85,7 @@
     {
       "id": "9hrn94mmrq",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is pasteurization?",
       "answer": "It is a process by which foods, such as milk and fruit juices, are treated with mild heat in order to eliminate pathogens and extend shelf life. Usually the heat is less than 100C.",
       "reviews": []
@@ -93,7 +93,7 @@
     {
       "id": "obamjgg6ln",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is ultrafiltered milk? What about microfiltered milk?",
       "answer": "Ultrafiltered milk is milk that is filtered such that it has much more protein and much less lactose.   Microfiltered milk is passed through the same process as ultrafiltered milk, but the pores are slightly larger. Microfiltering milk gets rid of bacteria that can cause spoilage, which gives it an extra-long shelf life.",
       "reviews": []
@@ -101,7 +101,7 @@
     {
       "id": "pvgvjyo1io",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you make butter from milk? What is left over?",
       "answer": "You churn it. Churning is the process of turning a fat-in-water emulsion (cream) into a water-in-fat emulsion (butter). Churning ruptures the fragile membranes surrounding the droplets of milk fat. Once ruptured, the fat can join together to form clumps.   Buttermilk is left over.",
       "reviews": []
@@ -109,7 +109,7 @@
     {
       "id": "ncyuf9run1",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the two types of cream?",
       "answer": "\"The first, called \"\"sweet cream\"\", is what we usually mean when we say cream. It is the higher-fat layer that is skimmed off of whole milk.   The other is the cream from whey. It tends to be saltier, tangier and cheesy as compared to sweet cream.\"",
       "reviews": []
@@ -117,7 +117,7 @@
     {
       "id": "oy0gpgpxg0",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is sour cream/creme fraiche?",
       "answer": "It is fermented cream.",
       "reviews": []
@@ -125,7 +125,7 @@
     {
       "id": "xwqj1ix6d8",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is homogenization?",
       "answer": "Generally speaking, it is a process that makes two mutually non-soluable liquids the same throughout.   In terms of milk, it refers to the process of reducing fat globules in size and dispersing them uniformly throughout the mixture.",
       "reviews": []
@@ -133,7 +133,7 @@
     {
       "id": "ev49m8sh0k",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What does FODMAP stand for? What are some examples of each letter?",
       "answer": "Fermentable Oligosaccharides (fructans) Disaccharides (lactose, sucrose) Monosaccharides (glucose, fructose) And Polyols (sugar alcohols; sorbitol, mannitol, xylitol, maltitol)",
       "reviews": []
@@ -141,7 +141,7 @@
     {
       "id": "20c2ea0fs1",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are fructans?",
       "answer": "Fructans are polymers of fructose.",
       "reviews": []
@@ -149,7 +149,7 @@
     {
       "id": "niayuib1um",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is a prebiotic?",
       "answer": "A prebiotic is a compound in food that induces the growth of beneficial (to the gut) microorganisms such as bacteria or fungi. They are typically undigestible.",
       "reviews": []
@@ -157,7 +157,7 @@
     {
       "id": "u8y3frq9kb",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is sucrose?",
       "answer": "Sucrose is a type of sugar that is made up of one molecule of glucose and one molecule of fructose joined together. It is what makes up white sugar.",
       "reviews": []
@@ -165,7 +165,7 @@
     {
       "id": "f3yel5dlt8",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Why do we heat milk before using it to make yogurt?",
       "answer": "1) It reduces the count of microorganisms that can cause spoilage. 2) It reduces the level of dissolved oxygen, which yogurt cultures hate. 3) It denatures the milk proteins to make a firmer coagulum. Before heating, they are in balls; heating unravels these balls into chains, which facilitates coagulation.",
       "reviews": []

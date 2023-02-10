@@ -5,7 +5,7 @@
     {
       "id": "viexoumt6l",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Windows: how do you do copy/paste?",
       "answer": "first select text in visual modecopy: ctrl-insert paste: shift-insert",
       "reviews": []
@@ -13,7 +13,7 @@
     {
       "id": "o0w7vb9fkf",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you delete all lines matching a pattern? How do you delete all lines not matching the pattern?",
       "answer": ":g/pattern/d :v/pattern/d",
       "reviews": []
@@ -21,7 +21,7 @@
     {
       "id": "hd6oy18osr",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "\"Substitute \"\"foo\"\" for \"\"bar\"\" on every line that starts with #\"",
       "answer": "\":g/^#/s/bar/foo/g\"",
       "reviews": []
@@ -29,7 +29,7 @@
     {
       "id": "u1sebrswhw",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is a buffer?",
       "answer": "A buffer is an area of vim's memory that is used to hold text that has been read from a file.",
       "reviews": []
@@ -37,7 +37,7 @@
     {
       "id": "51smpjraey",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you edit a macro?",
       "answer": "\"Recorded macros are stored in the register with the same assigned letter. They are really the same thing as a register. So to execute text in a register, you can do `@\u003cletter\u003e`, and to edit a macro you can do `\"\"\u003cletter\u003ep` and then re-yank that line once edited.\"",
       "reviews": []
@@ -45,7 +45,7 @@
     {
       "id": "w5ejqcgr4d",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you do a case-insensitive search?",
       "answer": "Add \\c anywhere in the search pattern.",
       "reviews": []
@@ -53,7 +53,7 @@
     {
       "id": "w69b27t929",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you see the contents of all registers?",
       "answer": ":reg",
       "reviews": []
@@ -61,7 +61,7 @@
     {
       "id": "3iyhl12bgn",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you append into a register?",
       "answer": "Instead of using the lower case letter assigned to that register, use the upper case letter when saving text to it.",
       "reviews": []
@@ -69,7 +69,7 @@
     {
       "id": "qg33zqh8bs",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Get the text from 3 deletes ago?",
       "answer": "\"\"\"3p\"",
       "reviews": []
@@ -77,7 +77,7 @@
     {
       "id": "qoo7l321lc",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Filter selected text through awk command that prints the second column of each line with 'Host' in it",
       "answer": ":'\u003c,'\u003e!awk '/Host/ { print $2 }'",
       "reviews": []
@@ -85,7 +85,7 @@
     {
       "id": "y8fkvsbqr5",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What does % represent?",
       "answer": "When talking about a range, it represents the entire file.   When talking about a register, it contains the path to the current file.",
       "reviews": []
@@ -93,7 +93,7 @@
     {
       "id": "5u88ttiuri",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you filter a range of text through an external program, or chain of programs?",
       "answer": ":{range}!{cmd}   The text in your range will be replaced by the stdout of cmd.",
       "reviews": []
@@ -101,7 +101,7 @@
     {
       "id": "zlrvt3b6mo",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you enter special characters in insert mode?",
       "answer": "hit ctrl-v and then the normal key combo for the special character. So to insert an escape, you'd do ctrl-v and then ctrl-[.",
       "reviews": []
@@ -109,7 +109,7 @@
     {
       "id": "iurmkdv21o",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you run a command from normal mode in command mode?",
       "answer": ":norm[al] {cmd}",
       "reviews": []
@@ -117,7 +117,7 @@
     {
       "id": "t2maec10gc",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the format of the global command? What does it do?",
       "answer": ":{range}g/{pattern}/{cmd}   Lines matching pattern will have cmd run on it, where cmd is a command mode command.",
       "reviews": []
@@ -125,7 +125,7 @@
     {
       "id": "2i6sjx9umv",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you prevent unnecessary indents when pasting code into vim?",
       "answer": "\"vim has a \"\"paste mode\"\" that turns off autoindent. Turn it on with:   :set paste   Then turn it off with:   :set nopaste\"",
       "reviews": []
@@ -133,7 +133,7 @@
     {
       "id": "oq1ocsov6f",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "\"What does the \"\"g\"\" flag do in the substitute command?\"",
       "answer": "It makes all occurences in a single line be replaced. Without this, replacement occurs only for the first occurrence in each line.",
       "reviews": []
@@ -141,7 +141,7 @@
     {
       "id": "hdsup9h1t4",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you declare a variable? How do you print its value?",
       "answer": "let varName = value echo varName",
       "reviews": []
@@ -149,7 +149,7 @@
     {
       "id": "jjxm2ydzk0",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is an option? What command is used to manipulate options? How do you print the value of an option?",
       "answer": "Options are special internal variables that can be manipulated to achieve special effects.   You use the set command, for example: set tabstop=4   You can print the value of the option using either of the following: set myOption? echo \u0026myOption",
       "reviews": []
@@ -157,7 +157,7 @@
     {
       "id": "icqsx4yhkn",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the seven different data types?",
       "answer": "Number Float String Funcref List Dictionary Blob",
       "reviews": []
@@ -165,7 +165,7 @@
     {
       "id": "dbmq7dwrxp",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you get the type of a variable? What is odd about this?",
       "answer": "type(myVar)   This returns an integer that can be compared to values you can find with `:help type`, not a string that tells you what the type is directly.",
       "reviews": []
@@ -173,7 +173,7 @@
     {
       "id": "geuyzl8fds",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How does variable scoping work?",
       "answer": "\"There are these scopes that contain their own set of variables. Each scope is represented by a single letter. You can address the var \"\"myVar\"\" in scope \"\"b\"\" using the string `b:myVar`.\"",
       "reviews": []
@@ -181,7 +181,7 @@
     {
       "id": "nnlj1ej7ix",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you list all user-defined commands?",
       "answer": ":command",
       "reviews": []
@@ -189,7 +189,7 @@
     {
       "id": "o63gzhfgbc",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you see all current mappings?",
       "answer": ":map",
       "reviews": []
@@ -197,7 +197,7 @@
     {
       "id": "mwtz5rokwi",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you make a mapping? What is the good way to do this, and what is the bad way?",
       "answer": "{i, v, n, -}map {i, v, n, -}noremap   Always prefer `noremap` over `map`. This is because `map` will allow for recursing and redefinition, which can cause big problems.",
       "reviews": []
@@ -205,7 +205,7 @@
     {
       "id": "b18c50uiu7",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What rule must function names follow?",
       "answer": "Function names must either start with a capital letter, or have a scope. In practice, most people add a capital letter to their function names even if they're scoped.",
       "reviews": []
@@ -213,7 +213,7 @@
     {
       "id": "sf9x88v9yb",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "\"Define a function that takes a name, and returns a string that says \"\"hello \u003cname\u003e\"\".\"",
       "answer": "\"function Name(name)    return \"\"hello \"\" + a:name endfunction\"",
       "reviews": []
@@ -221,7 +221,7 @@
     {
       "id": "wi3xi0hrat",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the two ways to call a function? What are the differences?",
       "answer": "call Meow() or in an expression.   `call` is only useful when the function has side effects. If you use the function in an expression, you can use its return value.",
       "reviews": []
@@ -229,7 +229,7 @@
     {
       "id": "rqe9aj4jq9",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you see what files vim has loaded on startup?",
       "answer": ":scriptnames",
       "reviews": []
@@ -237,7 +237,7 @@
     {
       "id": "pjmz4vujr6",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What command is used to set an option, but only for the current buffer or window? What is the catch?",
       "answer": "setlocal  If the option you're setting can only be set globally, `setlocal` sets it globally.",
       "reviews": []
@@ -245,7 +245,7 @@
     {
       "id": "ihm09aamsz",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Use a for loop to print 1 2 3 4",
       "answer": "for i in [1, 2, 3, 4]     echo i endfor",
       "reviews": []
@@ -253,7 +253,7 @@
     {
       "id": "1z7ka9ljuw",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Use a while loop to print: 1 2 3 4",
       "answer": "let i = 1 while i \u003c 5     echo i     let i = i + 1 endwhile",
       "reviews": []
@@ -261,7 +261,7 @@
     {
       "id": "1xurkw069q",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "When vim looks at a variable as true or false, what does it see?",
       "answer": "It coerces it to a Number (integer). And for numbers, 0 is false, and anything non-zero is true.",
       "reviews": []
@@ -269,7 +269,7 @@
     {
       "id": "bx0cx2homd",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How does vim coerce String types to Numbers?",
       "answer": "If the String starts with a number, it is coerced to that Number. Otherwise, it is coerced to 0.",
       "reviews": []
@@ -277,7 +277,7 @@
     {
       "id": "a9dg45cice",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you write an if/else if/else statement?",
       "answer": "if, elseif, else, endif",
       "reviews": []
@@ -285,7 +285,7 @@
     {
       "id": "l6sqzf7rbq",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you run multiple commands in sequence on the same line?",
       "answer": "Separate them with a `|`.",
       "reviews": []
@@ -293,7 +293,7 @@
     {
       "id": "j9buye5iv8",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What does \u003cPlug\u003e mean?",
       "answer": "It is a mapping that plugin authors can use to define a mapping that is never called, unless users of the plugins define their own mappings that call the \u003cPlug\u003e mappings. Basically, it's a way for plugin authors to expose functionality with lower risk of screwing up the user's setup.",
       "reviews": []
@@ -301,7 +301,7 @@
     {
       "id": "4uhjqwkg5n",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you concatenate two strings?",
       "answer": "You can use either the . operator, or the .. operator. The latter is preferred since it is less ambiguous.",
       "reviews": []
@@ -309,7 +309,7 @@
     {
       "id": "rnfwvrha37",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What built-in function is used to run a command mode command?",
       "answer": "execute()",
       "reviews": []
@@ -317,7 +317,7 @@
     {
       "id": "93jhsyrl9f",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What built-in functions are used to run an external function, like `ls`?",
       "answer": "system() systemlist()",
       "reviews": []
@@ -325,7 +325,7 @@
     {
       "id": "mwem27gyjl",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What function is used to get the length of a list?",
       "answer": "len()",
       "reviews": []
@@ -333,7 +333,7 @@
     {
       "id": "07n7pscrea",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "\"What does the character # mean inside a function name?\"",
       "answer": "\"It means that it is loaded on demand from an autoload function. A couple of examples:  ctrlp#sample() -\u003e looks for name ctrlp#sample() in file autoload/ctrlp.vim  ctrlp#sample#init() -\u003e looks for name ctrlp#sample#init() in file autoload/ctrlp/sample.vim\"",
       "reviews": []
@@ -341,7 +341,7 @@
     {
       "id": "pfpl8d8giq",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do plugins get loaded?",
       "answer": "Upon startup, vim searches directories that are in its `runtimepath` option. It looks for directories inside them, such as autoload/ and ftdetect/, which it uses for various things.  Whatever plugin manager you're using will add installed plugin directories to `runtimepath`, so that vim considers them on startup.",
       "reviews": []
@@ -349,7 +349,7 @@
     {
       "id": "h2dh9pkxe2",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What does it generally mean when there is a ! on the end of function, command etc?",
       "answer": "It means to force something, or to redefine something if it is already defined.",
       "reviews": []
@@ -357,7 +357,7 @@
     {
       "id": "3fkxprhxas",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "When using the help command, how do you see all of the things that match what you've currently typed?",
       "answer": "ctrl-D",
       "reviews": []
@@ -365,7 +365,7 @@
     {
       "id": "cljr0s7day",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do you run a file containing vim script?",
       "answer": ":source myScript.vim",
       "reviews": []
@@ -373,7 +373,7 @@
     {
       "id": "p8ks78gu5p",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What does \u0026 do?",
       "answer": "It allows you to treat an option as a variable.",
       "reviews": []
@@ -381,7 +381,7 @@
     {
       "id": "ou6yv689j8",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the difference between single and double quotes in vim?",
       "answer": "Single quotes are literal. Double quotes allow for escapes.",
       "reviews": []
@@ -389,7 +389,7 @@
     {
       "id": "63z2f52wjf",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the eight variable scopes?",
       "answer": "b: local to current buffer w: local to current window t: local to current tab g: global l: local to current function s: local to a sourced vim script a: function arguments v: global, predefined by vim",
       "reviews": []
@@ -397,7 +397,7 @@
     {
       "id": "ncbui1mpbo",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is \u003cSID\u003e for? How does it work?",
       "answer": "It is a way of exporting things that are local to a script file in such a way that collisions with things that have the same name in other script files are impossible.  It is only valid when you are making a mapping, i.e. in commands like nnoremap. At the time of the mapping (which happens in the script file), it is expanded to \u003cSNR\u003e, then a number representing the script, then an underscore.  The lesson is: if you want to expose a function in some way, prepend \u003cSID\u003e to it instead of s:, and then expose it through some mapping or command.",
       "reviews": []

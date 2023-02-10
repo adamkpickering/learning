@@ -5,7 +5,7 @@
     {
       "id": "p9ostileuf",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the 3 main types of AWS storage? Order from least expensive to most expensive. Describe.",
       "answer": "\"S3 (simple storage service). Stores files as objects in a flat \"\"bucket\"\". Lower IOPS and higher latency than EBS and EFS.   EBS (elastic block store). You provision a fixed size EBS. Limited to a single region.   EFS (elastic file system). For big data, size of EFS is easily scalable. Files can be shared between regions.\"",
       "reviews": []
@@ -13,7 +13,7 @@
     {
       "id": "7ruoshqd4l",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is an AWS elastic IP?",
       "answer": "- a static IPv4 address - IPv6 not supported - basically a layer of indirection; you can connect it to internet gateways, individual EC2 instances, swap it out quickly in the event of an instance failure...",
       "reviews": []
@@ -21,7 +21,7 @@
     {
       "id": "4dpt4s4wbq",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How do AWS route tables work?",
       "answer": "A route table contains rules that say where traffic *from* your subnet or gateway is directed. Each VPC has a default route table. Every subnet requires a route table (default is used if not specified), but cannot have multiple route tables.",
       "reviews": []
@@ -29,7 +29,7 @@
     {
       "id": "nu3q8cf5p5",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "In AWS, how does traffic get from a VPC to the public internet, for both private and public subnets?",
       "answer": "Private subnets' traffic gets to the internet via a nat gateway. Hosts in private subnets do not get a public IP; they are much like hosts in a home network in this way.   Public subnets' traffic gets to the internet via an internet gateway. The igw takes care of mapping private IP addresses to public IP addresses.",
       "reviews": []
@@ -37,7 +37,7 @@
     {
       "id": "ej5f2dehjy",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "AWS: how does an instance using IPv6 access the internet, if we don't want to allow hosts from the internet to access it?",
       "answer": "An egress-only internet gateway is used.",
       "reviews": []
@@ -45,7 +45,7 @@
     {
       "id": "ccc907fwkw",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the difference between network ACLs and security groups?",
       "answer": "A network ACL is an optional layer of security. It is assigned at the subnet level and acts more like a traditional firewall - it provides finer-grained control.   A security group is assigned at the instance level and is made to be easy to use.",
       "reviews": []
@@ -53,7 +53,7 @@
     {
       "id": "ispslg0sh8",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Order the following from biggest to smallest: subnet, VPC, AWS region, availability zone, instance",
       "answer": "AWS region VPC availability zone subnet instance",
       "reviews": []
@@ -61,7 +61,7 @@
     {
       "id": "8pmwuqz64q",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "HCL: what four basic elements make up HCL blocks? What do they look like in a block?",
       "answer": "\"\u003cblock_type\u003e \"\"\u003cblock_label\u003e\"\" \"\"\u003cblock_label\u003e\"\" {      \u003cidentifier\u003e = \u003cexpression\u003e }\"",
       "reviews": []
@@ -69,7 +69,7 @@
     {
       "id": "f58y7hok3e",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "terraform: what is a provider?",
       "answer": "A provider is a final destination for config. It can range from IaaS (AWS, Azure, GCP, VMware, OpenStack), to PaaS (k8s, Heroku), all the way to SaaS (Datadog, Github).",
       "reviews": []
@@ -77,7 +77,7 @@
     {
       "id": "lxmkcvju0n",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the three basic steps to realizing a terraform config?",
       "answer": "1) terraform refresh: gather information on the state of the real world   2) terraform plan: devise a plan to reconcile the differences between config and the real world   3) terraform apply: realize the config with the created plan",
       "reviews": []
@@ -85,7 +85,7 @@
     {
       "id": "h4b6pg02yb",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "terraform: what does every resource config consist of? Explain each part.",
       "answer": "resource \u003cresource_type\u003e \u003cresource_name\u003e { body }   resource_type: the type of resource; associated with a specific provider   resource_name: the local name of the resource; only used to refer to the resource within terraform   body: contains resource-specific configuration",
       "reviews": []
@@ -93,7 +93,7 @@
     {
       "id": "ftpwoxx3fc",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "terraform: what two block types are provided by providers?",
       "answer": "resource, and data",
       "reviews": []
@@ -101,7 +101,7 @@
     {
       "id": "eybbqunaim",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "terraform: what block type do I use to configure a remote state store? How does it look?",
       "answer": "\"Use a backend.   terraform {   backend \"\"\u003cbackend_name\u003e\"\" {     ...   } }\"",
       "reviews": []
@@ -109,7 +109,7 @@
     {
       "id": "fi4ogy9upa",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "terraform: what are the four different ways of doing variables? How are they referenced?",
       "answer": "input variables (variable block, referenced as var.\u003cname\u003e)   output variables (output block, referenced as module.\u003cmodule_name\u003e.\u003coutput_name\u003e outside module)   local variables (locals block, referenced as local.\u003cname\u003e)   data (data block, referenced as data.\u003cdata_source_type\u003e.\u003clocal_name\u003e.\u003cattr_name\u003e)",
       "reviews": []
@@ -117,7 +117,7 @@
     {
       "id": "338j1ot31j",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "packer: what are the seven objects that are important to know about? What is each?",
       "answer": "artifacts: generally IDs that represent a machine image; one or more of these is produced for each build, and one is produced for each builder   builds: a single task that eventually produces an image for a single platform; multiple builds run in parallel   builders: components of packer that can create machine images for a single platform; read in config and use it to generate image   provisioners: install and configure software within the image   post-processors: take the result of builds, do something with it, and produce another result   templates: JSON files that define one or more builds   communicators: facilitate provisioners by communicating with the machine image as it is built by the builder",
       "reviews": []
@@ -125,7 +125,7 @@
     {
       "id": "z31ndc4i13",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the four basic concepts in AWS IAM? Explain them.",
       "answer": "users: self-explanatory groups: self-explanatory  roles: collections of policies that can be assumed by any user or service that needs the policies policies: define specific low-level permissions for resources",
       "reviews": []
@@ -133,7 +133,7 @@
     {
       "id": "qz3ty5ibjy",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "AWS IAM: what are the two types of policies?",
       "answer": "Allow and Deny",
       "reviews": []
@@ -141,7 +141,7 @@
     {
       "id": "1um5pt6ilt",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "terraform: how do you use multiple aws providers with different resources or modules?",
       "answer": "\"provider \"\"aws\"\" {   region = \"\"ca-central-1\"\" }   provider \"\"aws\"\" {   region = \"\"us-west-2\"\"   alias = \"\"us-west-2\"\" }   # uses default provider resource \"\"aws_instance\"\" \"\"canada\"\" {   ... }   resource \"\"aws_instance\"\" \"\"us-instance\"\" {   provider = aws.us-west-2 }\"",
       "reviews": []
@@ -149,7 +149,7 @@
     {
       "id": "f8d47lplcz",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "AWS IAM: for my purposes, how does IAM evaluate whether a certain user has the ability to perform a certain action?",
       "answer": "All of the allow policies are merged. Then, the deny policies are subtracted from this. This set of actions is what the user is permitted to do.",
       "reviews": []
@@ -157,7 +157,7 @@
     {
       "id": "2t1ch8eheh",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "AWS IAM: write a JSON policy that allows access to all actions in EC2, and denies all actions in S3.",
       "answer": "\"{   \"\"Version\"\": \"\"2012-10-17\"\",   \"\"Statement\"\": [     {       \"\"Effect\"\": \"\"Allow\"\",       \"\"Action\"\": \"\"ec2:*\"\",       \"\"Resource\"\": \"\"*\"\"     },     {       \"\"Effect\"\": \"\"Deny\"\",       \"\"Action\"\": \"\"s3:*\"\",       \"\"Resource\"\": \"\"*\"\"     }   ] }\"",
       "reviews": []
@@ -165,7 +165,7 @@
     {
       "id": "417bgilhba",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "AWS: what does ARN stand for? What are its three formats? What does each section mean?",
       "answer": "\"ARN: amazon resource name   arn:partition:service:region:account-id:resource-id arn:partition:service:region:account-id:resource-type/resource-id  arn:partition:service:region:account-id:resource-type:resource-id    arn: begins every ARN partition: a group of AWS regions; is \"\"aws\"\" for all of my purposes service: the service that resource belongs to (iam, ec2 etc) region: the region (ca-central-1, us-west-2 etc) account-id: the id of the account that owns the resource\"",
       "reviews": []
@@ -173,7 +173,7 @@
     {
       "id": "8as4fq1zu3",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "terraform: what are the three ways of creating multiple similar resources?",
       "answer": "\"# countresource \"\"\u003cresource_type\u003e\"\" \"\"\u003cresource_name\u003e\"\" {   count = 4   name = \"\"resource ${count.index}\"\"  }   # list resource \"\"\u003cresource_type\u003e\"\" \"\"\u003cresource_name\u003e\"\" {   for_each = toset( [\"\"name1\"\", \"\"name2\"\"] )   name = \"\"resource_name is ${each.key}\"\" }   # map  resource \"\"\u003cresource_type\u003e\"\" \"\"\u003cresource_name\u003e\"\" {   for_each = {     resource1 = \"\"value1\"\"     resource2 = \"\"value2\"\"   }   name = \"\"${each.key}: ${each.value}\"\" }\"",
       "reviews": []
@@ -181,7 +181,7 @@
     {
       "id": "mvah8kp5kw",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "terraform: how do you use a module? What needs to be done for the module to work?",
       "answer": "\"module \"\"\u003clocal_name\u003e\"\" {    source = \"\"source_here\"\"   \u003cvars\u003e... }   Then call `terraform init` to download, if applicable. This will adjust the installed modules, but will not upgrade installed modules unless you pass `-upgrade` to it.\"",
       "reviews": []
@@ -189,7 +189,7 @@
     {
       "id": "brho8ljdja",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the difference between AWS ECS and Fargate?",
       "answer": "AWS ECS is free-of charge, and is simply a way of managing containers that run on underlying EC2 instances. You only pay for the EC2 instances.    Fargate is a part of ECS. It is a launch type for ECS Tasks and Services. Rather than running on EC2 instances that you manage, you specify CPU and memory requirements, define networking and IAM policies, and launch the Task or Service.",
       "reviews": []
@@ -197,7 +197,7 @@
     {
       "id": "9jqe7kzmvl",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the two arguments that are passed to a handler function (in python) for AWS lambdas?",
       "answer": "def handler(event, context):     ...   event:   - is determined by the runtime   - can be any type, but most commonly is a dict   - generally used to pass config to the handler   context:   - contains info about the invocation of the function, the function itself, and the runtime environment",
       "reviews": []
@@ -205,7 +205,7 @@
     {
       "id": "zanyjpttdx",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "CloudFormation: what are the two top-level concepts? Explain what they are.",
       "answer": "template: a yaml or json text file that describes a group of resources   stack: a reified template; is a group of resources that is created, modified and deleted together   So you can make multiple stacks from one template.",
       "reviews": []
@@ -213,7 +213,7 @@
     {
       "id": "j7lbk95cor",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the three main concepts in DynamoDB? How do they relate?",
       "answer": "tables: just like any other database system; contains multiple items   items: a group of attributes that is uniquely identifiable among all other items   attributes: one of the actual keys in the key-value store; points to a value",
       "reviews": []
@@ -221,7 +221,7 @@
     {
       "id": "vwha188if8",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "AWS lambda: what is the structure of the event argument to a lambda function?",
       "answer": "It depends on what is triggering the lambda. If you are triggering it manually, you get to specify the value for event. If the lambda is being triggered by another AWS service, then that service decides what the format of the event variable is - you can see what the format will be in the AWS lambda docs.",
       "reviews": []
@@ -229,7 +229,7 @@
     {
       "id": "or6io082ug",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "AWS: in what four main ways does a SAM template differ from a regular CloudFormation template?",
       "answer": "1) The Transform statement. A transform is basically a step that the template is sent through that changes it somehow. In the case of a SAM template, the SAM transform changes all of the SAM-specific fields into regular CF fields.   2) The Globals section. This section defines properties that are common to all SAM resources, such as Environment, Timeout for a function.   3) The Resources section, which can contain both SAM-style resources and CF-style resources.   4) The Parameters section, which enables prompts for their values if you do `sam deploy --guided`.",
       "reviews": []
@@ -237,7 +237,7 @@
     {
       "id": "xd8tpjy8bz",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the two main objects in AWS ECS and Fargate? What are they?",
       "answer": "Task: analogous to a k8s Pod, with some elements of k8s Service mixed in; is one or more containers with config saying which ports should be opened and what volumes should be used   Service: analogous to k8s Service, but only deals with where and how many Tasks are deployed. Types are REPLICA and DAEMON, which work the same as k8s ReplicaSets and DaemonSets",
       "reviews": []
@@ -245,7 +245,7 @@
     {
       "id": "07afr7bomo",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "AWS SQS: what is message group ID for?",
       "answer": "It is applied to messages in a FIFO queue. Messages that belong to the same message group are always processed in strict order.",
       "reviews": []
@@ -253,7 +253,7 @@
     {
       "id": "isbqow75ee",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "AWS SQS: how do you receive a message from a queue (2 steps)?",
       "answer": "1) receive the message and process it 2) if there are no errors, delete the message using its receipt handle",
       "reviews": []
