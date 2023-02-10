@@ -235,6 +235,14 @@
       "reviews": []
     },
     {
+      "id": "e48p62d1wl",
+      "version": 0,
+      "active": true,
+      "question": "What are the three important options of git clean?",
+      "answer": "-n: don't remove anything, just show what would be done\n-f: required to actually remove anything\n-X: remove only files ignored by git",
+      "reviews": []
+    },
+    {
       "id": "7hs1x0a1np",
       "version": 0,
       "active": true,
