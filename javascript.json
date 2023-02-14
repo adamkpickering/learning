@@ -135,7 +135,7 @@
       "version": 0,
       "active": true,
       "question": "ts: what are the two ways of doing type assertions?",
-      "answer": "const typedVar = oldVar as myType const typedVar = \u003cmyType\u003eoldVar",
+      "answer": "const typedVar = oldVar as myType const typedVar = <myType>oldVar",
       "reviews": []
     },
     {
@@ -183,7 +183,7 @@
       "version": 0,
       "active": true,
       "question": "ts: how do you express the type for an anonymous function that takes a string as input and returns a number as output (2 ways)?",
-      "answer": "In a function parameter:(myString: string) =\u003e number   In an object type definition: {   someOtherField: string;   (myString: string): number;  }",
+      "answer": "In a function parameter:(myString: string) => number   In an object type definition: {   someOtherField: string;   (myString: string): number;  }",
       "reviews": []
     },
     {
@@ -191,7 +191,7 @@
       "version": 0,
       "active": true,
       "question": "ts: define a generic function that returns the first element of an array of any type.",
-      "answer": "function myFunc\u003cType\u003e(myArray: Type[]): Type { ... }",
+      "answer": "function myFunc<Type>(myArray: Type[]): Type { ... }",
       "reviews": []
     },
     {
@@ -255,7 +255,7 @@
       "version": 0,
       "active": true,
       "question": "nodejs: what is the EventEmitter class? What are its two main methods? How are they used?",
-      "answer": "It is a class on which you can register callbacks that are run in response to certain events. Events are just strings, and may have arguments associated with them.   const EventEmitter = require('events'); const eventEmitter = new EventEmitter();   // register logging callback for event 'start' eventEmitter.on('start', () =\u003e {   console.log('started'); })   // trigger the 'start' event eventEmitter.emit('start')",
+      "answer": "It is a class on which you can register callbacks that are run in response to certain events. Events are just strings, and may have arguments associated with them.   const EventEmitter = require('events'); const eventEmitter = new EventEmitter();   // register logging callback for event 'start' eventEmitter.on('start', () => {   console.log('started'); })   // trigger the 'start' event eventEmitter.emit('start')",
       "reviews": []
     },
     {
@@ -279,7 +279,7 @@
       "version": 0,
       "active": true,
       "question": "\"What is a Promise? Define it in typescript.  Explain the typescript. Give an example that fulfills the promise with the value \"\"hello world\"\" after 250 ms.\"",
-      "answer": "\"A promise is an object representing the eventual completion or failure of an asynchronous operation.   class Promise {   constructor( ( resolveFunc: (value) =\u003e void, rejectFunc: (reason) =\u003e void ) =\u003e void ) { ... } }    Basically you pass an executor function to the Promise constructor. This function takes two parameters:   1) a resolve function, which the executor function calls with a single value in the event of success 2) a reject function, which the executor function calls with a reason for failure in the event of failure   const myPromise = Promise( (resolve, reject) =\u003e {   setTimeout( () =\u003e { resolve(\"\"hello world\"\") }, 250 ) })\"",
+      "answer": "\"A promise is an object representing the eventual completion or failure of an asynchronous operation.   class Promise {   constructor( ( resolveFunc: (value) => void, rejectFunc: (reason) => void ) => void ) { ... } }    Basically you pass an executor function to the Promise constructor. This function takes two parameters:   1) a resolve function, which the executor function calls with a single value in the event of success 2) a reject function, which the executor function calls with a reason for failure in the event of failure   const myPromise = Promise( (resolve, reject) => {   setTimeout( () => { resolve(\"\"hello world\"\") }, 250 ) })\"",
       "reviews": []
     },
     {
@@ -391,7 +391,7 @@
       "version": 0,
       "active": true,
       "question": "vue: what are the three most common directives? Also specify shorthand versions if any. What do they do?",
-      "answer": "\"v-if: removes/inserts the containing element based on the truthiness of the referenced data \u003cp v-if=\"\"seen\"\"\u003e...\u003c/p\u003e   v-bind: lets you bind a value to an attribute of an element; the following is equivalent to \u003ca href=\"\"asdfasdf\"\"\u003e...\u003c/a\u003e with url = \"\"asdfasdf\"\" \u003ca v-bind:href=\"\"url\"\"\u003e...\u003c/a\u003e shorthand: v-bind:href=\"\"url\"\" === :href=\"\"url\"\"   v-on: specifies an action to take upon a DOM event \u003ccheckbox v-on:click=\"\"triggerClick\"\"/\u003e shorthand: v-on:click=\"\"myMethod\"\" === @click=\"\"myMethod\"\"\"",
+      "answer": "\"v-if: removes/inserts the containing element based on the truthiness of the referenced data <p v-if=\"\"seen\"\">...</p>   v-bind: lets you bind a value to an attribute of an element; the following is equivalent to <a href=\"\"asdfasdf\"\">...</a> with url = \"\"asdfasdf\"\" <a v-bind:href=\"\"url\"\">...</a> shorthand: v-bind:href=\"\"url\"\" === :href=\"\"url\"\"   v-on: specifies an action to take upon a DOM event <checkbox v-on:click=\"\"triggerClick\"\"/> shorthand: v-on:click=\"\"myMethod\"\" === @click=\"\"myMethod\"\"\"",
       "reviews": []
     },
     {
@@ -399,7 +399,7 @@
       "version": 0,
       "active": true,
       "question": "vue: what is the type of Vue.data? Why?",
-      "answer": "Object | () =\u003e Object   When the Vue instance is a component, data must be declared as a function that returns the initial data object. This is because there will be many instances created using the same definition.",
+      "answer": "Object | () => Object   When the Vue instance is a component, data must be declared as a function that returns the initial data object. This is because there will be many instances created using the same definition.",
       "reviews": []
     },
     {
@@ -407,7 +407,7 @@
       "version": 0,
       "active": true,
       "question": "ts: What is the Record type? How do you use it?",
-      "answer": "\"It is a generic type with two types. The first is the type of the keys; the second is the type of the values. So, it can be used to provide a type-restricted object.   const myRecord: Record\u003cstring, number\u003e = {   \"\"hello\"\": 1,   \"\"world\"\": 2, }\"",
+      "answer": "\"It is a generic type with two types. The first is the type of the keys; the second is the type of the values. So, it can be used to provide a type-restricted object.   const myRecord: Record<string, number> = {   \"\"hello\"\": 1,   \"\"world\"\": 2, }\"",
       "reviews": []
     },
     {
@@ -639,7 +639,7 @@
       "version": 0,
       "active": true,
       "question": "Use .reduce() to sum the elements of the following array:   const myArr = [1, 2, 3, 4];",
-      "answer": "const mySum = myArr.reduce((previous, current) =\u003e {   previous + current; })",
+      "answer": "const mySum = myArr.reduce((previous, current) => {   previous + current; })",
       "reviews": []
     },
     {
@@ -647,7 +647,7 @@
       "version": 0,
       "active": true,
       "question": "What is the signature of the .reduce() method of an array? How does it work? What is the second arg for?",
-      "answer": "reduce(   reduceFunc: (previous: any, current: any) =\u003e any,   firstPrevious: any, )   .reduce() is used to aggregate all of the values of an array somehow. The passed function always gets the previous result in the first arg, and the current element in the second arg.   If firstPrevious is not defined, the iteration starts with previous = arr[0] and current = arr[1].   If firstPrevious is defined, the iteration starts with previous = firstPrevious and current = arr[0].",
+      "answer": "reduce(   reduceFunc: (previous: any, current: any) => any,   firstPrevious: any, )   .reduce() is used to aggregate all of the values of an array somehow. The passed function always gets the previous result in the first arg, and the current element in the second arg.   If firstPrevious is not defined, the iteration starts with previous = arr[0] and current = arr[1].   If firstPrevious is defined, the iteration starts with previous = firstPrevious and current = arr[0].",
       "reviews": []
     },
     {
@@ -695,7 +695,7 @@
       "version": 0,
       "active": true,
       "question": "What does IIFE stand for? How do you write one?",
-      "answer": "Immediately Invoked Function Expression   ( () =\u003e {   statements; })();   or   ( function() {   statements; })();",
+      "answer": "Immediately Invoked Function Expression   ( () => {   statements; })();   or   ( function() {   statements; })();",
       "reviews": []
     },
     {
@@ -750,7 +750,7 @@
       "id": "wvi934j4ci",
       "version": 0,
       "active": true,
-      "question": "ts: what does ReturnType\u003cType\u003e do?",
+      "question": "ts: what does ReturnType<Type> do?",
       "answer": "It constructs a type equal to the return type of the function `Type`.",
       "reviews": []
     },
@@ -767,7 +767,7 @@
       "version": 0,
       "active": true,
       "question": "ts: how do you specify which type is returned when a Promise is awaited? How do errors work in this case?",
-      "answer": "Promise\u003cstring\u003e etc   You cannot constrain the value of the error that a Promise may throw.",
+      "answer": "Promise<string> etc   You cannot constrain the value of the error that a Promise may throw.",
       "reviews": []
     },
     {
@@ -879,7 +879,7 @@
       "version": 0,
       "active": true,
       "question": "deno: what is the first part of every import of the stdlib?",
-      "answer": "import ... from 'https://deno.land/std@\u003cversion\u003e...'",
+      "answer": "import ... from 'https://deno.land/std@<version>...'",
       "reviews": []
     },
     {
@@ -887,7 +887,7 @@
       "version": 0,
       "active": true,
       "question": "deno: what is the (simplified) signature of the function used to read a file into a string?",
-      "answer": "function readTextFile(path: string): Promise\u003cstring\u003e",
+      "answer": "function readTextFile(path: string): Promise<string>",
       "reviews": []
     },
     {
@@ -895,7 +895,7 @@
       "version": 0,
       "active": true,
       "question": "deno: what is the (simplified) signature of the function used to write a string to a file?",
-      "answer": "function writeTextFile(path: string, data: string): Promise\u003cvoid\u003e",
+      "answer": "function writeTextFile(path: string, data: string): Promise<void>",
       "reviews": []
     },
     {

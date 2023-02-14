@@ -47,7 +47,7 @@
       "version": 0,
       "active": false,
       "question": "For a serial port using 8N1 character framing, what percentage of the transmitted symbols are carrying data?",
-      "answer": "1 start bit8 -\u003e 8 bits N -\u003e 0 bits 1 -\u003e 1 bit   So 10 bits total. 8/10 = 80%",
+      "answer": "1 start bit8 -> 8 bits N -> 0 bits 1 -> 1 bit   So 10 bits total. 8/10 = 80%",
       "reviews": []
     },
     {

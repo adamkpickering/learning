@@ -39,7 +39,7 @@
       "version": 0,
       "active": false,
       "question": "How do you edit a macro?",
-      "answer": "\"Recorded macros are stored in the register with the same assigned letter. They are really the same thing as a register. So to execute text in a register, you can do `@\u003cletter\u003e`, and to edit a macro you can do `\"\"\u003cletter\u003ep` and then re-yank that line once edited.\"",
+      "answer": "\"Recorded macros are stored in the register with the same assigned letter. They are really the same thing as a register. So to execute text in a register, you can do `@<letter>`, and to edit a macro you can do `\"\"<letter>p` and then re-yank that line once edited.\"",
       "reviews": []
     },
     {
@@ -79,7 +79,7 @@
       "version": 0,
       "active": false,
       "question": "Filter selected text through awk command that prints the second column of each line with 'Host' in it",
-      "answer": ":'\u003c,'\u003e!awk '/Host/ { print $2 }'",
+      "answer": ":'<,'>!awk '/Host/ { print $2 }'",
       "reviews": []
     },
     {
@@ -214,7 +214,7 @@
       "id": "sf9x88v9yb",
       "version": 0,
       "active": false,
-      "question": "\"Define a function that takes a name, and returns a string that says \"\"hello \u003cname\u003e\"\".\"",
+      "question": "\"Define a function that takes a name, and returns a string that says \"\"hello <name>\"\".\"",
       "answer": "\"function Name(name)    return \"\"hello \"\" + a:name endfunction\"",
       "reviews": []
     },
@@ -255,7 +255,7 @@
       "version": 0,
       "active": false,
       "question": "Use a while loop to print: 1 2 3 4",
-      "answer": "let i = 1 while i \u003c 5     echo i     let i = i + 1 endwhile",
+      "answer": "let i = 1 while i < 5     echo i     let i = i + 1 endwhile",
       "reviews": []
     },
     {
@@ -294,8 +294,8 @@
       "id": "j9buye5iv8",
       "version": 0,
       "active": false,
-      "question": "What does \u003cPlug\u003e mean?",
-      "answer": "It is a mapping that plugin authors can use to define a mapping that is never called, unless users of the plugins define their own mappings that call the \u003cPlug\u003e mappings. Basically, it's a way for plugin authors to expose functionality with lower risk of screwing up the user's setup.",
+      "question": "What does <Plug> mean?",
+      "answer": "It is a mapping that plugin authors can use to define a mapping that is never called, unless users of the plugins define their own mappings that call the <Plug> mappings. Basically, it's a way for plugin authors to expose functionality with lower risk of screwing up the user's setup.",
       "reviews": []
     },
     {
@@ -335,7 +335,7 @@
       "version": 0,
       "active": false,
       "question": "\"What does the character # mean inside a function name?\"",
-      "answer": "\"It means that it is loaded on demand from an autoload function. A couple of examples:  ctrlp#sample() -\u003e looks for name ctrlp#sample() in file autoload/ctrlp.vim  ctrlp#sample#init() -\u003e looks for name ctrlp#sample#init() in file autoload/ctrlp/sample.vim\"",
+      "answer": "\"It means that it is loaded on demand from an autoload function. A couple of examples:  ctrlp#sample() -> looks for name ctrlp#sample() in file autoload/ctrlp.vim  ctrlp#sample#init() -> looks for name ctrlp#sample#init() in file autoload/ctrlp/sample.vim\"",
       "reviews": []
     },
     {
@@ -398,8 +398,8 @@
       "id": "ncbui1mpbo",
       "version": 0,
       "active": false,
-      "question": "What is \u003cSID\u003e for? How does it work?",
-      "answer": "It is a way of exporting things that are local to a script file in such a way that collisions with things that have the same name in other script files are impossible.  It is only valid when you are making a mapping, i.e. in commands like nnoremap. At the time of the mapping (which happens in the script file), it is expanded to \u003cSNR\u003e, then a number representing the script, then an underscore.  The lesson is: if you want to expose a function in some way, prepend \u003cSID\u003e to it instead of s:, and then expose it through some mapping or command.",
+      "question": "What is <SID> for? How does it work?",
+      "answer": "It is a way of exporting things that are local to a script file in such a way that collisions with things that have the same name in other script files are impossible.  It is only valid when you are making a mapping, i.e. in commands like nnoremap. At the time of the mapping (which happens in the script file), it is expanded to <SNR>, then a number representing the script, then an underscore.  The lesson is: if you want to expose a function in some way, prepend <SID> to it instead of s:, and then expose it through some mapping or command.",
       "reviews": []
     }
   ]

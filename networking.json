@@ -471,7 +471,7 @@
       "version": 0,
       "active": true,
       "question": "how to configure routing protocol policy on 7750?",
-      "answer": "configure router policy-options \u003cpolicy-statement|prefix-list|community\u003e",
+      "answer": "configure router policy-options <policy-statement|prefix-list|community>",
       "reviews": []
     },
     {
@@ -631,7 +631,7 @@
       "version": 0,
       "active": true,
       "question": "In DHCP, which port is associated with the client, and which is associated with the server?",
-      "answer": "server -\u003e 67 client -\u003e 68",
+      "answer": "server -> 67 client -> 68",
       "reviews": []
     },
     {
@@ -647,7 +647,7 @@
       "version": 0,
       "active": true,
       "question": "In Linux networking, what is the difference between tun, tap, and tunnel?",
-      "answer": "tun/tap: allow userspace programs to emulate a network device; the emulating program gets an fd, so that reads from the fd get whatever is written to the network interface, and writes to the fd send traffic out on the network interface.   tap -\u003e sends and receives raw Ethernet frames tun -\u003e sends and receives raw IP packets   tunnel: a networking device that sends traffic put on it through some kind of tunnel",
+      "answer": "tun/tap: allow userspace programs to emulate a network device; the emulating program gets an fd, so that reads from the fd get whatever is written to the network interface, and writes to the fd send traffic out on the network interface.   tap -> sends and receives raw Ethernet frames tun -> sends and receives raw IP packets   tunnel: a networking device that sends traffic put on it through some kind of tunnel",
       "reviews": []
     },
     {
@@ -671,7 +671,7 @@
       "version": 0,
       "active": true,
       "question": "- How does ARP work? - What is the ethernet broadcast address?",
-      "answer": "Computer 1 wants to send an IP packet to computer 2, whose IP address it knows. However, it needs its MAC address in order to construct the ethernet frame that encapsulates the IP packet.   In order to find the MAC address, it first checks its ARP table, which contains a cache of IP address -\u003e MAC address mappings. If it does not find a match there, it issues an ARP request to the ethernet broadcast address, FF:FF:FF:FF:FF:FF, which is sent to all computers on the network. Computer 2 receives this request, and responds with an ARP message containing its MAC address and IP address. Computer 1 can then assemble its ethernet frame.",
+      "answer": "Computer 1 wants to send an IP packet to computer 2, whose IP address it knows. However, it needs its MAC address in order to construct the ethernet frame that encapsulates the IP packet.   In order to find the MAC address, it first checks its ARP table, which contains a cache of IP address -> MAC address mappings. If it does not find a match there, it issues an ARP request to the ethernet broadcast address, FF:FF:FF:FF:FF:FF, which is sent to all computers on the network. Computer 2 receives this request, and responds with an ARP message containing its MAC address and IP address. Computer 1 can then assemble its ethernet frame.",
       "reviews": []
     },
     {

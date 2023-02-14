@@ -23,7 +23,7 @@
       "version": 0,
       "active": true,
       "question": "for loop",
-      "answer": "for i := 0; i \u003c 10; i++ { fmt.Println(i) }",
+      "answer": "for i := 0; i < 10; i++ { fmt.Println(i) }",
       "reviews": []
     },
     {
@@ -31,7 +31,7 @@
       "version": 0,
       "active": true,
       "question": "if statement",
-      "answer": "if number := 4; number \u003e 5 { statements here }",
+      "answer": "if number := 4; number > 5 { statements here }",
       "reviews": []
     },
     {
@@ -47,7 +47,7 @@
       "version": 0,
       "active": true,
       "question": "create a while loop",
-      "answer": "for i \u003c 3 { statements }",
+      "answer": "for i < 3 { statements }",
       "reviews": []
     },
     {
@@ -382,7 +382,7 @@
       "id": "ut1srvdlok",
       "version": 0,
       "active": true,
-      "question": "val, ok := \u003c-my_chan What are the two possible values of ok, and what do they signify?",
+      "question": "val, ok := <-my_chan What are the two possible values of ok, and what do they signify?",
       "answer": "ok is true if we got a valid value in val ok is false if the channel is closed and there are no more values to receive",
       "reviews": []
     },
@@ -399,7 +399,7 @@
       "version": 0,
       "active": true,
       "question": "select from channels ch1 and ch2",
-      "answer": "select { case a, ok := \u003c-ch1:   fmt.Println(a) case a, ok := \u003c-ch2:   fmt.Println(a) }",
+      "answer": "select { case a, ok := <-ch1:   fmt.Println(a) case a, ok := <-ch2:   fmt.Println(a) }",
       "reviews": []
     },
     {
@@ -519,7 +519,7 @@
       "version": 0,
       "active": true,
       "question": "Send variable val on a ch1",
-      "answer": "ch1 \u003c- val",
+      "answer": "ch1 <- val",
       "reviews": []
     },
     {
@@ -599,7 +599,7 @@
       "version": 0,
       "active": true,
       "question": "What determines whether code in a file is turned into an installed package object or an executable command?",
-      "answer": "package main -\u003e executable command   package anything_else -\u003e package object",
+      "answer": "package main -> executable command   package anything_else -> package object",
       "reviews": []
     },
     {
@@ -615,7 +615,7 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between `go get` pre-modules vs post-modules?",
-      "answer": "Pre-modules: `go get` simply downloads the package to GOPATH/src/\u003cpackage_path\u003e, then builds and installs it like any other package.   Post-modules: `go get` first updates the package record in go.mod, and then downloads the package (and its dependencies) to GOPATH/pkg/mod/\u003cpackage_path\u003e and installs the package and its dependencies to the cache.",
+      "answer": "Pre-modules: `go get` simply downloads the package to GOPATH/src/<package_path>, then builds and installs it like any other package.   Post-modules: `go get` first updates the package record in go.mod, and then downloads the package (and its dependencies) to GOPATH/pkg/mod/<package_path> and installs the package and its dependencies to the cache.",
       "reviews": []
     },
     {
@@ -639,7 +639,7 @@
       "version": 0,
       "active": true,
       "question": "How are tests named?",
-      "answer": "Test\u003cfunction_name\u003e(...) {...}",
+      "answer": "Test<function_name>(...) {...}",
       "reviews": []
     },
     {
@@ -647,7 +647,7 @@
       "version": 0,
       "active": true,
       "question": "How are test files named?",
-      "answer": "\u003cfilename\u003e_test.go",
+      "answer": "<filename>_test.go",
       "reviews": []
     },
     {
@@ -783,7 +783,7 @@
       "version": 0,
       "active": true,
       "question": "What are the function signatures of the four methods in context.Context? When would they be used?",
-      "answer": "func (c context.Context) Done() \u003c-chan struct{} Returns a channel that is closed when work associated with this context should be canceled.    func (c context.Context) Deadline() (dl time.Time, ok bool)  Returns the time when work associated with this context should be canceled; ok is false if there is no deadline.   func (c context.Context) Err() error If context is not yet closed, returns nil; if context is closed, returns error explaining why.   func (c context.Context) Value(key interface{}) interface{}  Returns a value associated with the context with a specific key. useful for request-scoped data.",
+      "answer": "func (c context.Context) Done() <-chan struct{} Returns a channel that is closed when work associated with this context should be canceled.    func (c context.Context) Deadline() (dl time.Time, ok bool)  Returns the time when work associated with this context should be canceled; ok is false if there is no deadline.   func (c context.Context) Err() error If context is not yet closed, returns nil; if context is closed, returns error explaining why.   func (c context.Context) Value(key interface{}) interface{}  Returns a value associated with the context with a specific key. useful for request-scoped data.",
       "reviews": []
     },
     {
@@ -791,7 +791,7 @@
       "version": 0,
       "active": true,
       "question": "- What are the three types of channels? - What do they look like in function signatures?",
-      "answer": "chan T : bidirectional; can be used to send and receive T \u003c-chan T : can only be used to receive T chan\u003c- T : can only be used to send T",
+      "answer": "chan T : bidirectional; can be used to send and receive T <-chan T : can only be used to receive T chan<- T : can only be used to send T",
       "reviews": []
     },
     {
@@ -831,7 +831,7 @@
       "version": 0,
       "active": true,
       "question": "What is iota? How do you use it?",
-      "answer": "A way of declaring constants in a group. you can basically make enums if you define a special type. For example:   type KeyType int   const (   KeyEnter KeyType = iota    // 0   KeyEsc KeyType             // 1   KeyCtrl KeyType            // 2   KeyAlt KeyType             // 3 )   You can also use iota as a value on each line, for example to create a bitmask:   type Mask int   const (   One Mask = 1 \u003c\u003c iota  // 1 \u003c\u003c 0, or 00000001   Two                   // 1 \u003c\u003c 1, or 00000010   Four                  // 1 \u003c\u003c 2, or 00000100   Eight                 // 1 \u003c\u003c 3, or 00001000   Sixteen               // 1 \u003c\u003c 4, or 00010000 )",
+      "answer": "A way of declaring constants in a group. you can basically make enums if you define a special type. For example:   type KeyType int   const (   KeyEnter KeyType = iota    // 0   KeyEsc KeyType             // 1   KeyCtrl KeyType            // 2   KeyAlt KeyType             // 3 )   You can also use iota as a value on each line, for example to create a bitmask:   type Mask int   const (   One Mask = 1 << iota  // 1 << 0, or 00000001   Two                   // 1 << 1, or 00000010   Four                  // 1 << 2, or 00000100   Eight                 // 1 << 3, or 00001000   Sixteen               // 1 << 4, or 00010000 )",
       "reviews": []
     },
     {
@@ -942,7 +942,7 @@
       "id": "xiv39ys2cw",
       "version": 0,
       "active": true,
-      "question": "\"base_tmpl := `\u003chtml\u003e{{ template \"\"content\"\" . }}\u003c/html\u003e`  base, _ := template.New(\"\"base\"\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.\"",
+      "question": "\"base_tmpl := `<html>{{ template \"\"content\"\" . }}</html>`  base, _ := template.New(\"\"base\"\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.\"",
       "answer": "\"tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.Parse(\"\"{{define `content`}}tmpl1{{end}}\"\"))   or   tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.New(\"\"content\"\").Parse(\"\"tmpl1\"\"))\"",
       "reviews": []
     },
@@ -951,7 +951,7 @@
       "version": 0,
       "active": true,
       "question": "Define the time.Ticker type. What is it used for?",
-      "answer": "type time.Ticker struct {     C \u003c-chan time.Time }   The channel delivers time.Time objects at intervals you specify.",
+      "answer": "type time.Ticker struct {     C <-chan time.Time }   The channel delivers time.Time objects at intervals you specify.",
       "reviews": []
     },
     {
@@ -1383,7 +1383,7 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between os.Create and os.Open?",
-      "answer": "os.Create -\u003e creates or truncates the file at the named path   os.Open -\u003e only opens the file at the named path",
+      "answer": "os.Create -> creates or truncates the file at the named path   os.Open -> only opens the file at the named path",
       "reviews": []
     },
     {
@@ -1479,7 +1479,7 @@
       "version": 0,
       "active": true,
       "question": "Which two operators are used to do bit shifting?",
-      "answer": "myVar \u003c\u003c 1   The counterpart is \u003e\u003e.",
+      "answer": "myVar << 1   The counterpart is >>.",
       "reviews": []
     },
     {

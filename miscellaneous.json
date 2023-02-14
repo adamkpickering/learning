@@ -127,7 +127,7 @@
       "version": 0,
       "active": false,
       "question": "How are frequency, alertness/wakefulness and amplitude of brain waves related?",
-      "answer": "higher frequency -\u003e lower amplitude -\u003e more alertness/wakefulness",
+      "answer": "higher frequency -> lower amplitude -> more alertness/wakefulness",
       "reviews": []
     },
     {
@@ -135,7 +135,7 @@
       "version": 0,
       "active": false,
       "question": "Order the 5 brain waves from lowest frequency to highest frequency. What is each brain wave typically associated with?",
-      "answer": "delta -\u003e deep sleep theta -\u003e daydreaming; meditation alpha -\u003e awake, but relaxed (eyes closed) beta -\u003e awake and thinking about something gamma -\u003e deeply focused on something",
+      "answer": "delta -> deep sleep theta -> daydreaming; meditation alpha -> awake, but relaxed (eyes closed) beta -> awake and thinking about something gamma -> deeply focused on something",
       "reviews": []
     },
     {

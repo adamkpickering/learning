@@ -103,7 +103,7 @@
       "version": 0,
       "active": false,
       "question": "number each element in an iterable",
-      "answer": "iterator = ['cat', 'dog', 'snake']enumerate(iterator) =\u003e [(0, 'cat'), (1, 'dog'), (2, 'snake')]",
+      "answer": "iterator = ['cat', 'dog', 'snake']enumerate(iterator) => [(0, 'cat'), (1, 'dog'), (2, 'snake')]",
       "reviews": []
     },
     {
@@ -223,7 +223,7 @@
       "version": 0,
       "active": false,
       "question": "url endpoint in flask (that takes an int parameter)",
-      "answer": "@app.route('/hello/world/\u003cint:my_parameter\u003e') def hello_world(my_parameter):",
+      "answer": "@app.route('/hello/world/<int:my_parameter>') def hello_world(my_parameter):",
       "reviews": []
     },
     {
@@ -535,7 +535,7 @@
       "version": 0,
       "active": false,
       "question": "On alpine, what four packages must be installed (in addition to python3) to expect python to work? What is each for?",
-      "answer": "python(3)-dev: contains header files (that are referenced in C code) that you need to build python extensions   openssl-dev: libs for openssl (libssl-dev on ubuntu)   libffi-dev: provides a portable, high-level programming interface to a variety of calling conventions used in high-level programming languages; FFI -\u003e foreign function interface; is the interface that allows code written in one language to call code written in another   build-base (build-essential on debian): a metapackage that contains all of the things you need to build code, typically gcc, g++, basic libs, make etc",
+      "answer": "python(3)-dev: contains header files (that are referenced in C code) that you need to build python extensions   openssl-dev: libs for openssl (libssl-dev on ubuntu)   libffi-dev: provides a portable, high-level programming interface to a variety of calling conventions used in high-level programming languages; FFI -> foreign function interface; is the interface that allows code written in one language to call code written in another   build-base (build-essential on debian): a metapackage that contains all of the things you need to build code, typically gcc, g++, basic libs, make etc",
       "reviews": []
     },
     {
@@ -599,7 +599,7 @@
       "version": 0,
       "active": false,
       "question": "How do you see the list of options for a single setup.py command?",
-      "answer": "python3 setup.py --help \u003ccommand\u003e",
+      "answer": "python3 setup.py --help <command>",
       "reviews": []
     },
     {
@@ -703,7 +703,7 @@
       "version": 0,
       "active": false,
       "question": "Define a variable inside an if statement.",
-      "answer": "if (x := 4) \u003e 3:     doSomething()",
+      "answer": "if (x := 4) > 3:     doSomething()",
       "reviews": []
     },
     {
@@ -823,7 +823,7 @@
       "version": 0,
       "active": false,
       "question": "In requirements.txt, specify that the package `asdf` is required with major version greater than or equal to 1 and major version less than 2.",
-      "answer": "asdf\u003e=1,\u003c2",
+      "answer": "asdf>=1,<2",
       "reviews": []
     },
     {
@@ -1223,7 +1223,7 @@
       "version": 0,
       "active": false,
       "question": "sqlalchemy: how do you constrain a Column so that it can only have the values in the id field of another table? How do you import ForeignKey?",
-      "answer": "\"Define the column as:   from sqlalchemy import Column, Integer, ForeignKey   Column(Integer, ForeignKey(\"\"\u003ctable_name\u003e.\u003ccolumn_name\u003e\"\"))\"",
+      "answer": "\"Define the column as:   from sqlalchemy import Column, Integer, ForeignKey   Column(Integer, ForeignKey(\"\"<table_name>.<column_name>\"\"))\"",
       "reviews": []
     },
     {
@@ -1423,7 +1423,7 @@
       "version": 0,
       "active": false,
       "question": "What does a variable with a trailing underscore mean?",
-      "answer": "This is used when you want to use a variable name that would conflict with a built-in, for example:   dict -\u003e dict_ file -\u003e file_",
+      "answer": "This is used when you want to use a variable name that would conflict with a built-in, for example:   dict -> dict_ file -> file_",
       "reviews": []
     },
     {
@@ -1495,7 +1495,7 @@
       "version": 0,
       "active": false,
       "question": "Define the os.PathLike interface.",
-      "answer": "Has one method:   def __fspath__() -\u003e Union[str, bytes]:     pass   Returns the filesystem path as a str or bytes, with the preference being for str.",
+      "answer": "Has one method:   def __fspath__() -> Union[str, bytes]:     pass   Returns the filesystem path as a str or bytes, with the preference being for str.",
       "reviews": []
     },
     {

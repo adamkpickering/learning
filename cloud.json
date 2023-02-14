@@ -63,7 +63,7 @@
       "version": 0,
       "active": false,
       "question": "HCL: what four basic elements make up HCL blocks? What do they look like in a block?",
-      "answer": "\"\u003cblock_type\u003e \"\"\u003cblock_label\u003e\"\" \"\"\u003cblock_label\u003e\"\" {      \u003cidentifier\u003e = \u003cexpression\u003e }\"",
+      "answer": "\"<block_type> \"\"<block_label>\"\" \"\"<block_label>\"\" {      <identifier> = <expression> }\"",
       "reviews": []
     },
     {
@@ -87,7 +87,7 @@
       "version": 0,
       "active": false,
       "question": "terraform: what does every resource config consist of? Explain each part.",
-      "answer": "resource \u003cresource_type\u003e \u003cresource_name\u003e { body }   resource_type: the type of resource; associated with a specific provider   resource_name: the local name of the resource; only used to refer to the resource within terraform   body: contains resource-specific configuration",
+      "answer": "resource <resource_type> <resource_name> { body }   resource_type: the type of resource; associated with a specific provider   resource_name: the local name of the resource; only used to refer to the resource within terraform   body: contains resource-specific configuration",
       "reviews": []
     },
     {
@@ -103,7 +103,7 @@
       "version": 0,
       "active": false,
       "question": "terraform: what block type do I use to configure a remote state store? How does it look?",
-      "answer": "\"Use a backend.   terraform {   backend \"\"\u003cbackend_name\u003e\"\" {     ...   } }\"",
+      "answer": "\"Use a backend.   terraform {   backend \"\"<backend_name>\"\" {     ...   } }\"",
       "reviews": []
     },
     {
@@ -111,7 +111,7 @@
       "version": 0,
       "active": false,
       "question": "terraform: what are the four different ways of doing variables? How are they referenced?",
-      "answer": "input variables (variable block, referenced as var.\u003cname\u003e)   output variables (output block, referenced as module.\u003cmodule_name\u003e.\u003coutput_name\u003e outside module)   local variables (locals block, referenced as local.\u003cname\u003e)   data (data block, referenced as data.\u003cdata_source_type\u003e.\u003clocal_name\u003e.\u003cattr_name\u003e)",
+      "answer": "input variables (variable block, referenced as var.<name>)   output variables (output block, referenced as module.<module_name>.<output_name> outside module)   local variables (locals block, referenced as local.<name>)   data (data block, referenced as data.<data_source_type>.<local_name>.<attr_name>)",
       "reviews": []
     },
     {
@@ -175,7 +175,7 @@
       "version": 0,
       "active": false,
       "question": "terraform: what are the three ways of creating multiple similar resources?",
-      "answer": "\"# countresource \"\"\u003cresource_type\u003e\"\" \"\"\u003cresource_name\u003e\"\" {   count = 4   name = \"\"resource ${count.index}\"\"  }   # list resource \"\"\u003cresource_type\u003e\"\" \"\"\u003cresource_name\u003e\"\" {   for_each = toset( [\"\"name1\"\", \"\"name2\"\"] )   name = \"\"resource_name is ${each.key}\"\" }   # map  resource \"\"\u003cresource_type\u003e\"\" \"\"\u003cresource_name\u003e\"\" {   for_each = {     resource1 = \"\"value1\"\"     resource2 = \"\"value2\"\"   }   name = \"\"${each.key}: ${each.value}\"\" }\"",
+      "answer": "\"# countresource \"\"<resource_type>\"\" \"\"<resource_name>\"\" {   count = 4   name = \"\"resource ${count.index}\"\"  }   # list resource \"\"<resource_type>\"\" \"\"<resource_name>\"\" {   for_each = toset( [\"\"name1\"\", \"\"name2\"\"] )   name = \"\"resource_name is ${each.key}\"\" }   # map  resource \"\"<resource_type>\"\" \"\"<resource_name>\"\" {   for_each = {     resource1 = \"\"value1\"\"     resource2 = \"\"value2\"\"   }   name = \"\"${each.key}: ${each.value}\"\" }\"",
       "reviews": []
     },
     {
@@ -183,7 +183,7 @@
       "version": 0,
       "active": false,
       "question": "terraform: how do you use a module? What needs to be done for the module to work?",
-      "answer": "\"module \"\"\u003clocal_name\u003e\"\" {    source = \"\"source_here\"\"   \u003cvars\u003e... }   Then call `terraform init` to download, if applicable. This will adjust the installed modules, but will not upgrade installed modules unless you pass `-upgrade` to it.\"",
+      "answer": "\"module \"\"<local_name>\"\" {    source = \"\"source_here\"\"   <vars>... }   Then call `terraform init` to download, if applicable. This will adjust the installed modules, but will not upgrade installed modules unless you pass `-upgrade` to it.\"",
       "reviews": []
     },
     {

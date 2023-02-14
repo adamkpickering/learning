@@ -71,7 +71,7 @@
       "version": 0,
       "active": true,
       "question": "What are the 4 types of services?",
-      "answer": "ClusterIP: default, service is only available internally through a cluster-internal IP  NodePort: a static port (called NodePort) is opened on each node, so that traffic can reach the service via \u003cnode_ip\u003e:\u003cnode_port\u003e; a ClusterIP service, which NodePort service routes to, is automatically created  LoadBalancer: traffic comes into cluster via an external load balancer (for the cloud)  ExternalName: literally a CNAME record pointing to an external service; can cause problems with protocols that use the domain name (HTTP, HTTPS)",
+      "answer": "ClusterIP: default, service is only available internally through a cluster-internal IP  NodePort: a static port (called NodePort) is opened on each node, so that traffic can reach the service via <node_ip>:<node_port>; a ClusterIP service, which NodePort service routes to, is automatically created  LoadBalancer: traffic comes into cluster via an external load balancer (for the cloud)  ExternalName: literally a CNAME record pointing to an external service; can cause problems with protocols that use the domain name (HTTP, HTTPS)",
       "reviews": []
     },
     {
@@ -311,7 +311,7 @@
       "version": 0,
       "active": true,
       "question": "What are the two typical types of API groups? What is their apiVersion key?  What is their REST path?",
-      "answer": "core (legacy) apiVersion: \u003cversion\u003e  /api/\u003cversion\u003e   named groups/CRD groups apiVersion: \u003cgroup_name\u003e/\u003cversion\u003e /apis/\u003cgroup_name\u003e/\u003cversion\u003e",
+      "answer": "core (legacy) apiVersion: <version>  /api/<version>   named groups/CRD groups apiVersion: <group_name>/<version> /apis/<group_name>/<version>",
       "reviews": []
     },
     {
@@ -382,7 +382,7 @@
       "id": "wx9qw00ecq",
       "version": 0,
       "active": true,
-      "question": "\"Configure a Pod with the following attributes: - name \"\"example\"\" - namespace \"\"default\"\" - serves the contents of the \"\"index.html\"\" file, read-only, from the \"\"myconfig\"\" configMap volume on TCP port 80 with port name \"\"http\"\" - uses the default python http server (can be started with command `python -m http.server --bind 0.0.0.0 --directory \u003cdir\u003e 80`) - has the environment variable MYVAR=helloworld configured on it - never restarts if it crashes - give it the \"\"testSA\"\" service account credentials\"",
+      "question": "\"Configure a Pod with the following attributes: - name \"\"example\"\" - namespace \"\"default\"\" - serves the contents of the \"\"index.html\"\" file, read-only, from the \"\"myconfig\"\" configMap volume on TCP port 80 with port name \"\"http\"\" - uses the default python http server (can be started with command `python -m http.server --bind 0.0.0.0 --directory <dir> 80`) - has the environment variable MYVAR=helloworld configured on it - never restarts if it crashes - give it the \"\"testSA\"\" service account credentials\"",
       "answer": "\"apiVersion: v1 kind: Pod  metadata:   name: example   namespace: default spec:   serviceAccountName: testSA    restartPolicy: Never   containers:   - name: server     image: python:3.10     command: [\"\"python\"\", \"\"-m\"\", \"\"http.server\"\"]     args: [\"\"--bind\"\", \"\"0.0.0.0\"\", \"\"--directory\"\", \"\"/srv\"\", \"\"80\"\"]     env:     - name: MYVAR       value: helloworld     ports:     - containerPort: 80       name: http       protocol: TCP     volumeMounts:     - name: myvolume       mountPath: /srv       readOnly: true   volumes:   - name: myvolume     configMap:       name: myconfig       items:       - key: index.html         path: index.html\"",
       "reviews": []
     },
@@ -407,7 +407,7 @@
       "version": 0,
       "active": true,
       "question": "In minikube, how are services exposed?",
-      "answer": "NodePort services are exposed by a separate IP address that represents the minikube Node. So you access them via \u003cnode_ip\u003e:\u003cport\u003e. You can get this info via `minikube service \u003cservice_name\u003e --url`.   LoadBalancer services get NodePorts by default, so you can access them the same way. However, you can also start a local load balancer. To do this, run `minikube tunnel` in a separate terminal. Then, another IP address will be created that represents the load balancer, and you will be able to access the service via that IP and the service port(s).",
+      "answer": "NodePort services are exposed by a separate IP address that represents the minikube Node. So you access them via <node_ip>:<port>. You can get this info via `minikube service <service_name> --url`.   LoadBalancer services get NodePorts by default, so you can access them the same way. However, you can also start a local load balancer. To do this, run `minikube tunnel` in a separate terminal. Then, another IP address will be created that represents the load balancer, and you will be able to access the service via that IP and the service port(s).",
       "reviews": []
     },
     {

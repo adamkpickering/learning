@@ -118,7 +118,7 @@
       "id": "s9lehmkvnc",
       "version": 0,
       "active": false,
-      "question": "world: \u003cprereq\u003e...   FORCE:   What is the difference in use between these two canonical targets?",
+      "question": "world: <prereq>...   FORCE:   What is the difference in use between these two canonical targets?",
       "answer": "If a rule has neither prerequisites or a recipe, and the target is a non-existent file, then make always treats the target as if it has been updated.   world is meant to be the top-level, default goal, which lists actual targets as prereqs and thus causes them to be run   FORCE is not meant to be used as a goal, only as a prereq that causes targets, if they are a goal or sub-goal, to always run their recipe",
       "reviews": []
     },
@@ -143,7 +143,7 @@
       "version": 0,
       "active": false,
       "question": "make: what are the two ways of causing a target to run whether or not the file by its name exists? What are the tradeoffs between the two?",
-      "answer": ".PHONY: target1 target2   FORCE: target1: FORCE \u003cprereqs\u003e...     recipe... target2: FORCE \u003cprereqs\u003e...  .PHONY makes its prerequisites run whether a file by their name exists or not. Improves performance since implicit rule search is skipped for .PHONY targets. Specific to GNU make.   The FORCE (can be named differently but this is a convention) target, without a recipe or prerequisite, does the same thing, except that implicit search is *not* skipped. Less performant than .PHONY, but more portable.",
+      "answer": ".PHONY: target1 target2   FORCE: target1: FORCE <prereqs>...     recipe... target2: FORCE <prereqs>...  .PHONY makes its prerequisites run whether a file by their name exists or not. Improves performance since implicit rule search is skipped for .PHONY targets. Specific to GNU make.   The FORCE (can be named differently but this is a convention) target, without a recipe or prerequisite, does the same thing, except that implicit search is *not* skipped. Less performant than .PHONY, but more portable.",
       "reviews": []
     },
     {
@@ -151,7 +151,7 @@
       "version": 0,
       "active": false,
       "question": "make: what is a goal?",
-      "answer": "The target at the top of the tree that we are eventually trying to build. Can be specified with `make \u003cgoal\u003e`. If not specified, it is the first target in the makefile.",
+      "answer": "The target at the top of the tree that we are eventually trying to build. Can be specified with `make <goal>`. If not specified, it is the first target in the makefile.",
       "reviews": []
     },
     {
@@ -198,8 +198,8 @@
       "id": "lohuazh2bk",
       "version": 0,
       "active": false,
-      "question": "\"What is the difference between `#include \u003ccstdio\u003e` and `#include \"\"myfile.h\"\"`?\"",
-      "answer": "\"The only real difference is that \u003c...\u003e searches for the header file in a sequence of implementation-defined places, whereas \"\"...\"\" searches for the header file in an implementation-defined fashion.   On Unix-like systems, \u003c...\u003e searches for the file in all system-specific locations, whereas \"\"...\"\" searches for the file in the local directory, and then in any system-specific locations.    In all cases, the entire contents of the file are included at the location of the #include directive.\"",
+      "question": "\"What is the difference between `#include <cstdio>` and `#include \"\"myfile.h\"\"`?\"",
+      "answer": "\"The only real difference is that <...> searches for the header file in a sequence of implementation-defined places, whereas \"\"...\"\" searches for the header file in an implementation-defined fashion.   On Unix-like systems, <...> searches for the file in all system-specific locations, whereas \"\"...\"\" searches for the file in the local directory, and then in any system-specific locations.    In all cases, the entire contents of the file are included at the location of the #include directive.\"",
       "reviews": []
     },
     {
