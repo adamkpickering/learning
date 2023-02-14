@@ -8,7 +8,13 @@
       "active": true,
       "question": "Create a new git branch",
       "answer": "git branch <name> [<start-point>]",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:36:55.9373557Z"
+        }
+      ]
     },
     {
       "id": "yaao0xeaim",
@@ -16,7 +22,13 @@
       "active": true,
       "question": "What are the two types of permissions masks that git stores?",
       "answer": "755 (rwx r-x r-x) (executable)\n644 (rw- r-- r--) (non-executable)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:37:07.8009492Z"
+        }
+      ]
     },
     {
       "id": "rlh3r04oge",
@@ -24,7 +36,13 @@
       "active": true,
       "question": "Set the local \"asdf\" branch to track the \"asdf\" branch in the \"upstream\" remote",
       "answer": "git branch -u upstream/asdf asdf",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-13T23:37:35.2013826Z"
+        }
+      ]
     },
     {
       "id": "if96d8k7jj",
@@ -32,7 +50,13 @@
       "active": true,
       "question": "What are the four locations git looks in for config?",
       "answer": "/etc/gitconfig\n~/.gitconfig\n~/.config/git/config\n./.git/config",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-02-13T23:38:34.706132Z"
+        }
+      ]
     },
     {
       "id": "pundwgyerc",
@@ -40,7 +64,13 @@
       "active": true,
       "question": "Is local config propagated to and from remotes?",
       "answer": "No, only the repo content is propagated. .git/config can\ncontain sensitive and/or developer-specific information.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:39:06.1950127Z"
+        }
+      ]
     },
     {
       "id": "dj0sio89zq",
@@ -48,15 +78,27 @@
       "active": true,
       "question": "git: delete develop branch from origin (2 ways)",
       "answer": "git push -d origin develop\ngit push origin :refs/heads/develop",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:39:41.0007567Z"
+        }
+      ]
     },
     {
       "id": "pqds80b91z",
       "version": 0,
       "active": true,
-      "question": "Tag a commit with a message-less tag",
+      "question": "How do you tag a commit with a message-less tag?",
       "answer": "git tag <tag_name> <ref>",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:40:11.4782408Z"
+        }
+      ]
     },
     {
       "id": "mnehxkxn4g",
@@ -64,7 +106,13 @@
       "active": true,
       "question": "What are the four different forms of git diff?",
       "answer": "git diff [<ref>] [<path>...]\ndiff between working tree and either index, if index is present\n(this is priority), or ref (HEAD default)\n\ngit diff --cached [<ref>] [<path>...]\ndiff between ref (or if not defined, HEAD) and index\n\ngit diff <ref> <ref> [<path>...]\ndiff between two refs\n\ngit diff <ref1>...<ref2> [<path>...]\ndiff between ref2 and the nearest common ancestor of ref1 and ref2",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-13T23:43:54.0399501Z"
+        }
+      ]
     },
     {
       "id": "yebql5ern2",
@@ -72,7 +120,13 @@
       "active": true,
       "question": "What is the purpose of --?",
       "answer": "-- separates the paths from other arguments, such as refs.\nWithout it, some commands would be ambiguous.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:44:28.7510097Z"
+        }
+      ]
     },
     {
       "id": "f2ceh3tzji",
@@ -80,7 +134,13 @@
       "active": true,
       "question": "List all the commits that changed a file",
       "answer": "git log --follow -- <path>",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-13T23:44:47.0201504Z"
+        }
+      ]
     },
     {
       "id": "vg6l5xfn4o",
@@ -88,13 +148,19 @@
       "active": true,
       "question": "git: how are the ^ and ~ symbols used when referencing commits,\nand what do they mean?",
       "answer": "HEAD^ or HEAD^1 -> the first parent of HEAD\nHEAD^2 -> the second parent of HEAD\nHEAD^^ or HEAD^1^1 -> the first parent of the first parent of HEAD\nHEAD~1 -> the first parent of HEAD\nHEAD~2 -> the first parent of the first parent of head\n\nThe general rule is to use ~ when referring to previous commits.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:45:49.2309935Z"
+        }
+      ]
     },
     {
       "id": "lx2kfv7qbh",
       "version": 0,
-      "active": true,
-      "question": "git: how are tags propagated across repos (fetch/push)?",
+      "active": false,
+      "question": "How are tags propagated across repos (fetch/push)?",
       "answer": "git fetch -> only fetches tags that are on ancestors of ref you're fetching\ngit fetch --tags -> fetches all tags\ngit fetch --no-tags -> fetches no tags\ngit fetch refs/tags/*:refs/tags/* -> fetches all tags\n\ngit push -> doesn't push any tags\ngit push --tags -> pushes all tags, but only tags\ngit push refs/tags/*:refs/tags/* -> pushes all tags",
       "reviews": []
     },
@@ -104,7 +170,13 @@
       "active": true,
       "question": "What are the two kinds of tags?",
       "answer": "simple: just a name that points to a commit\n\nannotated: a full git object (think: like a commit) that is checksummed,\nhas name of creator, is dated, has a message,\nand is optionally signed",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:47:22.4713673Z"
+        }
+      ]
     },
     {
       "id": "qj3dzaqfx9",
@@ -112,7 +184,13 @@
       "active": true,
       "question": "What are the paths to heads, tags and remote heads?",
       "answer": "heads: refs/heads/<head>\ntags: refs/tags/<tag>\nheads at remotes: refs/remotes/<remote>/<head>",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-02-13T23:47:59.3163259Z"
+        }
+      ]
     },
     {
       "id": "47luavlfrd",
@@ -120,7 +198,13 @@
       "active": true,
       "question": "How do you create a git submodule?",
       "answer": "Go to dir you want submodule in and do:\ngit submodule add <url>",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-02-13T23:48:18.5285079Z"
+        }
+      ]
     },
     {
       "id": "f9fp8vaou1",
@@ -128,7 +212,13 @@
       "active": true,
       "question": "Which file and which directory contain the metadata on submodules?",
       "answer": ".gitmodules: contains the path to the submodule directory, and the url of the submodule remote\n\n.git/modules/<path_to_submodule_dir>: contains all of the things that .git/ would normally contain for the submodule",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-02-13T23:48:53.1351992Z"
+        }
+      ]
     },
     {
       "id": "tc72xm884e",
@@ -136,15 +226,27 @@
       "active": true,
       "question": "In what two ways is a submodule tracked in the parent's index?",
       "answer": "- in .gitmodules\n- as a \"directory commit\"",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:49:14.8421721Z"
+        }
+      ]
     },
     {
       "id": "2d8wdezmhd",
       "version": 0,
       "active": true,
       "question": "How do you get the code from a repository's submodules\nwhen you first clone it?",
-      "answer": "git submodule init git submodule update\n\nor\n\ngit submodule update --init",
-      "reviews": []
+      "answer": "git submodule init\ngit submodule update\n\nor\n\ngit submodule update --init",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-02-13T23:50:52.2560905Z"
+        }
+      ]
     },
     {
       "id": "5mgnnlctd0",
@@ -152,7 +254,13 @@
       "active": true,
       "question": "What is the simplest way to ensure that a submodule is in\nthe state pointed to by the commit recorded in the superproject?\nWhat is the limitation of this?",
       "answer": "git submodule update\n\nThis checks out that commit, which leaves HEAD in a detached state.\n\nAny commits made on top of it are likely to be lost.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-13T23:51:16.7147355Z"
+        }
+      ]
     },
     {
       "id": "1tt3aphrn8",
@@ -160,7 +268,13 @@
       "active": true,
       "question": "How do I develop the repo in a git submodule?",
       "answer": "1) Check out a branch in the submodule\n2) Make your changes and commit them to the branch\n3) Push your changes\n4) To make the superproject refer to the current checked out commit\n   in the submodule, simply add the submodule dir and commit it",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-13T23:52:04.2980979Z"
+        }
+      ]
     },
     {
       "id": "tlour6kqzv",
@@ -168,7 +282,13 @@
       "active": true,
       "question": "What is the difference between git revert, git restore\nand git reset?",
       "answer": "git revert: lets you make a commit that reverts the changes made in other commits\n\ngit restore: restores files in working tree from either the index or another commit\n\ngit reset: allows you to move your current branch tip to a specific commit, potentially deleting commits",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:52:52.8646083Z"
+        }
+      ]
     },
     {
       "id": "t7pkfi5aop",
@@ -176,7 +296,13 @@
       "active": true,
       "question": "What are the three \"trees\" that are useful to have in your\nmind when working with `git reset`?",
       "answer": "HEAD\nindex\nworking tree",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:53:07.7883437Z"
+        }
+      ]
     },
     {
       "id": "slow9t3grl",
@@ -184,15 +310,27 @@
       "active": true,
       "question": "What are the three useful forms of `git reset`?\nWhich is default?",
       "answer": "git reset --soft <commit>:\n- resets HEAD to commit\n- puts changes from nuked commits into index\n- keeps working tree as is\n\ngit reset --mixed <commit> (default):\n- resets HEAD to commit\n- puts changes from nuked commits and index into working tree\n\ngit reset --hard <commit>:\n- resets HEAD to commit\n- nukes index and working tree\n- commits nuked",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:54:19.8600677Z"
+        }
+      ]
     },
     {
       "id": "yiubp95k6p",
       "version": 0,
       "active": true,
-      "question": "Move a change from the index to the working tree",
+      "question": "How do you move a change from the index to the working tree?",
       "answer": "git restore --staged <path>",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:54:50.1331658Z"
+        }
+      ]
     },
     {
       "id": "axfad6gkn4",
@@ -200,23 +338,41 @@
       "active": true,
       "question": "What are the three subcommands you need to know to use `git stash`?",
       "answer": "git stash push: put current working tree and index into stash\ngit stash pop: retrieve working tree and index from stash\ngit stash list: get a list of stashes",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:55:01.7660366Z"
+        }
+      ]
     },
     {
       "id": "o9fi5beg3p",
       "version": 0,
       "active": true,
       "question": "What is the one important thing to remember about the\ndifference between commands that do things to remotes\nand commands that do things locally?",
-      "answer": "Commands that do things to remotes must have the remote specified,\nand then the branch arguments. Commands that do things locally\nhave the remote and the branch lumped together in\nthe form <remote>/<branch>.",
-      "reviews": []
+      "answer": "Commands that do things to remotes must have the remote specified,\nand then the branch arguments. Commands that do things locally\nhave the remote and the branch lumped together in the form <remote>/<branch>.",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:55:31.5989463Z"
+        }
+      ]
     },
     {
       "id": "qouv5g9jbj",
       "version": 0,
       "active": true,
-      "question": "branchA is based off of main. branchB is based off of branchA. How do you rebase branchB onto main?",
+      "question": "branchA is based off of main. branchB is based off of branchA.\nHow do you rebase branchB onto main?",
       "answer": "git rebase --onto main branchA branchB",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-13T23:56:29.9507162Z"
+        }
+      ]
     },
     {
       "id": "9gg2ly6ovr",
@@ -224,7 +380,13 @@
       "active": true,
       "question": "How do Github releases work?",
       "answer": "You create a release from a tag somewhere in the code,\nthen upload any assets and release notes.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:56:51.8033624Z"
+        }
+      ]
     },
     {
       "id": "n48p62d1wl",
@@ -232,7 +394,13 @@
       "active": true,
       "question": "What is the cleanest way to do global search and replace on a git repo?",
       "answer": "git grep -l <term> | xargs sed -i 's/term/replacement/g'",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-02-13T23:57:31.3955029Z"
+        }
+      ]
     },
     {
       "id": "e48p62d1wl",
@@ -240,7 +408,13 @@
       "active": true,
       "question": "What are the three important options of git clean?",
       "answer": "-n: don't remove anything, just show what would be done\n-f: required to actually remove anything\n-X: remove only files ignored by git",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-13T23:58:28.6244211Z"
+        }
+      ]
     },
     {
       "id": "7hs1x0a1np",
@@ -248,7 +422,13 @@
       "active": true,
       "question": "How do you check out a branch that you don't have locally,\nbut is on a remote?",
       "answer": "git checkout --guess <remote_branch>",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-13T23:59:24.5094441Z"
+        }
+      ]
     }
   ]
 }
