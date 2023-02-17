@@ -7,8 +7,13 @@
       "version": 0,
       "active": true,
       "question": "Create a new git branch",
-      "answer": "git branch <name> [<start-point>]",
+      "answer": "git branch \u003cname\u003e [\u003cstart-point\u003e]",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:31:49.3144387Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -26,6 +31,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-02-17T23:32:03.7905353Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-13T23:37:07.8009492Z"
         }
       ]
@@ -37,6 +47,11 @@
       "question": "Set the local \"asdf\" branch to track the \"asdf\" branch in the \"upstream\" remote",
       "answer": "git branch -u upstream/asdf asdf",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-17T23:32:42.8713807Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -53,6 +68,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:33:23.2465653Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-02-13T23:38:34.706132Z"
         }
@@ -65,6 +85,11 @@
       "question": "Is local config propagated to and from remotes?",
       "answer": "No, only the repo content is propagated. .git/config can\ncontain sensitive and/or developer-specific information.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-17T23:33:37.1127269Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -81,6 +106,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-17T23:34:27.5472196Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2023-02-13T23:39:41.0007567Z"
         }
@@ -91,8 +121,13 @@
       "version": 0,
       "active": true,
       "question": "How do you tag a commit with a message-less tag?",
-      "answer": "git tag <tag_name> <ref>",
+      "answer": "git tag \u003ctag_name\u003e \u003cref\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-17T23:34:42.2700674Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -105,8 +140,13 @@
       "version": 0,
       "active": true,
       "question": "What are the four different forms of git diff?",
-      "answer": "git diff [<ref>] [<path>...]\ndiff between working tree and either index, if index is present\n(this is priority), or ref (HEAD default)\n\ngit diff --cached [<ref>] [<path>...]\ndiff between ref (or if not defined, HEAD) and index\n\ngit diff <ref> <ref> [<path>...]\ndiff between two refs\n\ngit diff <ref1>...<ref2> [<path>...]\ndiff between ref2 and the nearest common ancestor of ref1 and ref2",
+      "answer": "git diff [\u003cref\u003e] [\u003cpath\u003e...]\ndiff between working tree and either index, if index is present\n(this is priority), or ref (HEAD default)\n\ngit diff --cached [\u003cref\u003e] [\u003cpath\u003e...]\ndiff between ref (or if not defined, HEAD) and index\n\ngit diff \u003cref\u003e \u003cref\u003e [\u003cpath\u003e...]\ndiff between two refs\n\ngit diff \u003cref1\u003e...\u003cref2\u003e [\u003cpath\u003e...]\ndiff between ref2 and the nearest common ancestor of ref1 and ref2",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:36:36.3544605Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -124,6 +164,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-02-17T23:38:16.485133Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-13T23:44:28.7510097Z"
         }
       ]
@@ -133,8 +178,13 @@
       "version": 0,
       "active": true,
       "question": "List all the commits that changed a file",
-      "answer": "git log --follow -- <path>",
+      "answer": "git log --follow -- \u003cpath\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:38:33.9445854Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -147,8 +197,13 @@
       "version": 0,
       "active": true,
       "question": "git: how are the ^ and ~ symbols used when referencing commits,\nand what do they mean?",
-      "answer": "HEAD^ or HEAD^1 -> the first parent of HEAD\nHEAD^2 -> the second parent of HEAD\nHEAD^^ or HEAD^1^1 -> the first parent of the first parent of HEAD\nHEAD~1 -> the first parent of HEAD\nHEAD~2 -> the first parent of the first parent of head\n\nThe general rule is to use ~ when referring to previous commits.",
+      "answer": "HEAD^ or HEAD^1 -\u003e the first parent of HEAD\nHEAD^2 -\u003e the second parent of HEAD\nHEAD^^ or HEAD^1^1 -\u003e the first parent of the first parent of HEAD\nHEAD~1 -\u003e the first parent of HEAD\nHEAD~2 -\u003e the first parent of the first parent of head\n\nThe general rule is to use ~ when referring to previous commits.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:39:01.6541692Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -161,7 +216,7 @@
       "version": 0,
       "active": false,
       "question": "How are tags propagated across repos (fetch/push)?",
-      "answer": "git fetch -> only fetches tags that are on ancestors of ref you're fetching\ngit fetch --tags -> fetches all tags\ngit fetch --no-tags -> fetches no tags\ngit fetch refs/tags/*:refs/tags/* -> fetches all tags\n\ngit push -> doesn't push any tags\ngit push --tags -> pushes all tags, but only tags\ngit push refs/tags/*:refs/tags/* -> pushes all tags",
+      "answer": "git fetch -\u003e only fetches tags that are on ancestors of ref you're fetching\ngit fetch --tags -\u003e fetches all tags\ngit fetch --no-tags -\u003e fetches no tags\ngit fetch refs/tags/*:refs/tags/* -\u003e fetches all tags\n\ngit push -\u003e doesn't push any tags\ngit push --tags -\u003e pushes all tags, but only tags\ngit push refs/tags/*:refs/tags/* -\u003e pushes all tags",
       "reviews": []
     },
     {
@@ -171,6 +226,11 @@
       "question": "What are the two kinds of tags?",
       "answer": "simple: just a name that points to a commit\n\nannotated: a full git object (think: like a commit) that is checksummed,\nhas name of creator, is dated, has a message,\nand is optionally signed",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-17T23:39:19.9181548Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -183,8 +243,13 @@
       "version": 0,
       "active": true,
       "question": "What are the paths to heads, tags and remote heads?",
-      "answer": "heads: refs/heads/<head>\ntags: refs/tags/<tag>\nheads at remotes: refs/remotes/<remote>/<head>",
+      "answer": "heads: refs/heads/\u003chead\u003e\ntags: refs/tags/\u003ctag\u003e\nheads at remotes: refs/remotes/\u003cremote\u003e/\u003chead\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-02-17T23:40:02.8525728Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -197,8 +262,13 @@
       "version": 0,
       "active": true,
       "question": "How do you create a git submodule?",
-      "answer": "Go to dir you want submodule in and do:\ngit submodule add <url>",
+      "answer": "Go to dir you want submodule in and do:\ngit submodule add \u003curl\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-02-17T23:40:21.0706913Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -211,8 +281,13 @@
       "version": 0,
       "active": true,
       "question": "Which file and which directory contain the metadata on submodules?",
-      "answer": ".gitmodules: contains the path to the submodule directory, and the url of the submodule remote\n\n.git/modules/<path_to_submodule_dir>: contains all of the things that .git/ would normally contain for the submodule",
+      "answer": ".gitmodules: contains the path to the submodule directory, and the url of the submodule remote\n\n.git/modules/\u003cpath_to_submodule_dir\u003e: contains all of the things that .git/ would normally contain for the submodule",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-02-17T23:41:38.5676832Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -229,6 +304,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-17T23:41:53.3953832Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2023-02-13T23:49:14.8421721Z"
         }
@@ -243,6 +323,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-17T23:42:14.980737Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-02-13T23:50:52.2560905Z"
         }
@@ -255,6 +340,11 @@
       "question": "What is the simplest way to ensure that a submodule is in\nthe state pointed to by the commit recorded in the superproject?\nWhat is the limitation of this?",
       "answer": "git submodule update\n\nThis checks out that commit, which leaves HEAD in a detached state.\n\nAny commits made on top of it are likely to be lost.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:42:26.8396467Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -272,6 +362,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-02-17T23:43:11.2625111Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-02-13T23:52:04.2980979Z"
         }
       ]
@@ -283,6 +378,11 @@
       "question": "What is the difference between git revert, git restore\nand git reset?",
       "answer": "git revert: lets you make a commit that reverts the changes made in other commits\n\ngit restore: restores files in working tree from either the index or another commit\n\ngit reset: allows you to move your current branch tip to a specific commit, potentially deleting commits",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:44:01.6852299Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -300,6 +400,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-02-17T23:44:16.4044992Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-13T23:53:07.7883437Z"
         }
       ]
@@ -309,8 +414,13 @@
       "version": 0,
       "active": true,
       "question": "What are the three useful forms of `git reset`?\nWhich is default?",
-      "answer": "git reset --soft <commit>:\n- resets HEAD to commit\n- puts changes from nuked commits into index\n- keeps working tree as is\n\ngit reset --mixed <commit> (default):\n- resets HEAD to commit\n- puts changes from nuked commits and index into working tree\n\ngit reset --hard <commit>:\n- resets HEAD to commit\n- nukes index and working tree\n- commits nuked",
+      "answer": "git reset --soft \u003ccommit\u003e:\n- resets HEAD to commit\n- puts changes from nuked commits into index\n- keeps working tree as is\n\ngit reset --mixed \u003ccommit\u003e (default):\n- resets HEAD to commit\n- puts changes from nuked commits and index into working tree\n\ngit reset --hard \u003ccommit\u003e:\n- resets HEAD to commit\n- nukes index and working tree\n- commits nuked",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:44:45.8887826Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -323,8 +433,13 @@
       "version": 0,
       "active": true,
       "question": "How do you move a change from the index to the working tree?",
-      "answer": "git restore --staged <path>",
+      "answer": "git restore --staged \u003cpath\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:45:03.4372944Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -342,6 +457,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-02-17T23:45:09.5926453Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-13T23:55:01.7660366Z"
         }
       ]
@@ -351,8 +471,13 @@
       "version": 0,
       "active": true,
       "question": "What is the one important thing to remember about the\ndifference between commands that do things to remotes\nand commands that do things locally?",
-      "answer": "Commands that do things to remotes must have the remote specified,\nand then the branch arguments. Commands that do things locally\nhave the remote and the branch lumped together in the form <remote>/<branch>.",
+      "answer": "Commands that do things to remotes must have the remote specified,\nand then the branch arguments. Commands that do things locally\nhave the remote and the branch lumped together in the form \u003cremote\u003e/\u003cbranch\u003e.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-17T23:45:32.973081Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -367,6 +492,11 @@
       "question": "branchA is based off of main. branchB is based off of branchA.\nHow do you rebase branchB onto main?",
       "answer": "git rebase --onto main branchA branchB",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:45:59.1039798Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -384,6 +514,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-02-17T23:46:09.2869009Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-13T23:56:51.8033624Z"
         }
       ]
@@ -393,8 +528,13 @@
       "version": 0,
       "active": true,
       "question": "What is the cleanest way to do global search and replace on a git repo?",
-      "answer": "git grep -l <term> | xargs sed -i 's/term/replacement/g'",
+      "answer": "git grep -l \u003cterm\u003e | xargs sed -i 's/term/replacement/g'",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-17T23:47:23.5396686Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -411,6 +551,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:48:19.1185369Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-02-13T23:58:28.6244211Z"
         }
@@ -421,8 +566,13 @@
       "version": 0,
       "active": true,
       "question": "How do you check out a branch that you don't have locally,\nbut is on a remote?",
-      "answer": "git checkout --guess <remote_branch>",
+      "answer": "git checkout --guess \u003cremote_branch\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-17T23:48:40.7674245Z"
+        },
         {
           "version": 0,
           "result": "easy",
