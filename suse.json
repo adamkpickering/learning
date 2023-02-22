@@ -1,6 +1,7 @@
 {
   "name": "suse",
   "version": 0,
+  "active": true,
   "cards": [
     {
       "id": "x6ek5kanec",
@@ -31,7 +32,7 @@
       "version": 0,
       "active": true,
       "question": "How do nerdctl, kim, docker etc talk to containerd, kubernetes, dockerd etc in a lima VM?",
-      "answer": "kim and docker are simple because they simply tell the server what to do, and the server does it.   nerdctl is more complex because it manages images on the local host. So on the host we need to make it a shell script that calls `lima shell <name> nerdctl <args>` - this makes all of the stuff get stored in the VM.",
+      "answer": "kim and docker are simple because they simply tell the server what to do, and the server does it.   nerdctl is more complex because it manages images on the local host. So on the host we need to make it a shell script that calls `lima shell \u003cname\u003e nerdctl \u003cargs\u003e` - this makes all of the stuff get stored in the VM.",
       "reviews": []
     },
     {

@@ -1,6 +1,7 @@
 {
   "name": "unix",
   "version": 0,
+  "active": true,
   "cards": [
     {
       "id": "538owebsnr",
@@ -351,7 +352,7 @@
       "version": 0,
       "active": true,
       "question": "How do you get the next hop for a specific subnet in Linux routing table?",
-      "answer": "ip route get <prefix>",
+      "answer": "ip route get \u003cprefix\u003e",
       "reviews": []
     },
     {
@@ -511,7 +512,7 @@
       "version": 0,
       "active": true,
       "question": "What is a pty? Draw it.",
-      "answer": "It exists because we have a bunch of programs that expect a tty interface;\nthese programs interface with pts's. The pts's talk to a single pty through a line discipline.\nA userspace process then talks to the pty, and probably some other drivers(think xterm, or sshd).\n\nls -> bash -> pts -> line discipline -> pty -> xterm -> X server...",
+      "answer": "It exists because we have a bunch of programs that expect a tty interface;\nthese programs interface with pts's. The pts's talk to a single pty through a line discipline.\nA userspace process then talks to the pty, and probably some other drivers(think xterm, or sshd).\n\nls -\u003e bash -\u003e pts -\u003e line discipline -\u003e pty -\u003e xterm -\u003e X server...",
       "reviews": []
     },
     {
@@ -559,7 +560,7 @@
       "version": 0,
       "active": true,
       "question": "Draw the block diagram of the traditional TTY setup with UART.",
-      "answer": "teletype -> wire -> UART -> UART driver -> line disc -> tty driver -> userspace process",
+      "answer": "teletype -\u003e wire -\u003e UART -\u003e UART driver -\u003e line disc -\u003e tty driver -\u003e userspace process",
       "reviews": []
     },
     {
@@ -663,7 +664,7 @@
       "version": 0,
       "active": true,
       "question": "command to make a named pipe",
-      "answer": "mkfifo <path>",
+      "answer": "mkfifo \u003cpath\u003e",
       "reviews": []
     },
     {
@@ -671,7 +672,7 @@
       "version": 0,
       "active": true,
       "question": "command to create a soft link command to create a hard link",
-      "answer": "soft: ln -s <target> <dst> hard: ln <target> <dst>",
+      "answer": "soft: ln -s \u003ctarget\u003e \u003cdst\u003e hard: ln \u003ctarget\u003e \u003cdst\u003e",
       "reviews": []
     },
     {
@@ -735,7 +736,7 @@
       "version": 0,
       "active": true,
       "question": "Load a kernel module",
-      "answer": "modprobe <modulename> insmod <modulename>",
+      "answer": "modprobe \u003cmodulename\u003e insmod \u003cmodulename\u003e",
       "reviews": []
     },
     {
@@ -743,7 +744,7 @@
       "version": 0,
       "active": true,
       "question": "Unload a kernel module",
-      "answer": "modprobe -r <modulename>rmmod <modulename>",
+      "answer": "modprobe -r \u003cmodulename\u003ermmod \u003cmodulename\u003e",
       "reviews": []
     },
     {
@@ -759,7 +760,7 @@
       "version": 0,
       "active": true,
       "question": "In YAML, what the three ways of doing multi-line strings and how do they work?",
-      "answer": "my_key: |  -> creates a string of all lines below, keeping newlines    my_key: > -> creates a string of all lines below, changing newlines to spaces   And using quotes",
+      "answer": "my_key: |  -\u003e creates a string of all lines below, keeping newlines    my_key: \u003e -\u003e creates a string of all lines below, changing newlines to spaces   And using quotes",
       "reviews": []
     },
     {
@@ -767,7 +768,7 @@
       "version": 0,
       "active": true,
       "question": "How do you check if a binary is statically linked?",
-      "answer": "ldd <name> If it prints .so's and returns 0 it's dynamically linked. If it returns 1 it's statically linked.",
+      "answer": "ldd \u003cname\u003e If it prints .so's and returns 0 it's dynamically linked. If it returns 1 it's statically linked.",
       "reviews": []
     },
     {
@@ -791,7 +792,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of a .pub public key?",
-      "answer": "<keytype> <keybody> <keyname>",
+      "answer": "\u003ckeytype\u003e \u003ckeybody\u003e \u003ckeyname\u003e",
       "reviews": []
     },
     {
@@ -799,7 +800,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of the known_hosts file?",
-      "answer": "<hostname-list> <key-type> <public-key>   Note that hostname-list may be hashed for security.",
+      "answer": "\u003chostname-list\u003e \u003ckey-type\u003e \u003cpublic-key\u003e   Note that hostname-list may be hashed for security.",
       "reviews": []
     },
     {
@@ -839,7 +840,7 @@
       "version": 0,
       "active": true,
       "question": "markdown: block quote, and nested block quote",
-      "answer": "> what he said > another line of what he said > > what she said > > another line of what she said",
+      "answer": "\u003e what he said \u003e another line of what he said \u003e \u003e what she said \u003e \u003e another line of what she said",
       "reviews": []
     },
     {
@@ -871,7 +872,7 @@
       "version": 0,
       "active": true,
       "question": "Redirect stderr to stdout",
-      "answer": "my-command 2>\u00261   Has to be the last clause in a command.",
+      "answer": "my-command 2\u003e\u00261   Has to be the last clause in a command.",
       "reviews": []
     },
     {
@@ -1015,7 +1016,7 @@
       "version": 0,
       "active": true,
       "question": "tar: 6 crucial options and what they do",
-      "answer": "-c: compress -x: extract  -z: gzip compression -v: verbose (list files that go into tar) -f <filename>: tarball to decompress, or tarball to create -C <path>: change working dir to path before doing the thing",
+      "answer": "-c: compress -x: extract  -z: gzip compression -v: verbose (list files that go into tar) -f \u003cfilename\u003e: tarball to decompress, or tarball to create -C \u003cpath\u003e: change working dir to path before doing the thing",
       "reviews": []
     },
     {
@@ -1087,7 +1088,7 @@
       "version": 0,
       "active": true,
       "question": "iptables: command to see a specific chain",
-      "answer": "iptables -L <chain_name> -t <table_name>",
+      "answer": "iptables -L \u003cchain_name\u003e -t \u003ctable_name\u003e",
       "reviews": []
     },
     {
@@ -1095,7 +1096,7 @@
       "version": 0,
       "active": true,
       "question": "tcpdump: listen on a specific interface",
-      "answer": "tcpdump -i <interface>",
+      "answer": "tcpdump -i \u003cinterface\u003e",
       "reviews": []
     },
     {
@@ -1135,7 +1136,7 @@
       "version": 0,
       "active": true,
       "question": "What are the three typical sections in a systemd unit file?",
-      "answer": "[Unit] [<unit-type>] [Install]",
+      "answer": "[Unit] [\u003cunit-type\u003e] [Install]",
       "reviews": []
     },
     {
@@ -1215,7 +1216,7 @@
       "version": 0,
       "active": true,
       "question": "\"What are /etc/subuid and /etc/subgid for? Give an example of a line. What does \"\"sub\"\" stand for?\"",
-      "answer": "subuid: each line contains a user name, and a range of uids that user is allowed to use   subgid: each line contains a user name, and a range of gids that user is allowed to use   adam:200:100   sub -> subordinate",
+      "answer": "subuid: each line contains a user name, and a range of uids that user is allowed to use   subgid: each line contains a user name, and a range of gids that user is allowed to use   adam:200:100   sub -\u003e subordinate",
       "reviews": []
     },
     {
@@ -1231,7 +1232,7 @@
       "version": 0,
       "active": true,
       "question": "How to add/delete a user to/from a group?",
-      "answer": "addgroup <user> <group>   delgroup <user> <group>",
+      "answer": "addgroup \u003cuser\u003e \u003cgroup\u003e   delgroup \u003cuser\u003e \u003cgroup\u003e",
       "reviews": []
     },
     {
@@ -1239,7 +1240,7 @@
       "version": 0,
       "active": true,
       "question": "How to add/delete a group?",
-      "answer": "addgroup <group> delgroup <group>",
+      "answer": "addgroup \u003cgroup\u003e delgroup \u003cgroup\u003e",
       "reviews": []
     },
     {
@@ -1247,7 +1248,7 @@
       "version": 0,
       "active": true,
       "question": "Create a user",
-      "answer": "adduser <user>",
+      "answer": "adduser \u003cuser\u003e",
       "reviews": []
     },
     {
@@ -1295,7 +1296,7 @@
       "version": 0,
       "active": true,
       "question": "What is a linux bridge? How do you make one? How do you add interfaces to it? How do you remove an interface from it?",
-      "answer": "A linux bridge can be thought of as an ethernet switch, with a port on the switch that can be assigned a L3 address. It connects interfaces together via a layer 2 network.  ip link add <name> type bridge ip link set eth0 master <name> ip link set eth0 nomaster",
+      "answer": "A linux bridge can be thought of as an ethernet switch, with a port on the switch that can be assigned a L3 address. It connects interfaces together via a layer 2 network.  ip link add \u003cname\u003e type bridge ip link set eth0 master \u003cname\u003e ip link set eth0 nomaster",
       "reviews": []
     },
     {
@@ -1303,7 +1304,7 @@
       "version": 0,
       "active": true,
       "question": "What is a veth interface? How do you create one?",
-      "answer": "Think of it as two interfaces connected by a single ethernet cable. All traffic that goes to one goes to the other, and vice versa. Useful for containers, since one interface can be moved into a different network namespace.   ip link add <name> type veth peer name <peer_name>",
+      "answer": "Think of it as two interfaces connected by a single ethernet cable. All traffic that goes to one goes to the other, and vice versa. Useful for containers, since one interface can be moved into a different network namespace.   ip link add \u003cname\u003e type veth peer name \u003cpeer_name\u003e",
       "reviews": []
     },
     {
@@ -1319,7 +1320,7 @@
       "version": 0,
       "active": true,
       "question": "Command to reload a systemd unit's config when changed? What are its limitations?",
-      "answer": "systemctl daemon-reload   Doesn't restart the daemons themselves; you must run systemctl restart <unit> to do that.",
+      "answer": "systemctl daemon-reload   Doesn't restart the daemons themselves; you must run systemctl restart \u003cunit\u003e to do that.",
       "reviews": []
     },
     {
@@ -1351,7 +1352,7 @@
       "version": 0,
       "active": true,
       "question": "In regex, what does each of the 4 kinds of brackets do?",
-      "answer": "() -> used for grouping and capturing [] -> used for character classes {} -> used for repetition operators <> -> used for naming groups",
+      "answer": "() -\u003e used for grouping and capturing [] -\u003e used for character classes {} -\u003e used for repetition operators \u003c\u003e -\u003e used for naming groups",
       "reviews": []
     },
     {
@@ -1407,7 +1408,7 @@
       "version": 0,
       "active": true,
       "question": "How is a VLAN configured in debian?",
-      "answer": "iface <ifname>.<vlan_id> inet (static|manual|dhcp)     other config here   If <vlan_id> is present, NetworkManager is intelligent enough to know that means to configure it as a VLAN.",
+      "answer": "iface \u003cifname\u003e.\u003cvlan_id\u003e inet (static|manual|dhcp)     other config here   If \u003cvlan_id\u003e is present, NetworkManager is intelligent enough to know that means to configure it as a VLAN.",
       "reviews": []
     },
     {
@@ -1455,7 +1456,7 @@
       "version": 0,
       "active": true,
       "question": "What is the basic format of the `find` command?",
-      "answer": "find [<path_to_search>...] [<expression>]   where path_to_search is ended by the first expression that starts with -, ! or (",
+      "answer": "find [\u003cpath_to_search\u003e...] [\u003cexpression\u003e]   where path_to_search is ended by the first expression that starts with -, ! or (",
       "reviews": []
     },
     {
@@ -1471,7 +1472,7 @@
       "version": 0,
       "active": true,
       "question": "How do you do NOT, AND and OR in the `find` command?",
-      "answer": "NOT -> ! <expression> AND -> <expression> -a <expression> OR -> <expression> -o <expression>",
+      "answer": "NOT -\u003e ! \u003cexpression\u003e AND -\u003e \u003cexpression\u003e -a \u003cexpression\u003e OR -\u003e \u003cexpression\u003e -o \u003cexpression\u003e",
       "reviews": []
     },
     {
@@ -1535,7 +1536,7 @@
       "version": 0,
       "active": true,
       "question": "What is vmlinux? What is vmlinuz?",
-      "answer": "vmlinux is a statically linked executable file that contains the linux kernel. If compressed (gzip), is named vmlinuz (z -> gzip).",
+      "answer": "vmlinux is a statically linked executable file that contains the linux kernel. If compressed (gzip), is named vmlinuz (z -\u003e gzip).",
       "reviews": []
     },
     {
@@ -1567,7 +1568,7 @@
       "version": 0,
       "active": true,
       "question": "What are the five basic parts of glob patterns?",
-      "answer": "* -> zero or more of any character ** -> matches zero or more directories ? -> matches any single character [abc] -> matches a single character that is a, b or c [a-z] -> matches a single character in the range a-z",
+      "answer": "* -\u003e zero or more of any character ** -\u003e matches zero or more directories ? -\u003e matches any single character [abc] -\u003e matches a single character that is a, b or c [a-z] -\u003e matches a single character in the range a-z",
       "reviews": []
     },
     {
@@ -1623,7 +1624,7 @@
       "version": 0,
       "active": true,
       "question": "What command should always be used to look at iptables rules? Why?",
-      "answer": "iptables -v -n --line-numbers -L <chain> -t <table>   -v: actually shows you the entire rule -n: doesn't resolve port numbers to useless names --line-numbers: shows line numbers (needed for editing rules)",
+      "answer": "iptables -v -n --line-numbers -L \u003cchain\u003e -t \u003ctable\u003e   -v: actually shows you the entire rule -n: doesn't resolve port numbers to useless names --line-numbers: shows line numbers (needed for editing rules)",
       "reviews": []
     },
     {
@@ -1631,7 +1632,7 @@
       "version": 0,
       "active": true,
       "question": "What is the naming format for source rpm packages? What is the naming format for binary rpm packages?",
-      "answer": "\"Both are in the format:  <name>-<version>-<release>.<arch>.rpm   In the case of source packages, <arch> is \"\"src\"\".\"",
+      "answer": "\"Both are in the format:  \u003cname\u003e-\u003cversion\u003e-\u003crelease\u003e.\u003carch\u003e.rpm   In the case of source packages, \u003carch\u003e is \"\"src\"\".\"",
       "reviews": []
     },
     {
@@ -1759,7 +1760,7 @@
       "version": 0,
       "active": true,
       "question": "How do you totally delete your bash history?",
-      "answer": "Log out of all bash sessions but one, then:   cat /dev/null > ~/.bash_history history -c exit",
+      "answer": "Log out of all bash sessions but one, then:   cat /dev/null \u003e ~/.bash_history history -c exit",
       "reviews": []
     },
     {
@@ -1767,7 +1768,7 @@
       "version": 0,
       "active": true,
       "question": "YAML: if I have a key, myKey, with arbitrary data under it, what is the easiest way to include it under multiple other keys?",
-      "answer": "myKey: \u0026my_key   arbitrary: data   other_key_1:   <: *my_key   other_key_2:   <: *my_key",
+      "answer": "myKey: \u0026my_key   arbitrary: data   other_key_1:   \u003c: *my_key   other_key_2:   \u003c: *my_key",
       "reviews": []
     },
     {
@@ -2031,7 +2032,7 @@
       "version": 0,
       "active": false,
       "question": "What is the convention for naming .deb packages?",
-      "answer": "<name>_<version>-<revision>_<arch>.deb",
+      "answer": "\u003cname\u003e_\u003cversion\u003e-\u003crevision\u003e_\u003carch\u003e.deb",
       "reviews": []
     },
     {
@@ -2079,7 +2080,7 @@
       "version": 0,
       "active": true,
       "question": "curl: what option is used to download result to a file?",
-      "answer": "-o <path>",
+      "answer": "-o \u003cpath\u003e",
       "reviews": []
     },
     {
@@ -2087,7 +2088,7 @@
       "version": 0,
       "active": true,
       "question": "GHA: how do you make an env var from a script step accessible to subsequent steps? How do you access it?",
-      "answer": "\"Put the following in your script:   echo \"\"var_name=$var_name_in_script\"\" > $GITHUB_ENV   It can then be accessed via `env.var_name`.\"",
+      "answer": "\"Put the following in your script:   echo \"\"var_name=$var_name_in_script\"\" \u003e $GITHUB_ENV   It can then be accessed via `env.var_name`.\"",
       "reviews": []
     },
     {
@@ -2111,7 +2112,7 @@
       "version": 0,
       "active": true,
       "question": "For each of the three types of names for .so files: - What is the naming format? - What does the file contain? - If applicable, how is the file created?",
-      "answer": "real name: lib<name>.so.<major>.<minor>[.<patch>] The real name is the file that contains the actual library code.   soname: lib<name>.so.<major> The soname is a symlink to (generally the latest version of) the real name version of the .so. It is created by `ldconfig`. It should be what is referenced in a compiled program.   linker name: lib<name>.so The linker name is the name that is used by the compiler at compile time to figure out what soname to require in executables. On a system it should be a symlink to the latest soname. Linker name is not created by `ldconfig`. This is because we want to maintain control over what soname the linker name is symlinked to, so that we can for example link against a different version of a library when in development.",
+      "answer": "real name: lib\u003cname\u003e.so.\u003cmajor\u003e.\u003cminor\u003e[.\u003cpatch\u003e] The real name is the file that contains the actual library code.   soname: lib\u003cname\u003e.so.\u003cmajor\u003e The soname is a symlink to (generally the latest version of) the real name version of the .so. It is created by `ldconfig`. It should be what is referenced in a compiled program.   linker name: lib\u003cname\u003e.so The linker name is the name that is used by the compiler at compile time to figure out what soname to require in executables. On a system it should be a symlink to the latest soname. Linker name is not created by `ldconfig`. This is because we want to maintain control over what soname the linker name is symlinked to, so that we can for example link against a different version of a library when in development.",
       "reviews": []
     },
     {
@@ -2151,7 +2152,7 @@
       "version": 0,
       "active": true,
       "question": "What command can be used to format a partition as a specific filesystem?",
-      "answer": "mkfs.<fsname>   For example, mkfs.ext4 .",
+      "answer": "mkfs.\u003cfsname\u003e   For example, mkfs.ext4 .",
       "reviews": []
     },
     {
@@ -2207,7 +2208,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of a semver version? What does each part mean? Give regex that should match each part.",
-      "answer": "<version>[-<prerelease-version>][+<build-metadata>]   version: the version [0-9]+\\.[0-9]+\\.[0-9]+   prerelease-version: for betas etc; always has lower precedence than versions without prerelease version [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*   build-metadata: for build info; ignored when determining version precedence [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*",
+      "answer": "\u003cversion\u003e[-\u003cprerelease-version\u003e][+\u003cbuild-metadata\u003e]   version: the version [0-9]+\\.[0-9]+\\.[0-9]+   prerelease-version: for betas etc; always has lower precedence than versions without prerelease version [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*   build-metadata: for build info; ignored when determining version precedence [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*",
       "reviews": []
     },
     {
@@ -2295,7 +2296,7 @@
       "version": 0,
       "active": true,
       "question": "How does sudo caching work?",
-      "answer": "It is configurable, but by default sudo caches calls in /run/sudo/ts/<username> with a 15 minute timestamp.",
+      "answer": "It is configurable, but by default sudo caches calls in /run/sudo/ts/\u003cusername\u003e with a 15 minute timestamp.",
       "reviews": []
     },
     {
@@ -2479,7 +2480,7 @@
       "version": 0,
       "active": true,
       "question": "systemd: how do you list the dependencies of a unit? How do you list the units that depend on a unit?",
-      "answer": "systemctl list-dependencies <unit>   systemctl list-dependencies --reverse <unit>",
+      "answer": "systemctl list-dependencies \u003cunit\u003e   systemctl list-dependencies --reverse \u003cunit\u003e",
       "reviews": []
     },
     {

@@ -1,6 +1,7 @@
 {
   "name": "windows",
   "version": 0,
+  "active": true,
   "cards": [
     {
       "id": "rhal1p7s0c",

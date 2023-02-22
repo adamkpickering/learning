@@ -1,6 +1,7 @@
 {
   "name": "soft-ware",
   "version": 0,
+  "active": true,
   "cards": [
     {
       "id": "ctvn9gu9l9",

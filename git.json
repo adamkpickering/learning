@@ -1,6 +1,7 @@
 {
   "name": "git",
   "version": 0,
+  "active": true,
   "cards": [
     {
       "id": "fl7zae5d5q",
