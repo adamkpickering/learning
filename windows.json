@@ -12,6 +12,11 @@
         {
           "version": 0,
           "result": "failed",
+          "datetime": "2023-02-21T23:56:36.775132356Z"
+        },
+        {
+          "version": 0,
+          "result": "failed",
           "datetime": "2023-02-17T23:52:16.3492332Z"
         }
       ]
@@ -23,6 +28,11 @@
       "question": "When Windows has started up, where is the registry stored?",
       "answer": "The registry is stored in RAM for fast access.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-02-21T23:56:42.228550301Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -40,6 +50,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-02-21T23:56:47.864563767Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-17T23:53:01.2708445Z"
         }
       ]
@@ -51,6 +66,11 @@
       "question": "What is the difference between a symlink and a shortcut?",
       "answer": "A symlink is part of the filesystem.\n\nA shortcut is a file containing info that points to another file.\nAn application has to know how to use it for it to be useful.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-21T23:57:27.934144614Z"
+        },
         {
           "version": 0,
           "result": "easy",

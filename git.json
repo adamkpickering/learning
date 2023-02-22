@@ -247,6 +247,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-21T23:58:10.399888329Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2023-02-17T23:40:02.8525728Z"
         },
@@ -267,6 +272,11 @@
         {
           "version": 0,
           "result": "hard",
+          "datetime": "2023-02-21T23:58:36.061176573Z"
+        },
+        {
+          "version": 0,
+          "result": "hard",
           "datetime": "2023-02-17T23:40:21.0706913Z"
         },
         {
@@ -283,6 +293,11 @@
       "question": "Which file and which directory contain the metadata on submodules?",
       "answer": ".gitmodules: contains the path to the submodule directory, and the url of the submodule remote\n\n.git/modules/\u003cpath_to_submodule_dir\u003e: contains all of the things that .git/ would normally contain for the submodule",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-02-21T23:59:04.757370507Z"
+        },
         {
           "version": 0,
           "result": "hard",
