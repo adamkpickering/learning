@@ -12,6 +12,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-01T23:48:56.5952627Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2023-02-17T23:31:49.3144387Z"
         },
@@ -29,6 +34,11 @@
       "question": "What are the two types of permissions masks that git stores?",
       "answer": "755 (rwx r-x r-x) (executable)\n644 (rw- r-- r--) (non-executable)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-01T23:49:01.4962917Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -51,6 +61,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-03-01T23:50:29.3571358Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-02-17T23:32:42.8713807Z"
         },
         {
@@ -67,6 +82,11 @@
       "question": "What are the four locations git looks in for config?",
       "answer": "/etc/gitconfig\n~/.gitconfig\n~/.config/git/config\n./.git/config",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-01T23:51:10.573777Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -88,6 +108,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-01T23:51:14.5888784Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-02-17T23:33:37.1127269Z"
         },
@@ -105,6 +130,11 @@
       "question": "git: delete develop branch from origin (2 ways)",
       "answer": "git push -d origin develop\ngit push origin :refs/heads/develop",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-01T23:51:34.4017643Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -126,6 +156,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-01T23:51:50.247962Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-02-17T23:34:42.2700674Z"
         },
@@ -145,6 +180,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-01T23:52:45.0765821Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2023-02-17T23:36:36.3544605Z"
         },
@@ -162,6 +202,11 @@
       "question": "What is the purpose of --?",
       "answer": "-- separates the paths from other arguments, such as refs.\nWithout it, some commands would be ambiguous.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-01T23:53:06.5705078Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -184,6 +229,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-03-01T23:53:20.8314608Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-17T23:38:33.9445854Z"
         },
         {
@@ -200,6 +250,11 @@
       "question": "git: how are the ^ and ~ symbols used when referencing commits,\nand what do they mean?",
       "answer": "HEAD^ or HEAD^1 -\u003e the first parent of HEAD\nHEAD^2 -\u003e the second parent of HEAD\nHEAD^^ or HEAD^1^1 -\u003e the first parent of the first parent of HEAD\nHEAD~1 -\u003e the first parent of HEAD\nHEAD~2 -\u003e the first parent of the first parent of head\n\nThe general rule is to use ~ when referring to previous commits.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-01T23:53:53.8863128Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -230,6 +285,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-03-01T23:54:01.5924208Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-02-17T23:39:19.9181548Z"
         },
         {
@@ -246,6 +306,11 @@
       "question": "What are the paths to heads, tags and remote heads?",
       "answer": "heads: refs/heads/\u003chead\u003e\ntags: refs/tags/\u003ctag\u003e\nheads at remotes: refs/remotes/\u003cremote\u003e/\u003chead\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-03-01T23:54:38.1845686Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -270,6 +335,11 @@
       "question": "How do you create a git submodule?",
       "answer": "Go to dir you want submodule in and do:\ngit submodule add \u003curl\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-01T23:54:57.7882195Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -297,6 +367,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-03-01T23:55:18.5838142Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-02-21T23:59:04.757370507Z"
         },
         {
@@ -321,6 +396,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-03-01T23:56:01.1272052Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-02-17T23:41:53.3953832Z"
         },
         {
@@ -340,6 +420,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-03-01T23:57:19.7445508Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-02-17T23:42:14.980737Z"
         },
         {
@@ -356,6 +441,11 @@
       "question": "What is the simplest way to ensure that a submodule is in\nthe state pointed to by the commit recorded in the superproject?\nWhat is the limitation of this?",
       "answer": "git submodule update\n\nThis checks out that commit, which leaves HEAD in a detached state.\n\nAny commits made on top of it are likely to be lost.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-01T23:58:06.5551796Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -378,6 +468,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-03-01T23:59:13.5844295Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-02-17T23:43:11.2625111Z"
         },
         {
@@ -397,6 +492,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-03-01T23:59:30.9743485Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-17T23:44:01.6852299Z"
         },
         {
@@ -413,6 +513,11 @@
       "question": "What are the three \"trees\" that are useful to have in your\nmind when working with `git reset`?",
       "answer": "HEAD\nindex\nworking tree",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-01T23:59:45.9920367Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -435,6 +540,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-03-02T00:00:13.1411638Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-17T23:44:45.8887826Z"
         },
         {
@@ -451,6 +561,11 @@
       "question": "How do you move a change from the index to the working tree?",
       "answer": "git restore --staged \u003cpath\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-02T00:00:38.8567115Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -473,6 +588,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-03-02T00:00:50.2971273Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-17T23:45:09.5926453Z"
         },
         {
@@ -489,6 +609,11 @@
       "question": "What is the one important thing to remember about the\ndifference between commands that do things to remotes\nand commands that do things locally?",
       "answer": "Commands that do things to remotes must have the remote specified,\nand then the branch arguments. Commands that do things locally\nhave the remote and the branch lumped together in the form \u003cremote\u003e/\u003cbranch\u003e.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-02T00:01:12.1608561Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -511,6 +636,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-03-02T00:01:43.0538515Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-02-17T23:45:59.1039798Z"
         },
         {
@@ -527,6 +657,11 @@
       "question": "How do Github releases work?",
       "answer": "You create a release from a tag somewhere in the code,\nthen upload any assets and release notes.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-02T00:01:54.5929836Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -549,6 +684,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-03-02T00:02:27.0786107Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-02-17T23:47:23.5396686Z"
         },
         {
@@ -561,7 +701,7 @@
     {
       "id": "e48p62d1wl",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the three important options of git clean?",
       "answer": "-n: don't remove anything, just show what would be done\n-f: required to actually remove anything\n-X: remove only files ignored by git",
       "reviews": [
@@ -584,6 +724,11 @@
       "question": "How do you check out a branch that you don't have locally,\nbut is on a remote?",
       "answer": "git checkout --guess \u003cremote_branch\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-02T00:04:38.3776918Z"
+        },
         {
           "version": 0,
           "result": "easy",
