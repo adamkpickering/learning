@@ -9,7 +9,13 @@
       "active": true,
       "question": "Why don't we commit (and especially put in pull requests)\ncommented-out code?",
       "answer": "In a solo environment, this is not a problem, at least\nfor short-duration projects. But:\n\n- The reason that the code is there is unclear. People might\nthink that the code was supposed to be included at some point,\nbut someone never got around to it. Or, they might think\nthat it was kept for some reason.\n\n- It takes up space on the screen, which makes the code harder to read.\n\nBasically it makes it harder to work on the code confidently.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-17T22:27:45.191394146Z"
+        }
+      ]
     },
     {
       "id": "r1khbnf29f",
@@ -17,12 +23,18 @@
       "active": true,
       "question": "In a work pipeline, why is it pointless to improve anything\nother than at the bottleneck?",
       "answer": "In front of the bottleneck, work still just piles up.\nAfter the bottleneck, stations are starved of work.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-17T22:28:20.093068672Z"
+        }
+      ]
     },
     {
       "id": "p9gbxtqiwn",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the four categories of work?",
       "answer": "1) business projects\n2) internal projects\n3) changes\n4) unplanned work",
       "reviews": []
@@ -33,7 +45,13 @@
       "active": true,
       "question": "Why is work-in-progress a problem?",
       "answer": "Work-in-progress is a problem because it piles up. As it waits\nto be consumed at a work station, several things happen:\n\n1) The work degrades. In the case of software engineering,\nthe code is no longer immediately in the brain of the person\nwho was working on it.\n\n2) It needs to be managed/tracked. It occupies space in\nsomeone's brain, which costs time and energy.\n\n3) It hides other issues in our system. They are only discovered\nonce the WIP is worked on, which can incur costs\n(because problems are more expensive to solve the further down\nthe pipeline they are discovered).\n\n4) If there is an issue with the WIP, its originator does not\nget the immediate feedback that they need to learn not to\nmake that mistake.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:31:40.583203336Z"
+        }
+      ]
     },
     {
       "id": "ruq5dxumka",
@@ -41,7 +59,13 @@
       "active": true,
       "question": "Why is it bad to have a large batch size?",
       "answer": "Large batch sizes and work-in-progress go hand in hand.\nThe larger a task is, the longer it takes. And the longer it takes,\nthe more likely it is that you will have to work on something else\nbefore completing the batch. This means WIP, and having to come back to it,\nand so on.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:32:29.572987098Z"
+        }
+      ]
     },
     {
       "id": "pauivj06hs",
@@ -49,7 +73,13 @@
       "active": true,
       "question": "What relationship does technical debt have to the fourth type of work?",
       "answer": "Technical debt causes unplanned work. When you have overwhelming technical debt,\nunplanned work ends up taking up the majority of your development time.\nThis makes it very hard to develop new features.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:32:44.319181141Z"
+        }
+      ]
     },
     {
       "id": "iciq0mxlfj",
@@ -57,7 +87,13 @@
       "active": true,
       "question": "How do you eliminate work-in-progress?",
       "answer": "You scale back the rate at which work is released to the work pipeline.\nThis may seem wasteful, because some of your work stations are idle\nsome of the time, but it is even more wasteful to have\nWIP clogging up the system.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:33:19.974667253Z"
+        }
+      ]
     },
     {
       "id": "4npm8uorh4",
@@ -65,7 +101,13 @@
       "active": true,
       "question": "What four things make up a work center?\nExplain what they are.",
       "answer": "1) man - the human being doing the work\n2) machine - the tools being used to do the work\n3) method - the techniques used to do the work\n4) measures - the metrics by which we measure the quality of the work",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:33:42.495092902Z"
+        }
+      ]
     },
     {
       "id": "p9aq48bryg",
@@ -73,7 +115,13 @@
       "active": true,
       "question": "In the context of agile, what are the three ways, and what is each about?",
       "answer": "First way: about increasing the flow of work through the system\n\nSecond way: about the creation, and tightening, of feedback loops\nin order to detect problems sooner. Also about the instrumentation of work\n\nThird way: about creating a culture where learning, experimentation,\nmistakes and speaking up are encouraged",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:34:58.122352641Z"
+        }
+      ]
     },
     {
       "id": "ku2fra12wh",
@@ -81,7 +129,13 @@
       "active": true,
       "question": "What is the theory of constraints?",
       "answer": "It is a management paradigm that views a system as being limited\nin achieving more of its goals by a small number of constraints.\nFocusing on these constraints and figuring out how to exploit them\nmaximally is viewed as the path to achieving greater success.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-03-17T22:35:11.962372792Z"
+        }
+      ]
     },
     {
       "id": "dokhcj2h1u",
@@ -89,7 +143,13 @@
       "active": true,
       "question": "What is memoization?",
       "answer": "Memoization is basically caching on a function level. A program\ncan remember what inputs mapped to what outputs and return that stored value,\nrather than computing it again.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:35:19.155528088Z"
+        }
+      ]
     },
     {
       "id": "zzmeugd8g4",
@@ -97,7 +157,13 @@
       "active": true,
       "question": "What is dependency injection?",
       "answer": "Dependency injection is a pattern where an object takes other\nalready-instantiated objects as arguments in its constructor (or in its methods?).\nIt can then use those objects for whatever they were designed for.\nIt can also specify an interface rather than an object type for those objects,\nwhich provides looser coupling.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:36:22.132567879Z"
+        }
+      ]
     },
     {
       "id": "f3w96ds2tu",
@@ -105,7 +171,13 @@
       "active": true,
       "question": "What is inversion of control?",
       "answer": "It is a programming principle. Traditionally, programs procedurally\ncall into a framework or library. Inversion of control inverts that:\ninstead, the framework calls into blocks of code (objects?)\nthat the programmer registers with it.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:37:11.225579878Z"
+        }
+      ]
     },
     {
       "id": "yyfhfyq88c",
@@ -113,7 +185,13 @@
       "active": true,
       "question": "What is the single responsibility principle?",
       "answer": "It is the principle that each piece of a computer program (a class,\na module etc) should have sole responsibility for a single part of\nthat program's functionality.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:38:28.475585932Z"
+        }
+      ]
     },
     {
       "id": "6ivspu355r",
@@ -121,7 +199,13 @@
       "active": true,
       "question": "What is the inventor's paradox?",
       "answer": "It is a phenomenon that occurs when solving problems. Rather than\ndirectly solving a specific problem, it can be easier\nto solve a more general problem. This can inform you of the best way\nto solve the problem.   For example, if a problem has 25 cases, it may be simpler to solve it for n cases, and then use the n=25 case.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:39:25.618699575Z"
+        }
+      ]
     },
     {
       "id": "k460zhrdb1",
@@ -129,7 +213,13 @@
       "active": true,
       "question": "What does the SOLID acronym stand for?",
       "answer": "Single responsibility principle\nOpen-closed principle\nLiskov substitution principle\nInterface segregation principle\nDependency inversion principle",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-03-17T22:40:30.384699356Z"
+        }
+      ]
     },
     {
       "id": "as81z5e84d",
@@ -137,7 +227,13 @@
       "active": true,
       "question": "What is the open-closed principle?",
       "answer": "It states that software entities should be open for extension (open),\nbut closed for modification (closed).\n\nOf course, with the realization that inheritance is an antipattern,\nthis principle doesn't carry as much weight.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:40:59.697266247Z"
+        }
+      ]
     },
     {
       "id": "a61mpdvxql",
@@ -145,7 +241,13 @@
       "active": true,
       "question": "What is the interface segregation principle?",
       "answer": "It states that no code should be forced to depend on methods\nit does not use. It advocates for splitting interfaces that are large\ninto smaller and more specific ones so that clients will only have\nto know about the methods that are of interest to them.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:42:08.734276553Z"
+        }
+      ]
     },
     {
       "id": "is8eajtgjt",
@@ -153,7 +255,13 @@
       "active": true,
       "question": "What are the three most important shapes for flowcharts?\nWhat do they mean?",
       "answer": "Oval/Rounded Rectangle: is a terminal. Represents the start or the end of the flowchart.\n\nRectangle: is a process, a step in the flowchart where something is done.\n\nDiamond: is a decision point. Has two or more arrows coming out of it that are each annotated with a specific case.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-17T22:42:40.736780256Z"
+        }
+      ]
     },
     {
       "id": "mmwc1xvd9r",
@@ -161,7 +269,13 @@
       "active": true,
       "question": "What are the three kinds of complexity?\nDescribe them.",
       "answer": "Essential Complexity: complexity that must exist in the program due\nto the complexity of the problem it is solving.\n\nAccidental Complexity: complexity that exists because the programmer\ndid not find the simplest way to solve the problem.\n\nOptional Complexity: complexity that is introduced by writing code\nto add a certain feature that is not necessary to the main function\nof the program.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:43:14.17348465Z"
+        }
+      ]
     },
     {
       "id": "ib7cmdmgdb",
@@ -169,7 +283,13 @@
       "active": true,
       "question": "What are the three sources of complexity?\nDescribe each one.",
       "answer": "Interface Complexity: the apparent complexity at the interface used by users of the software.\n\nImplementation Complexity: the complexity of the implementation; how easy it is to understand how the software works.\n\nCodebase Size: the number of lines of code in the entire piece of software;\nhas obvious costs.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-03-17T22:44:13.656477729Z"
+        }
+      ]
     },
     {
       "id": "s4wys81vqf",
@@ -177,7 +297,13 @@
       "active": true,
       "question": "What is dynamic dispatch?",
       "answer": "It is the process of selecting which implementation of a polymorphic operation\nto call at runtime.\n\nFor example, I might have an object that could be one of any number of types\nthat implement a certain interface. Dynamic dispatch\nwould be used to determine which object's method to call when it is called\non a variable that implements that interface.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-03-17T22:44:59.958857916Z"
+        }
+      ]
     },
     {
       "id": "rrwln52j9p",
@@ -185,7 +311,13 @@
       "active": true,
       "question": "What is type erasure?",
       "answer": "It is the load-time process of removing type information from code.\nFor example, python's type hints would have to be removed in order to treat the code\nas regular, dynamically-typed python.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-17T22:45:11.56116899Z"
+        }
+      ]
     },
     {
       "id": "0y9e8owslu",
@@ -193,7 +325,13 @@
       "active": true,
       "question": "What are the four stages of team development?\nWhat does each entail?",
       "answer": "Forming: individuals are unsure of the purpose, unsure of how they fit in, and unsure of whether they'll work well with one another. They look to the team leader for direction.\n\nStorming: people push against established boundaries. Conflict can aries between team members as their true characters surface. People may challenge your authority, or the team's mission.\n\nNorming: people get used to each others' differences. They start to appreciate one another's strengths and respect the leader's authority. They share a commitment to the team's goals.\n\nPerforming: the team is performing to its full potential.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-03-17T22:45:46.408623307Z"
+        }
+      ]
     },
     {
       "id": "02fi6ta0tx",
@@ -201,7 +339,13 @@
       "active": true,
       "question": "What are the 7 steps to accepting things that you can't change?",
       "answer": "1) Be sure that it is actually is outside of your control.   2) Notice how you feel about it - angry, hopeless, sad etc.   3) Decide whether it is worth it to spend energy feeling this way about the thing.   4) Acknowledge that accepting it doesn't define you. You can be a competent engineer and still work on stuff that has big problems.   5) Picture yourself running into the thing, and how you would ideally respond: letting go.   6) Do an anxiety audit. Are you:     - Exercising?     - Taking on too much work?     - In need of an attitude shift?     - Eating healthy food?     - Experiencing anything stressful outside of work?     If you find a problem here, change it.   7) Instead of spending energy on the things that you can't change, decide to spend it on the things you can change.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-03-17T22:48:02.975781611Z"
+        }
+      ]
     },
     {
       "id": "yfo0t9gaqk",
@@ -209,7 +353,13 @@
       "active": true,
       "question": "Why is it difficult to provide time estimates in software projects?",
       "answer": "We work with libraries, languages, platforms and existing projects that are seldom fully understood by one person. So, it is likely that at some point in your work:   - something will work differently than you think, requiring re-thinking your design and reimplementation.   - you will run into something really shitty that needs debugging, a workaround or redesign and reimplementation.   - the requirements of the project change due to the client changing their mind.   - your understanding of the problem will improve, leading to knowledge of a better solution.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-03-17T22:49:43.830559208Z"
+        }
+      ]
     },
     {
       "id": "al7qyy0qwe",
@@ -217,7 +367,13 @@
       "active": true,
       "question": "What one thing is critical for a mature engineer to understand?",
       "answer": "It is impossible to understand everything you want to. Most things in computing are complex enough that virtually nobody fully understands them.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-03-17T22:50:20.438196632Z"
+        }
+      ]
     },
     {
       "id": "cetdgv5rpt",
@@ -225,7 +381,13 @@
       "active": true,
       "question": "\"What is the \"\"primitive obsession\"\" code smell?\"",
       "answer": "\"Where you have primitive types that represent more specific ideas. Making them specially defined types makes them \"\"attract\"\" methods from other places in the program, making the code more organized.  For example, a primitive number type vs a Money type - a lot of functionality can coalesce around the Money type.\"",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-03-17T22:50:36.562410589Z"
+        }
+      ]
     }
   ]
 }
