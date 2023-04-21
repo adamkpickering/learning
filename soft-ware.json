@@ -13,6 +13,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-04-20T23:35:14.129860129Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-03-17T22:27:45.191394146Z"
         }
       ]
@@ -24,6 +29,11 @@
       "question": "In a work pipeline, why is it pointless to improve anything\nother than at the bottleneck?",
       "answer": "In front of the bottleneck, work still just piles up.\nAfter the bottleneck, stations are starved of work.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-20T23:35:43.730533146Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -49,6 +59,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-04-20T23:37:28.342345658Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-03-17T22:31:40.583203336Z"
         }
       ]
@@ -60,6 +75,11 @@
       "question": "Why is it bad to have a large batch size?",
       "answer": "Large batch sizes and work-in-progress go hand in hand.\nThe larger a task is, the longer it takes. And the longer it takes,\nthe more likely it is that you will have to work on something else\nbefore completing the batch. This means WIP, and having to come back to it,\nand so on.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-20T23:38:50.339392763Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -74,6 +94,11 @@
       "question": "What relationship does technical debt have to the fourth type of work?",
       "answer": "Technical debt causes unplanned work. When you have overwhelming technical debt,\nunplanned work ends up taking up the majority of your development time.\nThis makes it very hard to develop new features.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-20T23:39:03.118262109Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -91,6 +116,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-04-20T23:39:29.73498453Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-03-17T22:33:19.974667253Z"
         }
       ]
@@ -102,6 +132,11 @@
       "question": "What four things make up a work center?\nExplain what they are.",
       "answer": "1) man - the human being doing the work\n2) machine - the tools being used to do the work\n3) method - the techniques used to do the work\n4) measures - the metrics by which we measure the quality of the work",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-20T23:40:02.78558953Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -119,6 +154,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-04-20T23:41:11.439525568Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-03-17T22:34:58.122352641Z"
         }
       ]
@@ -130,6 +170,11 @@
       "question": "What is the theory of constraints?",
       "answer": "It is a management paradigm that views a system as being limited\nin achieving more of its goals by a small number of constraints.\nFocusing on these constraints and figuring out how to exploit them\nmaximally is viewed as the path to achieving greater success.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-20T23:41:52.540261103Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -144,6 +189,11 @@
       "question": "What is memoization?",
       "answer": "Memoization is basically caching on a function level. A program\ncan remember what inputs mapped to what outputs and return that stored value,\nrather than computing it again.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-20T23:42:05.727943444Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -161,6 +211,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-04-20T23:42:49.402316673Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-03-17T22:36:22.132567879Z"
         }
       ]
@@ -172,6 +227,11 @@
       "question": "What is inversion of control?",
       "answer": "It is a programming principle. Traditionally, programs procedurally\ncall into a framework or library. Inversion of control inverts that:\ninstead, the framework calls into blocks of code (objects?)\nthat the programmer registers with it.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-20T23:43:29.319036964Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -188,6 +248,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-20T23:44:50.027280076Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-03-17T22:38:28.475585932Z"
         }
@@ -200,6 +265,11 @@
       "question": "What is the inventor's paradox?",
       "answer": "It is a phenomenon that occurs when solving problems. Rather than\ndirectly solving a specific problem, it can be easier\nto solve a more general problem. This can inform you of the best way\nto solve the problem. For example, if a problem has 25 cases, it may be\nsimpler to solve it for n cases, and then use the n=25 case.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-20T23:45:13.683585416Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -217,6 +287,11 @@
         {
           "version": 0,
           "result": "failed",
+          "datetime": "2023-04-20T23:46:17.965264072Z"
+        },
+        {
+          "version": 0,
+          "result": "failed",
           "datetime": "2023-03-17T22:40:30.384699356Z"
         }
       ]
@@ -228,6 +303,11 @@
       "question": "What is the open-closed principle?",
       "answer": "It states that software entities should be open for extension (open),\nbut closed for modification (closed).\n\nOf course, with the realization that inheritance is an antipattern,\nthis principle doesn't carry as much weight.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-20T23:46:34.371789056Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -245,6 +325,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-04-20T23:47:28.065650007Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-03-17T22:42:08.734276553Z"
         }
       ]
@@ -256,6 +341,11 @@
       "question": "What are the three most important shapes for flowcharts?\nWhat do they mean?",
       "answer": "Oval/Rounded Rectangle: is a terminal. Represents the start or the end of the flowchart.\n\nRectangle: is a process, a step in the flowchart where something is done.\n\nDiamond: is a decision point. Has two or more arrows coming out of it that are each annotated with a specific case.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-20T23:47:51.141020428Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -273,6 +363,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-04-20T23:48:13.48106391Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-03-17T22:43:14.17348465Z"
         }
       ]
@@ -284,6 +379,11 @@
       "question": "What are the three sources of complexity?\nDescribe each one.",
       "answer": "Interface Complexity: the apparent complexity at the interface used by users of the software.\n\nImplementation Complexity: the complexity of the implementation; how easy it is to understand how the software works.\n\nCodebase Size: the number of lines of code in the entire piece of software;\nhas obvious costs.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-20T23:48:42.257523158Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -301,6 +401,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-04-20T23:49:08.264727287Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-03-17T22:44:59.958857916Z"
         }
       ]
@@ -312,6 +417,11 @@
       "question": "What is type erasure?",
       "answer": "It is the load-time process of removing type information from code.\nFor example, python's type hints would have to be removed in order to treat the code\nas regular, dynamically-typed python.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-20T23:49:34.735706357Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -326,6 +436,11 @@
       "question": "What are the four stages of team development?\nWhat does each entail?",
       "answer": "Forming: individuals are unsure of the purpose, unsure of how they fit in, and unsure of whether they'll work well with one another. They look to the team leader for direction.\n\nStorming: people push against established boundaries. Conflict can aries between team members as their true characters surface. People may challenge your authority, or the team's mission.\n\nNorming: people get used to each others' differences. They start to appreciate one another's strengths and respect the leader's authority. They share a commitment to the team's goals.\n\nPerforming: the team is performing to its full potential.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-20T23:50:44.273388748Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -343,6 +458,11 @@
         {
           "version": 0,
           "result": "failed",
+          "datetime": "2023-04-20T23:53:27.681478552Z"
+        },
+        {
+          "version": 0,
+          "result": "failed",
           "datetime": "2023-03-17T22:48:02.975781611Z"
         }
       ]
@@ -354,6 +474,11 @@
       "question": "Why is it difficult to provide time estimates in software projects?",
       "answer": "We work with libraries, languages, platforms and existing projects that are\nseldom fully understood by one person. So, it is likely that at some point\nin your work:\n\n- something will work differently than you think, requiring re-thinking\n  your design and reimplementation.\n\n- you will run into something really shitty that needs debugging,\n  a workaround or redesign and reimplementation.\n\n- the requirements of the project change due to the client changing their mind.\n\n- your understanding of the problem will improve, leading to knowledge\n  of a better solution.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-04-20T23:54:45.673803851Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -370,6 +495,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-20T23:55:49.922771727Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-03-17T22:50:20.438196632Z"
         }
@@ -382,6 +512,11 @@
       "question": "What is the \"primitive obsession\" code smell?",
       "answer": "Where you have primitive types that represent more specific ideas. Making them specially\ndefined types makes them \"attract\" methods from other places in the program,\nmaking the code more organized. For example, a primitive number type vs a\nMoney type - a lot of functionality can coalesce around the Money type.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-04-20T23:57:13.476563528Z"
+        },
         {
           "version": 0,
           "result": "failed",

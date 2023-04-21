@@ -17,7 +17,13 @@
       "active": true,
       "question": "How does networking work for lima VMs?",
       "answer": "There is a host agent and a guest agent. The guest agent notices\nany ports that are open on the guest and notifies the host agent\nabout them. The host agent then does SSH forwarding to make\nthese ports available on the same port on the host machine.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-20T23:59:17.081044744Z"
+        }
+      ]
     },
     {
       "id": "6ybcxdce3n",
@@ -25,20 +31,32 @@
       "active": true,
       "question": "For lima VMs, which directories are passed through to the VM?",
       "answer": "1) the home directory\n2) /tmp/lima or for RD /tmp/Rancher Desktop",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-04-20T23:59:49.309454242Z"
+        }
+      ]
     },
     {
       "id": "v4soxd3x1h",
       "version": 0,
       "active": true,
-      "question": "How do nerdctl, kim, docker etc talk to containerd, kubernetes,\ndockerd etc in a lima VM?",
-      "answer": "kim and docker are simple because they simply tell the server what to do,\nand the server does it.\n\nnerdctl is more complex because it manages images on the local host.\nSo on the host we need to make it a shell script that calls\n\n  lima shell <name> nerdctl <args>\n\nThis means all of the stuff get stored in the VM.",
-      "reviews": []
+      "question": "How do nerdctl, docker, kubectl etc talk to containerd, dockerd,\nkubernetes etc in a lima VM?",
+      "answer": "kubectl and docker are simple because they simply tell the server what to do,\nand the server does it.\n\nnerdctl is more complex because it manages images on the local host.\nSo on the host we need to make it a shell script that calls\n\n  lima shell \u003cname\u003e nerdctl \u003cargs\u003e\n\nThis means all of the stuff get stored in the VM.",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-04-21T00:01:39.660281325Z"
+        }
+      ]
     },
     {
       "id": "8dwhp3c4bn",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the interface between Rancher Desktop's frontend and its backend?",
       "answer": "Rancher Desktop simply calls `limactl` commands to control the lima VM\non MacOS and Linux. Likewise it calls `wsl.exe` on Windows.",
       "reviews": []
@@ -65,7 +83,13 @@
       "active": true,
       "question": "At a high level, how do Linux builds of Rancher Desktop work?",
       "answer": "1) GHA: lint, test etc\n2) GHA: package runnable code into .zip and upload to S3\n3) GHA: invoke OBS webhook\n4) OBS: get metadata (version info etc) in github\n5) OBS: download .zip file from S3\n6) OBS: changes trigger builds of packages",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-21T00:03:44.793250624Z"
+        }
+      ]
     },
     {
       "id": "npje4s34lw",
@@ -73,12 +97,18 @@
       "active": true,
       "question": "RD: what does window.send() do?",
       "answer": "It emits an event to all renderer processes from the main process.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-04-21T00:03:55.956417743Z"
+        }
+      ]
     },
     {
       "id": "qa6kajpqw9",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "At a high level, how do RD updates work?",
       "answer": "LonghornPublisher: modifies the `publish:` config from electron-updater.yml\n\nLonghornProvider: takes the modified publish config from electron-updater.yml and LonghornPublisher\n\nAppimageUpdater: takes a config object, which LonghornProvider is a part of;\nhas a number of callbacks registered on it that respond to things like\nnew versions being available (is an implementation of EventEmitter);\nis an implementation of AppUpdater\n\nUpgrade Responder is server that LonghornProvider interfaces with. It monitors\ngithub for new releases.",
       "reviews": []
