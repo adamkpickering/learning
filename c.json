@@ -3,6 +3,14 @@
   "version": 0,
   "cards": [
     {
+      "id": "f8dc0ujm4q",
+      "version": 0,
+      "active": true,
+      "question": "What is the difference between declaration and definition",
+      "answer": "declaration is merely stating that the variable exists; definition is defining its value",
+      "reviews": []
+    },
+    {
       "id": "a7nvciig6t",
       "version": 0,
       "active": false,

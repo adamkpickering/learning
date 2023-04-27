@@ -1,6 +1,7 @@
 {
   "name": "golang",
   "version": 0,
+  "active": true,
   "cards": [
     {
       "id": "or5yiju008",
@@ -8,93 +9,77 @@
       "active": true,
       "question": "declare an array of four strings",
       "answer": "var x [4]string",
-      "reviews": []
-    },
-    {
-      "id": "c7u12naek6",
-      "version": 0,
-      "active": true,
-      "question": "define implicitly typed int",
-      "answer": "x := 4",
-      "reviews": []
-    },
-    {
-      "id": "vkbgfkofla",
-      "version": 0,
-      "active": true,
-      "question": "for loop",
-      "answer": "for i := 0; i < 10; i++ { fmt.Println(i) }",
-      "reviews": []
-    },
-    {
-      "id": "0g47mnuzxc",
-      "version": 0,
-      "active": true,
-      "question": "if statement",
-      "answer": "if number := 4; number > 5 { statements here }",
-      "reviews": []
-    },
-    {
-      "id": "al2hycj8re",
-      "version": 0,
-      "active": true,
-      "question": "create an infinite loop",
-      "answer": "for { statements here }",
-      "reviews": []
-    },
-    {
-      "id": "c4b1ikf9zp",
-      "version": 0,
-      "active": true,
-      "question": "create a while loop",
-      "answer": "for i < 3 { statements }",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-26T23:16:55.150236654Z"
+        }
+      ]
     },
     {
       "id": "pvsjmkyrxy",
       "version": 0,
       "active": true,
-      "question": "three rules of defer",
-      "answer": "1) a deferred functions arguments are evaluated when the defer statement is evaluated 2) deferred function calls are executed in last in first out order after the surrounding function returns 3) deferred functions may read and assign to the returning function's named return values",
-      "reviews": []
+      "question": "What are the three rules of defer?",
+      "answer": "1) a deferred functions arguments are evaluated when the defer statement is evaluated\n2) deferred function calls are executed in last in first out order after the surrounding function returns\n3) deferred functions may read and assign to the returning function's named return values",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-04-26T23:23:42.089727206Z"
+        }
+      ]
     },
     {
       "id": "75ugyu0iyp",
       "version": 0,
       "active": true,
-      "question": "define the fmt.Stringer interface",
-      "answer": "type Stringer interface { String() string }",
-      "reviews": []
+      "question": "Define the fmt.Stringer interface.",
+      "answer": "type Stringer interface {\nString() string\n}",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-26T23:24:21.232535918Z"
+        }
+      ]
     },
     {
       "id": "1nefkc3bzo",
       "version": 0,
       "active": true,
-      "question": "Define the error interface.",
-      "answer": "type error interface {     Error() string }",
-      "reviews": []
+      "question": "Define error.",
+      "answer": "type error interface {\nError() string\n}",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-26T23:24:53.977863423Z"
+        }
+      ]
     },
     {
       "id": "mg4okn60t4",
       "version": 0,
       "active": true,
-      "question": "closure syntax",
-      "answer": "func(i int, f float) int {statements}",
+      "question": "What is the syntax of a closure?",
+      "answer": "func(i int, f float) int {\nstatements\n}",
       "reviews": []
     },
     {
       "id": "a7txpxz2df",
       "version": 0,
       "active": true,
-      "question": "define io.Reader",
-      "answer": "type io.Reader interface {     Read(b []byte) (int, error) }",
+      "question": "Define io.Reader.",
+      "answer": "type io.Reader interface {\nRead(b []byte) (int, error)\n}",
       "reviews": []
     },
     {
       "id": "ivze8dnu8s",
       "version": 0,
       "active": true,
-      "question": "what is an interface, under the hood?",
+      "question": "What is an interface, under the hood?",
       "answer": "a tuple: (value, type)",
       "reviews": []
     },
@@ -102,7 +87,7 @@
       "id": "arc6hd8luo",
       "version": 0,
       "active": true,
-      "question": "what is the empty interface?",
+      "question": "What is the empty interface?",
       "answer": "an interface that has no methods; you can assign any type to an empty interface",
       "reviews": []
     },
@@ -110,14 +95,14 @@
       "id": "bij6jj2rfk",
       "version": 0,
       "active": true,
-      "question": "what happens if you call a method on a nil interface?",
+      "question": "What happens if you call a method on a nil interface?",
       "answer": "you get a runtime error",
       "reviews": []
     },
     {
       "id": "te6f1zz2s1",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "{-, F, S}print{-, f, ln}",
       "answer": "beginning: - - to io.Stdout F - to io.Writer interface passed as argument S - to string passed as argument end: - - simply print arguments without spaces (unless two consecutive are not strings) or newline f - print according to format string ln - print with newline and spaces between args",
       "reviews": []
@@ -125,7 +110,7 @@
     {
       "id": "6b9knatx4c",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What group of functions are pretty much useless? Why?",
       "answer": "The fmt.*scan* functions. They break input up based on spaces which is highly opinionated and not very useful.",
       "reviews": []
@@ -134,7 +119,7 @@
       "id": "b5604ol5gl",
       "version": 0,
       "active": true,
-      "question": "Function signature of the function that is used to copy elements from one slice to another?",
+      "question": "What is the signature of the function that is used to copy elements from one slice to another?",
       "answer": "func copy(dst, src []Type) int",
       "reviews": []
     },
@@ -142,15 +127,15 @@
       "id": "1cdlwrkcih",
       "version": 0,
       "active": true,
-      "question": "What is weird about this function? func hello() (n int) {     n = 4     return n }",
-      "answer": "the return value also acts as a variable declaration",
+      "question": "What is weird about this function:\nfunc hello() (n int) {\nn = 4\nreturn n\n}",
+      "answer": "The return value also acts as a variable declaration.",
       "reviews": []
     },
     {
       "id": "fmdb00fvqx",
       "version": 0,
       "active": true,
-      "question": "four types in the bufio package; how do you make them?",
+      "question": "What are the four types in the bufio package?\nWhat are they for?",
       "answer": "func NewReader(rd io.Reader) *Reader  func NewWriter(wr io.Writer) *Writer func NewReadWriter(rw io.ReadWriter) *ReadWriter func NewScanner(rd io.Reader) *Scanner",
       "reviews": []
     },
@@ -158,14 +143,22 @@
       "id": "vhwd8vef06",
       "version": 0,
       "active": true,
-      "question": "How do you get command line args? What is the type of this variable?",
+      "question": "How do you get command line args?\nWhat is the type of this variable?",
       "answer": "os.Args []string",
+      "reviews": []
+    },
+    {
+      "id": "bh2xvx5hrq",
+      "version": 0,
+      "active": true,
+      "question": "What stdlib package is used to convert strings to other types?",
+      "answer": "strconv",
       "reviews": []
     },
     {
       "id": "bh2xvx5hgq",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "function signature to convert string to float",
       "answer": "func strconv.ParseFloat(str string, bits int) (float64, error)",
       "reviews": []
@@ -173,7 +166,7 @@
     {
       "id": "yjuqpzp01w",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "function signature to convert string to int",
       "answer": "func strconv.ParseInt(str string, base int, bits int) (int64, error)",
       "reviews": []
@@ -181,7 +174,7 @@
     {
       "id": "ukz94zsw4q",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "function signature to convert string to uint",
       "answer": "func strconv.ParseUint(s string, base, bits int) (uint64, error)",
       "reviews": []
@@ -190,15 +183,15 @@
       "id": "0m3p4hstjd",
       "version": 0,
       "active": true,
-      "question": "What are the two ways to create the multi-line string:   hello bye",
-      "answer": "\"s := \"\"hello\\n\"\" +      \"\"bye\"\"   s := `hello bye`\"",
+      "question": "What are the two ways to create the multi-line string:\n\nhello\nbye",
+      "answer": "s := \"hello\\n\" +\n\"bye\"\n\ns := `hello\nbye`",
       "reviews": []
     },
     {
       "id": "y0n53klwxs",
       "version": 0,
-      "active": true,
-      "question": "differences between os.Exit and panic",
+      "active": false,
+      "question": "What is the difference between os.Exit and panic?",
       "answer": "os.Exit *only* exits with an exit code; panic is involved with unwinding the stack, calling deferred functions, potentially being caught by recover etc",
       "reviews": []
     },
@@ -207,30 +200,30 @@
       "version": 0,
       "active": true,
       "question": "When should panic be used, and when should an error be returned?",
-      "answer": "Panic is used *only* when the program has reached an unrecoverable state; returning an error is done everywhere else.",
+      "answer": "Panic is used *only* when the program has reached an unrecoverable state.\nReturning an error is done everywhere else.",
       "reviews": []
     },
     {
       "id": "32mip3u9k2",
       "version": 0,
       "active": true,
-      "question": "Declare a structure, MyStruct with two elements: - an int that is externally accessible - and a float32 that is not externally accessible.",
-      "answer": "type MyStruct struct {   X int   y float32 }",
+      "question": "Declare a structure, MyStruct, with two elements:\n- an int that is externally accessible\n- a float32 that is not externally accessible",
+      "answer": "type MyStruct struct {\nX int\ny float32\n}",
       "reviews": []
     },
     {
       "id": "2ovxfkh5a7",
       "version": 0,
-      "active": true,
-      "question": "type Vertex struct {   X int   Y int } three ways to define? How are multiple lines done?",
+      "active": false,
+      "question": "type Vertex struct {\nX int\nY int\n}\n\nWhat are the three ways to create an instance of Vertex?",
       "answer": "Vertex{1, 2} Vertex{X: 1, Y: 2} Vertex{} Vertex{     X: 1,     Y: 2, }",
       "reviews": []
     },
     {
       "id": "ipx7dt47nq",
       "version": 0,
-      "active": true,
-      "question": "are semicolons necessary in Go?",
+      "active": false,
+      "question": "Are semicolons necessary in Go?",
       "answer": "In most cases no; the lexer inserts semicolons in places that need them. However, you can use semicolons to separate multiple statements on the same line",
       "reviews": []
     },
@@ -238,14 +231,14 @@
       "id": "d0y9r4ywjj",
       "version": 0,
       "active": true,
-      "question": "How do type switches work? What is the syntax?",
-      "answer": "Type switches are a special construct. Don't try to understand them by comparing them to other types of switch-case. The syntax is as follows:    switch v := i.(type) { case bool:   // v is of type bool case int:   // v is of type int case *int:   // v is of type *int default:   // v has the same type as i }",
+      "question": "How do type switches work?\nWhat is the syntax?",
+      "answer": "Type switches are a special construct. Don't try to understand\nthem by comparing them to other types of switch-case.\nThe syntax is as follows:\nswitch v := i.(type) {\ncase bool:\n    // v is of type bool\ncase int:\n    // v is of type int\ncase *int:\n    // v is of type *int\ndefault:\n    // v has the same type as i\n}",
       "reviews": []
     },
     {
       "id": "05sw99ypya",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Signature of function that is used to open a file",
       "answer": "func os.Open(path string) (*os.File, error)",
       "reviews": []
@@ -254,8 +247,8 @@
       "id": "aa12kvyf4u",
       "version": 0,
       "active": true,
-      "question": "What is the signature of the function used to add elements to the end of a slice? How would you use it?",
-      "answer": "func append(slice []Type, elems ...Type) []Type   slice = append(slice, elem1, elem2)   It is important to assign the result of append to the variable that you are appending to. This is because the slice will be reallocated if it does not have the capacity for the new elements.",
+      "question": "What is the signature of the function used to add elements to the end of a slice?\nHow would you use it?",
+      "answer": "func append(slice []Type, elems ...Type) []Type\n\nslice = append(slice, elem1, elem2)\n\nIt is important to assign the result of append to the variable\nthat you are appending to. This is because the slice will be\nreallocated if it does not have the capacity for the new elements.",
       "reviews": []
     },
     {
@@ -263,13 +256,13 @@
       "version": 0,
       "active": true,
       "question": "What does ... mean? What is it called?",
-      "answer": "\"It is a \"\"variadic parameter\"\"; provides a slice of the noted type under the parameter name.\"",
+      "answer": "It makes a parameter into a \"variadic parameter\". It\nprovides a slice of the noted type under the parameter name.",
       "reviews": []
     },
     {
       "id": "yisk5ab08a",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the signature of the function used to encode data into JSON?",
       "answer": "func json.Marshal(v interface{}) ([]byte, error)",
       "reviews": []
@@ -277,7 +270,7 @@
     {
       "id": "tjygy81e5l",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "de-encode json data function signature",
       "answer": "func json.Unmarshal(data []byte, v interface{}) error",
       "reviews": []
@@ -286,7 +279,7 @@
       "id": "0rbgnp6wnt",
       "version": 0,
       "active": true,
-      "question": "For arbitrary JSON, what type is a JSON number translated to?",
+      "question": "When unmarshaling arbitrary JSON, what type is a JSON number translated to?",
       "answer": "float64",
       "reviews": []
     },
@@ -295,45 +288,37 @@
       "version": 0,
       "active": true,
       "question": "Can the type of a variable change?",
-      "answer": "no",
+      "answer": "No.",
       "reviews": []
     },
     {
       "id": "8wobm89do2",
       "version": 0,
       "active": true,
-      "question": "\"var i interface{} = \"\"hello\"\" integer := i.(int) what happens?\"",
-      "answer": "we get a panic",
+      "question": "var i interface{} = \"hello\"\ninteger := i.(int)\n\nWhat happens?",
+      "answer": "We get a panic.",
       "reviews": []
     },
     {
       "id": "210ep38qvx",
       "version": 0,
       "active": true,
-      "question": "type assertion syntax",
-      "answer": "var i interface{} = int(4) x := i.(int)              // panics if i is not of type int y, ok := i.(float)     // lets you check ok before using y",
+      "question": "What is the syntax of a type assertion?",
+      "answer": "var i interface{} = int(4)\n\nx := i.(int) // panics if i is not of type int\ny, ok := i.(float) // lets you check ok before using y",
       "reviews": []
     },
     {
       "id": "i05tr7reeu",
       "version": 0,
       "active": true,
-      "question": "how to exit a program with exit code 1?",
+      "question": "How do you exit a program with exit code 1?",
       "answer": "os.Exit(1)",
-      "reviews": []
-    },
-    {
-      "id": "f8dc0ujm4q",
-      "version": 0,
-      "active": true,
-      "question": "difference between declaration and definition",
-      "answer": "declaration is merely stating that the variable exists; definition is defining its value",
       "reviews": []
     },
     {
       "id": "88g0rd5b2y",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "four ways to define a zeroed struct",
       "answer": "var a MyStruct var a = MyStruct{} a := MyStruct{} a := *new(MyStruct)",
       "reviews": []
@@ -342,31 +327,31 @@
       "id": "nh4e4j12ua",
       "version": 0,
       "active": true,
-      "question": "why does new() exist?",
-      "answer": "It was there before \u0026S{}; it is, indeed, superfluous",
+      "question": "Why does new() exist?",
+      "answer": "It was there before &MyStruct{}. It is superfluous.",
       "reviews": []
     },
     {
       "id": "euduicull6",
       "version": 0,
       "active": true,
-      "question": "What is the difference between defining variables with var and defining variables with := ?",
-      "answer": "- only var can be used when not in a block - only := can be used to do multiple return",
+      "question": "What are the differences between defining variables with var and defining variables with := ?",
+      "answer": "- only var can be used when not in a block\n- only := can be used to do multiple return",
       "reviews": []
     },
     {
       "id": "2a9rzntyqa",
       "version": 0,
       "active": true,
-      "question": "Define the io.Reader interface for the type MyObject",
-      "answer": "func (o MyObject) Read(b []byte) (int, error) {     statements }",
+      "question": "Define the io.Reader interface for the type MyObject.",
+      "answer": "func (o MyObject) Read(b []byte) (int, error) {\nstatements\n}",
       "reviews": []
     },
     {
       "id": "h2qb15f9up",
       "version": 0,
       "active": true,
-      "question": "create a channel that sends/receives type MyStruct with a buffer size of 20",
+      "question": "Create a channel that sends/receives type MyStruct with a buffer size of 20.",
       "answer": "my_chan := make(chan MyStruct, 20)",
       "reviews": []
     },
@@ -374,23 +359,23 @@
       "id": "m7yr4rt780",
       "version": 0,
       "active": true,
-      "question": "close a channel; where must this always be done from?",
-      "answer": "close(my_channel) This must always be done from the sender",
+      "question": "How do you close a channel?\nWhat rule applies?",
+      "answer": "close(my_channel)\n\nThis must always be done from the sender",
       "reviews": []
     },
     {
       "id": "ut1srvdlok",
       "version": 0,
       "active": true,
-      "question": "val, ok := <-my_chan What are the two possible values of ok, and what do they signify?",
-      "answer": "ok is true if we got a valid value in val ok is false if the channel is closed and there are no more values to receive",
+      "question": "val, ok := <-my_chan\n\nWhat are the two possible values of ok?\nWhat do they signify?",
+      "answer": "ok is true if we got a valid value in val.\nok is false if the channel is closed and there are no more values to receive.",
       "reviews": []
     },
     {
       "id": "7wnv3qfx2s",
       "version": 0,
       "active": true,
-      "question": "sleep for 4 seconds",
+      "question": "Write code to sleep for 4 seconds.",
       "answer": "time.Sleep(4 * time.Second)",
       "reviews": []
     },
@@ -398,31 +383,31 @@
       "id": "e2rtk1zu43",
       "version": 0,
       "active": true,
-      "question": "select from channels ch1 and ch2",
-      "answer": "select { case a, ok := <-ch1:   fmt.Println(a) case a, ok := <-ch2:   fmt.Println(a) }",
+      "question": "How do you select from channels ch1 and ch2?",
+      "answer": "select {\ncase a, ok := <-ch1:\n    fmt.Println(a)\ncase a, ok := <-ch2:\n    fmt.Println(a)\n}",
       "reviews": []
     },
     {
       "id": "elok53244e",
       "version": 0,
       "active": true,
-      "question": "define a map with string keys and integer values",
-      "answer": "\"a := map[string]int{   \"\"hello\"\": 4,   \"\"world\"\": 5, }\"",
+      "question": "Define a map with string keys and integer values.",
+      "answer": "a := map[string]int{\n    \"hello\": 4,\n    \"world\": 5,\n}",
       "reviews": []
     },
     {
       "id": "wwzwl0g5p3",
       "version": 0,
       "active": true,
-      "question": "retrieve a value from a map, checking if the key exists",
-      "answer": "a, ok := my_map[key] if ok {...}",
+      "question": "Retrieve a value from a map while checking if the key exists.",
+      "answer": "a, ok := my_map[key]\nif ok {...}",
       "reviews": []
     },
     {
       "id": "88ig9u8dvw",
       "version": 0,
       "active": true,
-      "question": "insert or update value in a map",
+      "question": "Insert or update a value in a map.",
       "answer": "my_map[key] = my_var",
       "reviews": []
     },
@@ -438,7 +423,7 @@
       "id": "mqijjskkvd",
       "version": 0,
       "active": true,
-      "question": "Define the time.Duration type. What does this number represent?",
+      "question": "Define the time.Duration type.\nWhat does this number represent?",
       "answer": "type time.Duration int64 nanoseconds",
       "reviews": []
     },
@@ -446,30 +431,30 @@
       "id": "1cqcarq5w6",
       "version": 0,
       "active": true,
-      "question": "What is io.EOF?",
-      "answer": "\"var io.EOF = errors.New(\"\"EOF\"\")\"",
+      "question": "Define io.EOF.",
+      "answer": "var io.EOF = errors.New(\"EOF\")",
       "reviews": []
     },
     {
       "id": "ebljhnyvwi",
       "version": 0,
-      "active": true,
-      "question": "\"Function to wrap an error \"\"err\"\" in another error\"",
-      "answer": "\"wrapped_err := fmt.Errorf(\"\"another layer: %w\"\", err)\"",
+      "active": false,
+      "question": "How do you wrap an error, while adding some text?",
+      "answer": "newErr := fmt.Errorf(\"another layer: %w\", err)",
       "reviews": []
     },
     {
       "id": "112y96yd18",
       "version": 0,
       "active": true,
-      "question": "Signature of function used to create a new error?",
-      "answer": "func errors.New(msg string) error",
+      "question": "How do you create a fresh new error type?",
+      "answer": "err := errors.New(\"new error message\")",
       "reviews": []
     },
     {
       "id": "potjyp0k24",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Function signature of function that lets you get at a wrapped error? How does this work?",
       "answer": "func errors.Unwrap(err error) error   Returns the result of calling the Unwrap method on err, if its type contains an Unwrap method. Otherwise, returns nil.",
       "reviews": []
@@ -486,8 +471,8 @@
       "id": "syxemusjfw",
       "version": 0,
       "active": true,
-      "question": "What are the differences between the three types of quotes?",
-      "answer": "\"` `: raw string literal ' ': single rune/character \"\" \"\": string literal with backslash escaping\"",
+      "question": "What are the three types of quotes?\nWhat is different between them?",
+      "answer": "` `: raw string literal\n' ': single rune/character\n\" \": string literal with backslash escaping",
       "reviews": []
     },
     {
@@ -495,54 +480,54 @@
       "version": 0,
       "active": true,
       "question": "What are the two steps to using a template?",
-      "answer": "1) Assemble parse tree for template 2) Execute template, passing in structure/map to be used in vars",
+      "answer": "1) Assemble parse tree for template\n2) Execute template, passing in structure/map to be used in vars",
       "reviews": []
     },
     {
       "id": "yh8m894wga",
       "version": 0,
       "active": true,
-      "question": "For the method   func (t *Template) Parse(text string) (*Template, error) {...}   why do we pass *Template rather than Template?",
-      "answer": "Parse is a method that modifies the passed structure. If we pass the struct itself then the function receives a copy of the struct. If that copy is modified, all changes to it are discarded once the function exits.   If we pass a pointer to the struct, then any modifications done to the struct inside the function persist once the function exits.",
+      "question": "For the method:\n\nfunc (t *Template) Parse(text string) (*Template, error) {...}\n\nwhy do we pass *Template rather than Template?",
+      "answer": "Parse is a method that modifies the passed structure. If we\npass the struct itself then the function receives a copy\nof the struct. If that copy is modified, all changes\nto it are discarded once the function exits.\n\nIf we pass a pointer to the struct, then any\nmodifications done to the struct inside the function\npersist once the function exits.",
       "reviews": []
     },
     {
       "id": "n6e8v0ymr2",
       "version": 0,
       "active": true,
-      "question": "For the following types, state whether the bare type is a pointer or a value. What is the rule of thumb?   number (int, float etc) array slice struct map channel interface",
-      "answer": "number (int, float etc)     value  array                       value slice                       pointer struct                      value map                         pointer channel                     pointer interface                   pointer   If it is allocated with make(), it is a pointer.",
+      "question": "For the following types, state whether the bare type is a pointer or a value.\nWhat is the rule of thumb?\n\nnumber (int, float etc)\narray\nslice\nstruct\nmap\nchannel\ninterface",
+      "answer": "number (int, float etc): value\narray: value\nslice: pointer\nstruct: value\nmap: pointer\nchannel: pointer\ninterface: pointer\n\nIf it is allocated with make(), it is a pointer.",
       "reviews": []
     },
     {
       "id": "ocxrrx1xx0",
       "version": 0,
       "active": true,
-      "question": "Send variable val on a ch1",
-      "answer": "ch1 <- val",
+      "question": "Send the variable myVar on ch1.",
+      "answer": "ch1 <- myVar",
       "reviews": []
     },
     {
       "id": "f8e8n9m2u8",
       "version": 0,
       "active": true,
-      "question": "How to get a blocking select statement, versus a nonblocking select statement?",
-      "answer": "\"select statements are blocking by default; to make them nonblocking, include the \"\"default\"\" case, whose code runs when no other case is ready to run\"",
+      "question": "How to get a blocking select statement?\nHow do you get a nonblocking select statement?",
+      "answer": "select statements are blocking by default. To make them nonblocking,\ninclude the \"default\" case, whose code runs when no other case\nis ready to run",
       "reviews": []
     },
     {
       "id": "48s976jed4",
       "version": 0,
       "active": true,
-      "question": "What is the purpose of the GOPATH env var, both in pre and post module go? What is its default value?",
-      "answer": "pre-modules: the GOPATH env var specifies the location of your Golang workspace   post-module: still specifies location of workspace, but workspace isn't used as an active place to develop code   default: ~/go",
+      "question": "What is the purpose of the GOPATH env var in pre-module go?\nWhat is the purpose of the GOPATH env var in post-module go?\nWhat is its default value?",
+      "answer": "pre-modules: the GOPATH env var specifies the location of your Golang workspace\n\npost-module: still specifies location of workspace, but workspace isn't used as an\nactive place to develop code\n\ndefault: ~/go",
       "reviews": []
     },
     {
       "id": "n7971kcxtd",
       "version": 0,
-      "active": true,
-      "question": "What is a workspace? What are the common dirs it contains, and what does each contain?",
+      "active": false,
+      "question": "[this card is out of date]What is a workspace? What are the common dirs it contains, and what does each contain?",
       "answer": "Note: legacy (GOPATH, pre-modules) concept. A workspace is a standard hierarchy that is used to develop and run go applications.   src: contains source code, *including* packages containing source code   pkg: contains binary packages   bin: contains compiled commands (packages with name main)",
       "reviews": []
     },
@@ -550,8 +535,8 @@
       "id": "ghph7sagjf",
       "version": 0,
       "active": true,
-      "question": "What is a go package?In which two places does the name of a package appear?",
-      "answer": "A package is just a directory that contains .go files.  1) The directory containing the package must bear the name of the package   2) In the package statement at the top of each .go file",
+      "question": "What is a go package?\nIn which two places does the name of a package appear?",
+      "answer": "A package is just a directory that contains .go files.\n\nThe name of a package appears in two places:\n1) The name of the directory containing the package\n2) In the package statement at the top of each .go file in the package",
       "reviews": []
     },
     {
@@ -575,22 +560,22 @@
       "version": 0,
       "active": true,
       "question": "What is a go module?",
-      "answer": "A collection of source packages with a go.mod at its root. go.mod tracks the external dependencies, and their versions, that the packages in the module depend on.",
+      "answer": "A collection of source packages with a go.mod at its root.\ngo.mod tracks the external dependencies, and their versions,\nthat the packages in the module depend on.",
       "reviews": []
     },
     {
       "id": "xlnzz5qm3r",
       "version": 0,
       "active": true,
-      "question": "What are the three important keywords in a go.mod file, and what do they mean?",
-      "answer": "module: defines the module path (ex. github.com/squat/kilo) go: sets the expected golang version (ex. 1.13)  require: requires a module for this at a particular version or later",
+      "question": "What are the three important keywords in a go.mod file?\nWhat do they mean?",
+      "answer": "module: defines the module path (ex. github.com/squat/kilo)\ngo: sets the expected golang version (ex. 1.13)\nrequire: requires a module for this at a particular version or later",
       "reviews": []
     },
     {
       "id": "5cbrk13di9",
       "version": 0,
-      "active": true,
-      "question": "pre-module: how is the following tree built? Which packages and bins result, and where are they stored?    src/   foo/     bar/        myfile.go (package bar)     asdf/        main.go (package main)",
+      "active": false,
+      "question": "pre-module: how is the following tree built?\nWhich packages and bins result, and where are they stored?\n\nsrc/foo/bar/myfile.go (package bar)\nasdf/main.go (package main)",
       "answer": "src/... pkg/ARCH/foo/bar.a (installed package object) bin/asdf (command asdf)",
       "reviews": []
     },
@@ -598,8 +583,8 @@
       "id": "r6f7tduo0z",
       "version": 0,
       "active": true,
-      "question": "What determines whether code in a file is turned into an installed package object or an executable command?",
-      "answer": "package main -> executable command   package anything_else -> package object",
+      "question": "What determines whether code in a file is turned into an installed\npackage object or an executable command?",
+      "answer": "If its package is \"main\" it is turned into an executable command.\nEverything else is turned into an installed package object.",
       "reviews": []
     },
     {
@@ -607,7 +592,7 @@
       "version": 0,
       "active": true,
       "question": "What are the four types of import paths, explain what they are?",
-      "answer": "standard (built-in) workspace(local) relative remote",
+      "answer": "standard (built-in)\nworkspace(local)\nrelative\nremote",
       "reviews": []
     },
     {
@@ -615,15 +600,15 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between `go get` pre-modules vs post-modules?",
-      "answer": "Pre-modules: `go get` simply downloads the package to GOPATH/src/<package_path>, then builds and installs it like any other package.   Post-modules: `go get` first updates the package record in go.mod, and then downloads the package (and its dependencies) to GOPATH/pkg/mod/<package_path> and installs the package and its dependencies to the cache.",
+      "answer": "Pre-modules: `go get` simply downloads the package to $GOPATH/src/<package_path>,\nthen builds and installs it like any other package.\n\nPost-modules: `go get` first updates the package record in go.mod, and then\ndownloads the package (and its dependencies) to GOPATH/pkg/mod/<package_path>\nand installs the package and its dependencies to the cache.",
       "reviews": []
     },
     {
       "id": "r03ro2tf92",
       "version": 0,
       "active": true,
-      "question": "\"For the struct:   type MyStruct struct {   Field1 int   Field2 string   Field3 float }   Annotate Field1 so that it is serialized to JSON as the key \"\"hello_world\"\", and not included if its value evaluates to false. Annotate Field2 so that it is never included when the struct is serialized. Annotate Field3 so that its value is converted to a string when serialized.\"",
-      "answer": "\"JSON struct tags are used only when using json.Marshal() to serialize a struct into a JSON object. They are not used in json.Unmarshal().  type MyStruct struct {   Field1 int     `json:\"\"hello_world,omitempty\"\"`   Field2 string  `json:\"\"-\"\"`   Field3 float   `json:\"\",string\"\"` }\"",
+      "question": "type MyStruct struct {\n    Field1 int\n    Field2 string\n    Field3 float\n}\n\nAnnotate Field1 so that it is serialized to JSON as the key \"hello_world\",\nand not included if its value evaluates to false.\n\nAnnotate Field2 so that it is never included when the struct is serialized.\n\nAnnotate Field3 so that its value is converted to a string\nwhen serialized.\"",
+      "answer": "type MyStruct struct {\n    Field1 int     `json:\"hello_world,omitempty\"`\n    Field2 string  `json:\"-\"`\n    Field3 float   `json:\",string\"`\n}",
       "reviews": []
     },
     {
@@ -639,7 +624,7 @@
       "version": 0,
       "active": true,
       "question": "How are tests named?",
-      "answer": "Test<function_name>(...) {...}",
+      "answer": "Test<functionName>(...) {...}",
       "reviews": []
     },
     {
@@ -653,7 +638,7 @@
     {
       "id": "d3fm7xejen",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the primitive methods of testing.T? What are their variations? What do they do?",
       "answer": "T.Fail{-,Now}  T.Skip{-,Now} T.Log{-,f}  T.Error{-,f}: like Fail plus Log T.Fatal{-,f}: like FailNow plus Log T.Helper: marks the calling function as a test helper function (setup etc)  T.Cleanup(func()): registers a function to be called when the test and its subtests complete",
       "reviews": []
@@ -663,13 +648,13 @@
       "version": 0,
       "active": true,
       "question": "What three important interfaces does the os.File type implement?",
-      "answer": "io.Reader io.Writer io.Closer",
+      "answer": "io.Reader\nio.Writer\nio.Closer",
       "reviews": []
     },
     {
       "id": "7wn8djlp4d",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "File creation function signature",
       "answer": "func os.Create(path string) (*os.File, error)",
       "reviews": []
@@ -678,16 +663,8 @@
       "id": "8e8h1ovbix",
       "version": 0,
       "active": true,
-      "question": "Define io.Writer",
-      "answer": "type io.Writer interface {   Write(b []byte) (int, error) }",
-      "reviews": []
-    },
-    {
-      "id": "wmrnyeosh8",
-      "version": 0,
-      "active": true,
-      "question": "How is a function documented?",
-      "answer": "// Comments and // some more comments func MyFunc(...) ... {...}",
+      "question": "Define io.Writer.",
+      "answer": "type io.Writer interface {\n    Write(b []byte) (int, error)\n}",
       "reviews": []
     },
     {
@@ -695,7 +672,7 @@
       "version": 0,
       "active": true,
       "question": "What are the two ways a package can be documented?",
-      "answer": "1) Comments immediately above package statement 2) Include a doc.go file in the package, with a package statement and one big comment",
+      "answer": "1) Comments immediately above package statement\n2) Include a doc.go file in the package, with a package statement\n   and one big comment",
       "reviews": []
     },
     {
@@ -783,7 +760,7 @@
       "version": 0,
       "active": true,
       "question": "What are the function signatures of the four methods in context.Context? When would they be used?",
-      "answer": "func (c context.Context) Done() <-chan struct{} Returns a channel that is closed when work associated with this context should be canceled.    func (c context.Context) Deadline() (dl time.Time, ok bool)  Returns the time when work associated with this context should be canceled; ok is false if there is no deadline.   func (c context.Context) Err() error If context is not yet closed, returns nil; if context is closed, returns error explaining why.   func (c context.Context) Value(key interface{}) interface{}  Returns a value associated with the context with a specific key. useful for request-scoped data.",
+      "answer": "func (c context.Context) Done() \u003c-chan struct{} Returns a channel that is closed when work associated with this context should be canceled.    func (c context.Context) Deadline() (dl time.Time, ok bool)  Returns the time when work associated with this context should be canceled; ok is false if there is no deadline.   func (c context.Context) Err() error If context is not yet closed, returns nil; if context is closed, returns error explaining why.   func (c context.Context) Value(key interface{}) interface{}  Returns a value associated with the context with a specific key. useful for request-scoped data.",
       "reviews": []
     },
     {
@@ -791,7 +768,7 @@
       "version": 0,
       "active": true,
       "question": "- What are the three types of channels? - What do they look like in function signatures?",
-      "answer": "chan T : bidirectional; can be used to send and receive T <-chan T : can only be used to receive T chan<- T : can only be used to send T",
+      "answer": "chan T : bidirectional; can be used to send and receive T \u003c-chan T : can only be used to receive T chan\u003c- T : can only be used to send T",
       "reviews": []
     },
     {
@@ -831,7 +808,7 @@
       "version": 0,
       "active": true,
       "question": "What is iota? How do you use it?",
-      "answer": "A way of declaring constants in a group. you can basically make enums if you define a special type. For example:   type KeyType int   const (   KeyEnter KeyType = iota    // 0   KeyEsc KeyType             // 1   KeyCtrl KeyType            // 2   KeyAlt KeyType             // 3 )   You can also use iota as a value on each line, for example to create a bitmask:   type Mask int   const (   One Mask = 1 << iota  // 1 << 0, or 00000001   Two                   // 1 << 1, or 00000010   Four                  // 1 << 2, or 00000100   Eight                 // 1 << 3, or 00001000   Sixteen               // 1 << 4, or 00010000 )",
+      "answer": "A way of declaring constants in a group. you can basically make enums if you define a special type. For example:   type KeyType int   const (   KeyEnter KeyType = iota    // 0   KeyEsc KeyType             // 1   KeyCtrl KeyType            // 2   KeyAlt KeyType             // 3 )   You can also use iota as a value on each line, for example to create a bitmask:   type Mask int   const (   One Mask = 1 \u003c\u003c iota  // 1 \u003c\u003c 0, or 00000001   Two                   // 1 \u003c\u003c 1, or 00000010   Four                  // 1 \u003c\u003c 2, or 00000100   Eight                 // 1 \u003c\u003c 3, or 00001000   Sixteen               // 1 \u003c\u003c 4, or 00010000 )",
       "reviews": []
     },
     {
@@ -942,7 +919,7 @@
       "id": "xiv39ys2cw",
       "version": 0,
       "active": true,
-      "question": "\"base_tmpl := `<html>{{ template \"\"content\"\" . }}</html>`  base, _ := template.New(\"\"base\"\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.\"",
+      "question": "\"base_tmpl := `\u003chtml\u003e{{ template \"\"content\"\" . }}\u003c/html\u003e`  base, _ := template.New(\"\"base\"\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.\"",
       "answer": "\"tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.Parse(\"\"{{define `content`}}tmpl1{{end}}\"\"))   or   tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.New(\"\"content\"\").Parse(\"\"tmpl1\"\"))\"",
       "reviews": []
     },
@@ -951,7 +928,7 @@
       "version": 0,
       "active": true,
       "question": "Define the time.Ticker type. What is it used for?",
-      "answer": "type time.Ticker struct {     C <-chan time.Time }   The channel delivers time.Time objects at intervals you specify.",
+      "answer": "type time.Ticker struct {     C \u003c-chan time.Time }   The channel delivers time.Time objects at intervals you specify.",
       "reviews": []
     },
     {
@@ -1383,7 +1360,7 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between os.Create and os.Open?",
-      "answer": "os.Create -> creates or truncates the file at the named path   os.Open -> only opens the file at the named path",
+      "answer": "os.Create -\u003e creates or truncates the file at the named path   os.Open -\u003e only opens the file at the named path",
       "reviews": []
     },
     {
@@ -1479,7 +1456,7 @@
       "version": 0,
       "active": true,
       "question": "Which two operators are used to do bit shifting?",
-      "answer": "myVar << 1   The counterpart is >>.",
+      "answer": "myVar \u003c\u003c 1   The counterpart is \u003e\u003e.",
       "reviews": []
     },
     {
