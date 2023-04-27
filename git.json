@@ -8,8 +8,13 @@
       "version": 0,
       "active": true,
       "question": "Create a new git branch",
-      "answer": "git branch \u003cname\u003e [\u003cstart-point\u003e]",
+      "answer": "git checkout -b \u003cbranchName\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-04-26T22:53:58.821309324Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -97,6 +102,11 @@
       "question": "What are the four locations git looks in for config?",
       "answer": "/etc/gitconfig\n~/.gitconfig\n~/.config/git/config\n./.git/config",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-26T22:54:41.876049003Z"
+        },
         {
           "version": 0,
           "result": "failed",

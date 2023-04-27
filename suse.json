@@ -21,6 +21,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-04-26T23:08:27.672091544Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-04-20T23:59:17.081044744Z"
         }
       ]
@@ -28,7 +33,7 @@
     {
       "id": "6ybcxdce3n",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "For lima VMs, which directories are passed through to the VM?",
       "answer": "1) the home directory\n2) /tmp/lima or for RD /tmp/Rancher Desktop",
       "reviews": [
@@ -46,6 +51,11 @@
       "question": "How do nerdctl, docker, kubectl etc talk to containerd, dockerd,\nkubernetes etc in a lima VM?",
       "answer": "kubectl and docker are simple because they simply tell the server what to do,\nand the server does it.\n\nnerdctl is more complex because it manages images on the local host.\nSo on the host we need to make it a shell script that calls\n\n  lima shell \u003cname\u003e nerdctl \u003cargs\u003e\n\nThis means all of the stuff get stored in the VM.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-04-26T23:09:00.339846683Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -87,6 +97,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-04-26T23:09:52.630571157Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-04-21T00:03:44.793250624Z"
         }
       ]
@@ -98,6 +113,11 @@
       "question": "RD: what does window.send() do?",
       "answer": "It emits an event to all renderer processes from the main process.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-04-26T23:10:58.110881595Z"
+        },
         {
           "version": 0,
           "result": "failed",
