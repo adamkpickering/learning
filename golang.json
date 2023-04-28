@@ -678,7 +678,7 @@
     {
       "id": "lmbyp4r2uf",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Function signature of function to start HTTP server",
       "answer": "func http.ListenAndServe(addr string, handler http.Handler) error",
       "reviews": []
@@ -686,7 +686,7 @@
     {
       "id": "f0bgmdn3kf",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Define http.Handler",
       "answer": "type http.Handler interface {   ServeHTTP(rw ResponseWriter, r *Request) }",
       "reviews": []
@@ -694,7 +694,7 @@
     {
       "id": "63q7gtq2s3",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Define http.ResponseWriter",
       "answer": "type http.ResponseWriter interface {   Header() http.Header   Write(b []byte) (int, error)   WriteHeader(statusCode int) }",
       "reviews": []
@@ -702,23 +702,15 @@
     {
       "id": "n6zbvp4xfb",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Function signatures for four high-level functions for making HTTP requests?",
       "answer": "func http.Get(url string) (*Response, error) func http.Head(url string) (*Response, error) func http.Post(url string, cont_type string, body io.Reader) (*Response, error) func http.PostForm(url string, form url.Values) (*Response, error)",
       "reviews": []
     },
     {
-      "id": "ya4gk26qkm",
-      "version": 0,
-      "active": true,
-      "question": "What two types can we use to have fine-grained control over an HTTP request?",
-      "answer": "http.Client and http.Transport",
-      "reviews": []
-    },
-    {
       "id": "97qm2iviut",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the function signature of the generic method that is used to send HTTP requests?",
       "answer": "func http.Do(r *Request) (*Response, error)",
       "reviews": []
@@ -727,14 +719,14 @@
       "id": "khvpn5qrya",
       "version": 0,
       "active": true,
-      "question": "How do I make a PUT HTTP request?",
-      "answer": "Create a \u0026http.Client, build an http.Request struct (can use http.NewRequest), and then pass it to client.Do.",
+      "question": "How do you make a PUT HTTP request?",
+      "answer": "1) Create a &http.Client\n2) Build an http.Request struct (can use http.NewRequest)\n3) Pass it to client.Do",
       "reviews": []
     },
     {
       "id": "n7dii3k6lf",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Function to create an http.Request, and its function signature",
       "answer": "func http.NewRequest(method, url string, body io.Reader) (*Request, error)",
       "reviews": []
@@ -742,7 +734,7 @@
     {
       "id": "cd0tgz5iej",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the five most commonly used fields of http.Request, and what are their types?",
       "answer": "Method string URL *url.URL Header http.Header  Body io.ReadCloser PostForm url.Values",
       "reviews": []
@@ -750,7 +742,7 @@
     {
       "id": "76jhc5xgpd",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Define http.Response, with only its three most used fields.",
       "answer": "type http.Response struct {    StatusCode int     Header http.Header     Body io.ReadCloser }",
       "reviews": []
@@ -759,23 +751,23 @@
       "id": "2o11jz6j5s",
       "version": 0,
       "active": true,
-      "question": "What are the function signatures of the four methods in context.Context? When would they be used?",
-      "answer": "func (c context.Context) Done() \u003c-chan struct{} Returns a channel that is closed when work associated with this context should be canceled.    func (c context.Context) Deadline() (dl time.Time, ok bool)  Returns the time when work associated with this context should be canceled; ok is false if there is no deadline.   func (c context.Context) Err() error If context is not yet closed, returns nil; if context is closed, returns error explaining why.   func (c context.Context) Value(key interface{}) interface{}  Returns a value associated with the context with a specific key. useful for request-scoped data.",
+      "question": "What are the function signatures of the four methods in context.Context?\nWhen would they be used?",
+      "answer": "func (c context.Context) Done() <-chan struct{}\nReturns a channel that is closed when work associated with this\ncontext should be canceled.\n\nfunc (c context.Context) Deadline() (dl time.Time, ok bool)\nReturns the time when work associated with this context should be canceled;\nok is false if there is no deadline.\n\nfunc (c context.Context) Err() error\nIf context is not yet closed, returns nil; if context is closed,\nreturns error explaining why.\n\nfunc (c context.Context) Value(key interface{}) interface{}\nReturns a value associated with the context with a specific key.\n\nUseful for request-scoped data.",
       "reviews": []
     },
     {
       "id": "clguzhyw1j",
       "version": 0,
       "active": true,
-      "question": "- What are the three types of channels? - What do they look like in function signatures?",
-      "answer": "chan T : bidirectional; can be used to send and receive T \u003c-chan T : can only be used to receive T chan\u003c- T : can only be used to send T",
+      "question": "What are the three types of channels?\nWhat do they look like in function signatures?",
+      "answer": "chan T : bidirectional; can be used to send and receive T\n<-chan T : can only be used to receive T\nchan<- T : can only be used to send T",
       "reviews": []
     },
     {
       "id": "wr23546cbz",
       "version": 0,
       "active": true,
-      "question": "What is the problem with os.Exit()?",
+      "question": "What is the problem with using os.Exit() to exit a program?",
       "answer": "It does not call deferred functions.",
       "reviews": []
     },
@@ -783,8 +775,8 @@
       "id": "lkoc6665tb",
       "version": 0,
       "active": true,
-      "question": "What are the two things that characterize a rune?",
-      "answer": "1) a rune is an alias for int32 2) a rune represents a unicode code point",
+      "question": "What are the two defining characteristics of a rune?",
+      "answer": "1) a rune is an alias for int32\n2) a rune represents a unicode code point",
       "reviews": []
     },
     {
@@ -807,22 +799,22 @@
       "id": "rc1fyqvc7z",
       "version": 0,
       "active": true,
-      "question": "What is iota? How do you use it?",
-      "answer": "A way of declaring constants in a group. you can basically make enums if you define a special type. For example:   type KeyType int   const (   KeyEnter KeyType = iota    // 0   KeyEsc KeyType             // 1   KeyCtrl KeyType            // 2   KeyAlt KeyType             // 3 )   You can also use iota as a value on each line, for example to create a bitmask:   type Mask int   const (   One Mask = 1 \u003c\u003c iota  // 1 \u003c\u003c 0, or 00000001   Two                   // 1 \u003c\u003c 1, or 00000010   Four                  // 1 \u003c\u003c 2, or 00000100   Eight                 // 1 \u003c\u003c 3, or 00001000   Sixteen               // 1 \u003c\u003c 4, or 00010000 )",
+      "question": "What is iota?\nHow do you use it?",
+      "answer": "A way of declaring constants in a group. You can basically make enums\nif you define a special type. For example:\n\ntype KeyType int\nconst (\n    KeyEnter KeyType = iota    // 0\n    KeyEsc KeyType             // 1\n    KeyCtrl KeyType            // 2\n    KeyAlt KeyType             // 3\n)\n\nYou can also use iota as a value on each line, for example\nto create a bitmask:\n\ntype Mask int\nconst (\n    One Mask = 1 << iota  // 1 << 0, or 00000001\n    Two                   // 1 << 1, or 00000010\n    Four                  // 1 << 2, or 00000100\n    Eight                 // 1 << 3, or 00001000\n    Sixteen               // 1 << 4, or 00010000\n)",
       "reviews": []
     },
     {
       "id": "i3e2lvhs1i",
       "version": 0,
       "active": true,
-      "question": "\"Which statements does a \"\"break\"\" statement break out of?\"",
+      "question": "Which statements does a `break` statement break out of?",
       "answer": "for, switch and select",
       "reviews": []
     },
     {
       "id": "99dz0o9eb3",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Define the http.Header type",
       "answer": "type http.Header map[string][]string",
       "reviews": []
@@ -836,19 +828,11 @@
       "reviews": []
     },
     {
-      "id": "1u610wt4vy",
-      "version": 0,
-      "active": true,
-      "question": "Define a constant of type int",
-      "answer": "const my_int int = 4",
-      "reviews": []
-    },
-    {
       "id": "02ujikjcyy",
       "version": 0,
       "active": true,
-      "question": "What are the two forms of switch statements in go?",
-      "answer": "Like testing an enumeration:switch my_var { case 'a':  ... case 'b': ... }   Like an if-else chain: switch { case expr: ... case expr2: ... }",
+      "question": "What are the two forms of (non-type-switch) switch statements in go?",
+      "answer": "Like testing an enumeration:\n\nswitch my_var {\ncase 'a':\n    ...\ncase 'b':\n    ...\n}\n\nLike an if-else chain:\n\nswitch {\ncase expr:\n    ...\ncase expr2:\n    ...\n}",
       "reviews": []
     },
     {
@@ -856,23 +840,23 @@
       "version": 0,
       "active": true,
       "question": "What are the three basic (possibly overlapping) uses for a context.Context?",
-      "answer": "1) Used to get goroutines to gracefully exit at the command of another goroutine   2) Used to define and enforce a deadline   3) Used to define higher-scoped variables that should be shared across functions, goroutines etc",
+      "answer": "1) Used to get goroutines to gracefully exit at the command of another goroutine\n2) Used to define and enforce a deadline\n3) Used to define higher-scoped variables that should be shared across functions, goroutines etc",
       "reviews": []
     },
     {
       "id": "ds3itmc0ol",
       "version": 0,
       "active": true,
-      "question": "What happens in go when you attempt to use more memory but there is no more (out of memory)? How do you handle this?",
-      "answer": "The program crashes - there is nothing you can do about this. The way you handle this depends on your application; for most server-side applications you would monitor the process with a watchdog that restarts it upon crash/exit.",
+      "question": "What happens in go when you attempt to use more memory but there is no more (out of memory)?\nHow do you handle this?",
+      "answer": "The program crashes - there is nothing you can do about this. The way you handle this\ndepends on your application; for most server-side applications\nyou would monitor the process with a watchdog that restarts it upon crash/exit.",
       "reviews": []
     },
     {
       "id": "m9fq4am683",
       "version": 0,
       "active": true,
-      "question": "From a high level, how is an HTTP request responded to using the standard library? How would I write a server with multiple endpoints?",
-      "answer": "\"Everything revolves around the http.Handler type. When a request is received, the ServeHTTP method of the Handler is called. This method reads the *Request, and uses its logic to decide how to write the ResponseWriter. Note that http.Handler is an interface, so it probably has some kind of state (request handling threads/processes) in the background.   Once the ResponseWriter is filled, the calling function can turn it into an HTTP response that it sends to the client.   So if you wanted to write a server with multiple endpoints, you'd put a \"\"router\"\" in the ServeHTTP method of your Handler that dispatches the request to one of several functions that handle endpoints.\"",
+      "question": "From a high level, how is an HTTP request responded to using the standard library?\nHow would I write a server with multiple endpoints?",
+      "answer": "\"Everything revolves around the http.Handler type. When a request is received,\nthe ServeHTTP method of the Handler is called. This method reads\nthe *Request, and uses its logic to decide how to write the ResponseWriter.\nNote that http.Handler is an interface, so it probably has some kind\nof state (request handling threads/processes) in the background.\n\nOnce the ResponseWriter is filled, the calling function can turn it into\nan HTTP response that it sends to the client.\n\nSo if you wanted to write a server with multiple endpoints, you'd put\na \"router\" in the ServeHTTP method of your Handler that dispatches\nthe request to one of several functions that handle endpoints.",
       "reviews": []
     },
     {
@@ -880,7 +864,7 @@
       "version": 0,
       "active": true,
       "question": "What are the two characteristics of a slice, and what functions are used to get them?",
-      "answer": "Length, which is the number of elements in the slice, and capacity, which is the number of elements the slice can accomodate before it is reallocated.   len() and cap()",
+      "answer": "Length: the number of elements in the slice. len() is used to get it.\n\nCapacity: the number of elements the slice can accomodate before it is reallocated. cap() is used to get it.",
       "reviews": []
     },
     {
@@ -892,19 +876,11 @@
       "reviews": []
     },
     {
-      "id": "7ib9f7eub4",
-      "version": 0,
-      "active": true,
-      "question": "Define the error type.",
-      "answer": "type error interface {     Error() string }",
-      "reviews": []
-    },
-    {
       "id": "oxzjd2rvoh",
       "version": 0,
       "active": true,
-      "question": "\"You have a base template that was defined with:   base, _ := template.New(\"\"base\"\")   What are two ways to add a new template, with name \"\"new_template\"\", to the namespace of base?\"",
-      "answer": "\"Way 1:base.Parse(\"\"{{ define `new_template` }}content here{{ end }}\"\")   Way 2: new_template := base.New(\"\"new_template\"\") template.Must(new_template.Parse(\"\"content here\"\"))\"",
+      "question": "You have a base template that was defined with:   base, _ := template.New(\"base\")   What are two ways to add a new template, with name \"new_template\", to the namespace of base?",
+      "answer": "Way 1:base.Parse(\"{{ define `new_template` }}content here{{ end }}\")   Way 2: new_template := base.New(\"new_template\") template.Must(new_template.Parse(\"content here\"))",
       "reviews": []
     },
     {
@@ -919,8 +895,8 @@
       "id": "xiv39ys2cw",
       "version": 0,
       "active": true,
-      "question": "\"base_tmpl := `\u003chtml\u003e{{ template \"\"content\"\" . }}\u003c/html\u003e`  base, _ := template.New(\"\"base\"\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.\"",
-      "answer": "\"tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.Parse(\"\"{{define `content`}}tmpl1{{end}}\"\"))   or   tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.New(\"\"content\"\").Parse(\"\"tmpl1\"\"))\"",
+      "question": "base_tmpl := `\u003chtml\u003e{{ template \"content\" . }}\u003c/html\u003e`  base, _ := template.New(\"base\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.",
+      "answer": "tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.Parse(\"{{define `content`}}tmpl1{{end}}\"))   or   tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.New(\"content\").Parse(\"tmpl1\"))",
       "reviews": []
     },
     {
@@ -992,7 +968,7 @@
       "version": 0,
       "active": true,
       "question": "Parse two command line flags: -a (bool) and -f (string), and get a positional argument, and print them, using the stdlib flag parsing package.",
-      "answer": "\"import (     \"\"flag\"\"     \"\"fmt\"\" )  main() {     a := flag.Bool(\"\"a\"\", false, \"\"usage here\"\")     f := flag.String(\"\"f\"\", \"\"\"\", \"\"usage here\"\")     flag.Parse()     pos1 := flag.Args()[1]     fmt.Println(*a, *f, pos1)  }\"",
+      "answer": "import (     \"flag\"     \"fmt\" )  main() {     a := flag.Bool(\"a\", false, \"usage here\")     f := flag.String(\"f\", \"\", \"usage here\")     flag.Parse()     pos1 := flag.Args()[1]     fmt.Println(*a, *f, pos1)  }",
       "reviews": []
     },
     {
@@ -1215,7 +1191,7 @@
       "id": "buc3holo3e",
       "version": 0,
       "active": true,
-      "question": "\"What does an \"\"// indirect\"\" comment next to a dependency mean in go.mod?\"",
+      "question": "What does an \"// indirect\" comment next to a dependency mean in go.mod?",
       "answer": "It means that the dependency is not used in this module, but rather in one of the module's dependencies. Thus it is a dependency of a dependency.",
       "reviews": []
     },
@@ -1224,7 +1200,7 @@
       "version": 0,
       "active": true,
       "question": "How are go modules versioned? How do you reference a package in a module with major version greater than 1?",
-      "answer": "\"Specific versions can be specified by tagging certain refs in the version control repository with the form \"\"vX.Y.Z\"\".   Major version increments are appended to the usual path, so if you have \"\"github.com/adamkpickering/mymod\"\" to start, you call it \"\"github.com/adamkpickering/mymod/v2\"\" once you go to v2. Note that the original path represents both v0 and v1: v0 is where breaking changes are expected, and v1 is the first stable major version.   package: github.com/adamkpickering/mymod/v1/package/path   See https://research.swtch.com/vgo-import for more info.\"",
+      "answer": "Specific versions can be specified by tagging certain refs in the version control repository with the form \"vX.Y.Z\".   Major version increments are appended to the usual path, so if you have \"github.com/adamkpickering/mymod\" to start, you call it \"github.com/adamkpickering/mymod/v2\" once you go to v2. Note that the original path represents both v0 and v1: v0 is where breaking changes are expected, and v1 is the first stable major version.   package: github.com/adamkpickering/mymod/v1/package/path   See https://research.swtch.com/vgo-import for more info.",
       "reviews": []
     },
     {
