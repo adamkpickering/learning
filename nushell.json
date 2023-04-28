@@ -15,7 +15,7 @@
       "version": 0,
       "active": false,
       "question": "nushell: how do you construct a row/record?",
-      "answer": "\"{name: \"\"sam\"\", age: 10}\"",
+      "answer": "{name: \"sam\", age: 10}",
       "reviews": []
     },
     {

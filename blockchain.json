@@ -15,7 +15,7 @@
       "version": 0,
       "active": false,
       "question": "BTC: how are miners rewarded for putting their compute time into the blockchain?",
-      "answer": "\"By convention, the first transaction in a block is a special transaction called a \"\"coinbase\"\" that assigns an amount of BTC to whoever the miner chooses. The amount of BTC assigned in a coinbase decreases over time.\"",
+      "answer": "By convention, the first transaction in a block is a special transaction called a \"coinbase\" that assigns an amount of BTC to whoever the miner chooses. The amount of BTC assigned in a coinbase decreases over time.",
       "reviews": []
     },
     {
@@ -31,7 +31,7 @@
       "version": 0,
       "active": false,
       "question": "BTC: what are blocks? What is their purpose?",
-      "answer": "\"A block is a sequential group of transactions. As transactions are broadcasted to the network, computers that are \"\"mining\"\" record the transactions they receive. Then, once they win the proof of work lottery, they make the next block, adding it onto the end of the chain.   Blocks simultaneously: - group transactions - incentivize the building/maintenance of the blockchain - make it possible for an honest majority to keep the blockchain fair\"",
+      "answer": "A block is a sequential group of transactions. As transactions are broadcasted to the network, computers that are \"mining\" record the transactions they receive. Then, once they win the proof of work lottery, they make the next block, adding it onto the end of the chain.   Blocks simultaneously: - group transactions - incentivize the building/maintenance of the blockchain - make it possible for an honest majority to keep the blockchain fair",
       "reviews": []
     },
     {
@@ -39,7 +39,7 @@
       "version": 0,
       "active": false,
       "question": "BTC: in general terms, how does proof of work work?",
-      "answer": "\"The party that is doing the proof of work must come up with a string (the \"\"nonce\"\") that, when concatenated with the content of the previous block and fed through a one-way function, produces an output that matches very specific criteria.   The common example of these criteria is that the first n (30, 40, whatever) digits must equal zero. So the party that is doing the proof of work must come up with strings, and hash them together over and over with the challenge string until it finds one that matches the criteria.   Note that when one is found, it is easy to verify since you simply take the challenge plus the found proof, hash them, and check the output.\"",
+      "answer": "The party that is doing the proof of work must come up with a string (the \"nonce\") that, when concatenated with the content of the previous block and fed through a one-way function, produces an output that matches very specific criteria.   The common example of these criteria is that the first n (30, 40, whatever) digits must equal zero. So the party that is doing the proof of work must come up with strings, and hash them together over and over with the challenge string until it finds one that matches the criteria.   Note that when one is found, it is easy to verify since you simply take the challenge plus the found proof, hash them, and check the output.",
       "reviews": []
     },
     {

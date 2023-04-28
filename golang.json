@@ -464,7 +464,7 @@
       "version": 0,
       "active": true,
       "question": "What are the 8 keywords for actions in golang templates, and what does each do?",
-      "answer": "\"if, else, end, range, with, block, define, template   {{ if pipeline }}   T1 {{ else if pipeline }}   T2 {{ else }}   T3 {{ end }}   {{ range pipeline }}   T1 {{ end }}   {{ with pipeline }}   T1 {{ end }}   {{ block \"\"name\"\" pipeline }}   T1 {{ end}}   {{ define \"\"name\"\" }}   T1 {{ end }} {{ template \"\"name\"\" pipeline }}\"",
+      "answer": "if, else, end, range, with, block, define, template   {{ if pipeline }}   T1 {{ else if pipeline }}   T2 {{ else }}   T3 {{ end }}   {{ range pipeline }}   T1 {{ end }}   {{ with pipeline }}   T1 {{ end }}   {{ block \"name\" pipeline }}   T1 {{ end}}   {{ define \"name\" }}   T1 {{ end }} {{ template \"name\" pipeline }}",
       "reviews": []
     },
     {
@@ -607,7 +607,7 @@
       "id": "r03ro2tf92",
       "version": 0,
       "active": true,
-      "question": "type MyStruct struct {\n    Field1 int\n    Field2 string\n    Field3 float\n}\n\nAnnotate Field1 so that it is serialized to JSON as the key \"hello_world\",\nand not included if its value evaluates to false.\n\nAnnotate Field2 so that it is never included when the struct is serialized.\n\nAnnotate Field3 so that its value is converted to a string\nwhen serialized.\"",
+      "question": "type MyStruct struct {\n    Field1 int\n    Field2 string\n    Field3 float\n}\n\nAnnotate Field1 so that it is serialized to JSON as the key \"hello_world\",\nand not included if its value evaluates to false.\n\nAnnotate Field2 so that it is never included when the struct is serialized.\n\nAnnotate Field3 so that its value is converted to a string\nwhen serialized.",
       "answer": "type MyStruct struct {\n    Field1 int     `json:\"hello_world,omitempty\"`\n    Field2 string  `json:\"-\"`\n    Field3 float   `json:\",string\"`\n}",
       "reviews": []
     },
@@ -856,7 +856,7 @@
       "version": 0,
       "active": true,
       "question": "From a high level, how is an HTTP request responded to using the standard library?\nHow would I write a server with multiple endpoints?",
-      "answer": "\"Everything revolves around the http.Handler type. When a request is received,\nthe ServeHTTP method of the Handler is called. This method reads\nthe *Request, and uses its logic to decide how to write the ResponseWriter.\nNote that http.Handler is an interface, so it probably has some kind\nof state (request handling threads/processes) in the background.\n\nOnce the ResponseWriter is filled, the calling function can turn it into\nan HTTP response that it sends to the client.\n\nSo if you wanted to write a server with multiple endpoints, you'd put\na \"router\" in the ServeHTTP method of your Handler that dispatches\nthe request to one of several functions that handle endpoints.",
+      "answer": "Everything revolves around the http.Handler type. When a request is received,\nthe ServeHTTP method of the Handler is called. This method reads\nthe *Request, and uses its logic to decide how to write the ResponseWriter.\nNote that http.Handler is an interface, so it probably has some kind\nof state (request handling threads/processes) in the background.\n\nOnce the ResponseWriter is filled, the calling function can turn it into\nan HTTP response that it sends to the client.\n\nSo if you wanted to write a server with multiple endpoints, you'd put\na \"router\" in the ServeHTTP method of your Handler that dispatches\nthe request to one of several functions that handle endpoints.",
       "reviews": []
     },
     {
@@ -895,7 +895,7 @@
       "id": "xiv39ys2cw",
       "version": 0,
       "active": true,
-      "question": "base_tmpl := `\u003chtml\u003e{{ template \"content\" . }}\u003c/html\u003e`  base, _ := template.New(\"base\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.",
+      "question": "base_tmpl := `<html>{{ template \"content\" . }}</html>`  base, _ := template.New(\"base\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.",
       "answer": "tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.Parse(\"{{define `content`}}tmpl1{{end}}\"))   or   tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.New(\"content\").Parse(\"tmpl1\"))",
       "reviews": []
     },
@@ -904,7 +904,7 @@
       "version": 0,
       "active": true,
       "question": "Define the time.Ticker type. What is it used for?",
-      "answer": "type time.Ticker struct {     C \u003c-chan time.Time }   The channel delivers time.Time objects at intervals you specify.",
+      "answer": "type time.Ticker struct {     C <-chan time.Time }   The channel delivers time.Time objects at intervals you specify.",
       "reviews": []
     },
     {
@@ -968,7 +968,7 @@
       "version": 0,
       "active": true,
       "question": "Parse two command line flags: -a (bool) and -f (string), and get a positional argument, and print them, using the stdlib flag parsing package.",
-      "answer": "import (     \"flag\"     \"fmt\" )  main() {     a := flag.Bool(\"a\", false, \"usage here\")     f := flag.String(\"f\", \"\", \"usage here\")     flag.Parse()     pos1 := flag.Args()[1]     fmt.Println(*a, *f, pos1)  }",
+      "answer": "import (     \"flag\"     \"fmt\" )  main() {     a := flag.Bool(\"a\", false, \"usage here\")     f := flag.String(\"f\", \", \"usage here\")     flag.Parse()     pos1 := flag.Args()[1]     fmt.Println(*a, *f, pos1)  }",
       "reviews": []
     },
     {
@@ -1232,7 +1232,7 @@
       "version": 0,
       "active": true,
       "question": "How do you import a package when you don't actually need to use it in the code? Why might you do this?",
-      "answer": "\"import (     _ \"\"github.com/asdf/mypackage\"\" )   This is done when importing the module does some thing that your code needs. Practically, an example is with the sql package - we do this with drivers so that they can register themselves with the main sql package, and then we use the driver through the main package's interface.\"",
+      "answer": "import (     _ \"github.com/asdf/mypackage\" )   This is done when importing the module does some thing that your code needs. Practically, an example is with the sql package - we do this with drivers so that they can register themselves with the main sql package, and then we use the driver through the main package's interface.",
       "reviews": []
     },
     {
@@ -1248,7 +1248,7 @@
       "version": 0,
       "active": true,
       "question": "What is the simplest way to check that a file/dir exists? What about to check that a file/dir does not exist?",
-      "answer": "\"if _, err := os.Stat(\"\"/path/to/whatever\"\"); errors.Is(err, os.ErrNotExist) {     // /path/to/whatever does not exist }   if _, err := os.Stat(\"\"/path/to/whatever\"\"); err == nil {     // /path/to/whatever exists }\"",
+      "answer": "if _, err := os.Stat(\"/path/to/whatever\"); errors.Is(err, os.ErrNotExist) {     // /path/to/whatever does not exist }   if _, err := os.Stat(\"/path/to/whatever\"); err == nil {     // /path/to/whatever exists }",
       "reviews": []
     },
     {
@@ -1256,7 +1256,7 @@
       "version": 0,
       "active": true,
       "question": "How do you execute a template and get the output in a string?",
-      "answer": "buffer := \u0026bytes.Buffer{} err := tmpl.Execute(buffer, data) if err != nil { ... } str := buffer.String()",
+      "answer": "buffer := &bytes.Buffer{} err := tmpl.Execute(buffer, data) if err != nil { ... } str := buffer.String()",
       "reviews": []
     },
     {
@@ -1336,7 +1336,7 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between os.Create and os.Open?",
-      "answer": "os.Create -\u003e creates or truncates the file at the named path   os.Open -\u003e only opens the file at the named path",
+      "answer": "os.Create -> creates or truncates the file at the named path   os.Open -> only opens the file at the named path",
       "reviews": []
     },
     {
@@ -1391,15 +1391,15 @@
       "id": "x9n7aem8e6",
       "version": 0,
       "active": true,
-      "question": "\"In fmt strings, what verbs do you use to get the following: 1) the value in the default format for that type 2) the value in a valid go syntax representation 3) the type of a value 4) a decimal number 5) the string \"\"true\"\" or \"\"false\"\" for a bool 6) a string, as if it were being printed 7) a quoted string 8) the character represented by the corresponding unicode code point 9) an error, wrapped in a fmt.Errorf call\"",
-      "answer": "\"1) %v 2) %#v 3) %T 4) %d 5) %t 6) %s 7) %q 8) %c 9) %w\"",
+      "question": "In fmt strings, what verbs do you use to get the following: 1) the value in the default format for that type 2) the value in a valid go syntax representation 3) the type of a value 4) a decimal number 5) the string \"true\" or \"false\" for a bool 6) a string, as if it were being printed 7) a quoted string 8) the character represented by the corresponding unicode code point 9) an error, wrapped in a fmt.Errorf call",
+      "answer": "1) %v 2) %#v 3) %T 4) %d 5) %t 6) %s 7) %q 8) %c 9) %w",
       "reviews": []
     },
     {
       "id": "rh47t1yly7",
       "version": 0,
       "active": true,
-      "question": "\"How do errors.Is and errors.As differ from \"\"sentinel\"\" errors and type assertions on errors?\"",
+      "question": "How do errors.Is and errors.As differ from \"sentinel\" errors and type assertions on errors?",
       "answer": "They concern the error, as well as all errors it wraps, rather than just the top-level error.",
       "reviews": []
     },
@@ -1423,7 +1423,7 @@
       "id": "f9i6ueuq8a",
       "version": 0,
       "active": true,
-      "question": "What is the difference between the || and | operators? What about the \u0026\u0026 and \u0026 operators?",
+      "question": "What is the difference between the || and | operators? What about the && and & operators?",
       "answer": "The single character operators are bitwise operators corresponding to OR and AND operations.   The double character operators are logical operators for combining true/false values.",
       "reviews": []
     },
@@ -1432,7 +1432,7 @@
       "version": 0,
       "active": true,
       "question": "Which two operators are used to do bit shifting?",
-      "answer": "myVar \u003c\u003c 1   The counterpart is \u003e\u003e.",
+      "answer": "myVar << 1   The counterpart is >>.",
       "reviews": []
     },
     {

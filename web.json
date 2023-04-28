@@ -16,7 +16,7 @@
       "version": 0,
       "active": true,
       "question": "What is a URI fragment?",
-      "answer": "\"It is the bit after the #. Comes after the optional query string. Generally takes you to a heading on a page.\"",
+      "answer": "It is the bit after the #. Comes after the optional query string. Generally takes you to a heading on a page.",
       "reviews": []
     },
     {
@@ -64,7 +64,7 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between URIs, URLs and URNs? What does each stand for?",
-      "answer": "\"URI: universal resource identifier URL: universal resource locator URN: universal resource name    All URNs and URLs are URIs; URIs are the general name for everything of this format.   URLs have a scheme, and tell you what the location of the resource is.   URNs are just a name for an abstract, unresolvable name for a resource. They are required to use a special notation with \"\"urn:\"\" in the beginning.\"",
+      "answer": "URI: universal resource identifier URL: universal resource locator URN: universal resource name    All URNs and URLs are URIs; URIs are the general name for everything of this format.   URLs have a scheme, and tell you what the location of the resource is.   URNs are just a name for an abstract, unresolvable name for a resource. They are required to use a special notation with \"urn:\" in the beginning.",
       "reviews": []
     },
     {
@@ -72,7 +72,7 @@
       "version": 0,
       "active": true,
       "question": "Should you include a trailing slash at the end of a URL? What are the two main considerations here?",
-      "answer": "\"There is one case where there is a clear choice: when serving a file (not anything dynamically generated) it makes no sense to put a slash at the end since that's not how Unix filesystems do it. For everything else, it doesn't matter, so long as you take the following into account:   1) Search engines regard slash-terminated and non-slash-terminated as different endpoints, so it is best to have one redirect to the other; you can also use a canonical meta tag.   2) \"\"adam\"\" relative to \"\"/person/\"\" is \"\"/person/adam\"\", whereas \"\"adam\"\" relative to \"\"/person\"\" is \"\"/adam\"\", so it is best to put a slash at the end if you are using relative URLs\"",
+      "answer": "There is one case where there is a clear choice: when serving a file (not anything dynamically generated) it makes no sense to put a slash at the end since that's not how Unix filesystems do it. For everything else, it doesn't matter, so long as you take the following into account:   1) Search engines regard slash-terminated and non-slash-terminated as different endpoints, so it is best to have one redirect to the other; you can also use a canonical meta tag.   2) \"adam\" relative to \"/person/\" is \"/person/adam\", whereas \"adam\" relative to \"/person\" is \"/adam\", so it is best to put a slash at the end if you are using relative URLs",
       "reviews": []
     },
     {
@@ -96,7 +96,7 @@
       "version": 0,
       "active": true,
       "question": "What purpose does the HTTP Host header serve?",
-      "answer": "\"It is possible to run multiple \"\"websites\"\" on one webserver. The Host header is sent in requests, and specifies the domain name (and optionally port) of the website the client is trying to reach.\"",
+      "answer": "It is possible to run multiple \"websites\" on one webserver. The Host header is sent in requests, and specifies the domain name (and optionally port) of the website the client is trying to reach.",
       "reviews": []
     },
     {
@@ -128,15 +128,15 @@
       "version": 0,
       "active": true,
       "question": "tag for ordered list, unordered list and list element",
-      "answer": "ordered list: \u003col\u003e unordered list: \u003cul\u003e list element: \u003cli\u003e",
+      "answer": "ordered list: <ol> unordered list: <ul> list element: <li>",
       "reviews": []
     },
     {
       "id": "ltbcm777qi",
       "version": 0,
       "active": true,
-      "question": "\"create an unordered list with elements \"\"cat\"\" and \"\"dog\"\"\"",
-      "answer": "\u003cul\u003e   \u003cli\u003ecat\u003c/li\u003e   \u003cli\u003edog\u003c/li\u003e \u003c/ul\u003e",
+      "question": "create an unordered list with elements \"cat\" and \"dog",
+      "answer": "<ul>   <li>cat</li>   <li>dog</li> </ul>",
       "reviews": []
     },
     {
@@ -144,14 +144,14 @@
       "version": 0,
       "active": true,
       "question": "ten HTML elements pertaining to tables - what is each for?",
-      "answer": "\u003ccaption\u003e \u003ccol\u003e \u003ccolgroup\u003e \u003ctable\u003e \u003ctbody\u003e \u003ctd\u003e \u003ctfoot\u003e \u003cth\u003e \u003cthead\u003e \u003ctr\u003e",
+      "answer": "<caption> <col> <colgroup> <table> <tbody> <td> <tfoot> <th> <thead> <tr>",
       "reviews": []
     },
     {
       "id": "6p21y1xfkn",
       "version": 0,
       "active": true,
-      "question": "Two most important attributes of \u003cform\u003e element",
+      "question": "Two most important attributes of <form> element",
       "answer": "action: the URI of the server that processes the form information method: the HTTP method to use on that URI",
       "reviews": []
     },
@@ -167,7 +167,7 @@
       "id": "a9ojfscc30",
       "version": 0,
       "active": true,
-      "question": "What is the word that the a in the \u003ca\u003e element refers to?",
+      "question": "What is the word that the a in the <a> element refers to?",
       "answer": "anchor",
       "reviews": []
     },
@@ -175,8 +175,8 @@
       "id": "t3ng3nj23y",
       "version": 0,
       "active": true,
-      "question": "\"Create a select form element with options \"\"cat\"\" and \"\"dog\"\"\"",
-      "answer": "\"\u003cselect name=\"\"animal\"\"\u003e   \u003coption\u003ecat\u003c/option\u003e   \u003coption\u003edog\u003c/option\u003e \u003c/select\u003e\"",
+      "question": "Create a select form element with options \"cat\" and \"dog",
+      "answer": "<select name=\"animal\">   <option>cat</option>   <option>dog</option> </select>",
       "reviews": []
     },
     {
@@ -184,7 +184,7 @@
       "version": 0,
       "active": true,
       "question": "Make a HTML5 radio button list",
-      "answer": "\"\u003cfieldset\u003e   \u003clegend\u003eChoose a Decade:\u003c/legend\u003e   \u003cinput type=\"\"radio\"\" name=\"\"decade\"\" value=\"\"60s\"\"\u003e    \u003clabel\u003e60s\u003c/label\u003e\u003cbr\u003e   \u003cinput type=\"\"radio\"\" name=\"\"decade\"\" value=\"\"70s\"\"\u003e    \u003clabel\u003e70s\u003c/label\u003e\u003cbr\u003e \u003c/fieldset\u003e\"",
+      "answer": "<fieldset>   <legend>Choose a Decade:</legend>   <input type=\"radio\" name=\"decade\" value=\"60s\">    <label>60s</label><br>   <input type=\"radio\" name=\"decade\" value=\"70s\">    <label>70s</label><br> </fieldset>",
       "reviews": []
     },
     {
@@ -207,8 +207,8 @@
       "id": "riusulh18q",
       "version": 0,
       "active": true,
-      "question": "\"What is the difference between a form with method \"\"get\"\" and a form with method \"\"post\"\"?\"",
-      "answer": "\"With \"\"get\"\", the user input is url-encoded (?var=value\u0026var2=value2) and then appended to the URL. With \"\"post\"\" the user input is url-encoded and then sent in the body of the request.\"",
+      "question": "What is the difference between a form with method \"get\" and a form with method \"post\"?",
+      "answer": "With \"get\", the user input is url-encoded (?var=value&var2=value2) and then appended to the URL. With \"post\" the user input is url-encoded and then sent in the body of the request.",
       "reviews": []
     },
     {
@@ -216,7 +216,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of the first line of an HTTP request? An HTTP response?",
-      "answer": "Request: \u003cmethod\u003e \u003curl_string\u003e \u003chttp_version\u003e\\r\\n   Response: \u003chttp_version\u003e \u003cstatus_code\u003e \u003creason_phrase\u003e\\r\\n",
+      "answer": "Request: <method> <url_string> <http_version>\\r\\n   Response: <http_version> <status_code> <reason_phrase>\\r\\n",
       "reviews": []
     },
     {
@@ -224,7 +224,7 @@
       "version": 0,
       "active": true,
       "question": "How to do a submit button for an HTML form?",
-      "answer": "\"\u003cinput type=\"\"submit\"\" value=\"\"Your Text Here\"\"\u003e or \u003cbutton type=\"\"submit\"\"\u003eYour Text Here\u003c/button\u003e\"",
+      "answer": "<input type=\"submit\" value=\"Your Text Here\"> or <button type=\"submit\">Your Text Here</button>",
       "reviews": []
     },
     {
@@ -247,7 +247,7 @@
       "id": "zaystv8f7y",
       "version": 0,
       "active": true,
-      "question": "select all \u003cp\u003e elements with CSS",
+      "question": "select all <p> elements with CSS",
       "answer": "p { ... }",
       "reviews": []
     },
@@ -255,15 +255,15 @@
       "id": "e6xtj0hjqn",
       "version": 0,
       "active": true,
-      "question": "\"select all elements with the id \"\"myid\"\"\"",
-      "answer": "\"#myid { ... }\"",
+      "question": "select all elements with the id \"myid",
+      "answer": "#myid { ... }",
       "reviews": []
     },
     {
       "id": "jbad92g583",
       "version": 0,
       "active": true,
-      "question": "\"select all \u003cp\u003e with class \"\"myclass\"\"\"",
+      "question": "select all <p> with class \"myclass",
       "answer": "p.myclass { ... }",
       "reviews": []
     },
@@ -271,7 +271,7 @@
       "id": "65kr61e0ey",
       "version": 0,
       "active": true,
-      "question": "\"select all elements with class \"\"myclass\"\"\"",
+      "question": "select all elements with class \"myclass",
       "answer": ".myclass { ... }",
       "reviews": []
     },
@@ -295,8 +295,8 @@
       "id": "w6dpqtpbnc",
       "version": 0,
       "active": true,
-      "question": "\"CSS: select all \u003cinput\u003e with type=\"\"email\"\"\"",
-      "answer": "\"input[type=\"\"email\"\"] { ... }\"",
+      "question": "CSS: select all <input> with type=\"email",
+      "answer": "input[type=\"email\"] { ... }",
       "reviews": []
     },
     {
@@ -304,7 +304,7 @@
       "version": 0,
       "active": true,
       "question": "How do I get a CSS stylesheet working with my HTML?",
-      "answer": "\"\u003clink href=\"\"/static/style.css\"\" rel=\"\"stylesheet\"\"\u003e\"",
+      "answer": "<link href=\"/static/style.css\" rel=\"stylesheet\">",
       "reviews": []
     },
     {
@@ -319,15 +319,15 @@
       "id": "sdn8231ovw",
       "version": 0,
       "active": true,
-      "question": "\"CSS: align the text in an element with id \"\"myid\"\" to the left\"",
-      "answer": "\"#myid {   text-align: left; }\"",
+      "question": "CSS: align the text in an element with id \"myid\" to the left",
+      "answer": "#myid {   text-align: left; }",
       "reviews": []
     },
     {
       "id": "wl7rg5ow12",
       "version": 0,
       "active": true,
-      "question": "\"CSS: change the font type inside all paragraph elements with class \"\"a\"\" to sans-serif\"",
+      "question": "CSS: change the font type inside all paragraph elements with class \"a\" to sans-serif",
       "answer": "p.a {   font-family: sans-serif; }",
       "reviews": []
     },
@@ -335,7 +335,7 @@
       "id": "7m1s4pgkuj",
       "version": 0,
       "active": true,
-      "question": "\"hugo: what is \"\"front matter\"\"?\"",
+      "question": "hugo: what is \"front matter\"?",
       "answer": "A way to include metadata in a content file; can be toml, yaml, json, org",
       "reviews": []
     },
@@ -360,7 +360,7 @@
       "version": 0,
       "active": true,
       "question": "What are 5 basic length units I use for CSS?",
-      "answer": "\"px: absolute length in \"\"pixels\"\" (1px is actually multiple pixels for high-res screens)  rem: relative to font size of root element  vh: relative to 1% of viewport height vw: relative to 1% of viewport width %: relative to parent element\"",
+      "answer": "px: absolute length in \"pixels\" (1px is actually multiple pixels for high-res screens)  rem: relative to font size of root element  vh: relative to 1% of viewport height vw: relative to 1% of viewport width %: relative to parent element",
       "reviews": []
     },
     {
@@ -368,7 +368,7 @@
       "version": 0,
       "active": true,
       "question": "CSS: what do the following do for margins?  1) margin: 10px 20px 30px 40px 2) margin: 10px 20px 30px 3) margin: 10px 30px",
-      "answer": "1) top: 10px; right: 20px; bottom: 30px; left: 40px 2) top: 10px; right \u0026 left: 20px; bottom: 30px 3) top \u0026 bottom: 10px; right \u0026 left: 30px",
+      "answer": "1) top: 10px; right: 20px; bottom: 30px; left: 40px 2) top: 10px; right & left: 20px; bottom: 30px 3) top & bottom: 10px; right & left: 30px",
       "reviews": []
     },
     {
@@ -384,7 +384,7 @@
       "version": 0,
       "active": true,
       "question": "CSS: for the display property, what are the 6 commonly used values, and what do they mean?",
-      "answer": "inline: think a \u003cstrong\u003e element; width and height don't mean anything; margin and padding only push other elements away horizontally   inline-block: like inline in that it sets the element into the line, but behaves more like a block (respects margin and padding vertically, and width and height are respected)   block: like a div; sequential elements are ordered vertically   flex: uses flexbox   grid: uses grid   none: element is not rendered   https://css-tricks.com/almanac/properties/d/display/",
+      "answer": "inline: think a <strong> element; width and height don't mean anything; margin and padding only push other elements away horizontally   inline-block: like inline in that it sets the element into the line, but behaves more like a block (respects margin and padding vertically, and width and height are respected)   block: like a div; sequential elements are ordered vertically   flex: uses flexbox   grid: uses grid   none: element is not rendered   https://css-tricks.com/almanac/properties/d/display/",
       "reviews": []
     },
     {
@@ -415,16 +415,16 @@
       "id": "5ldtb7q8zt",
       "version": 0,
       "active": true,
-      "question": "What is \u003cth\u003e for?",
-      "answer": "\u003cth\u003e represents a cell that is the header of a group of table cells",
+      "question": "What is <th> for?",
+      "answer": "<th> represents a cell that is the header of a group of table cells",
       "reviews": []
     },
     {
       "id": "zroc3f0yaj",
       "version": 0,
       "active": true,
-      "question": "What is \u003cspan\u003e for?",
-      "answer": "\u003cspan\u003e is essentially a \u003cdiv\u003e, but with `display: inline` rather than `display: block`. It groups elements or text so that they can be targeted as a group.",
+      "question": "What is <span> for?",
+      "answer": "<span> is essentially a <div>, but with `display: inline` rather than `display: block`. It groups elements or text so that they can be targeted as a group.",
       "reviews": []
     },
     {
@@ -439,7 +439,7 @@
       "id": "zwhrfknsjt",
       "version": 0,
       "active": true,
-      "question": "\"CSS: select all input elements that are children, whether direct or indirect, of a div with class \"\"parent\"\"\"",
+      "question": "CSS: select all input elements that are children, whether direct or indirect, of a div with class \"parent",
       "answer": "div.parent input { ... }",
       "reviews": []
     },
@@ -447,8 +447,8 @@
       "id": "yd8hagmhd9",
       "version": 0,
       "active": true,
-      "question": "\"CSS: select all input elements that are direct children of a div with the class \"\"parent\"\"\"",
-      "answer": "div.parent \u003e input { ... }",
+      "question": "CSS: select all input elements that are direct children of a div with the class \"parent",
+      "answer": "div.parent > input { ... }",
       "reviews": []
     },
     {
@@ -456,7 +456,7 @@
       "version": 0,
       "active": true,
       "question": "What is CORS and how does it work?",
-      "answer": "When content from a website (read: javascript or a \u003clink\u003e tag or something similar) wants to access a website from a different domain than the origin of the content, the browser appends the Origin header to the request:   GET / Host: service.example.com Origin: http://www.example.com   The server at this different domain then checks this against its CORS rules, and if it's allowed, it responds with the content and another header in the request:   Access-Control-Allow-Origin: http://www.example.com   or   Access-Control-Allow-Origin: *",
+      "answer": "When content from a website (read: javascript or a <link> tag or something similar) wants to access a website from a different domain than the origin of the content, the browser appends the Origin header to the request:   GET / Host: service.example.com Origin: http://www.example.com   The server at this different domain then checks this against its CORS rules, and if it's allowed, it responds with the content and another header in the request:   Access-Control-Allow-Origin: http://www.example.com   or   Access-Control-Allow-Origin: *",
       "reviews": []
     },
     {
@@ -464,7 +464,7 @@
       "version": 0,
       "active": true,
       "question": "In HTTP, which header is used to specify which content types the client is able to understand?",
-      "answer": "Accept: \u003cvalue\u003e",
+      "answer": "Accept: <value>",
       "reviews": []
     },
     {
@@ -472,7 +472,7 @@
       "version": 0,
       "active": true,
       "question": "What tag is necessary at the top of every HTML page? Why is it a good thing to include?",
-      "answer": "\"\u003c!doctype html\u003e   This tells the browser what type of document it is looking at. If it is omitted, the browser renders the page in \"\"quirks mode\"\", which exists to allow the browser to maintain backwards compatibility with older-style (read: shittier and less standardized) web pages. Basically, without the doctype tag there is the risk that things will behave in strange and unexpected ways.\"",
+      "answer": "<!doctype html>   This tells the browser what type of document it is looking at. If it is omitted, the browser renders the page in \"quirks mode\", which exists to allow the browser to maintain backwards compatibility with older-style (read: shittier and less standardized) web pages. Basically, without the doctype tag there is the risk that things will behave in strange and unexpected ways.",
       "reviews": []
     },
     {
@@ -480,7 +480,7 @@
       "version": 0,
       "active": true,
       "question": "How do you specify the language an HTML document is in?",
-      "answer": "\"\u003chtml lang=\"\"en\"\"\u003e   ... \u003c/html\u003e   en -\u003e english\"",
+      "answer": "<html lang=\"en\">   ... </html>   en -> english",
       "reviews": []
     },
     {
@@ -496,7 +496,7 @@
       "version": 0,
       "active": true,
       "question": "OAuth 2.0: Define the following: - Resource Owner - Resource Server - Client - Authorization Server",
-      "answer": "\"Resource Owner: the human being (or bot?) who knows the credentials and has \"\"ownership\"\" over the information the client is being authorized to access. Is most relevant when we are using OAuth 2.0 for authorization, and not just authentication.   Resource Server: the server that has access to the resource the client is trying to access. Is most relevant when we are using OAuth 2.0 for authorization, though one could think of it as the server that sends the client to the authorization server to authenticate.   Client: the browser or mobile app that the RO is interfacing with, which talks to the RS and the AS.   Authorization Server: the server that the Client visits in order to allow the RO to authenticate and authorize the 3rd party application.\"",
+      "answer": "Resource Owner: the human being (or bot?) who knows the credentials and has \"ownership\" over the information the client is being authorized to access. Is most relevant when we are using OAuth 2.0 for authorization, and not just authentication.   Resource Server: the server that has access to the resource the client is trying to access. Is most relevant when we are using OAuth 2.0 for authorization, though one could think of it as the server that sends the client to the authorization server to authenticate.   Client: the browser or mobile app that the RO is interfacing with, which talks to the RS and the AS.   Authorization Server: the server that the Client visits in order to allow the RO to authenticate and authorize the 3rd party application.",
       "reviews": []
     },
     {
@@ -568,7 +568,7 @@
       "version": 0,
       "active": true,
       "question": "OAuth 2.0: how does PKCE work? What does PKCE stand for?",
-      "answer": "\"Proof Key for Code Exchange  PKCE is an extension on top of the regular authorization code flow. It can be thought of a level of security above just sending the regular state parameter.   The client creates a \"\"code verifier\"\", which is just a random string. Ideally, the client then creates a SHA256 hash of this, called the \"\"code challenge\"\". It then sends the code challenge along with the URL parameters in the link to the AS. The AC is sent back as usual, though the server will store the code challenge.   Then, when the client redeems the AC, it sends the code verifier along with the POST request. The server can then do a SHA256 hash of it and compare it to the saved code challenge. If it matches, it knows that the AC is being redeemed by the same client as the one it was originally sent to.\"",
+      "answer": "Proof Key for Code Exchange  PKCE is an extension on top of the regular authorization code flow. It can be thought of a level of security above just sending the regular state parameter.   The client creates a \"code verifier\", which is just a random string. Ideally, the client then creates a SHA256 hash of this, called the \"code challenge\". It then sends the code challenge along with the URL parameters in the link to the AS. The AC is sent back as usual, though the server will store the code challenge.   Then, when the client redeems the AC, it sends the code verifier along with the POST request. The server can then do a SHA256 hash of it and compare it to the saved code challenge. If it matches, it knows that the AC is being redeemed by the same client as the one it was originally sent to.",
       "reviews": []
     },
     {
@@ -576,7 +576,7 @@
       "version": 0,
       "active": true,
       "question": "What is OpenID Connect?",
-      "answer": "\"OAuth 2.0 only provides authorization. If you wanted to create an authentication/identity protocol, you'd need to add:   1) a way of getting info about logged-in user 2) one or more scopes concerned with 1 3) a set of error messages/codes pertaining to authentication and identity   OpenID Connect accomplishes this by making it possible to get a \"\"ID token\"\" from the AS's token endpoint. An ID token is a JWT with standardized fields which contain basic info about the user.   The ID token can be retrieved at the same time as the access token, so you can use OIDC for identity/authentication at the same time as you use OAuth 2.0 to authorize requests to a resource server.\"",
+      "answer": "OAuth 2.0 only provides authorization. If you wanted to create an authentication/identity protocol, you'd need to add:   1) a way of getting info about logged-in user 2) one or more scopes concerned with 1 3) a set of error messages/codes pertaining to authentication and identity   OpenID Connect accomplishes this by making it possible to get a \"ID token\" from the AS's token endpoint. An ID token is a JWT with standardized fields which contain basic info about the user.   The ID token can be retrieved at the same time as the access token, so you can use OIDC for identity/authentication at the same time as you use OAuth 2.0 to authorize requests to a resource server.",
       "reviews": []
     },
     {
@@ -607,7 +607,7 @@
       "id": "ipk6zxz4r5",
       "version": 0,
       "active": true,
-      "question": "\"What does it mean when an HTTP header starts with \"\"X-\"\"?\"",
+      "question": "What does it mean when an HTTP header starts with \"X-\"?",
       "answer": "It means that the header is experimental, and not a standard header.",
       "reviews": []
     },
@@ -624,15 +624,15 @@
       "version": 0,
       "active": true,
       "question": "How does an HTTP proxy know where to send the HTTP request?",
-      "answer": "It is possible to include a full URL in the HTTP request. For example:   GET http://myserver.com/path1/path2 HTTP/1.1 \u003cheaders\u003e",
+      "answer": "It is possible to include a full URL in the HTTP request. For example:   GET http://myserver.com/path1/path2 HTTP/1.1 <headers>",
       "reviews": []
     },
     {
       "id": "n2eejwyjst",
       "version": 0,
       "active": true,
-      "question": "\"What is a \"\"canonical link element\"\" or a \"\"canonical meta tag\"\" for? How do you write one?\"",
-      "answer": "\"These are for communicating to search engines what the canonical URL of the page is. This is because query parameters and fragments make it look like we're at a different page, as do the presence/absence of a trailing slash.   \u003clink rel=\"\"canonical\"\" href=\"\"http://example.com/\"\"\u003e   Note that the value of href should be absolute, rather than relative - this prevents confusion.\"",
+      "question": "What is a \"canonical link element\" or a \"canonical meta tag\" for? How do you write one?",
+      "answer": "These are for communicating to search engines what the canonical URL of the page is. This is because query parameters and fragments make it look like we're at a different page, as do the presence/absence of a trailing slash.   <link rel=\"canonical\" href=\"http://example.com/\">   Note that the value of href should be absolute, rather than relative - this prevents confusion.",
       "reviews": []
     },
     {
@@ -648,7 +648,7 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between HTTP 401 and 403?",
-      "answer": "\"401 Unauthorized should actually be \"\"Unauthenticated\"\"; this is returned when authentication is required but the requestor is not authenticated.   403 Forbidden should actually be called \"\"Unauthorized\"\"; this is for when the requestor is authenticated, but does not have permission to access the requested resource.\"",
+      "answer": "401 Unauthorized should actually be \"Unauthenticated\"; this is returned when authentication is required but the requestor is not authenticated.   403 Forbidden should actually be called \"Unauthorized\"; this is for when the requestor is authenticated, but does not have permission to access the requested resource.",
       "reviews": []
     },
     {
@@ -687,7 +687,7 @@
       "id": "566uszywun",
       "version": 0,
       "active": true,
-      "question": "What is \u003ctemplate\u003e for?",
+      "question": "What is <template> for?",
       "answer": "It holds HTML that is not rendered automatically. Instead, it makes up a fragment of HTML that can be put to use by JS at runtime.",
       "reviews": []
     },
@@ -695,8 +695,8 @@
       "id": "qjnfp176oh",
       "version": 0,
       "active": true,
-      "question": "What is \u003cslot\u003e for? What are its important attributes?",
-      "answer": "\u003cslot\u003e is used to declare a place inside a web component that you can fill with your own HTML.   The `name` attribute is used to specify which slot you want your markup to fit into when using the web component.",
+      "question": "What is <slot> for? What are its important attributes?",
+      "answer": "<slot> is used to declare a place inside a web component that you can fill with your own HTML.   The `name` attribute is used to specify which slot you want your markup to fit into when using the web component.",
       "reviews": []
     },
     {
@@ -720,7 +720,7 @@
       "version": 0,
       "active": true,
       "question": "HTTP: what header is used by a client when it sends a previously saved cookie to a server along with a request? What is the header's format?",
-      "answer": "Cookie  \u003ccookie_name\u003e=\u003ccookie_value\u003e; \u003ccookie_name\u003e=\u003ccookie_value\u003e...",
+      "answer": "Cookie  <cookie_name>=<cookie_value>; <cookie_name>=<cookie_value>...",
       "reviews": []
     },
     {
@@ -728,7 +728,7 @@
       "version": 0,
       "active": true,
       "question": "HTTP: what header is used by a server when it wants to give the client a cookie for later use? What is the header's format?",
-      "answer": "Set-Cookie  \u003ccookie_name\u003e=\u003ccookie_value\u003e; \u003cname\u003e=\u003cvalue\u003e...   where \u003cname\u003e=\u003cvalue\u003e is cookie metadata.",
+      "answer": "Set-Cookie  <cookie_name>=<cookie_value>; <name>=<value>...   where <name>=<value> is cookie metadata.",
       "reviews": []
     },
     {
@@ -760,7 +760,7 @@
       "version": 0,
       "active": true,
       "question": "What is the Connection HTTP header for?",
-      "answer": "\"Either \"\"close\"\", or a comma-separated list of headers that only apply to the first hop (if using a proxy). If the comma-separated list, indicates that the connection should be kept open after this transaction, so that it can be reused by subsequent requests.\"",
+      "answer": "Either \"close\", or a comma-separated list of headers that only apply to the first hop (if using a proxy). If the comma-separated list, indicates that the connection should be kept open after this transaction, so that it can be reused by subsequent requests.",
       "reviews": []
     }
   ]

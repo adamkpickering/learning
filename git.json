@@ -8,7 +8,7 @@
       "version": 0,
       "active": true,
       "question": "Create a new git branch",
-      "answer": "git checkout -b \u003cbranchName\u003e",
+      "answer": "git checkout -b <branchName>",
       "reviews": [
         {
           "version": 0,
@@ -192,7 +192,7 @@
       "version": 0,
       "active": true,
       "question": "How do you tag a commit with a message-less tag?",
-      "answer": "git tag \u003ctag_name\u003e \u003cref\u003e",
+      "answer": "git tag <tag_name> <ref>",
       "reviews": [
         {
           "version": 0,
@@ -221,7 +221,7 @@
       "version": 0,
       "active": true,
       "question": "What are the four different forms of git diff?",
-      "answer": "git diff [\u003cref\u003e] [\u003cpath\u003e...]\ndiff between working tree and either index, if index is present\n(this is priority), or ref (HEAD default)\n\ngit diff --cached [\u003cref\u003e] [\u003cpath\u003e...]\ndiff between ref (or if not defined, HEAD) and index\n\ngit diff \u003cref\u003e \u003cref\u003e [\u003cpath\u003e...]\ndiff between two refs\n\ngit diff \u003cref1\u003e...\u003cref2\u003e [\u003cpath\u003e...]\ndiff between ref2 and the nearest common ancestor of ref1 and ref2",
+      "answer": "git diff [<ref>] [<path>...]\ndiff between working tree and either index, if index is present\n(this is priority), or ref (HEAD default)\n\ngit diff --cached [<ref>] [<path>...]\ndiff between ref (or if not defined, HEAD) and index\n\ngit diff <ref> <ref> [<path>...]\ndiff between two refs\n\ngit diff <ref1>...<ref2> [<path>...]\ndiff between ref2 and the nearest common ancestor of ref1 and ref2",
       "reviews": [
         {
           "version": 0,
@@ -279,7 +279,7 @@
       "version": 0,
       "active": true,
       "question": "List all the commits that changed a file",
-      "answer": "git log --follow -- \u003cpath\u003e",
+      "answer": "git log --follow -- <path>",
       "reviews": [
         {
           "version": 0,
@@ -308,7 +308,7 @@
       "version": 0,
       "active": true,
       "question": "git: how are the ^ and ~ symbols used when referencing commits,\nand what do they mean?",
-      "answer": "HEAD^ or HEAD^1 -\u003e the first parent of HEAD\nHEAD^2 -\u003e the second parent of HEAD\nHEAD^^ or HEAD^1^1 -\u003e the first parent of the first parent of HEAD\nHEAD~1 -\u003e the first parent of HEAD\nHEAD~2 -\u003e the first parent of the first parent of head\n\nThe general rule is to use ~ when referring to previous commits.",
+      "answer": "HEAD^ or HEAD^1 -> the first parent of HEAD\nHEAD^2 -> the second parent of HEAD\nHEAD^^ or HEAD^1^1 -> the first parent of the first parent of HEAD\nHEAD~1 -> the first parent of HEAD\nHEAD~2 -> the first parent of the first parent of head\n\nThe general rule is to use ~ when referring to previous commits.",
       "reviews": [
         {
           "version": 0,
@@ -337,7 +337,7 @@
       "version": 0,
       "active": false,
       "question": "How are tags propagated across repos (fetch/push)?",
-      "answer": "git fetch -\u003e only fetches tags that are on ancestors of ref you're fetching\ngit fetch --tags -\u003e fetches all tags\ngit fetch --no-tags -\u003e fetches no tags\ngit fetch refs/tags/*:refs/tags/* -\u003e fetches all tags\n\ngit push -\u003e doesn't push any tags\ngit push --tags -\u003e pushes all tags, but only tags\ngit push refs/tags/*:refs/tags/* -\u003e pushes all tags",
+      "answer": "git fetch -> only fetches tags that are on ancestors of ref you're fetching\ngit fetch --tags -> fetches all tags\ngit fetch --no-tags -> fetches no tags\ngit fetch refs/tags/*:refs/tags/* -> fetches all tags\n\ngit push -> doesn't push any tags\ngit push --tags -> pushes all tags, but only tags\ngit push refs/tags/*:refs/tags/* -> pushes all tags",
       "reviews": []
     },
     {
@@ -374,7 +374,7 @@
       "version": 0,
       "active": true,
       "question": "What are the paths to heads, tags and remote heads?",
-      "answer": "heads: refs/heads/\u003chead\u003e\ntags: refs/tags/\u003ctag\u003e\nheads at remotes: refs/remotes/\u003cremote\u003e/\u003chead\u003e",
+      "answer": "heads: refs/heads/<head>\ntags: refs/tags/<tag>\nheads at remotes: refs/remotes/<remote>/<head>",
       "reviews": [
         {
           "version": 0,
@@ -413,7 +413,7 @@
       "version": 0,
       "active": true,
       "question": "How do you create a git submodule?",
-      "answer": "Go to dir you want submodule in and do:\ngit submodule add \u003curl\u003e",
+      "answer": "Go to dir you want submodule in and do:\ngit submodule add <url>",
       "reviews": [
         {
           "version": 0,
@@ -452,7 +452,7 @@
       "version": 0,
       "active": true,
       "question": "Which file and which directory contain the metadata on submodules?",
-      "answer": ".gitmodules: contains the path to the submodule directory, and the url of the submodule remote\n\n.git/modules/\u003cpath_to_submodule_dir\u003e: contains all of the things that .git/ would normally contain for the submodule",
+      "answer": ".gitmodules: contains the path to the submodule directory, and the url of the submodule remote\n\n.git/modules/<path_to_submodule_dir>: contains all of the things that .git/ would normally contain for the submodule",
       "reviews": [
         {
           "version": 0,
@@ -694,7 +694,7 @@
       "version": 0,
       "active": true,
       "question": "What are the three useful forms of `git reset`?\nWhich is default?",
-      "answer": "git reset --soft \u003ccommit\u003e:\n- resets HEAD to commit\n- puts changes from nuked commits into index\n- keeps working tree as is\n\ngit reset --mixed \u003ccommit\u003e (default):\n- resets HEAD to commit\n- puts changes from nuked commits and index into working tree\n\ngit reset --hard \u003ccommit\u003e:\n- resets HEAD to commit\n- nukes index and working tree\n- commits nuked",
+      "answer": "git reset --soft <commit>:\n- resets HEAD to commit\n- puts changes from nuked commits into index\n- keeps working tree as is\n\ngit reset --mixed <commit> (default):\n- resets HEAD to commit\n- puts changes from nuked commits and index into working tree\n\ngit reset --hard <commit>:\n- resets HEAD to commit\n- nukes index and working tree\n- commits nuked",
       "reviews": [
         {
           "version": 0,
@@ -723,7 +723,7 @@
       "version": 0,
       "active": true,
       "question": "How do you move a change from the index to the working tree?",
-      "answer": "git restore --staged \u003cpath\u003e",
+      "answer": "git restore --staged <path>",
       "reviews": [
         {
           "version": 0,
@@ -781,7 +781,7 @@
       "version": 0,
       "active": true,
       "question": "What is the one important thing to remember about the\ndifference between commands that do things to remotes\nand commands that do things locally?",
-      "answer": "Commands that do things to remotes must have the remote specified,\nand then the branch arguments. Commands that do things locally\nhave the remote and the branch lumped together in the form \u003cremote\u003e/\u003cbranch\u003e.",
+      "answer": "Commands that do things to remotes must have the remote specified,\nand then the branch arguments. Commands that do things locally\nhave the remote and the branch lumped together in the form <remote>/<branch>.",
       "reviews": [
         {
           "version": 0,
@@ -868,7 +868,7 @@
       "version": 0,
       "active": true,
       "question": "What is the cleanest way to do global search and replace on a git repo?",
-      "answer": "git grep -l \u003cterm\u003e | xargs sed -i 's/term/replacement/g'",
+      "answer": "git grep -l <term> | xargs sed -i 's/term/replacement/g'",
       "reviews": [
         {
           "version": 0,
@@ -916,7 +916,7 @@
       "version": 0,
       "active": true,
       "question": "How do you check out a branch that you don't have locally,\nbut is on a remote?",
-      "answer": "git checkout --guess \u003cremote_branch\u003e",
+      "answer": "git checkout --guess <remote_branch>",
       "reviews": [
         {
           "version": 0,

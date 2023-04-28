@@ -127,7 +127,7 @@
       "version": 0,
       "active": false,
       "question": "How do you iterate over the lines in a file?",
-      "answer": "\"with open(path, 'r') as fd:    for line in fd:         # do something with line\"",
+      "answer": "with open(path, 'r') as fd:    for line in fd:         # do something with line",
       "reviews": []
     },
     {
@@ -183,7 +183,7 @@
       "version": 0,
       "active": false,
       "question": "three ways to join strings",
-      "answer": "\"a = \"\"hello \"\" b = \"\"world\"\" foo = '{}{}'.format(a, b) bar = a + b baz = ''.join([a, b])\"",
+      "answer": "a = \"hello \" b = \"world\" foo = '{}{}'.format(a, b) bar = a + b baz = ''.join([a, b])",
       "reviews": []
     },
     {
@@ -207,7 +207,7 @@
       "version": 0,
       "active": false,
       "question": "What are the two ways to get current datetime in UTC? Which is the best, and why?",
-      "answer": "\"datetime.datetime.utcnow() datetime.datetime.now(tz=datetime.timezone.utc)   The latter is preferred. datetime.utcnow() returns a \"\"naive\"\" datetime object (tz=None), which is treated by many datetime methods as being in local time, which can obviously cause problems.\"",
+      "answer": "datetime.datetime.utcnow() datetime.datetime.now(tz=datetime.timezone.utc)   The latter is preferred. datetime.utcnow() returns a \"naive\" datetime object (tz=None), which is treated by many datetime methods as being in local time, which can obviously cause problems.",
       "reviews": []
     },
     {
@@ -279,7 +279,7 @@
       "version": 0,
       "active": false,
       "question": "What are the possible values of __name__?",
-      "answer": "\"If you run a file as a script, __name__ is \"\"__main__\"\". If a file is a part of a package, __name__ is something like \"\"my_module.models\"\"; it is the path, with dots, to the file from the base package\"",
+      "answer": "If you run a file as a script, __name__ is \"__main__\". If a file is a part of a package, __name__ is something like \"my_module.models\"; it is the path, with dots, to the file from the base package",
       "reviews": []
     },
     {
@@ -423,15 +423,15 @@
       "version": 0,
       "active": false,
       "question": "How do you: - Get an in-memory file descriptor for a file containing the contents of a str variable? - Get an in-memory file descriptor for a file containing the contents of a bytes variable?",
-      "answer": "\"fd = io.StringIO(\"\"this string goes in the file\"\")   fd = io.BytesIO('here are some bytes'.encode())\"",
+      "answer": "fd = io.StringIO(\"this string goes in the file\")   fd = io.BytesIO('here are some bytes'.encode())",
       "reviews": []
     },
     {
       "id": "rrduaor9vn",
       "version": 0,
       "active": false,
-      "question": "\"- What are the three levels of \"\"things\"\" in python? - Give some examples of each.\"",
-      "answer": "\"1) metaclasses: type, and any metaclasses that you define 2) classes: are instances of type or programmer-defined metaclasses 3) \"\"instances\"\": are instances of classes\"",
+      "question": "- What are the three levels of \"things\" in python? - Give some examples of each.",
+      "answer": "1) metaclasses: type, and any metaclasses that you define 2) classes: are instances of type or programmer-defined metaclasses 3) \"instances\": are instances of classes",
       "reviews": []
     },
     {
@@ -759,7 +759,7 @@
       "version": 0,
       "active": false,
       "question": "In what two ways can you use `getattr()`? What type of exception might it raise?",
-      "answer": "\"getattr(my_object, \"\"x\"\") If my_object does not have .x attribute, AttributeError is raised.    getattr(my_object, \"\"x\"\", default) Here, default is returned if the attribute does not exist.\"",
+      "answer": "getattr(my_object, \"x\") If my_object does not have .x attribute, AttributeError is raised.    getattr(my_object, \"x\", default) Here, default is returned if the attribute does not exist.",
       "reviews": []
     },
     {
@@ -798,7 +798,7 @@
       "id": "pif6f3n300",
       "version": 0,
       "active": false,
-      "question": "requests: make a POST request with form-encoded data in body: first_name=adam\u0026last_name=pickering",
+      "question": "requests: make a POST request with form-encoded data in body: first_name=adam&last_name=pickering",
       "answer": "data = {     'first_name': 'adam',     'last_name': 'pickering', }response = requests.post(url, data=data)",
       "reviews": []
     },
@@ -806,7 +806,7 @@
       "id": "e76jllxalz",
       "version": 0,
       "active": false,
-      "question": "\"requests: make a POST request with json in body: {\"\"first_name\"\":\"\"adam\"\",\"\"last_name\"\":\"\"pickering\"\"}\"",
+      "question": "requests: make a POST request with json in body: {\"first_name\":\"adam\",\"last_name\":\"pickering\"}",
       "answer": "data = {     'first_name': 'adam',     'last_name': 'pickering', } response = requests.post(url, json=data)",
       "reviews": []
     },
@@ -918,8 +918,8 @@
       "id": "q0e3fqi7i6",
       "version": 0,
       "active": false,
-      "question": "\"Register a function that prints \"\"hello world\"\" when SIGINT is received by the process. What are the two arguments to signal handlers? Explain what the arguments are for.\"",
-      "answer": "\"import signal   def print_hw(signal_number, stack_frame):     print(\"\"hello world\"\")   signal.signal(signal.SIGINT, print_hw)   signal_number contains the signal number of the signal that was received.   stack_frame contains the stack frame, which tells you where the code was when the signal hit the process; this isn't particularly useful outside of a debugger.\"",
+      "question": "Register a function that prints \"hello world\" when SIGINT is received by the process. What are the two arguments to signal handlers? Explain what the arguments are for.",
+      "answer": "import signal   def print_hw(signal_number, stack_frame):     print(\"hello world\")   signal.signal(signal.SIGINT, print_hw)   signal_number contains the signal number of the signal that was received.   stack_frame contains the stack frame, which tells you where the code was when the signal hit the process; this isn't particularly useful outside of a debugger.",
       "reviews": []
     },
     {
@@ -967,7 +967,7 @@
       "version": 0,
       "active": false,
       "question": "Get the last 5 elements of a my_list. How to think about this?",
-      "answer": "\"my_list[-5:]   Negative means counting backwards, and blank is the extreme value, so if the second value is blank it means \"\"end\"\". So we are counting backwards from the end.\"",
+      "answer": "my_list[-5:]   Negative means counting backwards, and blank is the extreme value, so if the second value is blank it means \"end\". So we are counting backwards from the end.",
       "reviews": []
     },
     {
@@ -983,7 +983,7 @@
       "version": 0,
       "active": false,
       "question": "Create a basic custom exception, 'NewError', that can have a message passed into it when instantiated.",
-      "answer": "\"class NewError(Exception):     \"\"\"\"\"\"No pass statement is needed if docstring is there.\"\"\"\"\"\"\"",
+      "answer": "class NewError(Exception):     \"\"No pass statement is needed if docstring is there.\"",
       "reviews": []
     },
     {
@@ -1038,8 +1038,8 @@
       "id": "ow7mqa6iop",
       "version": 0,
       "active": false,
-      "question": "\"How do you assert that a function mocked by MagicMock has been called twice, with \"\"a\"\" as an argument the first time, and no arguments the second time?\"",
-      "answer": "\"from unittest.mock import MagicMock, call   mm = MagicMock() ... mm.assert_has_calls([call(\"\"a\"\"), call()])   ** note that mm.assert_has_calls takes a list **\"",
+      "question": "How do you assert that a function mocked by MagicMock has been called twice, with \"a\" as an argument the first time, and no arguments the second time?",
+      "answer": "from unittest.mock import MagicMock, call   mm = MagicMock() ... mm.assert_has_calls([call(\"a\"), call()])   ** note that mm.assert_has_calls takes a list **",
       "reviews": []
     },
     {
@@ -1071,7 +1071,7 @@
       "version": 0,
       "active": false,
       "question": "With argparse, how do you add an option with two keys, -i and --index?",
-      "answer": "\"parser.add_argument(\"\"-i\"\", \"\"--index\"\")\"",
+      "answer": "parser.add_argument(\"-i\", \"--index\")",
       "reviews": []
     },
     {
@@ -1079,15 +1079,15 @@
       "version": 0,
       "active": false,
       "question": "With argparse, how do you add a positional argument with the name my_arg?",
-      "answer": "\"parser.add_argument(\"\"my_arg\"\")\"",
+      "answer": "parser.add_argument(\"my_arg\")",
       "reviews": []
     },
     {
       "id": "b53zucunr6",
       "version": 0,
       "active": false,
-      "question": "\"What is \"\"integer division\"\"? What operator do I use to do it?\"",
-      "answer": "\"Integer division is where you do not convert anything into floats. It goes hand in hand with the % operator.  42 / 10 # 4.2 42 // 10 # 4\"",
+      "question": "What is \"integer division\"? What operator do I use to do it?",
+      "answer": "Integer division is where you do not convert anything into floats. It goes hand in hand with the % operator.  42 / 10 # 4.2 42 // 10 # 4",
       "reviews": []
     },
     {
@@ -1103,7 +1103,7 @@
       "version": 0,
       "active": false,
       "question": "argparse: how do you add a flag option?",
-      "answer": "\"parser.add_argument(\"\"-f\"\", action=\"\"store_true\"\")\"",
+      "answer": "parser.add_argument(\"-f\", action=\"store_true\")",
       "reviews": []
     },
     {
@@ -1127,7 +1127,7 @@
       "version": 0,
       "active": false,
       "question": "sqlalchemy: what is an Engine object for? How do you create one?",
-      "answer": "\"The Engine object is the low-level object that deals with the connection to the database. It isn't typically used; rather, it is passed to the ORM and used behind the scenes by it.   from sqlalchemy import create_engine engine = create_engine(\"\"sqlite:///:memory:\"\")\"",
+      "answer": "The Engine object is the low-level object that deals with the connection to the database. It isn't typically used; rather, it is passed to the ORM and used behind the scenes by it.   from sqlalchemy import create_engine engine = create_engine(\"sqlite:///:memory:\")",
       "reviews": []
     },
     {
@@ -1143,7 +1143,7 @@
       "version": 0,
       "active": false,
       "question": "sqlalchemy: define a class, Human, with minimum requirements, and first name and last name fields.",
-      "answer": "\"from sqlalchemy import Column, Integer, String ...   class Human(Base):     __tablename__ = \"\"humans\"\"     id = Column(Integer, primary_key=True)     first_name = Column(String)     last_name = Column(String)\"",
+      "answer": "from sqlalchemy import Column, Integer, String ...   class Human(Base):     __tablename__ = \"humans\"     id = Column(Integer, primary_key=True)     first_name = Column(String)     last_name = Column(String)",
       "reviews": []
     },
     {
@@ -1151,7 +1151,7 @@
       "version": 0,
       "active": false,
       "question": "sqlalchemy: how do you add a model to the session store? How do you persist these changes to the database?",
-      "answer": "\"mm_instance = MyModel(kwarg1=\"\"hi\"\", kwarg2=\"\"bye\"\")session.add(mm_instance) session.commit()\"",
+      "answer": "mm_instance = MyModel(kwarg1=\"hi\", kwarg2=\"bye\")session.add(mm_instance) session.commit()",
       "reviews": []
     },
     {
@@ -1175,7 +1175,7 @@
       "version": 0,
       "active": false,
       "question": "sqlalchemy: what are the two ways to filter a query? How do they differ?",
-      "answer": "\"query.filter_by(first_name=\"\"value\"\") This is standard; you get all the queries with an exact value.    query.filter(Human.first_name == \"\"value\"\") This is interesting because you can do all types of comparisons, including greater than, less than, ors, string filtering etc.\"",
+      "answer": "query.filter_by(first_name=\"value\") This is standard; you get all the queries with an exact value.    query.filter(Human.first_name == \"value\") This is interesting because you can do all types of comparisons, including greater than, less than, ors, string filtering etc.",
       "reviews": []
     },
     {
@@ -1223,7 +1223,7 @@
       "version": 0,
       "active": false,
       "question": "sqlalchemy: how do you constrain a Column so that it can only have the values in the id field of another table? How do you import ForeignKey?",
-      "answer": "\"Define the column as:   from sqlalchemy import Column, Integer, ForeignKey   Column(Integer, ForeignKey(\"\"<table_name>.<column_name>\"\"))\"",
+      "answer": "Define the column as:   from sqlalchemy import Column, Integer, ForeignKey   Column(Integer, ForeignKey(\"<table_name>.<column_name>\"))",
       "reviews": []
     },
     {
@@ -1231,7 +1231,7 @@
       "version": 0,
       "active": false,
       "question": "sqlalchemy: how do you create the relationship attribute? How do you import it?",
-      "answer": "\"from sqlalchemy.orm import relationship   class Parent(Base):     ...     children = relationship(Child, back_populates=\"\"parent\"\")   class Child(Base):     ...     parent = relationship(Parent, back_populates=\"\"children\"\")\"",
+      "answer": "from sqlalchemy.orm import relationship   class Parent(Base):     ...     children = relationship(Child, back_populates=\"parent\")   class Child(Base):     ...     parent = relationship(Parent, back_populates=\"children\")",
       "reviews": []
     },
     {
@@ -1287,7 +1287,7 @@
       "version": 0,
       "active": false,
       "question": "In broad strokes, how do warnings work in Python? How would I emit one?",
-      "answer": "\"- warnings are all subclasses of Warning, which is a subclass of Exception - The `warnings` module is the gateway to manipulating how your program does warnings   import warnings warnings.warn(\"\"this feature is deprecated\"\", DeprecationWarning)\"",
+      "answer": "- warnings are all subclasses of Warning, which is a subclass of Exception - The `warnings` module is the gateway to manipulating how your program does warnings   import warnings warnings.warn(\"this feature is deprecated\", DeprecationWarning)",
       "reviews": []
     },
     {
@@ -1295,7 +1295,7 @@
       "version": 0,
       "active": false,
       "question": "What is the difference between `is` and `==`?",
-      "answer": "\"`is` compares two objects based on \"\"identity\"\", whose definition can vary but under CPython means memory location. So if the two objects reside at the same memory location `is` will resolve to True.   `==` compares two objects based on value by calling the __eq__() method on the left object.\"",
+      "answer": "`is` compares two objects based on \"identity\", whose definition can vary but under CPython means memory location. So if the two objects reside at the same memory location `is` will resolve to True.   `==` compares two objects based on value by calling the __eq__() method on the left object.",
       "reviews": []
     },
     {
@@ -1303,7 +1303,7 @@
       "version": 0,
       "active": false,
       "question": "How do you get a temporary directory? How do you get the path to it? How do you ensure the directory is deleted?",
-      "answer": "\"from tempfile import TemporaryDirectory()   tempdir = TemporaryDirectory() path = tempdir.name   tempdir.cleanup() or with tempfile.TemporaryDirectory() as tempdir:     print(tempdir) # is what is usually accessed as tempdir.name\"",
+      "answer": "from tempfile import TemporaryDirectory()   tempdir = TemporaryDirectory() path = tempdir.name   tempdir.cleanup() or with tempfile.TemporaryDirectory() as tempdir:     print(tempdir) # is what is usually accessed as tempdir.name",
       "reviews": []
     },
     {
@@ -1318,8 +1318,8 @@
       "id": "ypfulallo5",
       "version": 0,
       "active": false,
-      "question": "\"argparse: how do you add a subparser called through the command \"\"mysub\"\", with a flag, \"\"-a\"\"? How do you get the name of the function to run?\"",
-      "answer": "\"parser = argparse.ArgumentParser() subparsers = parser.add_subparsers(dest=\"\"func\"\")   mysub_parser = subparsers.add_parser(\"\"mysub\"\") mysub_parser.add_argument(\"\"-a\"\", action=\"\"store_true\"\")   args = parser.parse_args() # args.func contains name of function to run\"",
+      "question": "argparse: how do you add a subparser called through the command \"mysub\", with a flag, \"-a\"? How do you get the name of the function to run?",
+      "answer": "parser = argparse.ArgumentParser() subparsers = parser.add_subparsers(dest=\"func\")   mysub_parser = subparsers.add_parser(\"mysub\") mysub_parser.add_argument(\"-a\", action=\"store_true\")   args = parser.parse_args() # args.func contains name of function to run",
       "reviews": []
     },
     {
@@ -1327,7 +1327,7 @@
       "version": 0,
       "active": false,
       "question": "At a high level, how does alembic work?",
-      "answer": "\"- It tracks database migrations as \"\"revisions\"\", which can be thought of in the same way as git commits, but instead of diffs, they are python scripts.   - Revisions have a unique ID, and upgrade() and downgrade() functions. These functions describe the steps to perform when going from a previous revision to this revision, or vice versa.   - Alembic knows which revision you are on by storing it in the database under the table \"\"alembic_version\"\". Thus, when you run alembic upgrade, it can figure out which upgrade() functions from which revisions to run in order to get to the desired state.\"",
+      "answer": "- It tracks database migrations as \"revisions\", which can be thought of in the same way as git commits, but instead of diffs, they are python scripts.   - Revisions have a unique ID, and upgrade() and downgrade() functions. These functions describe the steps to perform when going from a previous revision to this revision, or vice versa.   - Alembic knows which revision you are on by storing it in the database under the table \"alembic_version\". Thus, when you run alembic upgrade, it can figure out which upgrade() functions from which revisions to run in order to get to the desired state.",
       "reviews": []
     },
     {
@@ -1335,7 +1335,7 @@
       "version": 0,
       "active": false,
       "question": "Create an enumeration with three fruits. Create a variable with one of these values.",
-      "answer": "\"from enum import Enum class Fruit(Enum):     APPLE = \"\"apple\"\"     ORANGE = \"\"orange\"\"     BANANA = \"\"banana\"\"   The values for each enum could also be integers, or any other object.   my_fruit = Fruit.APPLE\"",
+      "answer": "from enum import Enum class Fruit(Enum):     APPLE = \"apple\"     ORANGE = \"orange\"     BANANA = \"banana\"   The values for each enum could also be integers, or any other object.   my_fruit = Fruit.APPLE",
       "reviews": []
     },
     {
@@ -1415,7 +1415,7 @@
       "version": 0,
       "active": false,
       "question": "How do you create a context manager with just a function and decorator? How are exceptions handled?",
-      "answer": "\"from contextlib import contextmanager   @contextmanager def my_context_manager(*args, **kwargs):     # code to acquire resource     resource = my_resource()     try:         yield resource     finally:         release_resource(resource)   If an exception is raised in the `with` block, it is re-raised inside the block that the yield statement is in. It can be handled here as seen above with a try-except-else-finally statement. If it is not completely suppressed, the context manager generator should re-raise the exception.\"",
+      "answer": "from contextlib import contextmanager   @contextmanager def my_context_manager(*args, **kwargs):     # code to acquire resource     resource = my_resource()     try:         yield resource     finally:         release_resource(resource)   If an exception is raised in the `with` block, it is re-raised inside the block that the yield statement is in. It can be handled here as seen above with a try-except-else-finally statement. If it is not completely suppressed, the context manager generator should re-raise the exception.",
       "reviews": []
     },
     {
@@ -1503,7 +1503,7 @@
       "version": 0,
       "active": false,
       "question": "pathlib: concatenate two Path objects",
-      "answer": "\"x = Path(\"\"mydir\"\") y = Path(\"\"myfile.txt\"\") z = x / y\"",
+      "answer": "x = Path(\"mydir\") y = Path(\"myfile.txt\") z = x / y",
       "reviews": []
     },
     {
@@ -1535,7 +1535,7 @@
       "version": 0,
       "active": false,
       "question": "pathlib: split a path into its constituents.",
-      "answer": "\"x = Path(\"\"mydir/otherdir/myfile.txt\"\")x.parts # (\"\"mydir\"\", \"\"otherdir\"\", \"\"myfile.txt\"\")\"",
+      "answer": "x = Path(\"mydir/otherdir/myfile.txt\")x.parts # (\"mydir\", \"otherdir\", \"myfile.txt\")",
       "reviews": []
     },
     {
@@ -1543,7 +1543,7 @@
       "version": 0,
       "active": false,
       "question": "pathlib: get basename",
-      "answer": "\"x = Path(\"\"mydir/myfile.txt\"\")x.name\"",
+      "answer": "x = Path(\"mydir/myfile.txt\")x.name",
       "reviews": []
     },
     {
@@ -1551,7 +1551,7 @@
       "version": 0,
       "active": false,
       "question": "pathlib: get dirname",
-      "answer": "\"x = Path(\"\"mydir/myfile.txt\"\")x.parent\"",
+      "answer": "x = Path(\"mydir/myfile.txt\")x.parent",
       "reviews": []
     },
     {
@@ -1559,7 +1559,7 @@
       "version": 0,
       "active": false,
       "question": "pathlib: get the absolute path for a given Path instance.",
-      "answer": "\"x = Path(\"\"mydir/myfile.txt\"\")x.resolve()\"",
+      "answer": "x = Path(\"mydir/myfile.txt\")x.resolve()",
       "reviews": []
     },
     {
@@ -1567,7 +1567,7 @@
       "version": 0,
       "active": false,
       "question": "pathlib: check whether each thing in a directory is a file.",
-      "answer": "\"x = Path(\"\"mydir\"\") for path in x.iterdir():     print(path, path.is_file())\"",
+      "answer": "x = Path(\"mydir\") for path in x.iterdir():     print(path, path.is_file())",
       "reviews": []
     },
     {
@@ -1598,8 +1598,8 @@
       "id": "8u0qc98ni7",
       "version": 0,
       "active": false,
-      "question": "\"pandas: get a DataFrame from sheet named \"\"Sheet1\"\" in an excel file.\"",
-      "answer": "\"import pandas as pddf = pd.read_excel(path, \"\"Sheet1\"\")\"",
+      "question": "pandas: get a DataFrame from sheet named \"Sheet1\" in an excel file.",
+      "answer": "import pandas as pddf = pd.read_excel(path, \"Sheet1\")",
       "reviews": []
     },
     {
@@ -1622,16 +1622,16 @@
       "id": "ebuhy5oy6r",
       "version": 0,
       "active": false,
-      "question": "\"pandas: get the value at the row index \"\"myrow\"\" and the column index \"\"mycolumn\"\"\"",
-      "answer": "\"df.at[\"\"myrow\"\", \"\"mycolumn\"\"]\"",
+      "question": "pandas: get the value at the row index \"myrow\" and the column index \"mycolumn",
+      "answer": "df.at[\"myrow\", \"mycolumn\"]",
       "reviews": []
     },
     {
       "id": "bam43tq41c",
       "version": 0,
       "active": false,
-      "question": "\"pandas: get all rows for the columns \"\"id\"\" and \"\"name\"\"\"",
-      "answer": "\"df.loc[:, [\"\"id\"\", \"\"name\"\"]]\"",
+      "question": "pandas: get all rows for the columns \"id\" and \"name",
+      "answer": "df.loc[:, [\"id\", \"name\"]]",
       "reviews": []
     },
     {
@@ -1647,7 +1647,7 @@
       "version": 0,
       "active": false,
       "question": "pandas: get all rows where id is equal to 1234",
-      "answer": "\"df[df.loc[:, \"\"id\"\"] == 1234]\"",
+      "answer": "df[df.loc[:, \"id\"] == 1234]",
       "reviews": []
     },
     {
@@ -1702,8 +1702,8 @@
       "id": "jgx3k5udzh",
       "version": 0,
       "active": false,
-      "question": "\"pandas: get the unique values in the column \"\"mycol\"\"\"",
-      "answer": "\"df.loc[:, \"\"mycol\"\"].unique()\"",
+      "question": "pandas: get the unique values in the column \"mycol",
+      "answer": "df.loc[:, \"mycol\"].unique()",
       "reviews": []
     },
     {
@@ -1718,16 +1718,16 @@
       "id": "er0n0uc4d1",
       "version": 0,
       "active": false,
-      "question": "\"pandas: get a count of the number of times each value appears (a histogram) in the \"\"claim_no_pri\"\" column\"",
-      "answer": "\"df.loc[:, \"\"claim_no_pri\"\"].value_counts()\"",
+      "question": "pandas: get a count of the number of times each value appears (a histogram) in the \"claim_no_pri\" column",
+      "answer": "df.loc[:, \"claim_no_pri\"].value_counts()",
       "reviews": []
     },
     {
       "id": "2x0omftwtf",
       "version": 0,
       "active": false,
-      "question": "\"pandas: get all rows where column \"\"my_col\"\" is false\"",
-      "answer": "\"df[~df.loc[:, \"\"my_col\"\"]]\"",
+      "question": "pandas: get all rows where column \"my_col\" is false",
+      "answer": "df[~df.loc[:, \"my_col\"]]",
       "reviews": []
     },
     {
@@ -1735,7 +1735,7 @@
       "version": 0,
       "active": false,
       "question": "What are the four operations that can be done between two sets? What are their operators?",
-      "answer": "union: | intersection: \u0026 difference: - symmetric difference: ^   For two sets a and b, symmetric difference is equal to (a - b) | (b - a).",
+      "answer": "union: | intersection: & difference: - symmetric difference: ^   For two sets a and b, symmetric difference is equal to (a - b) | (b - a).",
       "reviews": []
     },
     {
@@ -1758,7 +1758,7 @@
       "id": "tk1uenjgyz",
       "version": 0,
       "active": false,
-      "question": "\"a = {\"\"asdf\"\": 1}   def func1(x):     x[\"\"asdf\"\"] = 2     def func2(x):     x = {\"\"asdf\"\": 5}   print(a) func1(a) print(a) func2(a) print(a)   What is printed? Why?\"",
+      "question": "a = {\"asdf\": 1}   def func1(x):     x[\"asdf\"] = 2     def func2(x):     x = {\"asdf\": 5}   print(a) func1(a) print(a) func2(a) print(a)   What is printed? Why?",
       "answer": "{'asdf': 1} {'asdf': 2} {'asdf': 2}   If you modify an object passed to a function, those changes occur on the object outside of the function. However, if you reassign the object inside the function, it is a new object within the function scope. Thus, any changes made to it are not made on the object outside the function.",
       "reviews": []
     }

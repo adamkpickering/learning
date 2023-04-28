@@ -6,16 +6,16 @@
       "id": "o61ev2zjf6",
       "version": 0,
       "active": false,
-      "question": "\"ansible: create a basic playbook with a task that prints \"\"hello world\"\"\"",
-      "answer": "\"--- - name: print hello world   hosts: all   tasks:   - name: print \"\"hello world\"\"     debug:       msg: \"\"hello world\"\"\"",
+      "question": "ansible: create a basic playbook with a task that prints \"hello world",
+      "answer": "--- - name: print hello world   hosts: all   tasks:   - name: print \"hello world\"     debug:       msg: \"hello world",
       "reviews": []
     },
     {
       "id": "crmjpihw2u",
       "version": 0,
       "active": false,
-      "question": "\"ansible: what is valid in the \"\"hosts\"\" field of a play?\"",
-      "answer": "\"The input to the \"\"hosts\"\" field is a \"\"pattern\"\"; this can specify an IP address or hostname, a group name, a name of a host in the inventory, or any of the above via regex or wildcards.\"",
+      "question": "ansible: what is valid in the \"hosts\" field of a play?",
+      "answer": "The input to the \"hosts\" field is a \"pattern\"; this can specify an IP address or hostname, a group name, a name of a host in the inventory, or any of the above via regex or wildcards.",
       "reviews": []
     },
     {
@@ -143,7 +143,7 @@
       "version": 0,
       "active": false,
       "question": "ansible: what is the difference between include_* and import_*?",
-      "answer": "\"include_* is dynamic, so whatever you're including is included at runtime. For example, if you have an include_* in a loop, it will include all of those things once for each iteration of the loop.   import_* statements are done once, when the playbook is \"\"compiled\"\". When you use import_* it is as if you have written whatever you are importing directly in that file.\"",
+      "answer": "include_* is dynamic, so whatever you're including is included at runtime. For example, if you have an include_* in a loop, it will include all of those things once for each iteration of the loop.   import_* statements are done once, when the playbook is \"compiled\". When you use import_* it is as if you have written whatever you are importing directly in that file.",
       "reviews": []
     },
     {
@@ -167,7 +167,7 @@
       "version": 0,
       "active": false,
       "question": "ansible: set the value of my_var to my_var from credstash",
-      "answer": "\"my_var: \"\"{{ lookup('credstash', 'my_var', region='ca-central-1') }}\"\"\"",
+      "answer": "my_var: \"{{ lookup('credstash', 'my_var', region='ca-central-1') }}",
       "reviews": []
     }
   ]

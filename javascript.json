@@ -15,7 +15,7 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between import/export and require? How do you use each one?",
-      "answer": "\"import/export - part of ES6 - lets you import just a part of a file (module?), which can save memory    require - how you use CommonJS modules   CommonJS is older; ES6 is newer. You should use the ES6 style if possible.   import express from \"\"express\"\"; const express = require(\"\"express\"\");\"",
+      "answer": "import/export - part of ES6 - lets you import just a part of a file (module?), which can save memory    require - how you use CommonJS modules   CommonJS is older; ES6 is newer. You should use the ES6 style if possible.   import express from \"express\"; const express = require(\"express\");",
       "reviews": []
     },
     {
@@ -143,15 +143,15 @@
       "version": 0,
       "active": true,
       "question": "ts: what are literal types?",
-      "answer": "\"If you use a variable with a value in it in place of a type, then it represents a type where valid values are constrained to the set of allowable values for that variable. For example:    let changingString = \"\"Hello World\"\"; changingString = \"\"Olá Mundo\"\"; // Because `changingString` can be changed to any string, // it simply represents the string type   const constantString = \"\"Hello World\"\"; // Because `constantString` can only represent 1 possible string, // it is a type that can only be the string \"\"Hello World\"\"\"",
+      "answer": "If you use a variable with a value in it in place of a type, then it represents a type where valid values are constrained to the set of allowable values for that variable. For example:    let changingString = \"Hello World\"; changingString = \"Olá Mundo\"; // Because `changingString` can be changed to any string, // it simply represents the string type   const constantString = \"Hello World\"; // Because `constantString` can only represent 1 possible string, // it is a type that can only be the string \"Hello World",
       "reviews": []
     },
     {
       "id": "u6snxlv9wn",
       "version": 0,
       "active": true,
-      "question": "\"ts: ensure that a variable can only be equal to \"\"hello\"\", \"\"world\"\" or \"\"name\"\"\"",
-      "answer": "\"type constrainedType = \"\"hello\"\" | \"\"world\"\" | \"\"name\"\"\"",
+      "question": "ts: ensure that a variable can only be equal to \"hello\", \"world\" or \"name",
+      "answer": "type constrainedType = \"hello\" | \"world\" | \"name",
       "reviews": []
     },
     {
@@ -159,7 +159,7 @@
       "version": 0,
       "active": true,
       "question": "ts: what is narrowing?",
-      "answer": "\"Narrowing is a process of constraining a variable whose type has some wiggle room to a subset of that type. The typescript transpiler is smart enough to notice this and give you access to everything that the type you narrowed to.   For example:   if (typeof myvar === \"\"number\"\") {   // can do anything with myvar here that you can do with number }\"",
+      "answer": "Narrowing is a process of constraining a variable whose type has some wiggle room to a subset of that type. The typescript transpiler is smart enough to notice this and give you access to everything that the type you narrowed to.   For example:   if (typeof myvar === \"number\") {   // can do anything with myvar here that you can do with number }",
       "reviews": []
     },
     {
@@ -207,7 +207,7 @@
       "version": 0,
       "active": true,
       "question": "Describe how electron works from a high level.",
-      "answer": "\"Electron's model is similar to a browser's model, but different in some ways.   First you have the main process. This process is the application's entry point. It is responsible for managing various meta-things about the system, like adding custom APIs to interact with the user's operating system, intercepting signals, that sort of thing. It also creates and manages application windows via instances of the `BrowserWindow` class. Each `BrowserWindow` instance corresponds to a process, just like a tab in a browser.   Each instance of the `BrowserWindow` class is basically an instance of a web app. After running \"\"preload scripts\"\", which can be used to expose arbitrary APIs to the web app, the window enters the web app via an HTML file that then loads scripts, HTML, CSS etc in the usual way.\"",
+      "answer": "Electron's model is similar to a browser's model, but different in some ways.   First you have the main process. This process is the application's entry point. It is responsible for managing various meta-things about the system, like adding custom APIs to interact with the user's operating system, intercepting signals, that sort of thing. It also creates and manages application windows via instances of the `BrowserWindow` class. Each `BrowserWindow` instance corresponds to a process, just like a tab in a browser.   Each instance of the `BrowserWindow` class is basically an instance of a web app. After running \"preload scripts\", which can be used to expose arbitrary APIs to the web app, the window enters the web app via an HTML file that then loads scripts, HTML, CSS etc in the usual way.",
       "reviews": []
     },
     {
@@ -238,7 +238,7 @@
       "id": "0bkvnd1tzc",
       "version": 0,
       "active": true,
-      "question": "\"What is the # symbol used for?\"",
+      "question": "What is the # symbol used for?",
       "answer": "When placed at the beginning of a class property's name, means that property is private.",
       "reviews": []
     },
@@ -278,8 +278,8 @@
       "id": "2buvje2zia",
       "version": 0,
       "active": true,
-      "question": "\"What is a Promise? Define it in typescript.  Explain the typescript. Give an example that fulfills the promise with the value \"\"hello world\"\" after 250 ms.\"",
-      "answer": "\"A promise is an object representing the eventual completion or failure of an asynchronous operation.   class Promise {   constructor( ( resolveFunc: (value) => void, rejectFunc: (reason) => void ) => void ) { ... } }    Basically you pass an executor function to the Promise constructor. This function takes two parameters:   1) a resolve function, which the executor function calls with a single value in the event of success 2) a reject function, which the executor function calls with a reason for failure in the event of failure   const myPromise = Promise( (resolve, reject) => {   setTimeout( () => { resolve(\"\"hello world\"\") }, 250 ) })\"",
+      "question": "What is a Promise? Define it in typescript.  Explain the typescript. Give an example that fulfills the promise with the value \"hello world\" after 250 ms.",
+      "answer": "A promise is an object representing the eventual completion or failure of an asynchronous operation.   class Promise {   constructor( ( resolveFunc: (value) => void, rejectFunc: (reason) => void ) => void ) { ... } }    Basically you pass an executor function to the Promise constructor. This function takes two parameters:   1) a resolve function, which the executor function calls with a single value in the event of success 2) a reject function, which the executor function calls with a reason for failure in the event of failure   const myPromise = Promise( (resolve, reject) => {   setTimeout( () => { resolve(\"hello world\") }, 250 ) })",
       "reviews": []
     },
     {
@@ -311,7 +311,7 @@
       "version": 0,
       "active": true,
       "question": "How does a try-catch-finally block work?",
-      "answer": "\"Very simple:   try {   // might raise exception }  catch (error) {   // can omit the \"\"(error)\"\" part if you don't need to use it } finally {   // this code always runs after both the try and catch blocks }\"",
+      "answer": "Very simple:   try {   // might raise exception }  catch (error) {   // can omit the \"(error)\" part if you don't need to use it } finally {   // this code always runs after both the try and catch blocks }",
       "reviews": []
     },
     {
@@ -319,7 +319,7 @@
       "version": 0,
       "active": true,
       "question": "How do you raise an exception?",
-      "answer": "\"throw new Error(\"\"here is an error\"\")\"",
+      "answer": "throw new Error(\"here is an error\")",
       "reviews": []
     },
     {
@@ -351,7 +351,7 @@
       "version": 0,
       "active": true,
       "question": "vue: what are the important properties of the options object passed in the Vue instance constructor? What do they mean?",
-      "answer": "\"data: is an object or function that returns an object (more often) that contains data related to the component that may be changed; when it is changed, the component is re-rendered    computed: accessed like elements of data, but are basically getter methods   instance lifecycle hooks: have names like \"\"created\"\", \"\"mounted\"\", \"\"updated\"\" and \"\"destroyed\"\", and specify functions to run upon these lifecycle events   props: an array of strings that become properties on the HTML that the component becomes   methods: functions that are called in response to events in the HTML etc\"",
+      "answer": "data: is an object or function that returns an object (more often) that contains data related to the component that may be changed; when it is changed, the component is re-rendered    computed: accessed like elements of data, but are basically getter methods   instance lifecycle hooks: have names like \"created\", \"mounted\", \"updated\" and \"destroyed\", and specify functions to run upon these lifecycle events   props: an array of strings that become properties on the HTML that the component becomes   methods: functions that are called in response to events in the HTML etc",
       "reviews": []
     },
     {
@@ -367,14 +367,14 @@
       "version": 0,
       "active": true,
       "question": "What is the document object?",
-      "answer": "\"Is of type Document. Represents any web page loaded in the browser and serves as an entry point into the page's content, which is the \"\"DOM tree\"\".\"",
+      "answer": "Is of type Document. Represents any web page loaded in the browser and serves as an entry point into the page's content, which is the \"DOM tree\".",
       "reviews": []
     },
     {
       "id": "t9u45nazg3",
       "version": 0,
       "active": true,
-      "question": "\"What does \"\"@\"\" mean in a module path?\"",
+      "question": "What does \"@\" mean in a module path?",
       "answer": "This is not part of the ECMAScript spec. The meaning depends on the module loader or module bundler, like babel or webpack.",
       "reviews": []
     },
@@ -391,7 +391,7 @@
       "version": 0,
       "active": true,
       "question": "vue: what are the three most common directives? Also specify shorthand versions if any. What do they do?",
-      "answer": "\"v-if: removes/inserts the containing element based on the truthiness of the referenced data <p v-if=\"\"seen\"\">...</p>   v-bind: lets you bind a value to an attribute of an element; the following is equivalent to <a href=\"\"asdfasdf\"\">...</a> with url = \"\"asdfasdf\"\" <a v-bind:href=\"\"url\"\">...</a> shorthand: v-bind:href=\"\"url\"\" === :href=\"\"url\"\"   v-on: specifies an action to take upon a DOM event <checkbox v-on:click=\"\"triggerClick\"\"/> shorthand: v-on:click=\"\"myMethod\"\" === @click=\"\"myMethod\"\"\"",
+      "answer": "v-if: removes/inserts the containing element based on the truthiness of the referenced data <p v-if=\"seen\">...</p>   v-bind: lets you bind a value to an attribute of an element; the following is equivalent to <a href=\"asdfasdf\">...</a> with url = \"asdfasdf\" <a v-bind:href=\"url\">...</a> shorthand: v-bind:href=\"url\" === :href=\"url\"   v-on: specifies an action to take upon a DOM event <checkbox v-on:click=\"triggerClick\"/> shorthand: v-on:click=\"myMethod\" === @click=\"myMethod",
       "reviews": []
     },
     {
@@ -407,7 +407,7 @@
       "version": 0,
       "active": true,
       "question": "ts: What is the Record type? How do you use it?",
-      "answer": "\"It is a generic type with two types. The first is the type of the keys; the second is the type of the values. So, it can be used to provide a type-restricted object.   const myRecord: Record<string, number> = {   \"\"hello\"\": 1,   \"\"world\"\": 2, }\"",
+      "answer": "It is a generic type with two types. The first is the type of the keys; the second is the type of the values. So, it can be used to provide a type-restricted object.   const myRecord: Record<string, number> = {   \"hello\": 1,   \"world\": 2, }",
       "reviews": []
     },
     {
@@ -495,7 +495,7 @@
       "version": 0,
       "active": true,
       "question": "What is the Symbol type? How do you use it? What is surprising about it?",
-      "answer": "\"It is a built-in object whose constructor returns a variable of type `symbol` that is guaranteed to be unique. Often used to add unique property keys to an object that won't collide with any other property keys in the object.   let sym1 = Symbol(\"\"seed\"\"); let sym2 = Symbol(\"\"seed\"\");   Note that sym1 !== sym2; each invocation of the Symbol constructor produces a different `symbol` each time.   Note that you do not use the `new` keyword.\"",
+      "answer": "It is a built-in object whose constructor returns a variable of type `symbol` that is guaranteed to be unique. Often used to add unique property keys to an object that won't collide with any other property keys in the object.   let sym1 = Symbol(\"seed\"); let sym2 = Symbol(\"seed\");   Note that sym1 !== sym2; each invocation of the Symbol constructor produces a different `symbol` each time.   Note that you do not use the `new` keyword.",
       "reviews": []
     },
     {
@@ -543,7 +543,7 @@
       "version": 0,
       "active": true,
       "question": "Given a Date object, what standard format is used to 1) get or set a part of the datetime 2) work in local time or UTC time 3) work with ms, seconds, hours, day of month, day of week, and 4-digit year?   Give an example.",
-      "answer": "\"1) \"\"get\"\" for getting, \"\"set\"\" for setting 2) Nothing for local time, UTC for UTC 3) Milliseconds, Seconds, Hours, Date (for day of month), Day (for day of week), FullYear  let d = new Date(); d.getUTCFullYear();\"",
+      "answer": "1) \"get\" for getting, \"set\" for setting 2) Nothing for local time, UTC for UTC 3) Milliseconds, Seconds, Hours, Date (for day of month), Day (for day of week), FullYear  let d = new Date(); d.getUTCFullYear();",
       "reviews": []
     },
     {
@@ -574,7 +574,7 @@
       "id": "yk4buat4xt",
       "version": 0,
       "active": true,
-      "question": "\"GET the body, as text, of the URL \"\"myUrl\"\".\"",
+      "question": "GET the body, as text, of the URL \"myUrl\".",
       "answer": "const response = await fetch(myUrl); const text = await response.text();",
       "reviews": []
     },
@@ -582,8 +582,8 @@
       "id": "y22nrkl7c8",
       "version": 0,
       "active": true,
-      "question": "\"Make a POST request to the url \"\"myUrl\"\" with the body {\"\"hello\"\": \"\"world\"\"}, then parse the response body into a new object as JSON.\"",
-      "answer": "\"const response = await fetch(myUrl, {   method: \"\"POST\"\",   body: JSON.stringify({hello: \"\"world\"\"}), }); const newObj = await response.json();\"",
+      "question": "Make a POST request to the url \"myUrl\" with the body {\"hello\": \"world\"}, then parse the response body into a new object as JSON.",
+      "answer": "const response = await fetch(myUrl, {   method: \"POST\",   body: JSON.stringify({hello: \"world\"}), }); const newObj = await response.json();",
       "reviews": []
     },
     {
@@ -615,7 +615,7 @@
       "version": 0,
       "active": true,
       "question": "What are the two ways of creating a regular expression?",
-      "answer": "\"let re = /ab+c/; let re = new RegExp(\"\"ab+c\"\");\"",
+      "answer": "let re = /ab+c/; let re = new RegExp(\"ab+c\");",
       "reviews": []
     },
     {
@@ -631,7 +631,7 @@
       "version": 0,
       "active": true,
       "question": "What does the following do:   const { x, y } = myObj;   What is it called?",
-      "answer": "\"It is equivalent to:   const x = myObj.x; const y = myObj.y;   This is referred to as a \"\"destructuring assignment\"\".\"",
+      "answer": "It is equivalent to:   const x = myObj.x; const y = myObj.y;   This is referred to as a \"destructuring assignment\".",
       "reviews": []
     },
     {
@@ -679,7 +679,7 @@
       "version": 0,
       "active": true,
       "question": "Why does having `await` in a function mean that it must be async?",
-      "answer": "\"Do not think of `await` as meaning \"\"block until this Promise has a value\"\". There is no such thing as blocking if you are working in the async paradigm.   Think of `await` as meaning \"\"relinquish control of the thread until this Promise has a value\"\".\"",
+      "answer": "Do not think of `await` as meaning \"block until this Promise has a value\". There is no such thing as blocking if you are working in the async paradigm.   Think of `await` as meaning \"relinquish control of the thread until this Promise has a value\".",
       "reviews": []
     },
     {
@@ -687,7 +687,7 @@
       "version": 0,
       "active": true,
       "question": "ts: how can you create an instance of the following object without using the `:` character, or `obj.property = value`?   type myType = {   var1: string;   var2: number; }   Why does this work?",
-      "answer": "\"const var1 = \"\"hello\"\"; const var2 = 4; const myObj = {var1, var2};   As long as the variables have the same names as the properties to which they are assigned, TS knows where to assign them.\"",
+      "answer": "const var1 = \"hello\"; const var2 = 4; const myObj = {var1, var2};   As long as the variables have the same names as the properties to which they are assigned, TS knows where to assign them.",
       "reviews": []
     },
     {
@@ -735,7 +735,7 @@
       "version": 0,
       "active": true,
       "question": "What does ?? do?",
-      "answer": "\"It is referred to as the \"\"nullish coalescing\"\" operator. The code:   If the left side is not null or undefined, is equal to the left side. Otherwise, is equal to the right side.\"",
+      "answer": "It is referred to as the \"nullish coalescing\" operator. The code:   If the left side is not null or undefined, is equal to the left side. Otherwise, is equal to the right side.",
       "reviews": []
     },
     {
@@ -774,8 +774,8 @@
       "id": "6rf548foyl",
       "version": 0,
       "active": true,
-      "question": "\"node: how do you get the value of the environment variable \"\"MYVAR\"\"? What is the value if it is not set?\"",
-      "answer": "\"process.env[\"\"MYVAR\"\"]; undefined\"",
+      "question": "node: how do you get the value of the environment variable \"MYVAR\"? What is the value if it is not set?",
+      "answer": "process.env[\"MYVAR\"]; undefined",
       "reviews": []
     },
     {
@@ -871,7 +871,7 @@
       "version": 0,
       "active": true,
       "question": "What is the `prototype` property for? How does it work?",
-      "answer": "\"Every object in js has a built-in property `prototype`. It is an object itself, which means it also has a `prototype` property. This creates a \"\"prototype chain\"\", which ends when we reach a prototype that has `null` for its own prototype.   When you access for a property of an object, and it is not immediately present, the prototype chain is searched for it until found or not. If not found, `undefined` is returned.    It can be used to add a method to an object after it is defined. But I'm not sure of what exactly is required to make this work...\"",
+      "answer": "Every object in js has a built-in property `prototype`. It is an object itself, which means it also has a `prototype` property. This creates a \"prototype chain\", which ends when we reach a prototype that has `null` for its own prototype.   When you access for a property of an object, and it is not immediately present, the prototype chain is searched for it until found or not. If not found, `undefined` is returned.    It can be used to add a method to an object after it is defined. But I'm not sure of what exactly is required to make this work...",
       "reviews": []
     },
     {
@@ -951,7 +951,7 @@
       "version": 0,
       "active": true,
       "question": "ts: how do you avoid a runtime error when accessing a property that may be `null` or `undefined`? How does this work?",
-      "answer": "\"Use the \"\"optional chaining\"\" operator, which is just a question mark appended to the name of the property that may be `null` or `undefined`.  Like this: myObject.myProperty?.myMethod();  If `myProperty` is `null` or `undefined`, it short-circuits the whole expression to be undefined without running myMethod.\"",
+      "answer": "Use the \"optional chaining\" operator, which is just a question mark appended to the name of the property that may be `null` or `undefined`.  Like this: myObject.myProperty?.myMethod();  If `myProperty` is `null` or `undefined`, it short-circuits the whole expression to be undefined without running myMethod.",
       "reviews": []
     },
     {

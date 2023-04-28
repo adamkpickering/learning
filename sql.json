@@ -23,7 +23,7 @@
       "version": 0,
       "active": false,
       "question": "What is a result set?",
-      "answer": "\"It is the result of when you execute an expression with multiple queries in it. Each query produces a result, so we get multiple \"\"result sets\"\".\"",
+      "answer": "It is the result of when you execute an expression with multiple queries in it. Each query produces a result, so we get multiple \"result sets\".",
       "reviews": []
     }
   ]

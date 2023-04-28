@@ -7,7 +7,7 @@
       "version": 0,
       "active": false,
       "question": "What are the 3 main types of AWS storage? Order from least expensive to most expensive. Describe.",
-      "answer": "\"S3 (simple storage service). Stores files as objects in a flat \"\"bucket\"\". Lower IOPS and higher latency than EBS and EFS.   EBS (elastic block store). You provision a fixed size EBS. Limited to a single region.   EFS (elastic file system). For big data, size of EFS is easily scalable. Files can be shared between regions.\"",
+      "answer": "S3 (simple storage service). Stores files as objects in a flat \"bucket\". Lower IOPS and higher latency than EBS and EFS.   EBS (elastic block store). You provision a fixed size EBS. Limited to a single region.   EFS (elastic file system). For big data, size of EFS is easily scalable. Files can be shared between regions.",
       "reviews": []
     },
     {
@@ -63,7 +63,7 @@
       "version": 0,
       "active": false,
       "question": "HCL: what four basic elements make up HCL blocks? What do they look like in a block?",
-      "answer": "\"<block_type> \"\"<block_label>\"\" \"\"<block_label>\"\" {      <identifier> = <expression> }\"",
+      "answer": "<block_type> \"<block_label>\" \"<block_label>\" {      <identifier> = <expression> }",
       "reviews": []
     },
     {
@@ -103,7 +103,7 @@
       "version": 0,
       "active": false,
       "question": "terraform: what block type do I use to configure a remote state store? How does it look?",
-      "answer": "\"Use a backend.   terraform {   backend \"\"<backend_name>\"\" {     ...   } }\"",
+      "answer": "Use a backend.   terraform {   backend \"<backend_name>\" {     ...   } }",
       "reviews": []
     },
     {
@@ -143,7 +143,7 @@
       "version": 0,
       "active": false,
       "question": "terraform: how do you use multiple aws providers with different resources or modules?",
-      "answer": "\"provider \"\"aws\"\" {   region = \"\"ca-central-1\"\" }   provider \"\"aws\"\" {   region = \"\"us-west-2\"\"   alias = \"\"us-west-2\"\" }   # uses default provider resource \"\"aws_instance\"\" \"\"canada\"\" {   ... }   resource \"\"aws_instance\"\" \"\"us-instance\"\" {   provider = aws.us-west-2 }\"",
+      "answer": "provider \"aws\" {   region = \"ca-central-1\" }   provider \"aws\" {   region = \"us-west-2\"   alias = \"us-west-2\" }   # uses default provider resource \"aws_instance\" \"canada\" {   ... }   resource \"aws_instance\" \"us-instance\" {   provider = aws.us-west-2 }",
       "reviews": []
     },
     {
@@ -159,7 +159,7 @@
       "version": 0,
       "active": false,
       "question": "AWS IAM: write a JSON policy that allows access to all actions in EC2, and denies all actions in S3.",
-      "answer": "\"{   \"\"Version\"\": \"\"2012-10-17\"\",   \"\"Statement\"\": [     {       \"\"Effect\"\": \"\"Allow\"\",       \"\"Action\"\": \"\"ec2:*\"\",       \"\"Resource\"\": \"\"*\"\"     },     {       \"\"Effect\"\": \"\"Deny\"\",       \"\"Action\"\": \"\"s3:*\"\",       \"\"Resource\"\": \"\"*\"\"     }   ] }\"",
+      "answer": "{   \"Version\": \"2012-10-17\",   \"Statement\": [     {       \"Effect\": \"Allow\",       \"Action\": \"ec2:*\",       \"Resource\": \"*\"     },     {       \"Effect\": \"Deny\",       \"Action\": \"s3:*\",       \"Resource\": \"*\"     }   ] }",
       "reviews": []
     },
     {
@@ -167,7 +167,7 @@
       "version": 0,
       "active": false,
       "question": "AWS: what does ARN stand for? What are its three formats? What does each section mean?",
-      "answer": "\"ARN: amazon resource name   arn:partition:service:region:account-id:resource-id arn:partition:service:region:account-id:resource-type/resource-id  arn:partition:service:region:account-id:resource-type:resource-id    arn: begins every ARN partition: a group of AWS regions; is \"\"aws\"\" for all of my purposes service: the service that resource belongs to (iam, ec2 etc) region: the region (ca-central-1, us-west-2 etc) account-id: the id of the account that owns the resource\"",
+      "answer": "ARN: amazon resource name   arn:partition:service:region:account-id:resource-id arn:partition:service:region:account-id:resource-type/resource-id  arn:partition:service:region:account-id:resource-type:resource-id    arn: begins every ARN partition: a group of AWS regions; is \"aws\" for all of my purposes service: the service that resource belongs to (iam, ec2 etc) region: the region (ca-central-1, us-west-2 etc) account-id: the id of the account that owns the resource",
       "reviews": []
     },
     {
@@ -175,7 +175,7 @@
       "version": 0,
       "active": false,
       "question": "terraform: what are the three ways of creating multiple similar resources?",
-      "answer": "\"# countresource \"\"<resource_type>\"\" \"\"<resource_name>\"\" {   count = 4   name = \"\"resource ${count.index}\"\"  }   # list resource \"\"<resource_type>\"\" \"\"<resource_name>\"\" {   for_each = toset( [\"\"name1\"\", \"\"name2\"\"] )   name = \"\"resource_name is ${each.key}\"\" }   # map  resource \"\"<resource_type>\"\" \"\"<resource_name>\"\" {   for_each = {     resource1 = \"\"value1\"\"     resource2 = \"\"value2\"\"   }   name = \"\"${each.key}: ${each.value}\"\" }\"",
+      "answer": "# countresource \"<resource_type>\" \"<resource_name>\" {   count = 4   name = \"resource ${count.index}\"  }   # list resource \"<resource_type>\" \"<resource_name>\" {   for_each = toset( [\"name1\", \"name2\"] )   name = \"resource_name is ${each.key}\" }   # map  resource \"<resource_type>\" \"<resource_name>\" {   for_each = {     resource1 = \"value1\"     resource2 = \"value2\"   }   name = \"${each.key}: ${each.value}\" }",
       "reviews": []
     },
     {
@@ -183,7 +183,7 @@
       "version": 0,
       "active": false,
       "question": "terraform: how do you use a module? What needs to be done for the module to work?",
-      "answer": "\"module \"\"<local_name>\"\" {    source = \"\"source_here\"\"   <vars>... }   Then call `terraform init` to download, if applicable. This will adjust the installed modules, but will not upgrade installed modules unless you pass `-upgrade` to it.\"",
+      "answer": "module \"<local_name>\" {    source = \"source_here\"   <vars>... }   Then call `terraform init` to download, if applicable. This will adjust the installed modules, but will not upgrade installed modules unless you pass `-upgrade` to it.",
       "reviews": []
     },
     {

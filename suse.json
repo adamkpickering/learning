@@ -49,7 +49,7 @@
       "version": 0,
       "active": true,
       "question": "How do nerdctl, docker, kubectl etc talk to containerd, dockerd,\nkubernetes etc in a lima VM?",
-      "answer": "kubectl and docker are simple because they simply tell the server what to do,\nand the server does it.\n\nnerdctl is more complex because it manages images on the local host.\nSo on the host we need to make it a shell script that calls\n\n  lima shell \u003cname\u003e nerdctl \u003cargs\u003e\n\nThis means all of the stuff get stored in the VM.",
+      "answer": "kubectl and docker are simple because they simply tell the server what to do,\nand the server does it.\n\nnerdctl is more complex because it manages images on the local host.\nSo on the host we need to make it a shell script that calls\n\n  lima shell <name> nerdctl <args>\n\nThis means all of the stuff get stored in the VM.",
       "reviews": [
         {
           "version": 0,

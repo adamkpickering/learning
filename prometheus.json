@@ -14,15 +14,15 @@
       "id": "3eck6prbgg",
       "version": 0,
       "active": true,
-      "question": "\"prometheus: get the \"\"test_metric\"\" metric where job is \"\"test_job\"\" and instance is \"\"test.example.com\"\" every 5 minutes for the last hour\"",
-      "answer": "\"test_metric{job=\"\"test_job\"\",instance=\"\"test.example.com\"\"}[1h:5m]\"",
+      "question": "prometheus: get the \"test_metric\" metric where job is \"test_job\" and instance is \"test.example.com\" every 5 minutes for the last hour",
+      "answer": "test_metric{job=\"test_job\",instance=\"test.example.com\"}[1h:5m]",
       "reviews": []
     },
     {
       "id": "q8jhdrd8ao",
       "version": 0,
       "active": true,
-      "question": "\"prometheus: get the value for the metric \"\"test_metric\"\" two days ago\"",
+      "question": "prometheus: get the value for the metric \"test_metric\" two days ago",
       "answer": "test_metric offset 2d",
       "reviews": []
     },
@@ -30,7 +30,7 @@
       "id": "2cgwatfmqj",
       "version": 0,
       "active": true,
-      "question": "\"prometheus: if the cpu utilization of a single core is given by the metric \"\"cpu_utilization\"\", and that metric has the 3 labels \"\"instance\"\", \"\"job\"\", and \"\"core\"\", give an expression to get the average cpu utilization across all cores for each instance, while not losing any labels unnecessarily.\"",
+      "question": "prometheus: if the cpu utilization of a single core is given by the metric \"cpu_utilization\", and that metric has the 3 labels \"instance\", \"job\", and \"core\", give an expression to get the average cpu utilization across all cores for each instance, while not losing any labels unnecessarily.",
       "answer": "avg by (instance, job) cpu_utilization",
       "reviews": []
     },
@@ -39,15 +39,15 @@
       "version": 0,
       "active": true,
       "question": "grafana: how do you manipulate the name a time series has in the legend?",
-      "answer": "\"{{=<% %>=}} In the Legend field of the query, enter the name. You can do basic templating using golang template language and labels from the metric, i.e. \"\"{{ instance }}\"\".\"",
+      "answer": "{{=<% %>=}} In the Legend field of the query, enter the name. You can do basic templating using golang template language and labels from the metric, i.e. \"{{ instance }}\".",
       "reviews": []
     },
     {
       "id": "8d6xig2lca",
       "version": 0,
       "active": true,
-      "question": "\"grafana: for a dashboard variable, how do you get a list of values of all instances in the job \"\"test-job\"\"?\"",
-      "answer": "\"label_values(any_metric{job=\"\"test_job\"\"}, instance)\"",
+      "question": "grafana: for a dashboard variable, how do you get a list of values of all instances in the job \"test-job\"?",
+      "answer": "label_values(any_metric{job=\"test_job\"}, instance)",
       "reviews": []
     },
     {

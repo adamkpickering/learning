@@ -119,7 +119,7 @@
       "version": 0,
       "active": false,
       "question": "four different ways to separate commands, all on one line, and what they do",
-      "answer": "; - execute commands sequentially whether they return 0 or nonzero \u0026 - execute commands simultaneously \u0026\u0026 - execute commands sequentially, but execute next command only if previous command returned 0 || - execute commands sequentially until one returns 0",
+      "answer": "; - execute commands sequentially whether they return 0 or nonzero & - execute commands simultaneously && - execute commands sequentially, but execute next command only if previous command returned 0 || - execute commands sequentially until one returns 0",
       "reviews": []
     },
     {
@@ -127,7 +127,7 @@
       "version": 0,
       "active": false,
       "question": "write a heredoc with multiple lines, assign it to a variable, and print that variable to stdout (preserving newlines)",
-      "answer": "\"asdf=$(cat < EOF hello $PWD goodbye EOF ) echo \"\"$asdf\"\"\"",
+      "answer": "asdf=$(cat < EOF hello $PWD goodbye EOF ) echo \"$asdf",
       "reviews": []
     },
     {
@@ -238,8 +238,8 @@
       "id": "qlju9qcs6k",
       "version": 0,
       "active": false,
-      "question": "\"shell: substitute variable VAR, but raise an error, exit and print \"\"there is an error\"\" if the variable is null or undefined.\"",
-      "answer": "\"\"\"${VAR:?there is an error}\"\"\"",
+      "question": "shell: substitute variable VAR, but raise an error, exit and print \"there is an error\" if the variable is null or undefined.",
+      "answer": "\"${VAR:?there is an error}",
       "reviews": []
     },
     {
@@ -327,7 +327,7 @@
       "version": 0,
       "active": false,
       "question": "In bash, how do you write an if statement that checks if VAR matches regex?",
-      "answer": "\"if [[ \"\"$VAR\"\" =~ 'regex_here' ]]; then     ... fi\"",
+      "answer": "if [[ \"$VAR\" =~ 'regex_here' ]]; then     ... fi",
       "reviews": []
     },
     {

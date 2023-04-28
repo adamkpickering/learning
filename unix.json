@@ -127,8 +127,8 @@
       "id": "wtmrb8afw8",
       "version": 0,
       "active": false,
-      "question": "\"/etc/shadow vivek:$1$fnfdf$efkdk##efdl:13064:0:99999:7:::\"",
-      "answer": "\"/etc/shadow username: vivek password: $1$fnfdf$efkdk##efdl (what is each part?) days until acct disabled after unch pass: blank maximum days pass valid: 99999 acct expires: blank days before pass exp that user warned: 7 last changed: 13064 minimum days password valid: 0\"",
+      "question": "/etc/shadow vivek:$1$fnfdf$efkdk##efdl:13064:0:99999:7:::",
+      "answer": "/etc/shadow username: vivek password: $1$fnfdf$efkdk##efdl (what is each part?) days until acct disabled after unch pass: blank maximum days pass valid: 99999 acct expires: blank days before pass exp that user warned: 7 last changed: 13064 minimum days password valid: 0",
       "reviews": []
     },
     {
@@ -352,7 +352,7 @@
       "version": 0,
       "active": true,
       "question": "How do you get the next hop for a specific subnet in Linux routing table?",
-      "answer": "ip route get \u003cprefix\u003e",
+      "answer": "ip route get <prefix>",
       "reviews": []
     },
     {
@@ -512,7 +512,7 @@
       "version": 0,
       "active": true,
       "question": "What is a pty? Draw it.",
-      "answer": "It exists because we have a bunch of programs that expect a tty interface;\nthese programs interface with pts's. The pts's talk to a single pty through a line discipline.\nA userspace process then talks to the pty, and probably some other drivers(think xterm, or sshd).\n\nls -\u003e bash -\u003e pts -\u003e line discipline -\u003e pty -\u003e xterm -\u003e X server...",
+      "answer": "It exists because we have a bunch of programs that expect a tty interface;\nthese programs interface with pts's. The pts's talk to a single pty through a line discipline.\nA userspace process then talks to the pty, and probably some other drivers(think xterm, or sshd).\n\nls -> bash -> pts -> line discipline -> pty -> xterm -> X server...",
       "reviews": []
     },
     {
@@ -560,7 +560,7 @@
       "version": 0,
       "active": true,
       "question": "Draw the block diagram of the traditional TTY setup with UART.",
-      "answer": "teletype -\u003e wire -\u003e UART -\u003e UART driver -\u003e line disc -\u003e tty driver -\u003e userspace process",
+      "answer": "teletype -> wire -> UART -> UART driver -> line disc -> tty driver -> userspace process",
       "reviews": []
     },
     {
@@ -664,7 +664,7 @@
       "version": 0,
       "active": true,
       "question": "command to make a named pipe",
-      "answer": "mkfifo \u003cpath\u003e",
+      "answer": "mkfifo <path>",
       "reviews": []
     },
     {
@@ -672,7 +672,7 @@
       "version": 0,
       "active": true,
       "question": "command to create a soft link command to create a hard link",
-      "answer": "soft: ln -s \u003ctarget\u003e \u003cdst\u003e hard: ln \u003ctarget\u003e \u003cdst\u003e",
+      "answer": "soft: ln -s <target> <dst> hard: ln <target> <dst>",
       "reviews": []
     },
     {
@@ -688,7 +688,7 @@
       "version": 0,
       "active": true,
       "question": "What is an inode? What does the name mean?",
-      "answer": "\"A data structure that stores the attributes and disk block location(s) of a file/directory's data. File paths are essentially pointers to inodes.   Inode means \"\"index node\"\", since a file is a node, but they are actually stored as a flat array on disk.\"",
+      "answer": "A data structure that stores the attributes and disk block location(s) of a file/directory's data. File paths are essentially pointers to inodes.   Inode means \"index node\", since a file is a node, but they are actually stored as a flat array on disk.",
       "reviews": []
     },
     {
@@ -736,7 +736,7 @@
       "version": 0,
       "active": true,
       "question": "Load a kernel module",
-      "answer": "modprobe \u003cmodulename\u003e insmod \u003cmodulename\u003e",
+      "answer": "modprobe <modulename> insmod <modulename>",
       "reviews": []
     },
     {
@@ -744,7 +744,7 @@
       "version": 0,
       "active": true,
       "question": "Unload a kernel module",
-      "answer": "modprobe -r \u003cmodulename\u003ermmod \u003cmodulename\u003e",
+      "answer": "modprobe -r <modulename>rmmod <modulename>",
       "reviews": []
     },
     {
@@ -760,7 +760,7 @@
       "version": 0,
       "active": true,
       "question": "In YAML, what the three ways of doing multi-line strings and how do they work?",
-      "answer": "my_key: |  -\u003e creates a string of all lines below, keeping newlines    my_key: \u003e -\u003e creates a string of all lines below, changing newlines to spaces   And using quotes",
+      "answer": "my_key: |  -> creates a string of all lines below, keeping newlines    my_key: > -> creates a string of all lines below, changing newlines to spaces   And using quotes",
       "reviews": []
     },
     {
@@ -768,7 +768,7 @@
       "version": 0,
       "active": true,
       "question": "How do you check if a binary is statically linked?",
-      "answer": "ldd \u003cname\u003e If it prints .so's and returns 0 it's dynamically linked. If it returns 1 it's statically linked.",
+      "answer": "ldd <name> If it prints .so's and returns 0 it's dynamically linked. If it returns 1 it's statically linked.",
       "reviews": []
     },
     {
@@ -792,7 +792,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of a .pub public key?",
-      "answer": "\u003ckeytype\u003e \u003ckeybody\u003e \u003ckeyname\u003e",
+      "answer": "<keytype> <keybody> <keyname>",
       "reviews": []
     },
     {
@@ -800,7 +800,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of the known_hosts file?",
-      "answer": "\u003chostname-list\u003e \u003ckey-type\u003e \u003cpublic-key\u003e   Note that hostname-list may be hashed for security.",
+      "answer": "<hostname-list> <key-type> <public-key>   Note that hostname-list may be hashed for security.",
       "reviews": []
     },
     {
@@ -840,7 +840,7 @@
       "version": 0,
       "active": true,
       "question": "markdown: block quote, and nested block quote",
-      "answer": "\u003e what he said \u003e another line of what he said \u003e \u003e what she said \u003e \u003e another line of what she said",
+      "answer": "> what he said > another line of what he said > > what she said > > another line of what she said",
       "reviews": []
     },
     {
@@ -848,7 +848,7 @@
       "version": 0,
       "active": true,
       "question": "How does ssh agent forwarding work?",
-      "answer": "\"There is an \"\"ssh agent\"\" on the client computer, an \"\"ssh client\"\" on the client computer, \"\"sshd1\"\" on server 1, and \"\"sshd2\"\" on server 2.   1) ssh client makes initial connection to sshd1, sending username and request to use a key 2) sshd1 checks user's authorized_keys file and sends challenge to client 3) (if key is secured by password) ssh agent requires user to enter password for key and client proves ownership of private key 4) sshd sets up session   5) Assuming ssh agent forwarding is enabled on both the client and sshd1, a unix domain socket is created /tmp/ssh-asdfasdf/agent.12345; this value is recorded in SSH_AUTH_SOCK 6) When the user tries to connect to sshd2, steps 1-4 are repeated but rather than checking with a local agent, the client on server 1 looks at SSH_AUTH_SOCK, and forwards the challenge to the ssh agent on the original client\"",
+      "answer": "There is an \"ssh agent\" on the client computer, an \"ssh client\" on the client computer, \"sshd1\" on server 1, and \"sshd2\" on server 2.   1) ssh client makes initial connection to sshd1, sending username and request to use a key 2) sshd1 checks user's authorized_keys file and sends challenge to client 3) (if key is secured by password) ssh agent requires user to enter password for key and client proves ownership of private key 4) sshd sets up session   5) Assuming ssh agent forwarding is enabled on both the client and sshd1, a unix domain socket is created /tmp/ssh-asdfasdf/agent.12345; this value is recorded in SSH_AUTH_SOCK 6) When the user tries to connect to sshd2, steps 1-4 are repeated but rather than checking with a local agent, the client on server 1 looks at SSH_AUTH_SOCK, and forwards the challenge to the ssh agent on the original client",
       "reviews": []
     },
     {
@@ -872,7 +872,7 @@
       "version": 0,
       "active": true,
       "question": "Redirect stderr to stdout",
-      "answer": "my-command 2\u003e\u00261   Has to be the last clause in a command.",
+      "answer": "my-command 2>&1   Has to be the last clause in a command.",
       "reviews": []
     },
     {
@@ -992,7 +992,7 @@
       "version": 0,
       "active": true,
       "question": "What is an overlay filesystem?",
-      "answer": "\"A way of combining two filesystems such that their files and directories are merged, with the overlay's files taking precedence in the case of conflicts. The lower filesystem is read-only.   This can be useful under openwrt for getting access to bigger tools that are on an external drive, when your device's rootfs is mounted on a tiny drive that doesn't have space for the tools. Called \"\"extroot\"\"\"",
+      "answer": "A way of combining two filesystems such that their files and directories are merged, with the overlay's files taking precedence in the case of conflicts. The lower filesystem is read-only.   This can be useful under openwrt for getting access to bigger tools that are on an external drive, when your device's rootfs is mounted on a tiny drive that doesn't have space for the tools. Called \"extroot",
       "reviews": []
     },
     {
@@ -1016,7 +1016,7 @@
       "version": 0,
       "active": true,
       "question": "tar: 6 crucial options and what they do",
-      "answer": "-c: compress -x: extract  -z: gzip compression -v: verbose (list files that go into tar) -f \u003cfilename\u003e: tarball to decompress, or tarball to create -C \u003cpath\u003e: change working dir to path before doing the thing",
+      "answer": "-c: compress -x: extract  -z: gzip compression -v: verbose (list files that go into tar) -f <filename>: tarball to decompress, or tarball to create -C <path>: change working dir to path before doing the thing",
       "reviews": []
     },
     {
@@ -1088,7 +1088,7 @@
       "version": 0,
       "active": true,
       "question": "iptables: command to see a specific chain",
-      "answer": "iptables -L \u003cchain_name\u003e -t \u003ctable_name\u003e",
+      "answer": "iptables -L <chain_name> -t <table_name>",
       "reviews": []
     },
     {
@@ -1096,7 +1096,7 @@
       "version": 0,
       "active": true,
       "question": "tcpdump: listen on a specific interface",
-      "answer": "tcpdump -i \u003cinterface\u003e",
+      "answer": "tcpdump -i <interface>",
       "reviews": []
     },
     {
@@ -1136,14 +1136,14 @@
       "version": 0,
       "active": true,
       "question": "What are the three typical sections in a systemd unit file?",
-      "answer": "[Unit] [\u003cunit-type\u003e] [Install]",
+      "answer": "[Unit] [<unit-type>] [Install]",
       "reviews": []
     },
     {
       "id": "llktxjmqiw",
       "version": 0,
       "active": true,
-      "question": "\"In systemd, what is the difference between \"\"wanting\"\" and \"\"requiring\"\", and what does each mean?\"",
+      "question": "In systemd, what is the difference between \"wanting\" and \"requiring\", and what does each mean?",
       "answer": "Wanting: starting the unit tries to start the wanted unit; if the wanted unit fails, the original unit still runs   Requiring: starting the unit tries to start the required unit; if the required unit fails, the original unit also fails",
       "reviews": []
     },
@@ -1215,8 +1215,8 @@
       "id": "tsr1prr0xh",
       "version": 0,
       "active": true,
-      "question": "\"What are /etc/subuid and /etc/subgid for? Give an example of a line. What does \"\"sub\"\" stand for?\"",
-      "answer": "subuid: each line contains a user name, and a range of uids that user is allowed to use   subgid: each line contains a user name, and a range of gids that user is allowed to use   adam:200:100   sub -\u003e subordinate",
+      "question": "What are /etc/subuid and /etc/subgid for? Give an example of a line. What does \"sub\" stand for?",
+      "answer": "subuid: each line contains a user name, and a range of uids that user is allowed to use   subgid: each line contains a user name, and a range of gids that user is allowed to use   adam:200:100   sub -> subordinate",
       "reviews": []
     },
     {
@@ -1232,7 +1232,7 @@
       "version": 0,
       "active": true,
       "question": "How to add/delete a user to/from a group?",
-      "answer": "addgroup \u003cuser\u003e \u003cgroup\u003e   delgroup \u003cuser\u003e \u003cgroup\u003e",
+      "answer": "addgroup <user> <group>   delgroup <user> <group>",
       "reviews": []
     },
     {
@@ -1240,7 +1240,7 @@
       "version": 0,
       "active": true,
       "question": "How to add/delete a group?",
-      "answer": "addgroup \u003cgroup\u003e delgroup \u003cgroup\u003e",
+      "answer": "addgroup <group> delgroup <group>",
       "reviews": []
     },
     {
@@ -1248,7 +1248,7 @@
       "version": 0,
       "active": true,
       "question": "Create a user",
-      "answer": "adduser \u003cuser\u003e",
+      "answer": "adduser <user>",
       "reviews": []
     },
     {
@@ -1271,7 +1271,7 @@
       "id": "y1w3b69ijm",
       "version": 0,
       "active": true,
-      "question": "\"In iproute2's `ip route`, what does \"\"src\"\" mean? What does \"\"via\"\" mean?\"",
+      "question": "In iproute2's `ip route`, what does \"src\" mean? What does \"via\" mean?",
       "answer": "src: lets you specify the source IP address when sending to this route, since the device may have multiple IP addresses assigned in this subnet   via: lets you specify the next-hop address for the route; probably only used for ARP",
       "reviews": []
     },
@@ -1296,7 +1296,7 @@
       "version": 0,
       "active": true,
       "question": "What is a linux bridge? How do you make one? How do you add interfaces to it? How do you remove an interface from it?",
-      "answer": "A linux bridge can be thought of as an ethernet switch, with a port on the switch that can be assigned a L3 address. It connects interfaces together via a layer 2 network.  ip link add \u003cname\u003e type bridge ip link set eth0 master \u003cname\u003e ip link set eth0 nomaster",
+      "answer": "A linux bridge can be thought of as an ethernet switch, with a port on the switch that can be assigned a L3 address. It connects interfaces together via a layer 2 network.  ip link add <name> type bridge ip link set eth0 master <name> ip link set eth0 nomaster",
       "reviews": []
     },
     {
@@ -1304,7 +1304,7 @@
       "version": 0,
       "active": true,
       "question": "What is a veth interface? How do you create one?",
-      "answer": "Think of it as two interfaces connected by a single ethernet cable. All traffic that goes to one goes to the other, and vice versa. Useful for containers, since one interface can be moved into a different network namespace.   ip link add \u003cname\u003e type veth peer name \u003cpeer_name\u003e",
+      "answer": "Think of it as two interfaces connected by a single ethernet cable. All traffic that goes to one goes to the other, and vice versa. Useful for containers, since one interface can be moved into a different network namespace.   ip link add <name> type veth peer name <peer_name>",
       "reviews": []
     },
     {
@@ -1320,7 +1320,7 @@
       "version": 0,
       "active": true,
       "question": "Command to reload a systemd unit's config when changed? What are its limitations?",
-      "answer": "systemctl daemon-reload   Doesn't restart the daemons themselves; you must run systemctl restart \u003cunit\u003e to do that.",
+      "answer": "systemctl daemon-reload   Doesn't restart the daemons themselves; you must run systemctl restart <unit> to do that.",
       "reviews": []
     },
     {
@@ -1352,7 +1352,7 @@
       "version": 0,
       "active": true,
       "question": "In regex, what does each of the 4 kinds of brackets do?",
-      "answer": "() -\u003e used for grouping and capturing [] -\u003e used for character classes {} -\u003e used for repetition operators \u003c\u003e -\u003e used for naming groups",
+      "answer": "() -> used for grouping and capturing [] -> used for character classes {} -> used for repetition operators <> -> used for naming groups",
       "reviews": []
     },
     {
@@ -1408,7 +1408,7 @@
       "version": 0,
       "active": true,
       "question": "How is a VLAN configured in debian?",
-      "answer": "iface \u003cifname\u003e.\u003cvlan_id\u003e inet (static|manual|dhcp)     other config here   If \u003cvlan_id\u003e is present, NetworkManager is intelligent enough to know that means to configure it as a VLAN.",
+      "answer": "iface <ifname>.<vlan_id> inet (static|manual|dhcp)     other config here   If <vlan_id> is present, NetworkManager is intelligent enough to know that means to configure it as a VLAN.",
       "reviews": []
     },
     {
@@ -1456,14 +1456,14 @@
       "version": 0,
       "active": true,
       "question": "What is the basic format of the `find` command?",
-      "answer": "find [\u003cpath_to_search\u003e...] [\u003cexpression\u003e]   where path_to_search is ended by the first expression that starts with -, ! or (",
+      "answer": "find [<path_to_search>...] [<expression>]   where path_to_search is ended by the first expression that starts with -, ! or (",
       "reviews": []
     },
     {
       "id": "7zc18zudtk",
       "version": 0,
       "active": true,
-      "question": "\"Use the `find` command to find all files rooted at current directory with the file extension \"\".py\"\"\"",
+      "question": "Use the `find` command to find all files rooted at current directory with the file extension \".py",
       "answer": "find . -name '*.py'",
       "reviews": []
     },
@@ -1472,7 +1472,7 @@
       "version": 0,
       "active": true,
       "question": "How do you do NOT, AND and OR in the `find` command?",
-      "answer": "NOT -\u003e ! \u003cexpression\u003e AND -\u003e \u003cexpression\u003e -a \u003cexpression\u003e OR -\u003e \u003cexpression\u003e -o \u003cexpression\u003e",
+      "answer": "NOT -> ! <expression> AND -> <expression> -a <expression> OR -> <expression> -o <expression>",
       "reviews": []
     },
     {
@@ -1536,7 +1536,7 @@
       "version": 0,
       "active": true,
       "question": "What is vmlinux? What is vmlinuz?",
-      "answer": "vmlinux is a statically linked executable file that contains the linux kernel. If compressed (gzip), is named vmlinuz (z -\u003e gzip).",
+      "answer": "vmlinux is a statically linked executable file that contains the linux kernel. If compressed (gzip), is named vmlinuz (z -> gzip).",
       "reviews": []
     },
     {
@@ -1560,7 +1560,7 @@
       "version": 0,
       "active": true,
       "question": "curl: POST some json",
-      "answer": "\"curl -X POST -d '{\"\"hello\"\": \"\"world\"\"}' \\     -H 'Content-Type: application/json' \\     http://example.com/endpoint\"",
+      "answer": "curl -X POST -d '{\"hello\": \"world\"}' \\     -H 'Content-Type: application/json' \\     http://example.com/endpoint",
       "reviews": []
     },
     {
@@ -1568,7 +1568,7 @@
       "version": 0,
       "active": true,
       "question": "What are the five basic parts of glob patterns?",
-      "answer": "* -\u003e zero or more of any character ** -\u003e matches zero or more directories ? -\u003e matches any single character [abc] -\u003e matches a single character that is a, b or c [a-z] -\u003e matches a single character in the range a-z",
+      "answer": "* -> zero or more of any character ** -> matches zero or more directories ? -> matches any single character [abc] -> matches a single character that is a, b or c [a-z] -> matches a single character in the range a-z",
       "reviews": []
     },
     {
@@ -1624,7 +1624,7 @@
       "version": 0,
       "active": true,
       "question": "What command should always be used to look at iptables rules? Why?",
-      "answer": "iptables -v -n --line-numbers -L \u003cchain\u003e -t \u003ctable\u003e   -v: actually shows you the entire rule -n: doesn't resolve port numbers to useless names --line-numbers: shows line numbers (needed for editing rules)",
+      "answer": "iptables -v -n --line-numbers -L <chain> -t <table>   -v: actually shows you the entire rule -n: doesn't resolve port numbers to useless names --line-numbers: shows line numbers (needed for editing rules)",
       "reviews": []
     },
     {
@@ -1632,7 +1632,7 @@
       "version": 0,
       "active": true,
       "question": "What is the naming format for source rpm packages? What is the naming format for binary rpm packages?",
-      "answer": "\"Both are in the format:  \u003cname\u003e-\u003cversion\u003e-\u003crelease\u003e.\u003carch\u003e.rpm   In the case of source packages, \u003carch\u003e is \"\"src\"\".\"",
+      "answer": "Both are in the format:  <name>-<version>-<release>.<arch>.rpm   In the case of source packages, <arch> is \"src\".",
       "reviews": []
     },
     {
@@ -1656,7 +1656,7 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between rpm, yum and dnf?",
-      "answer": "\"rpm requires manual management. It cannot get .rpm files from the internet - to use it, you must always have a .rpm file on your filesystem that you reference. It also does not do any dependency resolution beyond checking that a package's dependencies are installed prior to installing that package. This can lead to \"\"dependency hell\"\".    yum and dnf call rpm for the functions that rpm takes care of. However, they also take care of dependency resolution, and of tracking remote repositories and downloading rpms from them. These are the tools you should generally be using if you can.\"",
+      "answer": "rpm requires manual management. It cannot get .rpm files from the internet - to use it, you must always have a .rpm file on your filesystem that you reference. It also does not do any dependency resolution beyond checking that a package's dependencies are installed prior to installing that package. This can lead to \"dependency hell\".    yum and dnf call rpm for the functions that rpm takes care of. However, they also take care of dependency resolution, and of tracking remote repositories and downloading rpms from them. These are the tools you should generally be using if you can.",
       "reviews": []
     },
     {
@@ -1760,7 +1760,7 @@
       "version": 0,
       "active": true,
       "question": "How do you totally delete your bash history?",
-      "answer": "Log out of all bash sessions but one, then:   cat /dev/null \u003e ~/.bash_history history -c exit",
+      "answer": "Log out of all bash sessions but one, then:   cat /dev/null > ~/.bash_history history -c exit",
       "reviews": []
     },
     {
@@ -1768,7 +1768,7 @@
       "version": 0,
       "active": true,
       "question": "YAML: if I have a key, myKey, with arbitrary data under it, what is the easiest way to include it under multiple other keys?",
-      "answer": "myKey: \u0026my_key   arbitrary: data   other_key_1:   \u003c: *my_key   other_key_2:   \u003c: *my_key",
+      "answer": "myKey: &my_key   arbitrary: data   other_key_1:   <: *my_key   other_key_2:   <: *my_key",
       "reviews": []
     },
     {
@@ -1880,7 +1880,7 @@
       "version": 0,
       "active": true,
       "question": "What is wayland? What is a program that implements it called?",
-      "answer": "\"Wayland is a communication protocol that specifies the communication between a display server and its clients.   A display server using the wayland protocol is called a \"\"wayland compositor\"\".\"",
+      "answer": "Wayland is a communication protocol that specifies the communication between a display server and its clients.   A display server using the wayland protocol is called a \"wayland compositor\".",
       "reviews": []
     },
     {
@@ -1936,7 +1936,7 @@
       "version": 0,
       "active": true,
       "question": "Where is the list of apt repositories kept? What restrictions are there on the names of these files? What is the format of these files?",
-      "answer": "\"/etc/apt/sources.list /etc/apt/sources.list.d/   All relevant files must end with \"\".list\"\".   Each line represents one repository. They are split into four space-separated parts: 1) defines the type (either deb or deb-src) of the repository 2) the repository url 3) the distribution code name, such as beaver, xenial etc 4+) the repository components or categories; usually third-party repositories have only one category\"",
+      "answer": "/etc/apt/sources.list /etc/apt/sources.list.d/   All relevant files must end with \".list\".   Each line represents one repository. They are split into four space-separated parts: 1) defines the type (either deb or deb-src) of the repository 2) the repository url 3) the distribution code name, such as beaver, xenial etc 4+) the repository components or categories; usually third-party repositories have only one category",
       "reviews": []
     },
     {
@@ -1951,8 +1951,8 @@
       "id": "mz4fkkkgza",
       "version": 0,
       "active": true,
-      "question": "\"When a distribution code name for a Ubuntu repository has \"\"backports\"\" in it, what does it mean?\"",
-      "answer": "\"It means that the repository is selectively providing newer versions of software for older Ubuntu releases. Hence, the repository is porting newer software \"\"back\"\" to older versions.   The software is usually standalone applications which will not affect the rest of the system.\"",
+      "question": "When a distribution code name for a Ubuntu repository has \"backports\" in it, what does it mean?",
+      "answer": "It means that the repository is selectively providing newer versions of software for older Ubuntu releases. Hence, the repository is porting newer software \"back\" to older versions.   The software is usually standalone applications which will not affect the rest of the system.",
       "reviews": []
     },
     {
@@ -1984,7 +1984,7 @@
       "version": 0,
       "active": true,
       "question": "What are blocks? Why do they exist?",
-      "answer": "\"A block is the smallest unit of memory that an operating system can write.  An operating system can address a limited number of \"\"drive addresses\"\", for example, only 65 536. If your sector size is only 512 bytes, then this severely limits your addressable storage. The solution is to group sectors into blocks, and address blocks rather than sectors.\"",
+      "answer": "A block is the smallest unit of memory that an operating system can write.  An operating system can address a limited number of \"drive addresses\", for example, only 65 536. If your sector size is only 512 bytes, then this severely limits your addressable storage. The solution is to group sectors into blocks, and address blocks rather than sectors.",
       "reviews": []
     },
     {
@@ -1992,7 +1992,7 @@
       "version": 0,
       "active": true,
       "question": "What is a page?",
-      "answer": "\"Can mean a few things:   1) A fixed-length contiguous block of virtual memory (i.e. from the OS's point of view), described by a single entry in the page table. Is the smallest unit of data for memory management in a virtual memory OS.   2) The smallest fixed-length contiguous block of physical memory on a (presumably volatile) storage device. Also known as a \"\"page frame\"\".\"",
+      "answer": "Can mean a few things:   1) A fixed-length contiguous block of virtual memory (i.e. from the OS's point of view), described by a single entry in the page table. Is the smallest unit of data for memory management in a virtual memory OS.   2) The smallest fixed-length contiguous block of physical memory on a (presumably volatile) storage device. Also known as a \"page frame\".",
       "reviews": []
     },
     {
@@ -2000,7 +2000,7 @@
       "version": 0,
       "active": true,
       "question": "Why do we have /dev/nvme0, /dev/nvme0n1, and /dev/nvme0n1p1?",
-      "answer": "\"NVMe has the concept of namespaces. The \"\"n1\"\" means namespace 1. The \"\"p1\"\" refers to the partition number.\"",
+      "answer": "NVMe has the concept of namespaces. The \"n1\" means namespace 1. The \"p1\" refers to the partition number.",
       "reviews": []
     },
     {
@@ -2032,7 +2032,7 @@
       "version": 0,
       "active": false,
       "question": "What is the convention for naming .deb packages?",
-      "answer": "\u003cname\u003e_\u003cversion\u003e-\u003crevision\u003e_\u003carch\u003e.deb",
+      "answer": "<name>_<version>-<revision>_<arch>.deb",
       "reviews": []
     },
     {
@@ -2063,8 +2063,8 @@
       "id": "cr4kn7v6cz",
       "version": 0,
       "active": true,
-      "question": "\"GHA: write a workflow that prints \"\"hello world\"\" when a commit is added on main, or when any tag is added.\"",
-      "answer": "\"name: Print hello world on:   push:     branches: [\"\"main\"\"]     tags: [\"\"*\"\"] jobs:   print-hello-world:     runs-on: ubuntu-latest     steps:       - name: print hello world         run: echo \"\"hello world\"\"\"",
+      "question": "GHA: write a workflow that prints \"hello world\" when a commit is added on main, or when any tag is added.",
+      "answer": "name: Print hello world on:   push:     branches: [\"main\"]     tags: [\"*\"] jobs:   print-hello-world:     runs-on: ubuntu-latest     steps:       - name: print hello world         run: echo \"hello world",
       "reviews": []
     },
     {
@@ -2080,7 +2080,7 @@
       "version": 0,
       "active": true,
       "question": "curl: what option is used to download result to a file?",
-      "answer": "-o \u003cpath\u003e",
+      "answer": "-o <path>",
       "reviews": []
     },
     {
@@ -2088,7 +2088,7 @@
       "version": 0,
       "active": true,
       "question": "GHA: how do you make an env var from a script step accessible to subsequent steps? How do you access it?",
-      "answer": "\"Put the following in your script:   echo \"\"var_name=$var_name_in_script\"\" \u003e $GITHUB_ENV   It can then be accessed via `env.var_name`.\"",
+      "answer": "Put the following in your script:   echo \"var_name=$var_name_in_script\" > $GITHUB_ENV   It can then be accessed via `env.var_name`.",
       "reviews": []
     },
     {
@@ -2112,7 +2112,7 @@
       "version": 0,
       "active": true,
       "question": "For each of the three types of names for .so files: - What is the naming format? - What does the file contain? - If applicable, how is the file created?",
-      "answer": "real name: lib\u003cname\u003e.so.\u003cmajor\u003e.\u003cminor\u003e[.\u003cpatch\u003e] The real name is the file that contains the actual library code.   soname: lib\u003cname\u003e.so.\u003cmajor\u003e The soname is a symlink to (generally the latest version of) the real name version of the .so. It is created by `ldconfig`. It should be what is referenced in a compiled program.   linker name: lib\u003cname\u003e.so The linker name is the name that is used by the compiler at compile time to figure out what soname to require in executables. On a system it should be a symlink to the latest soname. Linker name is not created by `ldconfig`. This is because we want to maintain control over what soname the linker name is symlinked to, so that we can for example link against a different version of a library when in development.",
+      "answer": "real name: lib<name>.so.<major>.<minor>[.<patch>] The real name is the file that contains the actual library code.   soname: lib<name>.so.<major> The soname is a symlink to (generally the latest version of) the real name version of the .so. It is created by `ldconfig`. It should be what is referenced in a compiled program.   linker name: lib<name>.so The linker name is the name that is used by the compiler at compile time to figure out what soname to require in executables. On a system it should be a symlink to the latest soname. Linker name is not created by `ldconfig`. This is because we want to maintain control over what soname the linker name is symlinked to, so that we can for example link against a different version of a library when in development.",
       "reviews": []
     },
     {
@@ -2152,7 +2152,7 @@
       "version": 0,
       "active": true,
       "question": "What command can be used to format a partition as a specific filesystem?",
-      "answer": "mkfs.\u003cfsname\u003e   For example, mkfs.ext4 .",
+      "answer": "mkfs.<fsname>   For example, mkfs.ext4 .",
       "reviews": []
     },
     {
@@ -2191,8 +2191,8 @@
       "id": "zq3ogg3rdt",
       "version": 0,
       "active": true,
-      "question": "\"In debian, what is the \"\"stable\"\" release class for? What are some other release classes?\"",
-      "answer": "\"The \"\"stable\"\" release class points at the current latest stable release (currently bullseye).   oldoldstable, oldstable, stable, testing, unstable\"",
+      "question": "In debian, what is the \"stable\" release class for? What are some other release classes?",
+      "answer": "The \"stable\" release class points at the current latest stable release (currently bullseye).   oldoldstable, oldstable, stable, testing, unstable",
       "reviews": []
     },
     {
@@ -2208,7 +2208,7 @@
       "version": 0,
       "active": true,
       "question": "What is the format of a semver version? What does each part mean? Give regex that should match each part.",
-      "answer": "\u003cversion\u003e[-\u003cprerelease-version\u003e][+\u003cbuild-metadata\u003e]   version: the version [0-9]+\\.[0-9]+\\.[0-9]+   prerelease-version: for betas etc; always has lower precedence than versions without prerelease version [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*   build-metadata: for build info; ignored when determining version precedence [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*",
+      "answer": "<version>[-<prerelease-version>][+<build-metadata>]   version: the version [0-9]+\\.[0-9]+\\.[0-9]+   prerelease-version: for betas etc; always has lower precedence than versions without prerelease version [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*   build-metadata: for build info; ignored when determining version precedence [0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*",
       "reviews": []
     },
     {
@@ -2296,7 +2296,7 @@
       "version": 0,
       "active": true,
       "question": "How does sudo caching work?",
-      "answer": "It is configurable, but by default sudo caches calls in /run/sudo/ts/\u003cusername\u003e with a 15 minute timestamp.",
+      "answer": "It is configurable, but by default sudo caches calls in /run/sudo/ts/<username> with a 15 minute timestamp.",
       "reviews": []
     },
     {
@@ -2312,7 +2312,7 @@
       "version": 0,
       "active": true,
       "question": "systemd: what is a slice for? How are slices named?",
-      "answer": "\"A Slice allows you to manage resource usage for a group of processes. A Slice corresponds to a node in the cgroups tree. Units that manage processes may be assigned to a Slice.   Slices form a tree. Each slice contains the name of its parent, which is separated by a dash from its own name. So \"\"foo-bar.slice\"\" would have the parent slice \"\"foo.slice\"\", which would have the parent \"\"-.slice\"\" (the root slice).\"",
+      "answer": "A Slice allows you to manage resource usage for a group of processes. A Slice corresponds to a node in the cgroups tree. Units that manage processes may be assigned to a Slice.   Slices form a tree. Each slice contains the name of its parent, which is separated by a dash from its own name. So \"foo-bar.slice\" would have the parent slice \"foo.slice\", which would have the parent \"-.slice\" (the root slice).",
       "reviews": []
     },
     {
@@ -2328,14 +2328,14 @@
       "version": 0,
       "active": true,
       "question": "systemd: what is the Socket unit for?",
-      "answer": "\"A socket unit represents a unix socket, a network socket, or a named pipe that is controlled and supervised by systemd. It is used for socket-based activation, which is lingo for \"\"a process that is started when traffic is first sent on a socket\"\". Accordingly, each Socket must have an associated Service (which has the same name by default).\"",
+      "answer": "A socket unit represents a unix socket, a network socket, or a named pipe that is controlled and supervised by systemd. It is used for socket-based activation, which is lingo for \"a process that is started when traffic is first sent on a socket\". Accordingly, each Socket must have an associated Service (which has the same name by default).",
       "reviews": []
     },
     {
       "id": "9i0cwhawel",
       "version": 0,
       "active": true,
-      "question": "\"systemd: what does \"\"systemd manager\"\" refer to?\"",
+      "question": "systemd: what does \"systemd manager\" refer to?",
       "answer": "It refers to an instance of systemd. There is a root (system) instance, as well as one instance for each user.",
       "reviews": []
     },
@@ -2448,7 +2448,7 @@
       "version": 0,
       "active": true,
       "question": "logind: what are the relevant objects?",
-      "answer": "\"seat: all hardware devices assigned to a specific workstation. Consists of at least one graphics device, and usually also includes a keyboard and mouse. Can also include video cameras, sound cards and more.   session: defined by the time a user is logged in until he or she logs out. A session is bound to one or no seats (\"\"virtual\"\" ssh logins). Multiple sessions can be attached to the same seat, but only one of them can be active.   user:  the person using the computer. A single user can have multiple sessions open at the same time.\"",
+      "answer": "seat: all hardware devices assigned to a specific workstation. Consists of at least one graphics device, and usually also includes a keyboard and mouse. Can also include video cameras, sound cards and more.   session: defined by the time a user is logged in until he or she logs out. A session is bound to one or no seats (\"virtual\" ssh logins). Multiple sessions can be attached to the same seat, but only one of them can be active.   user:  the person using the computer. A single user can have multiple sessions open at the same time.",
       "reviews": []
     },
     {
@@ -2480,7 +2480,7 @@
       "version": 0,
       "active": true,
       "question": "systemd: how do you list the dependencies of a unit? How do you list the units that depend on a unit?",
-      "answer": "systemctl list-dependencies \u003cunit\u003e   systemctl list-dependencies --reverse \u003cunit\u003e",
+      "answer": "systemctl list-dependencies <unit>   systemctl list-dependencies --reverse <unit>",
       "reviews": []
     },
     {
@@ -2535,7 +2535,7 @@
       "id": "gmyobm4gz0",
       "version": 0,
       "active": true,
-      "question": "\"What is the difference between the concepts of \"\"poweroff\"\" and \"\"halt\"\"?\"",
+      "question": "What is the difference between the concepts of \"poweroff\" and \"halt\"?",
       "answer": "Poweroff refers to actually shutting down the system.   Halt refers to shutting down all services and possibly PID 1, but leaving the system running.",
       "reviews": []
     },
@@ -2576,7 +2576,7 @@
       "version": 0,
       "active": false,
       "question": "flatpak: what are the two ways an application can get access to the containing OS? What are some examples?",
-      "answer": "\"These things can be passed into the container, or the application can use \"\"portals\"\". Portals are a mechanism through which applications can interact with the host environment. They are D-Bus services that the enclosing system then deals with. Some examples of portals include the file picker, and printing.\"",
+      "answer": "These things can be passed into the container, or the application can use \"portals\". Portals are a mechanism through which applications can interact with the host environment. They are D-Bus services that the enclosing system then deals with. Some examples of portals include the file picker, and printing.",
       "reviews": []
     },
     {
@@ -2600,7 +2600,7 @@
       "version": 0,
       "active": true,
       "question": "flatpak: how are individual flatpaks represented? What is the name for this? What does it represent under the hood?",
-      "answer": "\"As an \"\"identifier triple\"\". For example:   com.company.App/i386/stable   This represents a branch in the underlying OSTree repository.\"",
+      "answer": "As an \"identifier triple\". For example:   com.company.App/i386/stable   This represents a branch in the underlying OSTree repository.",
       "reviews": []
     },
     {
@@ -2616,7 +2616,7 @@
       "version": 0,
       "active": true,
       "question": "What are huge pages? What does TLB stand for, and what does it refer to?",
-      "answer": "\"Modern processor architectures support multiple page sizes, sometimes quite large. For example, x86 supports 4K and 2M sizes. These larger sizes can be exploited to increase performance on memory-bound applications because the pressure on the TLB cache is reduced (because fewer pages).  Generally, you have to choose the number of larger pages you want to be available at boot time. The Linux implementation of this is called \"\"huge pages\"\".  TLB: translation lookaside buffer  TLB cache: exists in the MMU (i.e. hardware) and stores recent translations from virtual memory to physical memory\"",
+      "answer": "Modern processor architectures support multiple page sizes, sometimes quite large. For example, x86 supports 4K and 2M sizes. These larger sizes can be exploited to increase performance on memory-bound applications because the pressure on the TLB cache is reduced (because fewer pages).  Generally, you have to choose the number of larger pages you want to be available at boot time. The Linux implementation of this is called \"huge pages\".  TLB: translation lookaside buffer  TLB cache: exists in the MMU (i.e. hardware) and stores recent translations from virtual memory to physical memory",
       "reviews": []
     },
     {

@@ -22,8 +22,8 @@
       "id": "hd6oy18osr",
       "version": 0,
       "active": false,
-      "question": "\"Substitute \"\"foo\"\" for \"\"bar\"\" on every line that starts with #\"",
-      "answer": "\":g/^#/s/bar/foo/g\"",
+      "question": "Substitute \"foo\" for \"bar\" on every line that starts with #",
+      "answer": ":g/^#/s/bar/foo/g",
       "reviews": []
     },
     {
@@ -39,7 +39,7 @@
       "version": 0,
       "active": false,
       "question": "How do you edit a macro?",
-      "answer": "\"Recorded macros are stored in the register with the same assigned letter. They are really the same thing as a register. So to execute text in a register, you can do `@<letter>`, and to edit a macro you can do `\"\"<letter>p` and then re-yank that line once edited.\"",
+      "answer": "Recorded macros are stored in the register with the same assigned letter. They are really the same thing as a register. So to execute text in a register, you can do `@<letter>`, and to edit a macro you can do `\"<letter>p` and then re-yank that line once edited.",
       "reviews": []
     },
     {
@@ -71,7 +71,7 @@
       "version": 0,
       "active": false,
       "question": "Get the text from 3 deletes ago?",
-      "answer": "\"\"\"3p\"",
+      "answer": "\"3p",
       "reviews": []
     },
     {
@@ -127,14 +127,14 @@
       "version": 0,
       "active": false,
       "question": "How do you prevent unnecessary indents when pasting code into vim?",
-      "answer": "\"vim has a \"\"paste mode\"\" that turns off autoindent. Turn it on with:   :set paste   Then turn it off with:   :set nopaste\"",
+      "answer": "vim has a \"paste mode\" that turns off autoindent. Turn it on with:   :set paste   Then turn it off with:   :set nopaste",
       "reviews": []
     },
     {
       "id": "oq1ocsov6f",
       "version": 0,
       "active": false,
-      "question": "\"What does the \"\"g\"\" flag do in the substitute command?\"",
+      "question": "What does the \"g\" flag do in the substitute command?",
       "answer": "It makes all occurences in a single line be replaced. Without this, replacement occurs only for the first occurrence in each line.",
       "reviews": []
     },
@@ -151,7 +151,7 @@
       "version": 0,
       "active": false,
       "question": "What is an option? What command is used to manipulate options? How do you print the value of an option?",
-      "answer": "Options are special internal variables that can be manipulated to achieve special effects.   You use the set command, for example: set tabstop=4   You can print the value of the option using either of the following: set myOption? echo \u0026myOption",
+      "answer": "Options are special internal variables that can be manipulated to achieve special effects.   You use the set command, for example: set tabstop=4   You can print the value of the option using either of the following: set myOption? echo &myOption",
       "reviews": []
     },
     {
@@ -175,7 +175,7 @@
       "version": 0,
       "active": false,
       "question": "How does variable scoping work?",
-      "answer": "\"There are these scopes that contain their own set of variables. Each scope is represented by a single letter. You can address the var \"\"myVar\"\" in scope \"\"b\"\" using the string `b:myVar`.\"",
+      "answer": "There are these scopes that contain their own set of variables. Each scope is represented by a single letter. You can address the var \"myVar\" in scope \"b\" using the string `b:myVar`.",
       "reviews": []
     },
     {
@@ -214,8 +214,8 @@
       "id": "sf9x88v9yb",
       "version": 0,
       "active": false,
-      "question": "\"Define a function that takes a name, and returns a string that says \"\"hello <name>\"\".\"",
-      "answer": "\"function Name(name)    return \"\"hello \"\" + a:name endfunction\"",
+      "question": "Define a function that takes a name, and returns a string that says \"hello <name>\".",
+      "answer": "function Name(name)    return \"hello \" + a:name endfunction",
       "reviews": []
     },
     {
@@ -334,8 +334,8 @@
       "id": "07n7pscrea",
       "version": 0,
       "active": false,
-      "question": "\"What does the character # mean inside a function name?\"",
-      "answer": "\"It means that it is loaded on demand from an autoload function. A couple of examples:  ctrlp#sample() -> looks for name ctrlp#sample() in file autoload/ctrlp.vim  ctrlp#sample#init() -> looks for name ctrlp#sample#init() in file autoload/ctrlp/sample.vim\"",
+      "question": "What does the character # mean inside a function name?",
+      "answer": "It means that it is loaded on demand from an autoload function. A couple of examples:  ctrlp#sample() -> looks for name ctrlp#sample() in file autoload/ctrlp.vim  ctrlp#sample#init() -> looks for name ctrlp#sample#init() in file autoload/ctrlp/sample.vim",
       "reviews": []
     },
     {
@@ -374,7 +374,7 @@
       "id": "p8ks78gu5p",
       "version": 0,
       "active": false,
-      "question": "What does \u0026 do?",
+      "question": "What does & do?",
       "answer": "It allows you to treat an option as a variable.",
       "reviews": []
     },

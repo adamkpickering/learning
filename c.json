@@ -63,7 +63,7 @@
       "version": 0,
       "active": false,
       "question": "Why is recursive make considered harmful?   How would you do it?",
-      "answer": "You partition your dependency tree into multiple trees, which:   1) Prevents dependencies between make instances from being expressed correctly   2) Performance suffers slightly since each make creates its own dependency tree   subsystem:      cd $(subdir) \u0026\u0026 $(MAKE)",
+      "answer": "You partition your dependency tree into multiple trees, which:   1) Prevents dependencies between make instances from being expressed correctly   2) Performance suffers slightly since each make creates its own dependency tree   subsystem:      cd $(subdir) && $(MAKE)",
       "reviews": []
     },
     {
@@ -111,7 +111,7 @@
       "version": 0,
       "active": false,
       "question": "makefile: how do you pass a variable in from the command line? What takes priority between passed in variable and one defined in the makefile? How do I manipulate this?",
-      "answer": "\"make v=x   Command arguments override all in-file variable definitions, unless they are defined with the \"\"override\"\" directive.\"",
+      "answer": "make v=x   Command arguments override all in-file variable definitions, unless they are defined with the \"override\" directive.",
       "reviews": []
     },
     {
@@ -198,7 +198,7 @@
       "id": "n08j1ehizf",
       "version": 0,
       "active": false,
-      "question": "\"What does the #pragma preprocessor directive do?\"",
+      "question": "What does the #pragma preprocessor directive do?",
       "answer": "It is used to provide additional info to the compiler.",
       "reviews": []
     },
@@ -206,8 +206,8 @@
       "id": "lohuazh2bk",
       "version": 0,
       "active": false,
-      "question": "\"What is the difference between `#include <cstdio>` and `#include \"\"myfile.h\"\"`?\"",
-      "answer": "\"The only real difference is that <...> searches for the header file in a sequence of implementation-defined places, whereas \"\"...\"\" searches for the header file in an implementation-defined fashion.   On Unix-like systems, <...> searches for the file in all system-specific locations, whereas \"\"...\"\" searches for the file in the local directory, and then in any system-specific locations.    In all cases, the entire contents of the file are included at the location of the #include directive.\"",
+      "question": "What is the difference between `#include <cstdio>` and `#include \"myfile.h\"`?",
+      "answer": "The only real difference is that <...> searches for the header file in a sequence of implementation-defined places, whereas \"...\" searches for the header file in an implementation-defined fashion.   On Unix-like systems, <...> searches for the file in all system-specific locations, whereas \"...\" searches for the file in the local directory, and then in any system-specific locations.    In all cases, the entire contents of the file are included at the location of the #include directive.",
       "reviews": []
     },
     {
@@ -238,8 +238,8 @@
       "id": "wuhmh61if1",
       "version": 0,
       "active": false,
-      "question": "\"What is the difference between char* p = \"\"hello world\"\" and char p[] = \"\"hello world\"\"?\"",
-      "answer": "\"char* p = \"\"hello world\"\" allocates the string literal to a read-only location and puts this location's address into p. If you try to write to it, the behaviour is undefined.   char p[] = \"\"hello world\"\" is a shortcut for `char p[] = {'h', 'e', ..., '\\0'}`. It puts \"\"hello world\"\" directly onto the stack. However, p will still behave like a pointer if passed to a function as an argument of type char*.\"",
+      "question": "What is the difference between char* p = \"hello world\" and char p[] = \"hello world\"?",
+      "answer": "char* p = \"hello world\" allocates the string literal to a read-only location and puts this location's address into p. If you try to write to it, the behaviour is undefined.   char p[] = \"hello world\" is a shortcut for `char p[] = {'h', 'e', ..., '\\0'}`. It puts \"hello world\" directly onto the stack. However, p will still behave like a pointer if passed to a function as an argument of type char*.",
       "reviews": []
     },
     {

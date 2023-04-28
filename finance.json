@@ -111,7 +111,7 @@
       "version": 0,
       "active": false,
       "question": "How does the CPP work? How much is paid for it? How does it work for self-employed people?",
-      "answer": "\"With CPP all employees make contributions, at 5.25% on the first $58 700 of their income (minus the first $3 500, the \"\"basic exemption\"\"), for a maximum of $2 898. Employers match this.   Self-employed people must pay both employer and employee part.\"",
+      "answer": "With CPP all employees make contributions, at 5.25% on the first $58 700 of their income (minus the first $3 500, the \"basic exemption\"), for a maximum of $2 898. Employers match this.   Self-employed people must pay both employer and employee part.",
       "reviews": []
     },
     {
@@ -255,7 +255,7 @@
       "version": 0,
       "active": false,
       "question": "When a company makes a profit, what are its options, and what does each do?",
-      "answer": "1) Pay a dividend. This is akin to taking money from your right pocket and putting it in your left pocket. If the company didn't pay a dividend, they would do other things with that money that would also theoretically increase the value (but not necessarily price) of your stock.   2) Do a stock buyback. Since the remaining shares represent partial ownership of the company, and there are now fewer of them, this causes the value of the remaining shares to increase.   3) Reinvest the profits in continued growth. This can take the form of investment in capital, acquisitions, and R\u0026D.",
+      "answer": "1) Pay a dividend. This is akin to taking money from your right pocket and putting it in your left pocket. If the company didn't pay a dividend, they would do other things with that money that would also theoretically increase the value (but not necessarily price) of your stock.   2) Do a stock buyback. Since the remaining shares represent partial ownership of the company, and there are now fewer of them, this causes the value of the remaining shares to increase.   3) Reinvest the profits in continued growth. This can take the form of investment in capital, acquisitions, and R&D.",
       "reviews": []
     },
     {
@@ -359,7 +359,7 @@
       "version": 0,
       "active": false,
       "question": "What are three ways to achieve a short position?",
-      "answer": "\"1) Short selling, where you borrow a stock from your broker, with the promise to give it back in the future. You then sell it at the current price. Once it is time to return the stock, you buy it at current prices and return it (called \"\"covering your short\"\"). You have to pay interest and any dividends that the stock pays while you're \"\"holding\"\" it.   2) Use a put option. Buy only after the price goes down, and sell for the previously-agreed-upon sell price.   3) Same thing as with the option, but with futures; buy at the time you have to sell the stock.\"",
+      "answer": "1) Short selling, where you borrow a stock from your broker, with the promise to give it back in the future. You then sell it at the current price. Once it is time to return the stock, you buy it at current prices and return it (called \"covering your short\"). You have to pay interest and any dividends that the stock pays while you're \"holding\" it.   2) Use a put option. Buy only after the price goes down, and sell for the previously-agreed-upon sell price.   3) Same thing as with the option, but with futures; buy at the time you have to sell the stock.",
       "reviews": []
     },
     {
@@ -446,7 +446,7 @@
       "id": "tvtdqcw8du",
       "version": 0,
       "active": false,
-      "question": "What is the S\u0026P500 and how are its constituents chosen?",
+      "question": "What is the S&P500 and how are its constituents chosen?",
       "answer": "An large cap weighted index. Constituents are chosen by a committee, and must: - have large market cap - be listed on NASDAQ or NYSE - be traded above a certain volume leading up to evaluation date",
       "reviews": []
     },
@@ -455,7 +455,7 @@
       "version": 0,
       "active": false,
       "question": "What is the DJIA?",
-      "answer": "\"An index of 30 companies that have large market cap. The \"\"industrial\"\" part of it is a misnomer since many of the companies have nothing to do with heavy industry.\"",
+      "answer": "An index of 30 companies that have large market cap. The \"industrial\" part of it is a misnomer since many of the companies have nothing to do with heavy industry.",
       "reviews": []
     },
     {
@@ -511,7 +511,7 @@
       "version": 0,
       "active": false,
       "question": "How is tax paid on dividends?",
-      "answer": "\"1) The amount of dividends received is \"\"grossed up\"\" by 38% for eligible dividends and by 15% for ineligible dividends. So $10000 becomes an income tax amount of $13800 and $11500, respectively.   2) If the dividend was paid by a Canadian corporation, the marginal tax rate paid on the grossed-up amount is reduced by 15.0198% for eligible dividends and by 9.0301% for ineligible dividends.   Note that these rates omit provincial tax and will change from year to year.\"",
+      "answer": "1) The amount of dividends received is \"grossed up\" by 38% for eligible dividends and by 15% for ineligible dividends. So $10000 becomes an income tax amount of $13800 and $11500, respectively.   2) If the dividend was paid by a Canadian corporation, the marginal tax rate paid on the grossed-up amount is reduced by 15.0198% for eligible dividends and by 9.0301% for ineligible dividends.   Note that these rates omit provincial tax and will change from year to year.",
       "reviews": []
     },
     {
@@ -599,7 +599,7 @@
       "version": 0,
       "active": false,
       "question": "What is reserve requirement/reserve ratio? How is it set? How does it affect the economy? In practice, what is it equal to?",
-      "answer": "\"Reserve requirement is the portion of money deposited by customers that a bank is required to keep in its \"\"vault\"\" or in the central bank's \"\"vaults\"\".   The central bank sets it.   A lower reserve requirement means that more money is created by banks when they loan it out, it gets deposited, they loan that out, etc. Then, all of the things that come with increased money supply apply.   In most countries there is no reserve requirement. It has been dismantled in recent years.\"",
+      "answer": "Reserve requirement is the portion of money deposited by customers that a bank is required to keep in its \"vault\" or in the central bank's \"vaults\".   The central bank sets it.   A lower reserve requirement means that more money is created by banks when they loan it out, it gets deposited, they loan that out, etc. Then, all of the things that come with increased money supply apply.   In most countries there is no reserve requirement. It has been dismantled in recent years.",
       "reviews": []
     },
     {
@@ -678,7 +678,7 @@
       "id": "ipd2e9hqs7",
       "version": 0,
       "active": false,
-      "question": "\"What does the quote, \"\"stability is destabilizing\"\" refer to?\"",
+      "question": "What does the quote, \"stability is destabilizing\" refer to?",
       "answer": "When the economy is growing, things seem good and more and more people invest their money in riskier and riskier investments. Additionally, regulators become more lax because things are good.   However, this can result in the creation of speculative bubbles. Obviously, when these bubbles burst, it is destabilizing.",
       "reviews": []
     },
@@ -687,7 +687,7 @@
       "version": 0,
       "active": false,
       "question": "When a private bank issues a loan, which accounts are affected and how?",
-      "answer": "\"Banks do not only lend out the money that they have in their \"\"vaults\"\"; that is a common misconception. When they loan money, they are literally adding some money to the account of the loanee. In their own books, the loan appears as a liability representing the money loaned out to the loanee, and as an asset representing the promise by the loanee to pay the loan back.   So in this manner, the bank literally creates money, at least, until the loanee has paid that money back. And hopefully by that time the loanee has used the money to achieve economic growth by that time, meaning that everyone is better off.\"",
+      "answer": "Banks do not only lend out the money that they have in their \"vaults\"; that is a common misconception. When they loan money, they are literally adding some money to the account of the loanee. In their own books, the loan appears as a liability representing the money loaned out to the loanee, and as an asset representing the promise by the loanee to pay the loan back.   So in this manner, the bank literally creates money, at least, until the loanee has paid that money back. And hopefully by that time the loanee has used the money to achieve economic growth by that time, meaning that everyone is better off.",
       "reviews": []
     },
     {

@@ -303,7 +303,7 @@
       "version": 0,
       "active": true,
       "question": "four different zones in TTV network; what is in each?",
-      "answer": "head end - receivers \u0026 encoders LBE - mostly A servers branch - miscellaneous metadata, management  VSO - D server, V server, T server",
+      "answer": "head end - receivers & encoders LBE - mostly A servers branch - miscellaneous metadata, management  VSO - D server, V server, T server",
       "reviews": []
     },
     {
@@ -335,7 +335,7 @@
       "version": 0,
       "active": true,
       "question": "IGMP snooping - why and how?",
-      "answer": "\"on many layer 2 networks, IP multicast packets must be broadcast. Since only one host wants the multicast this is inefficient. So, layer 2 devices (esp. DSLAMs, but can be switches etc) are made able to read IGMP joins etc, and adjust the layer 2 traffic forwarding so that they do \"\"unicast\"\", rather than \"\"broadcast\"\", on layer 2 for multicast packets\"",
+      "answer": "on many layer 2 networks, IP multicast packets must be broadcast. Since only one host wants the multicast this is inefficient. So, layer 2 devices (esp. DSLAMs, but can be switches etc) are made able to read IGMP joins etc, and adjust the layer 2 traffic forwarding so that they do \"unicast\", rather than \"broadcast\", on layer 2 for multicast packets",
       "reviews": []
     },
     {
@@ -391,7 +391,7 @@
       "version": 0,
       "active": true,
       "question": "HE",
-      "answer": "\"\"\"head end router\"\" but is actually a cisco switch\"",
+      "answer": "\"head end router\" but is actually a cisco switch",
       "reviews": []
     },
     {
@@ -551,7 +551,7 @@
       "version": 0,
       "active": true,
       "question": "Why are the first and last address of every IPv4 subnet reserved, and what are they for?",
-      "answer": "\"first (all zeros) - is the \"\"subnet name\"\", which refers to the subnet itself; hosts cannot be given this IP address, unless the subnet is a /31 last (all ones) - is the \"\"broadcast address\"\"; used by some procols (DHCP, RIPv1) to send messages to all connected devices in the subnet\"",
+      "answer": "first (all zeros) - is the \"subnet name\", which refers to the subnet itself; hosts cannot be given this IP address, unless the subnet is a /31 last (all ones) - is the \"broadcast address\"; used by some procols (DHCP, RIPv1) to send messages to all connected devices in the subnet",
       "reviews": []
     },
     {
@@ -695,7 +695,7 @@
       "version": 0,
       "active": true,
       "question": "What is SCTP?",
-      "answer": "\"Stands for tream control transmission protocol. It is a layer 4 protocol. It was originally intended for \"\"signaling system 7\"\", which was a protocol for set up and tear down of telephone calls in the PSTN. So it's basically a protocol for set up of pipes across a network. You can think of it as TCP++.\"",
+      "answer": "Stands for tream control transmission protocol. It is a layer 4 protocol. It was originally intended for \"signaling system 7\", which was a protocol for set up and tear down of telephone calls in the PSTN. So it's basically a protocol for set up of pipes across a network. You can think of it as TCP++.",
       "reviews": []
     },
     {
@@ -727,7 +727,7 @@
       "version": 0,
       "active": true,
       "question": "What is PPP?",
-      "answer": "\"Stands for Point to Point Protocol. Is a layer 2 protocol for use between two hosts. The two hosts form a \"\"network\"\" all by themselves.\"",
+      "answer": "Stands for Point to Point Protocol. Is a layer 2 protocol for use between two hosts. The two hosts form a \"network\" all by themselves.",
       "reviews": []
     },
     {
