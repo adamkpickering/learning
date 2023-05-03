@@ -13,6 +13,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2023-05-03T22:39:08.977829133Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2023-04-26T23:16:55.150236654Z"
         }
       ]
@@ -26,6 +31,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:40:02.618039367Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2023-04-26T23:23:42.089727206Z"
         }
@@ -36,8 +46,13 @@
       "version": 0,
       "active": true,
       "question": "Define the fmt.Stringer interface.",
-      "answer": "type Stringer interface {\nString() string\n}",
+      "answer": "type Stringer interface {\n    String() string\n}",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:40:40.488634528Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -50,8 +65,13 @@
       "version": 0,
       "active": true,
       "question": "Define error.",
-      "answer": "type error interface {\nError() string\n}",
+      "answer": "type error interface {\n    Error() string\n}",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:41:10.266174066Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -64,16 +84,28 @@
       "version": 0,
       "active": true,
       "question": "What is the syntax of a closure?",
-      "answer": "func(i int, f float) int {\nstatements\n}",
-      "reviews": []
+      "answer": "func(i int, f float) int {\n    statements\n}",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-05-03T22:41:53.598862834Z"
+        }
+      ]
     },
     {
       "id": "a7txpxz2df",
       "version": 0,
       "active": true,
       "question": "Define io.Reader.",
-      "answer": "type io.Reader interface {\nRead(b []byte) (int, error)\n}",
-      "reviews": []
+      "answer": "type io.Reader interface {\n    Read(b []byte) (int, error)\n}",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-03T22:42:37.170571086Z"
+        }
+      ]
     },
     {
       "id": "ivze8dnu8s",
@@ -81,7 +113,13 @@
       "active": true,
       "question": "What is an interface, under the hood?",
       "answer": "a tuple: (value, type)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:42:57.970899336Z"
+        }
+      ]
     },
     {
       "id": "arc6hd8luo",
@@ -89,7 +127,13 @@
       "active": true,
       "question": "What is the empty interface?",
       "answer": "an interface that has no methods; you can assign any type to an empty interface",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:43:25.005354115Z"
+        }
+      ]
     },
     {
       "id": "bij6jj2rfk",
@@ -97,7 +141,13 @@
       "active": true,
       "question": "What happens if you call a method on a nil interface?",
       "answer": "you get a runtime error",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:43:32.974562164Z"
+        }
+      ]
     },
     {
       "id": "te6f1zz2s1",
@@ -121,22 +171,34 @@
       "active": true,
       "question": "What is the signature of the function that is used to copy elements from one slice to another?",
       "answer": "func copy(dst, src []Type) int",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-03T22:44:28.661458291Z"
+        }
+      ]
     },
     {
       "id": "1cdlwrkcih",
       "version": 0,
       "active": true,
-      "question": "What is weird about this function:\nfunc hello() (n int) {\nn = 4\nreturn n\n}",
+      "question": "What is weird about this function:\nfunc hello() (n int) {\n    n = 4\nreturn\n}",
       "answer": "The return value also acts as a variable declaration.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:45:01.945930978Z"
+        }
+      ]
     },
     {
       "id": "fmdb00fvqx",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the four types in the bufio package?\nWhat are they for?",
-      "answer": "func NewReader(rd io.Reader) *Reader  func NewWriter(wr io.Writer) *Writer func NewReadWriter(rw io.ReadWriter) *ReadWriter func NewScanner(rd io.Reader) *Scanner",
+      "answer": "func NewReader(rd io.Reader) *Reader\nfunc NewWriter(wr io.Writer) *Writer\nfunc NewReadWriter(rw io.ReadWriter) *ReadWriter\nfunc NewScanner(rd io.Reader) *Scanner",
       "reviews": []
     },
     {
@@ -144,8 +206,14 @@
       "version": 0,
       "active": true,
       "question": "How do you get command line args?\nWhat is the type of this variable?",
-      "answer": "os.Args []string",
-      "reviews": []
+      "answer": "os.Args\n[]string",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:46:14.093029912Z"
+        }
+      ]
     },
     {
       "id": "bh2xvx5hrq",
@@ -153,7 +221,13 @@
       "active": true,
       "question": "What stdlib package is used to convert strings to other types?",
       "answer": "strconv",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-05-03T22:46:24.137932355Z"
+        }
+      ]
     },
     {
       "id": "bh2xvx5hgq",
@@ -185,7 +259,13 @@
       "active": true,
       "question": "What are the two ways to create the multi-line string:\n\nhello\nbye",
       "answer": "s := \"hello\\n\" +\n\"bye\"\n\ns := `hello\nbye`",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:46:55.215933564Z"
+        }
+      ]
     },
     {
       "id": "y0n53klwxs",
@@ -201,15 +281,13 @@
       "active": true,
       "question": "When should panic be used, and when should an error be returned?",
       "answer": "Panic is used *only* when the program has reached an unrecoverable state.\nReturning an error is done everywhere else.",
-      "reviews": []
-    },
-    {
-      "id": "32mip3u9k2",
-      "version": 0,
-      "active": true,
-      "question": "Declare a structure, MyStruct, with two elements:\n- an int that is externally accessible\n- a float32 that is not externally accessible",
-      "answer": "type MyStruct struct {\nX int\ny float32\n}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:47:16.758140916Z"
+        }
+      ]
     },
     {
       "id": "2ovxfkh5a7",
@@ -233,7 +311,13 @@
       "active": true,
       "question": "How do type switches work?\nWhat is the syntax?",
       "answer": "Type switches are a special construct. Don't try to understand\nthem by comparing them to other types of switch-case.\nThe syntax is as follows:\nswitch v := i.(type) {\ncase bool:\n    // v is of type bool\ncase int:\n    // v is of type int\ncase *int:\n    // v is of type *int\ndefault:\n    // v has the same type as i\n}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-03T22:49:26.779219339Z"
+        }
+      ]
     },
     {
       "id": "05sw99ypya",
@@ -249,7 +333,13 @@
       "active": true,
       "question": "What is the signature of the function used to add elements to the end of a slice?\nHow would you use it?",
       "answer": "func append(slice []Type, elems ...Type) []Type\n\nslice = append(slice, elem1, elem2)\n\nIt is important to assign the result of append to the variable\nthat you are appending to. This is because the slice will be\nreallocated if it does not have the capacity for the new elements.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-03T22:50:26.772060777Z"
+        }
+      ]
     },
     {
       "id": "d5tm1x134u",
@@ -257,7 +347,13 @@
       "active": true,
       "question": "What does ... mean? What is it called?",
       "answer": "It makes a parameter into a \"variadic parameter\". It\nprovides a slice of the noted type under the parameter name.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:50:46.228855535Z"
+        }
+      ]
     },
     {
       "id": "yisk5ab08a",
@@ -281,7 +377,13 @@
       "active": true,
       "question": "When unmarshaling arbitrary JSON, what type is a JSON number translated to?",
       "answer": "float64",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:50:55.031899078Z"
+        }
+      ]
     },
     {
       "id": "tmug7gm7sk",
@@ -289,7 +391,13 @@
       "active": true,
       "question": "Can the type of a variable change?",
       "answer": "No.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:51:02.317860325Z"
+        }
+      ]
     },
     {
       "id": "8wobm89do2",
@@ -297,7 +405,13 @@
       "active": true,
       "question": "var i interface{} = \"hello\"\ninteger := i.(int)\n\nWhat happens?",
       "answer": "We get a panic.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:51:16.390942241Z"
+        }
+      ]
     },
     {
       "id": "210ep38qvx",
@@ -305,7 +419,13 @@
       "active": true,
       "question": "What is the syntax of a type assertion?",
       "answer": "var i interface{} = int(4)\n\nx := i.(int) // panics if i is not of type int\ny, ok := i.(float) // lets you check ok before using y",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:51:51.72948988Z"
+        }
+      ]
     },
     {
       "id": "i05tr7reeu",
@@ -313,7 +433,13 @@
       "active": true,
       "question": "How do you exit a program with exit code 1?",
       "answer": "os.Exit(1)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:52:34.25901417Z"
+        }
+      ]
     },
     {
       "id": "88g0rd5b2y",
@@ -328,8 +454,14 @@
       "version": 0,
       "active": true,
       "question": "Why does new() exist?",
-      "answer": "It was there before &MyStruct{}. It is superfluous.",
-      "reviews": []
+      "answer": "It was there before \u0026MyStruct{}. It is superfluous.",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:52:42.879120195Z"
+        }
+      ]
     },
     {
       "id": "euduicull6",
@@ -337,39 +469,55 @@
       "active": true,
       "question": "What are the differences between defining variables with var and defining variables with := ?",
       "answer": "- only var can be used when not in a block\n- only := can be used to do multiple return",
-      "reviews": []
-    },
-    {
-      "id": "2a9rzntyqa",
-      "version": 0,
-      "active": true,
-      "question": "Define the io.Reader interface for the type MyObject.",
-      "answer": "func (o MyObject) Read(b []byte) (int, error) {\nstatements\n}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:53:16.774000429Z"
+        }
+      ]
     },
     {
       "id": "h2qb15f9up",
       "version": 0,
       "active": true,
       "question": "Create a channel that sends/receives type MyStruct with a buffer size of 20.",
-      "answer": "my_chan := make(chan MyStruct, 20)",
-      "reviews": []
+      "answer": "ch := make(chan MyStruct, 20)",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:55:03.146641763Z"
+        }
+      ]
     },
     {
       "id": "m7yr4rt780",
       "version": 0,
       "active": true,
       "question": "How do you close a channel?\nWhat rule applies?",
-      "answer": "close(my_channel)\n\nThis must always be done from the sender",
-      "reviews": []
+      "answer": "close(ch)\n\nThis must always be done from the sender",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:55:41.375941356Z"
+        }
+      ]
     },
     {
       "id": "ut1srvdlok",
       "version": 0,
       "active": true,
-      "question": "val, ok := <-my_chan\n\nWhat are the two possible values of ok?\nWhat do they signify?",
+      "question": "val, ok := \u003c-my_chan\n\nWhat are the two possible values of ok?\nWhat do they signify?",
       "answer": "ok is true if we got a valid value in val.\nok is false if the channel is closed and there are no more values to receive.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:56:14.970562552Z"
+        }
+      ]
     },
     {
       "id": "7wnv3qfx2s",
@@ -377,15 +525,27 @@
       "active": true,
       "question": "Write code to sleep for 4 seconds.",
       "answer": "time.Sleep(4 * time.Second)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-03T22:56:44.48414005Z"
+        }
+      ]
     },
     {
       "id": "e2rtk1zu43",
       "version": 0,
       "active": true,
       "question": "How do you select from channels ch1 and ch2?",
-      "answer": "select {\ncase a, ok := <-ch1:\n    fmt.Println(a)\ncase a, ok := <-ch2:\n    fmt.Println(a)\n}",
-      "reviews": []
+      "answer": "select {\ncase a, ok := \u003c-ch1:\n    fmt.Println(a)\ncase a, ok := \u003c-ch2:\n    fmt.Println(a)\n}",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-03T22:57:25.447817242Z"
+        }
+      ]
     },
     {
       "id": "elok53244e",
@@ -393,7 +553,13 @@
       "active": true,
       "question": "Define a map with string keys and integer values.",
       "answer": "a := map[string]int{\n    \"hello\": 4,\n    \"world\": 5,\n}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-05-03T22:57:51.737626056Z"
+        }
+      ]
     },
     {
       "id": "wwzwl0g5p3",
@@ -401,12 +567,18 @@
       "active": true,
       "question": "Retrieve a value from a map while checking if the key exists.",
       "answer": "a, ok := my_map[key]\nif ok {...}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:58:15.064044222Z"
+        }
+      ]
     },
     {
       "id": "88ig9u8dvw",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Insert or update a value in a map.",
       "answer": "my_map[key] = my_var",
       "reviews": []
@@ -417,7 +589,13 @@
       "active": true,
       "question": "How do you remove a key-value pair from a map?",
       "answer": "delete(my_map, key)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:58:45.24102105Z"
+        }
+      ]
     },
     {
       "id": "mqijjskkvd",
@@ -425,7 +603,13 @@
       "active": true,
       "question": "Define the time.Duration type.\nWhat does this number represent?",
       "answer": "type time.Duration int64 nanoseconds",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-03T22:59:12.154104422Z"
+        }
+      ]
     },
     {
       "id": "1cqcarq5w6",
@@ -433,7 +617,13 @@
       "active": true,
       "question": "Define io.EOF.",
       "answer": "var io.EOF = errors.New(\"EOF\")",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:59:34.314725769Z"
+        }
+      ]
     },
     {
       "id": "ebljhnyvwi",
@@ -449,7 +639,13 @@
       "active": true,
       "question": "How do you create a fresh new error type?",
       "answer": "err := errors.New(\"new error message\")",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-03T22:59:48.074537828Z"
+        }
+      ]
     },
     {
       "id": "potjyp0k24",
@@ -464,8 +660,14 @@
       "version": 0,
       "active": true,
       "question": "What are the 8 keywords for actions in golang templates, and what does each do?",
-      "answer": "if, else, end, range, with, block, define, template   {{ if pipeline }}   T1 {{ else if pipeline }}   T2 {{ else }}   T3 {{ end }}   {{ range pipeline }}   T1 {{ end }}   {{ with pipeline }}   T1 {{ end }}   {{ block \"name\" pipeline }}   T1 {{ end}}   {{ define \"name\" }}   T1 {{ end }} {{ template \"name\" pipeline }}",
-      "reviews": []
+      "answer": "end: used as an ending for other block types\nif, else: conditionals\nrange: iteration\nwith: narrows the scope of struct down to a property for this block\nblock: combination of define and template\ndefine: defines a new, named template\ntemplate: inserts filled template here with data from passed struct",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-03T23:01:19.403588507Z"
+        }
+      ]
     },
     {
       "id": "syxemusjfw",
@@ -504,7 +706,7 @@
       "version": 0,
       "active": true,
       "question": "Send the variable myVar on ch1.",
-      "answer": "ch1 <- myVar",
+      "answer": "ch1 \u003c- myVar",
       "reviews": []
     },
     {
@@ -600,7 +802,7 @@
       "version": 0,
       "active": true,
       "question": "What is the difference between `go get` pre-modules vs post-modules?",
-      "answer": "Pre-modules: `go get` simply downloads the package to $GOPATH/src/<package_path>,\nthen builds and installs it like any other package.\n\nPost-modules: `go get` first updates the package record in go.mod, and then\ndownloads the package (and its dependencies) to GOPATH/pkg/mod/<package_path>\nand installs the package and its dependencies to the cache.",
+      "answer": "Pre-modules: `go get` simply downloads the package to $GOPATH/src/\u003cpackage_path\u003e,\nthen builds and installs it like any other package.\n\nPost-modules: `go get` first updates the package record in go.mod, and then\ndownloads the package (and its dependencies) to GOPATH/pkg/mod/\u003cpackage_path\u003e\nand installs the package and its dependencies to the cache.",
       "reviews": []
     },
     {
@@ -624,7 +826,7 @@
       "version": 0,
       "active": true,
       "question": "How are tests named?",
-      "answer": "Test<functionName>(...) {...}",
+      "answer": "Test\u003cfunctionName\u003e(...) {...}",
       "reviews": []
     },
     {
@@ -632,7 +834,7 @@
       "version": 0,
       "active": true,
       "question": "How are test files named?",
-      "answer": "<filename>_test.go",
+      "answer": "\u003cfilename\u003e_test.go",
       "reviews": []
     },
     {
@@ -720,7 +922,7 @@
       "version": 0,
       "active": true,
       "question": "How do you make a PUT HTTP request?",
-      "answer": "1) Create a &http.Client\n2) Build an http.Request struct (can use http.NewRequest)\n3) Pass it to client.Do",
+      "answer": "1) Create a \u0026http.Client\n2) Build an http.Request struct (can use http.NewRequest)\n3) Pass it to client.Do",
       "reviews": []
     },
     {
@@ -752,7 +954,7 @@
       "version": 0,
       "active": true,
       "question": "What are the function signatures of the four methods in context.Context?\nWhen would they be used?",
-      "answer": "func (c context.Context) Done() <-chan struct{}\nReturns a channel that is closed when work associated with this\ncontext should be canceled.\n\nfunc (c context.Context) Deadline() (dl time.Time, ok bool)\nReturns the time when work associated with this context should be canceled;\nok is false if there is no deadline.\n\nfunc (c context.Context) Err() error\nIf context is not yet closed, returns nil; if context is closed,\nreturns error explaining why.\n\nfunc (c context.Context) Value(key interface{}) interface{}\nReturns a value associated with the context with a specific key.\n\nUseful for request-scoped data.",
+      "answer": "func (c context.Context) Done() \u003c-chan struct{}\nReturns a channel that is closed when work associated with this\ncontext should be canceled.\n\nfunc (c context.Context) Deadline() (dl time.Time, ok bool)\nReturns the time when work associated with this context should be canceled;\nok is false if there is no deadline.\n\nfunc (c context.Context) Err() error\nIf context is not yet closed, returns nil; if context is closed,\nreturns error explaining why.\n\nfunc (c context.Context) Value(key interface{}) interface{}\nReturns a value associated with the context with a specific key.\n\nUseful for request-scoped data.",
       "reviews": []
     },
     {
@@ -760,7 +962,7 @@
       "version": 0,
       "active": true,
       "question": "What are the three types of channels?\nWhat do they look like in function signatures?",
-      "answer": "chan T : bidirectional; can be used to send and receive T\n<-chan T : can only be used to receive T\nchan<- T : can only be used to send T",
+      "answer": "chan T : bidirectional; can be used to send and receive T\n\u003c-chan T : can only be used to receive T\nchan\u003c- T : can only be used to send T",
       "reviews": []
     },
     {
@@ -800,7 +1002,7 @@
       "version": 0,
       "active": true,
       "question": "What is iota?\nHow do you use it?",
-      "answer": "A way of declaring constants in a group. You can basically make enums\nif you define a special type. For example:\n\ntype KeyType int\nconst (\n    KeyEnter KeyType = iota    // 0\n    KeyEsc KeyType             // 1\n    KeyCtrl KeyType            // 2\n    KeyAlt KeyType             // 3\n)\n\nYou can also use iota as a value on each line, for example\nto create a bitmask:\n\ntype Mask int\nconst (\n    One Mask = 1 << iota  // 1 << 0, or 00000001\n    Two                   // 1 << 1, or 00000010\n    Four                  // 1 << 2, or 00000100\n    Eight                 // 1 << 3, or 00001000\n    Sixteen               // 1 << 4, or 00010000\n)",
+      "answer": "A way of declaring constants in a group. You can basically make enums\nif you define a special type. For example:\n\ntype KeyType int\nconst (\n    KeyEnter KeyType = iota    // 0\n    KeyEsc KeyType             // 1\n    KeyCtrl KeyType            // 2\n    KeyAlt KeyType             // 3\n)\n\nYou can also use iota as a value on each line, for example\nto create a bitmask:\n\ntype Mask int\nconst (\n    One Mask = 1 \u003c\u003c iota  // 1 \u003c\u003c 0, or 00000001\n    Two                   // 1 \u003c\u003c 1, or 00000010\n    Four                  // 1 \u003c\u003c 2, or 00000100\n    Eight                 // 1 \u003c\u003c 3, or 00001000\n    Sixteen               // 1 \u003c\u003c 4, or 00010000\n)",
       "reviews": []
     },
     {
@@ -895,7 +1097,7 @@
       "id": "xiv39ys2cw",
       "version": 0,
       "active": false,
-      "question": "base_tmpl := `<html>{{ template \"content\" . }}</html>`  base, _ := template.New(\"base\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.",
+      "question": "base_tmpl := `\u003chtml\u003e{{ template \"content\" . }}\u003c/html\u003e`  base, _ := template.New(\"base\").Parse(base_tmpl)   Using `base` as a base template, define another template that does not modify `base`, but redefines the `content` template as something specific to itself.",
       "answer": "tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.Parse(\"{{define `content`}}tmpl1{{end}}\"))   or   tmpl1 := template.Must(base.Clone()) template.Must(tmpl1.New(\"content\").Parse(\"tmpl1\"))",
       "reviews": []
     },
@@ -904,7 +1106,7 @@
       "version": 0,
       "active": true,
       "question": "Write code that prints \"hello world\" every 3 seconds.",
-      "answer": "ticker := time.NewTicker(3 * time.Second)\nfor {\n    <-ticker.C\n    fmt.Println(\"hello world\")\n}",
+      "answer": "ticker := time.NewTicker(3 * time.Second)\nfor {\n    \u003c-ticker.C\n    fmt.Println(\"hello world\")\n}",
       "reviews": []
     },
     {
@@ -1232,7 +1434,7 @@
       "version": 0,
       "active": true,
       "question": "How do you execute a template and get the output in a string?",
-      "answer": "buffer := &bytes.Buffer{}\nerr := tmpl.Execute(buffer, data)\nif err != nil { ... }\nstr := buffer.String()",
+      "answer": "buffer := \u0026bytes.Buffer{}\nerr := tmpl.Execute(buffer, data)\nif err != nil { ... }\nstr := buffer.String()",
       "reviews": []
     },
     {
@@ -1407,7 +1609,7 @@
       "id": "f9i6ueuq8a",
       "version": 0,
       "active": true,
-      "question": "What is the difference between the || and | operators?\nWhat about the && and & operators?",
+      "question": "What is the difference between the || and | operators?\nWhat about the \u0026\u0026 and \u0026 operators?",
       "answer": "The single character operators are bitwise operators corresponding to\nOR and AND operations.\n\nThe double character operators are logical operators for combining\ntrue/false values.",
       "reviews": []
     },
@@ -1416,7 +1618,7 @@
       "version": 0,
       "active": true,
       "question": "Which two operators are used to do bit shifting?",
-      "answer": "myVar << 1\n\nThe counterpart is >>.",
+      "answer": "myVar \u003c\u003c 1\n\nThe counterpart is \u003e\u003e.",
       "reviews": []
     },
     {
