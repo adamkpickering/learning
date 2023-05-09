@@ -32,6 +32,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T22:59:44.950275821Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-03T22:40:02.618039367Z"
         },
         {
@@ -88,6 +93,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:00:06.753675575Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2023-05-03T22:41:53.598862834Z"
         }
@@ -100,6 +110,11 @@
       "question": "Define io.Reader.",
       "answer": "type io.Reader interface {\n    Read(b []byte) (int, error)\n}",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-09T23:00:38.276064579Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -117,6 +132,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T23:00:52.378579766Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-03T22:42:57.970899336Z"
         }
       ]
@@ -131,6 +151,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T23:01:10.527775607Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-03T22:43:25.005354115Z"
         }
       ]
@@ -142,6 +167,11 @@
       "question": "What happens if you call a method on a nil interface?",
       "answer": "you get a runtime error",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:01:22.038824736Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -174,6 +204,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:01:58.460496552Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-05-03T22:44:28.661458291Z"
         }
@@ -183,9 +218,14 @@
       "id": "1cdlwrkcih",
       "version": 0,
       "active": true,
-      "question": "What is weird about this function:\nfunc hello() (n int) {\n    n = 4\nreturn\n}",
+      "question": "What is weird about this function:\n\nfunc hello() (n int) {\n    n = 4\nreturn\n}",
       "answer": "The return value also acts as a variable declaration.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-05-09T23:02:22.52578598Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -211,6 +251,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T23:02:57.50134281Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-03T22:46:14.093029912Z"
         }
       ]
@@ -222,6 +267,11 @@
       "question": "What stdlib package is used to convert strings to other types?",
       "answer": "strconv",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:03:11.49692834Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -263,6 +313,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T23:03:47.202072971Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-03T22:46:55.215933564Z"
         }
       ]
@@ -282,6 +337,11 @@
       "question": "When should panic be used, and when should an error be returned?",
       "answer": "Panic is used *only* when the program has reached an unrecoverable state.\nReturning an error is done everywhere else.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:04:09.433457233Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -314,6 +374,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:04:47.780094999Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-05-03T22:49:26.779219339Z"
         }
@@ -336,6 +401,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:05:32.544941985Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-05-03T22:50:26.772060777Z"
         }
@@ -348,6 +418,11 @@
       "question": "What does ... mean? What is it called?",
       "answer": "It makes a parameter into a \"variadic parameter\". It\nprovides a slice of the noted type under the parameter name.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:05:45.583109427Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -381,6 +456,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T23:05:51.519974261Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-03T22:50:55.031899078Z"
         }
       ]
@@ -395,21 +475,12 @@
         {
           "version": 0,
           "result": "normal",
-          "datetime": "2023-05-03T22:51:02.317860325Z"
-        }
-      ]
-    },
-    {
-      "id": "8wobm89do2",
-      "version": 0,
-      "active": true,
-      "question": "var i interface{} = \"hello\"\ninteger := i.(int)\n\nWhat happens?",
-      "answer": "We get a panic.",
-      "reviews": [
+          "datetime": "2023-05-09T23:06:02.168372756Z"
+        },
         {
           "version": 0,
           "result": "normal",
-          "datetime": "2023-05-03T22:51:16.390942241Z"
+          "datetime": "2023-05-03T22:51:02.317860325Z"
         }
       ]
     },
@@ -417,9 +488,14 @@
       "id": "210ep38qvx",
       "version": 0,
       "active": true,
-      "question": "What is the syntax of a type assertion?",
-      "answer": "var i interface{} = int(4)\n\nx := i.(int) // panics if i is not of type int\ny, ok := i.(float) // lets you check ok before using y",
+      "question": "What are the two types of type assertion?\nHow does each behave?",
+      "answer": "var i interface{} = int(4)\n\nx := i.(int) // panics if i is not of type int\n\ny, ok := i.(float) // lets you check ok before using y",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:07:17.542629144Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -434,6 +510,11 @@
       "question": "How do you exit a program with exit code 1?",
       "answer": "os.Exit(1)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:07:28.723657607Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -458,6 +539,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2023-05-09T23:07:35.235880687Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-05-03T22:52:42.879120195Z"
         }
@@ -473,6 +559,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T23:08:23.95249284Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-03T22:53:16.774000429Z"
         }
       ]
@@ -484,6 +575,11 @@
       "question": "Create a channel that sends/receives type MyStruct with a buffer size of 20.",
       "answer": "ch := make(chan MyStruct, 20)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-09T23:08:43.801833508Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -501,6 +597,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T23:09:06.50398801Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-03T22:55:41.375941356Z"
         }
       ]
@@ -512,6 +613,11 @@
       "question": "val, ok := \u003c-my_chan\n\nWhat are the two possible values of ok?\nWhat do they signify?",
       "answer": "ok is true if we got a valid value in val.\nok is false if the channel is closed and there are no more values to receive.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:09:51.855796393Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -528,6 +634,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:10:10.366505906Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-05-03T22:56:44.48414005Z"
         }
@@ -540,6 +651,11 @@
       "question": "How do you select from channels ch1 and ch2?",
       "answer": "select {\ncase a, ok := \u003c-ch1:\n    fmt.Println(a)\ncase a, ok := \u003c-ch2:\n    fmt.Println(a)\n}",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-09T23:10:52.539357363Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -556,6 +672,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:11:27.107397422Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2023-05-03T22:57:51.737626056Z"
         }
@@ -568,6 +689,11 @@
       "question": "Retrieve a value from a map while checking if the key exists.",
       "answer": "a, ok := my_map[key]\nif ok {...}",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:12:09.811259211Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -592,6 +718,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-09T23:12:21.719385442Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-05-03T22:58:45.24102105Z"
         }
@@ -602,8 +733,13 @@
       "version": 0,
       "active": true,
       "question": "Define the time.Duration type.\nWhat does this number represent?",
-      "answer": "type time.Duration int64 nanoseconds",
+      "answer": "type time.Duration int64\n\nnanoseconds",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-09T23:12:49.983652594Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -618,6 +754,11 @@
       "question": "Define io.EOF.",
       "answer": "var io.EOF = errors.New(\"EOF\")",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:13:09.152086355Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -637,9 +778,14 @@
       "id": "112y96yd18",
       "version": 0,
       "active": true,
-      "question": "How do you create a fresh new error type?",
+      "question": "How do you create a new error from scratch?",
       "answer": "err := errors.New(\"new error message\")",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-05-09T23:13:26.648185387Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -664,6 +810,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-09T23:14:02.753757847Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2023-05-03T23:01:19.403588507Z"
         }
@@ -675,7 +826,13 @@
       "active": true,
       "question": "What are the three types of quotes?\nWhat is different between them?",
       "answer": "` `: raw string literal\n' ': single rune/character\n\" \": string literal with backslash escaping",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:14:52.818004617Z"
+        }
+      ]
     },
     {
       "id": "q8i2bwt0px",
@@ -683,15 +840,27 @@
       "active": true,
       "question": "What are the two steps to using a template?",
       "answer": "1) Assemble parse tree for template\n2) Execute template, passing in structure/map to be used in vars",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:15:23.508505048Z"
+        }
+      ]
     },
     {
       "id": "yh8m894wga",
       "version": 0,
       "active": true,
       "question": "For the method:\n\nfunc (t *Template) Parse(text string) (*Template, error) {...}\n\nwhy do we pass *Template rather than Template?",
-      "answer": "Parse is a method that modifies the passed structure. If we\npass the struct itself then the function receives a copy\nof the struct. If that copy is modified, all changes\nto it are discarded once the function exits.\n\nIf we pass a pointer to the struct, then any\nmodifications done to the struct inside the function\npersist once the function exits.",
-      "reviews": []
+      "answer": "Parse is a method that modifies the passed structure. If we pass the struct itself\nthen the function receives a copy of the struct. If that copy is modified,\nall changes\nto it are discarded once the function exits.\n\nIf we pass a pointer to the struct, then any modifications done to the\nstruct inside the function persist once the function exits.",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:17:33.184312193Z"
+        }
+      ]
     },
     {
       "id": "n6e8v0ymr2",
@@ -699,7 +868,13 @@
       "active": true,
       "question": "For the following types, state whether the bare type is a pointer or a value.\nWhat is the rule of thumb?\n\nnumber (int, float etc)\narray\nslice\nstruct\nmap\nchannel\ninterface",
       "answer": "number (int, float etc): value\narray: value\nslice: pointer\nstruct: value\nmap: pointer\nchannel: pointer\ninterface: pointer\n\nIf it is allocated with make(), it is a pointer.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T23:18:45.777374717Z"
+        }
+      ]
     },
     {
       "id": "ocxrrx1xx0",

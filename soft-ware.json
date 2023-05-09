@@ -173,6 +173,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T22:50:20.902341924Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-04-26T22:57:40.116674433Z"
         },
         {
@@ -291,6 +296,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-09T22:50:59.734012094Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-04-26T22:58:56.093014618Z"
         },
@@ -392,6 +402,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-09T22:51:32.684253689Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-04-26T22:59:24.273569078Z"
         },
         {
@@ -468,8 +483,13 @@
       "version": 0,
       "active": true,
       "question": "What are the 5 steps to accepting things that you can't change?",
-      "answer": "1) Be sure that it is actually is outside of your control.\n2) Notice how you feel about it - angry, hopeless, sad etc.\n3) Decide whether it is worth it to spend energy feeling this way about the thing.\n4) Acknowledge that accepting it doesn't define you. You can be a competent engineer\n   and still work on stuff that has big problems.\n7) Decide to spend energy on the things you can improve, rather than\n   the things you can't.",
+      "answer": "1) Be sure that it is actually is outside of your control.\n2) Notice how you feel about it - angry, hopeless, sad etc.\n3) Decide whether it is worth it to spend energy feeling this way about the thing.\n4) Acknowledge that accepting it doesn't define you. You can be a competent engineer\n   and still work on stuff that has big problems.\n5) Decide to spend energy on the things you can improve, rather than\n   the things you can't.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T22:54:12.695140708Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -494,6 +514,11 @@
       "question": "Why is it difficult to provide time estimates in software projects?",
       "answer": "We work with libraries, languages, platforms and existing projects that are\nseldom fully understood by one person. So, it is likely that at some point\nin your work:\n\n- something will work differently than you think, requiring re-thinking\n  your design and reimplementation.\n\n- you will run into something really shitty that needs debugging,\n  a workaround or redesign and reimplementation.\n\n- the requirements of the project change due to the client changing their mind.\n\n- your understanding of the problem will improve, leading to knowledge\n  of a better solution.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T22:55:23.975081601Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -537,6 +562,11 @@
       "question": "What is the \"primitive obsession\" code smell?",
       "answer": "Where you have primitive types that represent more specific ideas. Making them specially\ndefined types makes them \"attract\" methods from other places in the program,\nmaking the code more organized. For example, a primitive number type vs a\nMoney type - a lot of functionality can coalesce around the Money type.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-09T22:58:18.72091351Z"
+        },
         {
           "version": 0,
           "result": "normal",
