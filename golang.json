@@ -577,6 +577,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T22:46:49.7036415Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2023-05-09T23:08:43.801833508Z"
         },
@@ -651,6 +656,11 @@
       "question": "How do you select from channels ch1 and ch2?",
       "answer": "select {\ncase a, ok := \u003c-ch1:\n    fmt.Println(a)\ncase a, ok := \u003c-ch2:\n    fmt.Println(a)\n}",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T22:47:32.0561874Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -737,6 +747,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T22:47:45.0738481Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2023-05-09T23:12:49.983652594Z"
         },
@@ -810,6 +825,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T22:48:44.6993227Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-05-09T23:14:02.753757847Z"
         },
@@ -830,6 +850,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-10T22:49:20.2227533Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-09T23:14:52.818004617Z"
         }
       ]
@@ -844,6 +869,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-10T22:50:57.7167218Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-09T23:15:23.508505048Z"
         }
       ]
@@ -853,8 +883,13 @@
       "version": 0,
       "active": true,
       "question": "For the method:\n\nfunc (t *Template) Parse(text string) (*Template, error) {...}\n\nwhy do we pass *Template rather than Template?",
-      "answer": "Parse is a method that modifies the passed structure. If we pass the struct itself\nthen the function receives a copy of the struct. If that copy is modified,\nall changes\nto it are discarded once the function exits.\n\nIf we pass a pointer to the struct, then any modifications done to the\nstruct inside the function persist once the function exits.",
+      "answer": "Parse is a method that modifies the passed structure. If we pass the struct itself\nthen the function receives a copy of the struct. If that copy is modified,\nall changes to it are discarded once the function exits.\n\nIf we pass a pointer to the struct, then any modifications done to the\nstruct inside the function persist once the function exits.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T22:52:25.6864443Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -872,6 +907,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-05-10T22:53:49.7035889Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-09T23:18:45.777374717Z"
         }
       ]
@@ -882,23 +922,41 @@
       "active": true,
       "question": "Send the variable myVar on ch1.",
       "answer": "ch1 \u003c- myVar",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-10T22:54:09.3755946Z"
+        }
+      ]
     },
     {
       "id": "f8e8n9m2u8",
       "version": 0,
       "active": true,
       "question": "How to get a blocking select statement?\nHow do you get a nonblocking select statement?",
-      "answer": "select statements are blocking by default. To make them nonblocking,\ninclude the \"default\" case, whose code runs when no other case\nis ready to run",
-      "reviews": []
+      "answer": "select statements are blocking by default. To make them nonblocking, include the\n\"default\" case, whose code runs when no other case\nis ready to run",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T22:55:02.9274242Z"
+        }
+      ]
     },
     {
       "id": "48s976jed4",
       "version": 0,
       "active": true,
-      "question": "What is the purpose of the GOPATH env var in pre-module go?\nWhat is the purpose of the GOPATH env var in post-module go?\nWhat is its default value?",
-      "answer": "pre-modules: the GOPATH env var specifies the location of your Golang workspace\n\npost-module: still specifies location of workspace, but workspace isn't used as an\nactive place to develop code\n\ndefault: ~/go",
-      "reviews": []
+      "question": "What is the purpose of the GOPATH env var in post-module go?\nWhat is its default value?",
+      "answer": "Specifies the location into which:\n- source code is downloaded for built packages\n- binaries are installed\n- packages are built\n\ndefault: ~/go",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-10T22:56:39.943713Z"
+        }
+      ]
     },
     {
       "id": "n7971kcxtd",
@@ -914,12 +972,18 @@
       "active": true,
       "question": "What is a go package?\nIn which two places does the name of a package appear?",
       "answer": "A package is just a directory that contains .go files.\n\nThe name of a package appears in two places:\n1) The name of the directory containing the package\n2) In the package statement at the top of each .go file in the package",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T22:58:13.4145222Z"
+        }
+      ]
     },
     {
       "id": "cs22lxzp9m",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the two kinds of packages?",
       "answer": "source packages and compiled packages (not unlike libraries)",
       "reviews": []
@@ -930,7 +994,13 @@
       "active": true,
       "question": "When is module-aware mode active?",
       "answer": "Whenever a go.mod file is found in the current directory or any parent directory.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T22:58:57.6494443Z"
+        }
+      ]
     },
     {
       "id": "hslpsjplc2",
@@ -938,7 +1008,13 @@
       "active": true,
       "question": "What is a go module?",
       "answer": "A collection of source packages with a go.mod at its root.\ngo.mod tracks the external dependencies, and their versions,\nthat the packages in the module depend on.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T22:59:36.5995385Z"
+        }
+      ]
     },
     {
       "id": "xlnzz5qm3r",
@@ -946,7 +1022,13 @@
       "active": true,
       "question": "What are the three important keywords in a go.mod file?\nWhat do they mean?",
       "answer": "module: defines the module path (ex. github.com/squat/kilo)\ngo: sets the expected golang version (ex. 1.13)\nrequire: requires a module for this at a particular version or later",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:00:33.3982404Z"
+        }
+      ]
     },
     {
       "id": "5cbrk13di9",
@@ -962,20 +1044,32 @@
       "active": true,
       "question": "What determines whether code in a file is turned into an installed\npackage object or an executable command?",
       "answer": "If its package is \"main\" it is turned into an executable command.\nEverything else is turned into an installed package object.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:01:36.9376291Z"
+        }
+      ]
     },
     {
       "id": "6psjgiqsa3",
       "version": 0,
       "active": true,
-      "question": "What are the four types of import paths, explain what they are?",
-      "answer": "standard (built-in)\nworkspace(local)\nrelative\nremote",
-      "reviews": []
+      "question": "What are the four types of import paths?\nExplain each type.",
+      "answer": "standard (built-in)\nworkspace (local)\nrelative\nremote",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-10T23:02:23.4609455Z"
+        }
+      ]
     },
     {
       "id": "gpltssqhi8",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the difference between `go get` pre-modules vs post-modules?",
       "answer": "Pre-modules: `go get` simply downloads the package to $GOPATH/src/\u003cpackage_path\u003e,\nthen builds and installs it like any other package.\n\nPost-modules: `go get` first updates the package record in go.mod, and then\ndownloads the package (and its dependencies) to GOPATH/pkg/mod/\u003cpackage_path\u003e\nand installs the package and its dependencies to the cache.",
       "reviews": []
@@ -986,7 +1080,13 @@
       "active": true,
       "question": "type MyStruct struct {\n    Field1 int\n    Field2 string\n    Field3 float\n}\n\nAnnotate Field1 so that it is serialized to JSON as the key \"hello_world\",\nand not included if its value evaluates to false.\n\nAnnotate Field2 so that it is never included when the struct is serialized.\n\nAnnotate Field3 so that its value is converted to a string\nwhen serialized.",
       "answer": "type MyStruct struct {\n    Field1 int     `json:\"hello_world,omitempty\"`\n    Field2 string  `json:\"-\"`\n    Field3 float   `json:\",string\"`\n}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-10T23:04:28.1138197Z"
+        }
+      ]
     },
     {
       "id": "nh4grtkerd",
@@ -994,15 +1094,27 @@
       "active": true,
       "question": "What is the first and only parameter to each test function?",
       "answer": "t *testing.T",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-05-10T23:04:41.5054015Z"
+        }
+      ]
     },
     {
       "id": "eamieuvjgv",
       "version": 0,
       "active": true,
       "question": "How are tests named?",
-      "answer": "Test\u003cfunctionName\u003e(...) {...}",
-      "reviews": []
+      "answer": "func Test<functionName>(...) {...}",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:05:09.1932156Z"
+        }
+      ]
     },
     {
       "id": "y5mh8sqkte",
@@ -1010,7 +1122,13 @@
       "active": true,
       "question": "How are test files named?",
       "answer": "\u003cfilename\u003e_test.go",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2023-05-10T23:05:24.9471401Z"
+        }
+      ]
     },
     {
       "id": "d3fm7xejen",
@@ -1026,7 +1144,13 @@
       "active": true,
       "question": "What three important interfaces does the os.File type implement?",
       "answer": "io.Reader\nio.Writer\nio.Closer",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:05:46.3950646Z"
+        }
+      ]
     },
     {
       "id": "7wn8djlp4d",
@@ -1042,7 +1166,13 @@
       "active": true,
       "question": "Define io.Writer.",
       "answer": "type io.Writer interface {\n    Write(b []byte) (int, error)\n}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-10T23:06:18.2095994Z"
+        }
+      ]
     },
     {
       "id": "ffualbgel3",
@@ -1050,7 +1180,13 @@
       "active": true,
       "question": "What are the two ways a package can be documented?",
       "answer": "1) Comments immediately above package statement\n2) Include a doc.go file in the package, with a package statement\n   and one big comment",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-10T23:08:11.3620191Z"
+        }
+      ]
     },
     {
       "id": "lmbyp4r2uf",
@@ -1098,7 +1234,13 @@
       "active": true,
       "question": "How do you make a PUT HTTP request?",
       "answer": "1) Create a \u0026http.Client\n2) Build an http.Request struct (can use http.NewRequest)\n3) Pass it to client.Do",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-10T23:09:48.0753279Z"
+        }
+      ]
     },
     {
       "id": "n7dii3k6lf",
@@ -1130,7 +1272,13 @@
       "active": true,
       "question": "What are the function signatures of the four methods in context.Context?\nWhen would they be used?",
       "answer": "func (c context.Context) Done() \u003c-chan struct{}\nReturns a channel that is closed when work associated with this\ncontext should be canceled.\n\nfunc (c context.Context) Deadline() (dl time.Time, ok bool)\nReturns the time when work associated with this context should be canceled;\nok is false if there is no deadline.\n\nfunc (c context.Context) Err() error\nIf context is not yet closed, returns nil; if context is closed,\nreturns error explaining why.\n\nfunc (c context.Context) Value(key interface{}) interface{}\nReturns a value associated with the context with a specific key.\n\nUseful for request-scoped data.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-10T23:11:35.0677177Z"
+        }
+      ]
     },
     {
       "id": "clguzhyw1j",
@@ -1138,7 +1286,13 @@
       "active": true,
       "question": "What are the three types of channels?\nWhat do they look like in function signatures?",
       "answer": "chan T : bidirectional; can be used to send and receive T\n\u003c-chan T : can only be used to receive T\nchan\u003c- T : can only be used to send T",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:12:13.9087745Z"
+        }
+      ]
     },
     {
       "id": "wr23546cbz",
@@ -1146,7 +1300,13 @@
       "active": true,
       "question": "What is the problem with using os.Exit() to exit a program?",
       "answer": "It does not call deferred functions.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:12:25.4174885Z"
+        }
+      ]
     },
     {
       "id": "lkoc6665tb",
@@ -1154,7 +1314,13 @@
       "active": true,
       "question": "What are the two defining characteristics of a rune?",
       "answer": "1) a rune is an alias for int32\n2) a rune represents a unicode code point",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-10T23:13:00.4689589Z"
+        }
+      ]
     },
     {
       "id": "v4e56eiur0",
@@ -1162,7 +1328,13 @@
       "active": true,
       "question": "What type is a string, behind the scenes?",
       "answer": "[]byte",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:13:14.3369101Z"
+        }
+      ]
     },
     {
       "id": "1l7xpbe1z3",
@@ -1170,7 +1342,13 @@
       "active": true,
       "question": "How does one loop over the utf-8 encoded runes in a string?",
       "answer": "for index, runeValue := range my_string {...}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-10T23:13:41.4746369Z"
+        }
+      ]
     },
     {
       "id": "rc1fyqvc7z",
@@ -1178,7 +1356,13 @@
       "active": true,
       "question": "What is iota?\nHow do you use it?",
       "answer": "A way of declaring constants in a group. You can basically make enums\nif you define a special type. For example:\n\ntype KeyType int\nconst (\n    KeyEnter KeyType = iota    // 0\n    KeyEsc KeyType             // 1\n    KeyCtrl KeyType            // 2\n    KeyAlt KeyType             // 3\n)\n\nYou can also use iota as a value on each line, for example\nto create a bitmask:\n\ntype Mask int\nconst (\n    One Mask = 1 \u003c\u003c iota  // 1 \u003c\u003c 0, or 00000001\n    Two                   // 1 \u003c\u003c 1, or 00000010\n    Four                  // 1 \u003c\u003c 2, or 00000100\n    Eight                 // 1 \u003c\u003c 3, or 00001000\n    Sixteen               // 1 \u003c\u003c 4, or 00010000\n)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:15:20.8895513Z"
+        }
+      ]
     },
     {
       "id": "i3e2lvhs1i",
@@ -1186,7 +1370,13 @@
       "active": true,
       "question": "Which statements does a `break` statement break out of?",
       "answer": "for, switch and select",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-10T23:15:55.0944868Z"
+        }
+      ]
     },
     {
       "id": "99dz0o9eb3",
@@ -1202,7 +1392,13 @@
       "active": true,
       "question": "How do you get the number of characters in a string?",
       "answer": "len([]rune(my_string))",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:16:21.9758952Z"
+        }
+      ]
     },
     {
       "id": "02ujikjcyy",
@@ -1210,7 +1406,13 @@
       "active": true,
       "question": "What are the two forms of (non-type-switch) switch statements in go?",
       "answer": "Like testing an enumeration:\n\nswitch my_var {\ncase 'a':\n    ...\ncase 'b':\n    ...\n}\n\nLike an if-else chain:\n\nswitch {\ncase expr:\n    ...\ncase expr2:\n    ...\n}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:17:17.2975185Z"
+        }
+      ]
     },
     {
       "id": "csc31sgqt2",
@@ -1218,7 +1420,13 @@
       "active": true,
       "question": "What are the three basic (possibly overlapping) uses for a context.Context?",
       "answer": "1) Used to get goroutines to gracefully exit at the command of another goroutine\n2) Used to define and enforce a deadline\n3) Used to define higher-scoped variables that should be shared across functions, goroutines etc",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-05-10T23:18:22.2593691Z"
+        }
+      ]
     },
     {
       "id": "ds3itmc0ol",
@@ -1226,7 +1434,13 @@
       "active": true,
       "question": "What happens in go when you attempt to use more memory but there is no more (out of memory)?\nHow do you handle this?",
       "answer": "The program crashes - there is nothing you can do about this. The way you handle this\ndepends on your application; for most server-side applications\nyou would monitor the process with a watchdog that restarts it upon crash/exit.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:19:20.0611895Z"
+        }
+      ]
     },
     {
       "id": "m9fq4am683",
@@ -1234,7 +1448,13 @@
       "active": true,
       "question": "From a high level, how is an HTTP request responded to using the standard library?\nHow would I write a server with multiple endpoints?",
       "answer": "Everything revolves around the http.Handler type. When a request is received,\nthe ServeHTTP method of the Handler is called. This method reads\nthe *Request, and uses its logic to decide how to write the ResponseWriter.\nNote that http.Handler is an interface, so it probably has some kind\nof state (request handling threads/processes) in the background.\n\nOnce the ResponseWriter is filled, the calling function can turn it into\nan HTTP response that it sends to the client.\n\nSo if you wanted to write a server with multiple endpoints, you'd put\na \"router\" in the ServeHTTP method of your Handler that dispatches\nthe request to one of several functions that handle endpoints.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-10T23:22:36.944323Z"
+        }
+      ]
     },
     {
       "id": "cga946xb3g",
@@ -1242,7 +1462,13 @@
       "active": true,
       "question": "What are the two characteristics of a slice, and what functions are used to get them?",
       "answer": "Length: the number of elements in the slice. len() is used to get it.\n\nCapacity: the number of elements the slice can accomodate before it is reallocated. cap() is used to get it.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:22:53.3541025Z"
+        }
+      ]
     },
     {
       "id": "gd9c0lajvs",
@@ -1250,7 +1476,13 @@
       "active": true,
       "question": "Create a slice of bytes that has 4 bytes initialized and can accommodate a maximum of 32 bytes.",
       "answer": "my_slice := make([]byte, 4, 32)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-05-10T23:23:25.4214534Z"
+        }
+      ]
     },
     {
       "id": "oxzjd2rvoh",
@@ -1280,9 +1512,15 @@
       "id": "tkacy1prwj",
       "version": 0,
       "active": true,
-      "question": "Write code that prints \"hello world\" every 3 seconds.",
-      "answer": "ticker := time.NewTicker(3 * time.Second)\nfor {\n    \u003c-ticker.C\n    fmt.Println(\"hello world\")\n}",
-      "reviews": []
+      "question": "Use time.Ticker to print \"hello world\" every 3 seconds.",
+      "answer": "ticker := time.NewTicker(3 * time.Second)\nfor {\n    <-ticker.C\n    fmt.Println(\"hello world\")\n}",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-05-10T23:25:03.533496Z"
+        }
+      ]
     },
     {
       "id": "q0h1wc40st",
