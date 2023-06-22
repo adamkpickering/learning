@@ -1107,7 +1107,7 @@
       "version": 0,
       "active": true,
       "question": "How are tests named?",
-      "answer": "func Test<functionName>(...) {...}",
+      "answer": "func Test\u003cfunctionName\u003e(...) {...}",
       "reviews": [
         {
           "version": 0,
@@ -1513,7 +1513,7 @@
       "version": 0,
       "active": true,
       "question": "Use time.Ticker to print \"hello world\" every 3 seconds.",
-      "answer": "ticker := time.NewTicker(3 * time.Second)\nfor {\n    <-ticker.C\n    fmt.Println(\"hello world\")\n}",
+      "answer": "ticker := time.NewTicker(3 * time.Second)\nfor {\n    \u003c-ticker.C\n    fmt.Println(\"hello world\")\n}",
       "reviews": [
         {
           "version": 0,
@@ -2296,6 +2296,14 @@
       "active": false,
       "question": "What is http.RoundTripper?",
       "answer": "Is an interface that represents the ability to execute a single HTTP transaction. Takes a request and returns a response and an error.",
+      "reviews": []
+    },
+    {
+      "id": "5gmwk8u54r",
+      "version": 0,
+      "active": true,
+      "question": "How do the below functions modify the passed slice in the calling scope?\nExplain why.\n\nfunc addElements(s []string) {\n\ts = append(s, \"four\", \"five\", \"six\")\n}\n\nfunc modifyFirstElement(s []string) {\n\ts[0] = \"four\"\n}",
+      "answer": "addElements does not modify the slice at all. However, if the\nunderlying array has room the function may modify it outside the\nfunction scope. So this is dangerous.\n\nmodifyFirstElement modifies the first element.\n\nYou can think of a slice as a struct with fields for:\n- a reference to the underlying array\n- the length of the slice\n- the capacity of the slice\n\nStructs are passed by value, and addElements modifies the fields\nof the struct, so modifications don't make it outside the scope of\naddElements, except for the aformentioned possible modification to\nthe underlying array.\n\nOn the other hand, modifyFirstElement is simply modifying an element\nof the underlying array, which is scoped outside the function, so the\nmodification persists.",
       "reviews": []
     }
   ]
