@@ -901,8 +901,8 @@
       "id": "n6e8v0ymr2",
       "version": 0,
       "active": true,
-      "question": "For the following types, state whether the bare type is a pointer or a value.\nWhat is the rule of thumb?\n\nnumber (int, float etc)\narray\nslice\nstruct\nmap\nchannel\ninterface",
-      "answer": "number (int, float etc): value\narray: value\nslice: pointer\nstruct: value\nmap: pointer\nchannel: pointer\ninterface: pointer\n\nIf it is allocated with make(), it is a pointer.",
+      "question": "For the following types, state whether the bare type is a pointer or a value.\n\nnumber (int, float etc)\narray\nslice\nstruct\nmap\nchannel\ninterface",
+      "answer": "number (int, float etc): value\narray: value\nslice: value (containing pointer)\nstruct: value\nmap: pointer\nchannel: pointer\ninterface: pointer\n\nIf it is allocated with make(), it is a pointer.",
       "reviews": [
         {
           "version": 0,
