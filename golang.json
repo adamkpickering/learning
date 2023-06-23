@@ -12,6 +12,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-23T17:49:26.009798539Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2023-05-03T22:39:08.977829133Z"
         },
@@ -29,6 +34,11 @@
       "question": "What are the three rules of defer?",
       "answer": "1) a deferred functions arguments are evaluated when the defer statement is evaluated\n2) deferred function calls are executed in last in first out order after the surrounding function returns\n3) deferred functions may read and assign to the returning function's named return values",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-23T17:50:30.032483758Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -56,6 +66,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-23T17:50:55.537994797Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-03T22:40:40.488634528Z"
         },
         {
@@ -72,6 +87,11 @@
       "question": "Define error.",
       "answer": "type error interface {\n    Error() string\n}",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-23T17:51:17.740551839Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -94,6 +114,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-23T17:51:38.662854207Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-09T23:00:06.753675575Z"
         },
         {
@@ -113,6 +138,11 @@
         {
           "version": 0,
           "result": "hard",
+          "datetime": "2023-06-23T17:52:19.929455129Z"
+        },
+        {
+          "version": 0,
+          "result": "hard",
           "datetime": "2023-05-09T23:00:38.276064579Z"
         },
         {
@@ -129,6 +159,11 @@
       "question": "What is an interface, under the hood?",
       "answer": "a tuple: (value, type)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-23T17:52:37.427792606Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -151,6 +186,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-23T17:53:15.78144191Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-09T23:01:10.527775607Z"
         },
         {
@@ -167,6 +207,11 @@
       "question": "What happens if you call a method on a nil interface?",
       "answer": "you get a runtime error",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-23T17:53:24.467496559Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -205,6 +250,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-23T17:54:16.452470941Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-09T23:01:58.460496552Z"
         },
         {
@@ -221,6 +271,11 @@
       "question": "What is weird about this function:\n\nfunc hello() (n int) {\n    n = 4\nreturn\n}",
       "answer": "The return value also acts as a variable declaration.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-23T17:55:01.833290541Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -251,6 +306,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-23T17:55:15.009261655Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-09T23:02:57.50134281Z"
         },
         {
@@ -267,6 +327,11 @@
       "question": "What stdlib package is used to convert strings to other types?",
       "answer": "strconv",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-23T17:55:23.139588657Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -313,6 +378,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-23T17:55:50.82709447Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-05-09T23:03:47.202072971Z"
         },
         {
@@ -337,6 +407,11 @@
       "question": "When should panic be used, and when should an error be returned?",
       "answer": "Panic is used *only* when the program has reached an unrecoverable state.\nReturning an error is done everywhere else.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-23T17:56:13.232216049Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -372,6 +447,11 @@
       "question": "How do type switches work?\nWhat is the syntax?",
       "answer": "Type switches are a special construct. Don't try to understand\nthem by comparing them to other types of switch-case.\nThe syntax is as follows:\nswitch v := i.(type) {\ncase bool:\n    // v is of type bool\ncase int:\n    // v is of type int\ncase *int:\n    // v is of type *int\ndefault:\n    // v has the same type as i\n}",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-23T17:57:47.236953836Z"
+        },
         {
           "version": 0,
           "result": "normal",
