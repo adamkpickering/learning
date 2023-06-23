@@ -268,7 +268,7 @@
       "id": "1cdlwrkcih",
       "version": 0,
       "active": true,
-      "question": "What is weird about this function:\n\nfunc hello() (n int) {\n    n = 4\nreturn\n}",
+      "question": "What is weird about this function:\n\nfunc hello() (n int) {\n    n = 4\n    return\n}",
       "answer": "The return value also acts as a variable declaration.",
       "reviews": [
         {
@@ -445,7 +445,7 @@
       "version": 0,
       "active": true,
       "question": "How do type switches work?\nWhat is the syntax?",
-      "answer": "Type switches are a special construct. Don't try to understand\nthem by comparing them to other types of switch-case.\nThe syntax is as follows:\nswitch v := i.(type) {\ncase bool:\n    // v is of type bool\ncase int:\n    // v is of type int\ncase *int:\n    // v is of type *int\ndefault:\n    // v has the same type as i\n}",
+      "answer": "Type switches are a special construct. Don't try to understand\nthem by comparing them to other types of switch-case.\n\nThe syntax is as follows:\n\nswitch v := i.(type) {\ncase bool:\n    // v is of type bool\ncase int:\n    // v is of type int\ncase *int:\n    // v is of type *int\ndefault:\n    // v has the same type as i\n}",
       "reviews": [
         {
           "version": 0,
