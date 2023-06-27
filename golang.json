@@ -542,30 +542,6 @@
       "reviews": []
     },
     {
-      "id": "0rbgnp6wnt",
-      "version": 0,
-      "active": true,
-      "question": "When unmarshaling arbitrary JSON, what type is a JSON number translated to?",
-      "answer": "float64",
-      "reviews": [
-        {
-          "version": 0,
-          "result": "normal",
-          "datetime": "2023-06-26T18:40:03.736435945Z"
-        },
-        {
-          "version": 0,
-          "result": "normal",
-          "datetime": "2023-05-09T23:05:51.519974261Z"
-        },
-        {
-          "version": 0,
-          "result": "normal",
-          "datetime": "2023-05-03T22:50:55.031899078Z"
-        }
-      ]
-    },
-    {
       "id": "tmug7gm7sk",
       "version": 0,
       "active": true,
@@ -1168,6 +1144,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T22:54:21.343576961Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-06-26T19:14:39.134991005Z"
         },
@@ -1260,6 +1241,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T22:55:23.066293124Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2023-06-26T19:16:42.91005647Z"
         },
@@ -1304,6 +1290,11 @@
       "question": "What are the four types of import paths?",
       "answer": "standard (built-in)\nworkspace (local)\nrelative\nremote",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T22:55:55.065949433Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1463,6 +1454,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T22:56:34.445706948Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-06-26T19:24:28.852954756Z"
         },
@@ -1523,6 +1519,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T22:57:11.614162655Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:25:16.057333052Z"
         },
         {
@@ -1563,6 +1564,11 @@
       "question": "What are the function signatures of the four methods in context.Context?\nWhen would they be used?",
       "answer": "func (c context.Context) Done() \u003c-chan struct{}\nReturns a channel that is closed when work associated with this\ncontext should be canceled.\n\nfunc (c context.Context) Deadline() (dl time.Time, ok bool)\nReturns the time when work associated with this context should be canceled;\nok is false if there is no deadline.\n\nfunc (c context.Context) Err() error\nIf context is not yet closed, returns nil; if context is closed,\nreturns error explaining why.\n\nfunc (c context.Context) Value(key interface{}) interface{}\nReturns a value associated with the context with a specific key.\n\nUseful for request-scoped data.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T22:59:13.229073417Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -1661,6 +1667,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T22:59:40.755743297Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:29:17.855271931Z"
         },
         {
@@ -1696,6 +1707,11 @@
       "question": "Which statements does a `break` statement break out of?",
       "answer": "for, switch and select",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T22:59:52.850985758Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1802,6 +1818,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:01:07.324300148Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:34:48.824294214Z"
         },
         {
@@ -1882,6 +1903,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:02:36.051563332Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2023-06-26T19:36:49.788669924Z"
         },
@@ -1926,6 +1952,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:03:07.237482369Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:37:14.938151706Z"
         }
       ]
@@ -1964,6 +1995,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:05:01.675858461Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:40:09.250777186Z"
         }
       ]
@@ -1975,6 +2011,11 @@
       "question": "How does the Write() method work (2 points)?\nUse signature Write(p []byte) (n int, err error) to discuss.",
       "answer": "1) Writes len(p) bytes from p and returns n to say how many bytes were written\n2) If it writes less than len(p), err is non-nil and explains what happened",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:06:19.673124963Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -1992,6 +2033,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:06:30.669803664Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:41:15.099740591Z"
         }
       ]
@@ -2003,6 +2049,11 @@
       "question": "When is the bufio package useful?",
       "answer": "I/O operations like Read() and Write() have a fair amount of overhead (like any system call).\nBuffering your I/O can boost performance greatly by saving\nyour input/output in a buffer and then writing it all at once.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:07:01.158387243Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -2020,6 +2071,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:07:10.453786456Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:42:21.179027025Z"
         }
       ]
@@ -2031,6 +2087,11 @@
       "question": "What function would you use to write a []byte to a file, truncating existing contents?",
       "answer": "os.WriteFile",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:07:20.295964006Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -2048,6 +2109,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:07:30.350322892Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:42:53.748602534Z"
         }
       ]
@@ -2059,6 +2125,11 @@
       "question": "What function would you use to split a string on occurrences of another string?",
       "answer": "strings.Split",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:07:42.394406946Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -2076,6 +2147,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:07:52.262119969Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:43:18.317428059Z"
         }
       ]
@@ -2087,6 +2163,11 @@
       "question": "Function that joins a slice of strings on a separator string into a single string?",
       "answer": "strings.Join",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:08:05.032918048Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -2104,6 +2185,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:08:17.503959577Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:44:04.529683571Z"
         }
       ]
@@ -2118,6 +2204,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:08:26.054328841Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:44:15.579857935Z"
         }
       ]
@@ -2129,6 +2220,11 @@
       "question": "Function used to get the filename from a full path?",
       "answer": "filepath.Base",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:09:08.108028976Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -2146,6 +2242,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:09:15.019133108Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:44:54.76450107Z"
         }
       ]
@@ -2157,6 +2258,11 @@
       "question": "What is the function used to get entire path from a partial path?",
       "answer": "filepath.Abs",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:09:21.658231133Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -2174,6 +2280,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2023-06-27T23:09:28.118063565Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:45:15.994803177Z"
         }
       ]
@@ -2185,6 +2296,11 @@
       "question": "What is the function used to separate a path into the file name and the directory name",
       "answer": "filepath.Split",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:09:34.098562933Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -2201,6 +2317,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:10:01.545635023Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-06-26T19:46:13.045377577Z"
         }
@@ -2213,6 +2334,11 @@
       "question": "What is the function used to parse a string into time.Time",
       "answer": "time.Parse",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:10:09.527943265Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -2229,6 +2355,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-27T23:11:22.897103424Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2023-06-26T19:47:58.970380548Z"
         }
@@ -2243,6 +2374,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:11:57.10361853Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2023-06-26T19:48:30.860047342Z"
         }
@@ -2255,6 +2391,11 @@
       "question": "How do you check if a string contains another string?",
       "answer": "present := strings.Contains(\"is it inside?\", \"inside\")",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:12:08.630963325Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -2275,8 +2416,14 @@
       "version": 0,
       "active": true,
       "question": "What is go.sum for?",
-      "answer": "go.sum contains checksums for the contents of specific versions of the dependencies listed in go.mod.\nIf someone building your code gets a checksum that differs from\nthe checksum in go.sum for a dependency, they will get an error.",
-      "reviews": []
+      "answer": "go.sum contains checksums for the contents of specific versions of\nthe dependencies listed in go.mod. If someone building your\ncode gets a checksum that differs from the checksum in go.sum for a\ndependency, they will get an error.",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:14:27.756336597Z"
+        }
+      ]
     },
     {
       "id": "dj0dqypgha",
@@ -2284,7 +2431,13 @@
       "active": true,
       "question": "Under what conditions are go binaries not statically linked?",
       "answer": "When a package is included that uses cgo to call C code, most notably the `net` package.\nYou can disable the use of cgo for the `net` package though.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-27T23:15:07.449864954Z"
+        }
+      ]
     },
     {
       "id": "je7itvgced",
@@ -2292,7 +2445,13 @@
       "active": true,
       "question": "How does the io.Reader.Read() call deal with EOF?",
       "answer": "If an EOF condition is encountered, it may return either:\n- err = io.EOF in the call in which the last bytes are read\n- err = nil in the call in which the last bytes are read and then\n  err = io.EOF in a subsequent call",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:16:05.85176992Z"
+        }
+      ]
     },
     {
       "id": "buc3holo3e",
@@ -2300,15 +2459,27 @@
       "active": true,
       "question": "What does an \"// indirect\" comment next to a dependency mean in go.mod?",
       "answer": "It means that the dependency is not used in this module, but rather in one of\nthe module's dependencies. Thus it is a dependency of a dependency.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:16:36.167300311Z"
+        }
+      ]
     },
     {
       "id": "fknjn5u3x2",
       "version": 0,
       "active": true,
       "question": "How are go modules versioned?\nHow do you reference a package in a module with major version greater than 1?",
-      "answer": "Specific versions can be specified by tagging certain refs in the\nversion control repository with the form \"vX.Y.Z\".\n\nMajor version increments are appended to the usual path,\nso if you have \"github.com/adamkpickering/mymod\" to start, you call it\n\"github.com/adamkpickering/mymod/v2\" once you go to v2. Note that the original\npath represents both v0 and v1: v0 is where breaking changes are expected,\nand v1 is the first stable major version.\n\npackage: github.com/adamkpickering/mymod/v1/package/path   See https://research.swtch.com/vgo-import for more info.",
-      "reviews": []
+      "answer": "Specific versions can be specified by tagging certain refs in the\nversion control repository with the form \"vX.Y.Z\".\n\nMajor version increments are appended to the usual path,\nso if you have \"github.com/adamkpickering/mymod\" to start, you call it\n\"github.com/adamkpickering/mymod/v2\" once you go to v2. Note that the original\npath represents both v0 and v1: v0 is where breaking changes are expected,\nand v1 is the first stable major version.\n\npackage: github.com/adamkpickering/mymod/v1/package/path\n\nSee https://research.swtch.com/vgo-import for more info.",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:18:40.331940793Z"
+        }
+      ]
     },
     {
       "id": "t0mdn7h9bu",
@@ -2316,7 +2487,13 @@
       "active": true,
       "question": "How does vendoring work with modules?",
       "answer": "You can use `go mod vendor` to create vendor/ if it does not already exist,\nand then build with `go build -mod=vendor`.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:19:20.548840353Z"
+        }
+      ]
     },
     {
       "id": "idtgpedzjq",
@@ -2324,7 +2501,13 @@
       "active": true,
       "question": "How do you retrieve the following versions of a module using `go get`?\n1) latest\n2) v1.6.2\n3) commit c856192\n4) the current state of branch `master`",
       "answer": "1) go get github.com/gorilla/mux@latest\n2) go get github.com/gorilla/mux@v1.6.2\n3) go get github.com/gorilla/mux@c856192\n4) go get github.com/gorilla/mux@master",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:20:07.84574191Z"
+        }
+      ]
     },
     {
       "id": "u90mbshwti",
@@ -2332,7 +2515,13 @@
       "active": true,
       "question": "How do you import a package when you don't actually need to use it in the code?\nWhy might you do this?",
       "answer": "import (\n    _ \"github.com/asdf/mypackage\"\n)\n\nThis is done when importing the module does some thing that your code needs.\nAn example is with the sql package: we do this with drivers\nso that they can register themselves with the main sql package, and then\nwe use the driver through the main package's interface.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:21:52.905852019Z"
+        }
+      ]
     },
     {
       "id": "jkqnzp0azf",
@@ -2340,7 +2529,13 @@
       "active": true,
       "question": "What are the three ways to embed a static file into a go program?",
       "answer": "//go:embed hello.txt\nvar txt string // now txt contains the contents of hello.txt\n\n//go:embed hello.txt\nvar b []byte // now b contains the contents of hello.txt\n\n//go:embed image template/*\nvar content embed.FS // now b contains the contents of files in image/ and template/",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-27T23:23:06.349498773Z"
+        }
+      ]
     },
     {
       "id": "7wmuragz10",
@@ -2348,7 +2543,13 @@
       "active": true,
       "question": "What is the simplest way to check that a file/dir exists?\nWhat about to check that a file/dir does not exist?",
       "answer": "if _, err := os.Stat(\"/path/to/whatever\"); errors.Is(err, os.ErrNotExist)\n{\n    // /path/to/whatever does not exist\n}\n\nif _, err := os.Stat(\"/path/to/whatever\"); err == nil {\n    // /path/to/whatever exists\n}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:24:52.269139931Z"
+        }
+      ]
     },
     {
       "id": "4mzydwthz2",
@@ -2356,7 +2557,13 @@
       "active": true,
       "question": "How do you execute a template and get the output in a string?",
       "answer": "buffer := \u0026bytes.Buffer{}\nerr := tmpl.Execute(buffer, data)\nif err != nil { ... }\nstr := buffer.String()",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:26:23.572181041Z"
+        }
+      ]
     },
     {
       "id": "htfkc0g5fv",
@@ -2364,7 +2571,13 @@
       "active": true,
       "question": "Given a time, mytime, turn it into a string in RFC3339 format.",
       "answer": "mystr := mytime.Format(time.RFC3339)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-27T23:27:03.751314855Z"
+        }
+      ]
     },
     {
       "id": "hfjqabk6d0",
@@ -2372,7 +2585,13 @@
       "active": true,
       "question": "How do you get the current time in UTC?",
       "answer": "currentTime := time.Now().UTC()",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:27:21.635720957Z"
+        }
+      ]
     },
     {
       "id": "78zszn8m1c",
@@ -2388,7 +2607,13 @@
       "active": true,
       "question": "Define fs.FileMode.\nIn practice, how can you set it?",
       "answer": "type fs.FileMode uint32\n\nFor regular files, can simply be set to 0755 or whatever.\nThis is because only the first 9 (12?) bits are used for the permission bits,\nand the other bits are set starting from the big end of the uint32.\nIf the other bits are all zero, that means it is a regular file.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-27T23:27:47.833040735Z"
+        }
+      ]
     },
     {
       "id": "pzz38s37cu",
@@ -2404,7 +2629,13 @@
       "active": true,
       "question": "What is the main function that is used to get info about a file?",
       "answer": "os.Stat",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:27:55.330028166Z"
+        }
+      ]
     },
     {
       "id": "h0bc16blwo",
@@ -2420,7 +2651,13 @@
       "active": true,
       "question": "What function is used to get info on a directory's contents?",
       "answer": "os.ReadDir",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:28:06.629169889Z"
+        }
+      ]
     },
     {
       "id": "78isqr2eis",
@@ -2428,7 +2665,13 @@
       "active": true,
       "question": "What does the `fs` package define?\nWhat is its major limitation at the moment?",
       "answer": "Package `fs` defines interfaces that define methods that should be used\nto interface with a filesystem.\n\nIts major limitation is the absence of any kind of write functionality.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:28:39.107816237Z"
+        }
+      ]
     },
     {
       "id": "xq6pi3n7jw",
@@ -2436,7 +2679,13 @@
       "active": true,
       "question": "What is the difference between os.Create and os.Open?",
       "answer": "os.Create: creates or truncates the file at the named path\nos.Open: only opens the file at the named path",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:29:09.239587195Z"
+        }
+      ]
     },
     {
       "id": "qa0l5x68r7",
@@ -2444,7 +2693,13 @@
       "active": true,
       "question": "What is the difference between a wall clock and a monotonic clock?\nIn which cases does the `time` package use each?",
       "answer": "A wall clock is subject to changes in clock synchronization\n(i.e. when NTP causes OS to update clock), whereas a monotonic clock is not.\n\nThe general rule is that the wall clock is for telling time\nand the monotonic clock is for measuring time. Any operations that\ninvolve comparisons of time.Time structs use the monotonic clocks,\nand are thus robust against wall clock resets. Otherwise, the wall clock is used.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:30:19.945561038Z"
+        }
+      ]
     },
     {
       "id": "b2ysbkjhvl",
@@ -2460,7 +2715,13 @@
       "active": true,
       "question": "How do you detect the zero value of a time?",
       "answer": "myTime.IsZero()",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:30:34.493862846Z"
+        }
+      ]
     },
     {
       "id": "au0vvaysmg",
@@ -2476,7 +2737,13 @@
       "active": true,
       "question": "How would you get the date that is exactly two days from now?",
       "answer": "mydate := time.Now().AddDate(0, 0, 2)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:30:56.259033707Z"
+        }
+      ]
     },
     {
       "id": "1aeiuqrf8l",
@@ -2484,7 +2751,13 @@
       "active": true,
       "question": "In the time package, why is there no time.Day Duration constant?",
       "answer": "To avoid confusion across daylight savings time zone transitions.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-27T23:31:34.553914049Z"
+        }
+      ]
     },
     {
       "id": "x9n7aem8e6",
@@ -2492,7 +2765,13 @@
       "active": true,
       "question": "In fmt strings, what verbs do you use to get the following:\n1) the value in the default format for that type\n2) the value in a valid go syntax representation\n3) the type of a value\n4) a decimal number\n5) the string \"true\" or \"false\" for a bool\n6) a string, as if it were being printed\n7) a quoted string\n8) the character represented by the corresponding unicode code point\n9) an error, wrapped in a fmt.Errorf call",
       "answer": "1) %v\n2) %#v\n3) %T\n4) %d\n5) %t\n6) %s\n7) %q\n8) %c\n9) %w",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:32:46.713078Z"
+        }
+      ]
     },
     {
       "id": "rh47t1yly7",
@@ -2500,7 +2779,13 @@
       "active": true,
       "question": "How does errors.Is differ from just doing a type assertion on an error?",
       "answer": "It checks whether the top-level error, as well as any errors it wraps,\nmatch the argument, rather than just the top-level error.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:33:06.693848428Z"
+        }
+      ]
     },
     {
       "id": "gdn4m8l5tz",
@@ -2516,7 +2801,13 @@
       "active": true,
       "question": "How do you write a hexadecimal literal?",
       "answer": "0xabc109 or 0Xabc109",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:33:13.312297588Z"
+        }
+      ]
     },
     {
       "id": "shmxxakw0v",
@@ -2524,7 +2815,13 @@
       "active": true,
       "question": "How do you write an octal literal?",
       "answer": "0755, 0o755 or 0O755",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:33:18.431791437Z"
+        }
+      ]
     },
     {
       "id": "f9i6ueuq8a",
@@ -2532,7 +2829,13 @@
       "active": true,
       "question": "What is the difference between the || and | operators?\nWhat about the \u0026\u0026 and \u0026 operators?",
       "answer": "The single character operators are bitwise operators corresponding to\nOR and AND operations.\n\nThe double character operators are logical operators for combining\ntrue/false values.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:33:42.332767878Z"
+        }
+      ]
     },
     {
       "id": "s8savjthyy",
@@ -2540,7 +2843,13 @@
       "active": true,
       "question": "Which two operators are used to do bit shifting?",
       "answer": "myVar \u003c\u003c 1\n\nThe counterpart is \u003e\u003e.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:33:50.719037425Z"
+        }
+      ]
     },
     {
       "id": "o0q6gx3g4w",
@@ -2548,7 +2857,13 @@
       "active": true,
       "question": "If I have two ints, how do I XOR them?",
       "answer": "Use the XOR operator: ^",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:34:06.730272521Z"
+        }
+      ]
     },
     {
       "id": "s5zgb86569",
@@ -2556,7 +2871,13 @@
       "active": true,
       "question": "When you deserialize JSON into an `interface{}`, what do the following JSON types\nget unmarshalled as (in the interface)?\n\n- boolean\n- number\n- string\n- array\n- object\n- null",
       "answer": "boolean: bool\nnumber: float64\nstring: string\narray: []interface{}\nobject: map[string]interface{}\nnull: nil",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:35:09.722293769Z"
+        }
+      ]
     },
     {
       "id": "61bi3lp86c",
@@ -2564,7 +2885,13 @@
       "active": true,
       "question": "Define the interface that a type can implement in order to specify how\nto marshal it into JSON in []byte form.",
       "answer": "type json.Marshaler interface {\n    MarshalJSON() ([]byte, error)\n}",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:35:47.63399139Z"
+        }
+      ]
     },
     {
       "id": "9qqi8iaxtw",
@@ -2572,7 +2899,13 @@
       "active": true,
       "question": "What is the type that you'd use to unmarshal JSON from an io.Reader?",
       "answer": "json.Decoder",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:36:04.077258401Z"
+        }
+      ]
     },
     {
       "id": "ezx76exygr",
@@ -2580,7 +2913,13 @@
       "active": true,
       "question": "What is the type that you'd use to marshal JSON and write it to an io.Writer?",
       "answer": "json.Encoder",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:36:12.34379419Z"
+        }
+      ]
     },
     {
       "id": "s96yl1apg4",
@@ -2588,7 +2927,13 @@
       "active": true,
       "question": "What is the easiest way turn a []byte into an io.Reader?",
       "answer": "Use bytes.NewReader().",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:37:15.344171754Z"
+        }
+      ]
     },
     {
       "id": "h05u44hi3d",
@@ -2596,7 +2941,13 @@
       "active": true,
       "question": "What function would you use to get a random integer in the range [0, max)?",
       "answer": "rand.Intn()",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:37:28.861084929Z"
+        }
+      ]
     },
     {
       "id": "upqdnu90zi",
@@ -2604,7 +2955,13 @@
       "active": true,
       "question": "What function would you use to get a random float32 value in the range [0, 1.0)?\nHow about for a float64?",
       "answer": "rand.Float32()\nrand.Float64()",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:37:48.085986665Z"
+        }
+      ]
     },
     {
       "id": "hiag8n4lud",
@@ -2612,7 +2969,13 @@
       "active": true,
       "question": "What must you always do before using functions from the math/rand package?\nHow do you do this in practice?",
       "answer": "You must initialize the rng with a seed.\n\nrand.Seed(time.Now().UnixNano())\n\nNote that this must be done in init(), otherwise you can get the same \"random\" strings sometimes.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:38:23.059613275Z"
+        }
+      ]
     },
     {
       "id": "g0rg5zl3tk",
@@ -2620,7 +2983,13 @@
       "active": true,
       "question": "Why don't Context objects have a `Cancel` method, and why doesn't\ntheir Done() method return a two-way channel?",
       "answer": "You want cancellation signals to flow only one way: down the hierarchy.\nIf one goroutine could cancel a Context that its peers were monitoring,\nit would be a source of bugs and confusion. Restricting Contexts\nin the above ways prevents this.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-27T23:39:57.667920089Z"
+        }
+      ]
     },
     {
       "id": "hghgdicqki",
@@ -2628,7 +2997,13 @@
       "active": true,
       "question": "What is a root context.Context?\nWhy is it a thing?\nWhat function is used to get a root context.Context?",
       "answer": "Functions that use context.Contexts take a parent context.Context\nand use it to construct the next level in the context hierarchy.\nSo, you need to start somewhere.\nThe root context.Context fills this need. It never times out and is never cancelled.\n\ncontext.Background()",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:40:21.34433456Z"
+        }
+      ]
     },
     {
       "id": "b3g0ao2lor",
@@ -2636,7 +3011,13 @@
       "active": true,
       "question": "What function is used to get a new, cancellable context from a parent context?",
       "answer": "context.WithCancel",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-27T23:40:49.338191335Z"
+        }
+      ]
     },
     {
       "id": "8ihhdfxw66",
@@ -2644,7 +3025,13 @@
       "active": true,
       "question": "What function is used to get a new Context that has a deadline?",
       "answer": "context.WithTimeout",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2023-06-27T23:41:01.550058448Z"
+        }
+      ]
     },
     {
       "id": "a35tzd224x",
@@ -2668,7 +3055,13 @@
       "active": true,
       "question": "What is an int/uint?\nHow big is each?\nHow do you find out how big each is at runtime?",
       "answer": "For a 32 bit machine, int and uint are aliases for int32 and uint32.\nFor a 64 bit machine, int and uint are aliases for int64 and uint 64.\n\nYou can find the size of an int or uint by using `bits.UintSize`.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2023-06-27T23:41:28.456377223Z"
+        }
+      ]
     },
     {
       "id": "wk8bt5o2l9",
@@ -2812,7 +3205,13 @@
       "active": true,
       "question": "How do the below functions modify the passed slice in the calling scope?\nExplain why.\n\nfunc addElements(s []string) {\n\ts = append(s, \"four\", \"five\", \"six\")\n}\n\nfunc modifyFirstElement(s []string) {\n\ts[0] = \"four\"\n}",
       "answer": "addElements does not modify the slice at all. However, if the\nunderlying array has room the function may modify it outside the\nfunction scope. So this is dangerous.\n\nmodifyFirstElement modifies the first element.\n\nYou can think of a slice as a struct with fields for:\n- a reference to the underlying array\n- the length of the slice\n- the capacity of the slice\n\nStructs are passed by value, and addElements modifies the fields\nof the struct, so modifications don't make it outside the scope of\naddElements, except for the aformentioned possible modification to\nthe underlying array.\n\nOn the other hand, modifyFirstElement is simply modifying an element\nof the underlying array, which is scoped outside the function, so the\nmodification persists.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2023-06-27T23:42:18.596169245Z"
+        }
+      ]
     }
   ]
 }
