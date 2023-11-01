@@ -2757,7 +2757,7 @@
       "version": 0,
       "active": true,
       "question": "How do you check whether a file/dir exists?",
-      "answer": "You do an os.Stat and check the error on it:\n\nif _, err := os.Stat(\"/path/to/whatever\"); errors.Is(err, os.ErrNotExist)\n{\n    // /path/to/whatever does not exist\n}\n\nif _, err := os.Stat(\"/path/to/whatever\"); err == nil {\n    // /path/to/whatever exists\n}",
+      "answer": "You do an os.Stat and check the error on it:\n\nif _, err := os.Stat(\"/path/to/whatever\"); err == nil {\n    // /path/to/whatever exists\n} else if errors.Is(err, os.ErrNotExist)\n{\n    // /path/to/whatever does not exist\n} else {\n    // unexpected error; we can't tell if /path/to/whatever exists\n}",
       "reviews": [
         {
           "version": 0,
@@ -3597,6 +3597,22 @@
           "datetime": "2023-06-27T23:42:18.596169245Z"
         }
       ]
+    },
+    {
+      "id": "hfw6g0c5kw",
+      "version": 0,
+      "active": true,
+      "question": "Which package should be used for platform-specific syscalls?\nWhat must I remember here?",
+      "answer": "golang.org/x/sys/unix\ngolang.org/x/sys/windows\n\nRemember that the `syscall` package is deprecated. It\nshould not be used.",
+      "reviews": []
+    },
+    {
+      "id": "zgnsp7nu6r",
+      "version": 0,
+      "active": true,
+      "question": "How does the regexp package work? Specifically, what\ndo the below parts of a function do:\n- All\n- String\n- Submatch\n- Index",
+      "answer": "All functions adhere to the format Find(All)?(String)?(Submatch)?(Index)?.\n\nAll: return all matches, not just the first one.\n\nString: take string type as input and output if applicable;\n[]byte is used if not present.\n\nSubmatch: each \"match\" is a slice containing the entire expression\nat index 0, and then submatches at later indicies.\n\nIndex: instead of the content, matches are pairs of indices\nthat indicate the start and end of the match.",
+      "reviews": []
     }
   ]
 }
