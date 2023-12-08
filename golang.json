@@ -3613,6 +3613,14 @@
       "question": "How does the regexp package work? Specifically, what\ndo the below parts of a function do:\n- All\n- String\n- Submatch\n- Index",
       "answer": "All functions adhere to the format Find(All)?(String)?(Submatch)?(Index)?.\n\nAll: return all matches, not just the first one.\n\nString: take string type as input and output if applicable;\n[]byte is used if not present.\n\nSubmatch: each \"match\" is a slice containing the entire expression\nat index 0, and then submatches at later indicies.\n\nIndex: instead of the content, matches are pairs of indices\nthat indicate the start and end of the match.",
       "reviews": []
+    },
+    {
+      "id": "luf7q4k9fo",
+      "version": 0,
+      "active": true,
+      "question": "In cobra, what is the difference between cmd.Flags(), cmd.LocalFlags()\nand cmd.PersistentFlags()?",
+      "answer": "There are only two types of flags in cobra: local flags and persistent\nflags. Local flags apply only to their subcommand, and persistent\nflags apply to their subcommand and all child/grandchild etc commands.\n\ncmd.Flags() returns all local and persistent flags on a subcommand.\nWhen used to add a flag, it adds that flag as a local flag on the\nsubcommand.",
+      "reviews": []
     }
   ]
 }
