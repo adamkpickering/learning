@@ -1,6 +1,7 @@
 {
   "name": "kubernetes",
   "version": 0,
+  "active": true,
   "cards": [
     {
       "id": "lqt4ghquaj",
@@ -11,27 +12,11 @@
       "reviews": []
     },
     {
-      "id": "36kw7yhgdz",
-      "version": 0,
-      "active": true,
-      "question": "What three ways can you specify kubeconfig?",
-      "answer": "1) pass path to kubeconfig in --kubeconfig argument 2) put path to kubeconfig in KUBECONFIG env variable 3) put kubeconfig at ~/.kube/config",
-      "reviews": []
-    },
-    {
       "id": "2tx2iud6ts",
       "version": 0,
       "active": true,
       "question": "What is the history of the use of docker by kubernetes?",
       "answer": "1) K8s originally used only dockerd as the container engine.   2) It was recognized that it would be beneficial for it to be possible to use other container engines to make containers a reality in k8s. rkt was the first one.   3) CRI was defined to solve the problem of docker and rkt having different, and poorly-defined, interfaces to kubelet. For docker, CRI was satisfied by the creation of dockershim, an adaptor for CRI to dockerd inside the k8s project.   4) dockershim became a burden on the k8s maintainers. Mirantis and Docker agree to maintain a separate adaptor, cri-dockerd, that does the same thing but is in a different tree. Many CRI implementations now exist.",
-      "reviews": []
-    },
-    {
-      "id": "6lwlv9wb0s",
-      "version": 0,
-      "active": true,
-      "question": "What is a namespace?",
-      "answer": "a non-overlapping set of resources, intended to be given to different teams etc in shared environments",
       "reviews": []
     },
     {
@@ -71,7 +56,7 @@
       "version": 0,
       "active": true,
       "question": "What are the 4 types of services?",
-      "answer": "ClusterIP: default, service is only available internally through a cluster-internal IP  NodePort: a static port (called NodePort) is opened on each node, so that traffic can reach the service via <node_ip>:<node_port>; a ClusterIP service, which NodePort service routes to, is automatically created  LoadBalancer: traffic comes into cluster via an external load balancer (for the cloud)  ExternalName: literally a CNAME record pointing to an external service; can cause problems with protocols that use the domain name (HTTP, HTTPS)",
+      "answer": "ClusterIP: default, service is only available internally through a cluster-internal IP  NodePort: a static port (called NodePort) is opened on each node, so that traffic can reach the service via \u003cnode_ip\u003e:\u003cnode_port\u003e; a ClusterIP service, which NodePort service routes to, is automatically created  LoadBalancer: traffic comes into cluster via an external load balancer (for the cloud)  ExternalName: literally a CNAME record pointing to an external service; can cause problems with protocols that use the domain name (HTTP, HTTPS)",
       "reviews": []
     },
     {
@@ -109,7 +94,7 @@
     {
       "id": "kifvfd33xw",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What object would I use to limit compute consumption in a namespace?",
       "answer": "ResourceQuota",
       "reviews": []
@@ -133,7 +118,7 @@
     {
       "id": "axsgbloax5",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Name the five fields of the ServicePort object, and if applicable, their options",
       "answer": "name: the name of the port; optional if only one port is defined on service protocol: the protocol used (TCP, UDP, HTTP, PROXY, SCTP)  nodePort: the port that is opened on each node for a NodePort service port: the port that the service exposes externally (with externalIPs) or internally to the cluster, to other services/pods targetPort: the port on the pod that the service connects to (defaults to `port` if not defined)",
       "reviews": []
@@ -141,7 +126,7 @@
     {
       "id": "flcxa9gotx",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the purpose of the Open Service Broker API standard?",
       "answer": "It is a way for platforms (think k8s master) to talk to cloud providers in order to find out what services (think AWS EC2 instance) they offer, and to get them.",
       "reviews": []
@@ -149,7 +134,7 @@
     {
       "id": "tdw21mwdsh",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What Service field is used to specify how traffic coming from an external source is routed through iptables to a pod? What are its possible values, and what do they mean?",
       "answer": "externalTrafficPolicy   Local: preserves client source IP and routes traffic to a pod on the node that received the traffic; might result in uneven load spreading in the cluster   Cluster: obscures the client source IP and may route traffic to a pod on another node; better load spreading",
       "reviews": []
@@ -157,7 +142,7 @@
     {
       "id": "w0z3khvb4j",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is sessionAffinity option for a Service?  What are the options and what do they mean?",
       "answer": "It concerns how IP traffic is passed to pods, which is relevant for connection-based protocols.   None (default): no session affinity ClientIP: ensures that connections from a particular client are passed to the same pod within a specified time period",
       "reviews": []
@@ -165,7 +150,7 @@
     {
       "id": "o16uh8xgil",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is a headless service? Why might you use one? What are the two kinds?",
       "answer": "A service with clusterIP: None. Used to interface with service discovery mechanisms other than Kubernetes'. Also used for exposing statefulsets.   With selector statement: an Endpoints resource is created, but nothing is configured by kube-proxy. The service DNS name is configured to do round-robin load balancing across pods.   Without selector statement: you can create your own Endpoints resource (which must have the same name as the service). Or, a CNAME record will be created for an ExternalName service.",
       "reviews": []
@@ -237,7 +222,7 @@
     {
       "id": "t5zhe8nczk",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "List the 13 verbs that can be used in role/clusterrole rules.",
       "answer": "- get - list - watch - create - update - patch - delete - deletecollection - use - bind  - escalate - impersonate - userextras",
       "reviews": []
@@ -245,7 +230,7 @@
     {
       "id": "esmjbn0uv6",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Define the following terms: node affinity/antiaffinity inter-pod affinity/antiaffinity taint toleration",
       "answer": "node affinity/antiaffinity: a property of pods that causes them to run (either for sure or just preference) on a subset of nodes   inter-pod affinity/antiaffinity: a property of pods that causes them to be attracted to or repelled by pods already running on a node   taint: a property of a node that allows it to repel a set of pods   toleration: a property of a pod that lets it tolerate a taint on a node (it can run on that node)",
       "reviews": []
@@ -277,7 +262,7 @@
     {
       "id": "i98nm8co0m",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the two ways you can expose each unique pod in a StatefulSet? What are the names you use to get to the pod in each case?",
       "answer": "1) Use a headless service, which usually would give you a single DNS name that round-robin load balances to different pods. In the case of a StatefulSet we get multiple DNS records, of the form ${statefulset_name}-${ordinal}.${service_name}.${namespace}.cluster.local   2) Use one service to refer to each pod; each service selects for the label \"statefulset.kubernetes.io/pod-name",
       "reviews": []
@@ -311,7 +296,7 @@
       "version": 0,
       "active": true,
       "question": "What are the two typical types of API groups? What is their apiVersion key?  What is their REST path?",
-      "answer": "core (legacy) apiVersion: <version>  /api/<version>   named groups/CRD groups apiVersion: <group_name>/<version> /apis/<group_name>/<version>",
+      "answer": "core (legacy) apiVersion: \u003cversion\u003e  /api/\u003cversion\u003e   named groups/CRD groups apiVersion: \u003cgroup_name\u003e/\u003cversion\u003e /apis/\u003cgroup_name\u003e/\u003cversion\u003e",
       "reviews": []
     },
     {
@@ -373,7 +358,7 @@
     {
       "id": "uyd0iesiir",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the two service fields I always get mixed up? What does each specify?",
       "answer": "externalTrafficPolicy: specifies how traffic coming in gets routed to a pod   sessionAffinity: specifies policies that let you send traffic coming in to the same pod based on source IP",
       "reviews": []
@@ -381,15 +366,15 @@
     {
       "id": "wx9qw00ecq",
       "version": 0,
-      "active": true,
-      "question": "Configure a Pod with the following attributes: - name \"example\" - namespace \"default\" - serves the contents of the \"index.html\" file, read-only, from the \"myconfig\" configMap volume on TCP port 80 with port name \"http\" - uses the default python http server (can be started with command `python -m http.server --bind 0.0.0.0 --directory <dir> 80`) - has the environment variable MYVAR=helloworld configured on it - never restarts if it crashes - give it the \"testSA\" service account credentials",
+      "active": false,
+      "question": "Configure a Pod with the following attributes: - name \"example\" - namespace \"default\" - serves the contents of the \"index.html\" file, read-only, from the \"myconfig\" configMap volume on TCP port 80 with port name \"http\" - uses the default python http server (can be started with command `python -m http.server --bind 0.0.0.0 --directory \u003cdir\u003e 80`) - has the environment variable MYVAR=helloworld configured on it - never restarts if it crashes - give it the \"testSA\" service account credentials",
       "answer": "apiVersion: v1 kind: Pod  metadata:   name: example   namespace: default spec:   serviceAccountName: testSA    restartPolicy: Never   containers:   - name: server     image: python:3.10     command: [\"python\", \"-m\", \"http.server\"]     args: [\"--bind\", \"0.0.0.0\", \"--directory\", \"/srv\", \"80\"]     env:     - name: MYVAR       value: helloworld     ports:     - containerPort: 80       name: http       protocol: TCP     volumeMounts:     - name: myvolume       mountPath: /srv       readOnly: true   volumes:   - name: myvolume     configMap:       name: myconfig       items:       - key: index.html         path: index.html",
       "reviews": []
     },
     {
       "id": "auhiqe6grw",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Define a cluster IP Service that exposes TCP port 80 to port 5500 with the label \"app: myapp\".",
       "answer": "apiVersion: v1 kind: Service metadata:   name: example   namespace: default spec:   type: ClusterIP   selector:     app: myapp   ports:     - targetPort: 80       port: 5500       protocol: TCP",
       "reviews": []
@@ -397,7 +382,7 @@
     {
       "id": "6xz9z9dvbc",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "Define a ConfigMap with one file, index.html, with content \"hello world",
       "answer": "apiVersion: v1 kind: ConfigMap metadata:   name: example   namespace: default data:   index.html: \"hello world",
       "reviews": []
@@ -405,15 +390,15 @@
     {
       "id": "21btai70q1",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "In minikube, how are services exposed?",
-      "answer": "NodePort services are exposed by a separate IP address that represents the minikube Node. So you access them via <node_ip>:<port>. You can get this info via `minikube service <service_name> --url`.   LoadBalancer services get NodePorts by default, so you can access them the same way. However, you can also start a local load balancer. To do this, run `minikube tunnel` in a separate terminal. Then, another IP address will be created that represents the load balancer, and you will be able to access the service via that IP and the service port(s).",
+      "answer": "NodePort services are exposed by a separate IP address that represents the minikube Node. So you access them via \u003cnode_ip\u003e:\u003cport\u003e. You can get this info via `minikube service \u003cservice_name\u003e --url`.   LoadBalancer services get NodePorts by default, so you can access them the same way. However, you can also start a local load balancer. To do this, run `minikube tunnel` in a separate terminal. Then, another IP address will be created that represents the load balancer, and you will be able to access the service via that IP and the service port(s).",
       "reviews": []
     },
     {
       "id": "li3r8dambh",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is Knative?",
       "answer": "Serverless, but on k8s instead of a cloud platform.",
       "reviews": []
@@ -437,7 +422,7 @@
     {
       "id": "mjje3xhw1s",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is linkerd?",
       "answer": "A service mesh. Has an emphasis on performance and minimalism.",
       "reviews": []
@@ -461,7 +446,7 @@
     {
       "id": "yl0qm55fgc",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the basic layout of a kustomize config?",
       "answer": "myapp/   kustomization.yaml   deployment.yaml   service.yaml",
       "reviews": []
@@ -469,7 +454,7 @@
     {
       "id": "h3c5j8u8i4",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What are the four classes of things you find in a kustomization.yaml file?",
       "answer": "Resources, generators, transformers and validators.",
       "reviews": []
@@ -485,7 +470,7 @@
     {
       "id": "l52dpwcufi",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "How is kubewarden deployed to a cluster? How does it work?",
       "answer": "In kubernetes, you can make any incoming objects be validated/mutated by an external webhook service by defining ValidatingWebhookConfiguration or MutatingWebhookConfiguration resources. These resources specify: 1) the URL of a webhook to talk to 2) which resources to check against the webhook   Kubewarden is deployed as kubewarden-controller to the cluster. Then, the user creates PolicyServer and ClusterAdmissionPolicy resources (which are kubewarden CRDs). Each PolicyServer resource becomes a deployment; this is the server that k8s interfaces with via webhook. Each PolicyServer may have multiple ClusterAdmissionPolicy's attached to it.   When the set of CAPs assigned to a PS changes, kubewarden-controller changes the PS config (which is stored in a ConfigMap) to match, and initiates a rollout of the PS deployment. In this way, all pods for that PS are restarted with the new config.   When kubewarden-controller first notices a PS, several things are done: 1) a TLS cert is created for the PS and stored in a Secret 2) a Deployment is created for the PS 3) a ClusterIP Service is created that points to the PS 4) a ValidatingWebhookConfiguration or MutatingWebhookConfiguration resource is created to make resources in the cluster have to go through the PS",
       "reviews": []
@@ -493,7 +478,7 @@
     {
       "id": "ao8zoelkzn",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is the idea behind epinio?",
       "answer": "The idea is to make it easy to go from code in a repository to a running application on a k8s cluster in one step.   In order to make this possible, there are things that must be taken care of:   1) detecting the project type and building it into an OCI image   2) defining k8s resources to turn that OCI image into a running service   3) having things installed on the cluster that make things more secure, reliable and observable: linkerd, metrics, kubewarden etc",
       "reviews": []
@@ -501,7 +486,7 @@
     {
       "id": "2vcdt9xfup",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is skaffold?",
       "answer": "Skaffold is like epinio, but lesser in scope. Also uses buildpacks behind the scenes. Monitors your app for changes and restarts/deploys it locally. One can plug in tools to use for all of these things. Can deploy to production too apparently.",
       "reviews": []
@@ -509,7 +494,7 @@
     {
       "id": "e80oftjvhd",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What is kim? How does it work?",
       "answer": "Stands for Kubernetes Image Manager. It consists of:   1) a CLI tool that is used to interface with the whole thing 2) a BuildKit daemon bound to the Kubelet's underlying containerd socket 3) a server-side agent that the CLI uses to manage images (push, pull etc)   Basically, it enables building images locally on your k3s cluster.",
       "reviews": []
