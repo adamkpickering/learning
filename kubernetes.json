@@ -498,6 +498,38 @@
       "question": "What is kim? How does it work?",
       "answer": "Stands for Kubernetes Image Manager. It consists of:   1) a CLI tool that is used to interface with the whole thing 2) a BuildKit daemon bound to the Kubelet's underlying containerd socket 3) a server-side agent that the CLI uses to manage images (push, pull etc)   Basically, it enables building images locally on your k3s cluster.",
       "reviews": []
+    },
+    {
+      "id": "pgsh7tayvy",
+      "version": 0,
+      "active": true,
+      "question": "Order the following from highest-level to lowest-level:\n\nclient-go\nwrangler\nlasso",
+      "answer": "wrangler\nlasso\nclient-go",
+      "reviews": []
+    },
+    {
+      "id": "rykmcn848r",
+      "version": 0,
+      "active": true,
+      "question": "What are the two main libraries that are core to k8s?",
+      "answer": "k8s.io/apimachinery\nk8s.io/client-go",
+      "reviews": []
+    },
+    {
+      "id": "uaf2r4sr1m",
+      "version": 0,
+      "active": true,
+      "question": "What are some reasons we might use a controller framework?",
+      "answer": "- The bare cache.SharedIndexInformer doesn't help us at all when handler\n  functions return errors. Using a controller framework lets us handle\n  handler errors more intelligently with retries etc.\n\n- They can efficiently manage creation of k8s clients and cache.SharedIndexInformers.\n\n- They can generate code in order to make it easier to define custom\n  types and controllers.\n\n- They can define code that handles common controller patterns.",
+      "reviews": []
+    },
+    {
+      "id": "ovq6egfknt",
+      "version": 0,
+      "active": true,
+      "question": "How does one create a controller without the use of any controller frameworks?\nHow does this work?",
+      "answer": "You would use a cache.SharedInformer.\n\nWhen you instantiate a cache.SharedInformer, you pass several things:\n- A cache.ListerWatcher\n- A runtime.Object\n\nAdditionally, the cache.SharedInformer internally constructs a queue and a\nstore.",
+      "reviews": []
     }
   ]
 }
