@@ -788,6 +788,14 @@
           "datetime": "2024-01-26T18:28:19.271801726Z"
         }
       ]
+    },
+    {
+      "id": "7bwhlwv672",
+      "version": 0,
+      "active": true,
+      "question": "How does helm store release metadata?",
+      "answer": "There are three kinds of storage backends:\n\nsecret: uses Secrets to store release metadata; this is the default\n\nconfigmap: uses ConfigMaps to store information on releases\n\nsql: uses an SQL database to store release metadata; this is useful when\n  there is a lot of release metadata (but it seems dumb to me)",
+      "reviews": []
     }
   ]
 }
