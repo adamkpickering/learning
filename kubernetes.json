@@ -13,6 +13,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2024-01-29T17:34:42.569186205Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2024-01-26T17:10:20.147969043Z"
         }
       ]
@@ -24,6 +29,11 @@
       "question": "What is the history of the use of docker by kubernetes?",
       "answer": "1) K8s originally used only dockerd as the container engine.\n2) It was recognized that it would be beneficial for it to be possible to\n   use other container engines to make containers a reality in k8s. rkt was\n   the first one.\n3) CRI was defined to solve the problem of docker and rkt having different,\n   and poorly-defined, interfaces to kubelet. For docker, CRI was satisfied\n   by the creation of dockershim, an adaptor for CRI to dockerd inside the k8s\n   project.\n4) dockershim became a burden on the k8s maintainers. Mirantis and Docker agree\n   to maintain a separate adaptor, cri-dockerd, that does the same thing but is\n   in a different tree.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-01-29T17:31:53.923236311Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -40,6 +50,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:30:22.399157937Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-01-26T18:52:37.430847858Z"
         }
@@ -54,6 +69,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2024-01-29T17:45:05.244601729Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-01-26T19:03:53.350060503Z"
         }
@@ -66,6 +86,11 @@
       "question": "What are the 4 parts to the control plane? What do they do?",
       "answer": "etcd: a key-value store that represents the state of the cluster\nAPI server: acts as a broker between REST API requests and the state of etcd\nscheduler: monitors resource usage of nodes (among many other things) and selects which node will run an unscheduled pod\ncontroller manager: a process that manages a set of core k8s controllers, such as replication controller, DaemonSet controller, job controller",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T18:00:14.362406832Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -90,6 +115,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T18:04:08.619876854Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2024-01-26T18:15:28.097430507Z"
         }
@@ -104,6 +134,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2024-01-29T17:45:49.052860624Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-01-26T18:51:14.14297683Z"
         }
@@ -116,6 +151,11 @@
       "question": "What are the Endpoints and EndpointSlice resources, and how do they differ?",
       "answer": "Every Service has a corresponding Endpoints resource, which is created by\nthe Endpoints controller as it polls pods and finds the set that match the\nService's selector criteria. It then creates the Endpoints resource by assembling\nthe pod IPs and ports that are open for each pod.\n\nHowever this does not scale. EndpointSlices are a way of addressing this.\nEndpointSlices list all of the pod IPs for each unique combination of port and\nservice, up to a maximum of 100 (by default) IPs per EndpointSlice. For very\nlarge services, this is easier to manage.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:42:44.946541766Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -133,6 +173,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2024-01-29T17:52:09.963196235Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2024-01-26T17:09:46.203856376Z"
         }
       ]
@@ -144,6 +189,11 @@
       "question": "How are Labels and Annotations similar, and how are they different?",
       "answer": "Similar:\n- both key/value pairs\n- same rules for key (prefix/name)\n\nDifferent:\n- Labels are for selecting certain objects\n- Labels' values are limited in length and character set\n- Annotations are for metadata\n- Annotations' values can contain anything, including structured data",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:44:15.191504893Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -168,6 +218,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:43:38.159337312Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-01-26T18:47:10.279897644Z"
         }
@@ -180,6 +235,11 @@
       "question": "For the externalIPs field to work, what is required?",
       "answer": "clusterIP cannot be None, since the externalIPs are NAT'd to the clusterIP.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:44:27.372315228Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -237,6 +297,11 @@
         {
           "version": 0,
           "result": "failed",
+          "datetime": "2024-01-29T17:40:25.395263196Z"
+        },
+        {
+          "version": 0,
+          "result": "failed",
           "datetime": "2024-01-26T16:59:44.012118082Z"
         }
       ]
@@ -248,6 +313,11 @@
       "question": "What are the five possible states a Pod object can be in?",
       "answer": "Pending: pod has been created as a resource, but is either not yet scheduled or containers are being created\nRunning: pod has been bound to a node, and all containers have been created, and are running\nSucceeded: all containers in the pod have terminated in success, and will not be restarted\nFailed: all containers in pod have terminated, and at least one terminated in failure\nUnknown: the state of the pod could not be obtained, typically due to an error in communicating with the host of the pod",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:46:07.826195964Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -265,6 +335,11 @@
         {
           "version": 0,
           "result": "failed",
+          "datetime": "2024-01-29T17:59:44.275173642Z"
+        },
+        {
+          "version": 0,
+          "result": "failed",
           "datetime": "2024-01-26T17:32:25.289682814Z"
         }
       ]
@@ -276,6 +351,11 @@
       "question": "How does logging work at the node level?",
       "answer": "Logs from components that run inside a container (anything in a pod) are\nwritten using the container runtime's configured logging driver to /var/log.\n\nLogs from components that do not run inside a container are logged to journald,\nas they are systemd services.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T18:02:00.889502205Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -292,6 +372,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2024-01-29T17:51:55.894305157Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2024-01-26T17:26:28.141546184Z"
         }
@@ -304,6 +389,11 @@
       "question": "What is a RoleBinding/ClusterRoleBinding?\nHow do they differ?",
       "answer": "RoleBindings give the permissions described by a Role or ClusterRole to one or more\nusers in a namespace. ClusterRoleBindings are the same, but in all namespaces.\n\nIt is possible to reference a ClusterRole in a RoleBinding; in this case the user\ngets the permissions defined in the ClusterRole, but only in the namespace listed\nin the RoleBinding.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-01-29T17:52:56.167316635Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -321,6 +411,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-01-29T17:36:30.294325939Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-26T17:04:12.999646764Z"
         }
       ]
@@ -332,6 +427,11 @@
       "question": "What are the 3 keys to every rule in a Role/ClusterRole? What is surprising about this?",
       "answer": "apiGroups: list of v1, extensions/v1beta1 etc\nresources: list of resources in those api groups\nverbs: list of verbs that are permitted on those resources\n\nIt is surprising that we have only apiGroups, and no information about what\nversions of the resources in those groups each rule applies to. But really,\nthis isn't needed - versions are only used to differentiate different schema\nfor resources.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-01-29T17:28:44.647617851Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -365,6 +465,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-01-29T18:00:55.677866578Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-26T17:31:39.685858966Z"
         }
       ]
@@ -379,6 +484,11 @@
         {
           "version": 0,
           "result": "failed",
+          "datetime": "2024-01-29T17:48:11.04018364Z"
+        },
+        {
+          "version": 0,
+          "result": "failed",
           "datetime": "2024-01-26T17:23:37.587873902Z"
         }
       ]
@@ -390,6 +500,11 @@
       "question": "What is kube-proxy responsible for, compared to the CNI plugin?",
       "answer": "kube-proxy: exclusively responsible for services, and load-balancing traffic\ndestined for that belong to a service\n\nCNI plugin: responsible for pod and inter-pod networking",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-01-29T17:35:44.250784627Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -415,6 +530,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2024-01-29T18:03:34.832870017Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2024-01-26T17:05:21.247326131Z"
         }
       ]
@@ -426,6 +546,11 @@
       "question": "In the case of updating the container version in the Pods, how does a Deployment update the Pods?",
       "answer": "It creates a whole new ReplicaSet and gradually decreases the number\nof replicas in the old ReplicaSet as it gradually increases the number\nof replicas in the new ReplicaSet.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:51:00.269623078Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -442,6 +567,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:39:41.012592419Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-01-26T17:03:10.914479814Z"
         }
@@ -451,9 +581,14 @@
       "id": "2q3dshejlp",
       "version": 0,
       "active": true,
-      "question": "What are the two typical types of API groups? What is their apiVersion key?  What is their REST path?",
+      "question": "What are the two typical types of API groups?\nWhat is their apiVersion key?\nWhat is their REST path?",
       "answer": "core (legacy)\napiVersion: \u003cversion\u003e\n/api/\u003cversion\u003e\n\nnamed groups/CRD groups\napiVersion: \u003cgroup_name\u003e/\u003cversion\u003e\n/apis/\u003cgroup_name\u003e/\u003cversion\u003e",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:54:07.629338061Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -471,6 +606,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-01-29T17:37:45.702536186Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-26T18:44:24.178404471Z"
         }
       ]
@@ -482,6 +622,11 @@
       "question": "What are the three stages an API version goes through on its way to acceptance?\nWhat do they mean for their component resources?\nWhat do they look like in an apiVersion?",
       "answer": "alpha\n- bugs are likely\n- API may change\n- v1alpha1\n\nbeta\n- considered safe regarding bugs\n- API may change\n- v1beta1\n\nstable\n- considered safe regarding bugs\n- API is stable\n- v1",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:45:19.421666018Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -499,6 +644,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-01-29T17:41:26.054518289Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-26T17:39:43.890938141Z"
         }
       ]
@@ -510,6 +660,11 @@
       "question": "What does v1alpha2 mean?",
       "answer": "It is the second alpha version of the eventual v1 version of the group.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:28:54.971608992Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -527,6 +682,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-01-29T18:02:59.506195069Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-26T17:34:07.545270167Z"
         }
       ]
@@ -538,6 +698,11 @@
       "question": "What service types does the externalIP field apply to?",
       "answer": "Any that have a clusterIP.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:39:19.49420836Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -552,6 +717,11 @@
       "question": "What rules are there for case of keys and values in k8s resource files?",
       "answer": "keys are camelCase\nvalues are PascalCase",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-01-29T17:46:31.605584824Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -616,6 +786,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:42:09.643911929Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2024-01-26T17:30:11.357517044Z"
         }
@@ -628,6 +803,11 @@
       "question": "What is fleet?",
       "answer": "Fleet is a set of controllers and resources that make gitops easy\nand scalable to a million clusters. It watches repositories that\nhave kubernetes manifests, helm charts or kustomize configs, and when\nchanges are noticed, makes those changes a reality. Turns everything\ninto helm charts before deployment.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:29:33.677854466Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -652,6 +832,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-01-29T18:01:45.483751511Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-01-26T17:36:29.211899326Z"
         }
@@ -664,6 +849,11 @@
       "question": "Where does Helm store information about installed releases?",
       "answer": "Currently (v3) stores this info in Secret resources in the same namespace as the release.\nPreviously (v2) stored this info in ConfigMap resources in same namespace as Tiller deployment.\nSQL (postgres only currently) is also supported.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-01-29T18:03:18.854601104Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -694,6 +884,11 @@
       "question": "What is the idea behind Kustomize?",
       "answer": "You can define base resources, and then overlay various transformations\nonto them to make, for example, versions of those resources for different\nstages with the corresponding different config.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T18:02:25.128322817Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -743,6 +938,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-01-29T17:30:37.608909293Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-26T17:34:59.70624584Z"
         }
       ]
@@ -754,6 +954,11 @@
       "question": "What are the two main libraries that are core to k8s?",
       "answer": "k8s.io/apimachinery\nk8s.io/client-go",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:44:41.056640896Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -770,6 +975,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:33:58.73779601Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-01-26T18:43:27.477343002Z"
         }
@@ -784,6 +994,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:59:11.213244048Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2024-01-26T18:28:19.271801726Z"
         }
@@ -795,7 +1010,13 @@
       "active": true,
       "question": "How does helm store release metadata?",
       "answer": "There are three kinds of storage backends:\n\nsecret: uses Secrets to store release metadata; this is the default\n\nconfigmap: uses ConfigMaps to store information on releases\n\nsql: uses an SQL database to store release metadata; this is useful when\n  there is a lot of release metadata (but it seems dumb to me)",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-29T17:37:14.101079177Z"
+        }
+      ]
     }
   ]
 }
