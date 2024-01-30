@@ -843,25 +843,6 @@
       ]
     },
     {
-      "id": "454tzdla4l",
-      "version": 0,
-      "active": true,
-      "question": "Where does Helm store information about installed releases?",
-      "answer": "Currently (v3) stores this info in Secret resources in the same namespace as the release.\nPreviously (v2) stored this info in ConfigMap resources in same namespace as Tiller deployment.\nSQL (postgres only currently) is also supported.",
-      "reviews": [
-        {
-          "version": 0,
-          "result": "failed",
-          "datetime": "2024-01-29T18:03:18.854601104Z"
-        },
-        {
-          "version": 0,
-          "result": "failed",
-          "datetime": "2024-01-26T18:33:19.759546355Z"
-        }
-      ]
-    },
-    {
       "id": "yl0qm55fgc",
       "version": 0,
       "active": false,
