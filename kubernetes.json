@@ -31,6 +31,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:51:33.516203545Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2024-01-29T17:31:53.923236311Z"
         },
@@ -48,6 +53,11 @@
       "question": "What does CRI stand for?\nWhere did it originate?\nWhat is it?",
       "answer": "Container Runtime Interface\n\nIt originated in kubernetes.\n\nIt is a gRPC interface that enables us to use many different container engines\nwith the same API. Libraries are available to ease its use.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:56:37.022602121Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -154,6 +164,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-01-30T18:59:30.085072464Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T17:42:44.946541766Z"
         },
         {
@@ -216,6 +231,11 @@
       "question": "What are the following:\nVolume\nPersistentVolume\nPersistentVolumeClaim\nStorageClass",
       "answer": "Volume: a place to store files; that is tied to the lifetime of a pod\n\nPersistentVolume: a Volume that has a lifetime independent of a pod; manually\nprovisioned by an administrator, or dynamically provisioned using StorageClasses\n\nPersistentVolumeClaim: an object that is created by a user when they want to\nrequest a PersistentVolume\n\nStorageClass: used by administrators to describe the \"classes\" of storage they offer;\ndifferent classes might map to QoS levels, backup policies etc",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:45:35.155268997Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -296,6 +316,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:46:03.702522037Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-01-29T17:40:25.395263196Z"
         },
@@ -313,6 +338,11 @@
       "question": "What are the five possible states a Pod object can be in?",
       "answer": "Pending: pod has been created as a resource, but is either not yet scheduled or containers are being created\nRunning: pod has been bound to a node, and all containers have been created, and are running\nSucceeded: all containers in the pod have terminated in success, and will not be restarted\nFailed: all containers in pod have terminated, and at least one terminated in failure\nUnknown: the state of the pod could not be obtained, typically due to an error in communicating with the host of the pod",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:56:04.532961986Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -334,6 +364,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:54:34.698548656Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-01-29T17:59:44.275173642Z"
         },
@@ -351,6 +386,11 @@
       "question": "How does logging work at the node level?",
       "answer": "Logs from components that run inside a container (anything in a pod) are\nwritten using the container runtime's configured logging driver to /var/log.\n\nLogs from components that do not run inside a container are logged to journald,\nas they are systemd services.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:55:03.392094774Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -389,6 +429,11 @@
       "question": "What is a RoleBinding/ClusterRoleBinding?\nHow do they differ?",
       "answer": "RoleBindings give the permissions described by a Role or ClusterRole to one or more\nusers in a namespace. ClusterRoleBindings are the same, but in all namespaces.\n\nIt is possible to reference a ClusterRole in a RoleBinding; in this case the user\ngets the permissions defined in the ClusterRole, but only in the namespace listed\nin the RoleBinding.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:44:03.380903465Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -483,6 +528,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:47:28.109070255Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-01-29T17:48:11.04018364Z"
         },
@@ -500,6 +550,11 @@
       "question": "What is kube-proxy responsible for, compared to the CNI plugin?",
       "answer": "kube-proxy: exclusively responsible for services, and load-balancing traffic\ndestined for that belong to a service\n\nCNI plugin: responsible for pod and inter-pod networking",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-01-30T18:42:53.375092176Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -549,6 +604,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-01-30T18:47:59.021396619Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T17:51:00.269623078Z"
         },
         {
@@ -565,6 +625,11 @@
       "question": "What are the three top-level keys that every k8s resource has?",
       "answer": "apiVersion\nkind\nmetadata",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-01-30T18:49:53.932603077Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -622,6 +687,11 @@
       "question": "What are the three stages an API version goes through on its way to acceptance?\nWhat do they mean for their component resources?\nWhat do they look like in an apiVersion?",
       "answer": "alpha\n- bugs are likely\n- API may change\n- v1alpha1\n\nbeta\n- considered safe regarding bugs\n- API may change\n- v1beta1\n\nstable\n- considered safe regarding bugs\n- API is stable\n- v1",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:54:05.566973554Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -698,6 +768,11 @@
       "question": "What service types does the externalIP field apply to?",
       "answer": "Any that have a clusterIP.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:46:21.828531529Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -832,6 +907,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:55:41.571580665Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2024-01-29T18:01:45.483751511Z"
         },
@@ -957,6 +1037,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-01-30T18:49:11.803792868Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T17:33:58.73779601Z"
         },
         {
@@ -992,6 +1077,11 @@
       "question": "How does helm store release metadata?",
       "answer": "There are three kinds of storage backends:\n\nsecret: uses Secrets to store release metadata; this is the default\n\nconfigmap: uses ConfigMaps to store information on releases\n\nsql: uses an SQL database to store release metadata; this is useful when\n  there is a lot of release metadata (but it seems dumb to me)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-01-30T18:50:15.441030607Z"
+        },
         {
           "version": 0,
           "result": "normal",
