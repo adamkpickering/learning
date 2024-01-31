@@ -1012,8 +1012,8 @@
       "id": "rykmcn848r",
       "version": 0,
       "active": true,
-      "question": "What are the two main libraries that are core to k8s?",
-      "answer": "k8s.io/apimachinery\nk8s.io/client-go",
+      "question": "What are the three ibraries that are core to k8s?",
+      "answer": "k8s.io/apimachinery\nk8s.io/client-go\nk8s.io/api",
       "reviews": [
         {
           "version": 0,
