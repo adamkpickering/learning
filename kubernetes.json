@@ -32,6 +32,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-01T19:10:16.953466915Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-30T18:51:33.516203545Z"
         },
         {
@@ -53,6 +58,11 @@
       "question": "What does CRI stand for?\nWhere did it originate?\nWhat is it?",
       "answer": "Container Runtime Interface\n\nIt originated in kubernetes.\n\nIt is a gRPC interface that enables us to use many different container engines\nwith the same API. Libraries are available to ease its use.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-01T19:34:15.596994458Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -144,6 +154,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-01T19:18:14.104716534Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2024-01-29T17:45:49.052860624Z"
         },
@@ -161,6 +176,11 @@
       "question": "What are the Endpoints and EndpointSlice resources, and how do they differ?",
       "answer": "Every Service has a corresponding Endpoints resource, which is created by\nthe Endpoints controller as it polls pods and finds the set that match the\nService's selector criteria. It then creates the Endpoints resource by assembling\nthe pod IPs and ports that are open for each pod.\n\nHowever this does not scale. EndpointSlices are a way of addressing this.\nEndpointSlices list all of the pod IPs for each unique combination of port and\nservice, up to a maximum of 100 (by default) IPs per EndpointSlice. For very\nlarge services, this is easier to manage.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-01T19:20:12.674026577Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -231,6 +251,11 @@
       "question": "What are the following:\nVolume\nPersistentVolume\nPersistentVolumeClaim\nStorageClass",
       "answer": "Volume: a place to store files; that is tied to the lifetime of a pod\n\nPersistentVolume: a Volume that has a lifetime independent of a pod; manually\nprovisioned by an administrator, or dynamically provisioned using StorageClasses\n\nPersistentVolumeClaim: an object that is created by a user when they want to\nrequest a PersistentVolume\n\nStorageClass: used by administrators to describe the \"classes\" of storage they offer;\ndifferent classes might map to QoS levels, backup policies etc",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-01T19:22:43.633809354Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -317,6 +342,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-01T19:29:50.178018522Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-30T18:46:03.702522037Z"
         },
         {
@@ -338,6 +368,11 @@
       "question": "What are the five possible states a Pod object can be in?",
       "answer": "Pending: pod has been created as a resource, but is either not yet scheduled or containers are being created\nRunning: pod has been bound to a node, and all containers have been created, and are running\nSucceeded: all containers in the pod have terminated in success, and will not be restarted\nFailed: all containers in pod have terminated, and at least one terminated in failure\nUnknown: the state of the pod could not be obtained, typically due to an error in communicating with the host of the pod",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-01T19:34:38.130231089Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -364,6 +399,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-01T19:18:36.393733356Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-01-30T18:54:34.698548656Z"
         },
@@ -386,6 +426,11 @@
       "question": "How does logging work at the node level?",
       "answer": "Logs from components that run inside a container (anything in a pod) are\nwritten using the container runtime's configured logging driver to /var/log.\n\nLogs from components that do not run inside a container are logged to journald,\nas they are systemd services.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-01T19:21:47.163588547Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -432,6 +477,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-01T19:34:04.537817656Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-30T18:44:03.380903465Z"
         },
         {
@@ -469,9 +519,14 @@
       "id": "taufgwf4j6",
       "version": 0,
       "active": true,
-      "question": "What are the 3 keys to every rule in a Role/ClusterRole? What is surprising about this?",
-      "answer": "apiGroups: list of v1, extensions/v1beta1 etc\nresources: list of resources in those api groups\nverbs: list of verbs that are permitted on those resources\n\nIt is surprising that we have only apiGroups, and no information about what\nversions of the resources in those groups each rule applies to. But really,\nthis isn't needed - versions are only used to differentiate different schema\nfor resources.",
+      "question": "What are the 3 keys to every rule in a Role/ClusterRole?",
+      "answer": "apiGroups: list of v1, extensions/v1beta1 etc\nresources: list of resources in those api groups\nverbs: list of verbs that are permitted on those resources",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-01T19:32:49.238621752Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -529,6 +584,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-01T19:29:19.44203803Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-30T18:47:28.109070255Z"
         },
         {
@@ -550,6 +610,11 @@
       "question": "What is kube-proxy responsible for, compared to the CNI plugin?",
       "answer": "kube-proxy: exclusively responsible for services, and load-balancing traffic\ndestined for that belong to a service\n\nCNI plugin: responsible for pod and inter-pod networking",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-01T19:23:20.178996348Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -604,6 +669,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-01T19:31:48.35473138Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-30T18:47:59.021396619Z"
         },
         {
@@ -625,6 +695,11 @@
       "question": "What are the three top-level keys that every k8s resource has?",
       "answer": "apiVersion\nkind\nmetadata",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-01T19:20:54.866426894Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -687,6 +762,11 @@
       "question": "What are the three stages an API version goes through on its way to acceptance?\nWhat do they mean for their component resources?\nWhat do they look like in an apiVersion?",
       "answer": "alpha\n- bugs are likely\n- API may change\n- v1alpha1\n\nbeta\n- considered safe regarding bugs\n- API may change\n- v1beta1\n\nstable\n- considered safe regarding bugs\n- API is stable\n- v1",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-01T19:20:32.233637244Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -768,6 +848,11 @@
       "question": "What service types does the externalIP field apply to?",
       "answer": "Any that have a clusterIP.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-01T19:20:42.998301315Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -908,6 +993,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-01T19:33:25.505271852Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-30T18:55:41.571580665Z"
         },
         {
@@ -1037,6 +1127,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-01T19:31:25.007870161Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-30T18:49:11.803792868Z"
         },
         {
@@ -1080,6 +1175,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-01T19:08:36.5237242Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-30T18:50:15.441030607Z"
         },
         {
@@ -1095,7 +1195,13 @@
       "active": true,
       "question": "What are the four clients in client-go?\nWhat are they used for?",
       "answer": "RESTClient: the most basic client; only makes requests against\n  one URL\n\nClientSet: for interacting with built-in k8s resource objects; cannot\n  handle CRD resources\n\nDynamicClient: can handle any k8s resource, including CRD resources;\n  harder to use than ClientSet\n\nDiscoveryClient: used to discover GVK info from the apiserver",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-01T19:12:59.640507525Z"
+        }
+      ]
     }
   ]
 }
