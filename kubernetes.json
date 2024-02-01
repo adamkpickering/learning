@@ -1088,6 +1088,14 @@
           "datetime": "2024-01-29T17:37:14.101079177Z"
         }
       ]
+    },
+    {
+      "id": "v1o0jwhtxg",
+      "version": 0,
+      "active": true,
+      "question": "What are the four clients in client-go?\nWhat are they used for?",
+      "answer": "RESTClient: the most basic client; only makes requests against\n  one URL\n\nClientSet: for interacting with built-in k8s resource objects; cannot\n  handle CRD resources\n\nDynamicClient: can handle any k8s resource, including CRD resources;\n  harder to use than ClientSet\n\nDiscoveryClient: used to discover GVK info from the apiserver",
+      "reviews": []
     }
   ]
 }
