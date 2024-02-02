@@ -109,6 +109,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-02T16:51:23.763812489Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T18:00:14.362406832Z"
         },
         {
@@ -133,6 +138,11 @@
       "question": "What are the 4 types of services?",
       "answer": "ClusterIP: default, service is only available internally through a cluster-internal IP\n\nNodePort: a static port (called NodePort) is opened on each node, so that traffic can\nreach the service via \u003cnode_ip\u003e:\u003cnode_port\u003e; a ClusterIP service, which NodePort\nservice routes to, is automatically created\n\nLoadBalancer: traffic comes into cluster via an external load balancer (for the cloud)\n\nExternalName: literally a CNAME record pointing to an external service; can cause\nproblems with protocols that use the domain name (HTTP, HTTPS)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-02T16:56:20.398280598Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -227,6 +237,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-02T17:16:16.995030758Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T17:44:15.191504893Z"
         },
         {
@@ -280,6 +295,11 @@
       "question": "For the externalIPs field to work, what is required?",
       "answer": "clusterIP cannot be None, since the externalIPs are NAT'd to the clusterIP.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-02T16:55:53.162005721Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -506,6 +526,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-02T16:50:00.776304986Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T17:36:30.294325939Z"
         },
         {
@@ -562,6 +587,11 @@
       "question": "Which component (of several possible ones) creates the Pod object,\nwhat is its state at that time, and how does it make it onto a node?",
       "answer": "ReplicaSet controller creates Pod object in API server. Pod's state\nis Pending at this point. Scheduler notices Pod is not assigned to\na node, so it does so. kubelet picks up this definition and carries\nout actions to create Pod on its node.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-02T16:49:07.47663396Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -727,6 +757,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-02T16:45:47.477468428Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T17:54:07.629338061Z"
         },
         {
@@ -743,6 +778,11 @@
       "question": "What are API groups, and what is their purpose?",
       "answer": "Versioned groups of resources that are usually related.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-02T16:50:19.550528489Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -793,6 +833,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-02T16:50:55.567994122Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-01-29T17:41:26.054518289Z"
         },
@@ -813,6 +858,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-02T16:56:33.293753749Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T17:28:54.971608992Z"
         },
         {
@@ -829,6 +879,11 @@
       "question": "What are the two ways of getting traffic into the cluster without using a LoadBalancer service?",
       "answer": "1) Use a NodePort service. This configures each node of the cluster to\n   listen on a specific port. When traffic hits that port coming from\n   outside of the cluster, it is NAT'd to one of the containers in the\n   Endpoints field of the NodePort service.\n\n2) Use any service type with an ExternalIP field. This will cause traffic\n   hitting any node (independent of what their actual IP addr is) with the\n   destination address specified in the ExternalIP field to be routed to\n   one of the containers in the Endpoints field of the service.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-02T16:51:50.786965632Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -947,6 +1002,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-02T17:16:38.224142539Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T17:42:09.643911929Z"
         },
         {
@@ -963,6 +1023,11 @@
       "question": "What is fleet?",
       "answer": "Fleet is a set of controllers and resources that make gitops easy\nand scalable to a million clusters. It watches repositories that\nhave kubernetes manifests, helm charts or kustomize configs, and when\nchanges are noticed, makes those changes a reality. Turns everything\ninto helm charts before deployment.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-02T16:57:30.525014317Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1088,6 +1153,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-02T16:55:42.247920518Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-01-29T17:30:37.608909293Z"
         },
@@ -1105,6 +1175,11 @@
       "question": "What are the three ibraries that are core to k8s?",
       "answer": "k8s.io/apimachinery\nk8s.io/client-go\nk8s.io/api",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-02T16:52:39.57516076Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1156,6 +1231,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-02T16:55:24.948755503Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-01-29T17:59:11.213244048Z"
         },
         {
@@ -1196,6 +1276,11 @@
       "question": "What are the four clients in client-go?\nWhat are they used for?",
       "answer": "RESTClient: the most basic client; only makes requests against\n  one URL\n\nClientSet: for interacting with built-in k8s resource objects; cannot\n  handle CRD resources\n\nDynamicClient: can handle any k8s resource, including CRD resources;\n  harder to use than ClientSet\n\nDiscoveryClient: used to discover GVK info from the apiserver",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-02T17:05:11.098135716Z"
+        },
         {
           "version": 0,
           "result": "normal",
