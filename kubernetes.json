@@ -1287,6 +1287,22 @@
           "datetime": "2024-02-01T19:12:59.640507525Z"
         }
       ]
+    },
+    {
+      "id": "wr1pqlwf2a",
+      "version": 0,
+      "active": true,
+      "question": "In Rancher, how is a ClusterRepo realized?",
+      "answer": "It isn't as far as I can tell.\n\nThink of it in terms of the operations that you'd do on a ClusterRepo:\n- install a chart from a repo\n- list the charts available on a repo\n- get info about a chart from a repo\n- get a chart's icon from its repo\n- install/uninstall/upgrade a chart from a repo\n\nFor all operations except install/uninstall/upgrade, this is done by\ntalking directly to the repo over HTTPS. For install/uninstall/upgrade,\nthis is done by running a helm command inside an Operation container,\nwhich can be thought of as a Job.",
+      "reviews": []
+    },
+    {
+      "id": "4a498yszi6",
+      "version": 0,
+      "active": true,
+      "question": "In rancher/charts, why do we define catalog.cattle.io/kube-version\nbut usually not kubeVersion in Chart.yaml?",
+      "answer": "There does not appear to be a reason. kubeVersion would take effect when\ninstalling the chart via the CLI. However in Rancher, the kube-version annotation\nis checked before `helm install` is run, so it is redundant.\n\nThere may be some users that run `helm install` via the CLI using rancher/charts,\nbut this is not an officially supported use case. So basically, we don't define\nkubeVersion because it doesn't matter.",
+      "reviews": []
     }
   ]
 }
