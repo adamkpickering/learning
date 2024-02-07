@@ -13,6 +13,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2024-02-07T00:21:19.85466767Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2024-01-29T17:34:42.569186205Z"
         },
         {
@@ -29,6 +34,11 @@
       "question": "What is the history of the use of docker by kubernetes?",
       "answer": "1) K8s originally used only dockerd as the container engine.\n2) It was recognized that it would be beneficial for it to be possible to\n   use other container engines to make containers a reality in k8s. rkt was\n   the first one.\n3) CRI was defined to solve the problem of docker and rkt having different,\n   and poorly-defined, interfaces to kubelet. For docker, CRI was satisfied\n   by the creation of dockershim, an adaptor for CRI to dockerd inside the k8s\n   project.\n4) dockershim became a burden on the k8s maintainers. Mirantis and Docker agree\n   to maintain a separate adaptor, cri-dockerd, that does the same thing but is\n   in a different tree.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:28:09.905271956Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -60,6 +70,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:08:00.022163305Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2024-02-01T19:34:15.596994458Z"
         },
@@ -87,6 +102,11 @@
       "question": "There are three daemons that run on each k8s node. What do they do?",
       "answer": "kubelet: starts, stops and runs containers; maintains state of pods; reports to the master\nkube-proxy: a node-level proxy/load balancer\ncontainer runtime: self explanatory",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:20:43.966181485Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -165,6 +185,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-06T23:58:50.711522139Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-01T19:18:14.104716534Z"
         },
         {
@@ -186,6 +211,11 @@
       "question": "What are the Endpoints and EndpointSlice resources, and how do they differ?",
       "answer": "Every Service has a corresponding Endpoints resource, which is created by\nthe Endpoints controller as it polls pods and finds the set that match the\nService's selector criteria. It then creates the Endpoints resource by assembling\nthe pod IPs and ports that are open for each pod.\n\nHowever this does not scale. EndpointSlices are a way of addressing this.\nEndpointSlices list all of the pod IPs for each unique combination of port and\nservice, up to a maximum of 100 (by default) IPs per EndpointSlice. For very\nlarge services, this is easier to manage.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-06T23:57:17.157815627Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -215,6 +245,11 @@
       "question": "How do I access a pod from a service \"foo\" inside a namespace \"bar\" from a pod in another namespace?",
       "answer": "Use name foo.bar",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:21:08.215591194Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -266,6 +301,11 @@
       "question": "What are the following:\nVolume\nPersistentVolume\nPersistentVolumeClaim\nStorageClass",
       "answer": "Volume: a place to store files; that is tied to the lifetime of a pod\n\nPersistentVolume: a Volume that has a lifetime independent of a pod; manually\nprovisioned by an administrator, or dynamically provisioned using StorageClasses\n\nPersistentVolumeClaim: an object that is created by a user when they want to\nrequest a PersistentVolume\n\nStorageClass: used by administrators to describe the \"classes\" of storage they offer;\ndifferent classes might map to QoS levels, backup policies etc",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-07T00:08:10.25138049Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -362,6 +402,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-06T23:59:47.397260898Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-01T19:29:50.178018522Z"
         },
         {
@@ -391,6 +436,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-07T00:21:40.613000342Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-01T19:34:38.130231089Z"
         },
         {
@@ -417,6 +467,11 @@
       "question": "What are the 4 ways API requests are authorized?\nExplain them.",
       "answer": "webhook: an external HTTP(S) service is consulted\nABAC: enforces policies defined in a static file\nRBAC: authorization info is stored in API objects\nNode: specifically for programs that run on nodes (i.e. kubelet), which limits access to resources that pertain to that node",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-06T23:57:34.372270768Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -449,6 +504,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-06T23:58:30.219196353Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-01T19:21:47.163588547Z"
         },
         {
@@ -477,6 +537,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:09:46.891721934Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2024-01-29T17:51:55.894305157Z"
         },
@@ -494,6 +559,11 @@
       "question": "What is a RoleBinding/ClusterRoleBinding?\nHow do they differ?",
       "answer": "RoleBindings give the permissions described by a Role or ClusterRole to one or more\nusers in a namespace. ClusterRoleBindings are the same, but in all namespaces.\n\nIt is possible to reference a ClusterRole in a RoleBinding; in this case the user\ngets the permissions defined in the ClusterRole, but only in the namespace listed\nin the RoleBinding.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:20:28.637047208Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -547,6 +617,11 @@
       "question": "What are the 3 keys to every rule in a Role/ClusterRole?",
       "answer": "apiGroups: list of v1, extensions/v1beta1 etc\nresources: list of resources in those api groups\nverbs: list of verbs that are permitted on those resources",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:03:57.309100349Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -613,6 +688,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-06T23:56:13.278805558Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-02-01T19:29:19.44203803Z"
         },
@@ -640,6 +720,11 @@
       "question": "What is kube-proxy responsible for, compared to the CNI plugin?",
       "answer": "kube-proxy: exclusively responsible for services, and load-balancing traffic\ndestined for that belong to a service\n\nCNI plugin: responsible for pod and inter-pod networking",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:00:59.711387959Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -679,6 +764,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:20:59.814587251Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2024-01-29T18:03:34.832870017Z"
         },
@@ -696,6 +786,11 @@
       "question": "In the case of updating the container version in the Pods, how does a Deployment update the Pods?",
       "answer": "It creates a whole new ReplicaSet and gradually decreases the number\nof replicas in the old ReplicaSet as it gradually increases the number\nof replicas in the new ReplicaSet.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:06:54.870155046Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -725,6 +820,11 @@
       "question": "What are the three top-level keys that every k8s resource has?",
       "answer": "apiVersion\nkind\nmetadata",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-06T23:55:17.884033492Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -805,6 +905,11 @@
         {
           "version": 0,
           "result": "easy",
+          "datetime": "2024-02-06T23:55:02.046646265Z"
+        },
+        {
+          "version": 0,
+          "result": "easy",
           "datetime": "2024-02-01T19:20:32.233637244Z"
         },
         {
@@ -829,8 +934,13 @@
       "version": 0,
       "active": true,
       "question": "What are API versions versions of?",
-      "answer": "They are versions of the resources in their API group. Each\nAPI group + API version combo has a list of resources with a\nspecific structure.",
+      "answer": "An API version would be best described as \"a resource in a particular\nversion of a group of resources\". Resources are not versioned. The\ngroups they belong to are.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-07T00:26:17.27938062Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -905,6 +1015,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-07T00:21:12.252565794Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-02-01T19:20:42.998301315Z"
         },
@@ -932,6 +1047,11 @@
       "question": "What rules are there for case of keys and values in k8s resource files?",
       "answer": "keys are camelCase\nvalues are PascalCase",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:00:36.193013878Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -1058,6 +1178,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-07T00:08:47.400968447Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-01T19:33:25.505271852Z"
         },
         {
@@ -1100,6 +1225,11 @@
       "question": "What is the idea behind Kustomize?",
       "answer": "You can define base resources, and then overlay various transformations\nonto them to make, for example, versions of those resources for different\nstages with the corresponding different config.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:03:41.299945582Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1201,6 +1331,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-07T00:23:14.721577236Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-02-01T19:31:25.007870161Z"
         },
@@ -1255,6 +1390,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-06T23:57:55.582449355Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-01T19:08:36.5237242Z"
         },
         {
@@ -1279,6 +1419,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-07T00:11:38.32016514Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-02T17:05:11.098135716Z"
         },
         {
@@ -1294,7 +1439,13 @@
       "active": true,
       "question": "In Rancher, how is a ClusterRepo realized?",
       "answer": "It isn't as far as I can tell.\n\nThink of it in terms of the operations that you'd do on a ClusterRepo:\n- install a chart from a repo\n- list the charts available on a repo\n- get info about a chart from a repo\n- get a chart's icon from its repo\n- install/uninstall/upgrade a chart from a repo\n\nFor all operations except install/uninstall/upgrade, this is done by\ntalking directly to the repo over HTTPS. For install/uninstall/upgrade,\nthis is done by running a helm command inside an Operation container,\nwhich can be thought of as a Job.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:02:58.529216301Z"
+        }
+      ]
     },
     {
       "id": "4a498yszi6",
@@ -1302,7 +1453,13 @@
       "active": true,
       "question": "In rancher/charts, why do we define catalog.cattle.io/kube-version\nbut usually not kubeVersion in Chart.yaml?",
       "answer": "There does not appear to be a reason. kubeVersion would take effect when\ninstalling the chart via the CLI. However in Rancher, the kube-version annotation\nis checked before `helm install` is run, so it is redundant.\n\nThere may be some users that run `helm install` via the CLI using rancher/charts,\nbut this is not an officially supported use case. So basically, we don't define\nkubeVersion because it doesn't matter.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-07T00:20:05.550549235Z"
+        }
+      ]
     }
   ]
 }
