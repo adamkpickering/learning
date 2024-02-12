@@ -128,6 +128,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-12T18:53:22.588637857Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-02-02T16:51:23.763812489Z"
         },
@@ -158,6 +163,11 @@
       "question": "What are the 4 types of services?",
       "answer": "ClusterIP: default, service is only available internally through a cluster-internal IP\n\nNodePort: a static port (called NodePort) is opened on each node, so that traffic can\nreach the service via \u003cnode_ip\u003e:\u003cnode_port\u003e; a ClusterIP service, which NodePort\nservice routes to, is automatically created\n\nLoadBalancer: traffic comes into cluster via an external load balancer (for the cloud)\n\nExternalName: literally a CNAME record pointing to an external service; can cause\nproblems with protocols that use the domain name (HTTP, HTTPS)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-12T19:09:31.589707748Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -271,6 +281,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-12T18:59:25.607651868Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-02-02T17:16:16.995030758Z"
         },
@@ -335,6 +350,11 @@
       "question": "For the externalIPs field to work, what is required?",
       "answer": "clusterIP cannot be None, since the externalIPs are NAT'd to the clusterIP.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-12T19:08:54.477211978Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -596,6 +616,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-12T18:58:07.219234301Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-02T16:50:00.776304986Z"
         },
         {
@@ -659,9 +684,14 @@
       "id": "7edtszry5u",
       "version": 0,
       "active": true,
-      "question": "Which component (of several possible ones) creates the Pod object,\nwhat is its state at that time, and how does it make it onto a node?",
+      "question": "In a Deployment, Which component (of several possible ones) creates\nthe Pod object, what is its state at that time, and how does it make\nit onto a node?",
       "answer": "ReplicaSet controller creates Pod object in API server. Pod's state\nis Pending at this point. Scheduler notices Pod is not assigned to\na node, so it does so. kubelet picks up this definition and carries\nout actions to create Pod on its node.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-12T19:04:31.606825733Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -857,6 +887,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-12T18:48:59.542364492Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-02T16:45:47.477468428Z"
         },
         {
@@ -878,6 +913,11 @@
       "question": "What are API groups, and what is their purpose?",
       "answer": "Versioned groups of resources that are usually related.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-12T18:50:34.984604117Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -967,6 +1007,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-12T18:56:37.048452783Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-02-02T16:56:33.293753749Z"
         },
@@ -989,6 +1034,11 @@
       "question": "What are the two ways of getting traffic into the cluster without using a LoadBalancer service?",
       "answer": "1) Use a NodePort service. This configures each node of the cluster to\n   listen on a specific port. When traffic hits that port coming from\n   outside of the cluster, it is NAT'd to one of the containers in the\n   Endpoints field of the NodePort service.\n\n2) Use any service type with an ExternalIP field. This will cause traffic\n   hitting any node (independent of what their actual IP addr is) with the\n   destination address specified in the ExternalIP field to be routed to\n   one of the containers in the Endpoints field of the service.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-12T18:54:33.706193478Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1122,6 +1172,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-12T18:50:13.805910289Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-02T17:16:38.224142539Z"
         },
         {
@@ -1143,6 +1198,11 @@
       "question": "What is fleet?",
       "answer": "Fleet is a set of controllers and resources that make gitops easy\nand scalable to a million clusters. It watches repositories that\nhave kubernetes manifests, helm charts or kustomize configs, and when\nchanges are noticed, makes those changes a reality. Turns everything\ninto helm charts before deployment.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-12T18:54:13.717656484Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1283,6 +1343,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-12T19:09:01.678118388Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2024-02-02T16:55:42.247920518Z"
         },
@@ -1308,6 +1373,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-12T18:57:23.216495956Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-02T16:52:39.57516076Z"
         },
         {
@@ -1329,6 +1399,11 @@
       "question": "What are some reasons we might use a controller framework?",
       "answer": "- The bare cache.SharedIndexInformer doesn't help us at all when handler\n  functions return errors. Using a controller framework lets us handle\n  handler errors more intelligently with retries etc.\n\n- They can efficiently manage creation of k8s clients and cache.SharedIndexInformers.\n\n- They can generate code in order to make it easier to define custom\n  types and controllers.\n\n- They can define code that handles common controller patterns.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-12T19:07:39.975910784Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -1363,6 +1438,11 @@
       "question": "How does one create a controller without the use of any controller frameworks?\nHow does this work?",
       "answer": "You would construct a cache.SharedInformer, passing it a cache.ListerWatcher\nand the resource you want it to watch for. You would then register handlers\nwith it to be called when there are resource updates.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-12T18:56:24.737272846Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1442,6 +1522,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-12T19:08:49.037948573Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-02-07T00:02:58.529216301Z"
         }
@@ -1454,6 +1539,11 @@
       "question": "In rancher/charts, why do we define catalog.cattle.io/kube-version\nbut usually not kubeVersion in Chart.yaml?",
       "answer": "There does not appear to be a reason. kubeVersion would take effect when\ninstalling the chart via the CLI. However in Rancher, the kube-version annotation\nis checked before `helm install` is run, so it is redundant.\n\nThere may be some users that run `helm install` via the CLI using rancher/charts,\nbut this is not an officially supported use case. So basically, we don't define\nkubeVersion because it doesn't matter.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-12T18:52:50.672677366Z"
+        },
         {
           "version": 0,
           "result": "normal",
