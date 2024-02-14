@@ -1401,6 +1401,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-13T23:56:25.463628772Z"
+        },
+        {
+          "version": 0,
           "result": "failed",
           "datetime": "2024-02-12T19:07:39.975910784Z"
         },
@@ -1499,6 +1504,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-13T23:54:05.409404108Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-07T00:11:38.32016514Z"
         },
         {
@@ -1520,6 +1530,11 @@
       "question": "In Rancher, how is a ClusterRepo realized?",
       "answer": "It isn't as far as I can tell.\n\nThink of it in terms of the operations that you'd do on a ClusterRepo:\n- install a chart from a repo\n- list the charts available on a repo\n- get info about a chart from a repo\n- get a chart's icon from its repo\n- install/uninstall/upgrade a chart from a repo\n\nFor all operations except install/uninstall/upgrade, this is done by\ntalking directly to the repo over HTTPS. For install/uninstall/upgrade,\nthis is done by running a helm command inside an Operation container,\nwhich can be thought of as a Job.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-13T23:54:09.411525271Z"
+        },
         {
           "version": 0,
           "result": "failed",

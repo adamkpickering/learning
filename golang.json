@@ -75,6 +75,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-14T00:20:28.730893104Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-06-23T17:50:55.537994797Z"
         },
@@ -778,6 +783,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-13T23:59:35.356653967Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-06-26T18:42:42.07423872Z"
         },
@@ -982,6 +992,11 @@
       "question": "How do you remove a key-value pair from a map?",
       "answer": "delete(my_map, key)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-14T00:00:23.258793345Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1459,6 +1474,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-14T00:00:09.156490265Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2023-06-26T19:19:09.930417936Z"
         },
         {
@@ -1475,6 +1495,11 @@
       "question": "What are the four types of import paths?",
       "answer": "standard (built-in)\nworkspace (local)\nrelative\nremote",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-13T23:57:11.371417375Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1859,6 +1884,11 @@
         {
           "version": 0,
           "result": "failed",
+          "datetime": "2024-02-14T00:17:04.97052471Z"
+        },
+        {
+          "version": 0,
+          "result": "failed",
           "datetime": "2023-12-12T18:57:49.514740411Z"
         },
         {
@@ -1880,6 +1910,11 @@
       "question": "What type is a string, behind the scenes?",
       "answer": "[]byte",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-14T00:18:23.979020864Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -2082,9 +2117,14 @@
       "id": "m9fq4am683",
       "version": 0,
       "active": true,
-      "question": "From a high level, how is an HTTP request responded to using the standard library?\nHow would I write a server with multiple endpoints?",
-      "answer": "Everything revolves around the http.Handler type. When a request is received,\nthe ServeHTTP method of the Handler is called. This method reads\nthe *Request, and uses its logic to decide how to write the ResponseWriter.\nNote that http.Handler is an interface, so it probably has some kind\nof state (request handling threads/processes) in the background.\n\nOnce the ResponseWriter is filled, the calling function can turn it into\nan HTTP response that it sends to the client.\n\nSo if you wanted to write a server with multiple endpoints, you'd put\na \"router\" in the ServeHTTP method of your Handler that dispatches\nthe request to one of several functions that handle endpoints.",
+      "question": "From a high level, how is an HTTP server usually written?",
+      "answer": "Typically, one uses http.DefaultServeMux. http.Handler and http.HandleFunc add\nhandlers/handler functions to http.DefaultServeMux. Calling http.ListenAndServe\nwith a nil argument for the handler causes http.DefaultServeMux to be used.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-14T00:15:35.336324961Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -2121,6 +2161,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-14T00:03:54.060705551Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2023-06-26T19:35:21.70224147Z"
         },
@@ -2138,6 +2183,11 @@
       "question": "Create a slice of bytes that has 4 bytes initialized and can accommodate a maximum of 32 bytes.",
       "answer": "my_slice := make([]byte, 4, 32)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-13T23:58:36.163685389Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -2321,6 +2371,11 @@
       "question": "How does the Write() method work (2 points)?\nUse signature Write(p []byte) (n int, err error) to discuss.",
       "answer": "1) Writes len(p) bytes from p and returns n to say how many bytes were written\n2) If it writes less than len(p), err is non-nil and explains what happened",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-14T00:01:42.252908523Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -2567,6 +2622,11 @@
       "question": "What is the function that is used to replace all substrings inside a string with other strings?",
       "answer": "strings.ReplaceAll",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-13T23:59:12.388628458Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -2900,6 +2960,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-14T00:17:57.150567324Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2023-07-03T23:06:13.845384283Z"
         },
@@ -2955,6 +3020,11 @@
       "question": "What does an \"// indirect\" comment next to a dependency mean in go.mod?",
       "answer": "It means that the dependency is not used in this module, but rather in one of\nthe module's dependencies. Thus it is a dependency of a dependency.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-14T00:18:15.355767098Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -3067,6 +3137,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-13T23:58:05.937745269Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-07-03T23:17:58.553546284Z"
         },
@@ -3084,6 +3159,11 @@
       "question": "How do you check whether a file/dir exists?",
       "answer": "You do an os.Stat and check the error on it:\n\nif _, err := os.Stat(\"/path/to/whatever\"); err == nil {\n    // /path/to/whatever exists\n} else if errors.Is(err, os.ErrNotExist)\n{\n    // /path/to/whatever does not exist\n} else {\n    // unexpected error; we can't tell if /path/to/whatever exists\n}",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-14T00:03:40.853574156Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -3122,6 +3202,11 @@
       "question": "Given a time, mytime, turn it into a string in RFC3339 format.",
       "answer": "mystr := mytime.Format(time.RFC3339)",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-14T00:16:15.529998608Z"
+        },
         {
           "version": 0,
           "result": "hard",
@@ -3442,6 +3527,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-14T00:00:51.321491608Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2023-07-03T23:35:46.774952724Z"
         },
@@ -3693,7 +3783,7 @@
     {
       "id": "h05u44hi3d",
       "version": 0,
-      "active": true,
+      "active": false,
       "question": "What function would you use to get a random integer in the range [0, max)?",
       "answer": "rand.Intn()",
       "reviews": [
@@ -3871,6 +3961,11 @@
       "question": "How big are int/uint?\nHow do you find out how big each is at runtime?",
       "answer": "For a 32 bit machine, int and uint are aliases for int32 and uint32.\nFor a 64 bit machine, int and uint are aliases for int64 and uint64.\n\nYou can find the size of an int or uint by using `bits.UintSize`.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-14T00:19:05.742690096Z"
+        },
         {
           "version": 0,
           "result": "failed",
@@ -4078,6 +4173,11 @@
       "question": "In cobra, what is the difference between cmd.Flags(), cmd.LocalFlags()\nand cmd.PersistentFlags()?",
       "answer": "There are only two types of flags in cobra: local flags and persistent\nflags. Local flags apply only to their subcommand, and persistent\nflags apply to their subcommand and all child/grandchild etc commands.\n\ncmd.Flags() returns all local and persistent flags on a subcommand.\nWhen used to add a flag, it adds that flag as a local flag on the\nsubcommand.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-14T00:06:05.938636623Z"
+        },
         {
           "version": 0,
           "result": "normal",
