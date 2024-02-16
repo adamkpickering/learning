@@ -1565,6 +1565,30 @@
           "datetime": "2024-02-07T00:20:05.550549235Z"
         }
       ]
+    },
+    {
+      "id": "90x1161lza",
+      "version": 0,
+      "active": true,
+      "question": "What is the story behind PodSecurityPolicy?",
+      "answer": "PodSecurityPolicy was a resource that allowed for control over security-sensitive\naspects of Pod resources. It provided a way to enforce fine-grained control over\ncreated Pods, since this is necessary in some security-sensitive environments.\n\nIt was introduced in k8s v1.21 and removed in v1.25. It never got past v1beta1.\n\nPodSecurityPolicy was replaced by PodSecurityAdmission, which is a much simpler\nsolution. Environments that need a more fine-grained solution should look towards\none of the projects that focuses on this that is outside of the k8s core.",
+      "reviews": []
+    },
+    {
+      "id": "onfhz1203n",
+      "version": 0,
+      "active": true,
+      "question": "What is rancher/hull?",
+      "answer": "It is a tool for unit testing helm charts.",
+      "reviews": []
+    },
+    {
+      "id": "gnxlanzcvb",
+      "version": 0,
+      "active": true,
+      "question": "What is a Secret?\nHow do you use/restrict the use of secrets?",
+      "answer": "A Secret is a resource that is intended to store sensitive data.\nIt is not actually encrypted, so if you do\n`kubectl get secret my_secret -o yaml` the content of the secret\nwill be printed out.\n\nSecrets are usually used by mounting them as a file inside a Pod.\nThe use/viewing of Secrets is restricted by using RBAC and namespaces.",
+      "reviews": []
     }
   ]
 }
