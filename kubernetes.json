@@ -37,6 +37,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-20T18:57:14.117544203Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-07T00:28:09.905271956Z"
         },
         {
@@ -70,6 +75,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-20T18:57:53.50962431Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-02-07T00:08:00.022163305Z"
         },
@@ -100,8 +110,13 @@
       "version": 0,
       "active": true,
       "question": "There are three daemons that run on each k8s node. What do they do?",
-      "answer": "kubelet: starts, stops and runs containers; maintains state of pods; reports to the master\nkube-proxy: a node-level proxy/load balancer\ncontainer runtime: self explanatory",
+      "answer": "kubelet: starts, stops and runs containers; maintains state of pods; reports to the master\nkube-proxy: a node-level proxy/load balancer\ncontainer engine: self explanatory",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:14:36.245283461Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -195,6 +210,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-20T19:17:43.880209925Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-06T23:58:50.711522139Z"
         },
         {
@@ -221,6 +241,11 @@
       "question": "What are the Endpoints and EndpointSlice resources, and how do they differ?",
       "answer": "Every Service has a corresponding Endpoints resource, which is created by\nthe Endpoints controller as it polls pods and finds the set that match the\nService's selector criteria. It then creates the Endpoints resource by assembling\nthe pod IPs and ports that are open for each pod.\n\nHowever this does not scale. EndpointSlices are a way of addressing this.\nEndpointSlices list all of the pod IPs for each unique combination of port and\nservice, up to a maximum of 100 (by default) IPs per EndpointSlice. For very\nlarge services, this is easier to manage.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T18:51:06.89661318Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -255,6 +280,11 @@
       "question": "How do I access a pod from a service \"foo\" inside a namespace \"bar\" from a pod in another namespace?",
       "answer": "Use name foo.bar",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-20T19:14:02.802704264Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -316,6 +346,11 @@
       "question": "What are the following:\nVolume\nPersistentVolume\nPersistentVolumeClaim\nStorageClass",
       "answer": "Volume: a place to store files; that is tied to the lifetime of a pod\n\nPersistentVolume: a Volume that has a lifetime independent of a pod; manually\nprovisioned by an administrator, or dynamically provisioned using StorageClasses\n\nPersistentVolumeClaim: an object that is created by a user when they want to\nrequest a PersistentVolume\n\nStorageClass: used by administrators to describe the \"classes\" of storage they offer;\ndifferent classes might map to QoS levels, backup policies etc",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:08:03.417888231Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -422,6 +457,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-20T19:19:25.597713147Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-06T23:59:47.397260898Z"
         },
         {
@@ -453,6 +493,11 @@
       "question": "What are the five possible states a Pod object can be in?",
       "answer": "Pending: pod has been created as a resource, but is either not yet scheduled or containers are being created\nRunning: pod has been bound to a node, and all containers have been created, and are running\nSucceeded: all containers in the pod have terminated in success, and will not be restarted\nFailed: all containers in pod have terminated, and at least one terminated in failure\nUnknown: the state of the pod could not be obtained, typically due to an error in communicating with the host of the pod",
       "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-20T18:50:03.153881408Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -490,6 +535,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-20T19:05:28.080312241Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-06T23:57:34.372270768Z"
         },
         {
@@ -521,6 +571,11 @@
       "question": "How does logging work at the node level?",
       "answer": "Logs from components that run inside a container (anything in a pod) are\nwritten using the container runtime's configured logging driver to /var/log.\n\nLogs from components that do not run inside a container are logged to journald,\nas they are systemd services.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:07:28.279565946Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -558,6 +613,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-20T19:15:24.099056079Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-07T00:09:46.891721934Z"
         },
         {
@@ -579,6 +639,11 @@
       "question": "What is a RoleBinding/ClusterRoleBinding?\nHow do they differ?",
       "answer": "RoleBindings give the permissions described by a Role or ClusterRole to one or more\nusers in a namespace. ClusterRoleBindings are the same, but in all namespaces.\n\nIt is possible to reference a ClusterRole in a RoleBinding; in this case the user\ngets the permissions defined in the ClusterRole, but only in the namespace listed\nin the RoleBinding.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:05:09.665056757Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -642,6 +707,11 @@
       "question": "What are the 3 keys to every rule in a Role/ClusterRole?",
       "answer": "apiGroups: list of v1, extensions/v1beta1 etc\nresources: list of resources in those api groups\nverbs: list of verbs that are permitted on those resources",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:06:46.567874844Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -718,6 +788,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "failed",
+          "datetime": "2024-02-20T18:52:20.688116827Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2024-02-06T23:56:13.278805558Z"
         },
@@ -750,6 +825,11 @@
       "question": "What is kube-proxy responsible for, compared to the CNI plugin?",
       "answer": "kube-proxy: exclusively responsible for services, and load-balancing traffic\ndestined for that belong to a service\n\nCNI plugin: responsible for pod and inter-pod networking",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:03:25.324982364Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -794,6 +874,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-20T19:14:09.420978359Z"
+        },
+        {
+          "version": 0,
           "result": "normal",
           "datetime": "2024-02-07T00:20:59.814587251Z"
         },
@@ -816,6 +901,11 @@
       "question": "In the case of updating the container version in the Pods, how does a Deployment update the Pods?",
       "answer": "It creates a whole new ReplicaSet and gradually decreases the number\nof replicas in the old ReplicaSet as it gradually increases the number\nof replicas in the new ReplicaSet.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:08:40.309515124Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -850,6 +940,11 @@
       "question": "What are the three top-level keys that every k8s resource has?",
       "answer": "apiVersion\nkind\nmetadata",
       "reviews": [
+        {
+          "version": 0,
+          "result": "easy",
+          "datetime": "2024-02-20T18:51:20.362162359Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -944,6 +1039,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-20T18:59:12.388561969Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2024-02-06T23:55:02.046646265Z"
         },
@@ -976,6 +1076,11 @@
       "question": "What are API versions versions of?",
       "answer": "An API version would be best described as \"a resource in a particular\nversion of a group of resources\". Resources are not versioned. The\ngroups they belong to are.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T18:58:23.578954984Z"
+        },
         {
           "version": 0,
           "result": "easy",
@@ -1065,6 +1170,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:06:24.267548316Z"
+        },
+        {
+          "version": 0,
           "result": "easy",
           "datetime": "2024-02-07T00:21:12.252565794Z"
         },
@@ -1097,6 +1207,11 @@
       "question": "What rules are there for case of keys and values in k8s resource files?",
       "answer": "keys are camelCase\nvalues are PascalCase",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:15:35.220988859Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1238,6 +1353,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-20T19:02:19.632524059Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-07T00:08:47.400968447Z"
         },
         {
@@ -1285,6 +1405,11 @@
       "question": "What is the idea behind Kustomize?",
       "answer": "You can define base resources, and then overlay various transformations\nonto them to make, for example, versions of those resources for different\nstages with the corresponding different config.",
       "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:09:10.858959851Z"
+        },
         {
           "version": 0,
           "result": "normal",
@@ -1402,6 +1527,11 @@
         {
           "version": 0,
           "result": "hard",
+          "datetime": "2024-02-20T19:17:05.770712688Z"
+        },
+        {
+          "version": 0,
+          "result": "hard",
           "datetime": "2024-02-13T23:56:25.463628772Z"
         },
         {
@@ -1475,6 +1605,11 @@
         {
           "version": 0,
           "result": "normal",
+          "datetime": "2024-02-20T19:19:47.181274893Z"
+        },
+        {
+          "version": 0,
+          "result": "normal",
           "datetime": "2024-02-06T23:57:55.582449355Z"
         },
         {
@@ -1533,6 +1668,11 @@
         {
           "version": 0,
           "result": "failed",
+          "datetime": "2024-02-20T19:14:48.659275093Z"
+        },
+        {
+          "version": 0,
+          "result": "failed",
           "datetime": "2024-02-13T23:54:09.411525271Z"
         },
         {
@@ -1556,6 +1696,11 @@
       "reviews": [
         {
           "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T18:55:52.908380786Z"
+        },
+        {
+          "version": 0,
           "result": "hard",
           "datetime": "2024-02-12T18:52:50.672677366Z"
         },
@@ -1571,8 +1716,14 @@
       "version": 0,
       "active": true,
       "question": "What is the story behind PodSecurityPolicy?",
-      "answer": "PodSecurityPolicy was a resource that allowed for control over security-sensitive\naspects of Pod resources. It provided a way to enforce fine-grained control over\ncreated Pods, since this is necessary in some security-sensitive environments.\n\nIt was introduced in k8s v1.21 and removed in v1.25. It never got past v1beta1.\n\nPodSecurityPolicy was replaced by PodSecurityAdmission, which is a much simpler\nsolution. Environments that need a more fine-grained solution should look towards\none of the projects that focuses on this that is outside of the k8s core.",
-      "reviews": []
+      "answer": "PodSecurityPolicy was a resource that allowed for control over security-sensitive\naspects of Pod resources. It provided a way to enforce fine-grained control over\ncreated Pods, since this is necessary in some security-sensitive environments.\n\nIt was introduced in k8s v1.21 and removed in v1.25. It never got past v1beta1.\n\nPodSecurityPolicy was replaced by PodSecurityAdmission, which is a much simpler\nsolution. Environments that need a more fine-grained solution should use one of\nthe projects that focuses on this that is outside of the k8s core.",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:13:25.580340268Z"
+        }
+      ]
     },
     {
       "id": "onfhz1203n",
@@ -1580,15 +1731,27 @@
       "active": true,
       "question": "What is rancher/hull?",
       "answer": "It is a tool for unit testing helm charts.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T18:49:30.219989351Z"
+        }
+      ]
     },
     {
       "id": "gnxlanzcvb",
       "version": 0,
       "active": true,
-      "question": "What is a Secret?\nHow do you use/restrict the use of secrets?",
-      "answer": "A Secret is a resource that is intended to store sensitive data.\nIt is not actually encrypted, so if you do\n`kubectl get secret my_secret -o yaml` the content of the secret\nwill be printed out.\n\nSecrets are usually used by mounting them as a file inside a Pod.\nThe use/viewing of Secrets is restricted by using RBAC and namespaces.",
-      "reviews": []
+      "question": "What is a Secret?\nHow are Secrets typically used?\nHow is the use of Secrets restricted/secured?",
+      "answer": "A Secret is a resource that is intended to store sensitive data.\nIt is not actually encrypted, so if you do\n`kubectl get secret my_secret -o yaml` the content of the secret\nwill be printed out.\n\nSecrets are usually used by mounting them as a file inside a Pod.\n\nThe use/viewing of Secrets is restricted by using RBAC and namespaces.",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "normal",
+          "datetime": "2024-02-20T19:01:05.523441363Z"
+        }
+      ]
     },
     {
       "id": "i7cdyy59ao",
@@ -1596,7 +1759,13 @@
       "active": true,
       "question": "What input does wrangler take?",
       "answer": "The input into wrangler is types that represent your resource,\nalong with all of the relevant keys and their types. You add\nannotations in comments above the resources you want wrangler\nto generate controllers for.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-20T19:04:11.051337332Z"
+        }
+      ]
     },
     {
       "id": "kxt4ohaff4",
@@ -1604,15 +1773,27 @@
       "active": true,
       "question": "How do you generate code for wrangler?\nWhere does this code live in the Rancher project?",
       "answer": "You pass a bunch of options to controllergen.Run, some of which\nare fields that point to the package that defines your input types.\nWrangler can then take this input and generate the code.\n\nIn the Rancher project, this code lives in the pkg/codegen/main.go\nfile.",
-      "reviews": []
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-20T19:18:49.956196862Z"
+        }
+      ]
     },
     {
       "id": "qx2nl7ac3w",
       "version": 0,
       "active": true,
       "question": "How do you instantiate a controller from the code generated by wrangler?",
-      "answer": "# Write the answer here. This line, as well as the above divider, will be removed\nEach apiGroup that wrangler manages has a factory that is used to\ninstantiate controllers (among other things) for resources in that\napiGroup. You instantiate this factory using the NewFactoryFromConfig\n(or whatever version of it you need) function from the generated\npackage. You then call some functions on it to instantiate the controller.",
-      "reviews": []
+      "answer": "Each apiGroup that wrangler manages has a factory that is used to\ninstantiate controllers (among other things) for resources in that\napiGroup. You instantiate this factory using the NewFactoryFromConfig\n(or whatever version of it you need) function from the generated\npackage. You then call some functions on it to instantiate the controller.",
+      "reviews": [
+        {
+          "version": 0,
+          "result": "hard",
+          "datetime": "2024-02-20T18:53:47.487491039Z"
+        }
+      ]
     }
   ]
 }
