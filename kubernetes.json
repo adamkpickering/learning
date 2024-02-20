@@ -1794,6 +1794,22 @@
           "datetime": "2024-02-20T18:53:47.487491039Z"
         }
       ]
+    },
+    {
+      "id": "ab2b2te21u",
+      "version": 0,
+      "active": true,
+      "question": "How often is kubernetes released?",
+      "answer": "Roughly every three months.",
+      "reviews": []
+    },
+    {
+      "id": "0upxo3w27y",
+      "version": 0,
+      "active": true,
+      "question": "Which versions of kubernetes does a given version of helm support?",
+      "answer": "helm supports n - 3 versions of kubernetes, where n is the\nversion of kubernetes it is built against. So if my version\nof helm is built against k8s v1.26, it supports down to\nv1.23.",
+      "reviews": []
     }
   ]
 }
